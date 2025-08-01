@@ -1,3 +1,4 @@
+
 /*
  * Job related
  */
@@ -157,7 +158,7 @@
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
 
 //Detective
-/obj/item/clothing/suit/storage/CMB/trenchcoat
+/obj/item/clothing/suit/storage/det_suit
 	name = "coat"
 	desc = "An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business."
 	icon_state = "detective"
@@ -216,7 +217,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_DECOR)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
-/obj/item/clothing/suit/storage/CMB/trenchcoat/black
+/obj/item/clothing/suit/storage/det_suit/black
 	icon_state = "detective2"
 
 //Forensics
