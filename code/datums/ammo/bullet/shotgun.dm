@@ -1,3 +1,4 @@
+
 /*
 //======
 					Shotgun Ammo
@@ -6,7 +7,6 @@
 
 /datum/ammo/bullet/shotgun
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	shell_casing = /obj/item/ammo_casing/shell
 
 /datum/ammo/bullet/shotgun/slug
 	name = "shotgun slug"
