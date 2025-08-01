@@ -9,7 +9,6 @@
 	allow_additional = 1
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
 	gear_preset = /datum/equipment_preset/uscm/engineer
-	gear_preset_secondary = /datum/equipment_preset/uscm/engineer/lesser_rank
 	entry_message_body = "You have the <a href='"+WIKI_PLACEHOLDER+"'>equipment and skill</a> to build fortifications, reroute power lines, and bunker down. Your squaddies will look to you when it comes to construction in the field of battle."
 
 	job_options = list(LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")

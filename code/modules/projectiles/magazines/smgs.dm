@@ -274,7 +274,7 @@
 /obj/item/ammo_magazine/smg/p90
 	name = "\improper FN P90 magazine (5.7×28mm)"
 	desc = "A 5.7×28mm magazine for the FN P90."
-	default_ammo = /datum/ammo/bullet/smg/p90
+	default_ammo = /datum/ammo/bullet/smg/ap
 	caliber = "5.7×28mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
 	icon_state = "p90"
@@ -286,8 +286,8 @@
 
 /obj/item/ammo_magazine/smg/p90/twe
 	name = "\improper FN-TWE P90 AP magazine (5.7×28mm)"
-	desc = "A 5.7×28mm (AP) magazine for the FN-TWE P90."
-	default_ammo = /datum/ammo/bullet/smg/p90/twe_ap
+	desc = "A 5.7×28mm magazine for the FN-TWE P90."
+	default_ammo = /datum/ammo/bullet/smg/ap
 	caliber = "5.7×28mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/twe_ammo.dmi'
 	icon_state = "p90_twe"
