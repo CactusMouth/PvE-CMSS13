@@ -1905,7 +1905,6 @@
 #include "code\modules\gear_presets\survivors\misc.dm"
 #include "code\modules\gear_presets\survivors\survivors.dm"
 #include "code\modules\gear_presets\survivors\lv_522\forcon_survivors.dm"
-#include "code\modules\gear_presets\survivors\lv_759\preset_hybrisa.dm"
 #include "code\modules\holidays\halloween\decorators.dm"
 #include "code\modules\holidays\halloween\pumpkins\patches.dm"
 #include "code\modules\holidays\halloween\pumpkins\wearable.dm"
