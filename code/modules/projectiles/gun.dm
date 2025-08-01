@@ -254,6 +254,8 @@
 	VAR_PROTECTED/start_semiauto = TRUE
 	/// If this gun should spawn with automatic fire. Protected due to it never needing to be edited.
 	VAR_PROTECTED/start_automatic = FALSE
+	/// If this gun should spawn with burst fire. Protected due to it never needing to be edited.
+	VAR_PROTECTED/start_burstfire = FALSE
 	/// The type of projectile that this gun should shoot
 	var/projectile_type = /obj/projectile
 	/// The multiplier for how much slower this should fire in automatic mode. 1 is normal, 1.2 is 20% slower, 2 is 100% slower, etc. Protected due to it never needing to be edited.
@@ -609,7 +611,7 @@ As sniper rifles have both and weapon mods can change them as well. ..() deals w
 
 	if(!(flags_gun_features & (GUN_INTERNAL_MAG|GUN_UNUSUAL_DESIGN))) //Internal mags and unusual guns have their own stuff set.
 		if(current_mag && current_mag.current_rounds > 0)
-			if(flags_gun_features & GUN_AMMO_COUNTER) dat += "Ammo counter shows [current_mag.current_rounds] round\s remaining.<br>"
+			if(flags_gun_features & GUN_AMMO_COUNTER) dat += "Ammo counter shows [in_chamber ? "[current_mag.current_rounds+1]" : "[current_mag.current_rounds]"] round\s remaining.<br>"
 			else dat += "It's loaded[in_chamber?" and has a round chambered":""].<br>"
 		else dat += "It's unloaded[in_chamber?" but has a round chambered":""].<br>"
 	if(!(flags_gun_features & GUN_UNUSUAL_DESIGN))
@@ -1056,7 +1058,6 @@ and you're good to go.
 			P.apply_bullet_trait(L)
 
 /obj/item/weapon/gun/proc/ready_in_chamber()
-	eject_casing()
 	QDEL_NULL(in_chamber)
 	if(current_mag && current_mag.current_rounds > 0)
 		in_chamber = create_bullet(ammo, initial(name))
@@ -1134,7 +1135,7 @@ and you're good to go.
 /obj/item/weapon/gun/proc/Fire(atom/target, mob/living/user, params, reflex = FALSE, dual_wield)
 	set waitfor = FALSE
 
-	if(!able_to_fire(user) || !target || !get_turf(user) || !get_turf(target))
+	if(!able_to_fire(user) || !target || !get_turf(user) || !get_turf(target) || user.contains(target))
 		return NONE
 
 	/*
@@ -1146,7 +1147,7 @@ and you're good to go.
 	if(active_attachable?.flags_attach_features & ATTACH_WEAPON) //Attachment activated and is a weapon.
 		check_for_attachment_fire = TRUE
 		if(!(active_attachable.flags_attach_features & ATTACH_PROJECTILE)) //If it's unique projectile, this is where we fire it.
-			if((active_attachable.current_rounds <= 0) && !(active_attachable.flags_attach_features & ATTACH_IGNORE_EMPTY))
+			if((active_attachable.current_rounds <= 0) && !(active_attachable.flags_attach_features & ATTACH_IGNORE_EMPTY) && !active_attachable.in_chamber)
 				click_empty(user) //If it's empty, let them know.
 				to_chat(user, SPAN_WARNING("[active_attachable] is empty!"))
 				to_chat(user, SPAN_NOTICE("You disable [active_attachable]."))
@@ -1192,90 +1193,90 @@ and you're good to go.
 	if(loc != user || (flags_gun_features & GUN_WIELDED_FIRING_ONLY && !(flags_item & WIELDED)))
 		return TRUE
 
-	//The gun should return the bullet that it already loaded from the end cycle of the last Fire().
-	var/obj/projectile/projectile_to_fire = load_into_chamber(user) //Load a bullet in or check for existing one.
-	if(!projectile_to_fire) //If there is nothing to fire, click.
-		click_empty(user)
-		flags_gun_features &= ~GUN_BURST_FIRING
-		return NONE
+	if(targloc != curloc) //This case should be handled by attack code.
+		//The gun should return the bullet that it already loaded from the end cycle of the last Fire().
+		var/obj/projectile/projectile_to_fire = load_into_chamber(user) //Load a bullet in or check for existing one.
+		if(!projectile_to_fire) //If there is nothing to fire, click.
+			click_empty(user)
+			flags_gun_features &= ~GUN_BURST_FIRING
+			return NONE
 
-	var/original_scatter = projectile_to_fire.scatter
-	var/original_accuracy = projectile_to_fire.accuracy
-	apply_bullet_scatter(projectile_to_fire, user, reflex, dual_wield) //User can be passed as null.
+		var/original_scatter = projectile_to_fire.scatter
+		var/original_accuracy = projectile_to_fire.accuracy
+		apply_bullet_scatter(projectile_to_fire, user, reflex, dual_wield) //User can be passed as null.
 
-	curloc = get_turf(user)
-	if(QDELETED(original_target)) //If the target's destroyed, shoot at where it was last.
-		target = targloc
-	else
-		target = original_target
-		targloc = get_turf(target)
+		curloc = get_turf(user)
+		if(QDELETED(original_target)) //If the target's destroyed, shoot at where it was last.
+			target = targloc
+		else
+			target = original_target
+			targloc = get_turf(target)
 
-	projectile_to_fire.original = target
+		projectile_to_fire.original = target
 
-	// turf-targeted projectiles are fired without scatter, because proc would raytrace them further away
-	var/ammo_flags = projectile_to_fire.ammo.flags_ammo_behavior | projectile_to_fire.projectile_override_flags
-	if(!(ammo_flags & AMMO_HITS_TARGET_TURF))
-		target = simulate_scatter(projectile_to_fire, target, curloc, targloc, user)
+		// turf-targeted projectiles are fired without scatter, because proc would raytrace them further away
+		var/ammo_flags = projectile_to_fire.ammo.flags_ammo_behavior | projectile_to_fire.projectile_override_flags
+		if(!(ammo_flags & AMMO_HITS_TARGET_TURF))
+			target = simulate_scatter(projectile_to_fire, target, curloc, targloc, user)
 
-	var/bullet_velocity = projectile_to_fire?.ammo?.shell_speed + velocity_add
+		var/bullet_velocity = projectile_to_fire?.ammo?.shell_speed + velocity_add
 
-	if(params) // Apply relative clicked position from the mouse info to offset projectile
-		if(!params[CLICK_CATCHER])
-			if(params[VIS_X])
-				projectile_to_fire.p_x = text2num(params[VIS_X])
-			else if(params[ICON_X])
-				projectile_to_fire.p_x = text2num(params[ICON_X])
-			if(params[VIS_Y])
-				projectile_to_fire.p_y = text2num(params[VIS_Y])
-			else if(params[ICON_Y])
-				projectile_to_fire.p_y = text2num(params[ICON_Y])
-			var/atom/movable/clicked_target = original_target
-			if(istype(clicked_target))
-				projectile_to_fire.p_x -= clicked_target.bound_width / 2
-				projectile_to_fire.p_y -= clicked_target.bound_height / 2
+		if(params) // Apply relative clicked position from the mouse info to offset projectile
+			if(!params[CLICK_CATCHER])
+				if(params[VIS_X])
+					projectile_to_fire.p_x = text2num(params[VIS_X])
+				else if(params[ICON_X])
+					projectile_to_fire.p_x = text2num(params[ICON_X])
+				if(params[VIS_Y])
+					projectile_to_fire.p_y = text2num(params[VIS_Y])
+				else if(params[ICON_Y])
+					projectile_to_fire.p_y = text2num(params[ICON_Y])
+				var/atom/movable/clicked_target = original_target
+				if(istype(clicked_target))
+					projectile_to_fire.p_x -= clicked_target.bound_width / 2
+					projectile_to_fire.p_y -= clicked_target.bound_height / 2
+				else
+					projectile_to_fire.p_x -= world.icon_size / 2
+					projectile_to_fire.p_y -= world.icon_size / 2
 			else
 				projectile_to_fire.p_x -= world.icon_size / 2
 				projectile_to_fire.p_y -= world.icon_size / 2
-		else
-			projectile_to_fire.p_x -= world.icon_size / 2
-			projectile_to_fire.p_y -= world.icon_size / 2
 
-	//Finally, make with the pew pew!
-	if(QDELETED(projectile_to_fire) || !isobj(projectile_to_fire))
-		to_chat(user, "ERROR CODE I1: Gun malfunctioned due to invalid chambered projectile, clearing it. AHELP if this persists.")
-		log_debug("ERROR CODE I1: projectile malfunctioned while firing. User: <b>[user]</b> Weapon: <b>[src]</b> Magazine: <b>[current_mag]</b>")
-		flags_gun_features &= ~GUN_BURST_FIRING
-		in_chamber = null
-		click_empty(user)
-		return NONE
-
-	var/before_fire_cancel = SEND_SIGNAL(src, COMSIG_GUN_BEFORE_FIRE, projectile_to_fire, target, user)
-	if(before_fire_cancel)
-
-		//yeah we revert these since we are not going to shoot anyway
-		projectile_to_fire.scatter = original_scatter
-		projectile_to_fire.accuracy = original_accuracy
-
-		if(before_fire_cancel & COMPONENT_CANCEL_GUN_BEFORE_FIRE)
-			return TRUE
-
-		if(before_fire_cancel & COMPONENT_HARD_CANCEL_GUN_BEFORE_FIRE)
+		//Finally, make with the pew pew!
+		if(QDELETED(projectile_to_fire) || !isobj(projectile_to_fire))
+			to_chat(user, "ERROR CODE I1: Gun malfunctioned due to invalid chambered projectile, clearing it. AHELP if this persists.")
+			log_debug("ERROR CODE I1: projectile malfunctioned while firing. User: <b>[user]</b> Weapon: <b>[src]</b> Magazine: <b>[current_mag]</b>")
+			flags_gun_features &= ~GUN_BURST_FIRING
+			in_chamber = null
+			click_empty(user)
 			return NONE
 
-	apply_bullet_effects(projectile_to_fire, user, reflex, dual_wield) //User can be passed as null.
-	SEND_SIGNAL(projectile_to_fire, COMSIG_BULLET_USER_EFFECTS, user)
+		var/before_fire_cancel = SEND_SIGNAL(src, COMSIG_GUN_BEFORE_FIRE, projectile_to_fire, target, user)
+		if(before_fire_cancel)
 
-	projectile_to_fire.firer = user
-	if(isliving(user))
-		projectile_to_fire.def_zone = user.zone_selected
+			//yeah we revert these since we are not going to shoot anyway
+			projectile_to_fire.scatter = original_scatter
+			projectile_to_fire.accuracy = original_accuracy
 
-	play_firing_sounds(projectile_to_fire, user)
+			if(before_fire_cancel & COMPONENT_CANCEL_GUN_BEFORE_FIRE)
+				return TRUE
 
-	empty_casings++
-	if(flags_gun_features & GUN_AUTO_EJECT_CASINGS)
-		eject_casing()
+			if(before_fire_cancel & COMPONENT_HARD_CANCEL_GUN_BEFORE_FIRE)
+				return NONE
 
-	if(targloc != curloc)
+		apply_bullet_effects(projectile_to_fire, user, reflex, dual_wield) //User can be passed as null.
+		SEND_SIGNAL(projectile_to_fire, COMSIG_BULLET_USER_EFFECTS, user)
+
+		projectile_to_fire.firer = user
+		if(isliving(user))
+			projectile_to_fire.def_zone = user.zone_selected
+
+		play_firing_sounds(projectile_to_fire, user)
+
+		empty_casings++
+		if(flags_gun_features & GUN_AUTO_EJECT_CASINGS)
+			eject_casing()
+
 		simulate_recoil(dual_wield, user, target)
 
 		//This is where the projectile leaves the barrel and deals with projectile code only.
@@ -1316,7 +1317,7 @@ and you're good to go.
 		return TRUE //Nothing else to do here, time to cancel out.
 	return TRUE
 
-#define EXECUTION_CHECK (attacked_mob.stat == UNCONSCIOUS || attacked_mob.is_mob_restrained()) && ((user.a_intent == INTENT_GRAB)||(user.a_intent == INTENT_DISARM))
+#define EXECUTION_CHECK (attacked_mob.stat == UNCONSCIOUS || attacked_mob.is_mob_restrained()) && ((user.zone_selected="head") && (user.a_intent == INTENT_DISARM) || (user.a_intent == INTENT_GRAB))
 
 /obj/item/weapon/gun/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	if(!proximity_flag)
@@ -1422,7 +1423,7 @@ and you're good to go.
 		user.visible_message(SPAN_DANGER("[user] puts [src] up to [attacked_mob], steadying their aim."), SPAN_WARNING("You put [src] up to [attacked_mob], steadying your aim."),null, null, CHAT_TYPE_COMBAT_ACTION)
 		if(!do_after(user, 3 SECONDS, INTERRUPT_ALL|INTERRUPT_DIFF_INTENT, BUSY_ICON_HOSTILE))
 			return TRUE
-	else if(user.a_intent != INTENT_HARM) //Thwack them
+	else if(user.a_intent != INTENT_HARM && user.a_intent != INTENT_GRAB) //Thwack them
 		return ..()
 
 	if(MODE_HAS_TOGGLEABLE_FLAG(MODE_NO_ATTACK_DEAD) && attacked_mob.stat == DEAD) // don't shoot dead people
@@ -2116,7 +2117,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(gun_user.throw_mode)
 			return FALSE
 
-		if(gun_user.Adjacent(object)) //Dealt with by attack code
+		if(gun_user.Adjacent(object) && gun_user.a_intent != INTENT_HARM || gun_user.loc == get_turf(object)) //Dealt with by attack code
 			return FALSE
 
 	if(QDELETED(object))
@@ -2174,6 +2175,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 
 	return TRUE
 
+/// For ejecting the spent casing from corresponding guns
 /obj/item/weapon/gun/proc/eject_casing()
 	if(empty_casings == 0)
 		return
@@ -2184,8 +2186,8 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(!ejection_turf)
 			return
 
-		var/obj/item/ammo_casing/found_casings = null
-		for(var/obj/item/ammo_casing/C in ejection_turf)
+		var/obj/effect/decal/ammo_casing/found_casings = null
+		for(var/obj/effect/decal/ammo_casing/C in ejection_turf)
 			if(C.type == ammo.shell_casing)
 				found_casings = C
 				break
