@@ -127,6 +127,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"he" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/obj/effect/decal/hybrisa/warning/redandwhite_W,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "hy" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -148,10 +154,21 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoon_commander_rooms)
+"ia" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "if" = (
 /obj/structure/sign/goldenplaque{
 	pixel_x = 32
 	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
+"iJ" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "iL" = (
@@ -164,6 +181,20 @@
 "iV" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/cryo_cells)
+"jl" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/obj/structure/bed/chair/comfy/teal{
+	dir = 4
+	},
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
+/obj/item/trash/wy_mre{
+	pixel_x = -12;
+	pixel_y = -9
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "jp" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/prop/almayer/CICmap{
@@ -206,6 +237,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/shared_office)
+"kn" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "kF" = (
 /obj/structure/closet,
 /obj/item/reagent_container/food/drinks/cans/soylent,
@@ -213,7 +248,8 @@
 /area/golden_arrow/engineering)
 "kO" = (
 /obj/structure/closet/secure_closet/marine_personal/corpsman{
-	pixel_x = -7
+	pixel_x = -7;
+	density = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -230,6 +266,13 @@
 "lQ" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
+"lT" = (
+/obj/item/trash/grenade/gas/marine{
+	pixel_y = -11;
+	pixel_x = -8
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "mi" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -253,30 +296,9 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "mE" = (
-/obj/structure/machinery/vending/sovietsoda{
-	desc = "An old sweet water vending machine. It isn't really clear who's been stocking it, considering how deep in maintenance it is.";
-	pixel_x = -4;
-	pixel_y = 21
-	},
-/obj/structure/largecrate/random/mini/small_case/c{
-	pixel_x = 15;
-	pixel_y = 14
-	},
-/obj/item/reagent_container/food/drinks/cans/boda{
-	pixel_x = 17;
-	pixel_y = 20
-	},
-/obj/structure/largecrate/random/barrel/brown{
-	pixel_x = -6;
-	pixel_y = -6
-	},
-/obj/item/reagent_container/food/drinks/cans/boda{
-	pixel_x = 10;
-	pixel_y = 5
-	},
-/obj/item/reagent_container/food/drinks/cans/boda{
-	pixel_x = -8;
-	pixel_y = 8
+/obj/item/trash/wy_mre{
+	pixel_x = 13;
+	pixel_y = 9
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
@@ -395,6 +417,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"px" = (
+/obj/structure/fence/electrified,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "pL" = (
 /obj/structure/phone_base{
 	pixel_y = 30;
@@ -598,6 +624,10 @@
 	},
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
+"ya" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_W,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "ym" = (
 /obj/structure/sign/nosmoking_2{
 	pixel_x = 32
@@ -693,6 +723,15 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
+"CC" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/reagent_container/food/snacks/popcorn{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "CE" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/briefing)
@@ -740,6 +779,13 @@
 "DN" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"DR" = (
+/mob/living/simple_animal/mouse/rat/black{
+	name = "Violence";
+	desc = "It's a big rat. This one is from Hybrisa Prospera -- some marine decided it would be a good idea to shove him into the stash system, and he escaped into the cargo network. Now he spends his days avoiding Lieutenant Brown and eating junk food."
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "DW" = (
 /obj/structure/surface/table/almayer,
 /obj/item/weapon/dart{
@@ -815,6 +861,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"Fc" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/obj/effect/decal/hybrisa/warning/redandwhite_W,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "Fr" = (
 /obj/structure/surface/table/almayer,
 /obj/item/mre_food_packet/wy/cookie_brick,
@@ -879,6 +932,14 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"HT" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/machinery/computer/arcade,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/dorms)
 "Iq" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -970,6 +1031,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
+"LQ" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "LR" = (
 /obj/structure/largecrate/random/barrel/black,
 /turf/open/floor/plating,
@@ -997,6 +1062,10 @@
 /obj/item/storage/fancy/cigarettes/lucky_strikes_4,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
+"Mo" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_N,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "Mv" = (
 /obj/structure/machinery/shower{
 	pixel_y = 15
@@ -1011,7 +1080,8 @@
 "MW" = (
 /obj/structure/closet{
 	pixel_x = -7;
-	name = "spare uniforms"
+	name = "spare uniforms";
+	density = 0
 	},
 /obj/item/clothing/under/marine,
 /obj/item/clothing/under/marine,
@@ -1030,6 +1100,18 @@
 /obj/item/clothing/shoes/marine,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"Nn" = (
+/obj/structure/machinery/vending/sovietsoda{
+	desc = "An old sweet water vending machine. It isn't really clear who's been stocking it, considering how deep in maintenance it is.";
+	pixel_x = -4;
+	pixel_y = 21
+	},
+/obj/structure/largecrate/random/mini/small_case/c{
+	pixel_x = 15;
+	pixel_y = 14
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "NK" = (
 /obj/structure/machinery/chem_dispenser/canteen,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1060,6 +1142,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"Ol" = (
+/obj/item/trash/plate{
+	pixel_x = 7;
+	pixel_y = 10
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "Oz" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -1209,14 +1298,6 @@
 	pixel_x = -8;
 	pixel_y = -4
 	},
-/obj/item/reagent_container/food/drinks/cans/boda{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/reagent_container/food/drinks/cans/boda{
-	pixel_x = 4;
-	pixel_y = -8
-	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "WE" = (
@@ -1287,8 +1368,8 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
+UF
+UF
 UF
 UF
 UF
@@ -1339,9 +1420,9 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
 UF
+Nn
+Qi
 mE
 VB
 Bn
@@ -1391,14 +1472,14 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
 UF
-ud
-Qi
+jl
+CC
+iJ
+LQ
 zB
 Qi
-Qi
+DR
 zB
 Qi
 do
@@ -1443,11 +1524,11 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
 UF
-UF
-UF
+px
+px
+px
+px
 UF
 Ts
 Qi
@@ -1495,11 +1576,11 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
+UF
+Fc
+ya
+ya
+he
 UF
 Qi
 CX
@@ -1547,11 +1628,11 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
+UF
+ia
+ia
+lT
+Qi
 UF
 RD
 Bn
@@ -1599,13 +1680,13 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 UF
 Qi
+Ol
+ia
+Qi
+zB
+Mo
 Qi
 Qi
 Qi
@@ -1651,11 +1732,11 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
+UF
+ud
+ia
+Qi
+kn
 UF
 RD
 bE
@@ -1975,7 +2056,7 @@ lk
 ny
 Jh
 Pu
-ah
+HT
 lQ
 lQ
 lQ
