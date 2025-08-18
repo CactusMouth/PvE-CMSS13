@@ -39,3 +39,6 @@
 
 /// REBC, Rebel Commander "REBC"
 #define PAY_SHORT_REBC "REBC"
+
+/// SCAV, Scavenger "SCAV"
+#define PAY_SHORT_SCAV "SCAV"

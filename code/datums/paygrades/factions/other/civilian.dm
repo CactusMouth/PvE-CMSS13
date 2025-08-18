@@ -59,3 +59,8 @@
 	name = "Rebel Commander"
 	prefix = "CMDR."
 	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/civilian/rebel/scav
+	paygrade = PAY_SHORT_SCAV
+	name = "Scavenger"
+	prefix = "Scav."

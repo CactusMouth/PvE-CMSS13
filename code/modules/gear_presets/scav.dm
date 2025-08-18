@@ -5,7 +5,7 @@
 	faction = FACTION_SCAV
 	faction_group = FACTION_LIST_SCAV
 	skills = /datum/skills/clf
-	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_SCAV = JOB_PLAYTIME_TIER_0)
 	origin_override = ORIGIN_CIVILIAN
 
 /datum/equipment_preset/scav/New()
