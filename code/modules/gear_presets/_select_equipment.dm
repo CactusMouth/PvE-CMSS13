@@ -1749,6 +1749,19 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/mar40, WEAR_IN_BELT)
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/mar40, WEAR_IN_BELT)
 
+/datum/equipment_preset/proc/add_rebel_upp_suit(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/lamp,
+		/obj/item/clothing/suit/storage/jacket/marine/upp,
+		/obj/item/clothing/suit/marine/faction/UPP/jacket,
+		/obj/item/clothing/suit/storage/windbreaker/windbreaker_green,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
 /datum/equipment_preset/proc/add_rebel_upp_helmet(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -1766,6 +1779,20 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/head/headband/rebel,
 		/obj/item/clothing/head/uppcap/beret/guerilla,
 		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/add_rebel_upp_uniform(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/under/marine/veteran/UPP,
+		/obj/item/clothing/under/marine/veteran/UPP/boiler,
+		/obj/item/clothing/under/marine/veteran/UPP/naval,
+		/obj/item/clothing/under/marine/veteran/canc,
+		/obj/item/clothing/under/marine/veteran/canc,
 		)
 	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
 

@@ -8,10 +8,10 @@
 
 /datum/human_ai_equipment_preset/scav/rifle
 	name = "Scav, Raider (Rifle)"
-	desc = "A regular scav that has basic armor and sometimes has a helmet. Uses either a MAR-40, MAR-30, MAC-15, or Uzi."
+	desc = "A regular scav that has basic armor and sometimes has a helmet. Uses a MAR-40, MAR-30, MAC-15, Uzi, MP5, or AR-10."
 	path = /datum/equipment_preset/scav/rifle
 
 /datum/human_ai_equipment_preset/scav/shotgun
-	name = "Scav, Psycho (Shotgun)"
-	desc = "A regular scav that has basic armor and sometimes has a helmet. Uses either a Spearhead Rival 78 or an Ithaca 37. Usually uses beanbags, but rarely has buckshot or slugs."
+	name = "Scav, Raider (Shotgun)"
+	desc = "A close-quarters scav that has basic armor and sometimes has a helmet. Uses either a Spearhead Rival 78 or an Ithaca 37. Usually uses beanbags, but rarely has buckshot or slugs."
 	path = /datum/equipment_preset/scav/shotgun
