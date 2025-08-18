@@ -410,3 +410,39 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/sniper(new_human), WEAR_IN_R_STORE)
+
+/datum/equipment_preset/rebel/handgunner
+	name = "UA Rebel, Recruit (Pistol)"
+	flags = EQUIPMENT_PRESET_EXTRA
+	idtype = /obj/item/card/id/dogtag
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(ACCESS_LIST_CLF_BASE)
+
+/datum/equipment_preset/rebel/handgunner/get_assignment(mob/living/carbon/human/new_human)
+	return "Recruit"
+
+/datum/equipment_preset/rebel/handgunner/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	add_random_satchel(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/wy(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/vp70(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/vp70(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/vp70(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/vp70(new_human), WEAR_IN_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/rebel_ua(new_human), WEAR_L_EAR)
+	if(prob(45))
+		add_facewrap(new_human)
+	//uniform
+	add_rebel_ua_uniform(new_human)
+	//jacket
+	if(prob(20))
+		add_rebel_ua_suit(new_human)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/vp70(new_human), WEAR_IN_BACK)
+	//limbs
+	add_rebel_ua_shoes(new_human)
+
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)

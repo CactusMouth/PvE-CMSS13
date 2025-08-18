@@ -629,3 +629,43 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smartgun, WEAR_IN_R_STORE)
 
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/m56_goggles/no_nightvision(new_human), WEAR_EYES)
+
+// pistolier
+
+/datum/equipment_preset/clf/handgunner
+	name = "TWE Rebel, Soldier (Pistol)"
+	flags = EQUIPMENT_PRESET_EXTRA
+	skills = /datum/skills/pfc
+	idtype = /obj/item/card/id/dogtag
+	assignment = "Recruit"
+
+/datum/equipment_preset/clf/handgunner/New()
+	. = ..()
+	access = get_access(ACCESS_LIST_CLF_BASE) + list(ACCESS_CLF_ARMORY)
+
+/datum/equipment_preset/clf/handgunner/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	add_random_satchel(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/wy(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/l54(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/l54(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/l54(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/l54(new_human), WEAR_IN_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/rebel_twe(new_human), WEAR_L_EAR)
+	if(prob(65))
+		add_facewrap(new_human)
+	//uniform
+	add_rebel_twe_uniform(new_human)
+	//jacket
+	if(prob(20))
+		add_rebel_twe_suit(new_human)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/l54(new_human), WEAR_WAIST)
+	//limbs
+	add_rebel_twe_shoes(new_human)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
+

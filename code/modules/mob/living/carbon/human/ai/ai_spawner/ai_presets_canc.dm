@@ -1,13 +1,18 @@
 /datum/human_ai_equipment_preset/canc
 	faction = FACTION_CANC
 
+/datum/human_ai_equipment_preset/canc/handgunner
+	name = "CANC Recruit, Pistol"
+	desc = "A UPP colonist that has taken up arms in the name of the CANC remnants. Armed with a NP94 pistol."
+	path = /datum/equipment_preset/canc/handgunner
+
 /datum/human_ai_equipment_preset/canc/newblood
-	name = "CANC Colonist Recruit"
+	name = "CANC Recruit, Rifle"
 	desc = "CANC Remnant Force, Colonist recruit. Random Rifle."
 	path = /datum/equipment_preset/canc/newblood
 
 /datum/human_ai_equipment_preset/canc/newblood_machinegunner
-	name = "CANC Colonist Recruit - MAR LMG"
+	name = "CANC Recruit, LMG"
 	desc = "CANC Remnant Force, Colonist recruit. MAR LMG."
 	path = /datum/equipment_preset/canc/newblood_machinegunner
 
