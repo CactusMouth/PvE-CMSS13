@@ -451,6 +451,90 @@
 	icon_state = "corrections"
 	item_state = "corrections"
 
+//============================//SIPPY HAT\\=================================\\
+//==========================================================================\\
+//'cause i don't feel like sorting it properly
+
+/obj/item/clothing/head/sippyhat
+	name = "sippy hat"
+	desc = "A marvelous invention, allowing you to sip on divine ambrosia as you blast commies with a shotgun."
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon_state = "sippy_hat"
+	var/obj/item/storage/internal/headgear/pockets
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_laser = CLOTHING_ARMOR_LOW
+	armor_energy = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
+	flags_cold_protection = BODY_FLAG_HEAD
+	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
+	flags_inventory = BLOCKSHARPOBJ
+	flags_inv_hide = HIDEEARS
+	actions_types = list(
+		/datum/action/item_action/sippyhat/sip,
+	)
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
+
+/obj/item/clothing/head/sippyhat/Initialize(mapload, ...)
+	. = ..()
+	pockets = new(src)
+	pockets.storage_slots = 2
+	pockets.max_w_class = SIZE_SMALL
+
+/obj/item/clothing/head/sippyhat/attackby(obj/item/W, mob/user)
+	..()
+	if(!istype(W, /obj/item/reagent_container/food/drinks))
+		return
+	return pockets.attackby(W, user)
+
+/obj/item/clothing/head/sippyhat/MouseDrop(over_object, src_location, over_location)
+	if(pockets.handle_mousedrop(usr, over_object))
+		..()
+
+
+/obj/item/clothing/head/sippyhat/attack_hand(mob/user)
+	if(loc != user)
+		..(user)
+		return
+	if(pockets.handle_attack_hand(user))
+		..()
+
+/datum/action/item_action/sippyhat/sip/New(Target, obj/item/holder)
+	. = ..()
+	name = "Sip from the hat"
+	button.name = name
+	button.overlays.Cut()
+	var/image/button_overlay = image(holder_item.icon, button, holder_item.icon_state)
+	button.overlays += button_overlay
+
+/datum/action/item_action/sippyhat/sip/action_activate()
+	. = ..()
+	if(istype(target, /obj/item/clothing/head/sippyhat))
+		var/obj/item/clothing/head/sippyhat/hat = target
+		hat.take_a_sippy()
+
+/obj/item/clothing/head/sippyhat/verb/sip()
+	set name = "Sip from the hat"
+	set category = "Object"
+	set src in usr
+	if(!isliving(usr))
+		return
+	if(usr.is_mob_incapacitated())
+		return
+	take_a_sippy()
+
+/obj/item/clothing/head/sippyhat/proc/take_a_sippy()
+	if(!contents)
+		to_chat(usr, SPAN_WARNING("[src] is empty!"))
+		return
+	for(var/obj/item/reagent_container/food/drinks/i in pockets.contents)
+		i.attack(usr, usr)
+
 //============================//BERETS\\=================================\\
 //=======================================================================\\
 //Berets DO NOT have armor, so they have their own category. PMC caps are helmets, so they're in helmets.dm.
