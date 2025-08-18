@@ -1787,14 +1787,14 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 /datum/equipment_preset/proc/add_rebel_upp_uniform(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	var/helmetpath = pick(
+	var/uniformpath = pick(
 		/obj/item/clothing/under/marine/veteran/UPP,
 		/obj/item/clothing/under/marine/veteran/UPP/boiler,
 		/obj/item/clothing/under/marine/veteran/UPP/naval,
 		/obj/item/clothing/under/marine/veteran/canc,
 		/obj/item/clothing/under/marine/veteran/canc,
 		)
-	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
 
 
 /datum/equipment_preset/proc/add_army_helmet_accessory(mob/living/carbon/human/new_human)
