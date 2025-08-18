@@ -738,6 +738,11 @@
 	pixel_y = 8
 	},
 /obj/effect/decal/hybrisa/warning/redandwhite_E,
+/obj/item/reagent_container/syringe/drugs,
+/obj/item/reagent_container/syringe/drugs{
+	pixel_x = -1;
+	pixel_y = -3
+	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "CE" = (
