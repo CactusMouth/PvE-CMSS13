@@ -141,7 +141,7 @@
 	if(open)
 		sharp = IS_SHARP_ITEM_ACCURATE
 		edge = TRUE
-		force = MELEE_FORCE_TIER_4
+		force = MELEE_FORCE_NORMAL
 	else
 		sharp = FALSE
 		edge = FALSE

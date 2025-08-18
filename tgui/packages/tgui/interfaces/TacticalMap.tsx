@@ -110,52 +110,45 @@ export const TacticalMap = (props) => {
   return (
     <Window
       width={700}
-      height={900}
+      height={850}
       theme={data.isxeno ? 'hive_status' : 'crtblue'}
     >
       <Window.Content>
-        <Stack vertical fill>
-          <Stack.Item>
-            <Section
-              fitted
-              width="100%"
-              fontSize="20px"
-              textAlign="center"
-              title="Tactical Map Options"
-            >
-              <Stack fontSize="15px">
-                <Stack.Item width="100%">
-                  <Tabs height="37.5px">
-                    {PAGES.map((page, i) => {
-                      if (!page.canAccess(data)) {
-                        return;
+        <Section
+          fitted
+          width="688px"
+          fontSize="20px"
+          textAlign="center"
+          title="Tactical Map Options"
+        >
+          <Stack justify="center" align="center" fontSize="15px">
+            <Stack.Item>
+              <Tabs height="37.5px">
+                {PAGES.map((page, i) => {
+                  if (!page.canAccess(data)) {
+                    return;
+                  }
+                  return (
+                    <Tabs.Tab
+                      key={i}
+                      color={data.isxeno ? 'purple' : 'blue'}
+                      selected={i === pageIndex}
+                      icon={page.icon}
+                      onClick={() =>
+                        page.canOpen(data)
+                          ? handleTacmapOnClick(i, page.title)
+                          : null
                       }
-                      return (
-                        <Tabs.Tab
-                          key={i}
-                          color={data.isxeno ? 'purple' : 'blue'}
-                          width="100%"
-                          selected={i === pageIndex}
-                          icon={page.icon}
-                          onClick={() =>
-                            page.canOpen(data)
-                              ? handleTacmapOnClick(i, page.title)
-                              : null
-                          }
-                        >
-                          {page.canOpen(data) ? page.title : 'loading'}
-                        </Tabs.Tab>
-                      );
-                    })}
-                  </Tabs>
-                </Stack.Item>
-              </Stack>
-            </Section>
-          </Stack.Item>
-          <Stack.Item grow>
-            <PageComponent fitted />
-          </Stack.Item>
-        </Stack>
+                    >
+                      {page.canOpen(data) ? page.title : 'loading'}
+                    </Tabs.Tab>
+                  );
+                })}
+              </Tabs>
+            </Stack.Item>
+          </Stack>
+        </Section>
+        <PageComponent fitted />
       </Window.Content>
     </Window>
   );
@@ -170,7 +163,7 @@ const ViewMapPanel = (props) => {
   }
 
   return (
-    <Section fill>
+    <Section fill fitted height="86%">
       <ByondUi
         height="100%"
         width="100%"
@@ -188,7 +181,7 @@ const ViewMapPanel = (props) => {
 const OldMapPanel = (props) => {
   const { data } = useBackend<TacMapProps>();
   return (
-    <Section fill align="center" fontSize="30px">
+    <Section fill fitted height="86%" align="center" fontSize="30px">
       {data.canViewCanvas ? (
         <DrawnMap
           svgData={data.svgData}
@@ -228,118 +221,128 @@ const DrawMapPanel = (props) => {
   };
 
   return (
-    <Section fill>
-      <Stack
-        pl="5px"
-        pr="5px"
-        align="center"
-        height="35px"
-        className="BorederedStack"
-      >
-        <Stack.Item grow>
-          {(!data.updatedCanvas && (
-            <Button
-              height="20px"
-              fluid
-              disabled={!canUpdate}
-              color="red"
-              icon="download"
-              className="text-center"
-              onClick={() => act('updateCanvas')}
-            >
-              Update Canvas
-            </Button>
-          )) || (
-            <Button
-              height="20px"
-              fluid
-              color="green"
-              icon="bullhorn"
-              className="text-center"
-              onClick={() =>
-                act('selectAnnouncement', {
-                  image: data.exportedTacMapImage,
-                })
-              }
-            >
-              Announce
-            </Button>
-          )}
-        </Stack.Item>
-        <Stack.Item grow>
-          <Button
-            height="20px"
-            fluid
-            color="grey"
-            icon="trash"
-            className="text-center"
-            onClick={() => act('clearCanvas')}
-          >
-            Clear Canvas
-          </Button>
-        </Stack.Item>
-        <Stack.Item grow>
-          <Button
-            height="20px"
-            fluid
-            color="grey"
-            icon="recycle"
-            className="text-center"
-            onClick={() => act('undoChange')}
-          >
-            Undo
-          </Button>
-        </Stack.Item>
-        <Stack.Item>
-          <Dropdown
-            className="TacticalMapColorPicker"
-            menuWidth="15rem"
-            options={colorOptions}
-            selected={data.toolbarColorSelection}
-            color={data.toolbarColorSelection}
-            onSelected={(value) => act('selectColor', { color: value })}
-            displayText={data.toolbarColorSelection}
-          />
-        </Stack.Item>
-      </Stack>
-      <Stack
-        className={'progress-stack'}
+    <>
+      <Section
+        title="Canvas Options"
+        className={'canvas-options'}
+        width="688px"
         position="absolute"
-        width="100%"
         style={{ zIndex: '1' }}
-        bottom="-40px"
       >
-        <Stack.Item grow>
-          {data.canvasCooldown > 0 && (
-            <ProgressBar
+        <Stack height="15px">
+          <Stack.Item grow>
+            {(!data.updatedCanvas && (
+              <Button
+                height="20px"
+                fluid
+                disabled={!canUpdate}
+                color="red"
+                icon="download"
+                className="text-center"
+                onClick={() => act('updateCanvas')}
+              >
+                Update Canvas
+              </Button>
+            )) || (
+              <Button
+                height="20px"
+                fluid
+                color="green"
+                icon="bullhorn"
+                className="text-center"
+                onClick={() =>
+                  act('selectAnnouncement', {
+                    image: data.exportedTacMapImage,
+                  })
+                }
+              >
+                Announce
+              </Button>
+            )}
+          </Stack.Item>
+          <Stack.Item grow>
+            <Button
               height="20px"
-              value={timeLeftPct}
-              backgroundColor="rgba(0, 0, 0, 0.5)"
-              ranges={{
-                good: [-Infinity, 0.33],
-                average: [0.33, 0.67],
-                bad: [0.67, Infinity],
-              }}
+              fluid
+              color="grey"
+              icon="trash"
+              className="text-center"
+              onClick={() => act('clearCanvas')}
             >
-              <Box textAlign="center" fontSize="15px" textColor="white">
-                {Math.ceil(data.canvasCooldown / 10)} seconds until the canvas
-                changes can be updated
-              </Box>
-            </ProgressBar>
-          )}
-        </Stack.Item>
-      </Stack>
-      <CanvasLayer
-        selection={handleColorSelection(data.toolbarUpdatedSelection)}
-        actionQueueChange={data.actionQueueChange}
-        imageSrc={data.newCanvasFlatImage}
-        key={data.lastUpdateTime}
-        onImageExport={handleTacMapExport}
-        onUndo={(value: string) =>
-          act('selectColor', { color: findColorValue(value) })
-        }
-        onDraw={() => act('onDraw')}
-      />
-    </Section>
+              Clear Canvas
+            </Button>
+          </Stack.Item>
+          <Stack.Item grow>
+            <Button
+              height="20px"
+              fluid
+              color="grey"
+              icon="recycle"
+              className="text-center"
+              onClick={() => act('undoChange')}
+            >
+              Undo
+            </Button>
+          </Stack.Item>
+          <Stack.Item>
+            <Dropdown
+              className="TacticalMapColorPicker"
+              menuWidth="15rem"
+              options={colorOptions}
+              selected={data.toolbarColorSelection}
+              color={data.toolbarColorSelection}
+              onSelected={(value) => act('selectColor', { color: value })}
+              displayText={data.toolbarColorSelection}
+            />
+          </Stack.Item>
+        </Stack>
+        <Stack
+          className={'progress-stack'}
+          position="absolute"
+          width="98%"
+          style={{ zIndex: '1' }}
+          bottom="-40px"
+        >
+          <Stack.Item grow>
+            {data.canvasCooldown > 0 && (
+              <ProgressBar
+                height="20px"
+                value={timeLeftPct}
+                backgroundColor="rgba(0, 0, 0, 0.5)"
+                ranges={{
+                  good: [-Infinity, 0.33],
+                  average: [0.33, 0.67],
+                  bad: [0.67, Infinity],
+                }}
+              >
+                <Box textAlign="center" fontSize="15px" textColor="white">
+                  {Math.ceil(data.canvasCooldown / 10)} seconds until the canvas
+                  changes can be updated
+                </Box>
+              </ProgressBar>
+            )}
+          </Stack.Item>
+        </Stack>
+      </Section>
+      <Section
+        width="688px"
+        height="694px"
+        align="center"
+        textAlign="center"
+        fitted
+      >
+        <CanvasLayer
+          selection={handleColorSelection(data.toolbarUpdatedSelection)}
+          actionQueueChange={data.actionQueueChange}
+          imageSrc={data.newCanvasFlatImage}
+          key={data.lastUpdateTime}
+          onImageExport={handleTacMapExport}
+          onUndo={(value: string) =>
+            act('selectColor', { color: findColorValue(value) })
+          }
+          onDraw={() => act('onDraw')}
+        />
+      </Section>
+    </>
   );
 };

@@ -11,7 +11,17 @@
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 	flags_atom = NO_NAME_OVERRIDE
 	unacidable = TRUE
-	allowed = list(/obj/item/weapon/gun/smartgun)
+	allowed = list(
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/device/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/mine,
+		/obj/item/attachable/bayonet,
+		/obj/item/weapon/gun/smartgun,
+		/obj/item/storage/backpack/general_belt,
+		/obj/item/device/motiondetector,
+		/obj/item/device/walkman,
+	)
 	var/list/smartgun_back = list(
 		/obj/item/storage/large_holster/machete/smartgunner,
 	)
@@ -77,9 +87,20 @@
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 	flags_atom = NO_NAME_OVERRIDE
 	unacidable = TRUE
-	allowed = list(/obj/item/weapon/gun/smartgun)
+	allowed = list(
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/device/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/mine,
+		/obj/item/attachable/bayonet,
+		/obj/item/weapon/gun/smartgun,
+		/obj/item/storage/backpack/general_belt,
+		/obj/item/device/motiondetector,
+		/obj/item/device/walkman,
+	)
 	var/list/smartgun_back = list(
-		/obj/item/storage/large_holster/machete/smartgunner
+		/obj/item/storage/large_holster/machete/smartgunner,
+		/obj/item/weapon/gun/smartgun,
 	)
 	valid_accessory_slots = list(
 		ACCESSORY_SLOT_MEDAL,
