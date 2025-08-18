@@ -62,6 +62,14 @@
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "dJ" = (
+/mob/living/simple_animal/hostile/retaliate/giant_lizard{
+	name = "Bosco";
+	melee_damage_lower = 0;
+	melee_damage_upper = 0;
+	slash_verb = "harmlessly gnaw";
+	slashes_verb = "harmlessly gnaws on";
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone."
+	},
 /turf/open/floor/almayer/blue/southwest,
 /area/golden_arrow/platoon_commander_rooms)
 "dM" = (

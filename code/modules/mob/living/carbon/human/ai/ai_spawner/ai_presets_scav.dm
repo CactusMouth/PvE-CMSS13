@@ -8,7 +8,7 @@
 
 /datum/human_ai_equipment_preset/scav/rifle
 	name = "Scav, Raider (Rifle)"
-	desc = "A regular scav that has basic armor and sometimes has a helmet. Uses a MAR-40, MAR-30, MAC-15, Uzi, MP5, or AR-10."
+	desc = "A regular scav that has basic armor and sometimes has a helmet. Uses a MAR-40, MAR-30, MAC-15, Uzi, or MP5."
 	path = /datum/equipment_preset/scav/rifle
 
 /datum/human_ai_equipment_preset/scav/shotgun
