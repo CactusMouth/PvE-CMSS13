@@ -126,6 +126,22 @@ proc/clearlist(list/list)
 
 				CHECK_TICK
 
+				for(var/obj/D in C.get_saveable_contents())
+					var/datum/map_object/MO_5 = get_object_data(D)
+					if(!MO_5) continue
+
+					MO_4.contents += MO_5
+
+					CHECK_TICK
+
+					for(var/obj/E in D.get_saveable_contents())
+						var/datum/map_object/MO_6 = get_object_data(E)
+						if(!MO_6) continue
+
+						MO_5.contents += MO_6
+
+						CHECK_TICK
+
 		CHECK_TICK
 
 	return MO
@@ -174,6 +190,30 @@ proc/clearlist(list/list)
 				C.forceMove(B)
 
 				CHECK_TICK
+
+				for(var/datum/map_object/ME in MG.contents)
+					if(!ispath(ME.savedtype))
+						error("Undefined save type [ME.savedtype]")
+						continue
+
+					var/obj/D = new ME.savedtype (loc)
+					CHECK_TICK
+					ME.unpack_object_data(D)
+					D.forceMove(C)
+
+					CHECK_TICK
+
+					for(var/datum/map_object/MZ in ME.contents)
+						if(!ispath(MZ.savedtype))
+							error("Undefined save type [MZ.savedtype]")
+							continue
+
+						var/obj/E = new MZ.savedtype (loc)
+						CHECK_TICK
+						MZ.unpack_object_data(E)
+						E.forceMove(D)
+
+						CHECK_TICK
 
 	return O
 
