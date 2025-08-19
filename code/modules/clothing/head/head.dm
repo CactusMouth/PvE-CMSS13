@@ -480,6 +480,9 @@
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
 
+/obj/item/clothing/head/sippyhat/duff
+	icon_state = "sippy_hat1"
+
 /obj/item/clothing/head/sippyhat/Initialize(mapload, ...)
 	. = ..()
 	pockets = new(src)
