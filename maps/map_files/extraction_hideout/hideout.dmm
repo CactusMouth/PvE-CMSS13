@@ -6,15 +6,22 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
-"ak" = (
-/obj/effect/decal/cleanable/blood/oil,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
+"at" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/alpha,
+/turf/open/floor/almayer/sterile_green_side/northeast,
+/area/golden_arrow/cryo_cells)
+"aS" = (
+/turf/open/floor/plating/almayer,
+/area/golden_arrow/briefing)
 "bE" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
-"cn" = (
-/obj/effect/decal/cleanable/dirt,
+"cg" = (
+/obj/structure/largecrate/random/barrel/medical{
+	pixel_x = 7;
+	pixel_y = 11
+	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "cD" = (
@@ -88,6 +95,10 @@
 /obj/structure/closet/crate/delta,
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
+"eu" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "ew" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = 16;
@@ -100,10 +111,9 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
 "eJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/trash/grenade/gas/marine,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
+/obj/effect/step_trigger/message/memorial,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "fg" = (
 /obj/structure/machinery/cm_vending/gear/extraction,
 /turf/open/floor/almayer/mono,
@@ -122,13 +132,6 @@
 "gf" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
-"gx" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	dir = 2;
-	name = "\improper Memorial"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/briefing)
 "gH" = (
 /obj/item/storage/fancy/cigar/matchbook/brown{
 	pixel_y = 9;
@@ -147,11 +150,6 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"hu" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/engineer/alpha,
-/turf/open/floor/almayer/sterile_green_side/southeast,
-/area/golden_arrow/cryo_cells)
 "hy" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -166,6 +164,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
+"hE" = (
+/obj/structure/prop/almayer/ship_memorial{
+	desc = "A surprisingly tasteful memorial to the men and women that Robert's Raiders have lost in their quest for wealth and dominance. You can add someone's dogtag to it to memorialize them forever.";
+	name = "slab of glory"
+	},
+/obj/structure/sign/banners/united_americas_flag{
+	pixel_y = 28
+	},
+/turf/open/floor/plating/almayer,
+/area/golden_arrow/briefing)
 "hF" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -200,6 +208,11 @@
 "iV" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/cryo_cells)
+"jj" = (
+/obj/effect/step_trigger/message/memorial,
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "jl" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
@@ -237,10 +250,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
-"jS" = (
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "ka" = (
 /obj/structure/closet/crate/alpha,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -253,6 +262,10 @@
 	},
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
+"kd" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "kk" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -268,6 +281,11 @@
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
 /turf/open/floor/grass,
 /area/golden_arrow/briefing)
+"kG" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/engineer/alpha,
+/turf/open/floor/almayer/sterile_green_side/southeast,
+/area/golden_arrow/cryo_cells)
 "kO" = (
 /obj/structure/closet/secure_closet/marine_personal/corpsman{
 	pixel_x = -7;
@@ -295,6 +313,31 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
+"lV" = (
+/obj/structure/largecrate/random/barrel/black{
+	pixel_x = -11;
+	pixel_y = 4
+	},
+/obj/structure/largecrate/random/mini{
+	pixel_x = 13
+	},
+/obj/structure/largecrate/random/mini/small_case/b{
+	pixel_x = 10;
+	pixel_y = 14
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
+"mc" = (
+/obj/structure/closet{
+	pixel_x = 8
+	},
+/obj/item/reagent_container/food/drinks/cans/soylent,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/obj/item/clothing/under/colonist/prison_boiler,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "mi" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -317,11 +360,6 @@
 "mt" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
-"mA" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/alpha,
-/turf/open/floor/almayer/sterile_green_side/northeast,
-/area/golden_arrow/cryo_cells)
 "mE" = (
 /obj/item/trash/wy_mre{
 	pixel_x = 13;
@@ -335,6 +373,27 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
+"mR" = (
+/mob/living/simple_animal/hostile/retaliate/giant_lizard{
+	name = "Bosco";
+	melee_damage_lower = 0;
+	melee_damage_upper = 0;
+	slash_verb = "harmlessly gnaw";
+	slashes_verb = "harmlessly gnaws on";
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone."
+	},
+/obj/structure/bed/bedroll{
+	name = "Bosco's bed";
+	desc = "It's covered in bite marks."
+	},
+/obj/item/toy/plush/moth{
+	pixel_x = -6;
+	pixel_y = 7;
+	desc = "A worn-out plush of a big moth. It's been gnawed on quite a bit, presumably by either the Platoon Commander or Bosco. You aren't sure which.";
+	name = "Bosco's favorite chew toy"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms)
 "mX" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/plating/plating_catwalk,
@@ -396,12 +455,25 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/platoon_commander_rooms)
 "ol" = (
-/obj/effect/step_trigger/message/memorial,
+/mob/living/simple_animal/corgi/Lisa{
+	desc = "It's a corgi with a cute pink bow. She was found on LV-624 by a squad led by Sergeant Rohtin. She's become fast friends with Kiki, the platoon's resident cat."
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
 "op" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoon_commander_rooms)
+"oW" = (
+/obj/effect/step_trigger/message/memorial,
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/item/clothing/head/headband/alpha{
+	pixel_x = 6;
+	pixel_y = 41;
+	desc = "This headband has seen better days. You feel guilty just looking at it.";
+	name = "worn-out headband"
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "pa" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/fancy/cigar/matchbook{
@@ -477,12 +549,12 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "qa" = (
-/obj/structure/largecrate/random/barrel/medical{
-	pixel_x = 7;
-	pixel_y = 11
+/mob/living/simple_animal/cat/blackcat{
+	name = "Buttons";
+	desc = "A cute black cat that the Raiders found on Hybrisa Prospera. Mortal enemies of Kiki, the original platoon cat."
 	},
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "qo" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/cryo_cells)
@@ -500,24 +572,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/shared_office)
-"qU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "qX" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
-"qY" = (
-/obj/effect/step_trigger/message/memorial,
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/briefing)
 "rf" = (
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/start/marine/alpha,
@@ -560,17 +618,6 @@
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/shared_office)
-"tq" = (
-/obj/structure/closet{
-	pixel_x = 8
-	},
-/obj/item/reagent_container/food/drinks/cans/soylent,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1
-	},
-/obj/item/clothing/under/colonist/prison_boiler,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "tA" = (
 /obj/item/prop/colony/usedbandage,
 /obj/item/prop/colony/usedbandage{
@@ -602,14 +649,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/shared_office)
-"uo" = (
-/obj/item/prop/scrap{
-	pixel_x = -7;
-	pixel_y = 18
-	},
-/obj/item/prop/scrap,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "uN" = (
 /obj/structure/mirror{
 	pixel_x = 26
@@ -635,18 +674,6 @@
 /obj/structure/sign/poster/propaganda,
 /turf/closed/wall/almayer,
 /area/golden_arrow/shared_office)
-"wY" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	pixel_y = 7;
-	buckling_y = 7
-	},
-/obj/structure/sign/banners/usa_worn{
-	pixel_x = -2;
-	pixel_y = 27
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "xv" = (
 /obj/structure/bed/chair/comfy,
 /turf/open/floor/almayer/mono,
@@ -729,6 +756,11 @@
 /obj/structure/window/framed/almayer,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/shared_office)
+"zd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "zo" = (
 /obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
@@ -750,27 +782,6 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"zI" = (
-/mob/living/simple_animal/hostile/retaliate/giant_lizard{
-	name = "Bosco";
-	melee_damage_lower = 0;
-	melee_damage_upper = 0;
-	slash_verb = "harmlessly gnaw";
-	slashes_verb = "harmlessly gnaws on";
-	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone."
-	},
-/obj/structure/bed/bedroll{
-	name = "Bosco's bed";
-	desc = "It's covered in bite marks."
-	},
-/obj/item/toy/plush/moth{
-	pixel_x = -6;
-	pixel_y = 7;
-	desc = "A worn-out plush of a big moth. It's been gnawed on quite a bit, presumably by either the Platoon Commander or Bosco. You aren't sure which.";
-	name = "Bosco's favorite chew toy"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/platoon_commander_rooms)
 "Ae" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
@@ -797,24 +808,12 @@
 	},
 /turf/open/floor/almayer/silverfull,
 /area/golden_arrow/cryo_cells)
-"Ax" = (
-/mob/living/simple_animal/cat{
-	name = "Kiki";
-	desc = "The platoon's pet cat. She was a stray found in Fiorina Station's prison district by Private Locus. Lieutenant Brown's taken a liking to her."
-	},
-/turf/open/floor/grass,
-/area/golden_arrow/briefing)
 "AK" = (
 /obj/structure/closet,
 /obj/item/explosive/grenade/flashbang/noskill,
 /obj/item/clothing/under/colonist/workwear/pink,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Bh" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/alpha,
-/turf/open/floor/almayer/sterile_green_side/east,
-/area/golden_arrow/cryo_cells)
 "Bn" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/engineering)
@@ -823,16 +822,6 @@
 	name = "\improper Briefing"
 	},
 /turf/open/floor/almayer,
-/area/golden_arrow/briefing)
-"Cf" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/bed/chair/comfy/delta{
-	name = "squad lead chair";
-	desc = "An old Delta-squad chair from some USCM stockpile. It's been repurposed as the throne for the SL."
-	},
-/turf/open/floor/almayer/bluefull,
 /area/golden_arrow/briefing)
 "Cg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -843,6 +832,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
+"Ct" = (
+/obj/item/trash/grenade/gas/marine,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "CC" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/reagent_container/food/snacks/popcorn{
@@ -888,19 +881,18 @@
 	},
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/cryo_cells)
-"Dd" = (
-/obj/structure/prop/almayer/ship_memorial{
-	desc = "A surprisingly tasteful memorial to the men and women that Robert's Raiders have lost in their quest for wealth and dominance. You can add someone's dogtag to it to memorialize them forever.";
-	name = "slab of glory"
-	},
-/obj/structure/sign/banners/united_americas_flag{
-	pixel_y = 28
-	},
-/turf/open/floor/plating/almayer,
-/area/golden_arrow/briefing)
 "Df" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/shared_office)
+"Dj" = (
+/obj/effect/step_trigger/message/memorial,
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "Dr" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/decal/cleanable/cobweb2/dynamic,
@@ -913,6 +905,10 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/cryo_cells)
+"DM" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "DN" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
@@ -989,6 +985,13 @@
 /obj/item/reagent_container/pill/happy,
 /turf/open/floor/almayer/silverfull,
 /area/golden_arrow/cryo_cells)
+"EM" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	dir = 2;
+	name = "\improper Memorial"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/briefing)
 "ET" = (
 /obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = -7
@@ -1005,10 +1008,6 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Fe" = (
-/obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/floor/grass,
-/area/golden_arrow/briefing)
 "Fr" = (
 /obj/structure/surface/table/almayer,
 /obj/item/mre_food_packet/wy/cookie_brick,
@@ -1052,7 +1051,7 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "GL" = (
-/turf/open/floor/plating/almayer,
+/turf/open/floor/grass,
 /area/golden_arrow/briefing)
 "Hz" = (
 /turf/closed/wall/almayer,
@@ -1061,9 +1060,12 @@
 /turf/open/floor/almayer/blue,
 /area/golden_arrow/platoon_commander_rooms)
 "HB" = (
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
+/mob/living/simple_animal/cat{
+	name = "Kiki";
+	desc = "The platoon's pet cat. She was a stray found in Fiorina Station's prison district by Private Locus. Lieutenant Brown's taken a liking to her."
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "HI" = (
 /obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = 8
@@ -1082,12 +1084,15 @@
 /obj/structure/machinery/computer/arcade,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
-"Ic" = (
-/mob/living/simple_animal/cat/blackcat{
-	name = "Buttons";
-	desc = "A cute black cat that the Raiders found on Hybrisa Prospera. Mortal enemies of Kiki, the original platoon cat."
+"Im" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/turf/open/floor/grass,
+/obj/structure/bed/chair/comfy/lime{
+	desc = "An old USCM Hospital Corpsman chair that's been repurposed for the Raider Corpsman. to sit in during brief.";
+	name = "corpsman chair"
+	},
+/turf/open/floor/almayer/sterile_green,
 /area/golden_arrow/briefing)
 "Iq" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1174,17 +1179,6 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/shared_office)
-"LE" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
-"LJ" = (
-/obj/item/trash/grenade/gas/marine,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "LO" = (
 /obj/structure/dartboard{
 	pixel_y = 41;
@@ -1283,12 +1277,6 @@
 /obj/effect/decal/cleanable/dirt/greenglow,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Nv" = (
-/mob/living/simple_animal/corgi/Lisa{
-	desc = "It's a corgi with a cute pink bow. She was found on LV-624 by a squad led by Sergeant Rohtin. She's become fast friends with Kiki, the platoon's resident cat."
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/briefing)
 "NK" = (
 /obj/structure/machinery/chem_dispenser/canteen,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1302,8 +1290,8 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "NM" = (
-/obj/item/prop/colony/used_flare,
-/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/grenade/gas/marine,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "NN" = (
@@ -1323,17 +1311,6 @@
 "Oz" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
-"OT" = (
-/obj/effect/step_trigger/message/memorial,
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/obj/item/clothing/head/headband/alpha{
-	pixel_x = 6;
-	pixel_y = 41;
-	desc = "This headband has seen better days. You feel guilty just looking at it.";
-	name = "worn-out headband"
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/briefing)
 "OY" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -1353,6 +1330,13 @@
 "Qi" = (
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
+"Ql" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "Qq" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/largecrate/random/mini/ammo{
@@ -1361,29 +1345,10 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Qz" = (
-/obj/structure/largecrate/random/barrel/black{
-	pixel_x = -11;
-	pixel_y = 4
-	},
-/obj/structure/largecrate/random/mini{
-	pixel_x = 13
-	},
-/obj/structure/largecrate/random/mini/small_case/b{
-	pixel_x = 10;
-	pixel_y = 14
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "QF" = (
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
-"Rr" = (
-/obj/effect/step_trigger/message/memorial,
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/briefing)
 "Rv" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
@@ -1397,6 +1362,11 @@
 	dir = 8;
 	req_one_access = null
 	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
+"RV" = (
+/obj/item/prop/colony/used_flare,
+/obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "SC" = (
@@ -1421,18 +1391,6 @@
 "Td" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/platoon_commander_rooms)
-"Tn" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/item/device/flashlight/lantern{
-	pixel_x = 6;
-	pixel_y = 7
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "Ts" = (
 /obj/structure/sign/banners/upp_worn{
 	pixel_y = 30
@@ -1478,13 +1436,30 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
+"UD" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "UF" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/engineering)
+"UN" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/alpha,
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/golden_arrow/cryo_cells)
 "UR" = (
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
+"US" = (
+/obj/item/prop/scrap{
+	pixel_x = -7;
+	pixel_y = 18
+	},
+/obj/item/prop/scrap,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "UT" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/shared_office)
@@ -1532,6 +1507,20 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"Ye" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/turf/open/floor/grass,
+/area/golden_arrow/briefing)
+"Yh" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/bed/chair/comfy/delta{
+	name = "squad lead chair";
+	desc = "An old Delta-squad chair from some USCM stockpile. It's been repurposed as the throne for the SL."
+	},
+/turf/open/floor/almayer/bluefull,
+/area/golden_arrow/briefing)
 "Yj" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
 	name = "Bathroom";
@@ -1539,16 +1528,18 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
-"YK" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
+"YR" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_y = 7;
+	buckling_y = 7
 	},
-/obj/structure/bed/chair/comfy/lime{
-	desc = "An old USCM Hospital Corpsman chair that's been repurposed for the Raider Corpsman. to sit in during brief.";
-	name = "corpsman chair"
+/obj/structure/sign/banners/usa_worn{
+	pixel_x = -2;
+	pixel_y = 27
 	},
-/turf/open/floor/almayer/sterile_green,
-/area/golden_arrow/briefing)
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "ZG" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 8
@@ -1566,6 +1557,18 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"ZQ" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/device/flashlight/lantern{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 
 (1,1,1) = {"
 Jb
@@ -1651,7 +1654,7 @@ Jb
 Jb
 UF
 Nn
-cn
+UD
 mE
 VB
 Bn
@@ -1710,16 +1713,16 @@ zB
 Qi
 DR
 zB
-cn
+UD
 do
 bE
-hu
+kG
 RA
 LU
-mA
+at
 Vf
-Bh
-Bh
+UN
+UN
 vF
 qo
 "}
@@ -1760,7 +1763,7 @@ px
 px
 UF
 Ts
-ak
+kd
 tV
 Dr
 Qq
@@ -1867,7 +1870,7 @@ RD
 Bn
 Bn
 AK
-qU
+zd
 bE
 iV
 FJ
@@ -1916,9 +1919,9 @@ ia
 Qi
 zB
 Mo
-cn
-eJ
-cn
+UD
+NM
+UD
 Qi
 Ds
 Da
@@ -1964,7 +1967,7 @@ Jb
 UF
 ud
 ia
-cn
+UD
 kn
 UF
 RD
@@ -2065,13 +2068,13 @@ Jb
 Jb
 Jb
 UF
-jS
+eu
 Qi
-HB
+DM
 Qi
 Qi
-cn
-cn
+UD
+UD
 bE
 Mv
 nI
@@ -2175,7 +2178,7 @@ ka
 xO
 xP
 UT
-LE
+Ql
 bE
 pe
 uN
@@ -2273,7 +2276,7 @@ Jb
 Jb
 Jb
 UF
-LE
+Ql
 UT
 un
 jI
@@ -2325,7 +2328,7 @@ Jb
 Jb
 Jb
 UF
-cn
+UD
 UT
 zc
 SE
@@ -2481,7 +2484,7 @@ Jb
 Jb
 Jb
 UF
-cn
+UD
 UT
 tn
 Df
@@ -2533,7 +2536,7 @@ Jb
 Jb
 Jb
 UF
-LE
+Ql
 UT
 zc
 El
@@ -2591,7 +2594,7 @@ rl
 mG
 Gf
 UT
-HB
+DM
 Hz
 lk
 ZG
@@ -2699,15 +2702,15 @@ ud
 Td
 Kz
 op
-zI
+mR
 DY
-DN
+NN
 DN
 Iq
 DN
 DN
 dM
-Nv
+dM
 EC
 CE
 "}
@@ -2741,7 +2744,7 @@ Jb
 Jb
 Jb
 UF
-LJ
+Ct
 UT
 UT
 UT
@@ -2794,9 +2797,9 @@ Jb
 Jb
 UF
 Qi
-cn
+UD
 if
-HB
+DM
 tA
 Qi
 Qi
@@ -2859,7 +2862,7 @@ HA
 Vo
 po
 DN
-DN
+HB
 DN
 DN
 dM
@@ -2902,7 +2905,7 @@ Jb
 Jb
 Jb
 UF
-Tn
+ZQ
 Qi
 Td
 Td
@@ -2911,7 +2914,7 @@ Td
 Vo
 DN
 DN
-Cf
+Yh
 DN
 DN
 UZ
@@ -2954,16 +2957,16 @@ Jb
 Jb
 Jb
 UF
-wY
+YR
 Qi
 CE
-ol
+eJ
 LR
 kF
 DY
-NN
 DN
 DN
+ol
 DN
 DN
 FT
@@ -3006,16 +3009,16 @@ Jb
 Jb
 Jb
 UF
-NM
+RV
 Qi
 CE
-Dd
-Rr
-Ax
+hE
+jj
+GL
 DY
 DN
 DN
-YK
+Im
 DN
 DN
 eE
@@ -3058,16 +3061,16 @@ Jb
 Jb
 Jb
 UF
-ak
-uo
+kd
+US
 CE
+aS
+oW
 GL
-OT
-Ic
-gx
+EM
 DN
 DN
-DN
+qa
 DN
 DN
 dM
@@ -3110,12 +3113,12 @@ Jb
 Jb
 Jb
 UF
-qa
-eJ
+cg
+NM
 CE
-ol
-qY
-Fe
+eJ
+Dj
+Ye
 DY
 DN
 OY
@@ -3162,7 +3165,7 @@ Jb
 Jb
 Jb
 UF
-Qz
+lV
 Qi
 CE
 CE
@@ -3214,12 +3217,12 @@ Jb
 Jb
 Jb
 UF
-tq
+mc
 Qi
-cn
-cn
-cn
-HB
+UD
+UD
+UD
+DM
 qC
 DN
 Xj
