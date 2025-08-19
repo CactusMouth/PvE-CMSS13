@@ -1925,6 +1925,12 @@
 		"I'm hungry!",
 		"Okay, okay, I will fight!",
 		"Can I have your shoes?",
+		"DIE, YOU UGLY SON OF A BITCH! DIE!",
+		"It'll be over soon, smeghead! Hold still!",
+		"I'm gonna kill you!",
+		"I'm gonna scrunch you!",
+		"I'm gonna tickle you!",
+		"You're gonna meet God, bitch!",
 	)
 	exit_combat_lines = list(
 		"Did I win?",
