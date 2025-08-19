@@ -1922,6 +1922,9 @@
 		"YOU'RE A THIEVING RAT, AND BY GOD, YOU'LL DIE LIKE ONE!",
 		"*warcry",
 		"*scream",
+		"I'm hungry!",
+		"Okay, okay, I will fight!",
+		"Can I have your shoes?",
 	)
 	exit_combat_lines = list(
 		"Did I win?",
@@ -1932,6 +1935,8 @@
 		"Man, I'm hungry! He got any food?",
 		"Job's done.",
 		"Now, where was I..?",
+		"I do what I am told.",
+		"Why can we not live in peace?",
 	)
 	squad_member_death_lines = list(
 		"OH, SHIT!",
@@ -1949,6 +1954,7 @@
 		"Uh-oh.",
 		"THIS IS BAD!",
 		"SHIT! SHIT! SHIT!",
+		"OW!",
 	)
 	reload_lines = list(
 		"Swappin' mags, baby! Cover me!",
