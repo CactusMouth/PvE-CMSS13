@@ -456,7 +456,7 @@
 //'cause i don't feel like sorting it properly
 
 /obj/item/clothing/head/sippyhat
-	name = "M10-S pattern sippy helmet"
+	name = "M10-S pattern drinking helmet"
 	desc = "Standard issue high molecular density polymer sippy helmet. Resistant to glancing hits from small arms and shrapnel, incorporates tactical camera, IFF signal transponder, and heads up display eyepiece. Also features white/black hot IR viewing modes from the camera system. More importantly, though, it looks like someone's strapped a pair of beer funnels to either side of the helmet and hooked them together with a bit of plastic tubing; you could use this for hands-free driving while intoxicated."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "sippy_hat"
@@ -479,6 +479,11 @@
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
+
+/obj/item/clothing/head/sippyhat/duff
+	name = "M10-SD pattern drinking helmet"
+	desc = "Standard issue high molecular density polymer sippy helmet. Resistant to glancing hits from small arms and shrapnel, incorporates tactical camera, IFF signal transponder, and heads up display eyepiece. Also features white/black hot IR viewing modes from the camera system. More importantly, though, it looks like someone's strapped a pair of beer funnels to either side of the helmet and hooked them together with a bit of plastic tubing. You can't get enough of that wonderful Duff!"
+	icon_state = "sippy_hat1"
 
 /obj/item/clothing/head/sippyhat/Initialize(mapload, ...)
 	. = ..()
