@@ -380,7 +380,10 @@
 	melee_damage_upper = 0;
 	slash_verb = "harmlessly gnaw";
 	slashes_verb = "harmlessly gnaws on";
-	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone."
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone.";
+	faction = "USCM";
+	real_name = "Bosco";
+	faction_group = list("USCM")
 	},
 /obj/structure/bed/bedroll{
 	name = "Bosco's bed";
