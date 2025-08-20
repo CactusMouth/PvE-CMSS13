@@ -11,20 +11,10 @@
 /obj/effect/landmark/start/marine/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/golden_arrow/cryo_cells)
-"aL" = (
-/obj/structure/sign/banners/maximumeffort{
-	pixel_y = 25;
-	desc = "A large banner strung up on the wall intended to give the marines a boost in confidence."
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
 "aS" = (
 /turf/open/floor/plating/almayer,
 /area/golden_arrow/briefing)
-"bE" = (
-/turf/closed/wall/almayer,
-/area/golden_arrow/cryo_cells)
-"bJ" = (
+"aV" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
 	light_power = 0.7
@@ -37,6 +27,22 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
+"bE" = (
+/turf/closed/wall/almayer,
+/area/golden_arrow/cryo_cells)
+"bH" = (
+/obj/structure/machinery/door_control{
+	pixel_x = -22;
+	pixel_y = 11;
+	name = "door lock";
+	id = "s1"
+	},
+/obj/item/toy/plush/otter{
+	pixel_x = 4;
+	pixel_y = -8
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "cg" = (
 /obj/structure/largecrate/random/barrel/medical{
 	pixel_x = 7;
@@ -44,11 +50,6 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"cw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "cD" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/shared_office)
@@ -123,6 +124,34 @@
 /obj/structure/closet/crate/delta,
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
+"ec" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/door_control{
+	pixel_y = -19;
+	pixel_x = -7;
+	name = "door lock";
+	id = "s3"
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"ef" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper S-02 [VACANT]"
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s2";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
+"eq" = (
+/obj/structure/sign/banners/maximumeffort{
+	pixel_y = 25;
+	desc = "A large banner strung up on the wall intended to give the marines a boost in confidence."
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "eu" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
@@ -142,17 +171,17 @@
 /obj/effect/step_trigger/message/memorial,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
-"eM" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "fg" = (
 /obj/structure/machinery/cm_vending/gear/extraction,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
+"ft" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/turf/open/floor/plating,
+/area/golden_arrow/shared_office)
 "fy" = (
 /obj/structure/surface/table/almayer,
 /obj/item/toy/deck/uno{
@@ -167,32 +196,36 @@
 "gf" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
-"gx" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/turf/open/floor/plating,
-/area/golden_arrow/shared_office)
 "gH" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"gS" = (
+/obj/structure/machinery/prop/almayer/CICmap{
+	pixel_y = 5;
+	pixel_x = -1;
+	layer = 4
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"hc" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper S-03 [VACANT]";
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s3"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
 "he" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"hr" = (
-/obj/structure/machinery/door_control{
-	pixel_x = -22;
-	pixel_y = 11;
-	name = "door lock";
-	id = "s1"
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "hy" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -207,15 +240,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
-"hC" = (
-/obj/structure/mirror{
-	pixel_y = 33
-	},
-/obj/structure/sink{
-	pixel_y = 19
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "hE" = (
 /obj/structure/prop/almayer/ship_memorial{
 	desc = "A surprisingly tasteful memorial to the men and women that Robert's Raiders have lost in their quest for wealth and dominance. You can add someone's dogtag to it to memorialize them forever.";
@@ -243,6 +267,15 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
+"iz" = (
+/obj/structure/machinery/door_control{
+	pixel_x = -22;
+	pixel_y = 11;
+	name = "door lock";
+	id = "s2"
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "iJ" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 4
@@ -257,6 +290,12 @@
 "iS" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"iT" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper Residences"
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/lower_cargo)
 "iV" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/cryo_cells)
@@ -302,6 +341,30 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
+"jO" = (
+/obj/structure/machinery/shower{
+	pixel_y = 17
+	},
+/obj/structure/curtain/open/shower,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"jQ" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper M-01 [VACANT]";
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m1"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
+"jS" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.3
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "ka" = (
 /obj/structure/closet/crate/alpha,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -314,6 +377,14 @@
 	},
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
+"kb" = (
+/obj/structure/stairs/perspective,
+/obj/effect/step_trigger/teleporter_vector{
+	vector_x = -30;
+	vector_y = -27
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "kd" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
@@ -345,6 +416,12 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"kW" = (
+/obj/structure/sign/poster/wylogo{
+	pixel_y = -26
+	},
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/lower_cargo)
 "lk" = (
 /obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
@@ -355,12 +432,8 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
-"lM" = (
-/obj/effect/step_trigger/teleporter_vector{
-	vector_x = -30;
-	vector_y = -27
-	},
-/obj/structure/stairs/perspective,
+"ln" = (
+/obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "lQ" = (
@@ -418,16 +491,9 @@
 /turf/open/floor/almayer/sterile_green,
 /area/golden_arrow/cryo_cells)
 "mt" = (
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/lower_cargo)
-"mA" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
+	dir = 1;
 	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/toilet{
-	pixel_y = 13
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
@@ -462,14 +528,6 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
-"na" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/obj/structure/flora/pottedplant/random,
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/shared_office)
 "nv" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -500,6 +558,9 @@
 "nI" = (
 /turf/open/floor/almayer/silverfull,
 /area/golden_arrow/cryo_cells)
+"nO" = (
+/turf/closed/wall/almayer,
+/area/golden_arrow/lower_cargo)
 "od" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
@@ -630,6 +691,13 @@
 "qo" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/cryo_cells)
+"qw" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	dir = 2;
+	name = "\improper Residences"
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/lower_cargo)
 "qC" = (
 /obj/structure/machinery/door/airlock/maintenance/colony{
 	dir = 2;
@@ -663,17 +731,6 @@
 	},
 /turf/open/floor/almayer/cargo,
 /area/golden_arrow/shared_office)
-"rO" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper M-02 [VACANT]";
-	dir = 2
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m2"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
 "rZ" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -682,19 +739,6 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"sb" = (
-/obj/structure/sign/prop1{
-	pixel_y = 32
-	},
-/obj/structure/stairs{
-	dir = 1
-	},
-/obj/effect/step_trigger/teleporter_vector{
-	vector_x = 30;
-	vector_y = 25
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/shared_office)
 "sf" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
@@ -706,15 +750,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"sG" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.3
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/lower_cargo)
-"sN" = (
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "tn" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/plate,
@@ -750,20 +785,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/shared_office)
-"uo" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/effect/step_trigger/teleporter_vector{
-	vector_x = 30;
-	vector_y = 25
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/shared_office)
 "uN" = (
 /obj/structure/mirror{
 	pixel_x = 26
@@ -774,26 +795,6 @@
 	},
 /turf/open/floor/almayer/silverfull,
 /area/golden_arrow/cryo_cells)
-"uR" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-02 [VACANT]"
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s2";
-	dir = 4
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
-"uT" = (
-/obj/structure/machinery/prop/almayer/CICmap{
-	pixel_y = 5;
-	pixel_x = -1;
-	layer = 4
-	},
-/obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "vg" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -802,59 +803,48 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
-"vq" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper Residences"
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/lower_cargo)
 "vF" = (
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/start/marine/leader/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/golden_arrow/cryo_cells)
-"vM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1
+"vL" = (
+/obj/effect/step_trigger/teleporter_vector{
+	vector_x = -30;
+	vector_y = -27
 	},
-/turf/open/floor/plating,
-/area/golden_arrow/engineering)
-"vQ" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.3
-	},
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/stairs/perspective,
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "wb" = (
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
-"wy" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
+/obj/structure/sign/prop1{
+	pixel_y = 32
 	},
-/obj/structure/flora/pottedplant/random,
-/turf/open/floor/almayer/plate,
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/step_trigger/teleporter_vector{
+	vector_x = 30;
+	vector_y = 25
+	},
+/turf/open/floor/plating,
 /area/golden_arrow/shared_office)
 "wF" = (
 /obj/structure/sign/poster/propaganda,
 /turf/closed/wall/almayer,
 /area/golden_arrow/shared_office)
-"xv" = (
-/obj/structure/bed/chair,
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/dorms)
-"xz" = (
+"xq" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
+"xv" = (
+/obj/structure/bed/chair,
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/dorms)
 "xE" = (
 /obj/structure/toilet{
 	dir = 1
@@ -907,29 +897,29 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
+"yd" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper S-04 [VACANT]";
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s4"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
 "ym" = (
 /obj/structure/sign/nosmoking_2{
 	pixel_x = 32
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
-"yy" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-01 [J. ROHTIN]"
+"yr" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s1";
-	dir = 4
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
-"yB" = (
-/obj/structure/machinery/shower{
-	pixel_y = 17
-	},
-/obj/structure/curtain/open/shower,
-/turf/open/floor/plating,
+/obj/structure/flora/pottedplant/random,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/lower_cargo)
 "yC" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -956,18 +946,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"ze" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/human/farwa{
-	real_name = "Mud";
-	name = "Mud"
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "zo" = (
 /obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
@@ -989,21 +967,24 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
+"zX" = (
+/obj/structure/mirror{
+	pixel_y = 33
+	},
+/obj/structure/sink{
+	pixel_y = 19
+	},
+/obj/item/prop/magazine/book/starshiptroopers{
+	pixel_x = -7;
+	pixel_y = -7
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "Ae" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
 "Ai" = (
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/lower_cargo)
-"An" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_control{
-	pixel_y = -19;
-	pixel_x = -7;
-	name = "door lock";
-	id = "s4"
-	},
-/turf/open/floor/plating,
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/lower_cargo)
 "Ap" = (
 /obj/structure/machinery/shower{
@@ -1029,6 +1010,9 @@
 "Bn" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/engineering)
+"Bo" = (
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/lower_cargo)
 "BC" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper Briefing"
@@ -1119,6 +1103,17 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/cryo_cells)
+"DL" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper M-02 [VACANT]";
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
 "DM" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -1161,6 +1156,10 @@
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
+"Eg" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "El" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/door/window/westleft,
@@ -1199,6 +1198,17 @@
 /obj/item/reagent_container/pill/happy,
 /turf/open/floor/almayer/silverfull,
 /area/golden_arrow/cryo_cells)
+"EL" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper S-01 [J. ROHTIN]"
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s1";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
 "EM" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	dir = 2;
@@ -1222,19 +1232,6 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Fl" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/structure/machinery/door_control{
-	pixel_x = 8;
-	pixel_y = 22;
-	name = "door lock";
-	id = "m2"
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "Fr" = (
 /obj/structure/surface/table/almayer,
 /obj/item/mre_food_packet/wy/cookie_brick,
@@ -1280,12 +1277,30 @@
 "GL" = (
 /turf/open/floor/grass,
 /area/golden_arrow/briefing)
-"GT" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	dir = 2;
-	name = "\improper Residences"
+"GN" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
 	},
-/turf/open/floor/almayer/plate,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/toilet{
+	pixel_y = 13
+	},
+/obj/item/device/flashlight/lantern{
+	pixel_x = -10;
+	pixel_y = 12
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"Hy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/door_control{
+	pixel_y = -19;
+	pixel_x = -7;
+	name = "door lock";
+	id = "s4"
+	},
+/turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Hz" = (
 /turf/closed/wall/almayer,
@@ -1318,6 +1333,11 @@
 /obj/structure/machinery/computer/arcade,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
+"HV" = (
+/obj/structure/stairs/perspective,
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "Im" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -1335,28 +1355,28 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"IQ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/flora/pottedplant/random,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/shared_office)
 "Jb" = (
 /turf/open/space/basic,
 /area/space)
 "Jh" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
-"Ju" = (
-/obj/structure/surface/table/almayer,
-/obj/item/ashtray/plastic{
-	pixel_x = 7;
-	pixel_y = 8
-	},
-/obj/item/storage/fancy/cigarettes/balaji_4{
-	pixel_x = -1;
-	pixel_y = -1
-	},
-/obj/item/storage/fancy/cigar/matchbook/brown{
-	pixel_y = 5;
-	pixel_x = -9
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/briefing)
+"Ji" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/lower_cargo)
+"JD" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/stairs/perspective,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "JF" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
 /turf/open/floor/plating/plating_catwalk,
@@ -1453,14 +1473,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
-"LT" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "LU" = (
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/start/bridge,
@@ -1522,13 +1534,20 @@
 /obj/item/clothing/shoes/marine,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
-"Na" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
+"Nk" = (
+/obj/structure/stairs{
 	dir = 1
 	},
-/obj/structure/flora/pottedplant/random,
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/lower_cargo)
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/effect/step_trigger/teleporter_vector{
+	vector_x = 30;
+	vector_y = 25
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/shared_office)
 "Nn" = (
 /obj/structure/machinery/vending/sovietsoda{
 	desc = "An old sweet water vending machine. It isn't really clear who's been stocking it, considering how deep in maintenance it is.";
@@ -1576,9 +1595,6 @@
 "Oz" = (
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
-"OR" = (
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
 "OY" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -1586,10 +1602,23 @@
 /obj/structure/bed/chair,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
+"Pq" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "Pu" = (
 /obj/structure/sign/poster/wylogo,
 /turf/closed/wall/almayer,
 /area/golden_arrow/dorms)
+"PS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "Qb" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/recharger,
@@ -1613,15 +1642,21 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"QD" = (
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/lower_cargo)
 "QF" = (
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/dorms)
-"Rj" = (
-/turf/closed/wall/almayer,
+"Rn" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/carbon/human/farwa{
+	real_name = "Mud";
+	name = "Mud"
+	},
+/turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Rv" = (
 /turf/open/floor/almayer/mono,
@@ -1643,27 +1678,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"RW" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
-"Se" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.3
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
-"Sm" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-04 [VACANT]";
-	dir = 2
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s4"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
 "SC" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/fancy/cigarettes/lucky_strikes_4{
@@ -1683,18 +1697,33 @@
 /obj/item/tool/pen/clicky,
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
+"SF" = (
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"SN" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.3
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"ST" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
+"Ta" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.3
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/lower_cargo)
 "Td" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/platoon_commander_rooms)
-"Tp" = (
-/obj/structure/machinery/door_control{
-	pixel_x = -22;
-	pixel_y = 11;
-	name = "door lock";
-	id = "s2"
-	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "Ts" = (
 /obj/structure/sign/banners/upp_worn{
 	pixel_y = 30
@@ -1712,15 +1741,17 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "TV" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper M-01 [VACANT]";
-	dir = 2
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m1"
+/obj/structure/machinery/door_control{
+	pixel_x = 8;
+	pixel_y = 22;
+	name = "door lock";
+	id = "m2"
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Um" = (
 /obj/structure/flora/pottedplant/random,
@@ -1740,12 +1771,7 @@
 /turf/open/floor/almayer/sterile_green,
 /area/golden_arrow/cryo_cells)
 "Ut" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/lower_cargo)
 "Uu" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/comdoor{
@@ -1808,37 +1834,27 @@
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
 "Wl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_control{
-	pixel_y = -19;
-	pixel_x = -7;
-	name = "door lock";
-	id = "s3"
+/obj/structure/surface/table/almayer,
+/obj/item/ashtray/plastic{
+	pixel_x = 7;
+	pixel_y = 8
 	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
+/obj/item/storage/fancy/cigarettes/balaji_4{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/item/storage/fancy/cigar/matchbook/brown{
+	pixel_y = 5;
+	pixel_x = -9
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "WE" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/dorms)
-"Xe" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-03 [VACANT]";
-	dir = 2
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s3"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/lower_cargo)
-"Xi" = (
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/obj/structure/stairs/perspective,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
 "Xj" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -1846,12 +1862,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
-"Xs" = (
-/obj/structure/sign/poster/wylogo{
-	pixel_y = -26
-	},
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/lower_cargo)
 "Ye" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -1873,6 +1883,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"Yo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/engineering)
 "YR" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -1885,19 +1902,14 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
-"Zl" = (
-/obj/structure/stairs/perspective,
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
-"Zp" = (
-/obj/structure/stairs/perspective,
-/obj/effect/step_trigger/teleporter_vector{
-	vector_x = -30;
-	vector_y = -27
+"ZC" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
 	},
-/turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
+/obj/structure/flora/pottedplant/random,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/shared_office)
 "ZG" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 8
@@ -2630,7 +2642,7 @@ Jb
 Jb
 Jb
 UF
-vM
+Yo
 UD
 UD
 UD
@@ -2734,16 +2746,16 @@ Jb
 Jb
 Jb
 UF
-aL
+eq
 UT
-uo
-gx
+Nk
+ft
 Df
 qH
 Vk
 Df
 Df
-na
+IQ
 Df
 sf
 lk
@@ -2788,8 +2800,8 @@ Jb
 UF
 Qi
 UT
-sb
-gx
+wb
+ft
 cD
 cD
 cD
@@ -2840,14 +2852,14 @@ Jb
 UF
 UD
 UT
-uo
-gx
+Nk
+ft
 Df
 kk
 tn
 Df
 Df
-wy
+ZC
 Df
 sf
 lk
@@ -3324,7 +3336,7 @@ kF
 DY
 DN
 ol
-Ju
+Wl
 DN
 DN
 FT
@@ -3749,21 +3761,21 @@ Jb
 Jb
 "}
 (36,1,1) = {"
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
 Jb
 Jb
 Jb
@@ -3801,21 +3813,21 @@ Jb
 Jb
 "}
 (37,1,1) = {"
+Ai
 mt
-eM
-sN
-sN
-Rj
-QD
-Rj
-Fl
-sN
-sN
-RW
-wb
-sN
-Se
-mt
+SF
+SF
+nO
+Ut
+nO
+TV
+SF
+SF
+Eg
+ln
+SF
+jS
+Ai
 Jb
 Jb
 Jb
@@ -3853,21 +3865,21 @@ Jb
 Jb
 "}
 (38,1,1) = {"
-mt
-sN
-RW
-sN
-Sm
 Ai
-rO
-sN
-RW
-RW
-RW
-sN
-RW
-RW
-mt
+SF
+Eg
+SF
+yd
+Bo
+DL
+SF
+Eg
+Eg
+Eg
+SF
+Eg
+Eg
+Ai
 Jb
 Jb
 Jb
@@ -3905,21 +3917,21 @@ Jb
 Jb
 "}
 (39,1,1) = {"
+Ai
 mt
-eM
-RW
-An
-Rj
-QD
-Rj
-LT
-sN
-sN
-RW
-RW
-sN
-vQ
-mt
+Eg
+Hy
+nO
+Ut
+nO
+ST
+SF
+SF
+Eg
+Eg
+SF
+SN
+Ai
 Jb
 Jb
 Jb
@@ -3957,21 +3969,21 @@ Jb
 Jb
 "}
 (40,1,1) = {"
-mt
-Rj
-Rj
-Rj
-Rj
 Ai
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-mt
+nO
+nO
+nO
+nO
+Bo
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+Ai
 Jb
 Jb
 Jb
@@ -4009,21 +4021,21 @@ Jb
 Jb
 "}
 (41,1,1) = {"
+Ai
 mt
-eM
-RW
-sN
-Rj
-QD
-Rj
-bJ
-RW
-sN
-RW
-sN
-sN
-Se
-mt
+Eg
+SF
+nO
+Ut
+nO
+aV
+Eg
+SF
+Eg
+SF
+SF
+jS
+Ai
 Jb
 Jb
 Jb
@@ -4061,21 +4073,21 @@ Jb
 Jb
 "}
 (42,1,1) = {"
-mt
-RW
-RW
-sN
-Xe
 Ai
-TV
-sN
-cw
-sN
-RW
-RW
-RW
-sN
-mt
+Eg
+Eg
+SF
+hc
+Bo
+jQ
+SF
+PS
+SF
+Eg
+Eg
+Eg
+SF
+Ai
 Jb
 Jb
 Jb
@@ -4113,21 +4125,21 @@ Jb
 Jb
 "}
 (43,1,1) = {"
+Ai
 mt
-eM
-wb
-Wl
-Rj
-QD
-Rj
-LT
-RW
-RW
-RW
-RW
-RW
-Se
-mt
+ln
+ec
+nO
+Ut
+nO
+ST
+Eg
+Eg
+Eg
+Eg
+Eg
+jS
+Ai
 Jb
 Jb
 Jb
@@ -4165,21 +4177,21 @@ Jb
 Jb
 "}
 (44,1,1) = {"
-mt
-Rj
-Rj
-Rj
-Rj
-vq
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-Rj
-mt
+Ai
+nO
+nO
+nO
+nO
+iT
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+Ai
 Jb
 Jb
 Jb
@@ -4217,21 +4229,21 @@ Jb
 Jb
 "}
 (45,1,1) = {"
-mt
-Rj
-Rj
-Na
 Ai
-QD
-GT
-QD
+nO
+nO
+yr
+Bo
+Ut
+qw
+Ut
+Bo
+Ut
+Bo
+Ut
+Bo
+Ut
 Ai
-QD
-Ai
-QD
-Ai
-QD
-mt
 Jb
 Jb
 Jb
@@ -4269,21 +4281,21 @@ Jb
 Jb
 "}
 (46,1,1) = {"
-mt
-lM
-Xi
 Ai
-OR
-sG
-Rj
-Rj
-yy
-Rj
-Rj
-Rj
-uR
-Rj
-mt
+vL
+JD
+Bo
+Ji
+Ta
+nO
+nO
+EL
+nO
+nO
+nO
+ef
+nO
+Ai
 Jb
 Jb
 Jb
@@ -4321,21 +4333,21 @@ Jb
 Jb
 "}
 (47,1,1) = {"
-mt
-Zp
-Zl
 Ai
-OR
+kb
+HV
+Bo
+Ji
+Bo
+nO
+zX
+Eg
+bH
+nO
+SF
+SF
+iz
 Ai
-Rj
-hC
-RW
-hr
-Rj
-sN
-sN
-Tp
-mt
 Jb
 Jb
 Jb
@@ -4373,21 +4385,21 @@ Jb
 Jb
 "}
 (48,1,1) = {"
-mt
-Zp
-Zl
 Ai
-OR
-sG
-Rj
-yB
-RW
-uT
-Rj
-RW
-RW
-sN
-mt
+kb
+HV
+Bo
+Ji
+Ta
+nO
+jO
+Eg
+gS
+nO
+Eg
+Eg
+SF
+Ai
 Jb
 Jb
 Jb
@@ -4425,21 +4437,21 @@ Jb
 Jb
 "}
 (49,1,1) = {"
-mt
-Rj
-Rj
-Na
 Ai
-Xs
-Rj
-mA
-sN
-ze
-Rj
-Ut
-RW
-xz
-mt
+nO
+nO
+yr
+Bo
+kW
+nO
+GN
+SF
+Rn
+nO
+xq
+Eg
+Pq
+Ai
 Jb
 Jb
 Jb
@@ -4477,21 +4489,21 @@ Jb
 Jb
 "}
 (50,1,1) = {"
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
-mt
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
+Ai
 Jb
 Jb
 Jb
