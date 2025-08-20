@@ -374,17 +374,6 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
 "mR" = (
-/mob/living/simple_animal/hostile/retaliate/giant_lizard{
-	name = "Bosco";
-	melee_damage_lower = 0;
-	melee_damage_upper = 0;
-	slash_verb = "harmlessly gnaw";
-	slashes_verb = "harmlessly gnaws on";
-	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone.";
-	faction = "USCM";
-	real_name = "Bosco";
-	faction_group = list("USCM")
-	},
 /obj/structure/bed/bedroll{
 	name = "Bosco's bed";
 	desc = "It's covered in bite marks."
@@ -395,6 +384,7 @@
 	desc = "A worn-out plush of a big moth. It's been gnawed on quite a bit, presumably by either the Platoon Commander or Bosco. You aren't sure which.";
 	name = "Bosco's favorite chew toy"
 	},
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoon_commander_rooms)
 "mX" = (
