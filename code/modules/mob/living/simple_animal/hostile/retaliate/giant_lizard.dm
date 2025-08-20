@@ -736,7 +736,29 @@
 
 	return ..()
 
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco
+	name = "Bosco"
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone outside of knocking them down."
+	icon_state = "Bosco Running"
+	icon_living = "Bosco Running"
+	maxHealth = 700
+	health = 700
 
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/Initialize()
+	. = ..()
+	change_real_name(src, "[name]")
+
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/update_transform(instant_update = FALSE)
+	if(stat == DEAD)
+		icon_state = icon_dead
+	else if(body_position == LYING_DOWN)
+		if(!HAS_TRAIT(src, TRAIT_INCAPACITATED) && !HAS_TRAIT(src, TRAIT_FLOORED))
+			icon_state = "Bosco Sleeping"
+		else
+			icon_state = "Giant Lizard Knocked Down"
+	else
+		icon_state = icon_living
+	return ..()
 ///CLIENT EMOTES
 ////////////////
 
