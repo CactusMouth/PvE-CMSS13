@@ -1028,13 +1028,19 @@
 
 /obj/item/storage/box/stash
 	name = "ColMarTech Auxiliary Stash"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It can't be opened while you're in a mission area."
 	icon = 'icons/obj/items/storage/kits.dmi'
 	icon_state = "kit_case_old"
 	foldable = FALSE
 	storage_slots = 50
 	max_w_class = SIZE_MASSIVE
 	w_class = SIZE_MASSIVE
+
+/obj/item/storage/box/stash/open(mob/user)
+	. = . . ()
+	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+		to_chat(user, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
+		return
 
 /obj/item/storage/box/stash/micro
 	name = "ColMarTech Auxiliary Micro Substash"
