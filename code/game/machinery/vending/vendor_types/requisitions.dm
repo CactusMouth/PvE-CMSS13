@@ -413,7 +413,7 @@
 	desc = "An automated supply rack hooked up to a big storage of standard marine uniforms. Can be accessed by the Requisitions Officer and Cargo Techs."
 	icon_state = "clothing"
 	req_access = list()
-	req_one_access = list(ACCESS_MARINE_CARGO)
+	req_one_access = list()
 	vendor_theme = VENDOR_THEME_USCM
 
 	listed_products = list(

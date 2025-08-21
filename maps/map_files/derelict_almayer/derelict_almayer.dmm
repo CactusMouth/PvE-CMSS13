@@ -817,7 +817,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "15;16;21";
 	vend_x_offset = 0
 	},
 /turf/open/floor/almayer/plate,
@@ -3960,7 +3959,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "15;16;21";
 	vend_x_offset = 0;
 	vend_y_offset = 0
 	},
@@ -4851,7 +4849,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "17;18;21";
 	vend_x_offset = 0;
 	vend_y_offset = 0
 	},
@@ -16824,7 +16821,6 @@
 /obj/structure/machinery/cm_vending/sorted/attachments/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "17;18;21";
 	vend_y_offset = 0
 	},
 /turf/open/floor/almayer/plate,
@@ -18516,7 +18512,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "15;16;21";
 	vend_x_offset = 0;
 	vend_y_offset = 0
 	},
@@ -39610,8 +39605,7 @@
 /area/almayer/maint/hull/upper/u_f_s)
 "oNo" = (
 /obj/structure/machinery/cm_vending/clothing/senior_officer{
-	req_access = list();
-	req_access_txt = "26"
+	req_access = list()
 	},
 /obj/structure/sign/safety/hvac_old{
 	pixel_x = 8;
@@ -48053,7 +48047,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "17;18;21";
 	vend_x_offset = 0
 	},
 /turf/open/floor/almayer/plate,
@@ -56863,7 +56856,6 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "17;18;21";
 	vend_x_offset = 0;
 	vend_y_offset = 0
 	},
@@ -63452,7 +63444,6 @@
 /obj/structure/machinery/cm_vending/sorted/attachments/squad{
 	req_access = null;
 	req_one_access = null;
-	req_one_access_txt = "15;16;21";
 	vend_y_offset = 0
 	},
 /turf/open/floor/almayer/plate,
