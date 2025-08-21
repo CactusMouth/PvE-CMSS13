@@ -1038,8 +1038,9 @@
 
 /obj/item/storage/box/stash/attack_hand(mob/user as mob)
 	if(loc == user)
-		if(z == 2)
+		if(user.z == 2)
 			to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+			return
 		else
 			open(usr)
 	else
@@ -1049,15 +1050,21 @@
 	add_fingerprint(user)
 
 /obj/item/storage/box/stash/attackby(obj/item/W as obj, mob/user as mob)
-	if(z == 2)
+	if(user.z == 2)
+		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+		return
+	else
+		..()
+
+/obj/item/storage/box/stash/open(mob/user as mob)
+	if(user.z == 2)
 		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
 		return
 	else
 		..()
 
 /obj/item/storage/box/stash/MouseDrop(over_object, src_location, over_location)
-	if(z == 2)
-		add_fingerprint(usr)
+	if(user.z == 2)
 		return
 	..()
 
