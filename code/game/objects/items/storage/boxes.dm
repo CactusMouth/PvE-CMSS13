@@ -1036,17 +1036,23 @@
 	max_w_class = SIZE_MASSIVE
 	w_class = SIZE_MASSIVE
 
-/obj/item/storage/box/stash/open(mob/user)
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		to_chat(user, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
-		return
-	. = ..()
+/obj/item/storage/box/stash/attack_hand(mob/user as mob)
+	if (loc == user)
+		if (z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+			to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+		else
+			open(usr)
+	else
+		..()
+		for(var/mob/M in content_watchers)
+			storage_close(M)
+	add_fingerprint(user)
 
-/obj/item/storage/secure/MouseDrop(over_object, src_location, over_location)
+/obj/item/storage/box/stash/attackby(obj/item/W as obj, mob/user as mob)
 	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		to_chat(usr, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
+		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
 		return
-	. = ..()
+	..()
 
 /obj/item/storage/box/stash/micro
 	name = "ColMarTech Auxiliary Micro Substash"
