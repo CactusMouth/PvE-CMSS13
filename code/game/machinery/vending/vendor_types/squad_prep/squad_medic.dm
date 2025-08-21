@@ -168,22 +168,18 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 	return GLOB.cm_vending_clothing_medic
 
 /obj/structure/machinery/cm_vending/clothing/medic/alpha
-	squad_tag = SQUAD_MARINE_1
 	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/bravo
-	squad_tag = SQUAD_MARINE_2
 	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/charlie
-	squad_tag = SQUAD_MARINE_3
 	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/delta
-	squad_tag = SQUAD_MARINE_4
 	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta/med
 

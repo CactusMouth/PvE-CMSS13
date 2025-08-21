@@ -1037,11 +1037,13 @@
 	w_class = SIZE_MASSIVE
 
 /obj/item/storage/box/stash/open(mob/user)
+	. = ..()
 	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
 		to_chat(user, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
 		return
 
 /obj/item/storage/secure/MouseDrop(over_object, src_location, over_location)
+	. = ..()
 	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
 		to_chat(usr, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
 		return

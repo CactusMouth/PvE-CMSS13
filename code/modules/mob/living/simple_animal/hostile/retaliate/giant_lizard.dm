@@ -748,7 +748,6 @@
 	melee_damage_upper = 0
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/Initialize()
-	. = ..()
 	change_real_name(src, "[name]")
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/update_transform(instant_update = FALSE)

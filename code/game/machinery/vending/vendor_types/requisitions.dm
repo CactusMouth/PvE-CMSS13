@@ -10,10 +10,10 @@
 	vendor_theme = VENDOR_THEME_USCM
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_LOAD_AMMO_BOXES
 
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/cargo_guns/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/vend_fail()
 	return
@@ -227,10 +227,10 @@
 	vend_dir = WEST
 	vend_dir_whitelist = list(SOUTHWEST, NORTHWEST)
 
-/obj/structure/machinery/cm_vending/sorted/cargo_ammo/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/cargo_ammo/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/vend_fail()
 	return
@@ -344,10 +344,10 @@
 	vend_dir_whitelist = list(SOUTHEAST, NORTHEAST)
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY //We want to vend to turf not hand, since we are in requisitions
 
-/obj/structure/machinery/cm_vending/sorted/attachments/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/attachments/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/attachments/vend_fail()
 	return
