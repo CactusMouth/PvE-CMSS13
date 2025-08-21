@@ -209,6 +209,15 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"gM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/explosive/mine{
+	pixel_y = 2;
+	pixel_x = 8;
+	anchored = 1
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "he" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -1004,6 +1013,8 @@
 	name = "door lock";
 	id = "s1"
 	},
+/obj/item/bedsheet/red,
+/obj/structure/bed,
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Ap" = (
@@ -1720,13 +1731,17 @@
 	light_power = 0.7
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/toilet{
-	pixel_y = 13
-	},
 /obj/item/prop/magazine/book/starshiptroopers{
 	pixel_x = 9;
 	pixel_y = -4;
 	anchored = 1
+	},
+/obj/structure/toilet{
+	pixel_y = 13
+	},
+/obj/structure/sign/banners/united_americas_flag{
+	pixel_x = -15;
+	pixel_y = 31
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
@@ -1875,6 +1890,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
+"XO" = (
+/obj/item/weapon/gun/rifle/m41aMK1{
+	anchored = 1;
+	pixel_x = 31
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/lower_cargo)
 "Ye" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -4359,7 +4381,7 @@ Qj
 ok
 Ut
 OG
-mt
+gM
 Ai
 Ut
 Sm
@@ -4463,7 +4485,7 @@ ok
 ed
 Ut
 RW
-Sm
+XO
 bI
 Ut
 fE
