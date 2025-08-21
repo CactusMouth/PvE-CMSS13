@@ -1042,6 +1042,12 @@
 		to_chat(user, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
 		return
 
+/obj/item/storage/secure/MouseDrop(over_object, src_location, over_location)
+	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+		to_chat(user, SPAN_WARNING("You notice some fine print on the [src] - 'warranty valid only while aboard USS Galleyburned.' Well, shucks."))
+		return
+	..()
+
 /obj/item/storage/box/stash/micro
 	name = "ColMarTech Auxiliary Micro Substash"
 	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one can go inside another stash crate!"
