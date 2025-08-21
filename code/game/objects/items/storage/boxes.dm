@@ -1028,7 +1028,7 @@
 
 /obj/item/storage/box/stash
 	name = "ColMarTech Auxiliary Stash"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It can't be opened while you're in a mission area."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship."
 	icon = 'icons/obj/items/storage/kits.dmi'
 	icon_state = "kit_case_old"
 	foldable = FALSE
@@ -1039,7 +1039,7 @@
 /obj/item/storage/box/stash/attack_hand(mob/user as mob)
 	if(loc == user)
 		if(usr.z == 2)
-			to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+			to_chat(usr, SPAN_DANGER("[src] cannot be opened while away from the ship."))
 			return
 		else
 			open(usr)
@@ -1051,14 +1051,14 @@
 
 /obj/item/storage/box/stash/attackby(obj/item/W as obj, mob/user as mob)
 	if(usr.z == 2)
-		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+		to_chat(usr, SPAN_DANGER("[src] cannot be opened while away from the ship."))
 		return
 	else
 		..()
 
 /obj/item/storage/box/stash/open(mob/user as mob)
 	if(usr.z == 2)
-		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+		to_chat(usr, SPAN_DANGER("[src] cannot be opened while away from the ship."))
 		return
 	else
 		..()
@@ -1070,7 +1070,7 @@
 
 /obj/item/storage/box/stash/micro
 	name = "ColMarTech Auxiliary Micro Substash"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one can go inside another stash crate!"
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one can go inside another stash crate!"
 	icon = 'icons/obj/items/storage/boxes.dmi'
 	icon_state = "flashbang_e"
 	foldable = FALSE
@@ -1080,7 +1080,7 @@
 
 /obj/item/storage/box/stash/micro/big
 	name = "ColMarTech Auxiliary Deluxe Micro Substash"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one can go inside another stash crate and can hold a lot of stuff!"
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one can go inside another stash crate and can hold a lot of stuff!"
 	icon_state = "emp_e"
 	storage_slots = 75
 
@@ -1092,58 +1092,58 @@
 
 /obj/item/storage/box/stash/rations
 	name = "ColMarTech Auxiliary Stash (Rations)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one has been labeled 'RATIONS', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'RATIONS', but it can store anything."
 	icon_state = "kit_case_rations"
 
 /obj/item/storage/box/stash/medicine
 	name = "ColMarTech Auxiliary Stash (Medicine)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one has been labeled 'MEDICINE', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'MEDICINE', but it can store anything."
 	icon_state = "kit_case_medicine"
 
 /obj/item/storage/box/stash/armor
 	name = "ColMarTech Auxiliary Stash (Armor)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one has been labeled 'ARMOR', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'ARMOR', but it can store anything."
 	icon_state = "kit_case_armor"
 
 /obj/item/storage/box/stash/weapons
 	name = "ColMarTech Auxiliary Stash (Weapons)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one has been labeled 'WEAPONS', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'WEAPONS', but it can store anything."
 	icon_state = "kit_case_weapons"
 
 /obj/item/storage/box/stash/ammo
 	name = "ColMarTech Auxiliary Stash (Ammunition)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one has been labeled 'AMMO', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'AMMO', but it can store anything."
 	icon_state = "kit_case_ammo"
 
 /obj/item/storage/box/stash/big
 	name = "ColMarTech Auxiliary Deluxe Stash"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. "
 	storage_slots = 75
 	icon_state = "kit_case"
 
 /obj/item/storage/box/stash/big/rations
 	name = "ColMarTech Auxiliary Deluxe Stash (Rations)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. This one has been labeled 'RATIONS', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'RATIONS', but it can store anything."
 	icon_state = "kit_case_rations_alt"
 
 /obj/item/storage/box/stash/big/medicine
 	name = "ColMarTech Auxiliary Deluxe Stash (Medicine)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. This one has been labeled 'MEDICINE', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'MEDICINE', but it can store anything."
 	icon_state = "kit_case_medicine_alt"
 
 /obj/item/storage/box/stash/big/armor
 	name = "ColMarTech Auxiliary Deluxe Stash (Armor)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. This one has been labeled 'ARMOR', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'ARMOR', but it can store anything."
 	icon_state = "kit_case_armor_alt"
 
 /obj/item/storage/box/stash/big/weapons
 	name = "ColMarTech Auxiliary Deluxe Stash (Weapons)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. This one has been labeled 'WEAPONS', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'WEAPONS', but it can store anything."
 	icon_state = "kit_case_weapons_alt"
 
 /obj/item/storage/box/stash/big/ammo
 	name = "ColMarTech Auxiliary Deluxe Stash (Ammunition)"
-	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. This one has been labeled 'AMMO', but it can store anything."
+	desc = "Despite the fancy name, this is just a really big box that you can shove into a stash to be able to store more stuff. This one in particular is an ultra-large model. It has an automated lock with a 'safety feature' - obstensibly, anyways - that will activate if it's away from the ship. This one has been labeled 'AMMO', but it can store anything."
 	icon_state = "kit_case_ammo_alt"
 
 /obj/item/storage/box/stash/big/debug
