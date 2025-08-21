@@ -1037,8 +1037,8 @@
 	w_class = SIZE_MASSIVE
 
 /obj/item/storage/box/stash/attack_hand(mob/user as mob)
-	if (loc == user)
-		if (z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+	if(loc == user)
+		if(z == 2)
 			to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
 		else
 			open(usr)
@@ -1049,8 +1049,15 @@
 	add_fingerprint(user)
 
 /obj/item/storage/box/stash/attackby(obj/item/W as obj, mob/user as mob)
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+	if(z == 2)
 		to_chat(usr, SPAN_DANGER("[src] is locked and cannot be opened!"))
+		return
+	else
+		..()
+
+/obj/item/storage/box/stash/MouseDrop(over_object, src_location, over_location)
+	if(z == 2)
+		add_fingerprint(usr)
 		return
 	..()
 
