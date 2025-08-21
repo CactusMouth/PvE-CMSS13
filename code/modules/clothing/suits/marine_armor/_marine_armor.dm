@@ -967,8 +967,9 @@
 
 /obj/item/clothing/suit/marine/guard/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/uacg/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/uacg/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
 
 //Army & USASF custom-armors\\
 
@@ -986,12 +987,13 @@
 
 /obj/item/clothing/suit/marine/medium/rto/navy/heavy/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/navy/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/navy/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/navy/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/navy/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/navy/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/navy/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
 
 /obj/item/clothing/suit/marine/medium/rto/army
 	name = "\improper Personal Body Armor System"
@@ -1005,27 +1007,29 @@
 
 /obj/item/clothing/suit/marine/medium/rto/army/medium/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
 
 /obj/item/clothing/suit/marine/medium/rto/army/heavy
 
 /obj/item/clothing/suit/marine/medium/rto/army/heavy/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
-	var/obj/item/clothing/accessory/pads/bracers/armguards = new()
-	src.attach_accessory(null, armguards, TRUE)
-	var/obj/item/clothing/accessory/pads/kneepads/knees = new()
-	src.attach_accessory(null, knees, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
+		var/obj/item/clothing/accessory/pads/bracers/armguards = new()
+		src.attach_accessory(null, armguards, TRUE)
+		var/obj/item/clothing/accessory/pads/kneepads/knees = new()
+		src.attach_accessory(null, knees, TRUE)
 
 //==================PLU Lamp Rig==================\\
 
