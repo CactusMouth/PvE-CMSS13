@@ -65,8 +65,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_smartgun, list(
 	desc = "An automated gear rack for Squad Smartgunners."
 	icon_state = "sg_gear"
 	show_points = TRUE
-	vendor_role = list(JOB_SQUAD_SMARTGUN)
-	req_access = list(ACCESS_MARINE_SMARTPREP)
+	vendor_role = list()
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/gear/smartgun/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_smartgun
@@ -112,30 +112,30 @@ GLOBAL_LIST_INIT(cm_vending_clothing_smartgun, list(
 /obj/structure/machinery/cm_vending/clothing/smartgun
 	name = "\improper ColMarTech Squad Smartgun Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Squad Smartgun standard-issue equipment."
-	req_access = list(ACCESS_MARINE_SMARTPREP)
-	vendor_role = list(JOB_SQUAD_SMARTGUN)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/smartgun/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_smartgun
 
 /obj/structure/machinery/cm_vending/clothing/smartgun/alpha
 	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha
 
 /obj/structure/machinery/cm_vending/clothing/smartgun/bravo
 	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo
 
 /obj/structure/machinery/cm_vending/clothing/smartgun/charlie
 	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie
 
 /obj/structure/machinery/cm_vending/clothing/smartgun/delta
 	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta
 
 //------------ESSENTIAL SETS---------------

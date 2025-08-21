@@ -96,8 +96,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_engi, list(
 	name = "\improper ColMarTech Squad ComTech Gear Rack"
 	desc = "An automated gear rack for combat technicians."
 	icon_state = "eng_gear"
-	vendor_role = list(JOB_SQUAD_ENGI)
-	req_access = list(ACCESS_MARINE_ENGPREP)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/gear/engi/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_engi
@@ -169,33 +169,33 @@ GLOBAL_LIST_INIT(cm_vending_clothing_engi, list(
 /obj/structure/machinery/cm_vending/clothing/engi
 	name = "\improper ColMarTech Squad ComTech Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of combat technician standard-issue equipment."
-	req_access = list(ACCESS_MARINE_ENGPREP)
-	vendor_role = list(JOB_SQUAD_ENGI)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/engi/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_engi
 
 /obj/structure/machinery/cm_vending/clothing/engi/alpha
 	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_ENGPREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha/engi
 
 /obj/structure/machinery/cm_vending/clothing/engi/bravo
 	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_ENGPREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo/engi
 
 /obj/structure/machinery/cm_vending/clothing/engi/charlie
 	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_ENGPREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie/engi
 
 /obj/structure/machinery/cm_vending/clothing/engi/delta
 	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_ENGPREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta/engi
 

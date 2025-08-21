@@ -8,7 +8,7 @@
 	unslashable = FALSE
 	wrenchable = TRUE
 	hackable = TRUE
-	req_one_access = list(ACCESS_MARINE_ENGINEERING, ACCESS_CIVILIAN_ENGINEERING)
+	req_one_access = list()
 	vendor_theme = VENDOR_THEME_COMPANY
 
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage
@@ -47,7 +47,7 @@
 	name = "\improper ColMarTech Squad ComTech Tools Vendor"
 	desc = "A vending machine that stores various extra tools that are useful on the field."
 	icon_state = "tool"
-	req_access = list(ACCESS_MARINE_ENGPREP)
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/tech/comtech_tools/populate_product_list(scale)
 	listed_products = list(
@@ -99,7 +99,7 @@
 	)
 
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage/antag
-	req_one_access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_UPP_GENERAL, ACCESS_CLF_GENERAL)
+	req_one_access = list()
 	req_access = null
 
 /obj/structure/machinery/cm_vending/sorted/tech/electronics_storage
@@ -123,7 +123,7 @@
 	)
 
 /obj/structure/machinery/cm_vending/sorted/tech/electronics_storage/antag
-	req_one_access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_UPP_GENERAL, ACCESS_CLF_GENERAL)
+	req_one_access = list()
 	req_access = null
 
 /obj/structure/machinery/cm_vending/sorted/tech/comp_storage
@@ -153,7 +153,7 @@
 	)
 
 /obj/structure/machinery/cm_vending/sorted/tech/comp_storage/antag
-	req_one_access = list(ACCESS_ILLEGAL_PIRATE, ACCESS_UPP_GENERAL, ACCESS_CLF_GENERAL)
+	req_one_access = list()
 	req_access = null
 
 //------COLONY-SPECIFIC VENDORS-------
@@ -162,7 +162,7 @@
 	name = "\improper Wey-Yu SciVend"
 	desc = "Vendor containing basic equipment for your experiments."
 	icon_state = "robotics"
-	req_access = list(ACCESS_MARINE_RESEARCH)
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/tech/science/populate_product_list(scale)
 	listed_products = list(
@@ -183,7 +183,7 @@
 	name = "\improper Robotech Deluxe"
 	desc = "All the tools you need to create your own robot army."
 	icon_state = "robotics"
-	req_access = list(ACCESS_MARINE_RESEARCH)
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/tech/robotics/populate_product_list(scale)
 	listed_products = list(

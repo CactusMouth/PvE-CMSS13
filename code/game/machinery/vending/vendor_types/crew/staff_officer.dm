@@ -1,8 +1,8 @@
 /obj/structure/machinery/cm_vending/clothing/staff_officer
 	name = "\improper ColMarTech Staff Officer Equipment Rack"
 	desc = "An automated equipment vendor for Staff Officers."
-	req_access = list(ACCESS_MARINE_COMMAND)
-	vendor_role = list(JOB_SO)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/staff_officer/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_staff_officer
@@ -67,9 +67,9 @@ GLOBAL_LIST_INIT(cm_vending_clothing_staff_officer, list(
 /obj/structure/machinery/cm_vending/gear/staff_officer_armory
 	name = "\improper ColMarTech Staff Officer Armory Equipment Rack"
 	desc = "An automated combat equipment vendor for Staff Officers."
-	req_access = list(ACCESS_MARINE_COMMAND)
+	req_access = list()
 	icon_state = "mar_rack"
-	vendor_role = list(JOB_SO)
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/gear/staff_officer_armory/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_staff_officer_armory

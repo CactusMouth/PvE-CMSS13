@@ -156,7 +156,7 @@
 
 //------------REQ AMMUNITION VENDOR---------------
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/cargo/wo
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/cargo/wo/populate_product_list(scale)
@@ -193,12 +193,12 @@
 //------------ARMAMENTS VENDOR---------------
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/cargo/wo
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	vend_dir = NORTH
 	vend_dir_whitelist = list(EAST, WEST)
 
 //---- ATTACHIES
 /obj/structure/machinery/cm_vending/sorted/attachments/wo
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	vend_dir = NORTH
 	vend_dir_whitelist = list(SOUTHWEST, SOUTHEAST)

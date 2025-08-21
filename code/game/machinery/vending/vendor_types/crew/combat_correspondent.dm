@@ -37,8 +37,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_combat_correspondent, list(
 /obj/structure/machinery/cm_vending/clothing/combat_correspondent
 	name = "\improper ColMarTech Combat Correspondent Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Reporter standard-issue equipment."
-	req_access = list(ACCESS_PRESS)
-	vendor_role = list(JOB_COMBAT_REPORTER)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/combat_correspondent/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_combat_correspondent

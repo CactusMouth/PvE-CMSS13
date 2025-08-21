@@ -7,7 +7,7 @@
 	desc = "An automated weapon rack hooked up to a big storage of standard-issue weapons."
 	icon_state = "guns"
 	req_access = list()
-	req_one_access = list(ACCESS_MARINE_DATABASE, ACCESS_MARINE_PREP)
+	req_one_access = list()
 	hackable = TRUE
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND
 
@@ -88,7 +88,7 @@
 	name = "\improper ColMarTech Surplus Uniform Vendor"
 	desc = "An automated supply rack hooked up to a small storage of standard marine uniforms."
 	icon_state = "uscm_gear"
-	req_access = list(ACCESS_MARINE_PREP)
+	req_access = list()
 	req_one_access = list()
 	listed_products = list()
 	hackable = TRUE
@@ -218,7 +218,7 @@
 	name = "\improper UnTech Surplus Uniform Vendor"
 	desc = "An automated supply rack hooked up to a small storage of standard UPP uniforms."
 	icon_state = "upp_gear"
-	req_access = list(ACCESS_UPP_GENERAL)
+	req_access = list()
 	req_one_access = list()
 	listed_products = list()
 	hackable = TRUE
@@ -297,7 +297,7 @@
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/pmc
 	name = "\improper PMC Uniform Vendor"
 	icon_state = "pmc_gear"
-	req_access = list(ACCESS_WY_GENERAL)
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/pmc/populate_product_list(scale)
 	listed_products = list(
@@ -472,12 +472,12 @@
 // list with just the headset changed.
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/alpha
-	req_access = list(ACCESS_MARINE_PREP)
-	req_one_access = list(ACCESS_MARINE_ALPHA, ACCESS_MARINE_DATABASE, ACCESS_MARINE_CARGO)
+	req_access = list()
+	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/bravo
-	req_access = list(ACCESS_MARINE_PREP)
-	req_one_access = list(ACCESS_MARINE_BRAVO, ACCESS_MARINE_DATABASE, ACCESS_MARINE_CARGO)
+	req_access = list()
+	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/bravo/populate_product_list(scale)
 	..()
@@ -487,8 +487,8 @@
 		)
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/charlie
-	req_access = list(ACCESS_MARINE_PREP)
-	req_one_access = list(ACCESS_MARINE_CHARLIE, ACCESS_MARINE_DATABASE, ACCESS_MARINE_CARGO)
+	req_access = list()
+	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/charlie/populate_product_list(scale)
 	..()
@@ -498,8 +498,8 @@
 		)
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/delta
-	req_access = list(ACCESS_MARINE_PREP)
-	req_one_access = list(ACCESS_MARINE_DELTA, ACCESS_MARINE_DATABASE, ACCESS_MARINE_CARGO)
+	req_access = list()
+	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/delta/populate_product_list(scale)
 	..()
@@ -513,8 +513,8 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad
 	name = "\improper ColMarTech Automated Munition Squad Vendor"
 	desc = "An automated supply rack hooked up to a small storage of various ammunition types. Can be accessed by any Marine Rifleman."
-	req_access = list(ACCESS_MARINE_ALPHA)
-	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_SPECPREP, ACCESS_MARINE_RO)
+	req_access = list()
+	req_one_access = list()
 	hackable = TRUE
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_STOCK_DYNAMIC
 
@@ -557,7 +557,7 @@
 	name = "\improper ColMarTech Automated Utilities Squad Vendor"
 	desc = "An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any Marine Rifleman."
 	req_access = list()
-	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_SPECPREP, ACCESS_MARINE_RO, ACCESS_MARINE_PREP)
+	req_one_access = list()
 	hackable = TRUE
 
 	vend_x_offset = 2
@@ -625,7 +625,7 @@
 	name = "\improper UnTech Automated Utilities Squad Vendor"
 	desc = "An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any UPP Rifleman."
 	req_access = list()
-	req_one_access = list(ACCESS_UPP_GENERAL)
+	req_one_access = list()
 	hackable = TRUE
 
 	vend_x_offset = 2
@@ -755,7 +755,7 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc
 	name = "\improper PMC Automated Utilities Squad Vendor"
 	desc = "An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any PMC Operator."
-	req_access = list(ACCESS_WY_GENERAL)
+	req_access = list()
 	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc/populate_product_list(scale)
@@ -823,8 +823,8 @@
 /obj/structure/machinery/cm_vending/sorted/attachments/squad
 	name = "\improper Armat Systems Squad Attachments Vendor"
 	desc = "An automated supply rack hooked up to a small storage of weapons attachments. Can be accessed by any Marine Rifleman."
-	req_access = list(ACCESS_MARINE_ALPHA)
-	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_SPECPREP, ACCESS_MARINE_RO)
+	req_access = list()
+	req_one_access = list()
 	hackable = TRUE
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_STOCK_DYNAMIC
 

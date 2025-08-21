@@ -50,8 +50,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_military_police, list(
 /obj/structure/machinery/cm_vending/clothing/military_police
 	name = "\improper ColMarTech Military Police Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Military Police standard-issue equipment."
-	req_access = list(ACCESS_MARINE_BRIG)
-	vendor_role = list(JOB_POLICE)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/military_police/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_military_police
@@ -108,8 +108,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_military_police_warden, list(
 /obj/structure/machinery/cm_vending/clothing/military_police_warden
 	name = "\improper ColMarTech Military Warden Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Military Police standard-issue equipment."
-	req_access = list(ACCESS_MARINE_BRIG)
-	vendor_role = list(JOB_WARDEN)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/military_police_warden/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_military_police_warden

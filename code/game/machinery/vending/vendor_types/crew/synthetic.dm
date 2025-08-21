@@ -2,10 +2,10 @@
 
 /obj/structure/machinery/cm_vending/gear/synth
 	name = "\improper ColMarTech Synthetic Auxiliary Gear Rack"
-	desc = "An automated gear rack hooked up to a colossal storage of various medical and engineering supplies. Can be accessed only by synthetic units."
+	desc = "An automated gear rack hooked up to a colossal storage of various medical and engineering supplies."
 	icon_state = "gear"
-	req_access = list(ACCESS_MARINE_SYNTH)
-	vendor_role = list(JOB_SYNTH, JOB_SYNTH_SURVIVOR, JOB_UPP_SUPPORT_SYNTH, JOB_CMB_SYN, JOB_PMC_SYNTH)
+	req_access = list()
+	vendor_role = list()
 
 	listed_products = list(
 		list("ENGINEER SUPPLIES", 0, null, null, null),
@@ -157,9 +157,9 @@ GLOBAL_LIST_INIT(cm_vending_clothing_synth, list(
 
 /obj/structure/machinery/cm_vending/clothing/synth
 	name = "\improper ColMarTech Synthetic Equipment Rack"
-	desc = "An automated rack hooked up to a colossal storage of various equipment. Can be accessed only by synthetic units."
-	req_access = list(ACCESS_MARINE_SYNTH)
-	vendor_role = list(JOB_SYNTH, JOB_SYNTH_SURVIVOR, JOB_UPP_SUPPORT_SYNTH, JOB_CMB_SYN, JOB_PMC_SYNTH)
+	desc = "An automated rack hooked up to a colossal storage of various equipment."
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/synth/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_synth
@@ -352,8 +352,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_synth_snowflake, list(
 	show_points = TRUE
 	use_snowflake_points = TRUE
 	vendor_theme = VENDOR_THEME_COMPANY
-	req_access = list(ACCESS_MARINE_SYNTH)
-	vendor_role = list(JOB_SYNTH, JOB_SYNTH_SURVIVOR, JOB_WORKING_JOE, JOB_UPP_SUPPORT_SYNTH, JOB_CMB_SYN, JOB_PMC_SYNTH)
+	req_access = list()
+	vendor_role = list()
 
 	vend_delay = 1 SECONDS
 
@@ -369,8 +369,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_synth_snowflake, list(
 	available_points = 0
 	available_points_to_display = 0
 	vendor_theme = VENDOR_THEME_COMPANY
-	req_access = list(ACCESS_MARINE_SYNTH)
-	vendor_role = list(JOB_SYNTH)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/own_points/experimental_tools/redeem_token(obj/item/coin/marine/token, mob/user)
 	if(token.token_type == VEND_TOKEN_SYNTH)

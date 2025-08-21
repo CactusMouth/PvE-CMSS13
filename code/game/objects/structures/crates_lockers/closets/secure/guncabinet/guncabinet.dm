@@ -1,7 +1,7 @@
 /obj/structure/closet/secure_closet/guncabinet
 	name = "gun cabinet"
 	req_access = null
-	health = 1000
+	health = 100
 	icon = 'icons/obj/structures/props/misc.dmi'
 	icon_state = "base"
 	icon_off ="base"
@@ -57,13 +57,13 @@
 			overlays += icon(src.icon,"open")
 
 //immune to bullets
-/obj/structure/closet/secure_closet/guncabinet/bullet_act(obj/projectile/Proj)
-	return 1
+///obj/structure/closet/secure_closet/guncabinet/bullet_act(obj/projectile/Proj)
+//	return 1
 
-/obj/structure/closet/secure_closet/guncabinet/ex_act(severity)
-	if(severity > EXPLOSION_THRESHOLD_MEDIUM)
-		contents_explosion(severity - EXPLOSION_THRESHOLD_LOW)
-		deconstruct(FALSE)
+///obj/structure/closet/secure_closet/guncabinet/ex_act(severity)
+//	if(severity > EXPLOSION_THRESHOLD_MEDIUM)
+//		contents_explosion(severity - EXPLOSION_THRESHOLD_LOW)
+//		deconstruct(FALSE)
 
 //this is used on corsat.(leaving it as a prop i guess)
 /obj/structure/closet/secure_closet/guncabinet/riot_control

@@ -17,8 +17,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_sea, list(
 /obj/structure/machinery/cm_vending/gear/di
 	name = "ColMarTech DI Weapon Rack"
 	desc = "An automated gear rack for the Drill Instructor."
-	req_access = list(ACCESS_MARINE_SEA)
-	vendor_role = list(JOB_DI)
+	req_access = list()
+	vendor_role = list()
 	icon_state = "guns"
 
 /obj/structure/machinery/cm_vending/gear/di/get_listed_products(mob/user)
@@ -80,8 +80,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_di, list(
 /obj/structure/machinery/cm_vending/clothing/di
 	name = "ColMarTech SEA Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Senior Enlisted Advisor standard-issue equipment."
-	req_access = list(ACCESS_MARINE_SEA)
-	vendor_role = list(JOB_DI)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/di/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_di
