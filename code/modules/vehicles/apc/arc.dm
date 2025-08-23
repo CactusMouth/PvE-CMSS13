@@ -155,3 +155,18 @@
 	V.add_hardpoint(new /obj/item/hardpoint/primary/arc_frontalcannon)
 	V.add_hardpoint(new /obj/item/hardpoint/support/flare_launcher)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/apc_wheels/arc)
+
+
+/obj/vehicle/multitile/apc/arc/horst
+	icon_state = "arc_horst"
+
+/obj/effect/vehicle_spawner/arc/fixed/horst
+	icon_state = "arc_horst"
+
+/obj/effect/vehicle_spawner/arc/fixed/horst/spawn_vehicle()
+	var/obj/vehicle/multitile/apc/arc/horst/APC = new (loc)
+
+	load_misc(APC)
+	load_hardpoints(APC)
+	handle_direction(APC)
+	APC.update_icon()
