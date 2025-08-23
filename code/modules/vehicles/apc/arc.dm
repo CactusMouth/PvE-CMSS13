@@ -157,14 +157,14 @@
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/apc_wheels/arc)
 
 
-/obj/vehicle/multitile/apc/arc/horst
+/obj/vehicle/multitile/apc/arc/custom
 	icon_state = "arc_horst"
 
-/obj/effect/vehicle_spawner/arc/fixed/horst
+/obj/effect/vehicle_spawner/arc/fixed/custom
 	icon_state = "arc_horst"
 
-/obj/effect/vehicle_spawner/arc/fixed/horst/spawn_vehicle()
-	var/obj/vehicle/multitile/apc/arc/horst/APC = new (loc)
+/obj/effect/vehicle_spawner/arc/fixed/custom/spawn_vehicle()
+	var/obj/vehicle/multitile/apc/arc/custom/APC = new (loc)
 
 	load_misc(APC)
 	load_hardpoints(APC)
