@@ -252,6 +252,11 @@
 	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an ARC with no munitions attached."
 	icon_state = "coin_chitin"
 
+/obj/item/coin/vehicletoken/arc
+	name = "vehicle redemption token (Armored Recon Carrier, Custom)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an ARC with a frontal cannon and a Robert's Raiders paintjob."
+	icon_state = "coin_chitin_raider"
+
 /obj/item/coin/vehicletoken/apc
 	name = "vehicle redemption token (Armored Personnel Carrier, Standard)"
 	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC armed with side-gunner M56 emplacements, a frontal cannon, and dualcannons."
