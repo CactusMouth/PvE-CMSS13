@@ -357,6 +357,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	/obj/item/clothing/head/headset = "headset",
 	/obj/item/ammo_magazine/handful = "bullet",
 	/obj/item/prop/helmetgarb/riot_shield = "helmet_riot_shield",
+	/obj/item/prop/helmetgarb/faceplate = "helmet_faceplate",
+	/obj/item/prop/helmetgarb/faceplate/flag = "helmet_faceplate_flag",
 	/obj/item/attachable/flashlight = HELMET_GARB_RELAY_ICON_STATE,
 	/obj/item/prop/helmetgarb/chaplain_patch = "chaplain_patch",
 	/obj/item/tool/pen/fountain = "fountainpen",

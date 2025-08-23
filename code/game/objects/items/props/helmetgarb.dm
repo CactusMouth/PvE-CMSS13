@@ -517,6 +517,18 @@
 	icon_state = "helmet_riot_shield"
 	flags_obj = OBJ_NO_HELMET_BAND
 
+/obj/item/prop/helmetgarb/faceplate
+	name = "\improper faceplate"
+	desc = "The complimentary, but sold separate face shield associated with the RC6 riot helmet."
+	icon_state = "helmet_faceplate"
+	flags_obj = OBJ_NO_HELMET_BAND
+
+/obj/item/prop/helmetgarb/faceplate/flag
+	name = "\improper faceplate"
+	desc = "The complimentary, but sold separate face shield associated with the RC6 riot helmet."
+	icon_state = "helmet_faceplate_flag"
+	flags_obj = OBJ_NO_HELMET_BAND
+
 /obj/item/prop/helmetgarb/trimmed_wire
 	name = "trimmed barbed wire"
 	desc = "It is a length of barbed wire that's had most of the sharp points filed down so that it is safe to handle."
