@@ -37,18 +37,12 @@
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "bI" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/toy/plush/otter{
-	pixel_x = -4;
-	pixel_y = -8;
-	anchored = 1
+/mob/living/simple_animal/mouse/rat/white{
+	desc = "It's a little white rat. This one was rescued from Hybrisa Prospera to give War a friend. Lieutenant Brown hates him. He really likes drinking Boda.";
+	name = "Pestilence"
 	},
 /turf/open/floor/plating,
-/area/golden_arrow/lower_cargo)
+/area/golden_arrow/engineering)
 "cg" = (
 /obj/structure/largecrate/random/barrel/medical{
 	pixel_x = 7;
@@ -1015,6 +1009,11 @@
 	},
 /obj/item/bedsheet/red,
 /obj/structure/bed,
+/obj/item/toy/plush/otter{
+	pixel_x = 5;
+	pixel_y = -3;
+	anchored = 1
+	},
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Ap" = (
@@ -1163,8 +1162,8 @@
 /area/golden_arrow/briefing)
 "DR" = (
 /mob/living/simple_animal/mouse/rat/black{
-	name = "Violence";
-	desc = "It's a big rat. This one is from Hybrisa Prospera -- some marine decided it would be a good idea to shove him into the stash system, and he escaped into the cargo network. Now he spends his days avoiding Lieutenant Brown and eating junk food."
+	name = "War";
+	desc = "It's a big rat. This one is from Hybrisa Prospera -- some marine decided it would be a good idea to shove him into the stash system, and he escaped into the cargo network. Now he spends his days avoiding Lieutenant Brown and eating junk food. Formerly known as Violence."
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/engineering)
@@ -1420,10 +1419,6 @@
 	layer = 4
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/sign/banners/united_americas_flag{
-	pixel_y = -29;
-	pixel_x = -16
-	},
 /turf/open/floor/plating,
 /area/golden_arrow/lower_cargo)
 "Kw" = (
@@ -1892,10 +1887,9 @@
 /area/golden_arrow/briefing)
 "XO" = (
 /obj/item/weapon/gun/rifle/m41aMK1{
-	anchored = 1;
-	pixel_x = 31
+	anchored = 1
 	},
-/turf/open/floor/plating,
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/lower_cargo)
 "Ye" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
@@ -2224,7 +2218,7 @@ ya
 ya
 he
 UF
-Qi
+bI
 CX
 Bn
 Bn
@@ -4485,8 +4479,8 @@ ok
 ed
 Ut
 RW
-XO
-bI
+Sm
+dL
 Ut
 fE
 mt
@@ -4537,7 +4531,7 @@ hX
 hX
 hX
 hX
-hX
+XO
 hX
 hX
 hX
