@@ -114,6 +114,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Balaclava, green"
 	path = /obj/item/clothing/mask/balaclava/tactical
 
+/datum/gear/mask/balaclava_threehole
+	display_name = "Balaclava, three-hole"
+	path = /obj/item/clothing/mask/balaclava/threehole
+	allowed_origins = UPP_ORIGINS
+
 /datum/gear/mask/coif
 	display_name = "Coif"
 	path = /obj/item/clothing/mask/rebreather/scarf
@@ -239,7 +244,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/headwear
 	category = "Headwear"
-	cost = 3
+	cost = 2
 	slot = WEAR_HEAD
 
 /datum/gear/headwear/uscm/santa_hat
@@ -359,10 +364,17 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "USCM cap, snow"
 	path = /obj/item/clothing/head/cmcap/snow
 
+/datum/gear/headwear/uscm/cap_operations
+	display_name = "USCM Operations Cap, Green"
+	path = /obj/item/clothing/head/cmcap/bridge
+
+/datum/gear/headwear/uscm/cap_operations2
+	display_name = "USCM Operations Cap, Tan"
+	path = /obj/item/clothing/head/cmcap/bridge/tan
+
 /datum/gear/headwear/uscm/cap/sulaco
 	display_name = "USS Golden Arrow cap"
 	path = /obj/item/clothing/head/sulacocap
-	cost = 1
 
 /datum/gear/headwear/uscm/cap/flap_jungle
 	display_name = "USCM expedition flapcap, jungle"
