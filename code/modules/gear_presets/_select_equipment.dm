@@ -733,8 +733,8 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		/obj/item/clothing/head/cowboy/light,
 		/obj/item/clothing/head/helmet/marine,
 		/obj/item/clothing/head/helmet/marine,
-		/obj/item/clothing/head/helmet/marine/MP
-		/obj/item/clothing/head/helmet/marine/MP
+		/obj/item/clothing/head/helmet/marine/MP,
+		/obj/item/clothing/head/helmet/marine/MP,
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/upp/marinepilot,
@@ -752,8 +752,8 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		/obj/item/clothing/head/helmet/marine,
 		/obj/item/clothing/head/helmet/marine,
 		/obj/item/clothing/head/helmet/marine,
-		/obj/item/clothing/head/helmet/marine/MP
-		/obj/item/clothing/head/helmet/marine/MP
+		/obj/item/clothing/head/helmet/marine/MP,
+		/obj/item/clothing/head/helmet/marine/MP,
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/upp/marinepilot,
