@@ -2423,13 +2423,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
-"Rt" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/closed/wall/almayer,
-/area/golden_arrow/lower_cargo)
 "Rv" = (
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
@@ -4909,7 +4902,7 @@ Ut
 Ut
 Ut
 FB
-Rt
+Ut
 Ut
 Ut
 Ut

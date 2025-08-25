@@ -326,11 +326,11 @@
 	var/scav_backpack = rand(1,3)
 	switch(scav_backpack)
 		if(1)
-			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack,(new_human), WEAR_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack(new_human), WEAR_BACK)
 		if(2)
-			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack/upp,(new_human), WEAR_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack/upp(new_human), WEAR_BACK)
 		if(3)
-			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/rmc/light,(new_human), WEAR_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/rmc/light(new_human), WEAR_BACK)
 	if(prob(50))
 		new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/wy(new_human), WEAR_IN_BACK)
 		new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov(new_human), WEAR_IN_BACK)
@@ -346,6 +346,19 @@
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/balaclava(new_human), WEAR_FACE)
 		if(2)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas(new_human), WEAR_FACE)
+	// eyes
+	var/scav_glasses = rand(1,5)
+	switch(scav_glasses)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_EYES)
+		if(2)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/green(new_human), WEAR_EYES)
+		if(3)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/upp(new_human), WEAR_EYES)
+		if(4)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big(new_human), WEAR_EYES)
+		if(5)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/orange(new_human), WEAR_EYES)
 	//uniform
 	var/scav_uniform = rand(1,3)
 	switch(scav_uniform)
@@ -462,7 +475,7 @@
 /datum/equipment_preset/scav/antitank/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
 	//back
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/launcher/rocket/anti_tank/disposable,(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/launcher/rocket/anti_tank/disposable(new_human), WEAR_BACK)
 	//face
 	var/scav_mask = rand(1,2)
 	switch(scav_mask)
