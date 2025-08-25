@@ -665,6 +665,23 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		)
 	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
 
+/datum/equipment_preset/proc/add_rebel_ua_suit_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine/guard,
+		/obj/item/clothing/suit/marine/guard,
+		/obj/item/clothing/suit/marine/leader,
+		/obj/item/clothing/suit/marine/rto,
+		/obj/item/clothing/suit/marine/rto,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
 /datum/equipment_preset/proc/add_rebel_twe_suit(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -675,6 +692,19 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
 		/obj/item/clothing/suit/armor/bulletproof,
 		/obj/item/clothing/suit/armor/vest/ballistic,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
+/datum/equipment_preset/proc/add_rebel_twe_suit_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light/team_leader,
 		)
 	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
 
@@ -703,14 +733,36 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		/obj/item/clothing/head/cowboy/light,
 		/obj/item/clothing/head/helmet/marine,
 		/obj/item/clothing/head/helmet/marine,
-		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
-		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
+		/obj/item/clothing/head/helmet/marine/MP
+		/obj/item/clothing/head/helmet/marine/MP
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
 		/obj/item/clothing/head/helmet/upp/marinepilot,
 		/obj/item/clothing/head/helmet/upp/marinepilot/tex,
 		/obj/item/clothing/head/sippyhat,
 		/obj/item/clothing/head/sippyhat/duff,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/add_rebel_ua_helmet_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine/MP
+		/obj/item/clothing/head/helmet/marine/MP
+		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
+		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
+		/obj/item/clothing/head/helmet/upp/marinepilot,
+		/obj/item/clothing/head/helmet/upp/marinepilot/tex,
+		/obj/item/clothing/head/sippyhat,
+		/obj/item/clothing/head/sippyhat/duff,
+		/obj/item/clothing/head/helmet/marine/leader,
+		/obj/item/clothing/head/helmet/marine/rto,
+		/obj/item/clothing/head/helmet/marine/rto,
 		)
 	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
 
@@ -731,6 +783,16 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		/obj/item/clothing/head/headband/rebel,
 		/obj/item/clothing/head/uppcap/beret/guerilla,
 		/obj/item/clothing/head/helmet/marine/veteran/royal_marine,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/add_rebel_twe_helmet_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine/veteran/royal_marine,
+		/obj/item/clothing/head/helmet/riot,
+		/obj/item/clothing/head/helmet/riot,
 		)
 	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
 
@@ -1764,6 +1826,22 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		)
 	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
 
+/datum/equipment_preset/proc/add_rebel_upp_suit_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP,
+		/obj/item/clothing/suit/marine/faction/UPP,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
 /datum/equipment_preset/proc/add_rebel_upp_helmet(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -1783,6 +1861,22 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
 		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
 		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/add_rebel_upp_helmet_elite(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		/obj/item/clothing/head/helmet/upp,
+		/obj/item/clothing/head/helmet/upp/alt,
 		)
 	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
 
