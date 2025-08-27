@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/army
+/datum/human_ai_equipment_preset/army
 	faction = FACTION_ARMY
 
 /datum/human_ai_equipment_preset/army/trooper
@@ -20,3 +20,8 @@
 	name = "Army Smartgunner"
 	desc = "Armed with a smartgun and a cutting-edge PBA system."
 	path = /datum/equipment_preset/usa/heavygunner
+
+/datum/human_ai_equipment_preset/army/sergeant
+	name = "Army Sergeant"
+	desc = "Armed with a M41A rifle, a breacher sledgehammer and a cutting-edge PBA system. Usually seen leading a single Army fireteam."
+	path = /datum/equipment_preset/usa/nco
