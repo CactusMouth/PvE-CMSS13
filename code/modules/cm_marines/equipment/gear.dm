@@ -207,7 +207,7 @@
 /obj/item/reagent_container/food/snacks/protein_pack4/Initialize()
 	. = ..()
 	reagents.add_reagent("nutriment", 8)
-	reagents.add_reagent("cherryjelly", 8)
+	reagents.add_reagent("cherrypowder", 8)
 	bitesize = 4
 
 /obj/item/reagent_container/food/snacks/protein_pack5
@@ -220,12 +220,12 @@
 /obj/item/reagent_container/food/snacks/protein_pack5/Initialize()
 	. = ..()
 	reagents.add_reagent("nutriment", 8)
-	reagents.add_reagent("electrolyte_lemonlime_beverage", 8)
+	reagents.add_reagent("lemonpowder", 8)
 	bitesize = 4
 
 /obj/item/reagent_container/food/snacks/protein_pack6
 	name = "crayon Preemptive Action nutrition bar"
-	desc = "A flaky, crunchy military nutrition bar. It's not clear if this protein bar was stocked by the Requisitions Department as some sort of cruel joke, but the bar seems to have actual, powderized wax crayons as flavoring. Oddly enough, it doesn't taste that bad."
+	desc = "A flaky, crunchy military nutrition bar. It's not clear if this protein bar was stocked by the Requisitions Department as some sort of cruel joke or if the USCM is going all-in on the 'dumb marine' stereotype, but the bar seems to have actual, powderized wax crayons as flavoring. Oddly enough, it doesn't taste that bad."
 	icon_state = "yummers6"
 	filling_color = "#ff00cc"
 	w_class = SIZE_TINY

@@ -280,6 +280,26 @@
 	chemclass = CHEM_CLASS_RARE
 	properties = list(PROPERTY_NUTRITIOUS = 2)
 
+/datum/reagent/lemon
+	name = "Lemon Powder"
+	id = "lemonpowder"
+	description = "Ground-up lemons, plus a lot of preservatives. Could be used to make rather low-grade lemonade."
+	reagent_state = SOLID
+	nutriment_factor = 5 * REAGENTS_METABOLISM
+	color = "#ffff00"
+	chemclass = CHEM_CLASS_RARE
+	properties = list(PROPERTY_NUTRITIOUS = 2)
+
+/datum/reagent/cherry
+	name = "Cherry Powder"
+	id = "cherrypowder"
+	description = "Flash-frozen and ground cherries. Tastes very sweet, but not very palatable in this state."
+	reagent_state = SOLID
+	nutriment_factor = 5 * REAGENTS_METABOLISM
+	color = "#c62e4c"
+	chemclass = CHEM_CLASS_RARE
+	properties = list(PROPERTY_NUTRITIOUS = 2)
+
 /datum/reagent/psilocybin
 	name = "Psilocybin"
 	id = "psilocybin"
