@@ -60,6 +60,13 @@
 	total_positions = 4
 	spawn_positions = 4
 
+/datum/job/marine/standard/ai/extraction
+	total_positions = 7
+	spawn_positions = 7
+	gear_preset = /datum/equipment_preset/uscm/pfc/extraction
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/extraction
+	gear_preset_tertiary = /datum/equipment_preset/uscm/pfc/extraction
+
 /datum/job/marine/standard/ai/set_spawn_positions(count)
 	return spawn_positions
 
