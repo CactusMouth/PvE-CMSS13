@@ -22,8 +22,11 @@
 		// these spaces are purely for readability. Preemptive Action is an unsubtle reference to First Strike Bars.
 		list("PREEMPTIVE ACTION BARS", -1, null, null),
 		list("Chocolate Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_REGULAR),
-		list("Strawberry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack2, VENDOR_ITEM_REGULAR),
 		list("Vanilla Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack3, VENDOR_ITEM_REGULAR),
+		list("Strawberry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack2, VENDOR_ITEM_REGULAR),
+		list("Cherry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack4, VENDOR_ITEM_REGULAR),
+		list("Lemon Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack5, VENDOR_ITEM_REGULAR),
+		list("Crayon Flavor", 5, /obj/item/reagent_container/food/snacks/protein_pack6, VENDOR_ITEM_REGULAR),
 		// I kind of wish there was just a generic sweet mix.
 		list("DRINK MIXES", -1, null, null),
 		list("Orange Drink Packet", 15, /obj/item/reagent_container/food/condiment/juice/orange, VENDOR_ITEM_REGULAR),

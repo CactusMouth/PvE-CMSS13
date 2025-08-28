@@ -526,3 +526,13 @@
 	chemclass = CHEM_CLASS_SPECIAL
 	properties = list(PROPERTY_NUTRITIOUS = 2)
 	flags = REAGENT_NO_GENERATION
+
+/datum/reagent/crayonpowder
+	name = "Crayon Powder"
+	id = "crayonpowder"
+	description = "Powderized multicolored wax. This particular batch is child-safe and nontoxic in the event that someone ate it, but it isn't exactly nutritious."
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	color = COLOR_MAGENTA
+	chemclass = CHEM_CLASS_SPECIAL
+	properties = list(PROPERTY_NUTRITIOUS = 1)
+	flags = REAGENT_NO_GENERATION
