@@ -75,7 +75,7 @@
 	///The food object that the mob is trying to eat.
 	var/food_target
 	///A list of foods the mob is interested in eating.
-	var/list/acceptable_foods = list(/obj/item/reagent_container/food/snacks/meat, /obj/item/reagent_container/food/snacks/mre_food, /obj/item/reagent_container/food/snacks/resin_fruit, /obj/item/reagent_container/food/snacks/mre_pack, /obj/item/reagent_container/food/snacks/protein_pack)
+	var/list/acceptable_foods = list(/obj/item/reagent_container/food/snacks/meat, /obj/item/reagent_container/food/snacks/mre_food, /obj/item/reagent_container/food/snacks/resin_fruit, /obj/item/reagent_container/food/snacks/mre_pack, /obj/item/reagent_container/food/snacks/protein_pack, /obj/item/reagent_container/food/snacks/protein_pack2, /obj/item/reagent_container/food/snacks/protein_pack3, /obj/item/reagent_container/food/snacks/protein_pack4, /obj/item/reagent_container/food/snacks/protein_pack5, /obj/item/reagent_container/food/snacks/protein_pack6)
 	///Is the mob currently eating the food_target?
 	var/is_eating = FALSE
 	///Cooldown dictating how long the mob will wait between eating food.
