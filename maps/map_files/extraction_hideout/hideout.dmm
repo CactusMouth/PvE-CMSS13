@@ -808,6 +808,11 @@
 	},
 /turf/open/floor/almayer,
 /area/galleyburned/requisition)
+"mJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/dropship_equipment/fuel/cooling_system,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "mN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -4168,7 +4173,7 @@ mv
 OY
 qa
 cy
-gH
+mJ
 VW
 EC
 Jf
@@ -5309,7 +5314,7 @@ UZ
 qa
 DE
 lr
-gH
+mJ
 qa
 qa
 qa

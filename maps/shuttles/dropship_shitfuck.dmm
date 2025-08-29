@@ -51,9 +51,9 @@
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "gw" = (
-/obj/effect/attach_point/fuel{
-	pixel_x = 2;
-	pixel_y = -17
+/obj/effect/attach_point/fuel/shitfuck{
+	pixel_y = -19;
+	pixel_x = 2
 	},
 /turf/closed/shuttle/ert{
 	icon_state = "T61"
@@ -303,9 +303,9 @@
 	},
 /area/shuttle/shitfuck)
 "Qk" = (
-/obj/effect/attach_point/fuel{
+/obj/effect/attach_point/fuel/shitfuck{
 	pixel_x = -34;
-	pixel_y = -17
+	pixel_y = -19
 	},
 /turf/closed/shuttle/ert{
 	icon_state = "T151"
