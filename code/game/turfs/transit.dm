@@ -305,6 +305,10 @@
 	shuttle_tag = DROPSHIP_UPP
 	dir = SOUTH
 
+/turf/open/space/transit/dropship/shitfuck
+	shuttle_tag = DROPSHIP_SHITFUCK
+	dir = SOUTH
+
 /turf/open/space/transit/south
 	dir = SOUTH
 
