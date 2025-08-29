@@ -114,6 +114,7 @@
 "cy" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/oil,
+/obj/structure/dropship_equipment/paradrop_system,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "cG" = (
@@ -2723,6 +2724,11 @@
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
 /area/galleyburned/prep)
+"TY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/vehicle/powerloader/ft,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "Ue" = (
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
@@ -4268,7 +4274,7 @@ qa
 mu
 FT
 UZ
-gH
+TY
 Jf
 "}
 (25,1,1) = {"
