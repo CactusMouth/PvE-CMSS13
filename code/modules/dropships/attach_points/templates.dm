@@ -499,6 +499,9 @@
 /obj/effect/attach_point/fuel/tripoli
 	ship_tag = DROPSHIP_TRIPOLI
 
+/obj/effect/attach_point/fuel/shitfuck
+	ship_tag = DROPSHIP_SHITFUCK
+
 /obj/effect/attach_point/computer
 	base_category = DROPSHIP_COMPUTER
 
