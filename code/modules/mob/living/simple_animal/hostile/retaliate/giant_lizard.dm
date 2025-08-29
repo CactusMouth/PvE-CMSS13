@@ -88,7 +88,6 @@
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/Initialize()
 	. = ..()
-	change_real_name(src, "[name] ([rand(1, 999)])")
 	pounce_callbacks[/mob] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_mob_wrapper)
 	pounce_callbacks[/turf] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_turf_wrapper)
 	pounce_callbacks[/obj] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_obj_wrapper)
@@ -738,7 +737,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco
 	name = "Bosco"
-	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders, and he likes to spend his time in the heated Platoon Commander office. It looks like he's been defanged, and he can't hurt anyone outside of knocking them down."
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders. Now that the PlatCo office is gone, he's started hanging around Lieutenant Brown's office instead. It looks like he's been defanged - he can't hurt anyone outside of knocking them down. He really likes crayon-flavored protein bars."
 	icon_state = "Bosco Running"
 	icon_living = "Bosco Running"
 	maxHealth = 700
@@ -746,10 +745,6 @@
 	faction = "USCM"
 	melee_damage_lower = 0
 	melee_damage_upper = 0
-
-/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/Initialize()
-	. = ..()
-	change_real_name(src, "[name]")
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/update_transform(instant_update = FALSE)
 	if(stat == DEAD)
