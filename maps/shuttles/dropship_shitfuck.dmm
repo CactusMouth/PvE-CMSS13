@@ -45,24 +45,9 @@
 /obj/structure/bed/chair/vehicle/dropship_cockpit/pilot{
 	dir = 1
 	},
-/turf/open/floor/plating,
-/area/shuttle/shitfuck)
-"gk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/supply{
-	density = 0;
-	pixel_y = 26;
-	name = "rappel harness crate"
+/obj/structure/machinery/computer/shuttle/dropship/flight/screen{
+	pixel_y = 23
 	},
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "gw" = (
@@ -174,6 +159,24 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
+"uu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/supply{
+	density = 0;
+	pixel_y = 26;
+	name = "rappel harness crate"
+	},
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/turf/open/floor/plating,
+/area/shuttle/shitfuck)
 "yB" = (
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "31";
@@ -254,10 +257,6 @@
 /turf/template_noop,
 /area/template_noop)
 "Ln" = (
-/obj/structure/machinery/computer/shuttle/dropship/flight/toc{
-	pixel_y = -9;
-	shuttleId = "dropship_shitfuck"
-	},
 /turf/closed/shuttle/dropship3/transparent{
 	icon_state = "97a"
 	},
@@ -375,7 +374,7 @@ Kw
 TE
 CX
 NK
-gk
+uu
 us
 zG
 us
