@@ -47,6 +47,24 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
+"gk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/supply{
+	density = 0;
+	pixel_y = 26;
+	name = "rappel harness crate"
+	},
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/turf/open/floor/plating,
+/area/shuttle/shitfuck)
 "gw" = (
 /turf/closed/shuttle/ert{
 	icon_state = "T61"
@@ -272,6 +290,7 @@
 /area/shuttle/shitfuck)
 "Pb" = (
 /obj/docking_port/mobile/marine_dropship/shitfuck,
+/obj/effect/attach_point/crew_weapon/shitfuck,
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "PW" = (
@@ -356,7 +375,7 @@ Kw
 TE
 CX
 NK
-WF
+gk
 us
 zG
 us
