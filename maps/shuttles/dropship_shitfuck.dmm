@@ -239,9 +239,8 @@
 /obj/structure/machinery/computer/shuttle/dropship/flight/toc{
 	pixel_y = -9
 	},
-/turf/closed/shuttle/dropship3/tornado{
-	icon_state = "97a";
-	opacity = 0
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "97a"
 	},
 /area/shuttle/shitfuck)
 "Lr" = (
