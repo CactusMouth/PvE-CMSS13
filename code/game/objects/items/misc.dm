@@ -430,3 +430,6 @@
 
 /obj/item/rappel_harness/extract/nauk
 	shuttle_id = DROPSHIP_UPP
+
+/obj/item/rappel_harness/extract/shitfuck
+	shuttle_id = DROPSHIP_SHITFUCK

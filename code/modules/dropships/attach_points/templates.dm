@@ -429,6 +429,9 @@
 /obj/effect/attach_point/crew_weapon/tripoli
 	ship_tag = DROPSHIP_TRIPOLI
 
+/obj/effect/attach_point/crew_weapon/shitfuck
+	ship_tag = DROPSHIP_SHITFUCK
+
 /obj/effect/attach_point/electronics
 	name = "electronic system attach point"
 	base_category = DROPSHIP_ELECTRONICS
