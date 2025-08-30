@@ -433,6 +433,9 @@
 
 /obj/item/rappel_harness/extract/shitfuck
 	shuttle_id = DROPSHIP_SHITFUCK
+	name = "infiltration-exfiltration harness"
+	desc = "A jury-rigged, multi-purpose rappel/fulton system made using reverse-engineered STARS tech. When worn, this harness will allow to you drop groundside from the dropship and exfiltrate from the AO when at a designated exfiltration site. It is quite compact and able to be easily stored in a bag when not in use."
+	w_class = SIZE_SMALL
 
 /obj/item/rappel_harness/extract/rmc
 	shuttle_id = DROPSHIP_GIBRALTAR
