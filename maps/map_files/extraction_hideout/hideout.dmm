@@ -81,7 +81,8 @@
 "bI" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
-	light_power = 0.7
+	light_power = 0.7;
+	icon_state = null
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/bedsheet/red,
@@ -91,7 +92,13 @@
 	pixel_y = -3;
 	anchored = 1
 	},
-/turf/open/floor/plating,
+/obj/item/device/flashlight/lantern{
+	pixel_x = 9;
+	pixel_y = -6;
+	anchored = 1;
+	icon_state = "lantern-on"
+	},
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "bJ" = (
 /obj/structure/shuttle/part/midway/transparent{
@@ -254,7 +261,7 @@
 	real_name = "Mud";
 	name = "Mud"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "eu" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -391,13 +398,12 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/prep)
 "gM" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/item/explosive/mine{
 	pixel_y = 2;
 	pixel_x = 8;
 	anchored = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "gW" = (
 /turf/closed/shuttle/midway{
@@ -594,6 +600,14 @@
 	},
 /turf/open/floor/almayer,
 /area/galleyburned/requisition)
+"jR" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/bed/chair/comfy,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "jT" = (
 /obj/structure/window/framed/almayer,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -605,7 +619,7 @@
 /area/galleyburned/residential)
 "jZ" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper M-01 [VACANT]";
+	name = "\improper M-01 [H. SCHNEIDER]";
 	dir = 2
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -750,6 +764,9 @@
 /obj/item/clothing/under/colonist/prison_boiler,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"mh" = (
+/turf/open/floor/sandstone/runed,
+/area/galleyburned/residential)
 "mi" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -1097,6 +1114,12 @@
 /turf/closed/shuttle/midway/transparent{
 	icon_state = "86b"
 	},
+/area/galleyburned/residential)
+"rC" = (
+/obj/structure/bed/chair/comfy{
+	dir = 1
+	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "rK" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1501,8 +1524,29 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zd" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.3
+	},
+/obj/structure/prop/hybrisa/misc/trash{
+	name = "automated ammunition press";
+	desc = "A modified autolathe which slowly produces ammunition every deployment. It can produce up to four magazines of nearly any gun."
+	},
+/obj/item/ammo_magazine/rifle/xm51{
+	pixel_x = -1;
+	pixel_y = 14
+	},
+/obj/item/ammo_magazine/rifle/xm51{
+	pixel_x = -1;
+	pixel_y = 14
+	},
+/obj/item/ammo_magazine/rifle/xm51{
+	pixel_x = -1;
+	pixel_y = 14
+	},
+/obj/item/ammo_magazine/rifle/xm51{
+	pixel_x = -1;
+	pixel_y = 14
+	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "zl" = (
@@ -1550,6 +1594,22 @@
 	pixel_y = 11;
 	name = "door lock";
 	id = "s1"
+	},
+/obj/structure/surface/rack,
+/obj/item/clothing/head/helmet/upp/marinepilot/tex{
+	pixel_x = 8;
+	pixel_y = 10;
+	anchored = 1
+	},
+/obj/item/weapon/knife/marine/bowie{
+	pixel_y = -5;
+	pixel_x = -7;
+	anchored = 1
+	},
+/obj/item/clothing/head/sippyhat/duff{
+	pixel_y = -10;
+	pixel_x = 8;
+	anchored = 1
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -2108,6 +2168,13 @@
 	icon_state = "35"
 	},
 /area/galleyburned/residential)
+"IY" = (
+/obj/structure/sign/banners/united_americas_flag{
+	pixel_x = -16;
+	pixel_y = -31
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "Jb" = (
 /turf/open/space/basic,
 /area/space)
@@ -2441,11 +2508,6 @@
 /obj/structure/sink{
 	pixel_y = 19
 	},
-/obj/item/device/flashlight/lantern{
-	pixel_x = 9;
-	pixel_y = -5;
-	anchored = 1
-	},
 /obj/item/clothing/head/helmet/space/souto{
 	pixel_y = 42;
 	pixel_x = 3;
@@ -2612,7 +2674,8 @@
 "RW" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
-	light_power = 0.7
+	light_power = 0.7;
+	icon_state = null
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/prop/magazine/book/starshiptroopers{
@@ -2631,7 +2694,13 @@
 /obj/structure/window/reinforced/ultra{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/obj/item/device/flashlight/lantern{
+	pixel_x = 9;
+	pixel_y = 8;
+	anchored = 1;
+	icon_state = "lantern-on"
+	},
+/turf/open/floor/almayer/dark_sterile,
 /area/galleyburned/residential)
 "Sb" = (
 /obj/structure/closet,
@@ -2677,6 +2746,10 @@
 /obj/structure/stairs{
 	dir = 1
 	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
+"SZ" = (
+/obj/structure/surface/table/woodentable,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Td" = (
@@ -5124,9 +5197,9 @@ pt
 vS
 JF
 ZK
-mt
 yC
-mt
+yC
+yC
 yC
 yC
 rj
@@ -5176,12 +5249,12 @@ QV
 tZ
 jZ
 yC
-zd
 yC
-mt
-mt
-mt
 yC
+yC
+yC
+yC
+IY
 JF
 rQ
 yC
@@ -5227,13 +5300,13 @@ bj
 JF
 vS
 JF
-fl
-mt
-mt
-mt
-mt
-mt
-rj
+jR
+SZ
+rC
+yC
+yC
+yC
+zd
 JF
 Xx
 yC
@@ -5540,7 +5613,7 @@ PL
 ed
 JF
 RW
-yC
+mh
 bI
 JF
 fE
