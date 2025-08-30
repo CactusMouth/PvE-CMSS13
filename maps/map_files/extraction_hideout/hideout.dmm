@@ -575,7 +575,8 @@
 /area/galleyburned/briefing)
 "jq" = (
 /obj/structure/machinery/door/airlock/almayer/engineering/glass{
-	name = "\improper Hangar"
+	name = "\improper Hangar";
+	req_one_access = list()
 	},
 /turf/open/floor/plating,
 /area/galleyburned/briefing)
