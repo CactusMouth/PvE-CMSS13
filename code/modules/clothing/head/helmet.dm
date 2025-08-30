@@ -1046,8 +1046,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/marine_raider, new /obj/item/device/helmet_visor/security)
 	start_down_visor_type = /obj/item/device/helmet_visor/night_vision/marine_raider
 
-//=============================//PMCS\\==================================\\
-//=======================================================================\\
+//=============================//PMCS\\==================================
+//=======================================================================
 
 /obj/item/clothing/head/helmet/marine/veteran
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE //Let's make these keep their name and icon.
