@@ -233,6 +233,18 @@
 	auto_open = TRUE
 	roundstart_template = /datum/map_template/shuttle/shitfuck
 
+/obj/docking_port/mobile/marine_dropship/gibraltar
+	name = "Gibraltar"
+	id = DROPSHIP_GIBRALTAR
+	width = 9
+	height = 18
+
+	dwidth = 4
+	dheight = 9
+
+/obj/docking_port/mobile/marine_dropship/gibraltar/get_transit_path_type()
+	return /turf/open/space/transit/dropship/gibraltar
+
 /obj/docking_port/mobile/marine_dropship/alamo
 	name = "Alamo"
 	id = DROPSHIP_ALAMO
@@ -469,6 +481,10 @@
 /datum/map_template/shuttle/pmc
 	name = "Cash Flow"
 	shuttle_id = DROPSHIP_PMC
+
+/datum/map_template/shuttle/gibraltar
+	name = "Gibraltar"
+	shuttle_id = DROPSHIP_GIBRALTAR
 
 /datum/map_template/shuttle/typhoon
 	name = "CMD-Typhoon"

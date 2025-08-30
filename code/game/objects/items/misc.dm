@@ -433,3 +433,6 @@
 
 /obj/item/rappel_harness/extract/shitfuck
 	shuttle_id = DROPSHIP_SHITFUCK
+
+/obj/item/rappel_harness/extract/rmc
+	shuttle_id = DROPSHIP_GIBRALTAR
