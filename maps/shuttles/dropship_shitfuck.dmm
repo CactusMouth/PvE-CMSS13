@@ -52,7 +52,7 @@
 /area/shuttle/shitfuck)
 "gw" = (
 /obj/effect/attach_point/fuel/shitfuck{
-	pixel_y = -19;
+	pixel_y = -17;
 	pixel_x = 2
 	},
 /turf/closed/shuttle/ert{
@@ -305,7 +305,7 @@
 "Qk" = (
 /obj/effect/attach_point/fuel/shitfuck{
 	pixel_x = -34;
-	pixel_y = -19
+	pixel_y = -17
 	},
 /turf/closed/shuttle/ert{
 	icon_state = "T151"
