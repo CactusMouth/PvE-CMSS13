@@ -161,36 +161,43 @@
 /obj/item/coin/requisitionpoint/one
 	name = "one-credit requisition token"
 	desc = "A stamped iron coin that can be redeemed at the Hideout requisitions bay for goods or services worth 1RP."
+	rp_value = 10
 
 /obj/item/coin/requisitionpoint/five
 	name = "five-credit requisition token"
 	desc = "A stamped copper coin that can be redeemed at the Hideout requisitions bay for goods or services worth 5RP."
 	icon_state = "coin_copper"
+	rp_value = 50
 
 /obj/item/coin/requisitionpoint/ten
 	name = "ten-credit requisition token"
 	desc = "A stamped silver coin that can be redeemed at the Hideout requisitions bay for goods or services worth 10RP."
 	icon_state = "coin_silver"
+	rp_value = 100
 
 /obj/item/coin/requisitionpoint/twenty
 	name = "twenty-credit requisition token"
 	desc = "A stamped golden coin that can be redeemed at the Hideout requisitions bay for goods or services worth 20RP."
 	icon_state = "coin_gold"
+	rp_value = 200
 
 /obj/item/coin/requisitionpoint/fifty
 	name = "fifty-credit requisition token"
 	desc = "A stamped platinum coin that can be redeemed at the Hideout requisitions bay for goods or services worth 50RP."
 	icon_state = "coin_platinum"
+	rp_value = 500
 
 /obj/item/coin/requisitionpoint/onehundred
 	name = "one-hundred-credit requisition token"
 	desc = "A stamped diamond coin that can be redeemed at the Hideout requisitions bay for goods or services worth 100RP."
 	icon_state = "coin_diamond"
+	rp_value = 1000
 
 /obj/item/coin/requisitionpoint/twohundred
 	name = "two-hundred-credit requisition token"
 	desc = "A stamped phoron coin that can be redeemed at the Hideout requisitions bay for goods or services worth 200RP."
 	icon_state = "coin_phoron"
+	rp_value = 2000
 
 /obj/item/coin/vehicletoken
 	name = "vehicle redemption token (null)"

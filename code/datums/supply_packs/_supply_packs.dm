@@ -24,6 +24,8 @@
 	var/dollar_cost = 0
 	/// How much "heat" this crate adds, too much heat will send an investigation. Only use for contraband.
 	var/crate_heat = 0
+	var/qm_llone = FALSE
+	var/qm_lltwo = FALSE
 
 /datum/supply_packs/New()
 	if(randomised_num_contained)

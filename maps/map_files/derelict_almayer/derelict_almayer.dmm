@@ -35573,7 +35573,7 @@
 /area/almayer/shipboard/port_point_defense)
 "nps" = (
 /turf/open/floor/almayer/empty,
-/area/supply/station)
+/area/almayer/squads/req)
 "npI" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment{
@@ -57212,7 +57212,7 @@
 "vxP" = (
 /obj/effect/landmark/supply_elevator,
 /turf/open/floor/almayer/empty,
-/area/supply/station)
+/area/almayer/squads/req)
 "vxR" = (
 /obj/structure/platform{
 	dir = 8

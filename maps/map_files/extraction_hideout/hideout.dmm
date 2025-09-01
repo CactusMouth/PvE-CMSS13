@@ -50,6 +50,16 @@
 "aS" = (
 /turf/open/floor/plating/almayer,
 /area/galleyburned/memorial)
+"aV" = (
+/obj/structure/inventory_machine,
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "aX" = (
 /obj/structure/largecrate/random/barrel/yellow{
 	pixel_x = 9
@@ -188,6 +198,10 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"dI" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/plating,
+/area/galleyburned/requisition)
 "dJ" = (
 /mob/living/simple_animal/cat{
 	name = "Kiki";
@@ -214,6 +228,12 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/galleyburned/cryo)
+"dQ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/requisition)
 "dR" = (
 /obj/structure/sign/banners/brazil_worn{
 	pixel_y = 29;
@@ -255,6 +275,19 @@
 "ej" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/prep)
+"ek" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/computer/supplycomp/extraction,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "er" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/human/farwa{
@@ -267,6 +300,13 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"ev" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/requisition)
 "ew" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = 16;
@@ -512,6 +552,13 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"iB" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 8;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/almayer/cargo_arrow/east,
+/area/galleyburned/requisition)
 "iC" = (
 /obj/structure/barricade/handrail/type_b{
 	dir = 4
@@ -644,6 +691,15 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"ke" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out"
+	},
+/obj/structure/machinery/gear{
+	id = "supply_elevator_gear"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/galleyburned/requisition)
 "kk" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
@@ -1075,12 +1131,10 @@
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "qL" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
 	},
-/obj/structure/flora/pottedplant/random,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "qX" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -1158,6 +1212,13 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"sx" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 2;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "sD" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -1358,6 +1419,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"vX" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 2;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/galleyburned/requisition)
 "wj" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "6"
@@ -1550,13 +1618,8 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "zl" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/structure/flora/pottedplant/random,
-/turf/open/floor/almayer/plate,
-/area/galleyburned/requisition)
+/turf/open/floor/almayer/empty/requisitions,
+/area/supply/station)
 "zo" = (
 /obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
@@ -1617,6 +1680,13 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_E,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
+"Ao" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper Residential District";
+	dir = 2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "Ap" = (
 /obj/structure/machinery/shower{
 	pixel_y = 15
@@ -1692,6 +1762,15 @@
 /obj/item/storage/fancy/cigar/matchbook,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"BA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/structure/machinery/gear{
+	id = "supply_elevator_gear"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/galleyburned/requisition)
 "BC" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper Briefing"
@@ -2012,6 +2091,13 @@
 	icon_state = "86a"
 	},
 /area/galleyburned/residential)
+"Fr" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 8;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -2057,6 +2143,15 @@
 /area/galleyburned/requisition)
 "Gf" = (
 /turf/open/floor/almayer/cargo_arrow/east,
+/area/galleyburned/requisition)
+"Gj" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out"
+	},
+/obj/structure/machinery/gear{
+	id = "supply_elevator_gear"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
 /area/galleyburned/requisition)
 "Gl" = (
 /obj/structure/stairs{
@@ -2202,6 +2297,16 @@
 /obj/effect/attach_point/weapon/midway/left_fore,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"JK" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/door/window/southright,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "JL" = (
 /obj/structure/machinery/cryopod/big{
 	dir = 4;
@@ -2363,6 +2468,13 @@
 "LW" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/requisition)
+"Mi" = (
+/obj/structure/machinery/door/airlock/maintenance/colony{
+	dir = 8;
+	req_one_access = null
+	},
+/turf/open/floor/plating,
+/area/galleyburned/requisition)
 "Mo" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
 /turf/open/floor/plating,
@@ -2400,6 +2512,16 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
+"MB" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/machinery/door/window/southright,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "MW" = (
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
@@ -2696,6 +2818,15 @@
 /obj/item/ammo_magazine/shotgun/beanbag,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"Sc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out"
+	},
+/obj/structure/machinery/gear{
+	id = "supply_elevator_gear"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/galleyburned/requisition)
 "Sm" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /obj/structure/machinery/landinglight/ds1/delayone{
@@ -2703,6 +2834,12 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
+"Sr" = (
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/requisition)
 "Sv" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -2799,6 +2936,13 @@
 	icon_state = "31"
 	},
 /area/galleyburned/residential)
+"Up" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 4;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "Uz" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -2885,6 +3029,10 @@
 /obj/effect/attach_point/electronics/midway,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"We" = (
+/obj/effect/landmark/supply_elevator,
+/turf/open/floor/almayer/empty/requisitions,
+/area/supply/station)
 "Wp" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "41"
@@ -3006,6 +3154,13 @@
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
+"Yv" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 4;
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/almayer/cargo_arrow/west,
+/area/galleyburned/requisition)
 "YN" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "20"
@@ -3517,17 +3672,17 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
 Jf
 Jf
 qa
@@ -3569,18 +3724,18 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
+UZ
+UZ
+UZ
+gH
+UZ
+Uz
+UZ
+UZ
+UZ
+UZ
+UZ
 eu
 UZ
 Uz
@@ -3621,17 +3776,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 ew
 XD
@@ -3639,7 +3783,18 @@ XD
 XD
 XD
 XD
-UZ
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+Mi
 qa
 Es
 nI
@@ -3673,17 +3828,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 Lk
 XD
@@ -3691,7 +3835,18 @@ ka
 xO
 xP
 XD
-gH
+aV
+JK
+Iq
+DN
+DN
+DN
+DN
+DN
+DN
+Iq
+DN
+DN
 qa
 pe
 uN
@@ -3721,17 +3876,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 Jf
 Jf
@@ -3743,7 +3887,18 @@ dM
 Tl
 Tl
 XD
-UZ
+aV
+JK
+DN
+LW
+LW
+LW
+LW
+LW
+LW
+LW
+LW
+DN
 Ry
 Ry
 Ry
@@ -3773,17 +3928,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 gH
 gH
@@ -3795,7 +3939,18 @@ un
 jI
 Ga
 XD
-UZ
+aV
+JK
+DN
+Gj
+Up
+Up
+Yv
+Up
+Up
+Sc
+LW
+DN
 Ry
 lk
 ny
@@ -3825,29 +3980,29 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 gH
-qa
-qa
-qa
-LD
+XD
+XD
+XD
+Mi
 XD
 zc
 SE
 cJ
 XD
-LD
+XD
+ev
+DN
+sx
+zl
+zl
+zl
+zl
+zl
+qL
+LW
+dQ
 Ry
 zo
 ny
@@ -3877,20 +4032,9 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 Te
-qa
+XD
 Cm
 hf
 DN
@@ -3898,7 +4042,18 @@ Iq
 Vk
 DN
 DN
-qL
+DN
+dI
+LW
+LW
+sx
+zl
+zl
+zl
+zl
+zl
+Sr
+DN
 DN
 mX
 lk
@@ -3929,20 +4084,9 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 UZ
-qa
+XD
 PC
 hf
 LW
@@ -3951,7 +4095,18 @@ LW
 LW
 LW
 LW
+Ao
 LW
+LW
+vX
+zl
+zl
+We
+zl
+zl
+ek
+JK
+DN
 mm
 OY
 OY
@@ -3981,20 +4136,9 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 gH
-qa
+XD
 Cm
 hf
 DN
@@ -4002,7 +4146,18 @@ kk
 tn
 DN
 DN
+DN
+dI
+LW
+LW
+sx
 zl
+zl
+zl
+zl
+zl
+Sr
+DN
 DN
 mX
 lk
@@ -4033,29 +4188,29 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 gH
-qa
-qa
-qa
-LD
+XD
+XD
+XD
+Mi
 XD
 zc
 El
 JX
 XD
-LD
+XD
+ev
+DN
+sx
+zl
+zl
+zl
+zl
+zl
+qL
+LW
+dQ
 Ry
 zo
 ZG
@@ -4085,17 +4240,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 UZ
 UZ
@@ -4107,7 +4251,18 @@ dM
 mG
 Gf
 XD
-Uz
+aV
+MB
+DN
+BA
+Fr
+Fr
+iB
+Fr
+Fr
+ke
+LW
+DN
 Ry
 lk
 ZG
@@ -4137,17 +4292,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 Jf
 Jf
@@ -4159,7 +4303,18 @@ dM
 Tl
 Tl
 XD
-UZ
+aV
+JK
+DN
+LW
+LW
+LW
+LW
+LW
+LW
+LW
+LW
+DN
 Ry
 lk
 op
@@ -4193,17 +4348,6 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 UZ
 XD
@@ -4211,7 +4355,18 @@ rK
 ea
 rK
 XD
-UZ
+aV
+JK
+kk
+DN
+DN
+DN
+DN
+DN
+DN
+kk
+DN
+DN
 Ry
 Kz
 op
@@ -4245,28 +4400,28 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
 Ct
-qa
-qa
-qa
-qa
-qa
-UZ
-XW
-OY
-OY
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+XD
+Mi
+Ry
+lk
+op
 OY
 mm
 mv
@@ -4297,18 +4452,18 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
 Jf
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
+UZ
 UZ
 gH
 if
@@ -4316,9 +4471,9 @@ Uz
 tA
 UZ
 UZ
-Ry
-zo
-op
+XW
+OY
+OY
 OY
 mX
 NN
@@ -4349,17 +4504,17 @@ Jb
 Jb
 Jb
 Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
-Jb
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
 Jf
 Jf
 Jf
@@ -4369,7 +4524,7 @@ Jf
 qa
 LD
 Ry
-lk
+zo
 op
 NN
 Ry
