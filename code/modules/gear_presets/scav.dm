@@ -580,16 +580,16 @@
 		new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/medkit/full_advanced, WEAR_L_STORE)
 
 /datum/equipment_preset/scav/shotgun/elite
-	name = "Scav, Marauder (Shotgun)"
+	name = "Scav, Marauder (Shotgun+)"
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/lanyard
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_LIST_CLF_BASE)
 
-/datum/equipment_preset/scav/rifle/elite/get_assignment(mob/living/carbon/human/new_human)
+/datum/equipment_preset/scav/shotgun/elite/get_assignment(mob/living/carbon/human/new_human)
 	return "Mercenary"
 
-/datum/equipment_preset/scav/rifle/elite/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/scav/shotgun/elite/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
 	//back
 	var/scav_backpack = rand(1,3)
@@ -723,10 +723,10 @@
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_LIST_CLF_BASE)
 
-/datum/equipment_preset/scav/rifle/elite/get_assignment(mob/living/carbon/human/new_human)
+/datum/equipment_preset/scav/machinegun/get_assignment(mob/living/carbon/human/new_human)
 	return "Mercenary"
 
-/datum/equipment_preset/scav/rifle/elite/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/scav/machinegun/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
 	//back
 	var/scav_backpack = rand(1,3)
