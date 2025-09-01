@@ -1689,6 +1689,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
+/obj/item/storage/fancy/cigar/matchbook,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "BC" = (
@@ -1759,6 +1760,10 @@
 	pixel_x = -1;
 	pixel_y = -3
 	},
+/obj/item/storage/fancy/cigar/matchbook/wy_gold{
+	pixel_x = -7;
+	pixel_y = 9
+	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "CL" = (
@@ -1769,6 +1774,10 @@
 /obj/item/weapon/swiss_army_knife{
 	pixel_x = 8;
 	pixel_y = 9
+	},
+/obj/item/storage/fancy/cigarettes/lucky_strikes_4{
+	pixel_y = 4;
+	pixel_x = -9
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
@@ -1947,6 +1956,7 @@
 "EC" = (
 /obj/structure/surface/rack,
 /obj/item/explosive/grenade/smokebomb/red,
+/obj/item/storage/fancy/cigar/matchbook,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "EE" = (
@@ -2002,19 +2012,6 @@
 	icon_state = "86a"
 	},
 /area/galleyburned/residential)
-"Fr" = (
-/obj/structure/surface/table/almayer,
-/obj/item/mre_food_packet/wy/cookie_brick,
-/obj/item/mre_food_packet/wy/cookie_brick{
-	pixel_x = 9;
-	pixel_y = 4
-	},
-/obj/item/mre_food_packet/wy/cookie_brick{
-	pixel_x = -8;
-	pixel_y = 7
-	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/canteen)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -2366,15 +2363,6 @@
 "LW" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/requisition)
-"Mi" = (
-/obj/structure/surface/table/almayer,
-/obj/item/storage/fancy/cigarettes/lucky_strikes_4{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/storage/fancy/cigarettes/lucky_strikes_4,
-/turf/open/floor/almayer/mono,
-/area/galleyburned/canteen)
 "Mo" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
 /turf/open/floor/plating,
@@ -2721,13 +2709,8 @@
 /area/galleyburned/residential)
 "SC" = (
 /obj/structure/surface/table/almayer,
-/obj/item/storage/fancy/cigarettes/lucky_strikes_4{
-	pixel_x = -6;
-	pixel_y = 7
-	},
-/obj/item/storage/fancy/cigar/matchbook{
-	pixel_x = 7;
-	pixel_y = -2
+/obj/item/reagent_container/food/condiment/hotsauce/tabasco{
+	pixel_y = 8
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
@@ -2816,14 +2799,6 @@
 	icon_state = "31"
 	},
 /area/galleyburned/residential)
-"Up" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/drinks/cans/beer{
-	pixel_x = -9;
-	pixel_y = 12
-	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/canteen)
 "Uz" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -3884,7 +3859,7 @@ xv
 pa
 vg
 xv
-Mi
+UR
 Cg
 EM
 "}
@@ -3985,7 +3960,7 @@ hF
 pT
 yE
 xv
-Up
+QF
 vg
 xv
 UR
@@ -4089,7 +4064,7 @@ AJ
 qX
 yE
 xv
-Fr
+QF
 vg
 xv
 Qb
