@@ -79,6 +79,54 @@
 	containername = "\improper MAC-15 extended magazine crate"
 	group = "Quartermaster LL0"
 
+/datum/supply_packs/qm_mar30
+	name = "Weapon: MAR-30 SMG"
+	contains = list(/obj/item/weapon/gun/rifle/mar40/carbine)
+	cost = 30
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "\improper MAR-30 crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mar40
+	name = "Weapon: MAR-40 Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/mar40/carbine)
+	cost = 50
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "\improper MAR-40 crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mar_mag
+	name = "Ammunition: MAR-XX Magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/mar40)
+	cost = 3
+	containertype = /obj/structure/closet/crate/ammo
+	containername = "\improper MAR-XX magazine crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mar_mag_ext
+	name = "Ammunition: MAR-XX Magazine, Extended"
+	contains = list(/obj/item/ammo_magazine/rifle/mar40/extended)
+	cost = 5
+	containertype = /obj/structure/closet/crate/ammo
+	containername = "\improper MAR-XX extended magazine crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_ar10
+	name = "Weapon: AR-10 Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/ar10)
+	cost = 75
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "\improper AR-10 crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_ar10_mag
+	name = "Ammunition: AR-10 Magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/ar10)
+	cost = 3
+	containertype = /obj/structure/closet/crate/ammo
+	containername = "\improper AR-10 magazine crate"
+	group = "Quartermaster LL0"
+
 /datum/supply_packs/qm_rival78
 	name = "Weapon: Spearhead Rival 78 Shotgun"
 	contains = list(/obj/item/weapon/gun/shotgun/double)
