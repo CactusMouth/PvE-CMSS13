@@ -159,6 +159,22 @@
 	containername = "\improper bulk 9mm ammo crate"
 	group = "Quartermaster LL0"
 
+/datum/supply_packs/qm_hedp
+	name = "Weapon: M40 HEDP Grenade"
+	contains = list(/obj/item/explosive/grenade/high_explosive)
+	cost = 5
+	containertype = /obj/structure/closet/crate/explosives
+	containername = "\improper HEDP grenade crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_hefa
+	name = "Weapon: M40 HEFA Grenade"
+	contains = list(/obj/item/explosive/grenade/high_explosive/frag)
+	cost = 7
+	containertype = /obj/structure/closet/crate/explosives
+	containername = "\improper HEFA grenade crate"
+	group = "Quartermaster LL0"
+
 // armor
 /datum/supply_packs/qm_mhelmet
 	name = "Armor: M10 Pattern Ballistic Helmet"
