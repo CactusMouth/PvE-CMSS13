@@ -12,6 +12,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
+"ak" = (
+/obj/structure/barricade/handrail{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
@@ -155,6 +165,13 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"cQ" = (
+/obj/structure/closet/crate/internals,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "cR" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
@@ -246,6 +263,16 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"dU" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/structure/closet/crate/green,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "ea" = (
 /obj/structure/closet/crate/delta,
 /turf/open/floor/almayer/cargo,
@@ -314,6 +341,16 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"eB" = (
+/obj/structure/barricade/handrail,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "eD" = (
 /turf/closed/shuttle/midway{
 	icon_state = "69"
@@ -387,6 +424,13 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"fI" = (
+/obj/structure/closet/crate,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "fN" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/almayer/mono,
@@ -468,6 +512,10 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
+"hm" = (
+/obj/structure/barricade/handrail/type_b,
+/turf/closed/wall/almayer,
+/area/galleyburned/residential)
 "ho" = (
 /obj/structure/largecrate/random/barrel/green{
 	pixel_y = -10;
@@ -590,6 +638,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
+"iT" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "iV" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/galleyburned/cryo)
@@ -711,6 +769,12 @@
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"kw" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "kE" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper M-02 [VACANT]";
@@ -1134,7 +1198,7 @@
 /obj/structure/machinery/door/poddoor/railing{
 	id = "supply_elevator_railing"
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
 "qX" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -1169,6 +1233,16 @@
 	icon_state = "86b"
 	},
 /area/galleyburned/residential)
+"rB" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 4;
+	id = "supply_elevator_railing"
+	},
+/obj/structure/machinery/floodlight/landing{
+	name = "bolted floodlight"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "rC" = (
 /obj/structure/bed/chair/comfy{
 	dir = 1
@@ -1229,6 +1303,15 @@
 	},
 /turf/open/floor/almayer/bluefull,
 /area/galleyburned/briefing)
+"sE" = (
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
+	},
+/obj/structure/machinery/floodlight/landing{
+	name = "bolted floodlight"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "sG" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "95a"
@@ -1535,6 +1618,16 @@
 	},
 /turf/open/floor/almayer/cargo,
 /area/galleyburned/requisition)
+"xV" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 2;
+	id = "supply_elevator_railing"
+	},
+/obj/structure/machinery/floodlight/landing{
+	name = "bolted floodlight"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "ya" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
@@ -1819,7 +1912,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	vector_x = 30;
-	vector_y = 25
+	vector_y = 14
 	},
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
@@ -2153,6 +2246,15 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/galleyburned/requisition)
+"Gk" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "Gl" = (
 /obj/structure/stairs{
 	dir = 1
@@ -2233,6 +2335,20 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
+"HR" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/structure/closet/crate,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "HT" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -2299,10 +2415,10 @@
 /area/galleyburned/residential)
 "JK" = (
 /obj/structure/window/reinforced/ultra{
-	dir = 4
+	dir = 8
 	},
 /obj/structure/window/reinforced/ultra{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
@@ -2514,10 +2630,10 @@
 /area/galleyburned/residential)
 "MB" = (
 /obj/structure/window/reinforced/ultra{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/window/reinforced/ultra{
-	dir = 4
+	dir = 8
 	},
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
@@ -2679,7 +2795,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	vector_x = 30;
-	vector_y = 25
+	vector_y = 14
 	},
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
@@ -2748,6 +2864,26 @@
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
+"QH" = (
+/obj/structure/machinery/door/poddoor/railing{
+	dir = 8;
+	id = "supply_elevator_railing"
+	},
+/obj/structure/machinery/floodlight/landing{
+	name = "bolted floodlight"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
+"QP" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/step_trigger/teleporter_vector{
+	vector_x = -30;
+	vector_y = -14
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "QV" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper S-03 [VACANT]";
@@ -2834,12 +2970,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
-"Sr" = (
-/obj/structure/machinery/door/poddoor/railing{
-	id = "supply_elevator_railing"
-	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/requisition)
 "Sv" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -2861,7 +2991,7 @@
 "SN" = (
 /obj/effect/step_trigger/teleporter_vector{
 	vector_x = -30;
-	vector_y = -27
+	vector_y = -14
 	},
 /obj/structure/stairs{
 	dir = 1
@@ -2977,6 +3107,14 @@
 /obj/effect/landmark/start/marine/alpha,
 /turf/open/floor/almayer/sterile_green_side/southeast,
 /area/galleyburned/cryo)
+"Vh" = (
+/obj/structure/closet/crate/plastic,
+/obj/structure/barricade/handrail,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "Vk" = (
 /obj/item/clothing/mask/cigarette/weed{
 	pixel_x = -10;
@@ -3179,6 +3317,20 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"YT" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/structure/barricade/handrail{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/structure/closet/crate,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "YU" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper S-05 [VACANT]";
@@ -3836,16 +3988,16 @@ xO
 xP
 XD
 aV
-JK
+MB
 Iq
-DN
-DN
-DN
-DN
-DN
-DN
-Iq
-DN
+YT
+dU
+Gk
+Gk
+Gk
+Gk
+HR
+eB
 DN
 qa
 pe
@@ -3888,7 +4040,7 @@ Tl
 Tl
 XD
 aV
-JK
+MB
 DN
 LW
 LW
@@ -3940,14 +4092,14 @@ jI
 Ga
 XD
 aV
-JK
+MB
 DN
 Gj
-Up
+rB
 Up
 Yv
 Up
-Up
+rB
 Sc
 LW
 DN
@@ -3994,13 +4146,13 @@ XD
 XD
 ev
 DN
-sx
+xV
 zl
 zl
 zl
 zl
 zl
-qL
+sE
 LW
 dQ
 Ry
@@ -4052,7 +4204,7 @@ zl
 zl
 zl
 zl
-Sr
+qL
 DN
 DN
 mX
@@ -4105,7 +4257,7 @@ We
 zl
 zl
 ek
-JK
+MB
 DN
 mm
 OY
@@ -4156,7 +4308,7 @@ zl
 zl
 zl
 zl
-Sr
+qL
 DN
 DN
 mX
@@ -4202,13 +4354,13 @@ XD
 XD
 ev
 DN
-sx
+xV
 zl
 zl
 zl
 zl
 zl
-qL
+sE
 LW
 dQ
 Ry
@@ -4252,14 +4404,14 @@ mG
 Gf
 XD
 aV
-MB
+JK
 DN
 BA
-Fr
+QH
 Fr
 iB
 Fr
-Fr
+QH
 ke
 LW
 DN
@@ -4304,7 +4456,7 @@ Tl
 Tl
 XD
 aV
-JK
+MB
 DN
 LW
 LW
@@ -4356,16 +4508,16 @@ ea
 rK
 XD
 aV
-JK
+MB
 kk
-DN
-DN
-DN
-DN
-DN
-DN
-kk
-DN
+ak
+kw
+fI
+cQ
+kw
+kw
+iT
+Vh
 DN
 Ry
 Kz
@@ -5583,7 +5735,7 @@ sN
 qB
 Gl
 SN
-JF
+hm
 tu
 JF
 Tj
@@ -5634,8 +5786,8 @@ Jf
 sN
 qB
 Gl
-SN
-JF
+QP
+hm
 BM
 JF
 OG
@@ -5686,8 +5838,8 @@ Jf
 sN
 qB
 Gl
-SN
-JF
+QP
+hm
 tu
 JF
 yx

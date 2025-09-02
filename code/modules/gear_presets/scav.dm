@@ -469,7 +469,6 @@
 	new_human.undershirt = "undershirt"
 	//back
 	var/scav_backpack = rand(1,3)
-	var/scav_backpack = rand(1,3)
 	switch(scav_backpack)
 		if(1)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack(new_human), WEAR_BACK)

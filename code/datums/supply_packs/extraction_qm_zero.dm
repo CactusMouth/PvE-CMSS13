@@ -55,101 +55,32 @@
 	containername = "\improper M4A3 magazine crate"
 	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_mac15
-	name = "Weapon: MAC-15 SMG"
-	contains = list(/obj/item/weapon/gun/smg/mac15)
-	cost = 20
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper MAC-15 crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_mac15_mag
-	name = "Ammunition: MAC-15 Magazine"
-	contains = list(/obj/item/ammo_magazine/smg/mac15)
-	cost = 2
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper MAC-15 magazine crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_mac15_mag_ext
-	name = "Ammunition: MAC-15 Magazine, Extended"
-	contains = list(/obj/item/ammo_magazine/smg/mac15/extended)
-	cost = 4
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper MAC-15 extended magazine crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_mar30
-	name = "Weapon: MAR-30 SMG"
-	contains = list(/obj/item/weapon/gun/rifle/mar40/carbine)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper MAR-30 crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_mar40
-	name = "Weapon: MAR-40 Rifle"
-	contains = list(/obj/item/weapon/gun/rifle/mar40/carbine)
+/datum/supply_packs/qm_m39
+	name = "Weapon: Viper-9 SMG"
+	contains = list(/obj/item/weapon/gun/smg/m39)
 	cost = 50
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper MAR-40 crate"
-	group = "Quartermaster LL0"
+	containername = "\improper Viper-9 crate"
+	group = "Quartermaster LL1"
+	qm_llone = TRUE
 
-/datum/supply_packs/qm_mar_mag
-	name = "Ammunition: MAR-XX Magazine"
-	contains = list(/obj/item/ammo_magazine/rifle/mar40)
-	cost = 3
+/datum/supply_packs/qm_m39_mag
+	name = "Ammunition: Viper-9 Magazine"
+	contains = list(/obj/item/ammo_magazine/smg/m39)
+	cost = 2
 	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper MAR-XX magazine crate"
-	group = "Quartermaster LL0"
+	containername = "\improper Viper-9 magazine crate"
+	group = "Quartermaster LL1"
+	qm_llone = TRUE
 
-/datum/supply_packs/qm_mar_mag_ext
-	name = "Ammunition: MAR-XX Magazine, Extended"
-	contains = list(/obj/item/ammo_magazine/rifle/mar40/extended)
+/datum/supply_packs/qm_m39_mag_ext
+	name = "Ammunition: Viper-9 Magazine, Extended"
+	contains = list(/obj/item/ammo_magazine/smg/m39/extended)
 	cost = 5
 	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper MAR-XX extended magazine crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_ar10
-	name = "Weapon: AR-10 Rifle"
-	contains = list(/obj/item/weapon/gun/rifle/ar10)
-	cost = 75
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper AR-10 crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_ar10_mag
-	name = "Ammunition: AR-10 Magazine"
-	contains = list(/obj/item/ammo_magazine/rifle/ar10)
-	cost = 3
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper AR-10 magazine crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_rival78
-	name = "Weapon: Spearhead Rival 78 Shotgun"
-	contains = list(/obj/item/weapon/gun/shotgun/double)
-	cost = 20
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper Rival 78 crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_slugs
-	name = "Ammunition: 12-Gauge Slugs Packet"
-	contains = list(/obj/item/ammo_magazine/shotgun/slugs)
-	cost = 10
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper buckshot crate"
-	group = "Quartermaster LL0"
-
-/datum/supply_packs/qm_buckshot
-	name = "Ammunition: 12-Gauge Buckshot Packet"
-	contains = list(/obj/item/ammo_magazine/shotgun/buckshot)
-	cost = 15
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper buckshot crate"
-	group = "Quartermaster LL0"
+	containername = "\improper Viper-9 extended magazine crate"
+	group = "Quartermaster LL1"
+	qm_llone = TRUE
 
 /datum/supply_packs/qm_loose_9mm
 	name = "Ammunition: Loose 9mm Rounds, Bulk"
