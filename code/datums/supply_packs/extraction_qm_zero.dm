@@ -62,7 +62,6 @@
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Viper-9 crate"
 	group = "Quartermaster LL1"
-	qm_llone = TRUE
 
 /datum/supply_packs/qm_m39_mag
 	name = "Ammunition: Viper-9 Magazine"
@@ -71,7 +70,6 @@
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 magazine crate"
 	group = "Quartermaster LL1"
-	qm_llone = TRUE
 
 /datum/supply_packs/qm_m39_mag_ext
 	name = "Ammunition: Viper-9 Magazine, Extended"
@@ -80,7 +78,6 @@
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 extended magazine crate"
 	group = "Quartermaster LL1"
-	qm_llone = TRUE
 
 /datum/supply_packs/qm_loose_9mm
 	name = "Ammunition: Loose 9mm Rounds, Bulk"
