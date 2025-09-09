@@ -188,6 +188,19 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
+"cT" = (
+/obj/structure/inventory_machine{
+	color = "#ff2222";
+	name = "Outdated ColMarTech Personal Stash Access Point"
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/stash)
 "db" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -26;
@@ -239,7 +252,6 @@
 /area/galleyburned/requisition)
 "dP" = (
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	layer = 3.1;
 	pixel_x = -5
 	},
@@ -400,6 +412,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"fq" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/personal_stash,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/stash)
 "fx" = (
 /turf/closed/shuttle/midway{
 	icon_state = "72"
@@ -815,13 +841,13 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
 "lk" = (
-/obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
 	dir = 4
 	},
 /obj/structure/window/reinforced/ultra{
 	dir = 8
 	},
+/obj/structure/personal_stash,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
 "lm" = (
@@ -1714,7 +1740,10 @@
 /turf/open/floor/almayer/empty/requisitions,
 /area/supply/station)
 "zo" = (
-/obj/structure/inventory_machine,
+/obj/structure/inventory_machine{
+	color = "#ff2222";
+	name = "Outdated ColMarTech Personal Stash Access Point"
+	},
 /obj/structure/window/reinforced/ultra{
 	dir = 4
 	},
@@ -2203,7 +2232,6 @@
 /area/galleyburned/residential)
 "FJ" = (
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	layer = 3.1;
 	pixel_x = -5
 	},
@@ -2425,7 +2453,6 @@
 /area/galleyburned/requisition)
 "JL" = (
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	layer = 3.1;
 	pixel_x = -5
 	},
@@ -2476,13 +2503,13 @@
 	dir = 1;
 	light_power = 0.7
 	},
-/obj/structure/inventory_machine,
 /obj/structure/window/reinforced/ultra{
 	dir = 4
 	},
 /obj/structure/window/reinforced/ultra{
 	dir = 8
 	},
+/obj/structure/personal_stash,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
 "KI" = (
@@ -4104,7 +4131,7 @@ Sc
 LW
 DN
 Ry
-lk
+cT
 ny
 NN
 Pu
@@ -4208,7 +4235,7 @@ qL
 DN
 DN
 mX
-lk
+cT
 ny
 OY
 pL
@@ -4364,7 +4391,7 @@ sE
 LW
 dQ
 Ry
-zo
+fq
 ZG
 WE
 AJ
@@ -4676,7 +4703,7 @@ Jf
 qa
 LD
 Ry
-zo
+fq
 op
 NN
 Ry
