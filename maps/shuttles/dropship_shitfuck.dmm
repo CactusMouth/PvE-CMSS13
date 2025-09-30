@@ -27,13 +27,10 @@
 /turf/template_noop,
 /area/shuttle/shitfuck)
 "dB" = (
-/obj/structure/shuttle/part/tornado/transparent{
+/turf/closed/shuttle/dropship3/tornado{
 	icon_state = "46";
-	density = 0;
-	layer = 4.2;
 	name = "\improper Shitfuck"
 	},
-/turf/template_noop,
 /area/shuttle/shitfuck)
 "dE" = (
 /turf/closed/shuttle/dropship3/tornado{
@@ -76,13 +73,10 @@
 	},
 /area/shuttle/shitfuck)
 "mh" = (
-/obj/structure/shuttle/part/tornado/transparent{
+/turf/closed/shuttle/dropship3/tornado{
 	icon_state = "49";
-	density = 0;
-	layer = 4.2;
 	name = "\improper Shitfuck"
 	},
-/turf/template_noop,
 /area/shuttle/shitfuck)
 "mA" = (
 /turf/closed/shuttle/dropship3/tornado{
@@ -276,14 +270,6 @@
 	dir = 1
 	},
 /obj/structure/bed{
-	buckling_y = 13;
-	layer = 3.5;
-	pixel_y = 13
-	},
-/obj/item/bedsheet/brown{
-	pixel_y = 13
-	},
-/obj/structure/bed{
 	can_buckle = 0
 	},
 /obj/item/bedsheet/brown{
@@ -331,6 +317,14 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/dropship/passenger{
 	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/shitfuck)
+"YV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair{
+	dir = 8;
+	layer = 4
 	},
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
@@ -406,7 +400,7 @@ Kw
 dd
 aP
 oy
-WF
+YV
 XS
 DO
 Dg

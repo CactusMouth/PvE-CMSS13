@@ -188,16 +188,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
-"cT" = (
-/obj/structure/window/reinforced/ultra{
-	dir = 4
-	},
-/obj/structure/window/reinforced/ultra{
-	dir = 8
-	},
-/obj/structure/machinery/door/window/southright,
-/turf/open/floor/almayer/plate,
-/area/galleyburned/requisition)
 "db" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -26;
@@ -1219,20 +1209,13 @@
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "qL" = (
-/obj/structure/inventory_machine{
-	color = "#ff2222";
-	name = "Outdated ColMarTech Personal Stash Access Point"
-	},
 /obj/structure/window/reinforced/ultra{
 	dir = 4
 	},
-/obj/structure/window/reinforced/ultra{
-	dir = 4
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
 	},
-/obj/structure/window/reinforced/ultra{
-	dir = 8
-	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "qX" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -1719,46 +1702,17 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zd" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.3
-	},
-/obj/structure/prop/hybrisa/misc/trash{
-	name = "automated ammunition press";
-	desc = "A modified autolathe which slowly produces ammunition every deployment. It can produce up to four magazines of nearly any gun."
-	},
-/obj/item/ammo_magazine/rifle/xm51{
-	pixel_x = -1;
-	pixel_y = 14
-	},
-/obj/item/ammo_magazine/rifle/xm51{
-	pixel_x = -1;
-	pixel_y = 14
-	},
-/obj/item/ammo_magazine/rifle/xm51{
-	pixel_x = -1;
-	pixel_y = 14
-	},
-/obj/item/ammo_magazine/rifle/xm51{
-	pixel_x = -1;
-	pixel_y = 14
-	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/galleyburned/memorial)
 "zl" = (
 /turf/open/floor/almayer/empty/requisitions,
 /area/supply/station)
 "zo" = (
-/obj/structure/window/reinforced/ultra{
-	dir = 4
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
 	},
-/obj/structure/window/reinforced/ultra{
-	dir = 8
-	},
-/obj/structure/window/reinforced/ultra{
-	dir = 8
-	},
-/obj/structure/machinery/door/window/southright,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zG" = (
 /obj/effect/decal/warning_stripes{
@@ -4235,7 +4189,7 @@ zl
 zl
 zl
 qL
-cT
+DN
 DN
 mX
 lk
@@ -4338,8 +4292,8 @@ zl
 zl
 zl
 zl
-qL
 zo
+DN
 DN
 mX
 lk
@@ -4813,7 +4767,7 @@ kG
 eJ
 LR
 kF
-kG
+zd
 MW
 Im
 Im
@@ -4865,7 +4819,7 @@ kG
 hE
 jj
 dJ
-kG
+zd
 jp
 Im
 Im
@@ -5618,7 +5572,7 @@ rC
 yC
 yC
 yC
-zd
+rj
 JF
 Xx
 yC
