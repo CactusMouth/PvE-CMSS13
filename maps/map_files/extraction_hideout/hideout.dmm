@@ -188,6 +188,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
+"cT" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/galleyburned/memorial)
 "db" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -26;
@@ -748,7 +752,6 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "ka" = (
-/obj/structure/closet/crate/alpha,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
 	light_power = 0.7
@@ -757,7 +760,15 @@
 	pixel_y = 28;
 	pixel_x = 15
 	},
-/turf/open/floor/almayer/cargo,
+/obj/structure/personal_stash,
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/window/reinforced/ultra,
+/turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
 "kd" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -993,6 +1004,16 @@
 	icon_state = "103"
 	},
 /area/galleyburned/residential)
+"ne" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/door/window/southright,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "ns" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
 /turf/open/floor/plating/plating_catwalk,
@@ -1271,7 +1292,12 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/turf/open/floor/almayer/cargo,
+/obj/structure/personal_stash,
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra,
+/turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
 "rQ" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
@@ -1628,11 +1654,11 @@
 /turf/open/floor/almayer/cargo,
 /area/galleyburned/requisition)
 "xP" = (
-/obj/structure/closet/crate/charlie,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
 	light_power = 0.7
 	},
+/obj/structure/closet/crate/charlie,
 /turf/open/floor/almayer/cargo,
 /area/galleyburned/requisition)
 "xV" = (
@@ -1702,16 +1728,24 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zd" = (
-/obj/structure/window/framed/almayer,
-/turf/open/floor/almayer,
-/area/galleyburned/memorial)
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/closet/crate/alpha,
+/turf/open/floor/almayer/cargo,
+/area/galleyburned/requisition)
 "zl" = (
 /turf/open/floor/almayer/empty/requisitions,
 /area/supply/station)
 "zo" = (
-/obj/structure/machinery/door/poddoor/railing{
-	id = "supply_elevator_railing"
+/obj/structure/window/reinforced/ultra{
+	dir = 1
 	},
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/machinery/door/window/southleft,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zG" = (
@@ -2133,6 +2167,12 @@
 "EM" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/canteen)
+"ES" = (
+/obj/structure/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "ET" = (
 /obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = -7
@@ -4019,7 +4059,7 @@ Jf
 Jf
 db
 XD
-dM
+zo
 Tl
 Tl
 XD
@@ -4292,7 +4332,7 @@ zl
 zl
 zl
 zl
-zo
+ES
 DN
 DN
 mX
@@ -4435,7 +4475,7 @@ Jf
 Jf
 UZ
 wF
-dM
+ne
 Tl
 Tl
 XD
@@ -4489,7 +4529,7 @@ UZ
 XD
 rK
 ea
-rK
+zd
 XD
 aV
 MB
@@ -4767,7 +4807,7 @@ kG
 eJ
 LR
 kF
-zd
+cT
 MW
 Im
 Im
@@ -4819,7 +4859,7 @@ kG
 hE
 jj
 dJ
-zd
+cT
 jp
 Im
 Im
