@@ -3,8 +3,8 @@
 #define SUPPLY_STATION_AREATYPE_VEHICLE /area/supply/station/vehicle
 #define SUPPLY_DOCK_AREATYPE /area/supply/dock //Type of the supply shuttle area for dock
 #define SUPPLY_DOCK_AREATYPE_VEHICLE /area/supply/dock/vehicle
-#define SUPPLY_COST_MULTIPLIER 1.08
-#define ASRS_COST_MULTIPLIER 1.2
+#define SUPPLY_COST_MULTIPLIER 1
+#define ASRS_COST_MULTIPLIER 1.0
 
 #define KILL_MENDOZA -1
 

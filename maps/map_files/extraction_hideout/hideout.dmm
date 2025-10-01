@@ -189,9 +189,15 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
 "cT" = (
-/obj/structure/window/framed/almayer,
-/turf/open/floor/almayer,
-/area/galleyburned/memorial)
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/door/window/southright,
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/requisition)
 "db" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -26;
@@ -1004,16 +1010,6 @@
 	icon_state = "103"
 	},
 /area/galleyburned/residential)
-"ne" = (
-/obj/structure/window/reinforced/ultra{
-	dir = 1
-	},
-/obj/structure/window/reinforced/ultra{
-	dir = 8
-	},
-/obj/structure/machinery/door/window/southright,
-/turf/open/floor/plating/plating_catwalk,
-/area/galleyburned/requisition)
 "ns" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
 /turf/open/floor/plating/plating_catwalk,
@@ -1230,9 +1226,6 @@
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "qL" = (
-/obj/structure/window/reinforced/ultra{
-	dir = 4
-	},
 /obj/structure/machinery/door/poddoor/railing{
 	id = "supply_elevator_railing"
 	},
@@ -1292,12 +1285,8 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/structure/personal_stash,
-/obj/structure/window/reinforced/ultra{
-	dir = 1
-	},
-/obj/structure/window/reinforced/ultra,
-/turf/open/floor/almayer/plate,
+/obj/structure/closet/crate/alpha,
+/turf/open/floor/almayer/cargo,
 /area/galleyburned/requisition)
 "rQ" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
@@ -1728,17 +1717,6 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "zd" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/structure/closet/crate/alpha,
-/turf/open/floor/almayer/cargo,
-/area/galleyburned/requisition)
-"zl" = (
-/turf/open/floor/almayer/empty/requisitions,
-/area/supply/station)
-"zo" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 1
 	},
@@ -1748,6 +1726,13 @@
 /obj/structure/machinery/door/window/southleft,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"zl" = (
+/turf/open/floor/almayer/empty/requisitions,
+/area/supply/station)
+"zo" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/galleyburned/memorial)
 "zG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out";
@@ -2167,12 +2152,6 @@
 "EM" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/canteen)
-"ES" = (
-/obj/structure/machinery/door/poddoor/railing{
-	id = "supply_elevator_railing"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/galleyburned/requisition)
 "ET" = (
 /obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = -7
@@ -3060,6 +3039,18 @@
 /area/galleyburned/residential)
 "Tl" = (
 /turf/open/floor/almayer,
+/area/galleyburned/requisition)
+"Tp" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/personal_stash,
+/obj/structure/window/reinforced/ultra{
+	dir = 1
+	},
+/obj/structure/window/reinforced/ultra,
+/turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
 "Ts" = (
 /obj/structure/sign/banners/upp_worn{
@@ -4059,7 +4050,7 @@ Jf
 Jf
 db
 XD
-zo
+zd
 Tl
 Tl
 XD
@@ -4332,7 +4323,7 @@ zl
 zl
 zl
 zl
-ES
+qL
 DN
 DN
 mX
@@ -4475,7 +4466,7 @@ Jf
 Jf
 UZ
 wF
-ne
+cT
 Tl
 Tl
 XD
@@ -4527,9 +4518,9 @@ Jb
 Jf
 UZ
 XD
-rK
+Tp
 ea
-zd
+rK
 XD
 aV
 MB
@@ -4807,7 +4798,7 @@ kG
 eJ
 LR
 kF
-cT
+zo
 MW
 Im
 Im
@@ -4859,7 +4850,7 @@ kG
 hE
 jj
 dJ
-cT
+zo
 jp
 Im
 Im
