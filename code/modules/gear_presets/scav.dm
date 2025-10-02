@@ -271,7 +271,7 @@
 		if(3)
 			add_rebel_upp_suit(new_human)
 	//waist
-	var/scav_weapon = rand(1,4)
+	var/scav_weapon = rand(1,3)
 	switch(scav_weapon)
 		if(1)
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/double(new_human), WEAR_J_STORE)
@@ -279,8 +279,6 @@
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/double/sawn(new_human), WEAR_J_STORE)
 		if(3)
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/double/upp(new_human), WEAR_J_STORE)
-		if(4)
-			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/double/mou53(new_human), WEAR_J_STORE)
 	//boots
 	var/scav_boots = rand(1,3)
 	switch(scav_boots)
