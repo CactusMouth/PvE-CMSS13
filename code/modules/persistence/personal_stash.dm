@@ -18,9 +18,9 @@
 
 // ↓ only the crap we care about saving. The code should be versitile enough to be able to just add most things on
 	var/list/allowed_vars = list(
-	"contents", "name", "desc", "accessories", "attachments", "current_mag", "pockets", "current_rounds", "default_ammo",
+	"contents", "name", "desc", "accessories", "attachments", "current_mag", "pockets", "current_rounds",
 	"uses_left", "amount", "hold", "target", "max_storage_space", "holstered_guns", "loaded_grenades", "stored_item", "black_market_value", "worth",
-	"storage_slots", "caliber", "gun_type", "bullet_amount"
+	"storage_slots", "bullet_amount", "gun_type", "caliber", "default_ammo", "has_mount", "health", "rounds", "in_chamber"
 	)
 // vars to always save for jank technical reasons
 	var/list/important_vars = list(
@@ -78,17 +78,18 @@
 				return TRUE
 
 		if("Login")
-			if(load_stash(usr))
+			if(!logged_in && load_stash(usr))
 				logged_in = TRUE
 				playsound(src.loc, 'sound/machines/terminal_button01.ogg', 25, 1)
 				load_storage_ui()
 				return TRUE
 
 		if("Logout")
-			logged_in = FALSE
-			playsound(src.loc, 'sound/machines/terminal_button01.ogg', 25, 1)
-			unload_stash()
-			return TRUE
+			if(logged_in)
+				logged_in = FALSE
+				playsound(src.loc, 'sound/machines/terminal_button01.ogg', 25, 1)
+				unload_stash()
+				return TRUE
 
 /obj/structure/personal_stash/attackby(obj/item/I, mob/living/user)
 	if(!stash_insert_item(I, user = user))
@@ -237,7 +238,10 @@
 		else if(!isnull(item_template[key]))
 			if(text2path(item_template[key]))
 				var/L = locate_item(loaded_item, text2path(item_template[key]))
-				loaded_item.vars[key] = L
+				if(L)
+					loaded_item.vars[key] = L
+					continue
+				loaded_item.vars[key] = text2path(item_template[key])
 			else
 				loaded_item.vars[key] = item_template[key]
 
