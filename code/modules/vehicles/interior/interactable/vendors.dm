@@ -389,7 +389,7 @@
 /// Modified Restockable APC-based vendor for use by Req in the deployable tent
 /obj/structure/machinery/cm_vending/sorted/vehicle_supply/tent
 	desc = "An automated restockable storage vendor for use in organizing FOB supplies."
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	density = TRUE
 	indestructible = TRUE // Deleted with the tent instead
 	needs_power = FALSE
