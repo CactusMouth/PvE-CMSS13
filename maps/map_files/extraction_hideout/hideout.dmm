@@ -3142,6 +3142,16 @@
 /obj/docking_port/stationary/marine_dropship/galleyburned_hangar,
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"Vx" = (
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/personal_stash,
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/stash)
 "VB" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -8;
@@ -4119,7 +4129,7 @@ Sc
 LW
 DN
 Ry
-cT
+Vx
 ny
 NN
 Pu
@@ -4223,7 +4233,7 @@ qL
 DN
 DN
 mX
-cT
+Vx
 ny
 OY
 pL
