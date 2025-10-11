@@ -1064,14 +1064,19 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/device/cassette_tape/ocean
 	cost = 1
 
-/datum/gear/cassettes/pouch
-	display_name = "Cassette Pouch"
-	path = 	/obj/item/storage/pouch/cassette
-	cost = 1
-
 /datum/gear/cassettes/nanotrasen
 	display_name = "Blue-White Cassette"
 	path = /obj/item/device/cassette_tape/nanotrasen
+	cost = 1
+
+/datum/gear/cassettes/numetal
+	display_name = "Marked White Cassette"
+	path = /obj/item/device/cassette_tape/numetal
+	cost = 1
+
+/datum/gear/cassettes/pouch
+	display_name = "Cassette Pouch"
+	path = 	/obj/item/storage/pouch/cassette
 	cost = 1
 
 /*
