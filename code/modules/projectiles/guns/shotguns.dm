@@ -299,6 +299,13 @@ can cause issues with ammo types getting mixed up during the burst.
 /obj/item/weapon/gun/shotgun/combat/riot
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/combat/riot
 
+/obj/item/weapon/gun/shotgun/combat/haywood
+	name = "\improper M120-MMM tactical shotgun"
+	desc = "An otherwise standard M120 shotgun that's been given a sheen of pure, unalloyed gold. The 'MMM' stands for 'Money, Money, Money', 'cause this thing was made to be wielded by the rich, the famous, and (despite their arguments otherwise) the feminine. Try not to hurt your squadmates, m'kay?"
+	icon_state = "mk221_haywood"
+	item_state = "mk221_haywood"
+	current_mag = /obj/item/ammo_magazine/internal/shotgun/combat/unloaded
+
 //SOF MK210, an earlier developmental variant of the MK211 tactical used by USCM SOF.
 /obj/item/weapon/gun/shotgun/combat/marsoc
 	name = "\improper XM38 tactical shotgun"

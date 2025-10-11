@@ -575,7 +575,7 @@
 
 /obj/item/device/cassette_tape/nanotrasen
 	name = "blue-white cassette"
-	id = 19
+	id = 20
 	desc = "A cassette with a blue sticker with a white 'N' on the top. It's labeled 'THIRTEEN'. You're overwhelmed with a sense of nostalgia when you hold it, but you aren't sure why."
 	icon_state = "cassette_nt"
 	side1_icon = "cassette_nt"
@@ -587,3 +587,16 @@
 								"sound/music/walkman/nanotrasen/19-2-2.ogg",\
 								"sound/music/walkman/nanotrasen/19-2-3.ogg",\
 								"sound/music/walkman/nanotrasen/19-2-4.ogg"))
+
+/obj/item/device/cassette_tape/numetal
+	name = "marked white cassette"
+	id = 21
+	desc = "A white plastic cassette tape. It's labeled 'NU-METAL' in red sharpie and horrible handwriting. Makes you want to break stuff."
+	icon_state = "cassette_numetal"
+	side1_icon = "cassette_numetal"
+	songs = list("side1" = list("sound/music/walkman/numetal/21-1-1.ogg",\
+								"sound/music/walkman/numetal/21-1-2.ogg",\
+								"sound/music/walkman/numetal/21-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/numetal/21-2-1.ogg",\
+								"sound/music/walkman/numetal/21-2-2.ogg",\
+								"sound/music/walkman/numetal/21-2-3.ogg"))
