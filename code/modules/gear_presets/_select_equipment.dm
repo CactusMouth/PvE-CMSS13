@@ -581,6 +581,9 @@ GLOBAL_LIST_EMPTY(personal_closets)
 	if(new_human.ckey == "genessee")
 		new  /obj/item/weapon/gun/revolver/mateba/engraved(closet_to_spawn_in)
 
+	if(new_human.ckey == "kulduad") // happy birthday mac!
+		new  /obj/item/weapon/gun/shotgun/combat/haywood(closet_to_spawn_in)
+
 /datum/equipment_preset/proc/load_traits(mob/living/carbon/human/new_human, client/mob_client)
 	var/client/real_client = mob_client || new_human.client
 	if(!real_client?.prefs?.traits)
