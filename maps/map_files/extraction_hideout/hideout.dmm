@@ -520,11 +520,6 @@
 /area/galleyburned/residential)
 "gX" = (
 /obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper{
-	pixel_x = 11;
-	pixel_y = 13
-	},
-/obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
 "gY" = (
@@ -834,14 +829,12 @@
 /turf/closed/wall/almayer,
 /area/galleyburned/memorial)
 "kH" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/snacks/sliceable/birthdaycake,
 /obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper{
-	pixel_y = 1;
-	pixel_x = 11
+	pixel_x = -5;
+	pixel_y = 21
 	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/canteen)
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "kJ" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper S-02 [VACANT]"
@@ -1204,10 +1197,6 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "pT" = (
-/obj/structure/sign/banners/happybirthdayhaywood{
-	pixel_x = -31;
-	pixel_y = 41
-	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
 "pV" = (
@@ -2896,10 +2885,12 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/hangar)
 "QF" = (
-/obj/structure/surface/table/almayer,
-/obj/item/pizzabox/pizza_galaxy/mystery/stack,
-/turf/open/floor/almayer/plate,
-/area/galleyburned/canteen)
+/obj/structure/sign/banners/happybirthdayhaywood{
+	pixel_x = -31;
+	pixel_y = 41
+	},
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "QH" = (
 /obj/structure/machinery/door/poddoor/railing{
 	dir = 8;
@@ -4315,7 +4306,7 @@ hF
 pT
 yE
 xv
-kH
+gX
 vg
 xv
 UR
@@ -4419,7 +4410,7 @@ AJ
 qX
 yE
 xv
-QF
+gX
 vg
 xv
 Qb
@@ -5244,7 +5235,7 @@ Jb
 Jb
 Jb
 Jf
-UZ
+QF
 qa
 gI
 al
@@ -5296,7 +5287,7 @@ Jb
 Jb
 Jb
 Jf
-UZ
+kH
 qa
 fU
 al
