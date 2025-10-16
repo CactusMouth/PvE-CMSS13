@@ -74,18 +74,10 @@
 /datum/supply_packs/qm_m39_mag_ext
 	name = "Ammunition: Viper-9 Magazine, Extended"
 	contains = list(/obj/item/ammo_magazine/smg/m39/extended)
-	cost = 5
+	cost = 3
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 extended magazine crate"
 	group = "Quartermaster LL1"
-
-/datum/supply_packs/qm_loose_9mm
-	name = "Ammunition: Loose 9mm Rounds, Bulk"
-	contains = list(/obj/item/ammo_box/rounds/pistol)
-	cost = 40
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper bulk 9mm ammo crate"
-	group = "Quartermaster LL0"
 
 /datum/supply_packs/qm_hedp
 	name = "Weapon: M40 HEDP Grenade"

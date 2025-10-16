@@ -80,7 +80,7 @@
 	group = "Quartermaster LL1"
 	qm_llone = TRUE
 
-/datum/supply_packs/qm_slugs
+/datum/supply_packs/qm_shotgun_slugs
 	name = "Ammunition: 12-Gauge Slugs Packet"
 	contains = list(/obj/item/ammo_magazine/shotgun/slugs)
 	cost = 10
@@ -89,7 +89,7 @@
 	group = "Quartermaster LL1"
 	qm_llone = TRUE
 
-/datum/supply_packs/qm_buckshot
+/datum/supply_packs/qm_shotgun_buckshot
 	name = "Ammunition: 12-Gauge Buckshot Packet"
 	contains = list(/obj/item/ammo_magazine/shotgun/buckshot)
 	cost = 15
@@ -98,7 +98,7 @@
 	group = "Quartermaster LL1"
 	qm_llone = TRUE
 
-/datum/supply_packs/qm_flechette
+/datum/supply_packs/qm_shotgun_flechette
 	name = "Ammunition: 12-Gauge Flechette Packet"
 	contains = list(/obj/item/ammo_magazine/shotgun/flechette)
 	cost = 20
@@ -122,15 +122,6 @@
 	cost = 5
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper M20A magazine crate"
-	group = "Quartermaster LL1"
-	qm_llone = TRUE
-
-/datum/supply_packs/qm_loose_10x24mm
-	name = "Ammunition: Loose 10x24mm Rounds, Bulk"
-	contains = list(/obj/item/ammo_box/rounds)
-	cost = 75
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper bulk 10x24mm ammo crate"
 	group = "Quartermaster LL1"
 	qm_llone = TRUE
 
@@ -181,7 +172,7 @@
 	qm_llone = TRUE
 
 /datum/supply_packs/qm_mlhelmet
-	name = "Armor: M09 Pattern Helmet"
+	name = "Armor: M09 Pattern Sergeant Helmet"
 	contains = list(/obj/item/clothing/head/helmet/marine/leader)
 	cost = 50
 	containertype = /obj/structure/closet/crate/secure/gear
@@ -190,7 +181,7 @@
 	qm_llone = TRUE
 
 /datum/supply_packs/qm_mlvest
-	name = "Armor: B12 Pattern Marine Armor"
+	name = "Armor: B12 Pattern Sergeant Armor"
 	contains = list(/obj/item/clothing/suit/marine/leader)
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/gear
@@ -243,6 +234,10 @@
 	containername = "\improper emergency pen crate"
 	group = "Quartermaster LL1"
 	qm_llone = TRUE
+
+//tools
+
+// no tools this tier!
 
 // storage
 
