@@ -88,14 +88,19 @@
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
-/obj/structure/largecrate/random,
-/obj/structure/largecrate/random/barrel/green{
-	pixel_y = -15
-	},
-/obj/structure/largecrate/random/mini{
-	pixel_x = 3;
-	pixel_y = 14
-	},
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/item/rappel_harness/extract/shitfuck,
+/obj/structure/surface/rack,
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "oB" = (
@@ -159,20 +164,9 @@
 /area/shuttle/shitfuck)
 "uu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/supply{
-	density = 0;
-	pixel_y = 26;
-	name = "rappel harness crate"
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4
 	},
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
-/obj/item/rappel_harness/extract/shitfuck,
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "yB" = (
@@ -269,11 +263,9 @@
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
-/obj/structure/bed{
-	can_buckle = 0
-	},
-/obj/item/bedsheet/brown{
-	layer = 3.4
+/obj/structure/largecrate/random,
+/obj/structure/largecrate/random/mini{
+	pixel_y = 13
 	},
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
@@ -311,6 +303,10 @@
 /area/shuttle/shitfuck)
 "WF" = (
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/shuttle/shitfuck)
+"WO" = (
+/obj/structure/bed/bedroll,
 /turf/open/floor/plating,
 /area/shuttle/shitfuck)
 "XS" = (
@@ -390,7 +386,7 @@ Ln
 fF
 cK
 Pb
-cK
+WO
 WF
 Fu
 Kw

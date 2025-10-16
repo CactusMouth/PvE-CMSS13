@@ -137,7 +137,7 @@
 // armor
 /datum/supply_packs/qm_mplushelmet
 	name = "Armor: M12 Pattern Adv. Ballistic Helmet"
-	contains = list(/obj/item/clothing/head/helmet/marine/leader)
+	contains = list(/obj/item/clothing/head/helmet/marine/rto)
 	cost = 70
 	containertype = /obj/structure/closet/crate/secure/gear
 	containername = "\improper M12 helmet crate"
@@ -146,7 +146,7 @@
 
 /datum/supply_packs/qm_mplusvest
 	name = "Armor: M4 Pattern Adv. Marine Armor"
-	contains = list(/obj/item/clothing/suit/marine/light)
+	contains = list(/obj/item/clothing/suit/marine/rto)
 	cost = 100
 	containertype = /obj/structure/closet/crate/secure/gear
 	containername = "\improper M4 armor crate"
