@@ -3237,6 +3237,10 @@
 /area/galleyburned/residential)
 "Wy" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
+/obj/structure/machinery/computer/overwatch/almayer/small{
+	pixel_x = -6;
+	pixel_y = 11
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "Wz" = (

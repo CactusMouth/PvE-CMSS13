@@ -55,7 +55,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/eyewear/rpg_glasses
 	display_name = "Marine RPG Glasses"
 	path = /obj/item/clothing/glasses/regular
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/eyewear/prescription_glasses
 	display_name = "Prescription Glasses"
@@ -80,17 +80,17 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/eyewear/bimex_shades
 	display_name = "BiMex Polarized Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/eyewear/bimex_shades_orange
 	display_name = "BiMex Tactical Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big/orange
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/eyewear/bimex_shades_classic
 	display_name = "BiMex Classic Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big/classic
-	allowed_origins = NON_UPP_ORIGINS
+//	allowed_origins = NON_UPP_ORIGINS
 
 /datum/gear/eyewear/sunglasses
 	display_name = "Sunglasses"
@@ -213,7 +213,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/mask/neckerchief/red
 
 /datum/gear/mask/uscm
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/mask/uscm/balaclava_green
 	display_name = "USCM balaclava, green"
@@ -1199,7 +1199,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Kukri utility knife"
 	path = 	/obj/item/storage/box/loadout/bowie/kukri
 	cost = 4
-	allowed_origins = TWE_ORIGINS
+//	allowed_origins = TWE_ORIGINS
 
 /datum/gear/weapon/baker
 	display_name = "Baker-pattern fighting knife"
@@ -1210,13 +1210,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Type 80 Bayonet"
 	path = /obj/item/attachable/bayonet/upp/surplus
 	cost = 3
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/weapon/m8_cartridge_bayonet
 	display_name = "M8 Cartridge Bayonet"
 	path = /obj/item/storage/box/loadout/co2_knife
 	allowed_origins = USCM_ORIGINS
-	cost = 2
+//	cost = 2
 
 ///datum/gear/weapon/clfpistol
 //	display_name = "Hummingbird Pistol"
@@ -1309,7 +1309,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "M2100 Machete"
 	path = /obj/item/storage/large_holster/machete/arnold/weak
 	cost = 4
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /*
 //================================================
@@ -1362,7 +1362,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Boda Soda"
 	path = /obj/item/reagent_container/food/drinks/cans/boda
 	cost = 3 //Legally imported from UPP.
-	allowed_origins = FACTION_ORIGINS
+//	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/drink/boda/plus
 	display_name = "Boda Cola"
@@ -1370,7 +1370,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/drink/alcohol
 	cost = 3 //Illegal in military.
-	allowed_origins = NON_UPP_ORIGINS // UPP stricter on enforcement, I figure
+//	allowed_origins = NON_UPP_ORIGINS // UPP stricter on enforcement, I figure
 
 /datum/gear/drink/alcohol/ale
 	display_name = "Weyland-Yutani IPA Ale"
@@ -1420,7 +1420,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/flask/uscm
 	display_name = "USCM flask"
 	path = /obj/item/reagent_container/food/drinks/flask/marine
-	allowed_origins = USCM_ORIGINS
+//	allowed_origins = USCM_ORIGINS
 
 /datum/gear/flask/vacuum
 	display_name = "Vacuum flask"
@@ -1429,7 +1429,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/flask/wy
 	display_name = "WY flask"
 	path = /obj/item/reagent_container/food/drinks/flask/weylandyutani
-	allowed_origins = NON_UPP_ORIGINS
+//	allowed_origins = NON_UPP_ORIGINS
 
 /*
 //================================================
@@ -1459,7 +1459,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/snack_sweet/fortune_cookie
 	display_name = "Fortune cookie"
 	path = /obj/item/reagent_container/food/snacks/fortunecookie/prefilled
-	cost = 3
+//	cost = 3
 
 /datum/gear/snack_sweet/donut_normal
 	display_name = "Donut"
@@ -1481,7 +1481,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/snack_packaged
 	category = "Food (packaged)"
-	allowed_origins = NON_UPP_ORIGINS
+//	allowed_origins = NON_UPP_ORIGINS
 
 /datum/gear/snack_packaged/beef_jerky
 	display_name = "Beef jerky"
@@ -1681,7 +1681,6 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/box/pdt_kit/advanced
 	cost = 1 // it's in the vendors anyway.
 
-
 /datum/gear/misc/watch
 	display_name = "Seiko Pulsemeter wristwatch"
 	path = /obj/item/storage/box/watch_box
@@ -1745,7 +1744,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/accessory/patch/upp
 	cost = 0
 	slot = WEAR_IN_ACCESSORY
-	allowed_origins = UPP_ORIGINS
+//	allowed_origins = UPP_ORIGINS
 
 /datum/gear/misc/patch_upp/sof
 	display_name = "Naval Infantry shoulder patch"
