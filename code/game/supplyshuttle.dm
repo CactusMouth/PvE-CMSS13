@@ -467,6 +467,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		"Quartermaster LL0",
 		"Quartermaster LL1",
 		"Quartermaster LL2",
+		"Scholar LL0",
 		)
 
 	var/list/contraband_supply_groups = list(
