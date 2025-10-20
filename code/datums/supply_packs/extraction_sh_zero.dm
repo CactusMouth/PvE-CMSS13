@@ -44,54 +44,76 @@
 
 // meds__pills
 
-/datum/supply_packs/sh_bicab
-	name = "Medicine: Bicaridine Pills, Bulk"
+/datum/supply_packs/sh_brutepills
+	name = "Medicine: Brute Pills"
+	contains = list(/obj/item/storage/pill_bottle/packet/bicaridine)
+	cost = 5
+	containertype = /obj/structure/closet/crate/medical
+	containername = "\improper brute pill crate"
+	group = "Scholar LL0"
+
+/datum/supply_packs/sh_brutepills_bulk
+	name = "Medicine: Brute Pills, Bulk"
 	contains = list(/obj/item/storage/pill_bottle/bicaridine/skillless)
 	cost = 10
 	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper bicaridine pillbottle crate"
+	containername = "\improper brute pillbottle crate"
 	group = "Scholar LL0"
 
-/datum/supply_packs/sh_kelob
-	name = "Medicine: Kelotane Pills, Bulk"
-	contains = list(/obj/item/storage/pill_bottle/kelotane/skillless)
-	cost = 10
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper kelotane pillbottle crate"
-	group = "Scholar LL0"
-
-/datum/supply_packs/sh_tramb
-	name = "Medicine: Tramadol Pills, Bulk"
-	contains = list(/obj/item/storage/pill_bottle/tramadol/skillless)
-	cost = 10
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper tramadol pillbottle crate"
-	group = "Scholar LL0"
-
-// meds__pens
-
-/datum/supply_packs/sh_bicpen
-	name = "Medicine: Bicaridine Autoinjector"
+/datum/supply_packs/sh_brutepen
+	name = "Medicine: Brute Autoinjector"
 	contains = list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/skillless)
 	cost = 2
 	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper bicaridine pen crate"
+	containername = "\improper brute pen crate"
 	group = "Scholar LL0"
 
-/datum/supply_packs/sh_kelopen
-	name = "Medicine: Kelotane Autoinjector"
+/datum/supply_packs/sh_burnpills
+	name = "Medicine: Burn Pills"
+	contains = list(/obj/item/storage/pill_bottle/packet/kelotane)
+	cost = 5
+	containertype = /obj/structure/closet/crate/medical
+	containername = "\improper burn pill crate"
+	group = "Scholar LL0"
+
+/datum/supply_packs/sh_burnpills_bulk
+	name = "Medicine: Burn Pills, Bulk"
+	contains = list(/obj/item/storage/pill_bottle/kelotane/skillless)
+	cost = 10
+	containertype = /obj/structure/closet/crate/medical
+	containername = "\improper burn pillbottle crate"
+	group = "Scholar LL0"
+
+/datum/supply_packs/sh_burnpen
+	name = "Medicine: Burn Autoinjector"
 	contains = list(/obj/item/reagent_container/hypospray/autoinjector/kelotane/skillless)
 	cost = 2
 	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper kelotane pen crate"
+	containername = "\improper burn pen crate"
 	group = "Scholar LL0"
 
-/datum/supply_packs/sh_trampen
-	name = "Medicine: Tramadol Autoinjector"
+/datum/supply_packs/sh_painpills
+	name = "Medicine: Painkiller Pills"
+	contains = list(/obj/item/storage/pill_bottle/packet/tramadol)
+	cost = 5
+	containertype = /obj/structure/closet/crate/medical
+	containername = "\improper painkiller pill crate"
+	group = "Scholar LL0"
+
+/datum/supply_packs/sh_painpills_bulk
+	name = "Medicine: Painkiller Pills, Bulk"
+	contains = list(/obj/item/storage/pill_bottle/tramadol/skillless)
+	cost = 10
+	containertype = /obj/structure/closet/crate/medical
+	containername = "\improper painkiller pillbottle crate"
+	group = "Scholar LL0"
+
+/datum/supply_packs/sh_painpen
+	name = "Medicine: Painkiller Autoinjector"
 	contains = list(/obj/item/reagent_container/hypospray/autoinjector/tramadol/skillless)
 	cost = 2
 	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper tramadol pen crate"
+	containername = "\improper painkiller pen crate"
 	group = "Scholar LL0"
 
 // storage
@@ -162,11 +184,19 @@
 	containername = "\improper experimental translator crate"
 	group = "Scholar LL0"
 
+/datum/supply_packs/sh_healthhud
+	name = "Tool: HealthMate HUD"
+	contains = list(/obj/item/clothing/glasses/hud/health)
+	cost = 20
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper HealthMate crate"
+	group = "Scholar LL0"
+
 /datum/supply_packs/sh_healthanalyzer_old
 	name = "Tool: HF-2 Health Analyzer"
 	contains = list(/obj/item/device/healthanalyzer)
 	cost = 5
-	containertype = /obj/structure/closet/crate/medical
+	containertype = /obj/structure/closet/crate/secure/gear
 	containername = "\improper HF-2 analyzer crate"
 	group = "Scholar LL0"
 
@@ -174,7 +204,7 @@
 	name = "Tool: Health Diagnostic Equipment"
 	contains = list(/obj/item/device/healthanalyzer/soul)
 	cost = 5
-	containertype = /obj/structure/closet/crate/medical
+	containertype = /obj/structure/closet/crate/secure/gear
 	containername = "\improper health diagnostic kit crate"
 	group = "Scholar LL0"
 
