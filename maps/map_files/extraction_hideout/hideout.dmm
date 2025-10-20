@@ -590,6 +590,10 @@
 /area/galleyburned/canteen)
 "hX" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/four,
+/obj/item/device/cotablet/no_access{
+	pixel_x = 7;
+	pixel_y = -6
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "ia" = (
