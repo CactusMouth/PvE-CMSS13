@@ -721,6 +721,7 @@
 #include "code\datums\supply_packs\extraction_qm_one.dm"
 #include "code\datums\supply_packs\extraction_qm_two.dm"
 #include "code\datums\supply_packs\extraction_qm_zero.dm"
+#include "code\datums\supply_packs\extraction_sh_zero.dm"
 #include "code\datums\supply_packs\food.dm"
 #include "code\datums\supply_packs\gear.dm"
 #include "code\datums\supply_packs\medical.dm"
