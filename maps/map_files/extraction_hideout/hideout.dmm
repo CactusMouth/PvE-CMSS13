@@ -1041,6 +1041,10 @@
 	icon_state = "103"
 	},
 /area/galleyburned/residential)
+"nq" = (
+/obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "ns" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
 /turf/open/floor/plating/plating_catwalk,
@@ -1589,6 +1593,12 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/north,
 /area/galleyburned/requisition)
+"wa" = (
+/obj/structure/bed,
+/obj/item/bedsheet/red,
+/obj/structure/curtain/open/red,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "wj" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "6"
@@ -5565,9 +5575,9 @@ pt
 vS
 JF
 ZK
+nq
 yC
-yC
-yC
+wa
 yC
 yC
 rj
