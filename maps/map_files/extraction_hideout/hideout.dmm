@@ -520,6 +520,18 @@
 /area/galleyburned/residential)
 "gX" = (
 /obj/structure/surface/table/almayer,
+/obj/item/reagent_container/syringe/drugs,
+/obj/item/reagent_container/syringe/drugs,
+/obj/item/reagent_container/syringe/drugs,
+/obj/item/reagent_container/syringe/drugs{
+	pixel_y = -4
+	},
+/obj/item/reagent_container/syringe/drugs{
+	pixel_y = 11
+	},
+/obj/item/reagent_container/syringe/drugs{
+	pixel_y = 6
+	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
 "gY" = (
@@ -1394,6 +1406,13 @@
 	icon_state = "39"
 	},
 /area/galleyburned/residential)
+"tm" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/sign/banners/happybirthdayevan{
+	pixel_y = 8
+	},
+/turf/open/floor/almayer,
+/area/galleyburned/canteen)
 "tn" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/plate,
@@ -2178,6 +2197,17 @@
 /obj/item/reagent_container/pill/happy,
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
+"EK" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/reagent_dispensers/beerkeg/alt{
+	pixel_y = 8
+	},
+/obj/item/storage/box/cups{
+	pixel_y = 1;
+	pixel_x = -8
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/canteen)
 "EM" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/canteen)
@@ -2226,6 +2256,11 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"Fv" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/snacks/sliceable/birthdaycake,
+/turf/open/floor/almayer/plate,
+/area/galleyburned/canteen)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -4262,11 +4297,11 @@ mX
 sm
 ny
 OY
-pL
+tm
 yO
 yE
 xv
-gX
+EK
 vg
 xv
 SC
@@ -4318,7 +4353,7 @@ hF
 pT
 yE
 xv
-gX
+Fv
 vg
 xv
 UR

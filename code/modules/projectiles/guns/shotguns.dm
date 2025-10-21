@@ -300,8 +300,8 @@ can cause issues with ammo types getting mixed up during the burst.
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/combat/riot
 
 /obj/item/weapon/gun/shotgun/combat/haywood
-	name = "\improper M120-MMM tactical shotgun"
-	desc = "An otherwise standard M120 shotgun that's been given a sheen of pure, unalloyed gold. The 'MMM' stands for 'Money, Money, Money', 'cause this thing was made to be wielded by the rich, the famous, and (despite their arguments otherwise) the feminine. Try not to hurt your squadmates, m'kay?"
+	name = "\improper M120 'Seventh Layer's Bellows' tactical shotgun"
+	desc = "A standard configuration M120 shotgun with a particularly wicked, violently hot paintjob. \n\nLootviticus 21:8: But the impoverished, scavenging, carrion-eaters, laymen, economically immoral, schemers, loyalists, and all filchers shall meet their maker in the twelve gauge which burns with fire and brimstone, which is the second death."
 	icon_state = "mk221_haywood"
 	item_state = "mk221_haywood"
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/combat/unloaded
