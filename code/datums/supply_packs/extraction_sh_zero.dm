@@ -166,7 +166,7 @@
 	containername = "\improper UPP corpsman backpack crate"
 	group = "Scholar LL0"
 
-/datum/supply_packs/sh_genpouch
+/datum/supply_packs/sh_lifesaverbelt_upp
 	name = "Storage: Lifesaver Belt, UPP"
 	contains = list(/obj/item/storage/belt/medical/lifesaver/upp)
 	cost = 20

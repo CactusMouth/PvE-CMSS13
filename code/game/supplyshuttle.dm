@@ -110,6 +110,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/last_viewed_group = "categories"
 	var/first_time = TRUE
 	var/qm_loyalty = 0
+	var/sh_loyalty = 0
 
 /obj/structure/machinery/computer/supplycomp/extraction
 	name = "merchant listing access console"
@@ -153,6 +154,22 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
 			qm_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/scholar/levelone))
+		if(sh_loyalty != 1)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 purchases unlocked for Scholar."))
+			sh_loyalty = 1
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
+			sh_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/scholar/leveltwo))
+		if(sh_loyalty != 2)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 and loyalty level 2 purchases unlocked for Scholar."))
+			sh_loyalty = 2
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
+			sh_loyalty = 0
 	if(istype(hit_item, /obj/item/coin/requisitionpoint))
 		var/obj/item/coin/requisitionpoint/slotted_coin = hit_item
 		to_chat(user, SPAN_NOTICE("You insert the requisition point token into the console and add its value to your budget."))
@@ -468,6 +485,8 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		"Quartermaster LL1",
 		"Quartermaster LL2",
 		"Scholar LL0",
+		"Scholar LL1",
+		"Scholar LL2",
 		)
 
 	var/list/contraband_supply_groups = list(
@@ -1355,6 +1374,12 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		return
 
 	if(supply_pack.qm_lltwo == TRUE && qm_loyalty < 2)
+		return
+
+	if(supply_pack.sh_llone == TRUE && sh_loyalty < 1)
+		return
+
+	if(supply_pack.sh_lltwo == TRUE && sh_loyalty < 2)
 		return
 
 	return TRUE
