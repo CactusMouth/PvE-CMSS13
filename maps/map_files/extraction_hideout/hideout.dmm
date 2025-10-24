@@ -387,10 +387,14 @@
 /area/galleyburned/residential)
 "eZ" = (
 /obj/item/prop/tableflag{
-	pixel_x = 6;
+	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/five,
+/obj/item/pamphlet/skill/specialization/sniper{
+	pixel_x = 14;
+	pixel_y = 4
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "fg" = (
@@ -1047,6 +1051,14 @@
 /area/galleyburned/residential)
 "ns" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
+/obj/item/pamphlet/skill/specialization{
+	pixel_x = 11;
+	pixel_y = 16
+	},
+/obj/item/pamphlet/skill/specialization{
+	pixel_x = 12;
+	pixel_y = 19
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "nv" = (
@@ -2386,6 +2398,30 @@
 /area/galleyburned/hangar)
 "Hq" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/six,
+/obj/item/pamphlet/skill/specialization/astl{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/item/pamphlet/skill/specialization/machinegunner{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/obj/item/pamphlet/skill/specialization/comtech{
+	pixel_x = 0;
+	pixel_y = 9
+	},
+/obj/item/pamphlet/skill/specialization/pointman{
+	pixel_x = -11;
+	pixel_y = 9
+	},
+/obj/item/pamphlet/skill/specialization/supmed{
+	pixel_x = -5;
+	pixel_y = 12
+	},
+/obj/item/pamphlet/skill/specialization/vehcrew{
+	pixel_x = -4;
+	pixel_y = 15
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "HG" = (
