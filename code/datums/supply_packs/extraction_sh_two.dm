@@ -75,7 +75,14 @@
 
 // tools
 
-// no tools this tier!
+/datum/supply_packs/sh_subdermal
+	name = "Tool: Reusable Implanter, Armor"
+	contains = list(/obj/item/device/implanter/subdermal_armor)
+	cost = 2500
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper Subdermal Armor implanter crate"
+	group = "Scholar LL2"
+	sh_lltwo = TRUE
 
 // vehicle tokens
 

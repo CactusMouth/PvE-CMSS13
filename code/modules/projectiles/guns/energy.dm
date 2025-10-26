@@ -119,7 +119,8 @@
 	muzzleflash_iconstate = "muzzle_laser"
 	muzzle_flash_color = COLOR_LASER_RED
 	fire_sound = 'sound/weapons/Laser4.ogg'
-	w_class = SIZE_MEDIUM
+	w_class = SIZE_SMALL
+	charge_cost = 70
 	gun_category = GUN_CATEGORY_HANDGUN
 	flags_equip_slot = SLOT_WAIST
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED
@@ -138,8 +139,8 @@
 	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
 	scatter = SCATTER_AMOUNT_TIER_7
 	damage_mult = BASE_BULLET_DAMAGE_MULT
-	recoil = RECOIL_AMOUNT_TIER_4
-	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+	recoil = RECOIL_AMOUNT_TIER_5
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4 //bro its a sidearm
 
 // Funny procs to force the item_states to look right.
 
@@ -178,7 +179,8 @@
 	muzzle_flash_color = COLOR_LASER_RED
 	gun_category = GUN_CATEGORY_SMG
 	flags_equip_slot = SLOT_WAIST
-	charge_cost = 200
+	w_class = SIZE_MEDIUM
+	charge_cost = 50 //200 shots no reload
 	ammo = /datum/ammo/energy/laz_uzi
 	fire_sound = 'sound/weapons/Laser4.ogg'
 	has_charge_meter = FALSE
@@ -192,12 +194,12 @@
 	set_burst_amount(BURST_AMOUNT_TIER_2)
 	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_5
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
-	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_8 // the uzi could shoot behind itself before what the FUCK
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_7
+	scatter_unwielded = SCATTER_AMOUNT_TIER_1
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
-	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+	fa_scatter_peak = SCATTER_AMOUNT_TIER_9
 
 //############################ Taser ##################
 // Lots of bits for it so splitting off an area
