@@ -180,12 +180,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/obj/structure/closet/secure_closet/marine_personal/rifleman{
-	pixel_x = -7
-	},
-/obj/structure/closet/secure_closet/marine_personal/rifleman{
-	pixel_x = 8
-	},
+/obj/structure/closet/secure_closet/marine_personal/platoon_leader,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
 "cT" = (
@@ -398,14 +393,12 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "fg" = (
-/obj/structure/closet/secure_closet/marine_personal/platoon_leader{
-	pixel_x = -7
+/obj/item/reagent_container/syringe/drugs{
+	pixel_y = 15;
+	pixel_x = -8
 	},
-/obj/structure/closet/secure_closet/marine_personal/rifleman{
-	pixel_x = 8
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/galleyburned/prep)
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "fl" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -523,11 +516,10 @@
 	},
 /area/galleyburned/residential)
 "gX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_container/syringe/drugs{
-	pixel_y = 14
+/obj/structure/sign/banners/happybirthdayevan{
+	pixel_y = 8
 	},
-/turf/open/floor/plating,
+/turf/closed/wall/almayer/outer,
 /area/galleyburned/maint)
 "gY" = (
 /turf/closed/shuttle/midway{
@@ -669,12 +661,6 @@
 	},
 /area/galleyburned/residential)
 "iS" = (
-/obj/structure/closet/secure_closet/marine_personal/rifleman{
-	pixel_x = 8
-	},
-/obj/structure/closet/secure_closet/marine_personal/rifleman{
-	pixel_x = -7
-	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
 "iT" = (
@@ -1414,9 +1400,9 @@
 	},
 /area/galleyburned/residential)
 "tm" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_container/syringe/drugs{
-	pixel_y = 15;
-	pixel_x = -8
+	pixel_y = 14
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
@@ -2211,9 +2197,15 @@
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
 "EK" = (
-/obj/structure/surface/table/almayer,
-/turf/open/floor/almayer/plate,
-/area/galleyburned/canteen)
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = -7;
+	density = 0
+	},
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/mono,
+/area/galleyburned/prep)
 "EM" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/canteen)
@@ -2263,11 +2255,9 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "Fv" = (
-/obj/structure/sign/banners/happybirthdayevan{
-	pixel_y = 8
-	},
-/turf/closed/wall/almayer/outer,
-/area/galleyburned/maint)
+/obj/structure/surface/table/almayer,
+/turf/open/floor/almayer/plate,
+/area/galleyburned/canteen)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -2421,13 +2411,12 @@
 /area/galleyburned/residential)
 "HI" = (
 /obj/structure/closet/secure_closet/marine_personal/rifleman{
+	pixel_x = -7
+	},
+/obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = 8
 	},
-/obj/structure/closet/secure_closet/marine_personal/corpsman{
-	pixel_x = -7;
-	density = 0
-	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/prep)
 "HO" = (
 /obj/structure/barricade/handrail/type_b{
@@ -3966,12 +3955,12 @@ nI
 xE
 Ne
 xI
-ej
+HI
 ET
 gL
 gL
-fg
-ej
+ET
+EK
 cR
 qH
 "}
@@ -4017,14 +4006,14 @@ Mv
 nI
 EE
 Ne
-HI
+iS
 ej
 iS
 gL
 gL
 iS
 ej
-ET
+iS
 qH
 "}
 (11,1,1) = {"
@@ -4197,7 +4186,7 @@ Jb
 Jb
 Jb
 Jb
-Fv
+gX
 gH
 gH
 gH
@@ -4250,7 +4239,7 @@ Jb
 Jb
 Jb
 Jf
-gX
+tm
 XD
 XD
 XD
@@ -4302,7 +4291,7 @@ Jb
 Jb
 Jb
 Jf
-tm
+fg
 XD
 Cm
 hf
@@ -4332,7 +4321,7 @@ pL
 yO
 yE
 xv
-EK
+Fv
 vg
 xv
 SC
@@ -4384,7 +4373,7 @@ hF
 pT
 yE
 xv
-EK
+Fv
 vg
 xv
 UR
@@ -4488,7 +4477,7 @@ AJ
 qX
 yE
 xv
-EK
+Fv
 vg
 xv
 Qb
