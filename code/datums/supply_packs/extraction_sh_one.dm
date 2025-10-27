@@ -181,15 +181,6 @@
 
 // implanters refresh on round end
 
-/datum/supply_packs/sh_subdermal
-	name = "Tool: Reusable Implanter, Armor"
-	contains = list(/obj/item/device/implanter/subdermal_armor)
-	cost = 800
-	containertype = /obj/structure/closet/crate/secure/gear
-	containername = "\improper Subdermal Armor implanter crate"
-	group = "Scholar LL1"
-	sh_llone = TRUE
-
 /datum/supply_packs/sh_agility
 	name = "Tool: Reusable Implanter, Agility"
 	contains = list(/obj/item/device/implanter/agility)
