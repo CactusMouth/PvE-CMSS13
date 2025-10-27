@@ -22933,8 +22933,6 @@
 "lXS" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/suit/storage/marine/veteran/mercenary/miner,
-/obj/item/clothing/suit/storage/marine/veteran/mercenary/miner,
-/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner,
 /obj/item/clothing/head/helmet/marine/veteran/mercenary/miner,
 /obj/structure/machinery/light/small/blue{
 	light_color = "#dae2ff";
