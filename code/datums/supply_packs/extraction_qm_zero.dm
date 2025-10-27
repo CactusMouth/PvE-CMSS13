@@ -120,6 +120,54 @@
 	containername = "\improper M3 armor crate"
 	group = "Quartermaster LL0"
 
+/datum/supply_packs/qm_mpauldrons
+	name = "Armor: M3 Pattern Pauldrons"
+	contains = list(/obj/item/clothing/accessory/pads)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 pauldrons crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mbracers
+	name = "Armor: M3 Pattern Vambraces"
+	contains = list(/obj/item/clothing/accessory/pads/bracers)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 vambraces crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mgreaves
+	name = "Armor: M3 Pattern Greaves"
+	contains = list(/obj/item/clothing/accessory/pads/greaves)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 greaves crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mkneepads
+	name = "Armor: M3 Pattern Kneepads"
+	contains = list(/obj/item/clothing/accessory/pads/kneepads)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 kneepads crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mneckguard
+	name = "Armor: M3 Pattern Gorget"
+	contains = list(/obj/item/clothing/accessory/pads/neckguard)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 gorget crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mgroin
+	name = "Armor: M3 Pattern Groinplate"
+	contains = list(/obj/item/clothing/accessory/pads/groin)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 groinplate crate"
+	group = "Quartermaster LL0"
+
 // meds
 ///datum/supply_packs/qm_gauze
 //	name = "Medicine: Gauze"
