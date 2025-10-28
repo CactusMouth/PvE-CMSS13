@@ -312,7 +312,7 @@
 	path = /datum/equipment_preset/colonist/prisoner/spanish
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes
-	name = "Kutjavo Homes Civilian Contractor"
+	name = "KHL Recruit (Pistol)"
 	desc = "Civilian construction contractor with a high-power pistol."
 	path = /datum/equipment_preset/colonist/kutjavo_homes
 
