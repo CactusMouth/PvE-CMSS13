@@ -317,7 +317,7 @@
 	path = /datum/equipment_preset/colonist/kutjavo_homes
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/foreman
-	name = "Kutjavo Homes Civilian Foreman"
+	name = "KHL Leader (Pistol)"
 	desc = "Civilian construction foreman with a high-power pistol."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/foreman
 
