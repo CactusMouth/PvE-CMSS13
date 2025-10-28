@@ -337,6 +337,6 @@
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security/sadar
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/security/supervisor
-	name = "Kutjavo Homes Safety supervisor"
+	name = "KHL Leader (SMG)"
 	desc = "Civilian safety supervisor with a P90 and revolver, alongside armour."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security/supervisor
