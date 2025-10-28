@@ -312,31 +312,31 @@
 	path = /datum/equipment_preset/colonist/prisoner/spanish
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes
-	name = "Kutjavo Homes Civilian Contractor"
+	name = "KHL Worker (Pistol)"
 	desc = "Civilian construction contractor with a high-power pistol."
 	path = /datum/equipment_preset/colonist/kutjavo_homes
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/foreman
-	name = "Kutjavo Homes Civilian Foreman"
+	name = "KHL Foreman (Pistol)"
 	desc = "Civilian construction foreman with a high-power pistol."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/foreman
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/security
-	name = "Kutjavo Homes Safety Officer (SMG)"
+	name = "KHL Security (SMG)"
 	desc = "Civilian safety officer with a P90 and high-power pistol, alongside armour."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/security/shotgun
-	name = "Kutjavo Homes Safety Officer (Shotgun)"
+	name = "KHL Security (Shotgun)"
 	desc = "Civilian safety officer with a shotgun and high-power pistol, alongside armour."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security/shotgun
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/security/sadar
-	name = "Kutjavo Homes Safety Officer (SMG + SADAR)"
+	name = "KHL Security (Anti-Tank)"
 	desc = "Civilian safety officer with a P90, two disposable AT rocket launchers and high-power pistol, alongside armour."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security/sadar
 
 /datum/human_ai_equipment_preset/colonist/kutjavo_homes/security/supervisor
-	name = "Kutjavo Homes Safety supervisor"
+	name = "KHL Supervisor (SMG)"
 	desc = "Civilian safety supervisor with a P90 and revolver, alongside armour."
 	path = /datum/equipment_preset/colonist/kutjavo_homes/security/supervisor
