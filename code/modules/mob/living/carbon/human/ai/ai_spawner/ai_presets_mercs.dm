@@ -2,7 +2,7 @@
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_equipment_preset/mercenaries/grunt
-	name = "Black Dragoons Grunt (Generic)"
+	name = "Black Dragoons Grunt"
 	desc = "A basic grunt of the Black Dragoons mercenary company, mainly used for auxiliary services such as logistics."
 	path = /datum/equipment_preset/mercenary/grunt
 
