@@ -9,7 +9,7 @@
 	)
 
 /datum/human_ai_squad_preset/mercs/grunts/technician
-	name = "Grunt Technician Duo"
+	name = "Technician Team"
 	desc = "A duo of mercenary technician grunts, armed with sidearms."
 	ai_to_spawn = list(
 		/datum/equipment_preset/mercenary/grunt/technician = 2,
