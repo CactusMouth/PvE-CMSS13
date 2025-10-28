@@ -310,3 +310,23 @@
 	name = "Latam Colonist - Prisoner"
 	desc = "Colonist - A generic unarmed prisoner, spanish"
 	path = /datum/equipment_preset/colonist/prisoner/spanish
+
+/datum/human_ai_equipment_preset/colonist/kutjavo_homes
+	name = "Kutjavo Homes Civilian Contractor"
+	desc = "Civilian construction contractor with a high-power pistol."
+	path = /datum/equipment_preset/colonist/kutjavo_homes
+
+/datum/human_ai_equipment_preset/colonist/kutjavo_homes/foreman
+	name = "Kutjavo Homes Civilian Foreman"
+	desc = "Civilian construction foreman with a high-power pistol."
+	path = /datum/equipment_preset/colonist/kutjavo_homes
+
+/datum/human_ai_equipment_preset/colonist/kutjavo_homes/security
+	name = "Kutjavo Homes Safety Officer"
+	desc = "Civilian safety officer with a P90 and high-power pistol, alongside armour."
+	path = /datum/equipment_preset/colonist/kutjavo_homes/security
+
+/datum/human_ai_equipment_preset/colonist/kutjavo_homes/security/supervisor
+	name = "Kutjavo Homes Safety supervisor"
+	desc = "Civilian safety supervisor with a P90 and revolver, alongside armour."
+	path = /datum/equipment_preset/colonist/kutjavo_homes/security/supervisor

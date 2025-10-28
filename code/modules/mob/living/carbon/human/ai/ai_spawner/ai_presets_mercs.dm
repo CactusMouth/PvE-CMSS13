@@ -2,9 +2,14 @@
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_equipment_preset/mercenaries/grunt
-	name = "Black Dragoons Grunt (Technician)"
-	desc = "A basic grunt of the Black Dragoons mercenary company, mainly used for auxiliary services such as logistics and engineering."
+	name = "Black Dragoons Grunt (Generic)"
+	desc = "A basic grunt of the Black Dragoons mercenary company, mainly used for auxiliary services such as logistics."
 	path = /datum/equipment_preset/mercenary/grunt
+
+/datum/human_ai_equipment_preset/mercenaries/grunt/technician
+	name = "Black Dragoons Grunt (Technician)"
+	desc = "A basic grunt of the Black Dragoons mercenary company, mainly used for engineering purposes."
+	path = /datum/equipment_preset/mercenary/grunt/technician
 
 /datum/human_ai_equipment_preset/mercenaries/grunt/doctor
 	name = "Black Dragoons Grunt (Doctor)"
@@ -58,7 +63,7 @@
 
 /datum/human_ai_equipment_preset/mercenaries/supervisor/equipped/response
 	name = "Black Dragoons Supervisor (Response)"
-	desc = "An NCO for the Black Dragoons, armed and ready to lead their platoon to victory. Equipped with a modified M20CW Carbine and revolver."
+	desc = "An NCO for the Black Dragoons, armed and ready to lead their platoon to victory. Equipped with a modified M41A MK1 and pistol."
 	path = /datum/equipment_preset/mercenary/supervisor/response
 
 /datum/human_ai_equipment_preset/mercenaries/synth
@@ -80,6 +85,11 @@
 	name = "Black Dragoons Bulwark (Heavy Response Suppressor)"
 	desc = "A heavily armoured and well equipped operative meant to act as shock troops against hostiles that Sentinels are unable to handle. This one has a machinegun."
 	path = /datum/equipment_preset/mercenary/bulwark/machinegun
+
+/datum/human_ai_equipment_preset/mercenaries/bulwark/bodyguard
+	name = "Black Dragoons Bulwark (Heavy Bodyguard)"
+	desc = "A heavily armoured and well equipped operative meant to act as shock troops against hostiles that Sentinels are unable to handle. This one has specialised as a bodyguard, and has a modified M41A."
+	path = /datum/equipment_preset/mercenary/bulwark/bodyguard
 
 /datum/human_ai_equipment_preset/mercenaries/infiltrator
 	name = "Black Dragoons Infiltrator"
