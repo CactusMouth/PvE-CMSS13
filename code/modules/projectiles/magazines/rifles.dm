@@ -608,5 +608,5 @@
 	icon_state = "isr"
 	item_state = "isr"
 	default_ammo = /datum/ammo/bullet/rifle/isr
-	max_rounds = 80
+	max_rounds = 160
 	gun_type = /obj/item/weapon/gun/rifle/isr
