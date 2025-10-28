@@ -460,7 +460,7 @@
 
 /obj/item/weapon/gun/rifle/m41aMK1/merc
 	name = "\improper M41A-I TAC pulse rifle"
-	desc = "A modified black market M41A MK1 pulse rifle, shortened for CQB scenarios and given increased fire rate at the cost of accuracy and some damage. It's grenade launcher has been detached, but has been given a modified rail mounting to permit newer variations of scopes."
+	desc = "An illegally modified M41A MK1 pulse rifle, shortened for CQB scenarios and given increased fire rate at the cost of accuracy and some damage. The standard underbarrel grenade launcher has been replaced with a modified rail mounting to permit newer variations of scopes."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
 	icon_state = "m41a_tactical"
 	item_state = "m41amk1_tactical"
