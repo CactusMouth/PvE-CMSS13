@@ -736,6 +736,9 @@
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
+
+/obj/item/weapon/gun/smg/fp9000/tactical/unloaded
+	current_mag = null
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/smg/nailgun

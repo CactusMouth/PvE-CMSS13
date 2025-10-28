@@ -217,3 +217,18 @@
 
 /obj/structure/gun_rack/nsg/Empty
 	initial_stored = 0
+
+/obj/structure/gun_rack/fp9000
+	name = "FN FP9000-X SMG rack"
+	icon_state = "fp9000"
+	desc = "ARMAT-produced gun rack for storage of long guns. This one is configured to hold up to five FN FP9000-X 'tactical' SMGs."
+	max_stored = 5
+	initial_stored = 5
+	allowed_type = /obj/item/weapon/gun/smg/fp9000/tactical
+	populate_type = /obj/item/weapon/gun/smg/fp9000/tactical
+
+/obj/structure/gun_rack/fp9000/unloaded
+	populate_type = /obj/item/weapon/gun/smg/fp9000/tactical/unloaded
+
+/obj/structure/gun_rack/fp9000/Empty
+	initial_stored = 0
