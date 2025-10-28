@@ -2,7 +2,7 @@
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_squad_preset/mercs/grunts
-	name = "Grunt Generic Duo"
+	name = "Grunt Patrol"
 	desc = "A duo of mercenary grunts, armed with sidearms."
 	ai_to_spawn = list(
 		/datum/equipment_preset/mercenary/grunt = 2,
