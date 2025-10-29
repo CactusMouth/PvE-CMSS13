@@ -3,6 +3,7 @@
 /obj/structure/surface/rack,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/swiss_army_knife,
+/obj/item/tool/hand_labeler,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "ah" = (
@@ -1805,6 +1806,11 @@
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
 /area/galleyburned/memorial)
+"zx" = (
+/obj/structure/surface/table/almayer,
+/obj/item/tool/hand_labeler,
+/turf/open/floor/almayer/plate,
+/area/galleyburned/canteen)
 "zG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out";
@@ -2207,6 +2213,7 @@
 /obj/structure/surface/rack,
 /obj/item/explosive/grenade/smokebomb/red,
 /obj/item/storage/fancy/cigar/matchbook,
+/obj/item/tool/hand_labeler,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "EE" = (
@@ -3473,6 +3480,11 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
+"Zd" = (
+/obj/structure/surface/table/almayer,
+/obj/item/tool/hand_labeler,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/canteen)
 "Zz" = (
 /turf/open/shuttle/dropship/light_grey_bottom_left,
 /area/galleyburned/residential)
@@ -4300,7 +4312,7 @@ xv
 pa
 vg
 xv
-UR
+Zd
 Cg
 EM
 "}
@@ -4505,7 +4517,7 @@ AJ
 qX
 yE
 xv
-EK
+zx
 vg
 xv
 Qb
