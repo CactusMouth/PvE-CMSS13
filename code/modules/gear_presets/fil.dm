@@ -59,7 +59,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman
-	name = "FIL Operator"
+	name = "FIL Operator (Rifleman)"
 	paygrades = list(PAY_SHORT_FA2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Soldat"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -107,8 +107,52 @@
 
 //*****************************************************************************************************/
 
+/datum/equipment_preset/fil/rifleman/at
+	name = "FIL Operator (Anti-Tank)"
+
+/datum/equipment_preset/fil/rifleman/at/load_gear(mob/living/carbon/human/new_human)
+
+	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack/five_slot(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/prop/folded_anti_tank_sadar, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/prop/folded_anti_tank_sadar, WEAR_IN_BACK)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/fil(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/pmc/fil(new_human), WEAR_FACE)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/fil(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/pa76, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/pa76, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/pa76, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/france, WEAR_ACCESSORY)
+	//jacket
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/fil(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/fn107, WEAR_J_STORE)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/rmc(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/fn107(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/fn107(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/fn107(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/fn107(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/fn107(new_human), WEAR_IN_BELT)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian/brown/knife/fil, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/brown, WEAR_HANDS)
+	new_human.put_in_active_hand(new /obj/item/weapon/gun/launcher/rocket/anti_tank/disposable)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/machete/fil, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+
+//*****************************************************************************************************/
+
 /datum/equipment_preset/fil/rifleman/auxiliary
-	name = "FIL Auxiliary"
+	name = "FIL Auxiliary (Rifleman)"
 	paygrades = list(PAY_SHORT_FA1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Auxiliary"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -147,7 +191,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/auxiliary/lead
-	name = "FIL Auxiliary Lead"
+	name = "FIL Auxiliary Lead (SL)"
 	paygrades = list(PAY_SHORT_FA3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Auxiliary Lead"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -188,7 +232,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/tech
-	name = "FIL Field Technician"
+	name = "FIL Field Technician (CT)"
 	paygrades = list(PAY_SHORT_FA3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Technician"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -234,7 +278,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/medic
-	name = "FIL Field Medic"
+	name = "FIL Field Medic (Corpsman)"
 	paygrades = list(PAY_SHORT_FA3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Medic"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -286,7 +330,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/mg
-	name = "FIL Machinegun Operator"
+	name = "FIL Machinegun Operator (MG)"
 	paygrades = list(PAY_SHORT_FA4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Soldat"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -331,7 +375,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/squadlead
-	name = "FIL Squad Leader"
+	name = "FIL Squad Leader (SL)"
 	paygrades = list(PAY_SHORT_FA6 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SL"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -381,7 +425,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/scout
-	name = "FIL Scout"
+	name = "FIL Scout (Rifleman)"
 	paygrades = list(PAY_SHORT_FA4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Scout"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -429,7 +473,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/scout/radio
-	name = "FIL Radioman"
+	name = "FIL Radioman (Rifleman)"
 	paygrades = list(PAY_SHORT_FA4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Radioman"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -477,7 +521,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/officer
-	name = "FIL Officer"
+	name = "FIL Officer (PltCo)"
 	paygrades = list(PAY_SHORT_FO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Officer"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -524,7 +568,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/sniper
-	name = "FIL Marksman"
+	name = "FIL Marksman (Sniper)"
 	paygrades = list(PAY_SHORT_FA4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Soldat"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -574,7 +618,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/commando
-	name = "FIL Drop Commando"
+	name = "FIL Drop Commando (Rifleman)"
 	paygrades = list(PAY_SHORT_FE1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Commando"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -625,7 +669,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/commando/sl
-	name = "FIL Drop Commando Leader"
+	name = "FIL Drop Commando Leader (SL)"
 	paygrades = list(PAY_SHORT_FE2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Commando"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -676,7 +720,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/incinerator
-	name = "FIL Heavy Incinerator"
+	name = "FIL Heavy Incinerator (Flamer)"
 	paygrades = list(PAY_SHORT_FI1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Incinerator"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -726,7 +770,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/rifleman/incinerator/sl
-	name = "FIL Heavy Incinerator Leader"
+	name = "FIL Heavy Incinerator Leader (SL)"
 	paygrades = list(PAY_SHORT_FI2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Incinerator Lead"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -738,7 +782,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/fil/officer/co
-	name = "FIL Commander"
+	name = "FIL Commander (CO)"
 	paygrades = list(PAY_SHORT_FO4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "CO"
 	flags = EQUIPMENT_PRESET_EXTRA

@@ -278,8 +278,8 @@
 /obj/item/clothing/suit/storage/marine/veteran/fil/light
 	name = "\improper QT-7 Light armor"
 	icon_state = "fil_aux"
-	armor_melee = CLOTHING_ARMOR_LOW
-	armor_bullet = CLOTHING_ARMOR_LOW
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
 	armor_energy = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
@@ -287,10 +287,10 @@
 
 /obj/item/clothing/suit/storage/marine/veteran/fil/fire
 	name = "\improper QT-10-IF Heavy Incinerator armor"
-	desc = "The standard body armor system of the French Armed Forces. This one has been modded to have increased protection against most forms of damage, mainly towards fire and similar sources of heat."
+	desc = "The standard body armor system of the French Armed Forces. This one has been modded to have increased protection against most forms of damage, particularly towards fire and similar sources of heat."
 	icon_state = "fil_fire"
 	armor_melee = CLOTHING_ARMOR_HIGH
-	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_energy = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	fire_intensity_resistance = BURN_LEVEL_TIER_1
