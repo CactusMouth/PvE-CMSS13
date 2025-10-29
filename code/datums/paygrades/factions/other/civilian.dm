@@ -12,6 +12,12 @@
 	name = "Nurse"
 	prefix = "Nrs."
 
+/datum/paygrade/civilian/paramedic
+	paygrade = PAY_SHORT_CPARA
+	name = "Paramedic"
+	prefix = "EMT-P"
+	pay_multiplier = 0.6
+
 /datum/paygrade/civilian/doctor
 	paygrade = PAY_SHORT_CDOC
 	name = "Doctor"
@@ -53,3 +59,8 @@
 	name = "Rebel Commander"
 	prefix = "CMDR."
 	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/civilian/rebel/scav
+	paygrade = PAY_SHORT_SCAV
+	name = "Scavenger"
+	prefix = "Scav."

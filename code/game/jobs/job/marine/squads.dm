@@ -24,6 +24,34 @@
 	sub_squad = "Strike Team"
 	sub_leader = "Strike Leader"
 
+/datum/squad_type/forecon_squad
+	name = "Squad"
+	lead_name = "Squad Leader"
+	lead_icon = "leader"
+	sub_squad = "Team"
+	sub_leader = "Team Leader"
+
+/datum/squad_type/upp_squad
+	name = "Platoon"
+	lead_name = "Platoon Sergeant"
+	lead_icon = "leader"
+	sub_squad = "Squad"
+	sub_leader = "Squad Sergeant"
+
+/datum/squad_type/pmc_squad
+	name = "Taskforce"
+	lead_name = "Operations Leader"
+	lead_icon = "leader"
+	sub_squad = "Team"
+	sub_leader = "Team Leader"
+
+/datum/squad_type/rmc_troop
+	name = "Troop"
+	lead_name = "Troop Commander"
+	lead_icon = "rmctl"
+	sub_squad = "Section"
+	sub_leader = "Section Leader"
+
 /datum/squad
 	/// Name of the squad
 	var/name
@@ -48,9 +76,9 @@
 	/// maximum # of squad medics allowed in the squad
 	var/max_medics = 4
 	/// maximum # of specs allowed in the squad
-	var/max_specialists = 1
+	var/max_specialists = 5
 	/// maximum # of fireteam leaders allowed in the suqad
-	var/max_tl = 2
+	var/max_tl = 4
 	/// maximum # of smartgunners allowed in the squad
 	var/max_smartgun = 2
 	/// maximum # of squad leaders allowed in the squad
@@ -70,7 +98,7 @@
 	var/faction = FACTION_MARINE
 
 	/// What will the assistant squad leader be called
-	var/squad_type = "Platoon" //Referenced for aSL details. Squad/Team/Cell etc.
+	var/squad_type = "Section" //Referenced for aSL details. Squad/Team/Cell etc.
 	/// Squad leaders icon
 	var/lead_icon //Referenced for SL's 'L' icon. If nulled, won't override icon for aSLs.
 
@@ -118,12 +146,24 @@
 
 	var/squad_one_access = ACCESS_SQUAD_ONE
 	var/squad_two_access = ACCESS_SQUAD_TWO
+	var/squad_three_access = null
+	var/squad_four_access = null
 
 /datum/squad/marine
 	name = "Root"
 	active = TRUE
 	faction = FACTION_MARINE
 	lead_icon = "leader"
+
+/datum/squad/marine/extraction
+	name = SQUAD_EXTRACTION
+	equipment_color = "#4148c8"
+	chat_color = "#828cff"
+	access = list(ACCESS_MARINE_ALPHA)
+	radio_freq = ALPHA_FREQ
+	minimap_color = MINIMAP_SQUAD_ALPHA
+	use_stripe_overlay = FALSE
+	usable = TRUE
 
 /datum/squad/marine/alpha
 	name = SQUAD_MARINE_1
@@ -145,6 +185,7 @@
 	use_stripe_overlay = FALSE
 	usable = TRUE
 	faction = FACTION_UPP
+	squad_type = "Platoon"
 	squad_one_access = ACCESS_UPP_SQUAD_ONE
 	squad_two_access = ACCESS_UPP_SQUAD_TWO
 
@@ -152,6 +193,17 @@
 	. = ..()
 
 	RegisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
+
+/datum/squad/marine/upp/secondary
+	name = SQUAD_UPP_2
+	equipment_color = "#dfab1c"
+	chat_color = "#e0c31a"
+	usable = FALSE
+
+/datum/squad/marine/upp/secondary/New()
+	. = ..()
+	//To stop this being renamed to the first-spawned-in unit and breaking things
+	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE)
 
 /datum/squad/marine/forecon
 	name = SQUAD_LRRP
@@ -162,15 +214,17 @@
 	chat_color = "#32CD32"
 	minimap_color = "#32CD32"
 	usable = TRUE
+	squad_type = "Squad"
 
 /datum/squad/marine/bravo
 	name = SQUAD_MARINE_2
 	equipment_color = "#ffc32d"
 	chat_color = "#ffe650"
-	access = list(ACCESS_MARINE_BRAVO)
+	access = list(ACCESS_MARINE_ALPHA)
 	radio_freq = BRAVO_FREQ
+	use_stripe_overlay = FALSE
 	minimap_color = MINIMAP_SQUAD_BRAVO
-	usable = TRUE
+	usable = FALSE
 
 /datum/squad/marine/charlie
 	name = SQUAD_MARINE_3
@@ -244,6 +298,17 @@
 	active = FALSE
 	roundstart = FALSE
 	locked = TRUE
+
+/datum/squad/marine/sof/forecon
+	name = SQUAD_LRRP_2
+	use_stripe_overlay = FALSE
+	equipment_color = "#8f5e30"
+	chat_color = "#8f5e30"
+	minimap_color = "#8f5e30"
+	squad_type = "Squad"
+	access = list(ACCESS_MARINE_ALPHA)
+	usable = FALSE
+	locked = FALSE
 
 /datum/squad/marine/cbrn
 	name = SQUAD_CBRN
@@ -349,11 +414,37 @@
 	squad_one_access = ACCESS_PMC_SQUAD_ONE
 	squad_two_access = ACCESS_PMC_SQUAD_TWO
 	faction = FACTION_PMC
+	squad_type = "Taskforce"
+
+/datum/squad/marine/pmc/secondary
+	name = SQUAD_PMCPLT_2
+	chat_color = "#0fc777"
+	minimap_color = MINIMAP_SQUAD_ECHO
+	usable = FALSE
 
 /datum/squad/marine/pmc/small
 	name = SQUAD_PMCPLT_SMALL
 
 /datum/squad/marine/pmc/New()
+	. = ..()
+
+	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
+
+//##############################
+
+/datum/squad/marine/rmc
+	name = SQUAD_RMC
+	equipment_color = "#bd851e"
+	chat_color = "#aa740f"
+	minimap_color = MINIMAP_SQUAD_RMC
+	use_stripe_overlay = FALSE
+	radio_freq = RMC_FREQ
+	usable = TRUE
+	squad_one_access = ACCESS_TWE_SQUAD_ONE
+	squad_two_access = ACCESS_TWE_SQUAD_TWO
+	faction = FACTION_TWE
+
+/datum/squad/marine/rmc/New()
 	. = ..()
 
 	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
@@ -578,12 +669,13 @@
 		if(JOB_SQUAD_MARINE)
 			assignment = JOB_SQUAD_MARINE
 			num_riflemen++
-			var/squad_number = (ceil(num_riflemen / 2) > 2) ? pick(1, 2) : ceil(num_riflemen / 2)
+			var/squad_number = (ceil(num_riflemen / 2) > 4) ? pick(1, 2, 3, 4) : ceil(num_riflemen / 2)
 			assign_fireteam("SQ[squad_number]", M)
 		if(JOB_SQUAD_ENGI)
 			assignment = JOB_SQUAD_ENGI
 			num_engineers++
 			C.claimedgear = FALSE
+			assign_fireteam("SQ3", M)
 		if(JOB_SQUAD_MEDIC)
 			assignment = JOB_SQUAD_MEDIC
 			num_medics++
@@ -595,7 +687,7 @@
 			assignment = JOB_SQUAD_TEAM_LEADER
 			num_tl++
 			M.important_radio_channels += radio_freq
-			var/squad_number = (num_tl > 2) ? pick(1, 2) : num_tl
+			var/squad_number = (num_tl > 4)	? pick(1, 2, 3, 4) : num_tl
 			assign_fireteam("SQ[squad_number]", M)
 			assign_ft_leader("SQ[squad_number]", M)
 		if(JOB_SQUAD_SMARTGUN)
@@ -639,6 +731,54 @@
 			assignment = JOB_MARINE_RAIDER_CMD
 			if(name == JOB_MARINE_RAIDER)
 				assignment = "Officer"
+
+//This is a mess
+		if(JOB_TWE_RMC_SECTIONLEADER)
+			assignment = JOB_TWE_RMC_SECTIONLEADER
+			num_tl++
+			M.important_radio_channels += radio_freq
+			assign_fireteam("SQ1", M)
+			assign_ft_leader("SQ1", M)
+		if(JOB_TWE_RMC_RIFLEMAN)
+			assignment = JOB_TWE_RMC_RIFLEMAN
+			num_riflemen++
+			assign_fireteam("SQ1", M)
+		if(JOB_TWE_RMC_ENGI)
+			assignment = JOB_TWE_RMC_ENGI
+			num_engineers++
+			C.claimedgear = FALSE
+			assign_fireteam("SQ1", M)
+		if(JOB_TWE_RMC_MEDIC)
+			assignment = JOB_TWE_RMC_MEDIC
+			num_medics++
+			C.claimedgear = FALSE
+			assign_fireteam("SQ1", M)
+		if(JOB_TWE_RMC_TEAMLEADER)
+			assignment = JOB_TWE_RMC_TEAMLEADER
+			num_tl++
+			M.important_radio_channels += radio_freq
+			assign_fireteam("SQ2", M)
+			assign_ft_leader("SQ2", M)
+		if(JOB_TWE_RMC_SMARTGUNNER)
+			assignment = JOB_TWE_RMC_SMARTGUNNER
+			num_smartgun++
+			assign_fireteam("SQ2", M)
+		if(JOB_TWE_RMC_MARKSMAN)
+			assignment = JOB_TWE_RMC_MARKSMAN
+			num_specialists++
+			assign_fireteam("SQ2", M)
+		if(JOB_TWE_RMC_LIEUTENANT)
+			assignment = JOB_TWE_RMC_LIEUTENANT
+			M.important_radio_channels += radio_freq
+			num_leaders++
+			squad_leader = M
+			SStracking.set_leader(tracking_id, M)
+			SStracking.start_tracking("marine_sl", M)
+		if(JOB_TWE_RMC_BREACHER)
+			assignment = JOB_TWE_RMC_BREACHER
+			num_engineers++
+		if(JOB_TWE_RMC_TROOPLEADER)
+			assignment = JOB_TWE_RMC_TROOPLEADER
 
 	RegisterSignal(M, COMSIG_PARENT_QDELETING, PROC_REF(personnel_deleted), override = TRUE)
 	if(assignment != JOB_SQUAD_LEADER)

@@ -149,3 +149,208 @@
 	desc = "Insert this into a synthetic experimental tools vendor in order to access a variety of experimental support tools."
 	icon_state = "coin_synth"
 	token_type = VEND_TOKEN_SYNTH
+
+// requisition tokens for extraction
+
+/obj/item/coin/requisitionpoint
+	name = "null-credit requisition token"
+	desc = "You probably shouldn't have this.."
+	icon_state = "coin_iron"
+	black_market_value = 0
+
+/obj/item/coin/requisitionpoint/one
+	name = "one-credit requisition token"
+	desc = "A stamped iron coin that can be redeemed at the Hideout requisitions bay for goods or services worth 1RP."
+	rp_value = 10
+
+/obj/item/coin/requisitionpoint/five
+	name = "five-credit requisition token"
+	desc = "A stamped copper coin that can be redeemed at the Hideout requisitions bay for goods or services worth 5RP."
+	icon_state = "coin_copper"
+	rp_value = 50
+
+/obj/item/coin/requisitionpoint/ten
+	name = "ten-credit requisition token"
+	desc = "A stamped silver coin that can be redeemed at the Hideout requisitions bay for goods or services worth 10RP."
+	icon_state = "coin_silver"
+	rp_value = 100
+
+/obj/item/coin/requisitionpoint/twenty
+	name = "twenty-credit requisition token"
+	desc = "A stamped golden coin that can be redeemed at the Hideout requisitions bay for goods or services worth 20RP."
+	icon_state = "coin_gold"
+	rp_value = 200
+
+/obj/item/coin/requisitionpoint/fifty
+	name = "fifty-credit requisition token"
+	desc = "A stamped platinum coin that can be redeemed at the Hideout requisitions bay for goods or services worth 50RP."
+	icon_state = "coin_synth"
+	rp_value = 500
+
+/obj/item/coin/requisitionpoint/onehundred
+	name = "one-hundred-credit requisition token"
+	desc = "A stamped diamond coin that can be redeemed at the Hideout requisitions bay for goods or services worth 100RP."
+	icon_state = "coin_diamond"
+	rp_value = 1000
+
+/obj/item/coin/requisitionpoint/twohundred
+	name = "two-hundred-credit requisition token"
+	desc = "A stamped phoron coin that can be redeemed at the Hideout requisitions bay for goods or services worth 200RP."
+	icon_state = "coin_phoron"
+	rp_value = 2000
+
+/obj/item/coin/exfilcrate
+	name = "extract-ready crate requisition token"
+	desc = "A stamped platinum coin that can be redeemed at the Hideout requisitions bay for a reinforced crate which is capable of surviving the exfiltration process with its contents intact."
+	icon_state = "coin_synth_crate"
+	black_market_value = 0
+
+/obj/item/coin/vehicletoken
+	name = "vehicle redemption token (null)"
+	desc = "You probably shouldn't have this.."
+	icon_state = "coin_uranium"
+	black_market_value = 0
+
+/obj/item/coin/vehicletoken/boxvan
+	name = "vehicle redemption token (Grey Van)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a civilian van, painted grey."
+
+/obj/item/coin/vehicletoken/boxvan/ambulance
+	name = "vehicle redemption token (Ambulance)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a civilian medical van."
+
+/obj/item/coin/vehicletoken/boxvan/copcar
+	name = "vehicle redemption token (Police Cruiser)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a police car."
+
+/obj/item/coin/vehicletoken/boxvan/pizza
+	name = "vehicle redemption token (Planet Pizza Delivery Truck)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a civilian pizza delivery truck with a Planet Pizza paintjob."
+
+/obj/item/coin/vehicletoken/truck
+	name = "vehicle redemption token (Military Truck, Cargo)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a military truck with lots of storage space."
+
+/obj/item/coin/vehicletoken/truck/armored
+	name = "vehicle redemption token (Military Truck, Machine Gun)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for a military truck with improved armor and a single M56 emplacement."
+
+/obj/item/coin/vehicletoken/uppvan
+	name = "vehicle redemption token (Kheshig-1M, Standard)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for an armored truck."
+
+/obj/item/coin/vehicletoken/uppvan/medical
+	name = "vehicle redemption token (Kheshig-1M, Medical)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for an armored truck with basic medical facilities."
+
+/obj/item/coin/vehicletoken/uppvan/cargo
+	name = "vehicle redemption token (Kheshig-1M, Cargo)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for an armored truck with extra cargo space."
+
+/obj/item/coin/vehicletoken/uppvan/transport
+	name = "vehicle redemption token (Kheshig-1M, Personnel Transport)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for an armored truck with extra seating space."
+
+/obj/item/coin/vehicletoken/uppvan/armed
+	name = "vehicle redemption token (Kheshig-1M, Machine Gun)"
+	desc = "A stamped steel coin which can be redeemed at the Hideout requisition bay for an armored truck with a single M56 emplacement."
+
+/obj/item/coin/vehicletoken/arc
+	name = "vehicle redemption token (Armored Recon Carrier, Standard)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an ARC with a frontal cannon."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/arc/unarmed
+	name = "vehicle redemption token (Armored Recon Carrier, Unarmed)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an ARC with no munitions attached."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/arc/custom
+	name = "vehicle redemption token (Armored Recon Carrier, Custom)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an ARC with a frontal cannon and a Robert's Raiders paintjob."
+	icon_state = "coin_chitin_raider"
+
+/obj/item/coin/vehicletoken/apc
+	name = "vehicle redemption token (Armored Personnel Carrier, Standard)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC armed with side-gunner M56 emplacements, a frontal cannon, and dualcannons."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/apc/unarmed
+	name = "vehicle redemption token (Armored Personnel Carrier, Unarmed)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC with no munitions attached."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/apc/med
+	name = "vehicle redemption token (Armored Personnel Carrier, Medical)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC with a medical suite, frontal cannon, and dualcannons."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/apc/command
+	name = "vehicle redemption token (Armored Personnel Carrier, Command)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC with a command suite, radio tower, frontal cannon, and dualcannons."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/apc/antiair
+	name = "vehicle redemption token (Armored Personnel Carrier, Anti-Air)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC with an anti-air cannon and vertical launch relay."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/uppapc
+	name = "vehicle redemption token (ZSL-68 'Pilgrim', Standard)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC armed with a GSHK Minigun."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/uppapc/unarmed
+	name = "vehicle redemption token (ZSL-68 'Pilgrim', Unarmed)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC armed with no munitions attached."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/uppapc/advanced
+	name = "vehicle redemption token (ZSL-68 'Pilgrim', Advanced)"
+	desc = "A stamped steel-phoron alloy coin which can be redeemed at the Hideout requisition bay for an APC armed with a GSHK Minigun and a HJ-35 launcher."
+	icon_state = "coin_chitin"
+
+/obj/item/coin/vehicletoken/tank
+	name = "vehicle redemption token (M34A2 Longstreet Light Tank, Standard)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with an LTB cannon and M56 emplacement attached, a weapons sensor array, and a paladin armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/tank/unarmed
+	name = "vehicle redemption token (M34A2 Longstreet Light Tank, Unarmed)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with no pre-attached module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/tank/minigun
+	name = "vehicle redemption token (M34A2 Longstreet Light Tank, Chaingun)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with a LTAA-AP chaingun and flamer emplacement attached, a weapons sensor array, and a ballistic armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/tank/flamer
+	name = "vehicle redemption token (M34A2 Longstreet Light Tank, Flamer)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with a DRG-N flamethrower and grenade launcher emplacement attached, an overdrive enhancer, and a ballistic armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/tank/autocannon
+	name = "vehicle redemption token (M34A2 Longstreet Light Tank, Autocannon)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with a AC3-E flak cannon and rocket emplacement attached, a weapons sensor array, and a ballistic armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/upptank
+	name = "vehicle redemption token (Cheetah 2A Light Tank, Standard)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with an P17702 cannon and T603PM emplacement attached, a weapons sensor array, and a reactive armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/upptank/railgun
+	name = "vehicle redemption token (Cheetah 2A Light Tank, Railgun)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with a railgun cannon and T603PM emplacement attached, a weapons sensor array, and a reactive armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/upptank/artillery
+	name = "vehicle redemption token (Cheetah 2A Light Tank, Artillery)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with a railgun cannon and T603PM emplacement attached, an artillery module, and a reactive armor module."
+	icon_state = "coin_synth"
+
+/obj/item/coin/vehicletoken/upptank/unarmed
+	name = "vehicle redemption token (Cheetah 2A Light Tank, Unarmed)"
+	desc = "A stamped titanium coin which can be redeemed at the Hideout requisition bay for a tank using a modular cannon with no pre-attached module."
+	icon_state = "coin_synth"

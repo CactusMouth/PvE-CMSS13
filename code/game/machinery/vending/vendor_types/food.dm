@@ -22,8 +22,11 @@
 		// these spaces are purely for readability. Preemptive Action is an unsubtle reference to First Strike Bars.
 		list("PREEMPTIVE ACTION BARS", -1, null, null),
 		list("Chocolate Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_REGULAR),
-		list("Strawberry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack2, VENDOR_ITEM_REGULAR),
 		list("Vanilla Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack3, VENDOR_ITEM_REGULAR),
+		list("Strawberry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack2, VENDOR_ITEM_REGULAR),
+		list("Cherry Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack4, VENDOR_ITEM_REGULAR),
+		list("Lemon Flavor", 50, /obj/item/reagent_container/food/snacks/protein_pack5, VENDOR_ITEM_REGULAR),
+		list("Crayon Flavor", 5, /obj/item/reagent_container/food/snacks/protein_pack6, VENDOR_ITEM_REGULAR),
 		// I kind of wish there was just a generic sweet mix.
 		list("DRINK MIXES", -1, null, null),
 		list("Orange Drink Packet", 15, /obj/item/reagent_container/food/condiment/juice/orange, VENDOR_ITEM_REGULAR),
@@ -58,6 +61,20 @@
 		list("Tea", 10, /obj/item/reagent_container/food/drinks/tea/upp, VENDOR_ITEM_REGULAR),
 	)
 
+/obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre
+
+/obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre/populate_product_list(scale)
+	listed_products = list(
+		list("PREPARED MEALS", -1, null, null),
+		list("UPP Prepared Meal (Luncheon)", 15, /obj/item/reagent_container/food/snacks/mre_pack/upp/meal6, VENDOR_ITEM_REGULAR),
+		list("UPP Prepared Meal (Shrimp)", 15, /obj/item/reagent_container/food/snacks/mre_pack/upp/meal7, VENDOR_ITEM_REGULAR),
+		list("UPP Prepared Meal (Cuban Rice)", 15, /obj/item/reagent_container/food/snacks/mre_pack/upp/meal8, VENDOR_ITEM_REGULAR),
+		list("UPP Prepared Meal (Meatballs)", 15, /obj/item/reagent_container/food/snacks/mre_pack/upp/meal9, VENDOR_ITEM_REGULAR),
+		list("DRINKS", -1, null, null),
+		list("Water", 10, /obj/item/reagent_container/food/drinks/water, VENDOR_ITEM_REGULAR),
+		list("Tea", 10, /obj/item/reagent_container/food/drinks/tea/upp, VENDOR_ITEM_REGULAR),
+	)
+
 /obj/structure/machinery/cm_vending/sorted/marine_food/tutorial
 	hackable = FALSE
 	wrenchable = FALSE
@@ -78,6 +95,24 @@
 		list("Metal Flask", 0, /obj/item/reagent_container/food/drinks/flask, VENDOR_ITEM_REGULAR),
 		list("USCM Flask", 0, /obj/item/reagent_container/food/drinks/flask/marine, VENDOR_ITEM_REGULAR),
 		list("W-Y Flask", 0, /obj/item/reagent_container/food/drinks/flask/weylandyutani, VENDOR_ITEM_REGULAR)
+	)
+
+/obj/structure/machinery/cm_vending/sorted/marine_food/rmc
+
+/obj/structure/machinery/cm_vending/sorted/marine_food/rmc/populate_product_list(scale)
+	listed_products = list(
+		list("PREPARED MEALS", -1, null, null),
+		list("Prepared Meal (Roast Beef)", 15, /obj/item/reagent_container/food/snacks/mre_pack/rmc/meal1, VENDOR_ITEM_REGULAR),
+		list("Prepared Meal (Tikka Curry)", 15, /obj/item/reagent_container/food/snacks/mre_pack/rmc/meal2, VENDOR_ITEM_REGULAR),
+		list("Prepared Meal (Katsu Curry)", 15, /obj/item/reagent_container/food/snacks/mre_pack/rmc/meal3, VENDOR_ITEM_REGULAR),
+		list("Prepared Meal (Sausage & Eggs)", 15, /obj/item/reagent_container/food/snacks/mre_pack/rmc/meal4, VENDOR_ITEM_REGULAR),
+		list("Prepared Meal (Seafood Platter)", 15, /obj/item/reagent_container/food/snacks/mre_pack/rmc/meal5, VENDOR_ITEM_REGULAR),
+		list("Biscuits Brown Snack Bar", 50, /obj/item/reagent_container/food/snacks/protein_pack/rmc, VENDOR_ITEM_REGULAR),
+		list("BEVERAGE CONTAINERS", -1, null, null),
+		list("Canteen", 10, /obj/item/reagent_container/food/drinks/flask/canteen, VENDOR_ITEM_REGULAR),
+		list("Metal Flask", 10, /obj/item/reagent_container/food/drinks/flask, VENDOR_ITEM_REGULAR),
+		list("W-Y Flask", 5, /obj/item/reagent_container/food/drinks/flask/weylandyutani, VENDOR_ITEM_REGULAR),
+		list("Plastic Cup", 20, /obj/item/reagent_container/food/drinks/cup, VENDOR_ITEM_REGULAR)
 	)
 
 //------------BOOZE-O-MAT VENDOR---------------

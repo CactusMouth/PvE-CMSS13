@@ -18,6 +18,7 @@
 
 	/// How much this mob|object is worth when lowered into the ASRS pit while the black market is unlocked.
 	var/black_market_value = 0
+	var/rp_value = 0
 
 	var/datum/component/orbiter/orbiting
 

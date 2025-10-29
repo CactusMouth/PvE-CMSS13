@@ -33,8 +33,14 @@ endmap
 map golden_arrow_classic
 endmap
 
+map hideout
+endmap
+
 map uscss_obsidian_falk
 endmap
 
 map uscss_onyx_karain
+endmap
+
+map hms_brynhild
 endmap

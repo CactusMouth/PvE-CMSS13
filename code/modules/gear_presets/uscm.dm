@@ -1259,3 +1259,18 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+
+// extraction loadouts for raiders
+
+/datum/equipment_preset/uscm/pfc/extraction
+	name = "Ex-USCM Deserter Rifleman"
+	skills = /datum/skills/pfc/extraction
+
+/datum/equipment_preset/uscm/medic/extraction
+	name = "Ex-USCM Deserter Corpsman"
+	role_comm_title = "Med"
+	skills = /datum/skills/combat_medic/extraction
+
+/datum/equipment_preset/uscm/leader/extraction
+	name = "Ex-USCM Deserter Sergeant"
+	skills = /datum/skills/SL/extraction

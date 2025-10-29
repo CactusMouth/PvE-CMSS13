@@ -46,9 +46,17 @@
 	name = "Tank"
 	interior_id = "tank"
 
+/datum/map_template/interior/tank_command
+	name = "Command Tank"
+	interior_id = "tank_command"
+
 /datum/map_template/interior/upptank
 	name = "UPP Tank"
 	interior_id = "upptank"
+
+/datum/map_template/interior/upptank_command
+	name = "UPP Command Tank"
+	interior_id = "upptank_command"
 
 /datum/map_template/interior/aev
 	name = "AEV"
@@ -77,6 +85,14 @@
 /datum/map_template/interior/uppvant
 	name = "UPP Van Turret"
 	interior_id = "uppvant"
+
+/datum/map_template/interior/box_van
+	name = "Box Van"
+	interior_id = "box_van"
+
+/datum/map_template/interior/pizza_van
+	name = "Pizza-Galaxy Van"
+	interior_id = "pizza_van"
 
 /datum/map_template/interior/box_van
 	name = "Box Van"

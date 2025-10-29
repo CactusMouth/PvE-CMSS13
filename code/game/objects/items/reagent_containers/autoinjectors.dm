@@ -115,6 +115,13 @@
 	display_maptext = TRUE
 	maptext_label = "Ep"
 
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline/skillless
+	name = "epinephrine EZ autoinjector"
+	desc = "An EZ autoinjector loaded with 3 uses of Epinephrine, better known as Adrenaline, a nerve stimulant useful in restarting the heart.  Doesn't require any training to use."
+	icon_state = "emptyskill"
+	item_state = "emptyskill"
+	skilllock = SKILL_MEDICAL_DEFAULT
+
 /obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated
 	name = "concentrated adrenaline autoinjector"
 	chemname = "adrenaline_concentrated"
@@ -123,6 +130,13 @@
 	volume = (LOWM_REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
 	display_maptext = TRUE
 	maptext_label = "Ad"
+
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated/skillless
+	name = "concentrated adrenaline EZ autoinjector"
+	desc = "An EZ autoinjector loaded with 3 uses of Concentrated Adrenaline, a stimulant that prevents unconsciousness but causes serious cardiovascular strain.   Doesn't require any training to use.<B>WARNING: Do not inject an individual more than twice!</B>  "
+	icon_state = "emptyskill"
+	item_state = "emptyskill"
+	skilllock = SKILL_MEDICAL_DEFAULT
 
 /obj/item/reagent_container/hypospray/autoinjector/dexalinp
 	name = "dexalin plus autoinjector"
@@ -137,6 +151,13 @@
 	if(target.reagents.get_reagent_amount(chemname))
 		return FALSE
 	return ..()
+
+/obj/item/reagent_container/hypospray/autoinjector/dexalinp/skillless
+	name = "dexalin plus EZ autoinjector"
+	desc = "An EZ autoinjector loaded with 3 uses of Dexalin+, designed to immediately oxygenate the entire body.  Doesn't require any training to use."
+	icon_state = "emptyskill"
+	item_state = "emptyskill"
+	skilllock = SKILL_MEDICAL_DEFAULT
 
 /obj/item/reagent_container/hypospray/autoinjector/chloralhydrate
 	name = "anesthetic autoinjector"
@@ -183,6 +204,13 @@
 	volume = (MED_REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
 	display_maptext = TRUE
 	maptext_label = "Ox"
+
+/obj/item/reagent_container/hypospray/autoinjector/oxycodone/skillless
+	name = "oxycodone EZ autoinjector (EXTREME PAINKILLER)"
+	desc = "An EZ autoinjector loaded with 3 uses of Oxycodone, a powerful painkiller intended for life-threatening situations.  Doesn't require any training to use."
+	icon_state = "emptyskill"
+	item_state = "emptyskill"
+	skilllock = SKILL_MEDICAL_DEFAULT
 
 /obj/item/reagent_container/hypospray/autoinjector/kelotane
 	name = "kelotane autoinjector"
@@ -236,6 +264,13 @@
 	volume = (HIGH_REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
 	display_maptext = TRUE
 	maptext_label = "In"
+
+/obj/item/reagent_container/hypospray/autoinjector/inaprovaline/skillless
+	name = "inaprovaline EZ autoinjector"
+	desc = "An EZ autoinjector loaded with 3 uses of Inaprovaline, an emergency stabilization medicine for patients in critical condition.  Doesn't require any training to use."
+	icon_state = "emptyskill"
+	item_state = "emptyskill"
+	skilllock = SKILL_MEDICAL_DEFAULT
 
 /obj/item/reagent_container/hypospray/autoinjector/emergency
 	name = "emergency autoinjector (CAUTION)"

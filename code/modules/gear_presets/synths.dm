@@ -1,3 +1,4 @@
+
 /datum/equipment_preset/synth
 	name = "Synth"
 	uses_special_name = TRUE

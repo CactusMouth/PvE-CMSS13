@@ -158,9 +158,8 @@
 	item_state = "WO_jumpsuit"
 	worn_state = "WO_jumpsuit"
 	suit_restricted = list(/obj/item/clothing/suit/storage/marine, /obj/item/clothing/suit/armor/riot/marine, /obj/item/clothing/suit/storage/jacket/marine/service/cmp)
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_jumpsuit = FALSE
 	specialty = "chief MP"
-	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/under/marine/officer/technical
 	name = "technical officer uniform"
@@ -435,8 +434,8 @@
 
 /obj/item/clothing/under/marine/veteran/marsoc
 	name = "black uniform"
-	desc = "Black BDU utilized by USCM forces on night operations."
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	desc = "Non-standard black battle dress uniform, with venlar armor inserts at critical areas to protect from blades and ballistics."
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 	icon_state = "marsoc_jumpsuit"
 	worn_state = "marsoc_jumpsuit"
 	flags_item = NO_SNOW_TYPE
@@ -660,10 +659,11 @@
 	has_sensor = UNIFORM_NO_SENSORS
 
 /obj/item/clothing/under/colonist
-	name = "abstract colonist"
-	desc = "Don't spawn this!"
+	name = "colonist jumpsuit"
+	desc = "A stylish gray-green jumpsuit. Standard issue for unspecialized Wey-Yu colonists."
+	icon_state = "colonist"
+	worn_state = "colonist"
 	has_sensor = UNIFORM_HAS_SENSORS
-	sensor_faction = FACTION_COLONIST
 
 /obj/item/clothing/under/colonist/workwear
 	name = "grey workwear"
@@ -970,27 +970,27 @@
 /obj/item/clothing/under/rank/synthetic/utility
 	name = "\improper UA utility uniform"
 	desc = "A green-on-green utility uniform, popularly issued to UA contract workers on the frontier."
-	icon_state = "synth_green_utility"
-	worn_state = "synth_green_utility"
+	icon_state = "green_utility"
+	worn_state = "green_utility"
 	displays_id = FALSE
 
 /obj/item/clothing/under/rank/synthetic/utility/yellow
 	name = "\improper utility uniform"
 	desc = "A grey utility uniform with yellow suspenders, made for shipside crew."
-	icon_state = "synth_yellow_utility"
-	worn_state = "synth_yellow_utility"
+	icon_state = "yellow_utility"
+	worn_state = "yellow_utility"
 
 /obj/item/clothing/under/rank/synthetic/utility/red
 	name = "\improper utility uniform"
 	desc = "A grey utility uniform with red suspenders and blue jeans, the sign of a veteran laborer, or someone not paid by the hour."
-	icon_state = "synth_red_utility"
-	worn_state = "synth_red_utility"
+	icon_state = "red_utility"
+	worn_state = "red_utility"
 
 /obj/item/clothing/under/rank/synthetic/utility/blue
 	name = "\improper utility uniform"
 	desc = "A blue utility uniform with teal suspenders and rugged pants."
-	icon_state = "synth_blue_utility"
-	worn_state = "synth_blue_utility"
+	icon_state = "blue_utility"
+	worn_state = "blue_utility"
 
 /obj/item/clothing/under/rank/synthetic/councillor
 	name = "\improper USCM Pristine Support Uniform"
@@ -1069,23 +1069,26 @@
 //=ROYAL MARINES=\\
 
 /obj/item/clothing/under/marine/veteran/royal_marine
-	name = "royal marines commando uniform"
-	desc = "The field uniform of the royal marines commando. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCM equipment."
+	name = "marine commando uniform"
+	desc = "Subdued-camouflage field uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform"
 	worn_state = "rmc_uniform"
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	contained_sprite = TRUE
 	icon = 'icons/mob/humans/onmob/contained/royal_marines_commando.dmi'
 
-/obj/item/clothing/under/marine/veteran/royal_marine/tl
-	icon_state = "rmc_uniform_teaml"
-	worn_state = "rmc_uniform_teaml"
-
 /obj/item/clothing/under/marine/veteran/royal_marine/lt
-	name = "royal marines commando officers uniform"
-	desc = "The officers uniform of the royal marines commando. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCM equipment."
+	name = "marine commando officer field uniform"
+	desc = "Subdued-camouflage field-officer uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
+
+/obj/item/clothing/under/marine/veteran/royal_marine/lt/service
+	name = "marine commando officers service uniform"
+	desc = "The officers uniform of the royal marine commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	icon_state = "rmc_service_uniform"
+	worn_state = "rmc_service_uniform"
 
 /obj/item/clothing/under/marine/pve_mopp
 	name = "\improper M2 MOPP suit"
@@ -1332,6 +1335,34 @@
 	worn_state = "army_jumpsuit"
 	desc = "Standard-issue Army uniform in a two-tone desert/temperate color scheme, complete with venlar armor inserts at critical areas to protect from blades and ballistics."
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+
+/obj/item/clothing/under/colonist/steward
+	name = "steward utilities"
+	desc = "A stylish brown vest and shorts - uniforms like this are often worn by clerks and shop stewards."
+	icon_state = "steward"
+	worn_state = "steward"
+	has_sensor = UNIFORM_HAS_SENSORS
+
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+	)
+
+/obj/item/clothing/under/rank/utility/gray
+	name = "\improper Gray utility uniform"
+	desc = "A stylish gray jumpsuit, popularly issued to UA contract workers on the frontier."
+	icon_state = "grey_utility"
+	worn_state = "grey_utility"
+
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+	)
+
+
+/obj/item/clothing/under/rank/utility/yellow
+	name = "\improper Yellow utility uniform"
+	desc = "A grey utility uniform with yellow suspenders, made for shipside crew."
+	icon_state = "yellow_utility"
+	worn_state = "yellow_utility"
 
 /obj/item/clothing/under/marine/veteran/fil
 	name = "\improper french combat uniform"

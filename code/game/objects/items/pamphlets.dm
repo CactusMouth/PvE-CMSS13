@@ -10,6 +10,7 @@
 	var/datum/character_trait/trait = /datum/character_trait
 	var/flavour_text = "You read over the pamphlet a few times, learning a new skill."
 	var/bypass_pamphlet_limit = FALSE
+	var/reusable = FALSE
 
 /obj/item/pamphlet/Initialize()
 	. = ..()
@@ -18,6 +19,10 @@
 
 /obj/item/pamphlet/attack_self(mob/living/carbon/human/user)
 	..()
+
+	if(reusable == TRUE)
+		on_use(user)
+		return
 
 	if(!can_use(user))
 		return
@@ -269,3 +274,136 @@
 	desc = "A pamphlet used to quickly impart vital knowledge of how to shoot big guns and spot for them."
 	icon_state = "pamphlet_vulture"
 	trait_to_give = TRAIT_VULTURE_USER
+
+// Squad specialization
+
+/obj/item/pamphlet/skill/specialization
+	name = "Rifleman Specialization Book"
+	desc = "A worn training handbook detailing platoon roles and HUD protocols. Its pages are mostly blank, suggesting it was never fully issued."
+	icon = 'icons/obj/items/books.dmi'
+	icon_state = "book_black"
+	trait = /datum/character_trait/skills/intel	//Just a placeholder trait to give so it doesn't freak the fuck out
+	reusable = TRUE
+	flavour_text = "You flip through the manual, the paper creaking faintly, but find little of real use inside."
+
+/obj/item/pamphlet/skill/specialization/can_use(mob/living/carbon/human/user)
+	if(user.job != JOB_SQUAD_MARINE)
+		to_chat(user, SPAN_WARNING("Only squad riflemen can use this."))
+		return
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	if(!ID) //not wearing an ID
+		to_chat(user, SPAN_WARNING("You should wear your ID before doing this."))
+		return FALSE
+	if(!ID.check_biometrics(user))
+		to_chat(user, SPAN_WARNING("You should wear your ID before doing this."))
+		return FALSE
+
+	return ..()
+
+/obj/item/pamphlet/skill/specialization/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = null
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Rifleman")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Rifleman")
+
+/obj/item/pamphlet/skill/specialization/supmed
+	name = "Support Medic Book"
+	desc = "A compact handbook on frontline medical aid and squad support. The pages are smudged with antiseptic and field notes."
+	icon_state = "book_medical"
+
+/obj/item/pamphlet/skill/specialization/supmed/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "supmed"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Support Medic")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Support Medic")
+
+/obj/item/pamphlet/skill/specialization/vehcrew
+	name = "Vehicle Crew Book"
+	desc = "A compact handbook detailing vehicle operation, crew coordination, emergency repairs, and combat deployment procedures. The cover is scuffed with oil stains and carbon dust."
+	icon_state = "book_particle"
+
+/obj/item/pamphlet/skill/specialization/vehcrew/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "tc"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Vehicle Crew")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Vehicle Crew")
+
+/obj/item/pamphlet/skill/specialization/comtech
+	name = "Combat Technician Book"
+	desc = "A slim handbook detailing fortification setup, field repairs, and electronic support for frontline operations. The cover is marked with worn engineering schematics."
+	icon_state = "book_engineering"
+
+/obj/item/pamphlet/skill/specialization/comtech/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "engi"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Combat Technician")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Combat Technician")
+
+/obj/item/pamphlet/skill/specialization/pointman
+	name = "Pointman Book"
+	desc = "A compact handbook detailing breaching tactics, room entry procedures, and frontline coordination for pointmen. The cover is worn from use in the field."
+	icon_state = "book_piping"
+
+/obj/item/pamphlet/skill/specialization/pointman/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "grunt"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Pointman")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Pointman")
+
+/obj/item/pamphlet/skill/specialization/astl
+	name = "Assistant Squad Lead Book"
+	desc = "A concise handbook guide covering squad coordination, basic command routines, and support leadership duties. Notes and markings suggest it's been passed between junior leaders."
+	icon_state = "book_law"
+
+/obj/item/pamphlet/skill/specialization/astl/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "tl"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "'Assistant Squad Lead")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Assistant Squad Lead")
+
+/obj/item/pamphlet/skill/specialization/machinegunner
+	name = "Machine Gunner Book"
+	desc = "A rugged handbook outlining suppression tactics, firing lane control, and sustained fire procedures for platoon machine gunners. The cover is worn from repeated handling."
+	icon_state = "book_sop"
+
+/obj/item/pamphlet/skill/specialization/machinegunner/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "gun"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Machinegunner")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Machinegunner")
+
+/obj/item/pamphlet/skill/specialization/sniper
+	name = "Sniper Book"
+	desc = "A concise handbook detailing marksmanship techniques, spotting protocols, and long-range engagement doctrine for designated marksmen. Its cover is lined with precise sighting diagrams."
+	icon_state = "book_green"
+
+/obj/item/pamphlet/skill/specialization/sniper/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "sniper"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Sniper")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Sniper")

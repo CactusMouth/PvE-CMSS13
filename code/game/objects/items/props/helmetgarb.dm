@@ -517,6 +517,18 @@
 	icon_state = "helmet_riot_shield"
 	flags_obj = OBJ_NO_HELMET_BAND
 
+/obj/item/prop/helmetgarb/faceplate
+	name = "\improper Ballistic Mask"
+	desc = "The standard ballistic mask, guaranteed to not help you if you're headshot by an M42"
+	icon_state = "helmet_faceplate"
+	flags_obj = OBJ_NO_HELMET_BAND
+
+/obj/item/prop/helmetgarb/faceplate/flag
+	name = "\improper customized ballistic mask"
+	desc = "A ballistic face mask adorned with the Colonial Marines emblem, what kinda weirdo did this?"
+	icon_state = "helmet_faceplate_flag"
+	flags_obj = OBJ_NO_HELMET_BAND
+
 /obj/item/prop/helmetgarb/trimmed_wire
 	name = "trimmed barbed wire"
 	desc = "It is a length of barbed wire that's had most of the sharp points filed down so that it is safe to handle."

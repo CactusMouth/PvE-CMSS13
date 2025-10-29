@@ -434,11 +434,6 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR,ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_DECORKNEE)
 	specialty = "\improper 6B72-03 pattern"
 
-/obj/item/clothing/suit/marine/faction/UPP/light/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/upppads/legs/greaves = new()
-	src.attach_accessory(null, greaves, TRUE)
-
 /obj/item/clothing/suit/marine/faction/UPP/CANC
 	name = "\improper Type 12 CANC armor"
 	desc = "Vintage CANC armor system. Provides basic ballistic/shrapnel protection."
@@ -457,11 +452,6 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR,ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO, ACCESSORY_SLOT_DECORKNEE)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR,ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_DECORKNEE)
 	specialty = "\improper Type 12"
-
-/obj/item/clothing/suit/marine/faction/UPP/CANC/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/storage/webbing/m3/uppsmall/webbing = new()
-	src.attach_accessory(null, webbing, TRUE)
 
 /obj/item/clothing/suit/marine/smartgunner/upp/canc
 	name = "\improper Type 12 CANC harness"
@@ -839,11 +829,58 @@
 //================//=ROYAL MARINES=\\====================================\\
 //=======================================================================\\
 
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine
-	name = "kestrel armoured vest"
-	desc = "A customizable personal armor system used by the Three World Empire's Royal Marines Commandos. Designers from a Weyland Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie, iterated on the USCMC's M3 pattern personal armor in their Tokonigara lab to create an armor systemed to suit the unique needs of the Three World Empire's smaller but better equipped Royal Marines."
+/obj/item/clothing/suit/marine/veteran/royal_marine
+	name = "\improper Kestrel armoured cuirass"
+	desc = "Standard RMC issue Kestrel Personal Armor designed by Weyland-Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie. Advanced composite ballistic armor of the latest generation, integral biomonitoring system, and brackets for a load carrying system as well as the TNR Shoulder Lamp."
+	icon_state = "rmc_standard"
+	item_state = "rmc_standard"
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/device/flashlight,
+		/obj/item/ammo_magazine/,
+		/obj/item/weapon/baton,
+		/obj/item/restraint/handcuffs,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/tool/lighter,
+		/obj/item/explosive/grenade,
+		/obj/item/storage/bible,
+		/obj/item/weapon/sword/machete,
+		/obj/item/attachable/bayonet,
+		/obj/item/device/motiondetector,
+		/obj/item/device/walkman,
+		/obj/item/storage/belt/marine/rmc,
+		/obj/item/storage/belt/medical/rmc,
+		/obj/item/storage/belt/gun/l905,
+		/obj/item/storage/belt/gun/mortarbelt/rmc,
+		/obj/item/storage/backpack/general_belt/rmc,
+		/obj/item/storage/belt/gun/flaregun,
+	)
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR,ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
+
+/obj/item/clothing/suit/marine/veteran/royal_marine/heavy
+//Just the normal armor with attachies
+
+/obj/item/clothing/suit/marine/veteran/royal_marine/heavy/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/twepads/shoulders = new()
+	src.attach_accessory(null, shoulders, TRUE)
+	var/obj/item/clothing/accessory/twepads/legs/greaves = new()
+	src.attach_accessory(null, greaves, TRUE)
+
+/obj/item/clothing/suit/storage/marine/veteran/royal_marine_advanced
+	name = "\improper Kestrel-II advanced armoured cuirass"
+	desc = "Improved RMC issue Kestrel Personal Armor designed by Weyland-Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie. Advanced composite ballistic armor of the latest generation, integral biomonitoring system, and brackets for a load carrying system as well as the TNR Shoulder Lamp. This particular vest has slightly better armor plates and a built-in webbing system."
 	icon_state = "rmc_light"
 	item_state = "rmc_light"
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -860,43 +897,47 @@
 		/obj/item/attachable/bayonet,
 		/obj/item/device/motiondetector,
 		/obj/item/device/walkman,
+		/obj/item/storage/belt/marine/rmc,
+		/obj/item/storage/belt/medical/rmc,
+		/obj/item/storage/belt/gun/l905,
+		/obj/item/storage/belt/gun/mortarbelt/rmc,
+		/obj/item/storage/backpack/general_belt/rmc,
+		/obj/item/storage/belt/gun/flaregun,
 	)
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR,ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
 
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light //RMC Rifleman Armor
-	icon_state = "rmc_light"
-	item_state = "rmc_light"
-	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
-	armor_rad = CLOTHING_ARMOR_MEDIUM
-	slowdown = SLOWDOWN_ARMOR_LIGHT
-
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine/light/team_leader //RMC TL & LT Armor
-	name = "kestrel armoured carry vest"
+/obj/item/clothing/suit/storage/marine/veteran/royal_marine_advanced/cargo
+	name = "\improper Kestrel-II-C advanced carry vest"
+	desc = "Improved RMC issue Kestrel Personal Armor designed by Weyland-Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie. Advanced composite ballistic armor of the latest generation, integral biomonitoring system, and brackets for a load carrying system as well as the TNR Shoulder Lamp. This particular vest has slightly better armor plates and a built-in webbing system, alongside a set of shoulderpads and better storage capacity."
 	icon_state = "rmc_light_padded"
 	item_state = "rmc_light_padded"
 	storage_slots = 7
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
 
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine/smartgun //Smartgun Spec Armor
-	name = "kestrel armoured smartgun harness"
-	icon_state = "rmc_smartgun"
-	item_state = "rmc_smartgun"
-	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN|SMARTGUN_HARNESS
-
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine/pointman //Pointman Spec Armor
-	name = "kestrel pointman armour"
-	desc = "A heavier version of the armor system used by the Three World Empire's Royal Marines Commandos. Designers from a Weyland Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie, iterated on the USCMC's M3 pattern personal armor in their Tokonigara lab to create an armor systemed to suit the unique needs of the Three World Empire's smaller but better equipped Royal Marines."
+/obj/item/clothing/suit/storage/marine/veteran/royal_marine_advanced/breacher
+	name = "\improper Kestrel-III elite pointman cuirass"
+	desc = "Top-notch RMC issue Kestrel Personal Armor designed by Weyland-Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie. Advanced composite ballistic armor of the latest generation, integral biomonitoring system, and brackets for a load carrying system as well as the TNR Shoulder Lamp. This particular vest has vastly better armor plates and a built-in webbing system."
 	icon_state = "rmc_pointman"
 	item_state = "rmc_pointman"
-	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_melee = CLOTHING_ARMOR_HIGHPLUS
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
-	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
-	armor_bio = CLOTHING_ARMOR_MEDIUM
-	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_HIGH
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
-	storage_slots = 7
-	slowdown = SLOWDOWN_ARMOR_LOWHEAVY
-	movement_compensation = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_HEAVY
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+
+/obj/item/clothing/suit/marine/veteran/royal_marine/smartgun //Smartgun Spec Armor
+	name = "\improper Kestrel GPMG harness"
+	desc = "Standard RMC issue Kestrel Personal Armor designed by Weyland-Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie. This version features the support armature for the L58A3 weapons system, which significantly limits what additional storage equipment can be clipped to the armor. Advanced composite ballistic armor of the latest generation, integral biomonitoring system, and brackets for a load carrying system as well as the TNR Shoulder Lamp."
+	icon_state = "rmc_smartgun"
+	item_state = "rmc_smartgun"
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN|SMARTGUN_HARNESS
+	allowed = list(
+		/obj/item/weapon/gun/smartgun/rmc,
+	)
 
 /atom/movable/marine_light
 	light_system = DIRECTIONAL_LIGHT

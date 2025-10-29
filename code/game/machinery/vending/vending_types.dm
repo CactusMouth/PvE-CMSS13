@@ -505,7 +505,7 @@
 	product_ads = "Crack capitalist skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
 	icon_state = "sec"
 	icon_deny = "sec-deny"
-	req_access = list(ACCESS_MARINE_BRIG)
+	req_access = list()
 	products = list(
 		/obj/item/restraint/handcuffs = 8,
 		/obj/item/restraint/handcuffs/zip = 10,
@@ -544,7 +544,7 @@
 /obj/structure/machinery/vending/security/colony
 	name = "\improper SecTech Police Vendor"
 	desc = "A generic police vendor."
-	req_access = list(ACCESS_CIVILIAN_BRIG)
+	req_access = list()
 	products = list(
 		/obj/item/restraint/handcuffs = 8,
 		/obj/item/reagent_container/spray/pepper = 4,
@@ -558,7 +558,7 @@
 /obj/structure/machinery/vending/security/upp
 	name = "\improper People's Police Equipment Vendor"
 	desc = "A standard security vendor used by security forces of the UPP."
-	req_access = list(ACCESS_CIVILIAN_BRIG)
+	req_access = list()
 	products = list(
 		/obj/item/restraint/handcuffs = 8,
 		/obj/item/reagent_container/spray/pepper = 4,
@@ -577,7 +577,7 @@
 	icon_deny = "sec-deny"
 	hacking_safety = TRUE
 	wrenchable = FALSE
-	req_access = list(ACCESS_MARINE_SEA)
+	req_access = list()
 	products = list(
 		/obj/item/ammo_magazine/smg/m39/rubber = 20,
 		/obj/item/ammo_magazine/pistol/rubber = 20,

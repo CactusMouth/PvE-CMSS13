@@ -3,8 +3,8 @@
 
 /datum/human_ai_equipment_preset/twe_rebel/guerilla
 	name = "TWE Rebel, Soldier (Pistol)"
-	desc = "A guerilla TWE rebel, armed with a pistol and civillian clothing"
-	path = /datum/equipment_preset/clf/guerilla
+	desc = "A guerilla TWE rebel, armed with a L54 pistol."
+	path = /datum/equipment_preset/clf/handgunner
 
 /datum/human_ai_equipment_preset/twe_rebel/soldier
 	name = "TWE Rebel, Soldier (Rifle)"

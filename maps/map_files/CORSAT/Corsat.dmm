@@ -9686,8 +9686,6 @@
 /obj/structure/surface/rack,
 /obj/item/ammo_magazine/shotgun/buckshot,
 /obj/item/ammo_magazine/shotgun,
-/obj/item/weapon/gun/shotgun/combat,
-/obj/item/weapon/gun/shotgun/pump/dual_tube/cmb,
 /obj/item/weapon/gun/shotgun/pump/dual_tube/cmb,
 /turf/open/floor/corsat/red/northeast,
 /area/corsat/gamma/security/armory)
@@ -10765,9 +10763,7 @@
 /turf/open/floor/corsat/purplewhite/east,
 /area/corsat/omega/containment)
 "fcY" = (
-/obj/structure/machinery/cm_vending/sorted/medical/blood{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/blood,
 /turf/open/floor/corsat/greenwhite/north,
 /area/corsat/gamma/medbay)
 "fdc" = (
@@ -13510,9 +13506,7 @@
 /turf/open/floor/corsat/red,
 /area/corsat/omega/hangar)
 "gBc" = (
-/obj/structure/machinery/chem_dispenser{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/chem_dispenser,
 /turf/open/floor/corsat/purplewhite/north,
 /area/corsat/gamma/biodome/toxins)
 "gBh" = (
@@ -14498,9 +14492,7 @@
 /turf/open/floor/corsat/squares,
 /area/corsat/omega/airlocknorth/id)
 "gZW" = (
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/purplewhite/west,
 /area/corsat/gamma/biodome/complex)
 "gZX" = (
@@ -15441,6 +15433,8 @@
 	},
 /obj/item/weapon/shield/riot,
 /obj/item/weapon/shield/riot,
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/suit/armor/riot,
 /turf/open/floor/corsat/red/southwest,
 /area/corsat/gamma/security/armory)
 "hBT" = (
@@ -16741,9 +16735,7 @@
 /turf/open/floor/corsat/purplewhitecorner/west,
 /area/corsat/theta/biodome/hydroeast)
 "ijK" = (
-/obj/structure/machinery/chem_dispenser{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/chem_dispenser,
 /obj/item/reagent_container/glass/beaker/bluespace,
 /turf/open/floor/corsat/lightplate,
 /area/corsat/gamma/biodome/virology)
@@ -18743,6 +18735,7 @@
 /obj/item/ammo_magazine/smg/mp5,
 /obj/item/weapon/gun/smg/mp5,
 /obj/structure/surface/rack,
+/obj/item/ammo_box/magazine/mp5,
 /turf/open/floor/corsat/red/north,
 /area/corsat/gamma/security/armory)
 "jkO" = (
@@ -18796,9 +18789,7 @@
 /turf/open/gm/dirt,
 /area/corsat/theta/biodome)
 "jmc" = (
-/obj/structure/machinery/chem_dispenser{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/chem_dispenser,
 /turf/open/floor/corsat/purplewhite,
 /area/corsat/gamma/biodome/toxins)
 "jmh" = (
@@ -20370,9 +20361,7 @@
 /turf/open/floor/corsat/yellow,
 /area/corsat/gamma/residential/maint)
 "kis" = (
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/lightplate,
 /area/corsat/gamma/biodome/virology)
 "kiz" = (
@@ -20520,9 +20509,7 @@
 /obj/structure/machinery/light{
 	dir = 4
 	},
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/purplewhite/east,
 /area/corsat/gamma/biodome/toxins)
 "kmq" = (
@@ -22128,9 +22115,7 @@
 /area/corsat/sigma/south/complex)
 "lfZ" = (
 /obj/structure/machinery/light,
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/greenwhite,
 /area/corsat/gamma/medbay/chemistry)
 "lga" = (
@@ -28754,9 +28739,7 @@
 /turf/open/floor/carpet10_8/west,
 /area/corsat/gamma/residential/lounge)
 "oFR" = (
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/greenwhitecorner/east,
 /area/corsat/gamma/medbay)
 "oFS" = (
@@ -35498,8 +35481,9 @@
 /area/corsat/gamma/biodome)
 "sjF" = (
 /obj/structure/surface/rack,
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/handcuffs,
+/obj/item/storage/box/packet/m15/rubber,
+/obj/item/storage/box/packet/m15/rubber,
+/obj/item/storage/box/packet/m15/rubber,
 /turf/open/floor/corsat/red/southeast,
 /area/corsat/gamma/security/armory)
 "sjO" = (
@@ -44853,9 +44837,7 @@
 /turf/open/floor/corsat/red/east,
 /area/corsat/gamma/airlock/south)
 "xik" = (
-/obj/structure/machinery/cm_vending/sorted/medical/no_access{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/greenwhite/north,
 /area/corsat/gamma/medbay)
 "xis" = (
@@ -45256,9 +45238,7 @@
 /turf/open/floor/corsat/bluecorner/west,
 /area/corsat/omega/hallways)
 "xuS" = (
-/obj/structure/machinery/chem_dispenser{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/chem_dispenser,
 /obj/item/reagent_container/glass/beaker/bluespace,
 /turf/open/floor/corsat/greenwhite/east,
 /area/corsat/gamma/medbay/chemistry)
@@ -46415,9 +46395,7 @@
 /turf/open/floor/corsat/red/southwest,
 /area/corsat/omega/hangar/office)
 "xZE" = (
-/obj/structure/machinery/chem_dispenser{
-	req_access_txt = "100"
-	},
+/obj/structure/machinery/chem_dispenser,
 /obj/item/reagent_container/glass/beaker/bluespace,
 /turf/open/floor/corsat/purplewhite/west,
 /area/corsat/gamma/biodome/complex)

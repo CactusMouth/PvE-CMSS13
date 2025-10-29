@@ -4,16 +4,16 @@
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns
 	name = "\improper ColMarTech Automated Armaments Vendor"
-	desc = "An automated supply rack hooked up to a big storage of various firearms and explosives. Can be accessed by the Requisitions Officer and Cargo Techs."
+	desc = "An automated supply rack hooked up to a big storage of various firearms and explosives."
 	icon_state = "prep"
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	vendor_theme = VENDOR_THEME_USCM
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_LOAD_AMMO_BOXES
 
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/cargo_guns/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/vend_fail()
 	return
@@ -219,18 +219,18 @@
 
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo
 	name = "\improper ColMarTech Automated Munition Vendor"
-	desc = "An automated supply rack hooked up to a big storage of various ammunition types. Can be accessed by the Requisitions Officer and Cargo Techs."
+	desc = "An automated supply rack hooked up to a big storage of various ammunition types."
 	icon_state = "req_ammo"
-	req_access = list(ACCESS_MARINE_CARGO)
+	req_access = list()
 	vendor_theme = VENDOR_THEME_USCM
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_LOAD_AMMO_BOXES | VEND_STOCK_DYNAMIC
 	vend_dir = WEST
 	vend_dir_whitelist = list(SOUTHWEST, NORTHWEST)
 
-/obj/structure/machinery/cm_vending/sorted/cargo_ammo/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/cargo_ammo/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/vend_fail()
 	return
@@ -336,18 +336,18 @@
 
 /obj/structure/machinery/cm_vending/sorted/attachments
 	name = "\improper Armat Systems Attachments Vendor"
-	desc = "An automated supply rack hooked up to a big storage of weapons attachments. Can be accessed by the Requisitions Officer and Cargo Techs."
-	req_access = list(ACCESS_MARINE_CARGO)
+	desc = "An automated supply rack hooked up to a big storage of weapons attachments."
+	req_access = list()
 	vendor_theme = VENDOR_THEME_USCM
 	icon_state = "req_attach"
 	vend_dir = WEST
 	vend_dir_whitelist = list(SOUTHEAST, NORTHEAST)
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY //We want to vend to turf not hand, since we are in requisitions
 
-/obj/structure/machinery/cm_vending/sorted/attachments/Initialize()
-	. = ..()
-	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
-		malfunction()
+///obj/structure/machinery/cm_vending/sorted/attachments/Initialize()
+//	. = ..()
+//	if(z in SSmapping.levels_by_trait(ZTRAIT_GROUND))
+//		malfunction()
 
 /obj/structure/machinery/cm_vending/sorted/attachments/vend_fail()
 	return
@@ -413,7 +413,7 @@
 	desc = "An automated supply rack hooked up to a big storage of standard marine uniforms. Can be accessed by the Requisitions Officer and Cargo Techs."
 	icon_state = "clothing"
 	req_access = list()
-	req_one_access = list(ACCESS_MARINE_CARGO)
+	req_one_access = list()
 	vendor_theme = VENDOR_THEME_USCM
 
 	listed_products = list(

@@ -620,6 +620,13 @@
 	needs_power = TRUE
 	can_change_shuttle = TRUE
 
+/obj/structure/machinery/computer/shuttle/dropship/flight/screen
+	name = "wall-mounted dropship navigation computer"
+	desc = "A tiny computer embedded in the wall that can be used to control the dropship."
+	icon = 'icons/obj/structures/machinery/computer.dmi'
+	icon_state = "toc_shuttle"
+	shuttleId = DROPSHIP_SHITFUCK
+
 /obj/structure/machinery/computer/shuttle/dropship/flight/toc
 	name = "dropship control screen"
 	desc = "A screen on the TOC computer for controlling the dropship linked to it. Has an abbreviated version of the flight controls and data."
@@ -639,6 +646,10 @@
 /obj/structure/machinery/computer/shuttle/dropship/flight/small
 	icon = 'icons/obj/structures/machinery/computer.dmi'
 	icon_state = "cameras_old"
+
+/obj/structure/machinery/computer/shuttle/dropship/flight/small/somme
+	icon = 'icons/turf/dropship5-2.dmi'
+	icon_state = "flightcontrols"
 
 /obj/structure/machinery/computer/shuttle/dropship/flight/laptop
 	name = "\improper Dropship Remote-Flight Laptop"

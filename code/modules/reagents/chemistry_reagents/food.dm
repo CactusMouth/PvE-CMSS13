@@ -280,6 +280,26 @@
 	chemclass = CHEM_CLASS_RARE
 	properties = list(PROPERTY_NUTRITIOUS = 2)
 
+/datum/reagent/lemon
+	name = "Lemon Powder"
+	id = "lemonpowder"
+	description = "Ground-up lemons, plus a lot of preservatives. Could be used to make rather low-grade lemonade."
+	reagent_state = SOLID
+	nutriment_factor = 5 * REAGENTS_METABOLISM
+	color = "#ffff00"
+	chemclass = CHEM_CLASS_RARE
+	properties = list(PROPERTY_NUTRITIOUS = 2)
+
+/datum/reagent/cherry
+	name = "Cherry Powder"
+	id = "cherrypowder"
+	description = "Flash-frozen and ground cherries. Tastes very sweet, but not very palatable in this state."
+	reagent_state = SOLID
+	nutriment_factor = 5 * REAGENTS_METABOLISM
+	color = "#c62e4c"
+	chemclass = CHEM_CLASS_RARE
+	properties = list(PROPERTY_NUTRITIOUS = 2)
+
 /datum/reagent/psilocybin
 	name = "Psilocybin"
 	id = "psilocybin"
@@ -525,4 +545,14 @@
 	color = "#46271e" // rgb: 70, 39, 30
 	chemclass = CHEM_CLASS_SPECIAL
 	properties = list(PROPERTY_NUTRITIOUS = 2)
+	flags = REAGENT_NO_GENERATION
+
+/datum/reagent/crayonpowder
+	name = "Crayon Powder"
+	id = "crayonpowder"
+	description = "Powderized multicolored wax. This particular batch is child-safe and nontoxic in the event that someone ate it, but it isn't exactly nutritious."
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	color = COLOR_MAGENTA
+	chemclass = CHEM_CLASS_SPECIAL
+	properties = list(PROPERTY_NUTRITIOUS = 1)
 	flags = REAGENT_NO_GENERATION

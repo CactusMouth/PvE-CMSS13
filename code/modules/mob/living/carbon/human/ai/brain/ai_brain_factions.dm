@@ -1479,6 +1479,7 @@
 	friendly_factions = list(
 		FACTION_COLONIST,
 		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FIL,
 	)
 	neutral_factions = list(
@@ -1970,4 +1971,83 @@
 	faction = FACTION_MALF_SYNTH
 	friendly_factions = list(
 		FACTION_COLONIST,
+	)
+
+/datum/human_ai_faction/scav
+	faction = FACTION_SCAV
+	neutral_factions = list()
+	enter_combat_lines = list(
+		"Kill that motherfucker!",
+		"Gimme your shit!",
+		"Raid's over, fuckhead!",
+		"Your raid is done! You hear me?! DONE!",
+		"I'm gonna whoop your ass to next week!",
+		"Got you now, jerkoff!",
+		"What the fuck?!",
+		"Fuck! Fuck! Fuck! Fuck!",
+		"Hold still!",
+		"Stop fuckin' yammering for a second. I think I saw someone.",
+		"Thought I heard someone creepin' around!",
+		"YOU'RE A THIEVING RAT, AND BY GOD, YOU'LL DIE LIKE ONE!",
+		"*warcry",
+		"*scream",
+		"I'm hungry!",
+		"Okay, okay, I will fight!",
+		"Can I have your shoes?",
+		"DIE, YOU UGLY SON OF A BITCH! DIE!",
+		"It'll be over soon, smeghead! Hold still!",
+		"I'm gonna kill you!",
+		"I'm gonna scrunch you!",
+		"I'm gonna tickle you!",
+		"You're gonna meet God, bitch!",
+	)
+	exit_combat_lines = list(
+		"Did I win?",
+		"That's one for the history books.",
+		"He got anything good?",
+		"That was close.",
+		"*laugh",
+		"Man, I'm hungry! He got any food?",
+		"Job's done.",
+		"Now, where was I..?",
+		"I do what I am told.",
+		"Why can we not live in peace?",
+	)
+	squad_member_death_lines = list(
+		"OH, SHIT!",
+		"HOLY FUCK!",
+		"JESUS H. JESUS FUCKING CHRIST!",
+		"NO! HE OWED ME FIVE BUCKS!",
+		"Dibs on that guy's shoes!",
+		"*scream",
+		"OH MY GOD, HE'S DEAD!",
+		"He deserved that!",
+		"WE'RE DOOMED!",
+		"We should probably start running, right?",
+		"Okay, I may have overestimated our chances here.",
+		"MAN, FUCK SHOTGUNNERS!",
+		"Uh-oh.",
+		"THIS IS BAD!",
+		"SHIT! SHIT! SHIT!",
+		"OW!",
+	)
+	reload_lines = list(
+		"Swappin' mags, baby! Cover me!",
+		"Punching in a fresh mag!",
+		"Reloading!",
+		"Shit, how do I unload this thing again?",
+		"Got a mag I could borrow?",
+		"COVER ME FOR A SECOND, DAMN IT!",
+		"I'M FUCKIN' RELOADING, JERKOFF! HOLD ON!",
+		"RELOADING! STOP SHOOTING AT ME FOR HALF A SECOND, YOU FUCKHEAD!",
+		"Man, fuck this gun, dude. Hold on.",
+	)
+	reload_internal_mag_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Cover me, you fuckin' worthless sack of shit! I'm reloading!",
+		"SHOOT THAT ASSHOLE! I'M RELOADING!",
+		"Shit, I think I dropped a cartridge. Hold on.",
+		"This gun's a piece of shit. Let me just-- there we go.",
+		"What-? FUCK! I'M OUT OF ROUNDS! RELOADING!",
 	)

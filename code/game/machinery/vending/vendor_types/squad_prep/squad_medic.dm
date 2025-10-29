@@ -112,8 +112,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 	desc = "An automated gear rack for hospital corpsmen."
 	icon_state = "med_gear"
 	show_points = TRUE
-	vendor_role = list(JOB_SQUAD_MEDIC)
-	req_access = list(ACCESS_MARINE_MEDPREP)
+	vendor_role = list()
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/gear/medic/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_medic
@@ -161,30 +161,26 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 /obj/structure/machinery/cm_vending/clothing/medic
 	name = "\improper ColMarTech Squad Medical Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment."
-	req_access = list(ACCESS_MARINE_MEDPREP)
-	vendor_role = list(JOB_SQUAD_MEDIC)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/medic/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_medic
 
 /obj/structure/machinery/cm_vending/clothing/medic/alpha
-	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_MEDPREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/bravo
-	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_MEDPREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/charlie
-	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_MEDPREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie/med
 
 /obj/structure/machinery/cm_vending/clothing/medic/delta
-	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_MEDPREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta/med
 
 //------------ESSENTIAL SETS---------------
@@ -237,8 +233,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_upp_medic, list(
 	name = "\improper UnTech Squad Medical Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment."
 	icon_state = "upp_gear"
-	req_access = list(ACCESS_UPP_MEDPREP)
-	vendor_role = list(JOB_SQUAD_MEDIC)
+	req_access = list()
+	vendor_role = list()
 	vendor_theme = VENDOR_THEME_UPP
 
 /obj/structure/machinery/cm_vending/clothing/medic/upp/get_listed_products(mob/user)
@@ -315,6 +311,53 @@ GLOBAL_LIST_INIT(cm_vending_clothing_pmc_medic, list(
 /obj/structure/machinery/cm_vending/clothing/medic/pmc/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_pmc_medic
 
+// RMC med-vendor
+
+/obj/effect/essentials_set/rmcmedic
+	spawned_gear_list = list(
+		/obj/item/storage/surgical_case/rmc_surgical_case/full,
+		/obj/item/device/healthanalyzer/soul,
+		/obj/item/tool/surgery/synthgraft,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/accessory/stethoscope,
+	)
+
+GLOBAL_LIST_INIT(cm_vending_clothing_rmc_medic, list(
+		list("MEDICAL SET (MANDATORY)", 0, null, null, null),
+		list("Essential Medical Set", 0, /obj/effect/essentials_set/rmcmedic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("BACKPACK (CHOOSE 1)", 0, null, null, null),
+		list("Heavy-duty Medical Backpack", 0, /obj/item/storage/backpack/rmc/medic, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_RECOMMENDED),
+
+		list("BELT (CHOOSE 1)", 0, null, null, null),
+		list("L75 Pattern Medical Storage Rig (Empty)", 0, /obj/item/storage/belt/medical/rmc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("L26 Pattern General Utility Belt", 0, /obj/item/storage/backpack/general_belt/rmc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+
+		list("POUCHES (CHOOSE 2)", 0, null, null, null),
+		list("Autoinjector Pouch", 0, /obj/item/storage/pouch/autoinjector, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Kit Pouch", 0, /obj/item/storage/pouch/medkit, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
+		list("Pressurized Reagent Canister Pouch (Bicaridine)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/bicaridine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
+		list("Pressurized Reagent Canister Pouch (Kelotane)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/kelotane, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
+		list("Pressurized Reagent Canister Pouch (Tricordrazine)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/tricordrazine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
+		list("Vial Pouch (Full)", 0, /obj/item/storage/pouch/vials/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+
+		list("ACCESSORIES (CHOOSE 1)", 0, null, null, null),
+		list("Drop Pouch", 0, /obj/item/clothing/accessory/storage/droppouch/rmc, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Small Pouch", 0, /obj/item/clothing/accessory/storage/smallpouch/rmc, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("Waist Holster", 0, /obj/item/clothing/accessory/storage/holster/waist, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+	))
+
+/obj/structure/machinery/cm_vending/clothing/medic/rmc
+	name = "\improper WeyTech Section Medical Equipment Rack"
+	desc = "An automated rack hooked up to a colossal storage of standard-issue medical equipment."
+	icon_state = "rmc_gear"
+	req_access = list()
+	vendor_role = list()
+	vendor_theme = VENDOR_THEME_COMPANY
+
+/obj/structure/machinery/cm_vending/clothing/medic/rmc/get_listed_products(mob/user)
+	return GLOB.cm_vending_clothing_rmc_medic
+
 // Chemical vendor
 
 GLOBAL_LIST_INIT(cm_vending_chemical_medic, list(
@@ -345,14 +388,19 @@ GLOBAL_LIST_INIT(cm_vending_chemical_medic, list(
 	icon_state = "med_chem"
 	show_points = TRUE
 	use_snowflake_points = TRUE
-	vendor_role = list(JOB_SQUAD_MEDIC)
-	req_access = list(ACCESS_MARINE_MEDPREP)
+	vendor_role = list()
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/gear/medic_chemical/get_listed_products(mob/user)
 	return GLOB.cm_vending_chemical_medic
 
 /obj/structure/machinery/cm_vending/gear/medic_chemical/upp
-	name = "\improper UnTech Squad Medical Equipment Rack"
-	req_access = list(ACCESS_UPP_MEDPREP)
+	name = "\improper UnTech Squad Medical Chemical Rack"
+	req_access = list()
 	vendor_theme = VENDOR_THEME_UPP
 
+/obj/structure/machinery/cm_vending/gear/medic_chemical/rmc
+	name = "\improper WeyTech Section Medical Chemical Rack"
+	req_access = list()
+	vendor_theme = VENDOR_THEME_COMPANY
+	vendor_role = list()

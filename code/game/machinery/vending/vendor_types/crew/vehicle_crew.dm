@@ -6,8 +6,8 @@
 	icon = 'icons/obj/structures/machinery/vending_64x32.dmi'
 	icon_state = "vehicle_gear"
 
-	req_access = list(ACCESS_MARINE_CREWMAN)
-	vendor_role = list(JOB_TANK_CREW)
+	req_access = list()
+	vendor_role = list()
 	bound_width = 64
 
 	unslashable = TRUE
@@ -199,8 +199,8 @@ GLOBAL_LIST_INIT(cm_vending_vehicle_crew_arc, list(
 	name = "\improper ColMarTech Vehicle Crewman Weapons Rack"
 	desc = "An automated weapon rack hooked up to a small storage of standard-issue weapons. Can be accessed only by the Vehicle Crewmen."
 	icon_state = "guns"
-	req_access = list(ACCESS_MARINE_CREWMAN)
-	vendor_role = list(JOB_TANK_CREW)
+	req_access = list()
+	vendor_role = list()
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND
 
 	listed_products = list(
@@ -338,8 +338,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_vehicle_crew, list(
 /obj/structure/machinery/cm_vending/clothing/vehicle_crew
 	name = "\improper ColMarTech Vehicle Crewman Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Vehicle Crewmen standard-issue equipment."
-	req_access = list(ACCESS_MARINE_CREWMAN)
-	vendor_role = list(JOB_TANK_CREW)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/vehicle_crew/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_vehicle_crew

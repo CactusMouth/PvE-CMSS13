@@ -4,7 +4,7 @@
 	name = "groundside operations console"
 	desc = "This can be used for various important functions."
 	icon_state = "comm"
-	req_access = list(ACCESS_MARINE_SENIOR)
+	req_access = list(ACCESS_MARINE_COMMAND)
 	unslashable = TRUE
 	unacidable = TRUE
 
@@ -391,6 +391,14 @@
 	lz_selection = FALSE
 	has_squad_overwatch = FALSE
 	minimap_type = MINIMAP_FLAG_PMC
+
+/obj/structure/machinery/computer/groundside_operations/rmc
+	announcement_title = TWE_COMMAND_ANNOUNCE
+	announcement_faction = FACTION_TWE
+	add_pmcs = FALSE
+	lz_selection = FALSE
+	has_squad_overwatch = FALSE
+	minimap_type = MINIMAP_FLAG_TWE
 
 /obj/structure/machinery/computer/groundside_operations/arc
 	icon = 'icons/obj/vehicles/interiors/arc.dmi'

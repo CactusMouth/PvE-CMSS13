@@ -259,7 +259,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	/// Dropship camo used when spawning as LT
 	var/dropship_camo = DROPSHIP_CAMO_JUNGLE
 	/// Dropship name used when spawning as LT
-	var/dropship_name = "Midway"
+	var/dropship_name = "Somme"
 
 	/// Personal weapon that spawns randomly roundstart
 	var/personal_weapon = "Ithaca 37 shotgun"

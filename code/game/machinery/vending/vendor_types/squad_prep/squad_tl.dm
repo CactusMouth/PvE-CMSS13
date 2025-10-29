@@ -77,8 +77,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_tl, list(
 	desc = "An automated gear rack for fireteam leaders."
 	icon_state = "intel_gear"
 	show_points = TRUE
-	req_access = list(ACCESS_MARINE_TL_PREP)
-	vendor_role = list(JOB_SQUAD_TEAM_LEADER)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/gear/tl/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_tl
@@ -135,33 +135,29 @@ GLOBAL_LIST_INIT(cm_vending_clothing_tl, list(
 /obj/structure/machinery/cm_vending/clothing/tl
 	name = "ColMarTech Fireteam Leader Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of fireteam leader standard-issue equipment."
-	req_access = list(ACCESS_MARINE_TL_PREP)
-	vendor_role = list(JOB_SQUAD_TEAM_LEADER)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/tl/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_tl
 
 /obj/structure/machinery/cm_vending/clothing/tl/alpha
-	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha/tl
 
 /obj/structure/machinery/cm_vending/clothing/tl/bravo
-	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo/tl
 
 /obj/structure/machinery/cm_vending/clothing/tl/charlie
-	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie/tl
 
 /obj/structure/machinery/cm_vending/clothing/tl/delta
-	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	gloves_type = /obj/item/clothing/gloves/marine
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta/tl
 

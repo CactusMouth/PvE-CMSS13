@@ -75,7 +75,7 @@
 	///The food object that the mob is trying to eat.
 	var/food_target
 	///A list of foods the mob is interested in eating.
-	var/list/acceptable_foods = list(/obj/item/reagent_container/food/snacks/meat, /obj/item/reagent_container/food/snacks/mre_food, /obj/item/reagent_container/food/snacks/resin_fruit)
+	var/list/acceptable_foods = list(/obj/item/reagent_container/food/snacks/meat, /obj/item/reagent_container/food/snacks/mre_food, /obj/item/reagent_container/food/snacks/resin_fruit, /obj/item/reagent_container/food/snacks/mre_pack, /obj/item/reagent_container/food/snacks/protein_pack, /obj/item/reagent_container/food/snacks/protein_pack2, /obj/item/reagent_container/food/snacks/protein_pack3, /obj/item/reagent_container/food/snacks/protein_pack4, /obj/item/reagent_container/food/snacks/protein_pack5, /obj/item/reagent_container/food/snacks/protein_pack6)
 	///Is the mob currently eating the food_target?
 	var/is_eating = FALSE
 	///Cooldown dictating how long the mob will wait between eating food.
@@ -88,7 +88,6 @@
 
 /mob/living/simple_animal/hostile/retaliate/giant_lizard/Initialize()
 	. = ..()
-	change_real_name(src, "[name] ([rand(1, 999)])")
 	pounce_callbacks[/mob] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_mob_wrapper)
 	pounce_callbacks[/turf] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_turf_wrapper)
 	pounce_callbacks[/obj] = DYNAMIC(/mob/living/simple_animal/hostile/retaliate/giant_lizard/proc/pounced_obj_wrapper)
@@ -736,6 +735,28 @@
 
 	return ..()
 
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco
+	name = "Bosco"
+	desc = "A wolf-sized lizard wearing a collar. He was rescued from Sekhmet Swamp by the Raiders. Now that the PlatCo office is gone, he's started hanging around Lieutenant Brown's office instead. It looks like he's been defanged - he can't hurt anyone outside of knocking them down. He really likes crayon-flavored protein bars."
+	icon_state = "Bosco Running"
+	icon_living = "Bosco Running"
+	maxHealth = 700
+	health = 700
+	faction = "USCM"
+	melee_damage_lower = 0
+	melee_damage_upper = 0
+
+/mob/living/simple_animal/hostile/retaliate/giant_lizard/bosco/update_transform(instant_update = FALSE)
+	if(stat == DEAD)
+		icon_state = icon_dead
+	else if(body_position == LYING_DOWN)
+		if(!HAS_TRAIT(src, TRAIT_INCAPACITATED) && !HAS_TRAIT(src, TRAIT_FLOORED))
+			icon_state = "Bosco Sleeping"
+		else
+			icon_state = "Giant Lizard Knocked Down"
+	else
+		icon_state = icon_living
+	return ..()
 
 ///CLIENT EMOTES
 ////////////////

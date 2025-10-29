@@ -48,8 +48,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_spec, list(
 	show_points = TRUE
 	use_points = FALSE
 	use_snowflake_points = TRUE
-	vendor_role = list(JOB_SQUAD_SPECIALIST)
-	req_access = list(ACCESS_MARINE_SPECPREP)
+	vendor_role = list()
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/gear/spec/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_spec
@@ -153,30 +153,26 @@ GLOBAL_LIST_INIT(cm_vending_clothing_specialist, list(
 	name = "\improper ColMarTech Squad Weapons Specialist Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Squad Weapons Specialist standard-issue equipment."
 	show_points = TRUE
-	req_access = list(ACCESS_MARINE_SPECPREP)
-	vendor_role = list(JOB_SQUAD_SPECIALIST)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/specialist/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_specialist
 
 /obj/structure/machinery/cm_vending/clothing/specialist/alpha
-	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha
 
 /obj/structure/machinery/cm_vending/clothing/specialist/bravo
-	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo
 
 /obj/structure/machinery/cm_vending/clothing/specialist/charlie
-	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie
 
 /obj/structure/machinery/cm_vending/clothing/specialist/delta
-	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta
 
 //------------ESSENTIAL SETS---------------
@@ -268,3 +264,70 @@ GLOBAL_LIST_INIT(cm_vending_clothing_specialist, list(
 		/obj/item/explosive/grenade/high_explosive/m15,
 		/obj/item/explosive/grenade/high_explosive/m15,
 	)
+
+// RMC sniper-vendor
+
+/obj/effect/essentials_set/rmcdmr
+	spawned_gear_list = list(
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/ammo_magazine/sniper/rmc,
+		/obj/item/weapon/gun/rifle/sniper/rmc,
+		/obj/item/clothing/glasses/night/m42_hms/rmc,
+		/obj/item/attachable/bipod,
+	)
+
+/obj/effect/essentials_set/rmcsniper
+	spawned_gear_list = list(
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/weapon/gun/rifle/sniper/M42A/silenced,
+		/obj/item/clothing/glasses/night/m42_hms/rmc,
+		/obj/item/attachable/bipod,
+	)
+
+GLOBAL_LIST_INIT(cm_vending_clothing_rmc_sniper, list(
+		list("PRECISION WEAPON SET (MANDATORY)", 0, null, null, null),
+		list("Essential Sniper Set", 0, /obj/effect/essentials_set/rmcsniper, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+		list("Essential Marksman Set", 0, /obj/effect/essentials_set/rmcdmr, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("HELMET (CHOOSE 1)", 0, null, null, null),
+		list("Mk12 Marksman Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/rmc, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
+
+		list("BACKPACK (CHOOSE 1)", 0, null, null, null),
+		list("Heavy-duty Backpack", 0, /obj/item/storage/backpack/rmc/heavy, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_REGULAR),
+		list("Standard Backpack", 0, /obj/item/storage/backpack/rmc/medium, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_RECOMMENDED),
+		list("Lightweight Backpack", 0, /obj/item/storage/backpack/rmc/light, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_REGULAR),
+
+		list("BELT (CHOOSE 1)", 0, null, null, null),
+		list("L70 pattern Ammo Load Rig", 0, /obj/item/storage/belt/marine/rmc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("L26 Pattern General Utility Belt", 0, /obj/item/storage/backpack/general_belt/rmc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("L165 Gunbelt", 0, /obj/item/storage/belt/gun/l905, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+
+		list("ACCESSORIES (CHOOSE 1)", 0, null, null, null),
+		list("Drop Pouch", 0, /obj/item/clothing/accessory/storage/droppouch/rmc, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Small Pouch", 0, /obj/item/clothing/accessory/storage/smallpouch/rmc, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("Waist Holster", 0, /obj/item/clothing/accessory/storage/holster/waist, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+	))
+
+/obj/structure/machinery/cm_vending/clothing/specialist/rmc
+	name = "\improper WeyTech Section Marksman Equipment Rack"
+	desc = "An automated rack hooked up to a colossal storage of standard-issue equipment for Royal Marine Scout-Snipers."
+	icon_state = "spec_gear"
+	req_access = list(ACCESS_TWE_SNIPERPREP)
+	vendor_role = list(JOB_TWE_RMC_MARKSMAN)
+	vendor_theme = VENDOR_THEME_COMPANY
+
+/obj/structure/machinery/cm_vending/clothing/specialist/rmc/get_listed_products(mob/user)
+	return GLOB.cm_vending_clothing_rmc_sniper

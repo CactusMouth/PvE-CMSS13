@@ -122,17 +122,17 @@
 
 			var/obj/item/card/id/id_card = H.get_idcard()
 
-			if(!id_card) //not wearing an ID
-				to_chat(H, SPAN_WARNING("Access denied. No ID card detected"))
-				return
+//			if(!id_card) //not wearing an ID
+	//			to_chat(H, SPAN_WARNING("Access denied. No ID card detected"))
+//				return
 
-			if(id_card.registered_name != H.real_name)
-				to_chat(H, SPAN_WARNING("Wrong ID card owner detected."))
-				return
+//			if(id_card.registered_name != H.real_name)
+//				to_chat(H, SPAN_WARNING("Wrong ID card owner detected."))
+//				return
 
-			if(LAZYLEN(vendor_role) && !vendor_role.Find(id_card.rank))
-				to_chat(H, SPAN_WARNING("This machine isn't for you."))
-				return
+//			if(LAZYLEN(vendor_role) && !vendor_role.Find(id_card.rank))
+//				to_chat(H, SPAN_WARNING("This machine isn't for you."))
+//				return
 
 			for(var/category in GLOB.uniform_categories) // Very Hacky fix
 				if(!exploiting)

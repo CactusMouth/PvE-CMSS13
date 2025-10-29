@@ -77,6 +77,12 @@
 	default_ammo = /datum/ammo/bullet/smg/pve
 	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
 
+/obj/item/ammo_magazine/smg/m39/squash
+	name = "\improper L6A2 Squash-Head magazine (9mm)"
+	max_rounds = 48
+	default_ammo = /datum/ammo/bullet/smg/squash
+	ammo_band_color = AMMO_BAND_COLOR_IMPACT
+
 //-------------------------------------------------------
 //M5, a classic SMG used in a lot of action movies.
 
@@ -291,3 +297,30 @@
 	w_class = SIZE_SMALL
 	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/smg/nailgun
+
+//-------------------------------------------------------
+//P90, a classic SMG.
+
+/obj/item/ammo_magazine/smg/p90
+	name = "\improper FN P90 magazine (5.7×28mm)"
+	desc = "A 5.7×28mm magazine for the FN P90."
+	default_ammo = /datum/ammo/bullet/smg/ap
+	caliber = "5.7×28mm"
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
+	icon_state = "p90"
+	w_class = SIZE_MEDIUM
+	gun_type = /obj/item/weapon/gun/smg/p90
+	max_rounds = 50
+//-------------------------------------------------------
+//P90, a classic SMG.(TWE version)
+
+/obj/item/ammo_magazine/smg/p90/twe
+	name = "\improper FN-TWE P90 AP magazine (5.7×28mm)"
+	desc = "A 5.7×28mm magazine for the FN-TWE P90."
+	default_ammo = /datum/ammo/bullet/smg/ap
+	caliber = "5.7×28mm"
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/twe_ammo.dmi'
+	icon_state = "p90_twe"
+	w_class = SIZE_MEDIUM
+	gun_type = /obj/item/weapon/gun/smg/p90/twe
+	max_rounds = 50

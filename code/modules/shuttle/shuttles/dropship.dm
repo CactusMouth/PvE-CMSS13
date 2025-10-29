@@ -129,6 +129,18 @@
 /obj/docking_port/mobile/marine_dropship/midway/get_transit_path_type()
 	return /turf/open/space/transit/dropship/midway
 
+/obj/docking_port/mobile/marine_dropship/somme
+	name = "Somme"
+	id = DROPSHIP_SOMME
+	width = 9
+	height = 18
+
+	dwidth = 4
+	dheight = 8
+
+/obj/docking_port/mobile/marine_dropship/somme/get_transit_path_type()
+	return /turf/open/space/transit/dropship/somme
+
 /obj/docking_port/mobile/marine_dropship/upp
 	name = "Akademia Nauk"
 	id = DROPSHIP_UPP
@@ -202,6 +214,36 @@
 
 /obj/docking_port/mobile/marine_dropship/pmc/get_transit_path_type()
 	return /turf/open/space/transit/dropship/pmc
+
+/obj/docking_port/mobile/marine_dropship/shitfuck
+	name = "Shitfuck"
+	id = DROPSHIP_SHITFUCK
+	width = 9
+	height = 10
+
+	dwidth = 4
+	dheight = 5
+
+/obj/docking_port/mobile/marine_dropship/shitfuck/get_transit_path_type()
+	return /turf/open/space/transit/dropship/shitfuck
+
+/obj/docking_port/stationary/marine_dropship/galleyburned_hangar
+	name = "Galleyburned Hangar"
+	id = GALLEYBURNED_LZ
+	auto_open = TRUE
+	roundstart_template = /datum/map_template/shuttle/shitfuck
+
+/obj/docking_port/mobile/marine_dropship/gibraltar
+	name = "Gibraltar"
+	id = DROPSHIP_GIBRALTAR
+	width = 9
+	height = 18
+
+	dwidth = 4
+	dheight = 9
+
+/obj/docking_port/mobile/marine_dropship/gibraltar/get_transit_path_type()
+	return /turf/open/space/transit/dropship/gibraltar
 
 /obj/docking_port/mobile/marine_dropship/alamo
 	name = "Alamo"
@@ -380,7 +422,7 @@
 	name = "Hangar Bay"
 	id = GOLDEN_ARROW_LZ
 	auto_open = TRUE
-	roundstart_template = /datum/map_template/shuttle/midway
+	roundstart_template = /datum/map_template/shuttle/somme
 
 /obj/docking_port/stationary/marine_dropship/crash_site
 	auto_open = TRUE
@@ -412,6 +454,10 @@
 	name = "Midway"
 	shuttle_id = DROPSHIP_MIDWAY
 
+/datum/map_template/shuttle/somme
+	name = "Somme"
+	shuttle_id = DROPSHIP_SOMME
+
 /datum/map_template/shuttle/alamo
 	name = "Alamo"
 	shuttle_id = DROPSHIP_ALAMO
@@ -436,6 +482,10 @@
 	name = "Cash Flow"
 	shuttle_id = DROPSHIP_PMC
 
+/datum/map_template/shuttle/gibraltar
+	name = "Gibraltar"
+	shuttle_id = DROPSHIP_GIBRALTAR
+
 /datum/map_template/shuttle/typhoon
 	name = "CMD-Typhoon"
 	shuttle_id = DROPSHIP_TYPHOON
@@ -447,3 +497,7 @@
 /datum/map_template/shuttle/tripoli
 	name = "Tripoli"
 	shuttle_id = DROPSHIP_TRIPOLI
+
+/datum/map_template/shuttle/shitfuck
+	name = "Shitfuck"
+	shuttle_id = DROPSHIP_SHITFUCK

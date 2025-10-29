@@ -269,6 +269,10 @@
 	shuttle_tag = DROPSHIP_NORMANDY
 	dir = SOUTH
 
+/turf/open/space/transit/dropship/somme
+	shuttle_tag = DROPSHIP_SOMME
+	dir = SOUTH
+
 /turf/open/space/transit/dropship/saipan
 	shuttle_tag = DROPSHIP_SAIPAN
 	dir = SOUTH
@@ -297,8 +301,16 @@
 	shuttle_tag = DROPSHIP_PMC
 	dir = SOUTH
 
+/turf/open/space/transit/dropship/gibraltar
+	shuttle_tag = DROPSHIP_GIBRALTAR
+	dir = SOUTH
+
 /turf/open/space/transit/dropship/upp
 	shuttle_tag = DROPSHIP_UPP
+	dir = SOUTH
+
+/turf/open/space/transit/dropship/shitfuck
+	shuttle_tag = DROPSHIP_SHITFUCK
 	dir = SOUTH
 
 /turf/open/space/transit/south

@@ -338,6 +338,11 @@
 	name = "Ship Security Cameras"
 	network = list(CAMERA_NET_ALMAYER, CAMERA_NET_VEHICLE)
 
+/obj/structure/machinery/computer/cameras/almayer/vehicle/tank
+	name = "Vehicle Cam-View Terminal"
+	icon = 'icons/obj/vehicles/interiors/general.dmi'
+	icon_state = "viewport"
+
 /obj/structure/machinery/computer/cameras/hangar
 	name = "Dropship Security Cameras Console"
 	icon_state = "security_cam"
@@ -402,6 +407,10 @@
 	network = list(CAMERA_NET_RESEARCH, CAMERA_NET_LASER_TARGETS)
 
 /obj/structure/machinery/computer/cameras/dropship/midway
+	name = "\improper 'Midway' camera controls"
+	network = list(CAMERA_NET_MIDWAY, CAMERA_NET_LASER_TARGETS)
+
+/obj/structure/machinery/computer/cameras/dropship/somme
 	name = "\improper 'Midway' camera controls"
 	network = list(CAMERA_NET_MIDWAY, CAMERA_NET_LASER_TARGETS)
 

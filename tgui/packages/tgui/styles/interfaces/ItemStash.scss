@@ -1,0 +1,116 @@
+@use '../base.scss';
+@use '../colors.scss';
+@use '../functions.scss';
+
+.ItemStash_FlexItem {
+  height: 100%;
+}
+
+.ItemStash_Debug {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: black;
+  background-color: red;
+}
+
+.ItemStash_Slot {
+  height: 92%;
+  width: 92%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  border-width: 6px;
+  border-color: greenyellow;
+  border-style: groove;
+
+}
+
+.ItemStash_Slot:hover {
+  opacity: 1;
+}
+
+.ItemStash_LoginButton {
+  height: 10%;
+  width: 90%;
+  background-color: #25232b;
+  border-width: 5px;
+  border-style: outset;
+  border-color: #25232b;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: azure;
+  margin-left: 5%;
+}
+
+.ItemStash_LoginButton:hover {
+  background-color: #454250;
+}
+
+.ItemStash_Box {
+  height: 100%;
+  width: 100%;
+}
+
+.ItemStash_ItemWindow {
+  border-style: outset;
+  border-width: 5px;
+  border-color: #25232b;
+
+  height: 100%;
+  width: 100%;
+}
+
+.ItemStash_Background {
+  border-bottom: 50px inset darkgrey;
+  border-left: 50px inset darkgrey;
+  border-right: 50px inset gray;
+  background-color: dimgray;
+  height: 90%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.ItemStash_BackgroundShelf {
+  background-color: dimgray;
+  border-top: 2px outset gray;
+  border-bottom: 2px outset darkgray;
+  height: 10%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.ItemStash_ItemBox {
+  background-color: rgb(48, 47, 54);
+  border-style: inset;
+  border-width: 6px;
+  border-color: rgb(94, 100, 116);
+  height: 92%;
+  width: 92%;
+}
+
+.ItemStash_Screen {
+  margin-top: 5px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 30%;
+  font-family: monospace;
+  color: rgb(1, 163, 1);
+  font-size: 18px;
+  width: 90%;
+  border-width: 5px;
+  border-style: inset;
+  border-radius: 5%;
+  border-color: #25232b;
+  background-color: green;
+  background: repeating-linear-gradient(rgb(27, 73, 27), black 3%,);
+}

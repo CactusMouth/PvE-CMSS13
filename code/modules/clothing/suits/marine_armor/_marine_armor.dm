@@ -540,6 +540,25 @@
 	unacidable = TRUE
 	var/injections = 4
 
+/obj/item/clothing/suit/storage/marine/specialist/smartgunner
+	name = "\improper B18-B smartgunner defensive armor"
+	desc = "A heavy, rugged set of armor plates as well as the computers, straps, and armature required for operating the M56 Smartgun. For when you really, really need to kill something bad. Slows you down though.\nComes with two tricord injectors in each arm guard."
+	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN|SMARTGUN_HARNESS
+	specialty = "B18B experimental"
+
+/obj/item/clothing/suit/storage/marine/specialist/breacher
+	name = "\improper B16 breacher armor"
+	desc = "A variant of the B18 suit slated for mass production, the B16 is a hell of a mass of cera-plast plates backed by trauma meshes. It doesn't provide nearly as much protection as the coveted B18, however it still is quite a big step up from the regular-issue USCM armors available."
+	icon_state = "xarmor"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
+	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_LOW
+	specialty = "B16 breacher"
+
 /obj/item/clothing/suit/storage/marine/specialist/verb/inject()
 	set name = "Create Injector"
 	set category = "Object"
@@ -946,8 +965,9 @@
 
 /obj/item/clothing/suit/marine/guard/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/uacg/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/uacg/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
 
 //Army & USASF custom-armors\\
 
@@ -965,12 +985,13 @@
 
 /obj/item/clothing/suit/marine/medium/rto/navy/heavy/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/navy/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/navy/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/navy/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/navy/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/navy/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/navy/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
 
 /obj/item/clothing/suit/marine/medium/rto/army
 	name = "\improper Personal Body Armor System"
@@ -984,27 +1005,29 @@
 
 /obj/item/clothing/suit/marine/medium/rto/army/medium/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
 
 /obj/item/clothing/suit/marine/medium/rto/army/heavy
 
 /obj/item/clothing/suit/marine/medium/rto/army/heavy/Initialize(mapload)
 	. = ..()
-	var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
-	src.attach_accessory(null, crotchplate, TRUE)
-	var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
-	src.attach_accessory(null, shinguards, TRUE)
-	var/obj/item/clothing/accessory/pads/shoulderpads = new()
-	src.attach_accessory(null, shoulderpads, TRUE)
-	var/obj/item/clothing/accessory/pads/bracers/armguards = new()
-	src.attach_accessory(null, armguards, TRUE)
-	var/obj/item/clothing/accessory/pads/kneepads/knees = new()
-	src.attach_accessory(null, knees, TRUE)
+	if(was_stashed == FALSE)
+		var/obj/item/clothing/accessory/pads/groin/crotchplate = new()
+		src.attach_accessory(null, crotchplate, TRUE)
+		var/obj/item/clothing/accessory/pads/greaves/shinguards = new()
+		src.attach_accessory(null, shinguards, TRUE)
+		var/obj/item/clothing/accessory/pads/shoulderpads = new()
+		src.attach_accessory(null, shoulderpads, TRUE)
+		var/obj/item/clothing/accessory/pads/bracers/armguards = new()
+		src.attach_accessory(null, armguards, TRUE)
+		var/obj/item/clothing/accessory/pads/kneepads/knees = new()
+		src.attach_accessory(null, knees, TRUE)
 
 //==================PLU Lamp Rig==================\\
 
