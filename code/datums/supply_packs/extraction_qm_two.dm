@@ -153,6 +153,33 @@
 	group = "Quartermaster LL2"
 	qm_lltwo = TRUE
 
+/datum/supply_packs/qm_mpluspauldrons
+	name = "Armor: M4 Pattern Adv. Pauldrons"
+	contains = list(/obj/item/clothing/accessory/pads/navy)
+	cost = 25
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M4 pauldrons crate"
+	group = "Quartermaster LL2"
+	qm_lltwo = TRUE
+
+/datum/supply_packs/qm_mplusgreaves
+	name = "Armor: M4 Pattern Adv. Greaves"
+	contains = list(/obj/item/clothing/accessory/pads/greaves/navy)
+	cost = 25
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M4 greaves crate"
+	group = "Quartermaster LL2"
+	qm_lltwo = TRUE
+
+/datum/supply_packs/qm_mplusgroinplate
+	name = "Armor: M4 Pattern Adv. Groinplate"
+	contains = list(/obj/item/clothing/accessory/pads/groin/navy)
+	cost = 25
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M4 groinplate crate"
+	group = "Quartermaster LL2"
+	qm_lltwo = TRUE
+
 //meds
 
 //no meds this tier!

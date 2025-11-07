@@ -55,7 +55,7 @@
 
 /datum/ammo/energy/rxfm_eva/on_hit_mob(mob/living/M, obj/projectile/P)
 	..()
-	if(prob(10)) //small chance for one to ignite on hit
+	if(prob(20)) //buffed to 20% for extraction
 		M.fire_act()
 
 /datum/ammo/energy/laz_uzi

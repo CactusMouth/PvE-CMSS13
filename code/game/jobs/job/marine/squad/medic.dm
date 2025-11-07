@@ -80,8 +80,6 @@
 	spawn_positions = 2
 
 /datum/job/marine/medic/ai/extraction
-	total_positions = 1
-	spawn_positions = 1
 	gear_preset = /datum/equipment_preset/uscm/medic/extraction
 	gear_preset_secondary = /datum/equipment_preset/uscm/medic/extraction
 	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/extraction

@@ -522,3 +522,14 @@
 	reagents.add_reagent("dermaline", 10)
 	mode = SYRINGE_INJECT
 	update_icon()
+
+/obj/item/reagent_container/syringe/brute
+	name = "syringe (brute trauma)"
+	desc = "Contains bicaridine - used to rapidly heal brute damage, and inaprovaline - a rapid-acting general restorative agent"
+
+/obj/item/reagent_container/syringe/brute/Initialize()
+	. = ..()
+	reagents.add_reagent("bicaridine", 5)
+	reagents.add_reagent("inaprovaline", 10)
+	mode = SYRINGE_INJECT
+	update_icon()

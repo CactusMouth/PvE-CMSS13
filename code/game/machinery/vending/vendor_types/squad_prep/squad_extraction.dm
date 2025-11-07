@@ -30,18 +30,19 @@ GLOBAL_LIST_INIT(cm_vending_extraction, list(
 		list("Magazine Pouch", 0, /obj/item/storage/pouch/magazine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Shotgun Shell Pouch", 0, /obj/item/storage/pouch/shotgun, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 
-		list("COSMETIC SPECIALIZATION (CHOOSE 1)", 0, null, null, null),
-		list("Support Medic", 0, /obj/item/pamphlet/skill/specialization/supmed, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Vehicle Crew", 0, /obj/item/pamphlet/skill/specialization/vehcrew, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Combat Technician", 0, /obj/item/pamphlet/skill/specialization/comtech, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Pointman", 0, /obj/item/pamphlet/skill/specialization/pointman, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Assistant Squad Lead", 0, /obj/item/pamphlet/skill/specialization/astl, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Machine Gunner", 0, /obj/item/pamphlet/skill/specialization/machinegunner, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-		list("Sniper", 0, /obj/item/pamphlet/skill/specialization/sniper, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
-
 		list("LIGHTS (CHOOSE 1)", 0, null, null, null),
 		list("Flashlight", 0, /obj/item/device/flashlight, MARINE_CAN_BUY_MRE, VENDOR_ITEM_RECOMMENDED),
 		list("M94 Marking Flare Pack", 0, /obj/item/storage/box/flare, MARINE_CAN_BUY_MRE, VENDOR_ITEM_REGULAR),
+
+		list("COSMETIC SPECIALIZATION KITS", 0, null, null, null),
+		list("No Specialization", 5, /obj/item/pamphlet/skill/specialization, VENDOR_ITEM_REGULAR),
+		list("Support Medic", 5, /obj/item/pamphlet/skill/specialization/supmed, VENDOR_ITEM_REGULAR),
+		list("Vehicle Crew", 5, /obj/item/pamphlet/skill/specialization/vehcrew, VENDOR_ITEM_REGULAR),
+		list("Combat Technician", 5, /obj/item/pamphlet/skill/specialization/comtech, VENDOR_ITEM_REGULAR),
+		list("Pointman", 5, /obj/item/pamphlet/skill/specialization/pointman, VENDOR_ITEM_REGULAR),
+		list("Assistant Squad Lead", 5, /obj/item/pamphlet/skill/specialization/astl, VENDOR_ITEM_REGULAR),
+		list("Machine Gunner", 5, /obj/item/pamphlet/skill/specialization/machinegunner, VENDOR_ITEM_REGULAR),
+		list("Sniper", 5, /obj/item/pamphlet/skill/specialization/sniper, VENDOR_ITEM_REGULAR),
 	))
 
 /obj/structure/machinery/cm_vending/gear/extraction
