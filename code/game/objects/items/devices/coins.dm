@@ -201,8 +201,14 @@
 
 /obj/item/coin/exfilcrate
 	name = "extract-ready crate requisition token"
-	desc = "A stamped platinum coin that can be redeemed at the Hideout requisitions bay for a reinforced crate which is capable of surviving the exfiltration process with its contents intact."
+	desc = "A stamped silver coin that can be redeemed at the Hideout requisitions bay for a reinforced crate which is capable of surviving the exfiltration process with its contents intact."
 	icon_state = "coin_synth_crate"
+	black_market_value = 0
+
+/obj/item/coin/exfilpickup
+	name = "dropship pickup requisition token"
+	desc = "A stamped golden coin that can be redeemed at the Hideout requisitions bay to have the dropship physically dock at your exfil at the end of the raid, allowing you to load items and corpses aboard it."
+	icon_state = "coin_gold_pickup"
 	black_market_value = 0
 
 /obj/item/coin/vehicletoken

@@ -26,6 +26,7 @@
 	var/crate_heat = 0
 	var/qm_llone = FALSE
 	var/qm_lltwo = FALSE
+	var/qm_llthree = FALSE
 	var/sh_llone = FALSE
 	var/sh_lltwo = FALSE
 
