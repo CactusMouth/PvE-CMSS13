@@ -1363,3 +1363,10 @@
 	desc = "A grey utility uniform with yellow suspenders, made for shipside crew."
 	icon_state = "yellow_utility"
 	worn_state = "yellow_utility"
+
+/obj/item/clothing/under/marine/veteran/fil
+	name = "\improper french combat uniform"
+	icon_state = "fil_jumpsuit"
+	item_state = "fil_jumpsuit"
+	desc = "Standard-issue french military uniform, given out to most if not all of their soldiers in the field."
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
