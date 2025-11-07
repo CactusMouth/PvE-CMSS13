@@ -154,7 +154,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
 			qm_loyalty = 0
-	if(istype(hit_item, /obj/item/loyalty/quartermaster/leveltwo))
+	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelthree))
 		if(qm_loyalty != 3)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1, level 2, and level 3 purchases unlocked for QM."))
 			qm_loyalty = 3
