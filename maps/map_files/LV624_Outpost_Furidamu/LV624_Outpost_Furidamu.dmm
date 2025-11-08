@@ -150,7 +150,6 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "aB" = (
@@ -190,16 +189,6 @@
 	icon_state = "whiteyellow"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/construction_site)
-"aI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/plating{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/filtration)
 "aK" = (
 /obj/structure/machinery/light{
 	dir = 1
@@ -230,8 +219,7 @@
 /obj/structure/surface/table,
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "aO" = (
@@ -377,9 +365,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/almayer,
-/obj/structure/machinery/computer/objective{
-	dir = 4
-	},
 /turf/open/floor{
 	icon_state = "white"
 	},
@@ -391,17 +376,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
-"br" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor{
-	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "bs" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/ammo_magazine/pistol/highpower,
@@ -489,7 +463,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/se)
 "bF" = (
 /obj/structure/surface/table,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -560,7 +533,6 @@
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south)
 "bT" = (
-/obj/effect/landmark/corpsespawner/upp,
 /turf/open/floor/plating{
 	icon_state = "warnplate"
 	},
@@ -620,13 +592,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/sw)
-"cf" = (
-/obj/structure/machinery/light,
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "cg" = (
 /obj/structure/surface/table/almayer,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
@@ -661,7 +626,6 @@
 /obj/structure/machinery/light{
 	dir = 1
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -684,15 +648,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
-"cq" = (
-/obj/structure/machinery/light{
-	dir = 1
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "cr" = (
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
 /turf/open/floor{
@@ -781,12 +736,6 @@
 "cF" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
-"cG" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/auto_turf/strata_grass/layer0_mud,
-/area/LV624_Outpost_Furidamu/landing_zone_1)
 "cH" = (
 /turf/open/floor{
 	dir = 8;
@@ -992,9 +941,6 @@
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/s)
 "dr" = (
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
 /obj/item/ammo_magazine/smg/ppsh{
 	current_rounds = 0
 	},
@@ -1355,7 +1301,6 @@
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/construction_site)
 "eH" = (
@@ -1383,7 +1328,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/folder,
 /obj/item/device/assembly/signaller,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -1424,13 +1368,6 @@
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/se)
-"eR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz1_supply)
 "eS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1488,15 +1425,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/tonwhall)
-"fe" = (
-/obj/structure/barricade/wooden{
-	dir = 8
-	},
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/hut)
 "ff" = (
 /turf/closed/wall/solaris,
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/cent)
@@ -1559,7 +1487,6 @@
 	pixel_x = -2;
 	pixel_y = 7
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/hut)
 "fr" = (
@@ -1585,14 +1512,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
-"fv" = (
-/obj/structure/machinery/power/geothermal{
-	fail_rate = 5
-	},
-/turf/open/floor/plating{
-	icon_state = "warnplate"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "fw" = (
 /obj/structure/surface/table,
 /obj/item/explosive/grenade/high_explosive/stick,
@@ -1680,7 +1599,6 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
 "fJ" = (
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/colonist/burst,
 /turf/open/floor/plating,
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "fK" = (
@@ -1785,7 +1703,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
 "fY" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/hut)
 "ga" = (
@@ -1862,30 +1779,13 @@
 /obj/structure/flora/jungle/planttop1,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/se)
-"go" = (
-/obj/structure/machinery/light{
-	dir = 8
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/cent)
 "gp" = (
 /obj/structure/curtain/red,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
-"gq" = (
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "gs" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/flashlight,
@@ -1921,8 +1821,7 @@
 	},
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "gw" = (
@@ -1962,8 +1861,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "gD" = (
@@ -2028,18 +1926,11 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/pamphlet/skill/engineer,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "gP" = (
 /turf/open/floor/plating,
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/se)
-"gQ" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/colonist/burst,
-/turf/open/floor/plating,
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "gS" = (
 /obj/structure/flora/jungle/vines/heavy,
 /turf/closed/wall/strata_ice/jungle,
@@ -2079,8 +1970,7 @@
 	},
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "gZ" = (
@@ -2102,7 +1992,6 @@
 	spawnkey = 0
 	},
 /obj/item/cell/high,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor{
 	icon_state = "white"
 	},
@@ -2183,7 +2072,6 @@
 /obj/item/map/lazarus_landing_map{
 	pixel_y = 2
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /obj/structure/machinery/light{
 	dir = 8
 	},
@@ -2231,8 +2119,7 @@
 	icon_state = "4"
 	},
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "hu" = (
@@ -2259,7 +2146,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/e)
 "hy" = (
 /obj/structure/closet/crate/secure/weyland,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -2345,16 +2231,6 @@
 	icon_state = "bot"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south)
-"hM" = (
-/obj/structure/machinery/light{
-	dir = 1
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "hN" = (
 /obj/structure/closet/l3closet/scientist,
 /obj/structure/machinery/light{
@@ -2406,16 +2282,9 @@
 /obj/structure/curtain/red,
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
-"hX" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/colonist/burst,
-/obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
-/turf/open/floor/plating,
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "hY" = (
 /obj/structure/surface/rack,
 /turf/open/floor{
@@ -2444,8 +2313,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "ie" = (
@@ -2479,12 +2347,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/hut/tcomm)
-"ij" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "ik" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags{
@@ -2498,16 +2360,6 @@
 "il" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/s)
-"im" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
-/turf/open/floor{
-	dir = 9;
-	icon_state = "whitepurple"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "in" = (
 /obj/structure/closet/coffin/woodencrate,
 /obj/structure/machinery/light{
@@ -2534,12 +2386,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_supply)
-"ir" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
 "it" = (
 /obj/structure/flora/jungle/vines{
 	icon_state = "light_3"
@@ -2592,8 +2438,7 @@
 "iA" = (
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "iB" = (
@@ -2634,16 +2479,6 @@
 	},
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
-"iJ" = (
-/obj/structure/sign/poster/clf{
-	pixel_x = -6;
-	pixel_y = 29
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "iL" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -2654,8 +2489,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/river)
 "iM" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/weapon/gun/revolver/nagant,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "iN" = (
@@ -2696,14 +2529,6 @@
 	icon_state = "dark"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
-"iW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/surface/table/almayer,
-/obj/structure/machinery/computer/objective,
-/turf/open/floor{
-	icon_state = "white"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "iX" = (
 /turf/open/floor/almayer{
 	icon_state = "plate"
@@ -2771,7 +2596,6 @@
 /obj/structure/machinery/light{
 	dir = 4
 	},
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "ji" = (
@@ -2793,8 +2617,7 @@
 	dir = 8
 	},
 /turf/open/floor{
-	icon_state = "platebot";
-	tag = null
+	icon_state = "platebot"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "jn" = (
@@ -2823,17 +2646,6 @@
 	},
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/s)
-"jt" = (
-/obj/structure/machinery/light{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/snacks/upp,
-/turf/open/floor{
-	icon_state = "white"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "jv" = (
 /turf/closed/wall/r_wall,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/w)
@@ -2854,9 +2666,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/nw)
 "jz" = (
 /obj/structure/target,
-/obj/item/clothing/suit/storage/marine/padded{
-	pixel_y = 1
-	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/firing)
 "jB" = (
@@ -3032,7 +2841,6 @@
 	pixel_x = 3;
 	pixel_y = 8
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "kb" = (
@@ -3044,9 +2852,6 @@
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/e)
 "kd" = (
-/obj/structure/machinery/power/geothermal{
-	fail_rate = 5
-	},
 /turf/open/floor/plating{
 	dir = 1;
 	icon_state = "warnplate"
@@ -3296,7 +3101,6 @@
 "kS" = (
 /obj/structure/largecrate/supply/supplies/mre,
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
 "kT" = (
@@ -3354,16 +3158,6 @@
 /obj/structure/flora/grass/tallgrass/jungle,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/e)
-"la" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
-/turf/open/floor{
-	dir = 5;
-	icon_state = "whitepurple"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "lb" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/gm/river,
@@ -3415,7 +3209,6 @@
 "lj" = (
 /obj/structure/largecrate/supply/supplies/mre,
 /obj/item/explosive/grenade/phosphorus/upp,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
 "lk" = (
@@ -3423,21 +3216,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
-"lm" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/tonwhall)
 "ln" = (
 /obj/structure/curtain/red,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "lo" = (
@@ -3464,9 +3246,6 @@
 	pixel_y = 5
 	},
 /obj/item/tool/pen/blue/clicky,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "lt" = (
@@ -3491,8 +3270,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "ly" = (
@@ -3567,8 +3345,7 @@
 "lH" = (
 /obj/structure/fence,
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
 "lI" = (
@@ -3707,7 +3484,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/e)
 "mi" = (
 /obj/structure/largecrate/guns/merc,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -3716,7 +3492,6 @@
 "mj" = (
 /obj/structure/largecrate/supply/supplies/mre,
 /obj/item/weapon/gun/smg/mac15,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
 "mk" = (
@@ -3760,7 +3535,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
 "ms" = (
 /obj/structure/machinery/light,
-/obj/effect/landmark/objective_landmark/science,
 /obj/structure/surface/table/almayer,
 /turf/open/floor{
 	icon_state = "white"
@@ -3779,9 +3553,6 @@
 "mv" = (
 /obj/structure/barricade/sandbags{
 	dir = 1
-	},
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
 	},
 /obj/item/ammo_magazine/smg/ppsh{
 	current_rounds = 0
@@ -3851,8 +3622,7 @@
 "mE" = (
 /obj/structure/machinery/cm_vending/sorted/medical/blood,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "mF" = (
@@ -3909,8 +3679,7 @@
 "mM" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "mN" = (
@@ -3992,9 +3761,6 @@
 /area/LV624_Outpost_Furidamu/landing_zone_1)
 "nc" = (
 /obj/structure/target,
-/obj/item/clothing/suit/storage/marine/leader{
-	pixel_y = 1
-	},
 /obj/item/clothing/head/cmcap/boonie/tan{
 	pixel_y = 9
 	},
@@ -4041,7 +3807,6 @@
 	layer = 3.1;
 	pixel_y = -10
 	},
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/floor/interior/tatami,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "nk" = (
@@ -4112,8 +3877,7 @@
 /obj/item/weapon/unathiknife,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "nu" = (
@@ -4164,7 +3928,6 @@
 /obj/structure/machinery/light{
 	dir = 8
 	},
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "nF" = (
@@ -4177,10 +3940,6 @@
 	icon_state = "plate"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
-"nG" = (
-/obj/item/clothing/shoes/marine/upp_knife,
-/turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "nH" = (
 /obj/structure/machinery/colony_floodlight{
 	pixel_y = 6
@@ -4296,8 +4055,7 @@
 	name = "\improper Malaria pill bottle"
 	},
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "nX" = (
@@ -4320,12 +4078,6 @@
 /mob/living/simple_animal/cow,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/s)
-"oc" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "od" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -4392,12 +4144,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_kitchen)
-"on" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/auto_turf/strata_grass/layer1/unweedable,
-/area/LV624_Outpost_Furidamu/landing_zone_2)
 "oo" = (
 /obj/structure/platform_decoration{
 	dir = 1
@@ -4415,11 +4161,9 @@
 	dir = 1
 	},
 /obj/item/storage/belt/medical/full,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor{
 	dir = 5;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "oq" = (
@@ -4447,7 +4191,6 @@
 "ot" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "ou" = (
@@ -4479,8 +4222,7 @@
 "ow" = (
 /turf/open/floor{
 	dir = 8;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "ox" = (
@@ -4554,8 +4296,7 @@
 	},
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "oG" = (
@@ -4655,8 +4396,7 @@
 "oX" = (
 /turf/open/floor{
 	dir = 4;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "pb" = (
@@ -4685,17 +4425,10 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/LV624_Outpost_Furidamu/landing_zone_1)
-"pe" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/computer/objective,
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/tonwhall)
 "pg" = (
 /obj/structure/fence,
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
 "ph" = (
@@ -4734,9 +4467,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/bridge)
 "po" = (
 /obj/structure/target,
-/obj/item/clothing/suit/storage/marine/padded{
-	pixel_y = 1
-	},
 /obj/item/clothing/head/helmet/marine/scout{
 	pixel_y = 10
 	},
@@ -4794,7 +4524,6 @@
 	icon_state = "shotglass";
 	pixel_y = 12
 	},
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/floor/interior/tatami,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "pz" = (
@@ -4831,8 +4560,7 @@
 	},
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "pG" = (
@@ -5071,8 +4799,7 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "qx" = (
@@ -5091,15 +4818,6 @@
 	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/outdoors/bridge/wood_bridge_lz1_lz2)
-"qz" = (
-/obj/structure/machinery/light{
-	dir = 4
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "qA" = (
 /obj/structure/curtain/red,
 /turf/open/floor{
@@ -5131,7 +4849,6 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/tonwhall)
 "qG" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/objective,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -5248,7 +4965,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/tool/weldingtool,
 /obj/item/tool/wrench,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "rd" = (
@@ -5290,8 +5006,7 @@
 /obj/item/storage/surgical_tray,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "rl" = (
@@ -5347,8 +5062,7 @@
 	},
 /turf/open/floor{
 	dir = 5;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "rt" = (
@@ -5364,18 +5078,6 @@
 	icon_state = "white"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
-"rv" = (
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
-/obj/structure/machinery/light{
-	dir = 4
-	},
-/turf/open/floor{
-	dir = 4;
-	icon_state = "whiteyellowfull"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/construction_site)
 "rw" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/gm/river,
@@ -5479,8 +5181,7 @@
 /obj/structure/machinery/vending/coffee,
 /turf/open/floor{
 	dir = 5;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "rO" = (
@@ -5594,22 +5295,12 @@
 	pixel_x = 11;
 	pixel_y = 20
 	},
-/obj/item/clothing/suit/storage/marine/faction/UPP/officer{
-	pixel_x = 10;
-	pixel_y = 25
-	},
 /obj/item/clothing/shoes/jackboots{
 	pixel_x = 4;
 	pixel_y = -6
 	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
-"sh" = (
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "si" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/storage/beer_pack{
@@ -5643,14 +5334,6 @@
 "so" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/hut)
-"sp" = (
-/obj/structure/surface/table,
-/obj/structure/machinery/computer/objective,
-/turf/open/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/filtration)
 "sq" = (
 /obj/structure/sign/poster/clf{
 	pixel_x = -6;
@@ -5700,7 +5383,6 @@
 /obj/structure/prop/server_equipment/laptop/on{
 	pixel_y = 5
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "su" = (
@@ -5735,8 +5417,7 @@
 /obj/structure/surface/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "sB" = (
@@ -5767,16 +5448,8 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "sH" = (
 /obj/structure/largecrate/supply/supplies/mre,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
-"sI" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/upp/burst,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/cent)
 "sJ" = (
 /turf/closed/wall/wood,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
@@ -5858,19 +5531,9 @@
 "sZ" = (
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
-"ta" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor{
-	dir = 4;
-	icon_state = "whiteyellowfull"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/construction_site)
 "tb" = (
 /turf/open/floor{
 	dir = 8;
@@ -5992,8 +5655,7 @@
 "tv" = (
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "tw" = (
@@ -6305,10 +5967,6 @@
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/nw)
 "uA" = (
-/obj/item/clothing/shoes/marine/upp_knife{
-	pixel_x = -6;
-	pixel_y = 13
-	},
 /obj/item/clothing/shoes/red{
 	pixel_x = -5;
 	pixel_y = -7
@@ -6327,15 +5985,6 @@
 	},
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
-"uD" = (
-/obj/structure/surface/table,
-/obj/structure/machinery/computer/objective{
-	dir = 5
-	},
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "uE" = (
 /obj/structure/machinery/microwave{
 	density = 0;
@@ -6460,8 +6109,7 @@
 /obj/structure/machinery/vending/snack,
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "uZ" = (
@@ -6609,7 +6257,6 @@
 	pixel_x = -16;
 	pixel_y = -14
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /obj/structure/machinery/light{
 	dir = 1
 	},
@@ -6626,7 +6273,6 @@
 "vE" = (
 /obj/structure/surface/table,
 /obj/structure/machinery/light,
-/obj/effect/landmark/objective_landmark/far,
 /turf/open/floor/plating{
 	dir = 1;
 	icon_state = "asteroidfloor"
@@ -6731,24 +6377,6 @@
 /obj/structure/window/framed/wood,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
-"vW" = (
-/obj/item/stack/sheet/wood{
-	pixel_x = -1;
-	pixel_y = 4
-	},
-/obj/item/reagent_container/food/snacks/boiledrice{
-	layer = 3.1;
-	pixel_y = 5
-	},
-/obj/item/reagent_container/food/drinks/drinkingglass{
-	icon_state = "shotglass";
-	layer = 3.1;
-	pixel_x = 18;
-	pixel_y = 1
-	},
-/obj/effect/landmark/objective_landmark/science,
-/turf/open/floor/interior/tatami,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "vX" = (
 /obj/structure/prop/almayer/computers/sensor_computer2,
 /obj/structure/window/reinforced{
@@ -6832,8 +6460,7 @@
 "wk" = (
 /turf/open/floor{
 	dir = 5;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "wl" = (
@@ -6870,12 +6497,6 @@
 	icon_state = "white"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
-"wq" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "wr" = (
 /obj/structure/bed/chair/office/light,
 /turf/open/floor/interior/wood,
@@ -6974,14 +6595,6 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/hut)
-"wK" = (
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
-/turf/open/floor{
-	icon_state = "white"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "wL" = (
 /obj/item/stool,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -7039,8 +6652,7 @@
 	},
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "wU" = (
@@ -7079,8 +6691,7 @@
 "xa" = (
 /obj/structure/xenoautopsy/tank/broken,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "xc" = (
@@ -7188,9 +6799,6 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
 "xv" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_kitchen)
 "xw" = (
@@ -7259,12 +6867,6 @@
 	},
 /turf/closed/wall/strata_ice/jungle,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/sw)
-"xE" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
 "xF" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/reagent_container/food/drinks/milk{
@@ -7434,15 +7036,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
-"yd" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/colonist/burst,
-/obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "ye" = (
 /obj/vehicle/train/cargo/trolley,
 /obj/effect/decal/cleanable/dirt,
@@ -7501,13 +7094,6 @@
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/s)
-"yp" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "yq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
@@ -7547,16 +7133,6 @@
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/butchers)
 "yx" = (
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
 /obj/structure/closet/crate/secure/ammo,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
@@ -7686,8 +7262,7 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_kitchen)
 "yV" = (
 /turf/open/floor{
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "yW" = (
@@ -7725,11 +7300,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
-"zc" = (
-/obj/structure/ore_box,
-/obj/effect/landmark/objective_landmark/medium,
-/turf/open/floor,
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south)
 "zd" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -7773,8 +7343,7 @@
 "zi" = (
 /turf/open/floor{
 	dir = 8;
-	icon_state = "warningcorner";
-	tag = null
+	icon_state = "warningcorner"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
 "zj" = (
@@ -7799,16 +7368,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
-	icon_state = "platebot";
-	tag = null
+	icon_state = "platebot"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "zo" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "zp" = (
@@ -7836,8 +7403,7 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
 "zu" = (
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "zv" = (
@@ -7994,8 +7560,7 @@
 /obj/structure/machinery/medical_pod/bodyscanner,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "zV" = (
@@ -8012,14 +7577,6 @@
 	opacity = 0
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
-"zZ" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/colonist/burst,
-/obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "Ac" = (
 /obj/structure/barricade/wooden{
 	dir = 4
@@ -8051,8 +7608,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Aj" = (
@@ -8089,8 +7645,7 @@
 /obj/item/clothing/suit/storage/militia/brace,
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Aq" = (
@@ -8107,7 +7662,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/ne)
 "At" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/objective,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -8142,18 +7696,6 @@
 /obj/structure/platform/kutjevo/rock,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/s)
-"Az" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/ammo_magazine/pistol/c99{
-	pixel_x = 4;
-	pixel_y = 11
-	},
-/obj/item/ammo_magazine/pistol/c99{
-	pixel_x = -6;
-	pixel_y = 11
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "AA" = (
 /obj/structure/flora/jungle/planttop1,
 /obj/effect/landmark/lv624/fog_blocker,
@@ -8190,8 +7732,7 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "AI" = (
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "AJ" = (
@@ -8232,7 +7773,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/weapon/twohanded/fireaxe,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "AR" = (
@@ -8259,7 +7799,6 @@
 	pixel_x = -6;
 	pixel_y = 29
 	},
-/obj/effect/landmark/objective_landmark/far,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -8322,12 +7861,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
-"Bf" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south/ceiling)
 "Bg" = (
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/nw)
@@ -8441,15 +7974,6 @@
 /obj/structure/platform,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/e)
-"Bx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
-/turf/open/floor{
-	icon_state = "white"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "By" = (
 /turf/open/floor{
 	icon_state = "warning"
@@ -8490,8 +8014,7 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "BH" = (
@@ -8523,8 +8046,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "BN" = (
@@ -8606,7 +8128,6 @@
 	},
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/map/lazarus_landing_map,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "Cb" = (
@@ -8651,9 +8172,6 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "Ch" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/structure/machinery/computer/objective{
-	dir = 5
-	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/hut/tcomm)
 "Ci" = (
@@ -8668,9 +8186,6 @@
 	current_rounds = 0;
 	pixel_x = 8;
 	pixel_y = -15
-	},
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
 	},
 /turf/open/floor{
 	icon_state = "white"
@@ -8759,12 +8274,6 @@
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river)
-"Cz" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/almayer{
-	icon_state = "test_floor5"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south/ceiling)
 "CA" = (
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_membrane,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -8862,7 +8371,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/s)
 "CO" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "CP" = (
@@ -8957,8 +8465,7 @@
 "Di" = (
 /obj/structure/surface/table,
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Dj" = (
@@ -9025,12 +8532,6 @@
 /obj/structure/flora/bush/ausbushes/grassybush,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
-"Dw" = (
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/cent)
 "Dx" = (
 /obj/structure/machinery/light,
 /turf/open/floor/plating,
@@ -9101,12 +8602,6 @@
 /obj/item/weapon/gun/smg/ppsh,
 /turf/open/floor/plating,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
-"DI" = (
-/obj/structure/surface/table,
-/obj/item/clothing/shoes/marine/upp_knife,
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
-/turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "DJ" = (
 /turf/open/floor{
 	dir = 5;
@@ -9117,8 +8612,7 @@
 /obj/structure/machinery/iv_drip,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "DM" = (
@@ -9174,8 +8668,7 @@
 "DU" = (
 /obj/structure/fence,
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/se)
 "DV" = (
@@ -9192,9 +8685,6 @@
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "DX" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/weapon/gun/rifle/type71/carbine/commando{
-	current_mag = null
-	},
 /obj/item/ammo_magazine/rifle/type71,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/hut)
@@ -9229,8 +8719,7 @@
 /obj/structure/bed,
 /turf/open/floor{
 	dir = 4;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Eg" = (
@@ -9246,9 +8735,6 @@
 /area/LV624_Outpost_Furidamu/indoors/hut)
 "Eh" = (
 /obj/effect/landmark/lv624/xeno_tunnel,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/hut/tcomm)
 "Ej" = (
@@ -9260,7 +8746,6 @@
 /obj/structure/machinery/light{
 	dir = 8
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -9280,7 +8765,6 @@
 "En" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/almayer,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/floor{
 	icon_state = "white"
 	},
@@ -9503,13 +8987,6 @@
 /obj/effect/landmark/lv624/fog_blocker,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river)
-"Fc" = (
-/obj/effect/landmark/corpsespawner/upp,
-/turf/open/floor/plating{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "Fe" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/reagent_container/food/snacks/grown/potato{
@@ -9552,14 +9029,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
-"Fm" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/computer/objective{
-	dir = 5
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz1_supply)
 "Fn" = (
 /obj/structure/machinery/photocopier,
 /obj/item/spacecash/c100{
@@ -9591,7 +9060,6 @@
 /obj/item/device/analyzer,
 /obj/item/device/multitool,
 /obj/item/device/assembly/prox_sensor,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "Fs" = (
@@ -9670,27 +9138,6 @@
 "FC" = (
 /turf/closed/wall/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
-"FD" = (
-/obj/item/stack/sheet/wood{
-	pixel_x = -1;
-	pixel_y = 4
-	},
-/obj/item/reagent_container/food/snacks/boiledrice{
-	layer = 3.1;
-	pixel_y = 5
-	},
-/obj/item/reagent_container/food/drinks/drinkingglass{
-	icon_state = "shotglass";
-	pixel_x = 18;
-	pixel_y = 22
-	},
-/obj/item/reagent_container/food/drinks/bottle/sake{
-	layer = 3.1;
-	pixel_y = -9
-	},
-/obj/effect/landmark/objective_landmark/science,
-/turf/open/floor/interior/tatami,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "FE" = (
 /obj/structure/curtain/red,
 /turf/open/floor/corsat{
@@ -9766,12 +9213,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/oob)
-"FR" = (
-/obj/effect/landmark/objective_landmark/medium,
-/turf/open/floor/almayer{
-	icon_state = "plate"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south/ceiling)
 "FS" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor{
@@ -9825,7 +9266,6 @@
 	pixel_y = 29
 	},
 /obj/structure/surface/table,
-/obj/structure/machinery/computer/objective,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -9917,8 +9357,7 @@
 /obj/structure/bed,
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Gl" = (
@@ -9936,8 +9375,7 @@
 /obj/structure/machinery/medical_pod/sleeper,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Go" = (
@@ -10059,7 +9497,6 @@
 	frequency = 1469
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "GP" = (
@@ -10096,8 +9533,7 @@
 /obj/structure/machinery/sleep_console,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "GV" = (
@@ -10110,8 +9546,7 @@
 "GW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "GY" = (
@@ -10123,12 +9558,6 @@
 /obj/structure/flora/bush/ausbushes/var3/leafybush,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/hut/tcomm)
-"Ha" = (
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "Hb" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -10210,11 +9639,6 @@
 	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
-"Hn" = (
-/obj/structure/surface/table,
-/obj/effect/landmark/objective_landmark/science,
-/turf/open/auto_turf/strata_grass/layer1/unweedable,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
 "Ho" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
@@ -10264,14 +9688,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
-"Hy" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor{
-	icon_state = "white"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
 "Hz" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	icon_state = "fernybush_3"
@@ -10490,8 +9906,7 @@
 /obj/item/storage/surgical_tray,
 /turf/open/floor{
 	dir = 5;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Ii" = (
@@ -10543,8 +9958,7 @@
 "Iq" = (
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "Ir" = (
@@ -10666,7 +10080,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/multitool,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "IL" = (
@@ -10785,13 +10198,11 @@
 	},
 /turf/open/floor{
 	dir = 10;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "Ji" = (
 /obj/structure/surface/table,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "Jj" = (
@@ -10851,8 +10262,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
 	dir = 8;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Jv" = (
@@ -10888,20 +10298,11 @@
 /obj/structure/prop/almayer/computers/sensor_computer2,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "JA" = (
 /obj/structure/closet/crate/secure/ammo,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_supply)
 "JB" = (
@@ -11107,7 +10508,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
 "Kg" = (
 /obj/structure/surface/table,
-/obj/effect/landmark/objective_landmark/far,
 /turf/open/floor/plating{
 	dir = 1;
 	icon_state = "asteroidfloor"
@@ -11195,15 +10595,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_supply)
-"Kw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "Kx" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/storage/box/bodybags{
@@ -11231,7 +10622,6 @@
 /obj/structure/machinery/light{
 	dir = 1
 	},
-/obj/effect/landmark/objective_landmark/far,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -11376,8 +10766,7 @@
 "KW" = (
 /turf/open/floor{
 	dir = 4;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "KX" = (
@@ -11420,8 +10809,7 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/se)
 "Lf" = (
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
 "Lg" = (
@@ -11595,14 +10983,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/s)
-"LH" = (
-/obj/item/clothing/suit/storage/jacket/marine/provost/marshal/chief{
-	pixel_y = 29
-	},
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
 "LI" = (
 /obj/structure/flora/bush/ausbushes/reedbush,
 /turf/open/gm/river,
@@ -11692,7 +11072,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/ne)
 "LZ" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/weapon/gun/pistol/c99/upp,
 /obj/structure/machinery/light{
 	dir = 1
 	},
@@ -11804,9 +11183,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
 "Mu" = (
 /obj/structure/machinery/power/port_gen/pacman,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/butchers)
 "Mv" = (
@@ -11850,14 +11226,6 @@
 /obj/structure/machinery/light,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
-"MD" = (
-/obj/structure/surface/table,
-/obj/effect/landmark/objective_landmark/medium,
-/turf/open/floor/plating{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/filtration)
 "ME" = (
 /obj/item/storage/box/m56d_hmg,
 /turf/open/floor/interior/wood,
@@ -12011,7 +11379,6 @@
 /obj/item/map/whiskey_outpost_map{
 	pixel_y = 13
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "Na" = (
@@ -12136,7 +11503,6 @@
 "Nt" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/map/lazarus_landing_map,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "Nu" = (
@@ -12220,7 +11586,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/spawner/random/powercell,
 /obj/item/device/assembly/infra,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	icon_state = "dark"
 	},
@@ -12531,8 +11896,7 @@
 	},
 /obj/item/weapon/gun/m60,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "OM" = (
@@ -12622,7 +11986,6 @@
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/e)
 "Pc" = (
-/obj/effect/landmark/corpsespawner/upp,
 /turf/open/floor/plating{
 	icon_state = "warnplate"
 	},
@@ -13108,13 +12471,6 @@
 	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
-"QN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz1_barracks)
 "QO" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -13179,13 +12535,11 @@
 	pixel_y = 4
 	},
 /obj/item/tool/crowbar,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "Ra" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/map/lazarus_landing_map,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "Rb" = (
@@ -13300,8 +12654,7 @@
 "Rr" = (
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whitebluecorner";
-	tag = null
+	icon_state = "whitebluecorner"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Rs" = (
@@ -13315,8 +12668,7 @@
 	icon_state = "light_2"
 	},
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/se)
 "Ru" = (
@@ -13334,7 +12686,6 @@
 "Rx" = (
 /obj/structure/surface/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/plating{
 	dir = 1;
 	icon_state = "asteroidfloor"
@@ -13378,8 +12729,7 @@
 "RE" = (
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "RG" = (
@@ -13534,17 +12884,6 @@
 /obj/structure/machinery/light,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
-"Sb" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/storage/box/wy_mre{
-	pixel_y = 13
-	},
-/obj/item/storage/box/wy_mre{
-	pixel_y = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
 "Sc" = (
 /turf/closed/shuttle/ert{
 	icon_state = "upp4"
@@ -13569,9 +12908,6 @@
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "Sh" = (
-/obj/item/ammo_casing/bullet{
-	icon_state = "cartridge_3_1"
-	},
 /obj/item/ammo_magazine/smg/ppsh{
 	current_rounds = 0
 	},
@@ -13656,12 +12992,6 @@
 	icon_state = "whitepurple"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/securedome)
-"Su" = (
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
 "Sv" = (
 /obj/structure/machinery/processor,
 /turf/open/floor/interior/wood,
@@ -13771,25 +13101,10 @@
 /obj/structure/platform/kutjevo/rock,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/e)
-"SO" = (
-/obj/structure/machinery/light{
-	dir = 8
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "SP" = (
 /obj/structure/machinery/power/port_gen/pacman/super,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
-"SQ" = (
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/nw)
 "SR" = (
 /turf/open/floor{
 	icon_state = "asteroidwarning"
@@ -13821,20 +13136,9 @@
 /obj/structure/surface/table,
 /obj/item/clothing/suit/storage/militia/brace,
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
-"Ta" = (
-/obj/structure/sign/poster/clf{
-	pixel_x = -6;
-	pixel_y = 29
-	},
-/obj/effect/landmark/objective_landmark/far,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "Tb" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -13884,8 +13188,7 @@
 /obj/item/weapon/gun/lever_action/r4t,
 /turf/open/floor{
 	dir = 9;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "Ti" = (
@@ -14011,7 +13314,6 @@
 	pixel_x = -7;
 	pixel_y = -1
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "TD" = (
@@ -14068,7 +13370,6 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -14122,7 +13423,6 @@
 "TW" = (
 /obj/structure/largecrate/supply/supplies/mre,
 /obj/structure/machinery/light,
-/obj/effect/landmark/objective_landmark/science,
 /turf/open/auto_turf/strata_grass/layer1/unweedable,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker/noceiling)
 "TY" = (
@@ -14306,14 +13606,6 @@
 /obj/effect/landmark/lv624/fog_blocker,
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/c)
-"UE" = (
-/obj/effect/landmark/structure_spawner/setup/distress/xeno_nest,
-/obj/effect/landmark/corpsespawner/clf/burst,
-/obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
-/turf/open/floor{
-	icon_state = "dark"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/sw)
 "UF" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
@@ -14333,7 +13625,6 @@
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "UH" = (
@@ -14551,18 +13842,10 @@
 /obj/effect/spawner/random/toolbox,
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/radio,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	icon_state = "dark"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
-"Vp" = (
-/obj/structure/flora/bush/ausbushes/var3/leafybush,
-/obj/structure/machinery/power/apc/weak{
-	dir = 1
-	},
-/turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/LV624_Outpost_Furidamu/indoors/hut)
 "Vq" = (
 /obj/structure/surface/table/almayer,
 /obj/item/tool/wrench,
@@ -14685,8 +13968,7 @@
 "VL" = (
 /obj/structure/xenoautopsy/tank/hugger,
 /turf/open/floor{
-	icon_state = "whitebluefull";
-	tag = null
+	icon_state = "whitebluefull"
 	},
 /area/LV624_Outpost_Furidamu/oob)
 "VM" = (
@@ -14866,7 +14148,6 @@
 	pixel_y = 29
 	},
 /obj/structure/closet/crate,
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -14922,8 +14203,7 @@
 /obj/structure/surface/table,
 /turf/open/floor{
 	dir = 1;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "WA" = (
@@ -14950,14 +14230,6 @@
 	},
 /turf/open/gm/river,
 /area/LV624_Outpost_Furidamu/outdoors/river/s)
-"WF" = (
-/obj/structure/closet/crate,
-/obj/effect/landmark/objective_landmark/medium,
-/turf/open/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
-/area/LV624_Outpost_Furidamu/indoors/buildings/filtration)
 "WG" = (
 /obj/structure/surface/rack,
 /obj/item/clothing/suit/apron,
@@ -15035,8 +14307,7 @@
 "WT" = (
 /turf/open/floor{
 	dir = 6;
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "WU" = (
@@ -15150,8 +14421,7 @@
 "Xk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
-	icon_state = "whiteblue";
-	tag = null
+	icon_state = "whiteblue"
 	},
 /area/LV624_Outpost_Furidamu/indoors/buildings/hospital)
 "Xl" = (
@@ -15212,11 +14482,6 @@
 	},
 /turf/closed/wall/strata_ice/jungle,
 /area/LV624_Outpost_Furidamu/outdoors/jungle/n)
-"Xv" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/effect/landmark/objective_landmark/close,
-/turf/open/floor/interior/wood,
-/area/LV624_Outpost_Furidamu/indoors/buildings/lz1_admin)
 "Xw" = (
 /obj/structure/bed,
 /turf/open/floor{
@@ -15312,8 +14577,7 @@
 "XM" = (
 /obj/structure/fence,
 /turf/open/floor{
-	icon_state = "bcircuit";
-	tag = null
+	icon_state = "bcircuit"
 	},
 /area/LV624_Outpost_Furidamu/outdoors/jungle/w)
 "XN" = (
@@ -15492,15 +14756,6 @@
 /area/LV624_Outpost_Furidamu/outdoors/jungle/c)
 "Yt" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/reagent_container/food/snacks/upp{
-	pixel_y = 2
-	},
-/obj/item/reagent_container/food/snacks/upp{
-	pixel_y = 11
-	},
-/obj/item/reagent_container/food/snacks/upp{
-	pixel_y = 7
-	},
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/lz2kitchen)
 "Yu" = (
@@ -15548,7 +14803,6 @@
 /area/LV624_Outpost_Furidamu/outdoors)
 "YC" = (
 /obj/structure/largecrate/supply/ammo/m41a_box,
-/obj/item/weapon/gun/rifle/nsg23/no_lock/stripped,
 /obj/structure/catwalk/bigred,
 /turf/open/floor/plating,
 /area/LV624_Outpost_Furidamu/indoors/buildings/Bunker)
@@ -15589,7 +14843,6 @@
 /obj/item/map/lazarus_landing_map{
 	pixel_y = 2
 	},
-/obj/effect/landmark/objective_landmark/medium,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/operation_centre)
 "YI" = (
@@ -15854,13 +15107,6 @@
 /obj/effect/landmark/lv624/fog_blocker,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/south)
-"ZA" = (
-/obj/effect/landmark/objective_landmark/medium,
-/turf/open/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
-/area/LV624_Outpost_Furidamu/outdoors/ua_bunker/barrens/north/ceiling)
 "ZB" = (
 /obj/structure/sign/poster{
 	desc = "This poster features Audrey Rainwater standing in a jacuzzi. She was the July 2182 centerfold in House Bunny Gentleman's Magazine. Don't ask how you know that.";
@@ -15939,7 +15185,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/ashtray/glass,
 /obj/item/tool/crowbar,
-/obj/effect/landmark/objective_landmark/close,
 /turf/open/floor/interior/wood,
 /area/LV624_Outpost_Furidamu/indoors/buildings/engineering)
 "ZM" = (
@@ -16711,8 +15956,8 @@ cr
 Yh
 rJ
 EX
-SO
-SQ
+eO
+EX
 rJ
 nf
 nf
@@ -16878,7 +16123,7 @@ Yh
 Yh
 Yh
 rJ
-iJ
+PN
 EX
 EX
 EX
@@ -16951,12 +16196,12 @@ nf
 nf
 nf
 ff
-sI
+Kq
 Kq
 Ao
-sI
-sI
-go
+Kq
+Kq
+Ao
 Kq
 Kq
 ff
@@ -17296,7 +16541,7 @@ Kq
 Kq
 jb
 jb
-Dw
+jb
 Kq
 ff
 nf
@@ -17687,8 +16932,8 @@ cF
 cF
 ro
 KC
-hX
-hX
+fg
+fg
 DO
 fg
 fg
@@ -17884,11 +17129,11 @@ Ot
 nf
 nf
 rJ
-gQ
+dK
 fJ
 te
 fJ
-gQ
+dK
 rJ
 Yh
 Ex
@@ -18150,7 +17395,7 @@ Xc
 Xc
 IH
 KC
-Ta
+SL
 vg
 vg
 vg
@@ -18319,7 +17564,7 @@ Xc
 Xc
 IH
 KC
-cq
+dy
 vg
 vg
 vg
@@ -18391,7 +17636,7 @@ Ot
 nf
 nf
 rJ
-hM
+EL
 Yh
 hh
 cr
@@ -18490,8 +17735,8 @@ IH
 pC
 KC
 vg
-sh
-sh
+vg
+vg
 KC
 pC
 nz
@@ -18516,11 +17761,11 @@ KC
 OE
 EB
 vg
-UE
-UE
+EB
+EB
 vg
 vg
-cf
+Gt
 KC
 bA
 nz
@@ -18689,7 +17934,7 @@ vg
 vg
 vg
 vg
-zZ
+EB
 KC
 pC
 nz
@@ -18733,7 +17978,7 @@ EL
 Yh
 fL
 Yh
-gq
+Yh
 te
 Yh
 Ex
@@ -18858,7 +18103,7 @@ vg
 vg
 vg
 vg
-yd
+OE
 KC
 pC
 nz
@@ -19020,12 +18265,12 @@ nf
 KC
 OE
 Ld
-UE
-UE
-sh
-qz
-zZ
-zZ
+EB
+EB
+vg
+Ld
+EB
+EB
 KC
 KC
 KC
@@ -19039,10 +18284,10 @@ cF
 cF
 IH
 KC
-hX
-hX
+fg
+fg
 DO
-hX
+fg
 fg
 KC
 nf
@@ -19236,7 +18481,7 @@ Ot
 nf
 nf
 rJ
-gQ
+dK
 fJ
 te
 fJ
@@ -19697,8 +18942,8 @@ CG
 zf
 Mf
 pl
-Ha
-Ha
+oR
+oR
 Jw
 pl
 nf
@@ -20203,7 +19448,7 @@ CG
 CG
 zf
 pl
-yp
+Jw
 oR
 oR
 oR
@@ -20251,8 +19496,8 @@ nf
 rJ
 rJ
 xA
-SO
-SQ
+eO
+EX
 xA
 EX
 eO
@@ -20764,7 +20009,7 @@ EX
 EX
 EX
 xA
-SQ
+EX
 rJ
 rJ
 Xc
@@ -20933,7 +20178,7 @@ xA
 EX
 EX
 QU
-SQ
+EX
 rJ
 Xc
 Xc
@@ -22062,7 +21307,7 @@ zf
 Ib
 be
 iX
-wq
+eA
 hK
 hK
 dh
@@ -22235,7 +21480,7 @@ iX
 iX
 iX
 eA
-wq
+eA
 cK
 Zx
 SR
@@ -22568,7 +21813,7 @@ Kf
 zf
 WZ
 pW
-oc
+iX
 eA
 lc
 lc
@@ -23758,7 +23003,7 @@ Kk
 pl
 AH
 sd
-Fc
+sd
 sd
 FZ
 pl
@@ -23929,7 +23174,7 @@ sd
 sd
 sd
 sd
-Fc
+sd
 Kg
 pl
 nf
@@ -24088,7 +23333,7 @@ sd
 sd
 sd
 sd
-Fc
+sd
 sd
 Zg
 sd
@@ -26040,7 +25285,7 @@ kv
 kv
 fR
 TM
-LH
+BU
 BU
 BU
 bF
@@ -26765,7 +26010,7 @@ oK
 wi
 kW
 AK
-Cz
+mB
 OP
 OP
 kJ
@@ -26936,7 +26181,7 @@ qG
 wV
 jN
 jN
-FR
+jN
 mB
 mB
 bT
@@ -27104,7 +26349,7 @@ PE
 TL
 jN
 jN
-Bf
+jN
 jN
 mB
 mB
@@ -27198,7 +26443,7 @@ MK
 fr
 kI
 oj
-vW
+pG
 hT
 fr
 MK
@@ -27704,7 +26949,7 @@ Xc
 MK
 fr
 kI
-FD
+oj
 pG
 hT
 fr
@@ -27719,7 +26964,7 @@ we
 Cw
 gm
 GN
-DI
+mX
 MK
 nf
 Xc
@@ -28055,7 +27300,7 @@ we
 we
 cP
 cp
-nG
+gm
 mX
 Ji
 MK
@@ -28385,7 +27630,7 @@ GN
 gm
 cP
 MK
-Su
+gm
 gm
 Nr
 gm
@@ -28423,7 +27668,7 @@ Ya
 Ya
 Ya
 Ya
-ZA
+Mv
 Ya
 Ya
 Lm
@@ -29240,7 +28485,7 @@ gm
 Nr
 tS
 XA
-Hn
+XA
 MK
 nf
 nf
@@ -29409,7 +28654,7 @@ GN
 GN
 FG
 zV
-Hn
+XA
 MK
 nf
 nf
@@ -29648,7 +28893,7 @@ WO
 WO
 WO
 WO
-zc
+Py
 Py
 WO
 xz
@@ -29726,7 +28971,7 @@ dZ
 kV
 rI
 Ba
-uD
+hs
 Ba
 dx
 Dp
@@ -30101,7 +29346,7 @@ MX
 YU
 ou
 tM
-xE
+YA
 Ky
 NL
 Zn
@@ -30441,7 +29686,7 @@ Fi
 nF
 YA
 YA
-xE
+YA
 YA
 Ky
 Ky
@@ -31498,7 +30743,7 @@ Xc
 uq
 uq
 uq
-aI
+sL
 sL
 sL
 XK
@@ -31666,7 +30911,7 @@ wU
 wU
 gf
 uq
-sp
+qs
 qk
 or
 sL
@@ -31676,7 +30921,7 @@ or
 sL
 sL
 Cv
-WF
+Fz
 sL
 or
 or
@@ -32012,7 +31257,7 @@ or
 or
 qk
 qk
-WF
+Fz
 Cv
 sL
 or
@@ -32352,10 +31597,10 @@ or
 uV
 LW
 Cv
-WF
+Fz
 or
 or
-WF
+Fz
 jW
 Bs
 Mx
@@ -32521,10 +31766,10 @@ pw
 EH
 qR
 Cv
-WF
+Fz
 or
 or
-WF
+Fz
 jW
 MR
 WE
@@ -32681,7 +31926,7 @@ bB
 iD
 uq
 cm
-WF
+Fz
 sL
 sL
 ky
@@ -33698,7 +32943,7 @@ jW
 or
 or
 or
-MD
+iR
 iR
 Cv
 or
@@ -33868,7 +33113,7 @@ or
 or
 or
 rB
-MD
+iR
 Cv
 or
 or
@@ -35525,7 +34770,7 @@ Sk
 Mi
 WL
 uS
-rv
+bc
 WL
 WL
 bc
@@ -37078,7 +36323,7 @@ Bz
 lK
 Qe
 Qe
-ij
+iE
 Ge
 YH
 hn
@@ -37375,7 +36620,7 @@ EK
 aj
 aj
 EK
-ta
+WL
 Ig
 PD
 WL
@@ -38110,7 +37355,7 @@ zA
 zA
 Yz
 Yz
-ir
+Tj
 Tj
 Tj
 Tj
@@ -38362,7 +37607,7 @@ LQ
 it
 Cq
 BT
-iW
+En
 mb
 mb
 jE
@@ -38873,7 +38118,7 @@ GD
 GD
 GD
 mv
-im
+GD
 Fs
 aG
 jE
@@ -39044,7 +38289,7 @@ db
 Zh
 Fs
 Cj
-Bx
+Fs
 jE
 Pt
 dr
@@ -39211,8 +38456,8 @@ yR
 MI
 MI
 Zh
-la
-wK
+MI
+Iw
 ND
 jE
 bv
@@ -39380,7 +38625,7 @@ AX
 jE
 jE
 jE
-Hy
+Iw
 Iw
 Iw
 jE
@@ -39884,7 +39129,7 @@ vC
 vC
 AX
 AX
-jt
+bp
 Uq
 AX
 NB
@@ -39913,7 +39158,7 @@ VX
 Yx
 Uh
 Uh
-Vp
+Qs
 Qs
 Qs
 Qs
@@ -40651,7 +39896,7 @@ HY
 pI
 Tj
 Tj
-Sb
+HM
 Yz
 Yz
 er
@@ -41795,9 +41040,9 @@ ef
 tw
 kd
 xU
-fv
+Qw
 vF
-Kw
+LC
 YJ
 LC
 Ki
@@ -41943,7 +41188,7 @@ Xc
 Xc
 Uh
 Uh
-fe
+Bl
 BC
 Uh
 Uh
@@ -41964,7 +41209,7 @@ ef
 tw
 kd
 xU
-fv
+Qw
 vF
 iv
 YJ
@@ -42133,7 +41378,7 @@ ef
 tw
 kd
 xU
-fv
+Qw
 vF
 YJ
 YJ
@@ -43852,7 +43097,7 @@ Xc
 Xc
 eC
 bd
-lm
+GV
 qF
 nd
 nd
@@ -44060,7 +43305,7 @@ Zi
 Zi
 eU
 Zi
-Vy
+Zi
 rm
 By
 Dc
@@ -44357,7 +43602,7 @@ Xc
 Xc
 uw
 uw
-pe
+uK
 qF
 qF
 qF
@@ -44726,7 +43971,7 @@ Zi
 Zi
 Zi
 Zi
-Zi
+Vy
 Zi
 Zi
 Zi
@@ -45388,7 +44633,7 @@ Xc
 bO
 Xc
 HC
-on
+zN
 zN
 Da
 Pg
@@ -46501,7 +45746,7 @@ ES
 Of
 Gd
 Of
-QN
+dS
 CD
 Um
 CD
@@ -47360,7 +46605,7 @@ AC
 AC
 FC
 LZ
-Xv
+iM
 uA
 qd
 cX
@@ -47528,7 +46773,7 @@ VF
 AC
 xm
 FC
-Az
+iM
 cX
 cX
 cX
@@ -47870,7 +47115,7 @@ zF
 cX
 cX
 cX
-Xv
+iM
 Xc
 ax
 cX
@@ -48039,7 +47284,7 @@ Xc
 cX
 cX
 cX
-Xv
+iM
 Xc
 vX
 sB
@@ -48163,7 +47408,7 @@ ay
 Ih
 WT
 ay
-br
+lx
 dT
 wk
 oX
@@ -48208,7 +47453,7 @@ Xc
 Xc
 cX
 cX
-Xv
+iM
 Xc
 vl
 sB
@@ -51223,7 +50468,7 @@ BY
 BY
 HC
 HC
-cG
+BY
 ko
 ko
 ko
@@ -52068,7 +51313,7 @@ Ve
 Ve
 Ve
 Ve
-QJ
+Ve
 Wn
 Xo
 BY
@@ -52418,7 +51663,7 @@ Xc
 mJ
 mJ
 mJ
-eR
+dC
 ja
 mJ
 kl
@@ -52734,7 +51979,7 @@ Ve
 Ve
 Ve
 Ve
-Ve
+QJ
 Ve
 Ve
 Ve
@@ -54275,7 +53520,7 @@ ko
 EA
 pt
 nl
-Fm
+dg
 dC
 Mh
 Uh
