@@ -154,6 +154,14 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
 			qm_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelthree))
+		if(qm_loyalty != 3)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1, level 2, and level 3 purchases unlocked for QM."))
+			qm_loyalty = 3
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
+			qm_loyalty = 0
 	if(istype(hit_item, /obj/item/loyalty/scholar/levelone))
 		if(sh_loyalty != 1)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 purchases unlocked for Scholar."))
@@ -484,6 +492,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		"Quartermaster LL0",
 		"Quartermaster LL1",
 		"Quartermaster LL2",
+		"Quartermaster LL3",
 		"Scholar LL0",
 		"Scholar LL1",
 		"Scholar LL2",
@@ -1374,6 +1383,9 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		return
 
 	if(supply_pack.qm_lltwo == TRUE && qm_loyalty < 2)
+		return
+
+	if(supply_pack.qm_llthree == TRUE && qm_loyalty < 3)
 		return
 
 	if(supply_pack.sh_llone == TRUE && sh_loyalty < 1)

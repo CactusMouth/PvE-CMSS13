@@ -79,6 +79,16 @@
 	explosion_power = 150
 	explosion_falloff = 50
 
+/obj/item/explosive/grenade/high_explosive/heap
+	name = "\improper M40/2 HEAP grenade"
+	desc = "High-Explosive, Armour Piercing, Dual-Purpose. A small, but deceptively strong blast grenade that can penetrate appreciable quantities of armor, whilst retaining a similar casualty radius as the standard M40. Due to faulty primers, it is inadvisable to fire them directly at hard surfaces like walls, landing them just in front is recommended."
+	icon_state = "grenade_heap"
+	item_state = "grenade_chem"
+	explosion_power = 250
+	explosion_falloff = 200
+	shrapnel_count = 0
+	falloff_mode = EXPLOSION_FALLOFF_SHAPE_LINEAR
+
 /obj/item/explosive/grenade/high_explosive/pmc
 	name = "\improper M12 blast grenade"
 	desc = "A high-explosive grenade produced for private security firms. It explodes around 3 seconds after the pin has been pulled."

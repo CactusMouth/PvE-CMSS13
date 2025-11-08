@@ -33,6 +33,11 @@
 	desc = "A brass badge given by Quartermaster to those he trusts to deal with issues that his usual operators can't. Show this to Quartermaster to gain access to his Loyalty Level 2 catalog."
 	icon_state = "loyaltyqm_lltwo"
 
+/obj/item/loyalty/quartermaster/levelthree
+	name = "Loyalty Medallion, LL3 (Quartermaster)"
+	desc = "A brass badge given by Quartermaster to those he trusts to deal with issues that his usual operators can't. Show this to Quartermaster to gain access to his Loyalty Level 2 catalog."
+	icon_state = "loyaltyqm_llthree"
+
 /obj/item/loyalty/scholar
 	name = "Loyalty Chit (Scholar)"
 	desc = "A stamped and signed card which denotes the holder as having earned some goodwill with the trader known as 'Scholar'; with enough of these, Scholar would be willing to offer you better deals."
