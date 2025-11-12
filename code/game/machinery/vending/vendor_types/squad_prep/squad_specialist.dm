@@ -48,8 +48,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_spec, list(
 	show_points = TRUE
 	use_points = FALSE
 	use_snowflake_points = TRUE
-	vendor_role = list(JOB_SQUAD_SPECIALIST)
-	req_access = list(ACCESS_MARINE_SPECPREP)
+	vendor_role = list()
+	req_access = list()
 
 /obj/structure/machinery/cm_vending/gear/spec/get_listed_products(mob/user)
 	return GLOB.cm_vending_gear_spec
@@ -153,30 +153,26 @@ GLOBAL_LIST_INIT(cm_vending_clothing_specialist, list(
 	name = "\improper ColMarTech Squad Weapons Specialist Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Squad Weapons Specialist standard-issue equipment."
 	show_points = TRUE
-	req_access = list(ACCESS_MARINE_SPECPREP)
-	vendor_role = list(JOB_SQUAD_SPECIALIST)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/specialist/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_specialist
 
 /obj/structure/machinery/cm_vending/clothing/specialist/alpha
-	squad_tag = SQUAD_MARINE_1
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_ALPHA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/alpha
 
 /obj/structure/machinery/cm_vending/clothing/specialist/bravo
-	squad_tag = SQUAD_MARINE_2
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_BRAVO)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/bravo
 
 /obj/structure/machinery/cm_vending/clothing/specialist/charlie
-	squad_tag = SQUAD_MARINE_3
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_CHARLIE)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/charlie
 
 /obj/structure/machinery/cm_vending/clothing/specialist/delta
-	squad_tag = SQUAD_MARINE_4
-	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_MARINE_DELTA)
+	req_access = list()
 	headset_type = /obj/item/device/radio/headset/almayer/marine/delta
 
 //------------ESSENTIAL SETS---------------

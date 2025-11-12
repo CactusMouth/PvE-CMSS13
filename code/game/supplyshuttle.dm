@@ -3,8 +3,8 @@
 #define SUPPLY_STATION_AREATYPE_VEHICLE /area/supply/station/vehicle
 #define SUPPLY_DOCK_AREATYPE /area/supply/dock //Type of the supply shuttle area for dock
 #define SUPPLY_DOCK_AREATYPE_VEHICLE /area/supply/dock/vehicle
-#define SUPPLY_COST_MULTIPLIER 1.08
-#define ASRS_COST_MULTIPLIER 1.2
+#define SUPPLY_COST_MULTIPLIER 1
+#define ASRS_COST_MULTIPLIER 1.0
 
 #define KILL_MENDOZA -1
 
@@ -109,6 +109,13 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/black_market_lockout = FALSE
 	var/last_viewed_group = "categories"
 	var/first_time = TRUE
+	var/qm_loyalty = 0
+	var/sh_loyalty = 0
+
+/obj/structure/machinery/computer/supplycomp/extraction
+	name = "merchant listing access console"
+	desc = "This console allows you to automatically purchase various munitions from the on-ship traders."
+	req_access = list()
 
 /obj/structure/machinery/computer/supplycomp/Initialize()
 	. = ..()
@@ -131,6 +138,51 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		else
 			to_chat(user, SPAN_NOTICE("You find a small horizontal slot at the bottom of the console. You try to feed \the [hit_item] into it, but it's seemingly blocked off from the inside."))
 			return
+	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelone))
+		if(qm_loyalty != 1)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1 purchases unlocked for QM."))
+			qm_loyalty = 1
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
+			qm_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/quartermaster/leveltwo))
+		if(qm_loyalty != 2)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1 and loyalty level 2 purchases unlocked for QM."))
+			qm_loyalty = 2
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
+			qm_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelthree))
+		if(qm_loyalty != 3)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1, level 2, and level 3 purchases unlocked for QM."))
+			qm_loyalty = 3
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
+			qm_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/scholar/levelone))
+		if(sh_loyalty != 1)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 purchases unlocked for Scholar."))
+			sh_loyalty = 1
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
+			sh_loyalty = 0
+	if(istype(hit_item, /obj/item/loyalty/scholar/leveltwo))
+		if(sh_loyalty != 2)
+			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 and loyalty level 2 purchases unlocked for Scholar."))
+			sh_loyalty = 2
+			return
+		else
+			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
+			sh_loyalty = 0
+	if(istype(hit_item, /obj/item/coin/requisitionpoint))
+		var/obj/item/coin/requisitionpoint/slotted_coin = hit_item
+		to_chat(user, SPAN_NOTICE("You insert the requisition point token into the console and add its value to your budget."))
+		GLOB.supply_controller.points += slotted_coin.rp_value
+		qdel(slotted_coin)
 	..()
 
 /obj/structure/machinery/computer/supplycomp/proc/toggle_contraband(contraband_enabled = FALSE)
@@ -381,10 +433,10 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	/// Current supply points
 	var/points = 0
 	/// Multiplier to the amount of points awarded based on marine scale
-	var/points_scale = 120
-	var/points_per_process = 1.5
-	var/points_per_slip = 1
-	var/points_per_crate = 2
+	var/points_scale = 0
+	var/points_per_process = 0
+	var/points_per_slip = 0
+	var/points_per_crate = 0
 
 	//black market stuff
 	///in Weyland-Yutani dollars - Not Stan_Albatross.
@@ -401,7 +453,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/mendoza_status = TRUE
 
 	/// How many processing intervals do we get random crates for each pool. Currently only [ASRS_POOL_MAIN] gets scaled amount of crates.
-	var/list/base_random_crate_intervals = list(ASRS_POOL_MAIN = 10, ASRS_POOL_FOOD = 60)
+	var/list/base_random_crate_intervals = list()
 	/// How many partial crates are stored in ASRS per pool to smooth amount given out
 	var/list/random_crates_carry = list()
 	/// Pools mapped to list of random ASRS packs that belong to it
@@ -418,37 +470,45 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/obj/structure/machinery/computer/supplycomp/bound_supply_computer_list
 
 	var/list/all_supply_groups = list(
-		"Operations",
-		"Weapons",
-		"Vehicle Ammo",
-		"Vehicle Equipment",
-		"Attachments",
-		"Ammo",
-		"Weapons Specialist Ammo",
-		"Restricted Equipment",
-		"Clothing",
-		"Medical",
-		"Engineering",
-		"Research",
-		"Supplies",
-		"Food",
-		"Gear",
-		"Mortar",
-		"Explosives",
-		"Reagent tanks",
+//		"Operations",
+//		"Weapons",
+//		"Vehicle Ammo",
+//		"Vehicle Equipment",
+//		"Attachments",
+//		"Ammo",
+//		"Weapons Specialist Ammo",
+//		"Restricted Equipment",
+//		"Clothing",
+//		"Medical",
+//		"Engineering",
+//		"Research",
+//		"Supplies",
+//		"Food",
+//		"Gear",
+//		"Mortar",
+//		"Explosives",
+//		"Reagent tanks",
+		"Token Exchange",
+		"Quartermaster LL0",
+		"Quartermaster LL1",
+		"Quartermaster LL2",
+		"Quartermaster LL3",
+		"Scholar LL0",
+		"Scholar LL1",
+		"Scholar LL2",
 		)
 
 	var/list/contraband_supply_groups = list(
-		"Seized Items",
-		"Shipside Contraband",
-		"Surplus Equipment",
-		"Contraband Ammo",
-		"Deep Storage",
-		"Miscellaneous"
+//		"Seized Items",
+//		"Shipside Contraband",
+//		"Surplus Equipment",
+//		"Contraband Ammo",
+//		"Deep Storage",
+//		"Miscellaneous"
 		)
 
 	//dropship part fabricator's points, so we can reference them globally (mostly for DEFCON)
-	var/dropship_points = 10000 //gains roughly 18 points per minute | Original points of 5k doubled due to removal of prespawned ammo.
+	var/dropship_points = 0 //gains roughly 18 points per minute | Original points of 5k doubled due to removal of prespawned ammo.
 	var/tank_points = 0
 
 /datum/controller/supply/New()
@@ -584,6 +644,10 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 			for(var/index in 1 to 10)
 				timer += 0.5 SECONDS
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(maul_human), movable_atom), timer)
+
+		if(movable_atom.rp_value != 0)
+			var/rp_points_to_add = get_rp_value(movable_atom)
+			points += rp_points_to_add
 
 		// Delete everything else.
 		else qdel(movable_atom)
@@ -752,7 +816,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		var/datum/shuttle/ferry/supply/shuttle = GLOB.supply_controller.shuttle
 		if (shuttle)
 			dat += {"Location: [shuttle.has_arrive_time() ? "Raising platform":shuttle.at_station() ? "Raised":"Lowered"]<BR>
-			<HR>Supply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]<BR>
+			<HR>Supply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP<BR>
 		<BR>\n<A href='byond://?src=\ref[src];order=categories'>Request items</A><BR><BR>
 		<A href='byond://?src=\ref[src];vieworders=1'>View approved orders</A><BR><BR>
 		<A href='byond://?src=\ref[src];viewrequests=1'>View requests</A><BR><BR>
@@ -773,21 +837,21 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 			//all_supply_groups
 			//Request what?
 			last_viewed_group = "categories"
-			temp = "<b>Supply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]</b><BR>"
+			temp = "<b>Supply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP</b><BR>"
 			temp += "<A href='byond://?src=\ref[src];mainmenu=1'>Main Menu</A><HR><BR><BR>"
 			temp += "<b>Select a category</b><BR><BR>"
 			for(var/supply_group_name in GLOB.supply_controller.all_supply_groups)
 				temp += "<A href='byond://?src=\ref[src];order=[supply_group_name]'>[supply_group_name]</A><BR>"
 		else
 			last_viewed_group = href_list["order"]
-			temp = "<b>Supply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]</b><BR>"
+			temp = "<b>Supply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP</b><BR>"
 			temp += "<A href='byond://?src=\ref[src];order=categories'>Back to all categories</A><HR><BR><BR>"
 			temp += "<b>Request from: [last_viewed_group]</b><BR><BR>"
 			for(var/supply_type in GLOB.supply_packs_datums)
 				var/datum/supply_packs/supply_pack = GLOB.supply_packs_datums[supply_type]
 				if(supply_pack.contraband || supply_pack.group != last_viewed_group || !supply_pack.buyable)
 					continue //Have to send the type instead of a reference to
-				temp += "<A href='byond://?src=\ref[src];doorder=[supply_pack.name]'>[supply_pack.name]</A> Cost: $[floor(supply_pack.cost) * SUPPLY_TO_MONEY_MUPLTIPLIER]<BR>" //the obj because it would get caught by the garbage
+				temp += "<A href='byond://?src=\ref[src];doorder=[supply_pack.name]'>[supply_pack.name]</A> Cost: [floor(supply_pack.cost) * SUPPLY_TO_MONEY_MUPLTIPLIER]RP<BR>" //the obj because it would get caught by the garbage
 
 	else if (href_list["doorder"])
 		if(world.time < reqtime)
@@ -915,7 +979,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 					dat += "<BR>\n<BR>"
 
 
-		dat += {"<HR>\nSupply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]<BR>\n<BR>
+		dat += {"<HR>\nSupply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP<BR>\n<BR>
 		\n<A href='byond://?src=\ref[src];order=categories'>Order items</A><BR>\n<BR>
 		\n<A href='byond://?src=\ref[src];viewrequests=1'>View requests</A><BR>\n<BR>
 		\n<A href='byond://?src=\ref[src];vieworders=1'>View orders</A><BR>\n<BR>
@@ -965,7 +1029,7 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 			//all_supply_groups
 			//Request what?
 			last_viewed_group = "categories"
-			temp = "<b>Supply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]</b><BR>"
+			temp = "<b>Supply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP</b><BR>"
 			temp += "<A href='byond://?src=\ref[src];mainmenu=1'>Main Menu</A><HR><BR><BR>"
 			temp += "<b>Select a category</b><BR><BR>"
 			for(var/supply_group_name in GLOB.supply_controller.all_supply_groups)
@@ -979,14 +1043,14 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 			else if(last_viewed_group in GLOB.supply_controller.contraband_supply_groups)
 				handle_black_market_groups()
 			else
-				temp = "<b>Supply budget: $[GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]</b><BR>"
+				temp = "<b>Supply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP</b><BR>"
 				temp += "<A href='byond://?src=\ref[src];order=categories'>Back to all categories</A><HR><BR><BR>"
 				temp += "<b>Request from: [last_viewed_group]</b><BR><BR>"
 				for(var/supply_type in GLOB.supply_packs_datums)
 					var/datum/supply_packs/supply_pack = GLOB.supply_packs_datums[supply_type]
 					if(!is_buyable(supply_pack))
 						continue
-					temp += "<A href='byond://?src=\ref[src];doorder=[supply_pack.name]'>[supply_pack.name]</A> Cost: $[floor(supply_pack.cost) * SUPPLY_TO_MONEY_MUPLTIPLIER]<BR>"		//the obj because it would get caught by the garbage
+					temp += "<A href='byond://?src=\ref[src];doorder=[supply_pack.name]'>[supply_pack.name]</A> Cost: [floor(supply_pack.cost) * SUPPLY_TO_MONEY_MUPLTIPLIER]RP<BR>"		//the obj because it would get caught by the garbage
 
 	else if (href_list["doorder"])
 		if(world.time < reqtime)
@@ -1227,6 +1291,14 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	return_value = POSITIVE(return_value - GLOB.supply_controller.black_market_sold_items[movable_atom.type] * 0.5)
 	return return_value
 
+/proc/get_rp_value(atom/movable/movable_atom)
+	var/return_value
+	if(istype(movable_atom, /obj/item/stack))
+		var/obj/item/stack/rp_stack = movable_atom
+		return_value += (rp_stack.rp_value * rp_stack.amount)
+	else
+		return_value = movable_atom.rp_value
+
 /datum/controller/supply/proc/kill_mendoza()
 	if(!mendoza_status)
 		return //cant kill him twice
@@ -1305,6 +1377,21 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		return
 
 	if(isnull(supply_pack.contains) && isnull(supply_pack.containertype))
+		return
+
+	if(supply_pack.qm_llone == TRUE && qm_loyalty < 1)
+		return
+
+	if(supply_pack.qm_lltwo == TRUE && qm_loyalty < 2)
+		return
+
+	if(supply_pack.qm_llthree == TRUE && qm_loyalty < 3)
+		return
+
+	if(supply_pack.sh_llone == TRUE && sh_loyalty < 1)
+		return
+
+	if(supply_pack.sh_lltwo == TRUE && sh_loyalty < 2)
 		return
 
 	return TRUE

@@ -220,6 +220,16 @@
 		crit_fail = 1
 		icon_state = "brokenpack"
 
+/obj/item/storage/backpack/debug
+	name = "absolutely massive backpack"
+	desc = "This thing is huge!"
+	icon_state = "backpack_large"
+	item_state = "backpack_large"
+	w_class = 7
+	max_w_class = SIZE_MASSIVE
+	worn_accessible = TRUE
+	max_storage_space = 300
+
 
 //==========================//JOKE PACKS\\================================\\
 
@@ -595,6 +605,12 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 	networks_transmit = list(FACTION_UPP)
 	phone_category = PHONE_UPP_SOLDIER
 
+/obj/item/storage/backpack/marine/satchel/rto/merc
+	name = "\improper Mercenary Radio Telephone Pack"
+	networks_receive = list(FACTION_FIL)
+	networks_transmit = list(FACTION_FIL)
+	max_storage_space = 10
+
 /obj/item/storage/backpack/marine/satchel/rto/io
 	phone_category = PHONE_IO
 
@@ -604,6 +620,13 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 	icon_state = "smock"
 	worn_accessible = TRUE
 	xeno_types = null
+
+/obj/item/storage/backpack/marine/smock/select_gamemode_skin()
+	. = ..()
+	switch(SSmapping.configs[GROUND_MAP].camouflage_type)
+		if("urban")
+			name = "\improper M60 Sniper Cloak"
+			desc = "A specially-designed cloak with thermal dampering waterproof coating, designed for urban environments. Doesn't have the optical camouflage electronics that more advanced M68 cloak has."
 
 /obj/item/storage/backpack/marine/marsoc
 	name = "\improper USCM SOF IMP tactical rucksack"
@@ -729,6 +752,14 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 	var/camo_message_delay = 2 SECONDS
 
 	actions_types = list(/datum/action/item_action/specialist/toggle_cloak)
+
+/obj/item/storage/backpack/marine/satchel/scout_cloak/select_gamemode_skin(expected_type, list/override_icon_state, list/override_protection)
+	. = ..()
+	switch(SSmapping.configs[GROUND_MAP].camouflage_type)
+		if("urban")
+			icon_state = "u_scout_cloak"
+		else
+			icon_state = "scout_cloak"
 
 /obj/item/storage/backpack/marine/satchel/scout_cloak/dropped(mob/user)
 	if(ishuman(user) && !issynth(user))
@@ -1056,6 +1087,14 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 	worn_accessible = TRUE
 	can_hold = list(/obj/item/ammo_magazine/flamer_tank, /obj/item/tool/extinguisher)
 	storage_flags = STORAGE_FLAGS_POUCH
+
+/obj/item/storage/backpack/marine/engineerpack/flamethrower/d60
+	name = "\improper D60-HI Heavy Fueltank"
+	desc = "A large fueltank used by French heavy incinerator units for their D60 flamethrowers."
+	icon_state = "flamethrower_french_backpack"
+	item_state = "flamethrower_french_backpack"
+	max_fuel = 750
+	max_storage_space = 8
 
 //----------OTHER FACTIONS AND ERTS----------
 

@@ -11,6 +11,48 @@
 /*
  * DATA CARDS - Used for the teleporter
  */
+/obj/item/loyalty
+	name = "Loyalty Chit (null)"
+	desc = "A stamped and signed card which denotes the holder as having earned some goodwill with a particular trader; with enough of these, a trader would be willing to offer you better deals. This one is blank."
+	icon = 'icons/obj/items/card.dmi'
+	icon_state = "fingerprint0"
+	w_class = SIZE_TINY
+
+/obj/item/loyalty/quartermaster
+	name = "Loyalty Chit (Quartermaster)"
+	desc = "A stamped and signed card which denotes the holder as having earned some goodwill with the trader known as 'Quartermaster'; with enough of these, Quartermaster would be willing to offer you better deals."
+	icon_state = "loyaltyqm"
+
+/obj/item/loyalty/quartermaster/levelone
+	name = "Loyalty Medallion, LL1 (Quartermaster)"
+	desc = "A brass badge given by Quartermaster to those he, more or less, trusts with things that his usual operators are too busy to deal with. Show this to Quartermaster to gain access to his Loyalty Level 1 catalog."
+	icon_state = "loyaltyqm_llone"
+
+/obj/item/loyalty/quartermaster/leveltwo
+	name = "Loyalty Medallion, LL2 (Quartermaster)"
+	desc = "A brass badge given by Quartermaster to those he trusts to deal with issues that his usual operators can't. Show this to Quartermaster to gain access to his Loyalty Level 2 catalog."
+	icon_state = "loyaltyqm_lltwo"
+
+/obj/item/loyalty/quartermaster/levelthree
+	name = "Loyalty Medallion, LL3 (Quartermaster)"
+	desc = "A brass badge given by Quartermaster to those he trusts to deal with issues that his usual operators can't. Show this to Quartermaster to gain access to his Loyalty Level 2 catalog."
+	icon_state = "loyaltyqm_llthree"
+
+/obj/item/loyalty/scholar
+	name = "Loyalty Chit (Scholar)"
+	desc = "A stamped and signed card which denotes the holder as having earned some goodwill with the trader known as 'Scholar'; with enough of these, Scholar would be willing to offer you better deals."
+	icon_state = "loyaltysch"
+
+/obj/item/loyalty/scholar/levelone
+	name = "Loyalty Seal, LL1 (Scholar)"
+	desc = "A violet wax seal given by Scholar to those he, more or less, trusts with things that his usual operators are too busy to deal with. Show this to Scholar to gain access to his Loyalty Level 1 catalog."
+	icon_state = "loyaltysch_llone"
+
+/obj/item/loyalty/scholar/leveltwo
+	name = "Loyalty Seal, LL2 (Scholar)"
+	desc = "A violet wax seal given by Scholar to those he trusts to deal with issues that his usual operators can't. Show this to Scholar to gain access to his Loyalty Level 2 catalog."
+	icon_state = "loyaltysch_lltwo"
+
 /obj/item/card
 	name = "card"
 	desc = "Does card things."
@@ -259,6 +301,27 @@
 	icon_state = "cmbdep"
 	item_state = "silver_badge"
 	paygrade = PAY_SHORT_CMBD
+
+/obj/item/card/id/nspa_silver
+	name = "\improper NSPA silver badge"
+	desc = "The silver badge which represents that the wearer is a NSPA Constable. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept."
+	icon_state = "nspa_silver"
+	item_state = "silver_id"
+	paygrade = PAY_SHORT_CST
+
+/obj/item/card/id/nspa_silver_gold
+	name = "\improper NSPA silver & gold badge"
+	desc = "The silver with gold accents badge which represents that the wearer is a NSPA Senior Constable to Sergeant. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept."
+	icon_state = "nspa_silverandgold"
+	item_state = "silver_id"
+	paygrade = PAY_SHORT_SGT
+
+/obj/item/card/id/nspa_gold
+	name = "\improper NSPA gold badge"
+	desc = "A gold badge signifying that the wearer is one of the higher ranks of the NSPA, usually Inspectors and above. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept."
+	icon_state = "nspa_gold"
+	item_state = "gold_id"
+	paygrade = PAY_SHORT_CINSP
 
 /obj/item/card/id/general
 	name = "general officer holo-badge"

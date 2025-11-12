@@ -85,6 +85,7 @@
 		/datum/equipment_preset/mercenary/sentinel/marksman::name = /datum/equipment_preset/mercenary/sentinel/marksman,
 		/datum/equipment_preset/mercenary/sentinel/response/marksman::name = /datum/equipment_preset/mercenary/sentinel/response/marksman,
 		/datum/equipment_preset/mercenary/infiltrator::name = /datum/equipment_preset/mercenary/infiltrator,
+		/datum/equipment_preset/fil/rifleman/sniper::name = /datum/equipment_preset/fil/rifleman/sniper,
 	)
 
 	if(!check_rights(R_DEBUG))

@@ -103,6 +103,16 @@
 	desc = "A depressing looking paper banner wishing someone named Steve a happy birth ay."
 	icon_state = "birthdaysteve"
 
+/obj/structure/sign/banners/happybirthdayhaywood
+	name = "\improper Happy Birthday Haywood banner"
+	desc = "A homemade banner wishing someone named Haywood a happy birthday. You suspect the excessive number of exclamation points was tacked on in order to hide the fact that the word 'Haywood' is off-center."
+	icon_state = "birthdayhaywood"
+
+/obj/structure/sign/banners/happybirthdayevan
+	name = "\improper Happy Birthday Evan banner"
+	desc = "A homemade banner wishing someone named Evan a happy birthday."
+	icon_state = "birthdayevan"
+
 /obj/structure/sign/banners/maximumeffort
 	name = "\improper Maximum Effort banner"
 	desc = "This banner depicts Delta Squad's motto. The Marines of Delta Squad adopted it after picking an old bomber movie for movie night a while back."

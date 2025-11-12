@@ -1,8 +1,8 @@
 /obj/structure/machinery/cm_vending/clothing/senior_officer
 	name = "\improper ColMarTech Senior Officer Equipment Rack"
 	desc = "An automated equipment vendor for Senior Officers."
-	req_access = list(ACCESS_MARINE_SENIOR)
-	vendor_role = list(JOB_CHIEF_POLICE, JOB_CMO, JOB_XO, JOB_CHIEF_ENGINEER, JOB_CHIEF_REQUISITION, JOB_AUXILIARY_OFFICER)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/senior_officer/get_listed_products(mob/user)
 	if(!user)
@@ -387,8 +387,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_xo, list(
 /obj/structure/machinery/cm_vending/gear/executive_officer
 	name = "\improper ColMarTech Executive Officer Weapon Rack"
 	desc = "An automated weapons rack for the Executive Officer. It features a decent selection of weaponry meant only for the second in command of a ship."
-	req_access = list(ACCESS_MARINE_SENIOR)
-	vendor_role = list(JOB_XO)
+	req_access = list()
+	vendor_role = list()
 	icon_state = "guns"
 	use_snowflake_points = TRUE
 

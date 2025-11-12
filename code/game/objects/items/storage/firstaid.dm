@@ -103,6 +103,18 @@
 /obj/item/storage/firstaid/regular/response
 	desc = "It's an emergency medical kit containing basic medication and equipment."
 
+/obj/item/storage/firstaid/brute
+	name = "brute first-aid kit"
+	desc = "It's an emergency medical kit containing equipment for physical treatment."
+
+/obj/item/storage/firstaid/brute/fill_preset_inventory()
+	new /obj/item/reagent_container/syringe/brute(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/skillless/tramadol(src)
 
 /obj/item/storage/firstaid/robust
 	icon_state = "firstaid"
@@ -1076,6 +1088,9 @@
 	icon_state = "pill_canister"
 	pill_type_to_fill = /obj/item/reagent_container/pill/tricordrazine
 	maptext_label = "Ti"
+
+/obj/item/storage/pill_bottle/tricord/skillless
+	skilllock = SKILL_MEDICAL_DEFAULT
 
 //---------PILL PACKETS---------
 /obj/item/storage/pill_bottle/packet

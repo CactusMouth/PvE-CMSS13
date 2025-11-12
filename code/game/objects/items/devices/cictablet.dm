@@ -197,3 +197,6 @@
 	announcement_faction = FACTION_TWE
 	req_access = list(ACCESS_TWE_LEADERSHIP)
 	minimap_type = MINIMAP_FLAG_TWE
+
+/obj/item/device/cotablet/no_access
+	req_access = list()

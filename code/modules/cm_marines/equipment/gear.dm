@@ -197,6 +197,45 @@
 	reagents.add_reagent("vanilla", 8)
 	bitesize = 4
 
+/obj/item/reagent_container/food/snacks/protein_pack4
+	name = "cherry Preemptive Action nutrition bar"
+	desc = "A flaky, crunchy military nutrition bar. It's an American armed forces classic, for better or worse. The cherry filling is exceptionally sweet, but doesn't combat the bitter aftertaste of the protein filling. Still, it's one of the better-liked flavors of protein bar."
+	icon_state = "yummers4"
+	filling_color = "#c62e4c"
+	w_class = SIZE_TINY
+
+/obj/item/reagent_container/food/snacks/protein_pack4/Initialize()
+	. = ..()
+	reagents.add_reagent("nutriment", 8)
+	reagents.add_reagent("cherrypowder", 8)
+	bitesize = 4
+
+/obj/item/reagent_container/food/snacks/protein_pack5
+	name = "lemon Preemptive Action nutrition bar"
+	desc = "A flaky, crunchy military nutrition bar. It's an American armed forces classic, for better or worse. The sour lemon coating mixed with the bitter taste of the protein filling results in a very unpleasant protein bar."
+	icon_state = "yummers5"
+	filling_color = "#ffff00"
+	w_class = SIZE_TINY
+
+/obj/item/reagent_container/food/snacks/protein_pack5/Initialize()
+	. = ..()
+	reagents.add_reagent("nutriment", 8)
+	reagents.add_reagent("lemonpowder", 8)
+	bitesize = 4
+
+/obj/item/reagent_container/food/snacks/protein_pack6
+	name = "crayon Preemptive Action nutrition bar"
+	desc = "A flaky, crunchy military nutrition bar. It's not clear if this protein bar was stocked by the Requisitions Department as some sort of cruel joke or if the USCM is going all-in on the 'dumb marine' stereotype, but the bar seems to have actual, powderized wax crayons as flavoring. Oddly enough, it doesn't taste that bad."
+	icon_state = "yummers6"
+	filling_color = "#ff00cc"
+	w_class = SIZE_TINY
+
+/obj/item/reagent_container/food/snacks/protein_pack6/Initialize()
+	. = ..()
+	reagents.add_reagent("nutriment", 8)
+	reagents.add_reagent("crayonpowder", 8)
+	bitesize = 4
+
 /obj/item/reagent_container/food/snacks/mre_pack
 	name = "\improper generic MRE pack"
 	icon = 'icons/obj/items/food_canteen.dmi'

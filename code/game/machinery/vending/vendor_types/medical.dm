@@ -217,7 +217,7 @@
 	name = "\improper Wey-Med Plus"
 	desc = "Medical pharmaceutical dispenser. Provided by Wey-Yu Pharmaceuticals Division(TM)."
 	icon_state = "med"
-	req_access = list(ACCESS_MARINE_MEDBAY)
+	req_access = list()
 
 	unacidable = TRUE
 	unslashable = FALSE
@@ -623,7 +623,7 @@
 	name = "\improper Wey-Chem Plus"
 	desc = "Medical chemistry dispenser. Provided by Wey-Yu Pharmaceuticals Division(TM)."
 	icon_state = "chem"
-	req_access = list(ACCESS_MARINE_CHEMISTRY)
+	req_access = list()
 	healthscan = FALSE
 
 	chem_refill_volume = 1200

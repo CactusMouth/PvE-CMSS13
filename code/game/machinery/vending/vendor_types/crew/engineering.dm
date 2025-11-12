@@ -58,8 +58,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_maintenance_technician, list(
 /obj/structure/machinery/cm_vending/clothing/maintenance_technician
 	name = "\improper ColMarTech Maintenance Technician Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of Maintenance Technician standard-issue equipment."
-	req_access = list(ACCESS_MARINE_ENGINEERING)
-	vendor_role = list(JOB_MAINT_TECH)
+	req_access = list()
+	vendor_role = list()
 
 /obj/structure/machinery/cm_vending/clothing/maintenance_technician/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_maintenance_technician

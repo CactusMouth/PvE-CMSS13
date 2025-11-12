@@ -382,6 +382,8 @@
 			marker_flags = MINIMAP_FLAG_PMC
 		else if(hud_type == MOB_HUD_FACTION_CLF)
 			marker_flags = MINIMAP_FLAG_CLF
+		else if(hud_type == MOB_HUD_FACTION_FIL)
+			marker_flags = MINIMAP_FLAG_CLF
 
 	if(wearer.undefibbable)
 		set_undefibbable_on_minimap(z_level, marker_flags)
@@ -578,6 +580,7 @@
 	initial_keys = list(/obj/item/device/encryptionkey/po)
 	volume = RADIO_VOLUME_CRITICAL
 	multibroadcast_cooldown = LOW_MULTIBROADCAST_COOLDOWN
+	frequency = ALPHA_FREQ
 
 /obj/item/device/radio/headset/almayer/intel
 	name = "marine intel radio headset"
@@ -1253,6 +1256,14 @@
 	icon_state = "wy_headset"
 	initial_keys = list(/obj/item/device/encryptionkey/WY, /obj/item/device/encryptionkey/cmb)
 
+/obj/item/device/radio/headset/distress/NSPA
+	name = "NSPA Headset"
+	desc = "NSPA headset."
+	frequency = RMC_FREQ
+	icon_state = "vai_headset"
+	initial_keys = list(/obj/item/device/encryptionkey/public, /obj/item/device/encryptionkey/royal_marine)
+	volume = RADIO_VOLUME_IMPORTANT
+
 /obj/item/device/radio/headset/almayer/highcom
 	name = "USCM High Command headset"
 	desc = "Issued to members of USCM High Command and their immediate subordinates. Channels are as follows: :v - marine command, :p - military police, :a - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :n - engineering, :m - medbay, :u - requisitions, :j - JTAC,  :t - intel,  :z - HighCom"
@@ -1385,3 +1396,12 @@
 	frequency = MERC_FREQ
 	initial_keys = list(/obj/item/device/encryptionkey/colony)
 	ignore_z = TRUE
+
+/obj/item/device/radio/headset/distress/fil
+	name = "military headset"
+	desc = "A military headset, used by the French Foreign Interstellar Legion."
+	frequency = FIL_FREQ
+	icon_state = "vai_headset"
+	initial_keys = list(/obj/item/device/encryptionkey/fil)
+	has_hud = TRUE
+	hud_type = list(MOB_HUD_FACTION_FIL)

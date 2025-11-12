@@ -5,7 +5,7 @@
 //M41A (MK2) PULSE RIFLE AMMUNITION
 
 /obj/item/ammo_magazine/rifle
-	name = "\improper M41A magazine (10x24mm)"
+	name = "\improper M41A-MK2 magazine (10x24mm)"
 	desc = "A 10mm assault rifle magazine."
 	caliber = "10x24mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
@@ -19,57 +19,57 @@
 	ammo_band_icon_empty = "+m41a_band_e"
 
 /obj/item/ammo_magazine/rifle/extended
-	name = "\improper M41A extended magazine (10x24mm)"
+	name = "\improper M41A-MK2 extended magazine (10x24mm)"
 	desc = "A 10mm assault extended rifle magazine."
 	icon_state = "m41a_extended"
 	max_rounds = 60
 	bonus_overlay = "m41a_ex"
 
 /obj/item/ammo_magazine/rifle/incendiary
-	name = "\improper M41A incendiary magazine (10x24mm)"
+	name = "\improper M41A-MK2 incendiary magazine (10x24mm)"
 	desc = "A 10mm assault rifle magazine."
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
 	ammo_band_color = AMMO_BAND_COLOR_INCENDIARY
 
 /obj/item/ammo_magazine/rifle/explosive
-	name = "\improper M41A explosive magazine (10x24mm)"
+	name = "\improper M41A-MK2 explosive magazine (10x24mm)"
 	desc = "A 10mm assault rifle magazine. Oh god... just don't hit friendlies with it."
 	default_ammo = /datum/ammo/bullet/rifle/explosive
 	ammo_band_color = AMMO_BAND_COLOR_EXPLOSIVE
 
 /obj/item/ammo_magazine/rifle/heap
-	name = "\improper M41A HEAP magazine (10x24mm)"
+	name = "\improper M41A-MK2 HEAP magazine (10x24mm)"
 	desc = "A 10mm armor piercing high explosive magazine."
 	default_ammo = /datum/ammo/bullet/rifle/heap
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
 
 /obj/item/ammo_magazine/rifle/ap
-	name = "\improper M41A AP magazine (10x24mm)"
+	name = "\improper M41A-MK2 AP magazine (10x24mm)"
 	desc = "A 10mm armor piercing magazine."
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
 /obj/item/ammo_magazine/rifle/le
-	name = "\improper M41A LE magazine (10x24mm)"
+	name = "\improper M41A-MK2 LE magazine (10x24mm)"
 	desc = "A 10mm armor shredding magazine."
 	default_ammo = /datum/ammo/bullet/rifle/le
 	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
 
 /obj/item/ammo_magazine/rifle/penetrating
-	name = "\improper M41A wall-penetrating magazine (10x24mm)"
+	name = "\improper M41A-MK2 wall-penetrating magazine (10x24mm)"
 	desc = "A 10mm wall-penetrating magazine."
 	default_ammo = /datum/ammo/bullet/rifle/ap/penetrating
 	ammo_band_color = AMMO_BAND_COLOR_PENETRATING
 
 /obj/item/ammo_magazine/rifle/toxin
-	name = "\improper M41A toxin magazine (10x24mm)"
+	name = "\improper M41A-MK2 toxin magazine (10x24mm)"
 	desc = "A 10mm toxin magazine."
 	default_ammo = /datum/ammo/bullet/rifle/ap/toxin
 	ammo_band_color = AMMO_BAND_COLOR_TOXIN
 
 
 /obj/item/ammo_magazine/rifle/rubber
-	name = "M41A Rubber Magazine (10x24mm)"
+	name = "M41A-MK2 Rubber Magazine (10x24mm)"
 	desc = "A 10mm magazine filled with rubber bullets."
 	default_ammo = /datum/ammo/bullet/rifle/rubber
 	ammo_band_color = AMMO_BAND_COLOR_RUBBER
@@ -83,7 +83,7 @@
 //M41A (MK1) TRUE AND ORIGINAL
 
 /obj/item/ammo_magazine/rifle/m41aMK1
-	name = "\improper M41A magazine (10x24mm)"
+	name = "\improper M41A-MK1 magazine (10x24mm)"
 	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm rounds."
 	icon_state = "m41a_mk1"
 	max_rounds = 99
@@ -94,37 +94,37 @@
 	bonus_overlay = "m41a_mk1_overlay"
 
 /obj/item/ammo_magazine/rifle/m41aMK1/rubber
-	name = "\improper M41A rubber magazine"
+	name = "\improper M41A-MK1 rubber magazine"
 	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm less lethal rubber bullets. Be careful, they're LESS, lethal, not NON, lethal."
 	default_ammo = /datum/ammo/bullet/rifle/rubber
 	ammo_band_color = AMMO_BAND_COLOR_RUBBER
 
 /obj/item/ammo_magazine/rifle/m41aMK1/ap
-	name = "\improper M41A AP magazine (10x24mm)"
+	name = "\improper M41A-MK1 AP magazine (10x24mm)"
 	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm steelcore armor piercing rounds."
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
 /obj/item/ammo_magazine/rifle/m41aMK1/heap
-	name = "\improper M41A HEAP magazine (10x24mm)"
+	name = "\improper M41A-MK1 HEAP magazine (10x24mm)"
 	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm M309 Armor Piercing High Explosive rounds."
 	default_ammo = /datum/ammo/bullet/rifle/heap
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
 
 /obj/item/ammo_magazine/rifle/m41aMK1/incendiary
-	name = "\improper M41A MK1 incendiary magazine (10x24mm)"
+	name = "\improper M41A-MK1 incendiary magazine (10x24mm)"
 	desc = "A long rectangular box magazine for the M41A. Holds 99 caseless 10x24mm incendiary rounds."
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
 	ammo_band_color = AMMO_BAND_COLOR_INCENDIARY
 
 /obj/item/ammo_magazine/rifle/m41aMK1/toxin
-	name = "\improper M41A MK1 toxin magazine (10x24mm)"
+	name = "\improper M41A-MK1 toxin magazine (10x24mm)"
 	desc = "A long rectangular box of rounds that is only compatible with the older M41A MK1. Holds up to 99 rounds. This one contains toxic bullets."
 	default_ammo = /datum/ammo/bullet/rifle/ap/toxin
 	ammo_band_color = AMMO_BAND_COLOR_TOXIN
 
 /obj/item/ammo_magazine/rifle/m41aMK1/penetrating
-	name = "\improper M41A MK1 wall-penetrating magazine (10x24mm)"
+	name = "\improper M41A-MK1 wall-penetrating magazine (10x24mm)"
 	desc = "A long rectangular box of rounds that is only compatible with the older M41A MK1. Holds up to 99 rounds. This one contains wall-penetrating bullets."
 	default_ammo = /datum/ammo/bullet/rifle/ap/penetrating
 	ammo_band_color = AMMO_BAND_COLOR_PENETRATING
@@ -135,7 +135,7 @@
 	bonus_overlay = "m41a_mk1_recon_overlay"
 
 /obj/item/ammo_magazine/rifle/m41aMK1/tracer
-	name = "\improper M41A MK1 tracer magazine (10x24mm)"
+	name = "\improper M41A-MK1 tracer magazine (10x24mm)"
 	desc = "A 10mm assault rifle magazine filled with tracer bullets."
 	default_ammo = /datum/ammo/bullet/rifle/tracer
 
@@ -544,6 +544,37 @@
 	default_ammo =  /datum/ammo/bullet/sniper/anti_materiel/vulture/holo_target
 	ammo_band_color = AMMO_BAND_COLOR_HOLOTARGETING
 
+/obj/item/ammo_magazine/rifle/boltaction/fr2
+	name = "\improper FR F20 magazine (10x50mm)"
+	desc = "A magazine for the FR F20 marksman rifle."
+	caliber = "10x55mm"
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
+	icon_state = "fr2"
+	default_ammo = /datum/ammo/bullet/sniper/fr2
+	max_rounds = 10
+	gun_type = /obj/item/weapon/gun/boltaction/fr2
+	w_class = SIZE_MEDIUM
+	ammo_band_icon = "+fr2_band"
+	ammo_band_icon_empty = "+fr2_band_e"
+
+/obj/item/ammo_magazine/rifle/boltaction/fr2/penetrating
+	name = "\improper FR F20 wall-penetration magazine (10x50mm)"
+	desc = "A wall-penetration magazine for the FR F20 marksman rifle."
+	default_ammo =  /datum/ammo/bullet/sniper/fr2/penetrating
+	ammo_band_color = AMMO_BAND_COLOR_PENETRATING
+
+/obj/item/ammo_magazine/rifle/boltaction/fr2/ap
+	name = "\improper FR F20 armor-piercing magazine (10x50mm)"
+	desc = "An AP magazine for the FR F20 marksman rifle."
+	default_ammo =  /datum/ammo/bullet/sniper/fr2/ap
+	ammo_band_color = AMMO_BAND_COLOR_AP
+
+/obj/item/ammo_magazine/rifle/boltaction/fr2/hp
+	name = "\improper FR F20 hollowpoint magazine (10x50mm)"
+	desc = "A hollowpoint magazine for the FR F20 marksman rifle."
+	default_ammo =  /datum/ammo/bullet/sniper/fr2/hp
+	ammo_band_color = AMMO_BAND_COLOR_HOLLOWPOINT
+
 //=ROYAL MARINES=\\
 
 /obj/item/ammo_magazine/rifle/rmc_f90
@@ -610,3 +641,62 @@
 	default_ammo = /datum/ammo/bullet/rifle/isr
 	max_rounds = 160
 	gun_type = /obj/item/weapon/gun/rifle/isr
+
+
+//------------------------------------------------------
+//FN107 Carbine
+
+/obj/item/ammo_magazine/rifle/fn107
+	name = "\improper CAMAS61/78 magazine (7.5x28mm)"
+	desc = "An 7.5mm magazine for the CAMAS61/78 Carbine, commonly used by FIL."
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
+	icon_state = "fn107"
+	item_state = "fn107"
+	w_class = SIZE_MEDIUM
+	default_ammo = /datum/ammo/bullet/rifle/fn107
+	max_rounds = 100
+	gun_type = /obj/item/weapon/gun/rifle/fn107
+
+/obj/item/ammo_magazine/rifle/fn107/commando
+	name = "\improper CAMAS61/78 AP Tracer magazine (7.5x28mm)"
+	desc = "An 7.5mm AP Tracer magazine for the CAMAS61/78 Carbine, commonly used by FIL."
+	default_ammo = /datum/ammo/bullet/rifle/fn107/commando
+	ammo_band_icon = "+fn107_band"
+	ammo_band_icon_empty = "+fn107_band_e"
+	ammo_band_color = AMMO_BAND_COLOR_AP
+
+//------------------------------------------------------
+//MASM55 Medium Machinegun
+
+/obj/item/ammo_magazine/rifle/masm
+	name = "\improper MASM55 box magazine (12x30mm)"
+	desc = "A large 12mm box magazine for the MASM55, commonly used by the FIL."
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
+	icon_state = "masm"
+	item_state = "masm"
+	w_class = SIZE_LARGE
+	default_ammo = /datum/ammo/bullet/rifle/masm
+	max_rounds = 120
+	gun_type = /obj/item/weapon/gun/rifle/masm55
+
+//------------------------------------------------------
+//FPSA DMR
+
+/obj/item/ammo_magazine/rifle/fpsa
+	name = "\improper FPSA/76 DMR magazine (7.5x50mm)"
+	desc = "A standard caseless magazine for the FPSA/76 Pulse DMR, often used by mercenary and french armed forces."
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony.dmi'
+	icon_state = "fpsa"
+	item_state = "fpsa"
+	w_class = SIZE_MEDIUM
+	default_ammo = /datum/ammo/bullet/rifle/fpsa
+	max_rounds = 40
+	gun_type = /obj/item/weapon/gun/rifle/fpsa
+
+/obj/item/ammo_magazine/rifle/fpsa/commando
+	name = "\improper FPSA/76 DMR AP Tracer magazine (7.5x50mm)"
+	desc = "A standard caseless AP tracer magazine for the FPSA/76 Pulse DMR, often used by FIL special forces."
+	default_ammo = /datum/ammo/bullet/rifle/fpsa/commando
+	ammo_band_icon = "+fpsa_band"
+	ammo_band_icon_empty = "+fpsa_band_e"
+	ammo_band_color = AMMO_BAND_COLOR_AP

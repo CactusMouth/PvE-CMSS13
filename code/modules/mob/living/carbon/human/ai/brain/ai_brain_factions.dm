@@ -110,6 +110,7 @@
 		FACTION_TWE,
 		FACTION_WY,
 		FACTION_PMC,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -133,6 +134,7 @@
 		FACTION_TWE,
 		FACTION_WY,
 		FACTION_PMC,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -155,6 +157,7 @@
 		FACTION_TWE,
 		FACTION_WY,
 		FACTION_PMC,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -177,6 +180,7 @@
 		FACTION_TWE,
 		FACTION_WY,
 		FACTION_PMC,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_CONTRACTOR,
@@ -477,6 +481,7 @@
 		FACTION_MARINE,
 		FACTION_WY,
 		FACTION_UACG,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -639,6 +644,7 @@
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
+		FACTION_FIL,
 	)
 	enter_combat_lines = list(
 		"CONTACT!",
@@ -843,6 +849,7 @@
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
+		FACTION_FIL,
 	)
 	enter_combat_lines = list(
 		"CONTACT!",
@@ -1047,6 +1054,7 @@
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
+		FACTION_FIL,
 	)
 	enter_combat_lines = list(
 		"CONTACT!",
@@ -1412,6 +1420,7 @@
 		FACTION_MARSHAL,
 		FACTION_UACG,
 		FACTION_SURVIVOR,
+		FACTION_FIL,
 	)
 
 /datum/human_ai_faction/wy/pmc
@@ -1432,6 +1441,7 @@
 		FACTION_MARSHAL,
 		FACTION_UACG,
 		FACTION_SURVIVOR,
+		FACTION_FIL,
 	)
 
 /datum/human_ai_faction/wy_deathsquad
@@ -1470,6 +1480,7 @@
 		FACTION_COLONIST,
 		FACTION_WY,
 		FACTION_PMC,
+		FACTION_FIL,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -1642,6 +1653,63 @@
 		"GET DOC OVER HERE!",
 		"DOC!",
 		"MEDIC!",
+	)
+
+/datum/human_ai_faction/fil
+	faction = FACTION_FIL
+	friendly_factions = list(
+		FACTION_COLONIST,
+		FACTION_WY,
+		FACTION_TWE,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+	)
+	enter_combat_lines = list(
+		"Contact! Enemy forces approaching!",
+		"Visual confirmed, open fire!",
+		"Hostile forces detected - prepare to fire!",
+		"They've found us - return fire!",
+		"Open up!",
+		"Form up, enemy sighted ahead!",
+		"On les voit. Fire on my mark!",
+		"Squad Alpha, contact spotted! Suppress and flank!",
+		"This is not a drill, hostile presence confirmed!",
+		"Maintain formation, enemy incoming!",
+		"They face the République now!",
+		"Let's show them how France handles war!",
+		"They fight on this soil - that was their last mistake.",
+		"Pour la patrie! Open fire!",
+		"Combat has begun, remember your training.",
+		"Orders are clear - no survivors.",
+		"Legion, prepare to strike!",
+		"They've seen us, move now!",
+		"They come for war? Let us give them it!",
+		"This isn't our first hellhole, let's go!",
+		"They never learn, we never forget.",
+		"Viva la France!",
+		"Verdun on ne passe pas!",
+		"Guns up! They're right infront of us!",
+		"No mercy, for the République!",
+		"*warcry",
+		"You have dug your own graves. Open fire!",
+		"Give them blood!",
+		"You hear that? Another mistake walking in.",
+		"How many today, mon frére?",
+		"They shoot, we bury them.",
+		"We bleed for worlds we don't belong to.",
+		"Close contact, drop them fast!",
+		"No retreat, we end this now!",
+		"Move to intercept! Break their lines!",
+		"VIVA LA FRANCE!",
 	)
 
 /datum/human_ai_faction/xeno_cultist
@@ -1903,4 +1971,83 @@
 	faction = FACTION_MALF_SYNTH
 	friendly_factions = list(
 		FACTION_COLONIST,
+	)
+
+/datum/human_ai_faction/scav
+	faction = FACTION_SCAV
+	neutral_factions = list()
+	enter_combat_lines = list(
+		"Kill that motherfucker!",
+		"Gimme your shit!",
+		"Raid's over, fuckhead!",
+		"Your raid is done! You hear me?! DONE!",
+		"I'm gonna whoop your ass to next week!",
+		"Got you now, jerkoff!",
+		"What the fuck?!",
+		"Fuck! Fuck! Fuck! Fuck!",
+		"Hold still!",
+		"Stop fuckin' yammering for a second. I think I saw someone.",
+		"Thought I heard someone creepin' around!",
+		"YOU'RE A THIEVING RAT, AND BY GOD, YOU'LL DIE LIKE ONE!",
+		"*warcry",
+		"*scream",
+		"I'm hungry!",
+		"Okay, okay, I will fight!",
+		"Can I have your shoes?",
+		"DIE, YOU UGLY SON OF A BITCH! DIE!",
+		"It'll be over soon, smeghead! Hold still!",
+		"I'm gonna kill you!",
+		"I'm gonna scrunch you!",
+		"I'm gonna tickle you!",
+		"You're gonna meet God, bitch!",
+	)
+	exit_combat_lines = list(
+		"Did I win?",
+		"That's one for the history books.",
+		"He got anything good?",
+		"That was close.",
+		"*laugh",
+		"Man, I'm hungry! He got any food?",
+		"Job's done.",
+		"Now, where was I..?",
+		"I do what I am told.",
+		"Why can we not live in peace?",
+	)
+	squad_member_death_lines = list(
+		"OH, SHIT!",
+		"HOLY FUCK!",
+		"JESUS H. JESUS FUCKING CHRIST!",
+		"NO! HE OWED ME FIVE BUCKS!",
+		"Dibs on that guy's shoes!",
+		"*scream",
+		"OH MY GOD, HE'S DEAD!",
+		"He deserved that!",
+		"WE'RE DOOMED!",
+		"We should probably start running, right?",
+		"Okay, I may have overestimated our chances here.",
+		"MAN, FUCK SHOTGUNNERS!",
+		"Uh-oh.",
+		"THIS IS BAD!",
+		"SHIT! SHIT! SHIT!",
+		"OW!",
+	)
+	reload_lines = list(
+		"Swappin' mags, baby! Cover me!",
+		"Punching in a fresh mag!",
+		"Reloading!",
+		"Shit, how do I unload this thing again?",
+		"Got a mag I could borrow?",
+		"COVER ME FOR A SECOND, DAMN IT!",
+		"I'M FUCKIN' RELOADING, JERKOFF! HOLD ON!",
+		"RELOADING! STOP SHOOTING AT ME FOR HALF A SECOND, YOU FUCKHEAD!",
+		"Man, fuck this gun, dude. Hold on.",
+	)
+	reload_internal_mag_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Cover me, you fuckin' worthless sack of shit! I'm reloading!",
+		"SHOOT THAT ASSHOLE! I'M RELOADING!",
+		"Shit, I think I dropped a cartridge. Hold on.",
+		"This gun's a piece of shit. Let me just-- there we go.",
+		"What-? FUCK! I'M OUT OF ROUNDS! RELOADING!",
 	)
