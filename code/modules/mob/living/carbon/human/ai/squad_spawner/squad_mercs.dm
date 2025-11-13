@@ -31,9 +31,10 @@
 
 /datum/human_ai_squad_preset/mercs/patrol/squad
 	name = "Sentinel Patrol Squad"
-	desc = "A basic sentinel patrol squad, consisting of four sentinels with modified FP9000 SMGs and light armor."
+	desc = "A basic sentinel patrol squad, consisting of four sentinels with modified FP9000 SMGs, M20CW carbines and light armor."
 	ai_to_spawn = list(
-		/datum/equipment_preset/mercenary/sentinel = 4,
+		/datum/equipment_preset/mercenary/sentinel/carbine = 1,
+		/datum/equipment_preset/mercenary/sentinel = 3,
 	)
 
 /datum/human_ai_squad_preset/mercs/response
