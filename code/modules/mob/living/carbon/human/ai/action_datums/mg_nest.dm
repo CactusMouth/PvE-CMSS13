@@ -91,7 +91,6 @@
 		/datum/equipment_preset/fil/rifleman/mg::name = /datum/equipment_preset/fil/rifleman/mg,
 		/datum/equipment_preset/mercenary/bulwark/machinegun::name = /datum/equipment_preset/mercenary/bulwark/machinegun,
 	)
-	)
 
 	if(!check_rights(R_DEBUG))
 		return
