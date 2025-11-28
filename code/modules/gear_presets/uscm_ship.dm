@@ -1101,3 +1101,9 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(new_human), WEAR_FEET)
 	//pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+
+// raider
+
+/datum/equipment_preset/uscm_ship/so/raider
+	name = "Raider Team Commander"
+	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)

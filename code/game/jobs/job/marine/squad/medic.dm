@@ -156,6 +156,18 @@
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/medic/ai/forecon
 
+/datum/job/marine/medic/ai/raider
+	title = JOB_SQUAD_MEDIC_RAIDER
+	total_positions = 1
+	spawn_positions = 1
+	gear_preset = /datum/equipment_preset/uscm/medic/raider
+	job_options = null
+
+/obj/effect/landmark/start/marine/medic/raider
+	name = JOB_SQUAD_MEDIC_RAIDER
+	squad = SQUAD_RAIDER
+	job = /datum/job/marine/medic/ai/raider
+
 //-- RMC Platoon --//
 //Medical Assistant//
 

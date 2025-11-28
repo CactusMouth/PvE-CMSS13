@@ -216,6 +216,20 @@
 	usable = TRUE
 	squad_type = "Squad"
 
+/datum/squad/marine/raider
+	name = SQUAD_RAIDER
+	access = list(ACCESS_MARINE_ALPHA)
+
+	radio_freq = RAID_FREQ
+	equipment_color = "#400000"
+	chat_color = "#400000"
+	minimap_color = "#400000"
+
+	usable = TRUE
+	squad_type = "Squad"
+
+	use_stripe_overlay = FALSE
+
 /datum/squad/marine/bravo
 	name = SQUAD_MARINE_2
 	equipment_color = "#ffc32d"

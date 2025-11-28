@@ -101,6 +101,15 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	name = JOB_PMCPLAT_OW
 	job = /datum/job/command/bridge/ai/pmc
 
+/datum/job/command/bridge/ai/raider
+	title = JOB_SO_RAIDER
+	gear_preset = /datum/equipment_preset/uscm_ship/so/raider
+	job_options = null
+
+/obj/effect/landmark/start/bridge/pmc
+	name = JOB_SO_RAIDER
+	job = /datum/job/command/bridge/ai/raider
+
 //-- RMC Platoon --//
 //Groundside command, no overwatch. Lead by example, chip chip cheerio and all that rubbish//
 

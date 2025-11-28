@@ -1274,3 +1274,36 @@
 /datum/equipment_preset/uscm/leader/extraction
 	name = "Ex-USCM Deserter Sergeant"
 	skills = /datum/skills/SL/extraction
+
+// raiders
+
+/datum/equipment_preset/uscm/pfc/raider
+	name = "Raider Squad Rifleman"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/pfc/extraction
+
+/datum/equipment_preset/uscm/sg/raider
+	name = "Raider Squad Smartgunner"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/smartgunner/extraction
+
+/datum/equipment_preset/uscm/medic/raider
+	name = "Raider Corpsman"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/combat_medic/extraction
+
+/datum/equipment_preset/uscm/engineer/raider
+	name = "Raider Squad Combat Engineer"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/combat_engineer/raider
+
+/datum/equipment_preset/uscm/tl/raider
+	name = "Raider Team Leader"
+	assignment = JOB_SQUAD_TEAM_LEADER_RAIDER
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/SL/extraction
+
+/datum/equipment_preset/uscm/leader/raider
+	name = "Raider Team Chief"
+	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
+	skills = /datum/skills/SL/extraction
