@@ -401,8 +401,8 @@
 	dir = 1;
 	light_power = 0.7
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "fq" = (
 /obj/structure/window/reinforced/ultra{
@@ -632,7 +632,13 @@
 	name = "door lock";
 	id = "m2"
 	},
-/turf/open/floor/plating,
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "iB" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -712,6 +718,12 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"jn" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "jp" = (
 /obj/structure/sign/banners/united_americas_flag{
 	pixel_y = 28;
@@ -755,7 +767,7 @@
 /obj/structure/window/framed/almayer,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
-	id = "ds1";
+	id = "m2";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -763,7 +775,6 @@
 "jZ" = (
 /obj/structure/machinery/door/airlock/upp_utility{
 	name = "\improper M-01 [H. SCHNEIDER]";
-	req_one_access_txt = "230";
 	dir = 1
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -832,15 +843,15 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "kE" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper M-02 [VACANT]";
-	dir = 2
+/obj/structure/machinery/door/airlock/almayer/secure/glass{
+	name = "\improper M-02 [B. FRANKS]";
+	dir = 1
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
-	id = "ds1"
+	id = "m2"
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
 "kF" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
@@ -1300,7 +1311,8 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
 	},
-/turf/open/floor/plating,
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "rx" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -1407,6 +1419,19 @@
 	icon_state = "95a"
 	},
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"sL" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"sM" = (
+/obj/structure/closet/cabinet{
+	pixel_y = 17
+	},
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "sN" = (
 /turf/closed/wall/almayer/outer,
@@ -1535,6 +1560,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
+"uv" = (
+/obj/structure/inventory_machine,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "uw" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "90"
@@ -1574,6 +1603,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
+"vn" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/tool/pen/clicky{
+	name = "clicky pen"
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "vy" = (
 /obj/structure/sign/poster/pinup,
 /turf/closed/wall/almayer,
@@ -1879,6 +1918,12 @@
 	},
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
+"Aq" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "Ar" = (
 /mob/living/simple_animal/mouse/rat/white{
 	desc = "It's a little white rat. This one was rescued from Hybrisa Prospera to give War a friend. Lieutenant Brown hates him. He really likes drinking Boda.";
@@ -2352,6 +2397,11 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"Gm" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "Gq" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -2424,6 +2474,9 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
+"Ht" = (
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "HG" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -2757,6 +2810,9 @@
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"ME" = (
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "MW" = (
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
@@ -2783,6 +2839,14 @@
 /obj/effect/decal/cleanable/dirt/greenglow,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"Nx" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled."
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "NK" = (
 /obj/structure/machinery/chem_dispenser/canteen,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2996,6 +3060,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"QJ" = (
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "QP" = (
 /obj/structure/stairs{
 	dir = 1
@@ -3340,6 +3408,11 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"WD" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/device/flashlight/lamp,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "WE" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
@@ -3502,8 +3575,8 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/obj/structure/flora/pottedplant,
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "ZK" = (
 /obj/structure/machinery/door_control{
@@ -3518,6 +3591,10 @@
 	light_power = 0.8;
 	light_range = 4;
 	pixel_y = 10
+	},
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper M-02 [VACANT]";
+	dir = 2
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/galleyburned/residential)
@@ -5417,11 +5494,11 @@ DX
 vS
 JF
 ix
-yC
-yC
-mt
-Sv
-yC
+QJ
+uv
+JF
+sM
+ME
 rj
 JF
 Xx
@@ -5468,13 +5545,13 @@ yC
 sh
 tZ
 kE
-yC
-mt
-mt
-mt
-yC
-mt
-mt
+Ht
+jn
+Ht
+Aq
+Ht
+Ht
+WD
 JF
 rQ
 yC
@@ -5521,11 +5598,11 @@ JF
 vS
 JF
 fl
-yC
-yC
-mt
-mt
-yC
+sL
+vn
+JF
+Nx
+Gm
 ZI
 JF
 zV

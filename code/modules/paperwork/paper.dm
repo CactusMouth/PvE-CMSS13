@@ -642,7 +642,7 @@
 	var/datum/asset/asset = get_asset_datum(/datum/asset/simple/paper)
 	info = "<center><img src = [asset.get_url_mappings()["uscmlogo.png"]]></center><BR>\n<span class=\"paper_field\"></span>"
 
-/obj/item/paper/research_notes
+/*/obj/item/paper/research_notes
 	icon_state = "paper_wy_words"
 	unacidable = TRUE
 	var/datum/reagent/data
@@ -864,6 +864,7 @@
 			completed = TRUE
 
 	data = S
+*/
 
 /obj/item/paper/incident
 	name = "incident report"
@@ -911,7 +912,7 @@
 	icon = 'icons/obj/items/paper.dmi'
 	icon_state = "paper_stack_words"
 	name = "Colonial Space Grunts"
-	desc = "A tabletop game based around the USCM, easy to get into, simple to play, and most inportantly fun for the whole squad."
+	desc = "A tabletop game based around the USCM, easy to get into, simple to play, and most importantly fun for the whole squad."
 
 /obj/item/paper/colonial_grunts/Initialize(mapload, ...)
 	. = ..()
