@@ -26,13 +26,6 @@
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
-"an" = (
-/obj/structure/inventory_machine,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
-"ap" = (
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "as" = (
 /turf/closed/shuttle/midway{
 	icon_state = "104"
@@ -213,6 +206,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"dh" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/device/flashlight/lamp,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "do" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -609,14 +607,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"id" = (
-/obj/structure/machinery/defenses/planted_flag/wy{
-	disassemble_time = 6000000;
-	name = "repurposed WY flag";
-	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled."
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "if" = (
 /obj/structure/sign/goldenplaque{
 	pixel_x = 32
@@ -1028,10 +1018,6 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"mF" = (
-/obj/structure/pipes/vents,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "mG" = (
 /obj/structure/bed/chair/comfy{
 	dir = 8
@@ -1140,12 +1126,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"on" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "op" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -1334,6 +1314,16 @@
 /obj/structure/surface/table/woodentable/fancy,
 /turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
+"rr" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/tool/pen/clicky{
+	name = "clicky pen"
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "rx" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -1390,6 +1380,13 @@
 	id = "s4"
 	},
 /turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/residential)
+"si" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "sj" = (
 /obj/structure/closet/crate/freezer/cooler/oj,
@@ -1450,6 +1447,12 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"sZ" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "ti" = (
 /turf/closed/shuttle/midway/transparent{
 	icon_state = "39"
@@ -1497,16 +1500,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
-"tO" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/tool/pen/clicky{
-	name = "clicky pen"
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "tP" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "5"
@@ -1662,12 +1655,6 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
-"wo" = (
-/obj/structure/closet/cabinet{
-	pixel_y = 17
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "wq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/dropship/light_grey_bottom_right,
@@ -1694,11 +1681,6 @@
 /obj/structure/sign/poster/propaganda,
 /turf/closed/wall/almayer,
 /area/galleyburned/requisition)
-"wM" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hop,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "wR" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
@@ -1939,6 +1921,13 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"AG" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "AJ" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/canteen)
@@ -1966,11 +1955,6 @@
 	name = "\improper Residences"
 	},
 /turf/open/floor/almayer/plate,
-/area/galleyburned/residential)
-"Bj" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/device/flashlight/lamp,
-/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Bo" = (
 /turf/closed/shuttle/midway{
@@ -2019,6 +2003,10 @@
 /turf/closed/shuttle/midway{
 	icon_state = "75"
 	},
+/area/galleyburned/residential)
+"Ca" = (
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "Cg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2542,10 +2530,21 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
+"Iy" = (
+/obj/structure/closet/cabinet{
+	pixel_y = 17
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "IN" = (
 /turf/closed/shuttle/midway/transparent{
 	icon_state = "35"
 	},
+/area/galleyburned/residential)
+"IX" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "IY" = (
 /obj/structure/sign/banners/united_americas_flag{
@@ -2668,12 +2667,6 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"La" = (
-/obj/structure/machinery/door/airlock/almayer/secure{
-	dir = 1
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "Lj" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper T-02 [VACANT]"
@@ -3081,13 +3074,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
-"Rk" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/structure/machinery/prop/almayer/CICmap/computer{
-	dir = 8
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "Ry" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/stash)
@@ -3254,6 +3240,12 @@
 /obj/item/prop/scrap,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"Tz" = (
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"TR" = (
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "TT" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
@@ -3278,6 +3270,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"Uw" = (
+/obj/structure/inventory_machine,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "Uz" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -3452,6 +3448,15 @@
 	icon_state = "36"
 	},
 /area/galleyburned/residential)
+"XS" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
+	turned_on = 1
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "XW" = (
 /obj/structure/machinery/door/airlock/maintenance/colony{
 	dir = 2;
@@ -3500,9 +3505,6 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/galleyburned/residential)
-"Yp" = (
-/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Yv" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -5491,11 +5493,11 @@ DX
 vS
 JF
 ix
-mF
-an
+Ca
+Uw
 JF
-wo
-ap
+Iy
+Tz
 rj
 JF
 Xx
@@ -5542,13 +5544,13 @@ yC
 sh
 tZ
 kE
-Yp
-on
-Yp
-La
-Yp
-Yp
-Bj
+TR
+sZ
+TR
+si
+TR
+TR
+dh
 JF
 rQ
 yC
@@ -5595,11 +5597,11 @@ JF
 vS
 JF
 fl
-Rk
-tO
+AG
+rr
 JF
-id
-wM
+XS
+IX
 ZI
 JF
 zV
