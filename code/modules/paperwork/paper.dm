@@ -658,9 +658,10 @@
 /obj/item/paper/research_notes/LateInitialize()
 	. = ..()
 	generate()
+*/
 
 /obj/item/paper/research_notes/proc/generate()
-	is_objective = TRUE
+/*	is_objective = TRUE
 	if(!note_type)
 		note_type = pick(prob(50);"synthesis",prob(35);"grant",prob(15);"test")
 	var/datum/reagent/generated/C = data
@@ -730,6 +731,7 @@
 			txt += "<BR>\n<HR> - <I>Weyland-Yutani</I>"
 	info = txt
 */
+	return
 
 /obj/item/paper/research_notes/bad
 	note_type = "synthesis"
