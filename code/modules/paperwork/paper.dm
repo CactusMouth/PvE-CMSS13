@@ -642,7 +642,7 @@
 	var/datum/asset/asset = get_asset_datum(/datum/asset/simple/paper)
 	info = "<center><img src = [asset.get_url_mappings()["uscmlogo.png"]]></center><BR>\n<span class=\"paper_field\"></span>"
 
-/*/obj/item/paper/research_notes
+/obj/item/paper/research_notes
 	icon_state = "paper_wy_words"
 	unacidable = TRUE
 	var/datum/reagent/data
@@ -651,7 +651,7 @@
 	var/full_report
 	var/grant
 
-/obj/item/paper/research_notes/Initialize()
+/*/obj/item/paper/research_notes/Initialize()
 	. = ..()
 	return INITIALIZE_HINT_LATELOAD
 
@@ -729,6 +729,7 @@
 			txt += "Dear valued researcher. Weyland-Yutani has taken high interest of your recent scientific progress. To further support your work we have sent you this research grant of [grant] credits. Please scan at your local Weyland-Yutani research data terminal to receive the benefits.<BR>\n"
 			txt += "<BR>\n<HR> - <I>Weyland-Yutani</I>"
 	info = txt
+*/
 
 /obj/item/paper/research_notes/bad
 	note_type = "synthesis"
@@ -743,14 +744,15 @@
 	note_type = "synthesis"
 	full_report = TRUE
 
-/obj/item/paper/research_notes/good/Initialize()
+/*/obj/item/paper/research_notes/good/Initialize()
 	var/list/L = list("T3", "T4")
 	tier = pick(L)
 	. = ..()
+*/
 
 /obj/item/paper/research_notes/unique
 	note_type = "synthesis"
-	full_report = TRUE
+//	full_report = TRUE
 	var/gen_tier
 
 /obj/item/paper/research_notes/unique/tier_one
@@ -768,7 +770,7 @@
 /obj/item/paper/research_notes/unique/tier_five
 	gen_tier = 5
 
-/obj/item/paper/research_notes/unique/Initialize()
+/*/obj/item/paper/research_notes/unique/Initialize()
 	//Each one of these get a new unique chem
 	var/datum/reagent/generated/C = new /datum/reagent/generated
 	C.id = "tau-[length(GLOB.chemical_gen_classes_list["tau"])]"
@@ -785,6 +787,7 @@
 	data = C
 	msg_admin_niche("New reagent with id [C.id], name [C.name], level [C.gen_tier], generated and printed at [loc] [ADMIN_JMP(loc)].")
 	. = ..()
+*/
 
 /obj/item/paper/research_notes/grant
 	note_type = "grant"
@@ -798,7 +801,7 @@
 	var/datum/reagent/data
 	var/completed = FALSE
 
-/obj/item/paper/research_report/proc/generate(datum/reagent/S, info_only = FALSE)
+/*/obj/item/paper/research_report/proc/generate(datum/reagent/S, info_only = FALSE)
 	if(!S)
 		return
 	info += "<B>ID:</B> <I>[S.name]</I><BR><BR>\n"
