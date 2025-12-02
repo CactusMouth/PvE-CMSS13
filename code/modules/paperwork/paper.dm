@@ -803,8 +803,8 @@
 	var/datum/reagent/data
 	var/completed = FALSE
 
-/*/obj/item/paper/research_report/proc/generate(datum/reagent/S, info_only = FALSE)
-	if(!S)
+/obj/item/paper/research_report/proc/generate(datum/reagent/S, info_only = FALSE)
+/*	if(!S)
 		return
 	info += "<B>ID:</B> <I>[S.name]</I><BR><BR>\n"
 	info += "<B>Database Details:</B><BR>\n"
@@ -870,6 +870,7 @@
 
 	data = S
 */
+	return
 
 /obj/item/paper/incident
 	name = "incident report"
