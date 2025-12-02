@@ -26,6 +26,13 @@
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"an" = (
+/obj/structure/inventory_machine,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"ap" = (
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "as" = (
 /turf/closed/shuttle/midway{
 	icon_state = "104"
@@ -77,11 +84,6 @@
 	},
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/galleyburned/residential)
-"bh" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/device/flashlight/lamp,
-/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "bj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -471,10 +473,6 @@
 	icon_state = "47"
 	},
 /area/galleyburned/residential)
-"fW" = (
-/obj/structure/pipes/vents,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "gb" = (
 /turf/closed/shuttle/midway{
 	icon_state = "48"
@@ -611,6 +609,14 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"id" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled."
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "if" = (
 /obj/structure/sign/goldenplaque{
 	pixel_x = 32
@@ -1022,6 +1028,10 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"mF" = (
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "mG" = (
 /obj/structure/bed/chair/comfy{
 	dir = 8
@@ -1102,12 +1112,6 @@
 "nI" = (
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
-"nJ" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "od" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
@@ -1136,6 +1140,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"on" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "op" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -1309,9 +1319,6 @@
 /obj/effect/landmark/start/marine/alpha,
 /turf/open/floor/almayer/sterile_green,
 /area/galleyburned/cryo)
-"rg" = (
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "rh" = (
 /obj/item/weapon/twohanded/folded_metal_chair,
 /obj/item/weapon/twohanded/folded_metal_chair{
@@ -1490,6 +1497,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
+"tO" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/tool/pen/clicky{
+	name = "clicky pen"
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "tP" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "5"
@@ -1608,13 +1625,6 @@
 /obj/effect/landmark/start/marine/leader/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/galleyburned/cryo)
-"vH" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/structure/machinery/prop/almayer/CICmap/computer{
-	dir = 8
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "vM" = (
 /turf/closed/shuttle/midway/transparent{
 	icon_state = "23"
@@ -1652,6 +1662,12 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"wo" = (
+/obj/structure/closet/cabinet{
+	pixel_y = 17
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "wq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/dropship/light_grey_bottom_right,
@@ -1678,6 +1694,11 @@
 /obj/structure/sign/poster/propaganda,
 /turf/closed/wall/almayer,
 /area/galleyburned/requisition)
+"wM" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "wR" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
@@ -1690,16 +1711,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
-"wW" = (
-/obj/structure/inventory_machine,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
-"xh" = (
-/obj/structure/closet/cabinet{
-	pixel_y = 17
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "xp" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
@@ -1775,12 +1786,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
-"xZ" = (
-/obj/structure/machinery/door/airlock/almayer/secure{
-	dir = 1
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "ya" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
 /turf/open/floor/plating,
@@ -1961,6 +1966,11 @@
 	name = "\improper Residences"
 	},
 /turf/open/floor/almayer/plate,
+/area/galleyburned/residential)
+"Bj" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/device/flashlight/lamp,
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Bo" = (
 /turf/closed/shuttle/midway{
@@ -2370,19 +2380,6 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"FU" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hop,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
-"FZ" = (
-/obj/structure/machinery/defenses/planted_flag/wy{
-	disassemble_time = 6000000;
-	name = "repurposed WY flag";
-	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled."
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "Ga" = (
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/galleyburned/requisition)
@@ -2671,6 +2668,12 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"La" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "Lj" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper T-02 [VACANT]"
@@ -2986,16 +2989,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
-"PF" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/tool/pen/clicky{
-	name = "clicky pen"
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "PK" = (
 /obj/structure/bed/chair/comfy/beige{
 	desc = "A chair with leather padding and adjustable headrest. It used be for the squad's Platoon Commander, but you haven't seen them around for a while...";
@@ -3087,6 +3080,13 @@
 	id = "s3"
 	},
 /turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/residential)
+"Rk" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "Ry" = (
 /turf/closed/wall/almayer,
@@ -3417,9 +3417,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/stash)
-"WN" = (
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "Xt" = (
 /turf/closed/shuttle/midway{
 	icon_state = "62"
@@ -3503,6 +3500,9 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"Yp" = (
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Yv" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -3592,10 +3592,6 @@
 	light_power = 0.8;
 	light_range = 4;
 	pixel_y = 10
-	},
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper M-02 [VACANT]";
-	dir = 2
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/galleyburned/residential)
@@ -5495,11 +5491,11 @@ DX
 vS
 JF
 ix
-fW
-wW
+mF
+an
 JF
-xh
-rg
+wo
+ap
 rj
 JF
 Xx
@@ -5546,13 +5542,13 @@ yC
 sh
 tZ
 kE
-WN
-nJ
-WN
-xZ
-WN
-WN
-bh
+Yp
+on
+Yp
+La
+Yp
+Yp
+Bj
 JF
 rQ
 yC
@@ -5599,11 +5595,11 @@ JF
 vS
 JF
 fl
-vH
-PF
+Rk
+tO
 JF
-FZ
-FU
+id
+wM
 ZI
 JF
 zV
