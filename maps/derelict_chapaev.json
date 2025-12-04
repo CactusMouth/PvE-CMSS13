@@ -1,0 +1,7 @@
+{
+    "map_name": "Derelict Chapaev",
+    "map_path": "map_files/derelict_chapaev",
+    "map_file": "derelict_chapaev.dmm",
+    "traits": [{ "Ground": true }],
+    "camouflage": "jungle",
+}
