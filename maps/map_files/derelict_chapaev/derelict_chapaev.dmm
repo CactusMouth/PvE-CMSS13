@@ -1125,6 +1125,8 @@
 	light_power = 0.8;
 	light_range = 5
 	},
+/obj/structure/surface/rack,
+/obj/item/ammo_box/magazine/type71/heap,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
 "cg" = (
@@ -1724,10 +1726,6 @@
 	light_power = 0.8;
 	light_range = 4
 	},
-/obj/structure/closet/secure_closet/marine_personal/upp/platoon_leader{
-	can_block_movement = 0;
-	pixel_x = -7
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "dn" = (
@@ -1776,10 +1774,6 @@
 	light_color = "#e7c0a4";
 	light_power = 0.8;
 	light_range = 4
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/smartgunner{
-	can_block_movement = 0;
-	pixel_x = 7
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
@@ -1886,10 +1880,6 @@
 	pixel_y = 10;
 	pixel_x = -13
 	},
-/obj/structure/closet/secure_closet/marine_personal/upp/corpsman{
-	pixel_x = -7;
-	can_block_movement = 0
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "dI" = (
@@ -1935,10 +1925,6 @@
 	dir = 4;
 	pixel_y = 10;
 	pixel_x = 11
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
-	can_block_movement = 0;
-	pixel_x = 7
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
@@ -1986,21 +1972,12 @@
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
 "dT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
-	can_block_movement = 0;
-	pixel_x = -7
-	},
-/turf/open/floor/strata/multi_tiles,
+/obj/structure/closet/crate/secure/upp/alt,
+/obj/item/storage/box/packet/high_explosive/upp/incend,
+/obj/item/storage/box/packet/phosphorus/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
 "dU" = (
 /obj/structure/pipes/vents/pump{
@@ -2111,20 +2088,12 @@
 	icon_state = "W";
 	pixel_x = -1
 	},
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = -7
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "ep" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
 	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = 7
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
@@ -2302,21 +2271,11 @@
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
 "eD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
+/obj/structure/surface/table/almayer{
+	color = "#8B9490"
 	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = -7
-	},
-/turf/open/floor/strata/multi_tiles,
+/obj/item/ammo_box/magazine/type71,
+/turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
 "eE" = (
 /obj/effect/decal/warning_stripes{
@@ -2336,10 +2295,6 @@
 	},
 /obj/structure/pipes/standard/manifold/visible/supply{
 	dir = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/platoon_commander{
-	can_block_movement = 0;
-	pixel_y = 10
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
@@ -2362,20 +2317,13 @@
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
 "eI" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
-	can_block_movement = 0;
-	pixel_x = 7
-	},
+/obj/structure/closet/crate/secure/upp/alt,
+/obj/item/ammo_box/magazine/misc/mre/upp,
+/obj/item/ammo_box/magazine/misc/mre/upp,
+/obj/item/ammo_box/magazine/misc/mre/upp,
+/obj/item/ammo_box/magazine/misc/flares/upp,
+/obj/item/ammo_box/magazine/misc/flares/upp,
+/obj/item/ammo_box/magazine/misc/flares/upp,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "eJ" = (
@@ -5868,6 +5816,7 @@
 	light_power = 0.8;
 	light_range = 5
 	},
+/obj/item/weapon/gun/launcher/grenade/m92/upp,
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
 "ns" = (
@@ -6089,17 +6038,7 @@
 /obj/structure/surface/rack{
 	color = "#8B9490"
 	},
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
-/obj/item/rappel_harness/extract/nauk,
+/obj/item/ammo_box/magazine/nade_box/upp,
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
 "nX" = (
@@ -8082,6 +8021,13 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
+"zA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/item/stool,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/cryo_cells)
 "zN" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
@@ -8236,6 +8182,13 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
+"Kw" = (
+/obj/structure/surface/table/almayer{
+	color = "#8B9490"
+	},
+/obj/item/weapon/gun/rifle/type71/carbine,
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/golden_arrow/cryo_cells)
 "Lk" = (
 /obj/structure/machinery/power/reactor{
 	name = "\improper U.R.A.L.O.I.D. thermonuclear generator";
@@ -8421,6 +8374,18 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/hangar)
+"ZD" = (
+/obj/structure/closet/crate/secure/upp,
+/obj/item/ammo_box/magazine/type64/heap,
+/obj/item/ammo_box/magazine/type64/ap,
+/obj/item/ammo_box/magazine/type64/ap,
+/obj/item/ammo_box/magazine/type64,
+/obj/item/ammo_box/magazine/type64,
+/obj/item/weapon/gun/smg/bizon/upp,
+/obj/item/weapon/gun/smg/bizon/upp,
+/obj/item/weapon/gun/smg/bizon/upp,
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/golden_arrow/cryo_cells)
 "ZS" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
@@ -12970,8 +12935,8 @@ bE
 bE
 bF
 bF
-cq
-cq
+ZD
+dT
 bF
 bF
 bE
@@ -13411,9 +13376,9 @@ fs
 fg
 eU
 bF
-eD
+dl
 eo
-dT
+dl
 dH
 dl
 bF
@@ -13577,8 +13542,8 @@ cr
 cl
 zN
 zN
-bP
-bP
+eI
+eI
 bP
 bP
 zN
@@ -13882,7 +13847,7 @@ co
 zN
 zN
 bP
-bP
+eI
 bP
 bP
 zN
@@ -14019,7 +13984,7 @@ fs
 fm
 eT
 bF
-eI
+dr
 ep
 dr
 dM
@@ -14338,7 +14303,7 @@ bF
 bF
 bF
 cf
-bY
+zA
 bY
 bQ
 bF
@@ -14490,8 +14455,8 @@ bE
 bE
 bF
 bF
-cq
-cq
+Kw
+eD
 bF
 bF
 bE
