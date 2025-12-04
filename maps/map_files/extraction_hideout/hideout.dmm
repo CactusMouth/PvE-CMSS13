@@ -26,6 +26,19 @@
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"ar" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m4";
+	dir = 2
+	},
+/obj/structure/machinery/door/airlock/almayer/secure/glass{
+	name = "\improper M-04 [B. FRANKS]";
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "as" = (
 /turf/closed/shuttle/midway{
 	icon_state = "104"
@@ -44,12 +57,6 @@
 	},
 /obj/structure/window/framed/upp/grey,
 /turf/open/floor/plating,
-/area/galleyburned/residential)
-"az" = (
-/obj/structure/closet/cabinet{
-	pixel_y = 17
-	},
-/turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "aA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -97,18 +104,6 @@
 "bz" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_NWcorner,
 /turf/open/floor/almayer/mono,
-/area/galleyburned/residential)
-"bA" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	dir = 2;
-	name = "\improper M-03 [VACANT]"
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m3";
-	dir = 2
-	},
-/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "bB" = (
 /obj/structure/largecrate/random/barrel{
@@ -399,10 +394,6 @@
 	icon_state = "97a"
 	},
 /area/galleyburned/residential)
-"eM" = (
-/obj/structure/inventory_machine,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "eZ" = (
 /obj/item/prop/tableflag{
 	pixel_x = 0;
@@ -440,9 +431,6 @@
 /obj/structure/personal_stash,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
-"fv" = (
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "fx" = (
 /turf/closed/shuttle/midway{
 	icon_state = "72"
@@ -505,16 +493,8 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/prep)
-"go" = (
-/obj/structure/window/framed/almayer,
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s6"
-	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
 "gs" = (
-/turf/closed/wall/almayer/outer,
+/turf/open/floor/plating,
 /area/galleyburned)
 "gH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -598,6 +578,19 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
+"hB" = (
+/obj/structure/prop/hybrisa/airport/deadpilot2{
+	name = "Captain Logan";
+	desc = "Former civilian captain of the USS Galleyburned before it was 'donated' to Robert's Raiders. Man, he's been down here a while!";
+	layer = 2.97
+	},
+/obj/structure/largecrate/random/barrel/purewhite,
+/obj/structure/catwalk/bigred,
+/obj/structure/barricade/handrail{
+	layer = 4
+	},
+/turf/open/floor/plating,
+/area/galleyburned)
 "hE" = (
 /obj/structure/prop/almayer/ship_memorial{
 	desc = "A surprisingly tasteful memorial to the men and women that Robert's Raiders have lost in their quest for wealth and dominance. You can add someone's dogtag to it to memorialize them forever.";
@@ -640,19 +633,18 @@
 	},
 /turf/open/shuttle/dropship/light_grey_top_left,
 /area/galleyburned/residential)
+"io" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "it" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "21"
 	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
-"iw" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m2";
-	dir = 2
-	},
-/obj/structure/window/framed/almayer,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "ix" = (
@@ -767,11 +759,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
-"jC" = (
-/obj/structure/catwalk/bigred,
-/obj/structure/barricade/handrail,
-/turf/open/floor/plating,
-/area/galleyburned)
+"jw" = (
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "jI" = (
 /obj/structure/bed/chair/comfy/orange{
 	dir = 4;
@@ -791,24 +782,15 @@
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/galleyburned/residential)
 "jT" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m4";
-	dir = 4
+/obj/structure/catwalk/bigred,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
 	},
-/obj/structure/window/framed/almayer,
 /turf/open/floor/plating,
-/area/galleyburned/residential)
-"jU" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/tool/pen/clicky{
-	name = "clicky pen"
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
+/area/galleyburned)
 "jZ" = (
 /obj/structure/machinery/door/airlock/upp_utility{
 	name = "\improper M-01 [H. SCHNEIDER]";
@@ -873,15 +855,6 @@
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"kt" = (
-/obj/structure/machinery/door_control{
-	pixel_y = -19;
-	pixel_x = -7;
-	name = "door lock";
-	id = "s6"
-	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
 "kw" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -938,23 +911,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
-"kX" = (
-/obj/structure/catwalk/bigred,
-/obj/structure/largecrate/random/barrel/brown,
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 3.3;
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/plating,
-/area/galleyburned)
 "lk" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -1050,10 +1006,6 @@
 "mn" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
-"mo" = (
-/obj/structure/surface/table/woodentable/fancy,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "mt" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -1124,14 +1076,6 @@
 	icon_state = "103"
 	},
 /area/galleyburned/residential)
-"nk" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/structure/surface/table/woodentable/fancy,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "nq" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre,
 /turf/open/floor/strata/multi_tiles/southeast,
@@ -1170,10 +1114,6 @@
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
-"nG" = (
-/obj/structure/largecrate,
-/turf/open/floor/plating,
-/area/galleyburned)
 "nI" = (
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
@@ -1215,13 +1155,6 @@
 /obj/structure/machinery/door/window/southleft,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
-"oq" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/residential)
 "oJ" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -1236,6 +1169,15 @@
 "oO" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_NEcorner,
 /turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
+"oS" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m2";
+	dir = 2
+	},
+/obj/structure/window/framed/almayer,
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "oW" = (
 /obj/effect/step_trigger/message/memorial,
@@ -1307,6 +1249,13 @@
 /obj/structure/fence/electrified,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"pD" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/residential)
 "pL" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
@@ -1333,6 +1282,14 @@
 "pT" = (
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
+"pU" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1;
+	req_access = null;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "pV" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -1351,6 +1308,14 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"qy" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s6"
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "qB" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
 /turf/open/floor/plating/plating_catwalk,
@@ -1363,6 +1328,18 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"qD" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	dir = 2;
+	name = "\improper M-03 [VACANT]"
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m3";
+	dir = 2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/residential)
 "qH" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/prep)
@@ -1593,15 +1570,9 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
 "ui" = (
-/obj/structure/catwalk/bigred,
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 3.3;
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/turf/open/floor/plating,
-/area/galleyburned)
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "um" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -1692,23 +1663,15 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "vV" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	name = "\improper S-06 [VACANT]";
+	dir = 2
 	},
-/obj/structure/filingcabinet{
-	pixel_x = -8
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "s6"
 	},
-/obj/structure/filingcabinet{
-	pixel_x = 8
-	},
-/obj/structure/machinery/door_control{
-	pixel_x = 8;
-	pixel_y = 22;
-	name = "door lock";
-	id = "m4"
-	},
-/turf/open/floor/hybrisa/wood/greywood,
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "vX" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -1755,53 +1718,40 @@
 /obj/structure/sign/poster/propaganda,
 /turf/closed/wall/almayer,
 /area/galleyburned/requisition)
+"wG" = (
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"wK" = (
+/obj/structure/catwalk/bigred,
+/obj/structure/largecrate/random/barrel/brown,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/turf/open/floor/plating,
+/area/galleyburned)
 "wR" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
-"wU" = (
-/obj/structure/catwalk/bigred,
-/obj/item/weapon/gun/revolver/mateba/general{
-	pixel_x = -6;
-	pixel_y = 2;
-	desc = "Captain Logan's personal revolver. No way you're picking up a gun that's been next to a corpse. What are you, an animal?";
-	name = "Logan's Mateba";
-	anchored = 1;
-	layer = 2.97
-	},
-/obj/structure/barricade/handrail,
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/plating,
-/area/galleyburned)
 "wV" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
-"wW" = (
+"xb" = (
 /obj/structure/flora/pottedplant,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
-"xn" = (
-/obj/structure/machinery/defenses/planted_flag/wy{
-	disassemble_time = 6000000;
-	name = "repurposed WY flag";
-	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
-	turned_on = 1
-	},
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
 	light_power = 0.7
@@ -1893,17 +1843,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
-"yj" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-06 [VACANT]";
-	dir = 2
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "s6"
-	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
 "yl" = (
 /obj/effect/attach_point/electronics/midway,
 /turf/open/floor/plating,
@@ -1934,6 +1873,12 @@
 "yE" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
+"yK" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "yO" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/plate,
@@ -2047,19 +1992,19 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"AB" = (
-/obj/structure/prop/hybrisa/airport/deadpilot2{
-	name = "Captain Logan";
-	desc = "Former civilian captain of the USS Galleyburned before it was 'donated' to Robert's Raiders. Man, he's been down here a while!";
-	layer = 2.97
+"AE" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
+	turned_on = 1
 	},
-/obj/structure/largecrate/random/barrel/purewhite,
-/obj/structure/catwalk/bigred,
-/obj/structure/barricade/handrail{
-	layer = 4
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
 	},
-/turf/open/floor/plating,
-/area/galleyburned)
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "AJ" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/canteen)
@@ -2136,6 +2081,10 @@
 	icon_state = "75"
 	},
 /area/galleyburned/residential)
+"BQ" = (
+/obj/structure/largecrate,
+/turf/open/floor/plating,
+/area/galleyburned)
 "Cg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3
@@ -2419,12 +2368,12 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
 "EZ" = (
-/obj/effect/decal/hybrisa/warning/redandwhite_S,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
 	light_power = 0.7
 	},
-/turf/open/floor/almayer/plate,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Fc" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2437,16 +2386,6 @@
 /obj/structure/machinery/landinglight/ds1/delayone,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
-"Fi" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.7
-	},
-/turf/open/floor/almayer/plate,
-/area/galleyburned/residential)
 "Fn" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -2627,9 +2566,15 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/galleyburned/residential)
-"HK" = (
-/obj/structure/pipes/vents,
-/turf/open/floor/hybrisa/wood/greywood,
+"HM" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
 "HO" = (
 /obj/structure/barricade/handrail/type_b{
@@ -2690,10 +2635,6 @@
 "Jf" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/maint)
-"Jk" = (
-/obj/structure/catwalk/bigred,
-/turf/open/floor/plating,
-/area/galleyburned)
 "Jl" = (
 /obj/structure/platform{
 	dir = 1
@@ -2745,9 +2686,6 @@
 	},
 /turf/open/floor/almayer,
 /area/galleyburned/requisition)
-"JY" = (
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "Kg" = (
 /obj/structure/machinery/prop/almayer/CICmap{
 	pixel_y = 5;
@@ -2755,19 +2693,6 @@
 	layer = 4
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/plating,
-/area/galleyburned/residential)
-"Ki" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "m4";
-	dir = 2
-	},
-/obj/structure/machinery/door/airlock/almayer/secure/glass{
-	name = "\improper M-02 [B. FRANKS]";
-	dir = 1;
-	req_access = null
-	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Kk" = (
@@ -2811,6 +2736,9 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
+"KL" = (
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "KT" = (
 /obj/item/reagent_container/syringe/drugs{
 	pixel_y = 15;
@@ -2818,12 +2746,24 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"Lj" = (
+"Ld" = (
 /obj/structure/surface/table/woodentable/fancy,
-/obj/structure/machinery/prop/almayer/CICmap/computer{
-	dir = 8
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/tool/pen/clicky{
+	name = "clicky pen"
 	},
 /turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"Lj" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m4";
+	dir = 4
+	},
+/obj/structure/window/framed/almayer,
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Lk" = (
 /obj/structure/prop/hybrisa/supermart/souto_man_prop{
@@ -2961,13 +2901,6 @@
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
-"MJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.7
-	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
 "MW" = (
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
@@ -3052,14 +2985,6 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
-"OB" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
-/area/galleyburned/residential)
 "OC" = (
 /obj/structure/shuttle/part/midway/transparent{
 	icon_state = "99a"
@@ -3094,6 +3019,32 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
+"OR" = (
+/obj/structure/closet/cabinet{
+	pixel_y = 17
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"OW" = (
+/obj/structure/catwalk/bigred,
+/obj/item/weapon/gun/revolver/mateba/general{
+	pixel_x = -6;
+	pixel_y = 2;
+	desc = "Captain Logan's personal revolver. No way you're picking up a gun that's been next to a corpse. What are you, an animal?";
+	name = "Logan's Mateba";
+	anchored = 1;
+	layer = 2.97
+	},
+/obj/structure/barricade/handrail,
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4;
+	pixel_y = 10
+	},
+/turf/open/floor/plating,
+/area/galleyburned)
 "OY" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/stash)
@@ -3184,8 +3135,24 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Qx" = (
-/turf/open/floor/almayer/empty,
-/area/galleyburned)
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/obj/structure/machinery/door_control{
+	pixel_x = 8;
+	pixel_y = 22;
+	name = "door lock";
+	id = "m4"
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "QB" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -3210,6 +3177,14 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"QJ" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/galleyburned/residential)
 "QP" = (
 /obj/structure/stairs{
 	dir = 1
@@ -3247,6 +3222,15 @@
 /turf/closed/shuttle/midway{
 	icon_state = "77"
 	},
+/area/galleyburned/residential)
+"RT" = (
+/obj/structure/machinery/door_control{
+	pixel_y = -19;
+	pixel_x = -7;
+	name = "door lock";
+	id = "s6"
+	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "RV" = (
 /obj/item/prop/colony/used_flare,
@@ -3317,6 +3301,11 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
+"SD" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "SE" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/door/window/eastright,
@@ -3421,14 +3410,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
-"Uq" = (
-/obj/structure/machinery/door/airlock/almayer/secure{
-	dir = 1;
-	req_access = null;
-	name = "\improper Airlock"
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "Uz" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -3483,6 +3464,10 @@
 /obj/docking_port/stationary/marine_dropship/galleyburned_hangar,
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"Vv" = (
+/obj/structure/catwalk/bigred,
+/turf/open/floor/plating,
+/area/galleyburned)
 "VB" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -8;
@@ -3508,6 +3493,13 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
+"VU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "VW" = (
 /obj/structure/surface/rack,
 /obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
@@ -3572,18 +3564,25 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/stash)
+"WP" = (
+/obj/structure/inventory_machine,
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
+"WR" = (
+/obj/structure/catwalk/bigred,
+/obj/structure/barricade/handrail,
+/turf/open/floor/plating,
+/area/galleyburned)
 "Xt" = (
 /turf/closed/shuttle/midway{
 	icon_state = "62"
 	},
 /area/galleyburned/residential)
 "Xx" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hop,
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
+/turf/closed/wall/almayer/outer,
+/area/galleyburned)
 "Xz" = (
-/turf/open/floor/plating,
+/turf/open/floor/almayer/empty,
 /area/galleyburned)
 "XD" = (
 /turf/closed/wall/almayer,
@@ -3644,12 +3643,6 @@
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
-"Ym" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "Yv" = (
 /obj/structure/machinery/door/poddoor/railing{
 	dir = 4;
@@ -3705,6 +3698,13 @@
 /obj/item/tool/hand_labeler,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
+"Zx" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/greywood,
+/area/galleyburned/residential)
 "Zz" = (
 /turf/open/shuttle/dropship/light_grey_bottom_left,
 /area/galleyburned/residential)
@@ -4796,19 +4796,19 @@ hA
 EM
 "}
 (21,1,1) = {"
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
-gs
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
+Xx
 Jf
 Jf
 Jf
@@ -4848,23 +4848,23 @@ qa
 Jf
 "}
 (22,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-AB
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
+gs
+Xx
+hB
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
 Jf
 Te
 XD
@@ -4900,23 +4900,23 @@ EC
 Jf
 "}
 (23,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-jC
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
+gs
+Xx
+WR
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
 Jf
 Ct
 XD
@@ -4952,23 +4952,23 @@ GM
 Jf
 "}
 (24,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-wU
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
+gs
+Xx
+OW
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
 Jf
 UZ
 UZ
@@ -5004,23 +5004,23 @@ TY
 Jf
 "}
 (25,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-jC
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
+gs
+Xx
+WR
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
+Xz
 Jf
 Jf
 Jf
@@ -5056,24 +5056,12 @@ vy
 Jf
 "}
 (26,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-jC
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
-Qx
 gs
+Xx
+WR
 Xz
 Xz
 Xz
@@ -5085,10 +5073,22 @@ Xz
 Xz
 Xz
 Xz
-Xz
-Xz
-Xz
-Xz
+Xx
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 ZQ
 UZ
@@ -5108,39 +5108,39 @@ of
 Kr
 "}
 (27,1,1) = {"
+Xx
 gs
-Xz
-Xz
-Xz
 gs
-Jk
-ui
-ui
-ui
-ui
-kX
-ui
-ui
-ui
-ui
-ui
-ui
 gs
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+Xx
+Vv
+jT
+jT
+jT
+jT
+wK
+jT
+jT
+jT
+jT
+jT
+jT
+Xx
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 YR
 UZ
@@ -5167,32 +5167,32 @@ sN
 sN
 sN
 sN
-jT
-jT
-jT
+Lj
+Lj
+Lj
 sN
-jT
-jT
-jT
+Lj
+Lj
+Lj
 sN
+Xx
+Xx
+Xx
 gs
 gs
 gs
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 RV
 UZ
@@ -5216,35 +5216,35 @@ sN
 fl
 yC
 mt
-go
-oq
+qy
+pD
 JF
-vV
-HK
-eM
+Qx
+ui
+WP
 JF
-az
-JY
-mo
+OR
+KL
+jw
 sN
-nG
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+BQ
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 kd
 US
@@ -5268,35 +5268,35 @@ sN
 yC
 mt
 yC
-yj
+vV
 tZ
-Ki
-fv
-Ym
-fv
-Uq
-fv
-fv
+ar
+wG
+yK
+wG
+pU
+wG
+wG
 XY
 sN
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 cg
 NM
@@ -5317,38 +5317,38 @@ Kr
 "}
 (31,1,1) = {"
 sN
-OB
+EZ
 mt
-kt
+RT
 JF
 vS
 JF
-nk
-Lj
-jU
+io
+Zx
+Ld
 JF
-xn
-Xx
-wW
+AE
+SD
+xb
 sN
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 lV
 UZ
@@ -5373,7 +5373,7 @@ JF
 JF
 JF
 JF
-Fi
+HM
 JF
 JF
 JF
@@ -5383,24 +5383,24 @@ JF
 JF
 JF
 sN
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 mc
 UZ
@@ -5433,26 +5433,26 @@ Sv
 yC
 mt
 Sv
-MJ
+VU
 sN
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
-Xz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
 Jf
 Jf
 Jf
@@ -5478,7 +5478,7 @@ mt
 yC
 YU
 tZ
-bA
+qD
 yC
 yC
 yC
@@ -5505,7 +5505,7 @@ sN
 sN
 sN
 sN
-gs
+Xx
 Jb
 Jb
 Jf
@@ -5591,7 +5591,7 @@ JF
 JF
 JF
 JF
-EZ
+QJ
 yC
 yC
 yC
@@ -5642,7 +5642,7 @@ mt
 yC
 yC
 rj
-iw
+oS
 zV
 yC
 yC
@@ -5694,7 +5694,7 @@ yC
 mt
 yC
 yC
-iw
+oS
 rQ
 yC
 sW
@@ -5746,7 +5746,7 @@ yC
 mt
 mt
 ZI
-iw
+oS
 zV
 sG
 rx
@@ -6007,7 +6007,7 @@ aw
 aw
 aw
 gX
-EZ
+QJ
 yC
 yC
 yC
