@@ -1024,4 +1024,44 @@
 	time_to_unequip = 20
 	time_to_equip = 20
 
+// =MARAUDERS & SCAVS= \\
 
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder
+	name = "\improper K6 ceramic plated armor"
+	desc = "An early model of the highly sought-after K12 armor, usually favored by mercenaries or pirates on a budget. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_heavy_armor"
+	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	item_state_slots = list(WEAR_JACKET = "mercenary_heavy_armor")
+
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder/miner
+	name = "\improper Y4 armored miner vest"
+	desc = "An early model of Y8 mining armor. Much like the modern version, the Y4 armor sees more use by mercenaries and pirates rather than being used in actual mining operations -- this is primarily due to its sturdiness, while still being technically legal for a civilian to own. While not nearly as protective as the Y8 variant, it still deflects bullets easily enough."
+	icon_state = "mercenary_miner_armor"
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_HIGH
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	item_state_slots = list(WEAR_JACKET = "mercenary_miner_armor")
+
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder/support
+	name = "\improper Z3 armored vest"
+	desc = "An early model of the highly sought-after Z7 support armor, usually favored by mercenaries or pirates tasked with more technical work. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_engineer_armor"
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_energy = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_HIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	item_state_slots = list(WEAR_JACKET = "mercenary_engineer_armor")

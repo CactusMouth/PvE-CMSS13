@@ -1282,11 +1282,6 @@
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	skills = /datum/skills/pfc/extraction
 
-/datum/equipment_preset/uscm/sg/raider
-	name = "Raider Squad Smartgunner"
-	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
-	skills = /datum/skills/smartgunner/extraction
-
 /datum/equipment_preset/uscm/medic/raider
 	name = "Raider Corpsman"
 	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)

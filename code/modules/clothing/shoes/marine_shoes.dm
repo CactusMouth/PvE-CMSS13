@@ -112,6 +112,9 @@
 	icon_state = "marine_jungle"
 	desc = "A pair of jungle boots not so dissimilar from military combat boots, a likely culprit for their inspiration. They'll get the job done, whether that's hiking, or kicking in teeth."
 
+/obj/item/clothing/shoes/marine/civilian/jungle/knife
+	spawn_item_type = /obj/item/weapon/knife/marine/bowie
+
 /obj/item/clothing/shoes/marine/joe
 	name = "biohazard boots"
 	desc = "A pair of utilitarian biohazard boots."

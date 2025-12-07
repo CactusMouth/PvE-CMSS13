@@ -190,9 +190,6 @@
 /obj/structure/closet/secure_closet/marine_personal/raider/rifleman
 	job = JOB_SQUAD_MARINE
 
-/obj/structure/closet/secure_closet/marine_personal/raider/smartgunner
-	job = JOB_SQUAD_SMARTGUN
-
 /obj/structure/closet/secure_closet/marine_personal/raider/corpsman
 	job = JOB_SQUAD_MEDIC
 

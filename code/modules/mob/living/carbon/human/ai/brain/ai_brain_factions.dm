@@ -1975,6 +1975,7 @@
 
 /datum/human_ai_faction/scav
 	faction = FACTION_SCAV
+	friendly_factions = list()
 	neutral_factions = list()
 	enter_combat_lines = list(
 		"Kill that motherfucker!",

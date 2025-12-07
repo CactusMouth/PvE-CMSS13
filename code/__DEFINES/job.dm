@@ -58,7 +58,6 @@
 #define JOB_SQUAD_TEAM_LEADER_RAIDER "Raider Team Leader"
 #define JOB_SQUAD_ENGINEER_RAIDER "Raider Engineer"
 #define JOB_SQUAD_MEDIC_RAIDER "Raider Corpsman"
-#define JOB_SQUAD_SMARTGUN_RAIDER "Raider Smartgunner"
 #define JOB_SQUAD_MARINE_RAIDER "Raider Rifleman"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)

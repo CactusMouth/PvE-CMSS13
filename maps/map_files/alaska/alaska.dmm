@@ -119,9 +119,33 @@
 "al" = (
 /turf/closed/wall/almayer,
 /area/black_alaska/telecomms_lower)
+"am" = (
+/obj/effect/landmark/start/marine/leader/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/leader,
+/turf/open/floor/plating/plating_catwalk/aicore/white,
+/area/black_alaska/cryo_cells)
+"an" = (
+/obj/effect/landmark/start/marine/engineer/ai/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/engineer,
+/turf/open/floor/plating/plating_catwalk/aicore/white,
+/area/black_alaska/cryo_cells)
 "ao" = (
 /turf/open/floor/almayer,
 /area/almayer/command/torpedo_deck)
+"ap" = (
+/obj/effect/landmark/start/marine/tl/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/tl,
+/turf/open/floor/plating/plating_catwalk/aicore/white,
+/area/black_alaska/cryo_cells)
 "aq" = (
 /obj/structure/roof/cargocrane_tracks/vertical{
 	pixel_y = 14
@@ -1499,12 +1523,6 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/black_alaska/showers_bathroom)
-"fG" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/smartgunner/alpha,
-/obj/effect/landmark/late_join/alpha,
-/turf/open/floor/plating/plating_catwalk/aicore/white,
-/area/black_alaska/cryo_cells)
 "fI" = (
 /obj/structure/roof/cargocrane_tracks/corner{
 	pixel_y = 14
@@ -2497,13 +2515,15 @@
 /turf/closed/wall/almayer/outer,
 /area/space)
 "jb" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice12";
 	pixel_y = 16
 	},
+/obj/effect/landmark/start/marine/engineer/ai/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/engineer,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "jd" = (
@@ -5049,13 +5069,15 @@
 	},
 /area/black_alaska/medical_upper)
 "uy" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/bridge,
-/obj/effect/landmark/late_join/alpha,
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice12";
 	pixel_y = 16
 	},
+/obj/effect/landmark/start/marine/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "uA" = (
@@ -5846,9 +5868,11 @@
 /turf/open/floor/almayer/plating/northeast,
 /area/black_alaska/engineering_upper)
 "AU" = (
+/obj/effect/landmark/start/marine/medic/raider,
+/obj/effect/landmark/late_join/raider,
 /obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/leader/alpha,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/medic,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "AV" = (
@@ -6159,12 +6183,6 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/black_alaska/medical_upper)
-"BS" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/medic/alpha,
-/obj/effect/landmark/late_join/alpha,
-/turf/open/floor/plating/plating_catwalk/aicore/white,
-/area/black_alaska/cryo_cells)
 "BT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -6368,9 +6386,11 @@
 /turf/open/floor/wood/ship,
 /area/black_alaska/basketball)
 "CC" = (
+/obj/effect/landmark/late_join/raider,
 /obj/effect/landmark/late_join,
-/obj/effect/landmark/start/bridge,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/bridge,
+/obj/effect/landmark/start/bridge/raider,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "CH" = (
@@ -9446,9 +9466,11 @@
 /turf/open/floor/almayer/test_floor4,
 /area/black_alaska/showers_bathroom)
 "Os" = (
+/obj/effect/landmark/start/marine/raider,
+/obj/effect/landmark/late_join/raider,
 /obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/tl/alpha,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "Ou" = (
@@ -10678,13 +10700,15 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/black_alaska/morgue)
 "TB" = (
-/obj/effect/landmark/late_join,
-/obj/effect/landmark/start/marine/leader/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice12";
 	pixel_y = 16
 	},
+/obj/effect/landmark/start/marine/medic/raider,
+/obj/effect/landmark/late_join/raider,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/start/marine/medic,
 /turf/open/floor/plating/plating_catwalk/aicore/white,
 /area/black_alaska/cryo_cells)
 "TC" = (
@@ -43544,16 +43568,16 @@ Vg
 gA
 YE
 jh
-BS
-BS
+CC
+am
 jb
 AU
-oM
+ap
 ku
-oM
+ap
 TB
-oM
-oM
+an
+am
 CC
 jh
 YE
@@ -43906,16 +43930,16 @@ Vg
 gA
 YE
 jh
-fG
-fG
-jb
-AU
-oM
-Dl
-oM
+Os
+Os
 uy
 Os
-oM
+ap
+Dl
+ap
+uy
+Os
+Os
 Os
 jh
 YE

@@ -106,7 +106,7 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	gear_preset = /datum/equipment_preset/uscm_ship/so/raider
 	job_options = null
 
-/obj/effect/landmark/start/bridge/pmc
+/obj/effect/landmark/start/bridge/raider
 	name = JOB_SO_RAIDER
 	job = /datum/job/command/bridge/ai/raider
 
