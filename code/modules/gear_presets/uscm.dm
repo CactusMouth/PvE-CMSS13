@@ -1283,6 +1283,9 @@
 	. = ..()
 	new_human.allow_gun_usage = FALSE
 
+/datum/equipment_preset/synth/uscm/extraction/load_gear(mob/living/carbon/human/new_human)
+	return
+
 // raiders
 
 /datum/equipment_preset/uscm/pfc/raider
