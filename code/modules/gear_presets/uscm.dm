@@ -1275,6 +1275,10 @@
 	name = "Ex-USCM Deserter Sergeant"
 	skills = /datum/skills/SL/extraction
 
+/datum/equipment_preset/synth/uscm/extraction
+	name = "Ex-USCM Synthetic"
+	new_human.allow_gun_usage = FALSE
+
 // raiders
 
 /datum/equipment_preset/uscm/pfc/raider

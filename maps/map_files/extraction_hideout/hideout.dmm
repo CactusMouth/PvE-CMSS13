@@ -934,6 +934,13 @@
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
+"lF" = (
+/obj/structure/machinery/door/airlock/engineering/colony{
+	dir = 1;
+	name = "\improper Synthetic Storage"
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/synthcloset)
 "lQ" = (
 /obj/structure/machinery/bot/medbot/mysterious{
 	desc = "A little Weyland-Yutani medical robot that the Raiders picked up from CORSAT. It's become favored by the logistic technicians onboard due to it being self-cleaning.";
@@ -1106,6 +1113,11 @@
 /obj/structure/machinery/door/window/southright,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
+"nz" = (
+/obj/structure/machinery/recharge_station,
+/obj/effect/landmark/start/synthetic,
+/turf/open/floor/plating,
+/area/golden_arrow/synthcloset)
 "nI" = (
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
@@ -1147,6 +1159,14 @@
 /obj/structure/machinery/door/window/southleft,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
+"oE" = (
+/obj/structure/machinery/cm_vending/clothing/synth/extraction,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/synthcloset)
 "oJ" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -1558,6 +1578,13 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
 	},
+/obj/structure/largecrate/random/barrel/brown{
+	pixel_x = 7
+	},
+/obj/structure/largecrate/random/mini/small_case/c{
+	pixel_x = 8;
+	pixel_y = 16
+	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "ue" = (
@@ -1578,8 +1605,15 @@
 "um" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
+/obj/structure/closet/crate/construction,
+/obj/item/stack/cable_coil/yellow,
+/obj/item/stack/cable_coil/yellow,
+/obj/item/tool/weldingtool/simple,
+/obj/item/tool/weldingtool/simple,
+/obj/item/tool/weldpack/minitank,
+/obj/item/tool/weldpack/minitank,
 /turf/open/floor/plating,
-/area/galleyburned/maint)
+/area/golden_arrow/synthcloset)
 "un" = (
 /obj/structure/sign/catclock{
 	pixel_y = 34
@@ -2155,15 +2189,8 @@
 	},
 /area/galleyburned/residential)
 "CX" = (
-/obj/structure/largecrate/random/barrel/brown{
-	pixel_x = 7
-	},
-/obj/structure/largecrate/random/mini/small_case/c{
-	pixel_x = 8;
-	pixel_y = 16
-	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/closed/wall/almayer,
 /area/galleyburned/maint)
 "CZ" = (
 /obj/structure/stairs/perspective{
@@ -2382,6 +2409,9 @@
 "Fv" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/galleyburned/residential)
+"Fw" = (
+/turf/open/floor/plating,
+/area/almayer/living/synthcloset)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -2759,6 +2789,9 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"KY" = (
+/turf/closed/wall/almayer,
+/area/golden_arrow/synthcloset)
 "Lj" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned)
@@ -2858,6 +2891,7 @@
 /area/galleyburned/requisition)
 "Mo" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
+/obj/item/trash/grenade/gas/marine,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Mu" = (
@@ -3186,6 +3220,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
+"Ri" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/golden_arrow/synthcloset)
 "Ry" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/stash)
@@ -3397,6 +3435,9 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"Ur" = (
+/turf/open/floor/plating,
+/area/golden_arrow/synthcloset)
 "Uz" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating,
@@ -3882,7 +3923,7 @@ CC
 iJ
 LQ
 Yh
-UZ
+Ar
 DR
 Yh
 gH
@@ -3935,7 +3976,7 @@ px
 px
 qa
 Ts
-kd
+AK
 tV
 Dr
 Qq
@@ -3986,12 +4027,12 @@ ya
 ya
 he
 qa
-Ar
+LD
 CX
-qa
-qa
-qa
-qa
+KY
+KY
+KY
+KY
 hy
 rf
 rf
@@ -4038,12 +4079,12 @@ ia
 lT
 UZ
 qa
-LD
+UZ
 qa
-qa
-AK
+oE
+nz
 um
-qa
+KY
 iV
 FJ
 FJ
@@ -4091,11 +4132,11 @@ ia
 UZ
 Yh
 Mo
-gH
-NM
-gH
-UZ
-Yh
+yT
+Ri
+Ri
+Ur
+lF
 Da
 rf
 rf
@@ -4144,10 +4185,10 @@ kn
 qa
 LD
 qa
-qa
-qa
-qa
-qa
+KY
+KY
+KY
+KY
 Ne
 TT
 TT
@@ -4194,7 +4235,7 @@ qa
 qa
 qa
 qa
-UZ
+Fw
 qa
 Ap
 nI

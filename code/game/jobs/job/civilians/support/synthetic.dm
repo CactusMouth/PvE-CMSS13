@@ -50,3 +50,9 @@
 	name = JOB_SYNTH
 	icon_state = "syn_spawn"
 	job = /datum/job/civilian/synthetic
+
+/datum/job/civilian/synthetic/extraction
+	total_positions = 1
+	gear_preset = /datum/equipment_preset/synth/uscm/extraction
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_CUSTOM_SPAWN
+	scaled = 0
