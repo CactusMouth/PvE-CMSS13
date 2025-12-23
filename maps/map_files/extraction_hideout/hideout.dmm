@@ -1115,7 +1115,7 @@
 /area/galleyburned/stash)
 "nz" = (
 /obj/structure/machinery/recharge_station,
-/obj/effect/landmark/start/synthetic,
+/obj/effect/landmark/start/extraction/synthetic,
 /turf/open/floor/plating,
 /area/golden_arrow/synthcloset)
 "nI" = (
@@ -2409,9 +2409,6 @@
 "Fv" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/galleyburned/residential)
-"Fw" = (
-/turf/open/floor/plating,
-/area/almayer/living/synthcloset)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -4235,7 +4232,7 @@ qa
 qa
 qa
 qa
-Fw
+UZ
 qa
 Ap
 nI

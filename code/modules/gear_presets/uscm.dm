@@ -1284,7 +1284,10 @@
 	new_human.allow_gun_usage = FALSE
 
 /datum/equipment_preset/synth/uscm/extraction/load_gear(mob/living/carbon/human/new_human)
-	return
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/synthetic(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 
 // raiders
 
