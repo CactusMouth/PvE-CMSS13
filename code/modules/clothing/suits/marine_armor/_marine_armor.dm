@@ -105,6 +105,7 @@
 	var/armor_variation = 0
 	/// The dmi where the grayscale squad overlays are contained
 	var/squad_overlay_icon = 'icons/mob/humans/onmob/suit_1.dmi'
+	rp_value = 30
 
 	var/atom/movable/marine_light/light_holder
 
@@ -282,6 +283,7 @@
 	specialty = "M2 pattern MP"
 	item_state_slots = list(WEAR_JACKET = "mp_armor")
 	black_market_value = 20
+	rp_value = 20
 
 /obj/item/clothing/suit/storage/marine/MP/warden
 	name = "\improper M3 pattern warden MP armor"
@@ -289,6 +291,7 @@
 	icon_state = "warden"
 	specialty = "M3 pattern warden MP"
 	item_state_slots = list(WEAR_JACKET = "warden")
+	rp_value = 30
 
 /obj/item/clothing/suit/storage/marine/MP/WO
 	name = "\improper M3 pattern chief MP armor"
@@ -297,6 +300,7 @@
 	specialty = "M3 pattern chief MP"
 	item_state_slots = list(WEAR_JACKET = "warrant_officer")
 	black_market_value = 30
+	rp_value = 30
 
 /obj/item/clothing/suit/storage/marine/MP/general
 	name = "\improper M3 pattern general officer armor"
@@ -307,6 +311,7 @@
 	specialty = "M3 pattern general"
 	item_state_slots = list(WEAR_JACKET = "general")
 	w_class = SIZE_MEDIUM
+	rp_value = 100 // it gyatt the gold
 
 /obj/item/clothing/suit/storage/marine/MP/SO
 	name = "\improper M3 pattern officer armor"
@@ -316,6 +321,7 @@
 	flags_atom = null
 	specialty = "M3 pattern officer"
 	item_state_slots = list(WEAR_JACKET = "officer")
+	rp_value = 30
 
 //Making a new object because we might want to edit armor values and such.
 //Or give it its own sprite. It's more for the future.
@@ -507,6 +513,8 @@
 	movement_compensation = SLOWDOWN_ARMOR_MEDIUM
 	light_power = 4
 	light_range = 5
+	rp_value = 250
+
 
 /obj/item/clothing/suit/storage/marine/heavy/padless_lines
 	icon_state = "H2"
@@ -741,6 +749,7 @@
 	var/squad_overlay_icon = 'icons/mob/humans/onmob/suit_1.dmi'
 
 	var/atom/movable/marine_light/light_holder
+	rp_value = 30
 
 /obj/item/clothing/suit/marine/Initialize(mapload)
 	. = ..()
@@ -886,6 +895,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_LOW
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
+	rp_value = 20
 
 /obj/item/clothing/suit/marine/light/lines
 	name = "M3 pattern ridged marine armor"
@@ -938,6 +948,7 @@
 	specialty = "M4 pattern marine"
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO, ACCESSORY_SLOT_DECORKNEE)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_DECORKNEE)
+	rp_value = 100
 
 /obj/item/clothing/suit/marine/rto/forecon
 	name = "\improper M3-R pattern recon armor"

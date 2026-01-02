@@ -580,6 +580,12 @@ GLOBAL_LIST_EMPTY(personal_closets)
 
 // special items; usually end-of-wipe purchases
 
+	if(new_human.ckey == "genessee")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/clothing/suit/marine/light/smooth(closet_to_spawn_in) // the big boss tax
+		new /obj/item/clothing/accessory/poncho/freelancecellovercoat/quartermaster(closet_to_spawn_in) // season 2 end-of-season purchase
+
 	if(new_human.ckey == "kulduad")
 		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
@@ -599,6 +605,10 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 
 	if(new_human.ckey == "roromonster")
+		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+
+	if(new_human.ckey == "lordinquisitorplasmaman")
 		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
 		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
 

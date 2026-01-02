@@ -574,6 +574,12 @@
 	icon_state = "freelancecellovercoat"
 	has_variation = FALSE
 
+/obj/item/clothing/accessory/poncho/freelancecellovercoat/quartermaster
+	name = "Michael's overcoat"
+	desc = "A giant overcoat favored worn by Lieutenant Michael Brown, a notable member of the Robert's Raiders pirate group. It's so big that it needs to be attached to a set of armor to keep it from falling off entirely, and it weighs a ton. You're pretty sure its inlaid with real gold."
+	icon_state = "freelancecellovercoat_qm"
+	has_variation = FALSE
+
 /obj/item/clothing/accessory/bomb //Suicide vesst
 	name = "explosive vest"
 	desc = "Used by absolute madmen to cause terror and fear against others, haphazardly put together with C4 and a standard webbing vest."
