@@ -165,6 +165,18 @@
 	squad = SQUAD_RMC
 	job = /datum/job/marine/standard/ai/rmc
 
+/datum/job/marine/standard/ai/raider
+	title = JOB_SQUAD_MARINE_RAIDER
+	total_positions = 2
+	spawn_positions = 2
+	gear_preset = /datum/equipment_preset/uscm/pfc/raider
+	job_options = null
+
+/obj/effect/landmark/start/marine/raider
+	name = JOB_SQUAD_MARINE_RAIDER
+	squad = SQUAD_RAIDER
+	job = /datum/job/marine/standard/ai/rmc
+
 #undef CPL_VARIANT
 #undef LCPL_VARIANT
 #undef PFC_VARIANT

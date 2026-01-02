@@ -67,6 +67,7 @@
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/burstfire_assembly,
 	)
+	rp_value = 10
 
 /obj/item/weapon/gun/pistol/m4a3/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 20,"rail_x" = 10, "rail_y" = 21, "under_x" = 21, "under_y" = 17, "stock_x" = 21, "stock_y" = 17, "side_rail_x" = 19, "side_rail_y" = 15)
@@ -118,6 +119,7 @@
 	current_mag = /obj/item/ammo_magazine/pistol/l54
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AUTO_EJECT_CASINGS
 	attachable_allowed = null
+	rp_value = 10
 
 /obj/item/weapon/gun/pistol/l54/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 20,"rail_x" = 10, "rail_y" = 21, "under_x" = 21, "under_y" = 17, "stock_x" = 21, "stock_y" = 17, "side_rail_x" = 19, "side_rail_y" = 14)
@@ -164,6 +166,7 @@
 		/obj/item/attachable/stock/vp70,
 	)
 	start_automatic = TRUE
+	rp_value = 10
 
 /obj/item/weapon/gun/pistol/vp70/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 8, "rail_y" = 22, "under_x" = 21, "under_y" = 18, "stock_x" = 11, "stock_y" = 14, "side_rail_x" = 19, "side_rail_y" = 16)
@@ -193,6 +196,20 @@
 	flashlight.Attach(src)
 	update_attachable(flashlight.slot)
 
+/obj/item/weapon/gun/pistol/vp70/veteran
+	name = "\improper VP70 M5 'Grizzled Veteran' service pistol"
+	desc = "Standard issue semi-automatic 9mm USCM service pistol. This particular pistol has been given a crimson leather grip and had various parts replaced with what appears to be genuine silver. There's an engraving along the side - 'THEY SHALL NOT GROW OLD.'"
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
+	icon_state = "vp70_veteran"
+	item_state = "vp70_veteran"
+
+/obj/item/weapon/gun/pistol/vp70/legendary_veteran
+	name = "\improper VP70 M5 'Primeval Warrior' service pistol"
+	desc = "Standard issue semi-automatic 9mm USCM service pistol. This particular pistol has been given a crimson leather grip and had various parts replaced with what appears to be genuine gold! There's an engraving along the side - 'YOU MERELY STAND ON THE SHOULDERS OF GIANTS. I WALKED WITH THEM - AND THEY WALKED WITH ME.'"
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
+	icon_state = "vp70_legendary_veteran"
+	item_state = "vp70_legendary_veteran"
+
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/pistol/m1911
@@ -203,6 +220,7 @@
 	item_state = "m4a3"
 	fire_sound = 'sound/weapons/gun_vp78_v2.ogg'
 	current_mag = /obj/item/ammo_magazine/pistol/m1911
+	rp_value = 10
 
 /obj/item/weapon/gun/pistol/m1911/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 20,"rail_x" = 10, "rail_y" = 22, "under_x" = 21, "under_y" = 17, "stock_x" = 21, "stock_y" = 17, "side_rail_x" = 19, "side_rail_y" = 15)
@@ -223,6 +241,7 @@
 	icon_state = "m4a345_s"
 	item_state = "m4a3"
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AMMO_COUNTER|GUN_AUTO_EJECT_CASINGS
+	rp_value = 50
 
 /obj/item/weapon/gun/pistol/m1911/socom/set_gun_config_values()
 	..()

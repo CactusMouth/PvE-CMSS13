@@ -187,6 +187,7 @@
 	icon_state = "efundcard"
 	desc = "A Weyland-Yutani backed cash card that holds an amount of money."
 	var/owner_name = "" //So the ATM can set it so the EFTPOS can put a valid name on transactions.
+	rp_value = 50
 
 /obj/item/spacecash/ewallet/get_examine_text(mob/user)
 	. = ..()

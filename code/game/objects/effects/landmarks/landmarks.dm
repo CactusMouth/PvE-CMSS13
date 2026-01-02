@@ -479,6 +479,10 @@
 	name = "small pmc late join"
 	squad = SQUAD_PMCPLT_SMALL
 
+/obj/effect/landmark/late_join/raider
+	name = "raider late join"
+	squad = SQUAD_RAIDER
+
 /obj/effect/landmark/late_join/Initialize(mapload, ...)
 	. = ..()
 	if(squad)

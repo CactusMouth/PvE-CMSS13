@@ -258,6 +258,11 @@
 	icon_state = "binary_key"
 	channels = list(SQUAD_SOF = TRUE)
 
+/obj/item/device/encryptionkey/soc/raider
+	name = "\improper SOF Radio Encryption Key"
+	icon_state = "binary_key"
+	channels = list(SQUAD_RAIDER = TRUE)
+
 //ERT, PMC
 
 /obj/item/device/encryptionkey/dutch

@@ -100,6 +100,7 @@
 	icon_state = "phoron"
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	gas_type = GAS_TYPE_PHORON
+	rp_value = 100
 
 /obj/item/tank/phoron/update_icon()
 	. = ..()

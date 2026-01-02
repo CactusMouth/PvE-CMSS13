@@ -103,6 +103,7 @@
 	desc = "A slice of encoded compressed fiber glass. Used for identification and access control."
 	icon_state = "id"
 	item_state = "red-id"
+	rp_value = 10
 	var/list/access
 	var/faction = FACTION_NEUTRAL
 	var/list/faction_group
@@ -261,6 +262,7 @@
 	name = "battered-up visa card"
 	desc = "A corporate holo-badge. It's a unique Corporate orange and white."
 	icon_state = "visa"
+	rp_value = 30
 
 /obj/item/card/id/silver/cl
 	name = "corporate holo-badge"
@@ -435,6 +437,7 @@
 	pinned_on_uniform = FALSE
 	var/dogtag_taken = FALSE
 	card_name = "dog tags"
+	rp_value = 10
 
 /obj/item/card/id/dogtag/get_examine_text(mob/user)
 	. = ..()

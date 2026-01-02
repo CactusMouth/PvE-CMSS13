@@ -82,6 +82,7 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 #define CIA_FREQ 1225
 #define ARM_FREQ 1228
 #define GRD_FREQ 1229
+#define RAID_FREQ 1223
 
 //WY Channels (1230-1249)
 #define WY_FREQ 1231
@@ -185,6 +186,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	SQUAD_MARINE_5 = ECHO_FREQ,
 	SQUAD_MARINE_CRYO = CRYO_FREQ,
 	SQUAD_SOF = SOF_FREQ,
+	SQUAD_RAIDER = RAID_FREQ,
 	SQUAD_CBRN = CBRN_FREQ,
 	SQUAD_FORECON = FORECON_FREQ,
 	SQUAD_SOLAR = SOF_FREQ,
@@ -308,6 +310,7 @@ SUBSYSTEM_DEF(radio)
 		"[CBRN_FREQ]" = "hcradio",
 		"[FORECON_FREQ]" = "hcradio",
 		"[SOF_FREQ]" = "hcradio",
+		"[RAID_FREQ]" = "raidradio",
 		"[HC_FREQ]" = "hcradio",
 		"[PVST_FREQ]" = "pvstradio",
 		"[COLONY_FREQ]" = "deptradio",

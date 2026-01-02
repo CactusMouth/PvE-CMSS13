@@ -55,7 +55,7 @@
 
 /datum/supply_packs/qm_mateba
 	name = "Weapon: Mateba Revolver"
-	contains = list(/obj/item/ammo_magazine/pistol/vp70/penetrating)
+	contains = list(/obj/item/weapon/gun/revolver/mateba)
 	cost = 100
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Mateba crate"

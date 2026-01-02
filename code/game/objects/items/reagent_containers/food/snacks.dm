@@ -3225,6 +3225,7 @@
 	icon_state = "donkpocket"
 	bitesize = 3
 	var/warm = 0
+	rp_value = 5
 
 /obj/item/reagent_container/food/snacks/microwavable/proc/cooltime() //Not working, derp?
 	if(warm)
@@ -3242,6 +3243,7 @@
 	icon_state = "donkpocket_wr2"
 	filling_color = "#DEDEAB"
 	package = 2
+	rp_value = 10
 
 /obj/item/reagent_container/food/snacks/microwavable/donkpocket/Initialize()
 	. = ..()

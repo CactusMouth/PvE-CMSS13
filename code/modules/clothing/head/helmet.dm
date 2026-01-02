@@ -1808,7 +1808,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 
-/obj/item/clothing/head/helmet/marine/veteran/mercenary
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/upgraded
 	name = "\improper Modified K12 ceramic helmet"
 	desc = "A sturdy helmet worn by an unknown mercenary group. Reinforced with extra plating."
 	armor_melee = CLOTHING_ARMOR_ULTRAHIGH
@@ -1843,6 +1843,23 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 /obj/item/clothing/head/helmet/marine/veteran/mercenary/support/engineer
 	desc = "A sturdy helmet worn by an unknown mercenary group. Features a toggleable welding screen for eye protection."
 	built_in_visors = list(new /obj/item/device/helmet_visor/welding_visor/mercenary)
+
+// freelance cell variants
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner/freelancecell/beret
+	name = "\improper Freelance Cell beret"
+	desc = "A rugged helmet and armored beret rig. Extremely protective and uses prototype ceramic plates in its construction. Armor like this is favored by elite members of the Freelance Cell."
+	icon_state = "freelancecell_beret"
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner/freelancecell
+	name = "\improper Freelance Cell helmet"
+	desc = "A rugged helmet and facemask. Extremely protective and uses prototype ceramic plates in its construction. Armor like this is made to-order for members of the Freelance Cell."
+	icon_state = "freelancecell_helmet"
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/freelancecell
+	name = "\improper Freelance Cell juggernaut helmet"
+	desc = "An exceptionally heavy helmet and facemask. Made almost entirely out of prototype ceramic plates, which gives it almost impossible strength and resistance. Armor like this is even rarer than normal Freelance Cell gear, and it's only used by their most elite members."
+	icon_state = "freelancecell_helmet_heavy"
 
 //=============================//MEME\\==================================\\
 //=======================================================================\\
@@ -2011,3 +2028,41 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	)
 	item_state = "rmc_helm2"
 	desc = "A common helmet used by various blue-collar professions in the TWE."
+
+// =SCAVS & MARAUDERS= \\
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder
+	name = "\improper K6 ceramic helmet"
+	desc = "An early model of the highly sought-after K12 helmet, usually favored by mercenaries or pirates on a budget. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_heavy_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_VERYLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_LOW
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/miner
+	name = "\improper Y4 miner helmet"
+	desc = "An early model of the Y8 mining helmet. Much like the modern version, the Y4 helmet sees more use by mercenaries and pirates rather than being used in actual mining operations -- this is primarily due to its sturdiness, while still being technically legal for a civilian to own. While not nearly as protective as the Y8 variant, it still deflects bullets easily enough."
+	icon_state = "mercenary_miner_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/support
+	name = "\improper Z3 helmet"
+	desc = "An early model of the highly sought-after Z7 support helmet, usually favored by mercenaries or pirates tasked with more technical work. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_engineer_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_VERYLOW
+	armor_internaldamage = CLOTHING_ARMOR_NONE

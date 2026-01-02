@@ -487,6 +487,7 @@
 	desc = "Beer. You've dialed in your target. Time to fire for effect."
 	icon_state = "beer"
 	center_of_mass = "x=16;y=12"
+	rp_value = 10
 
 /obj/item/reagent_container/food/drinks/cans/beer/Initialize()
 	. = ..()
@@ -740,6 +741,7 @@
 	desc = "Pretty good when you get past the fact that it tastes like piss. Canned by the Weyland-Yutani Corporation."
 	icon_state = "6_pack_1"
 	center_of_mass = "x=16;y=10"
+	rp_value = 20
 
 /obj/item/reagent_container/food/drinks/cans/aspen/Initialize()
 	. = ..()

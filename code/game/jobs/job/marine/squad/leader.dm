@@ -115,6 +115,16 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/leader/ai/forecon
 
+/datum/job/marine/leader/ai/raider
+	title = JOB_SQUAD_LEADER_RAIDER
+	gear_preset = /datum/equipment_preset/uscm/leader/raider
+	job_options = null
+
+/obj/effect/landmark/start/marine/leader/raider
+	name = JOB_SQUAD_LEADER_RAIDER
+	squad = SQUAD_RAIDER
+	job = /datum/job/marine/leader/ai/raider
+
 //-- RMC Platoon --//
 // Second-in-command under LT, handles the mortar calls //
 /datum/job/marine/leader/ai/rmc

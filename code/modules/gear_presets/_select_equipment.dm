@@ -578,14 +578,65 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		given_medal.recipient_rank = medal.recipient_role
 		given_medal.medal_citation = medal.citation
 
+// special items; usually end-of-wipe purchases
+
 	if(new_human.ckey == "genessee")
-		new  /obj/item/weapon/gun/revolver/mateba/engraved(closet_to_spawn_in)
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/clothing/suit/marine/light/smooth(closet_to_spawn_in) // the big boss tax
+		new /obj/item/clothing/accessory/poncho/freelancecellovercoat/quartermaster(closet_to_spawn_in) // season 2 end-of-season purchase
 
-	if(new_human.ckey == "kulduad") // happy birthday mac!
-		new  /obj/item/weapon/gun/shotgun/combat/haywood(closet_to_spawn_in)
+	if(new_human.ckey == "kulduad")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/haywood(closet_to_spawn_in) // birthday gift from genessee 2025
 
-	if(new_human.ckey == "leastleethax") // happy birthday hax! oct. 21
-		new  /obj/item/weapon/gun/rifle/m41aMK1/evan(closet_to_spawn_in)
+	if(new_human.ckey == "leastleethax")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/evan(closet_to_spawn_in) // birthday gift from genessee 2025
+
+	if(new_human.ckey == "pogchampsenthusiast")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
+	if(new_human.ckey == "panicmechanic1")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
+	if(new_human.ckey == "bartekek")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
+	if(new_human.ckey == "roromonster")
+		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+
+	if(new_human.ckey == "lordinquisitorplasmaman")
+		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+
+	if(new_human.ckey == "monolamp63")
+		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+
+	if(new_human.ckey == "crovus")
+		new /obj/item/clothing/accessory/poncho/freelancecellovercoat(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_beret(closet_to_spawn_in) // season 2 end-of-season purchase
+
+	if(new_human.ckey == "sirjantkot1337")
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor_alt(closet_to_spawn_in) // season 2 end-of-season purchase
+
+	if(new_human.ckey == "fatgod")
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor_heavy(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_helmet_heavy(closet_to_spawn_in) // season 2 end-of-season purchase
 
 /datum/equipment_preset/proc/load_traits(mob/living/carbon/human/new_human, client/mob_client)
 	var/client/real_client = mob_client || new_human.client
@@ -1949,7 +2000,6 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		)
 	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
 
-
 /datum/equipment_preset/proc/add_army_helmet_accessory(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -1987,6 +2037,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	new_human.equip_to_slot_or_del(new helmeteyewearpath, WEAR_IN_HELMET)
 
 // SCAVS //
+
+///////////////////////////////
+//			HEAD			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_head(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2082,6 +2136,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		)
 	new_human.equip_to_slot_or_del(new headpath, WEAR_HEAD)
 
+///////////////////////////////
+//			EYES			 //
+///////////////////////////////
+
 /datum/equipment_preset/proc/scav_eyes(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -2101,6 +2159,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/glasses/welding,
 		)
 	new_human.equip_to_slot_or_del(new eyespath, WEAR_EYES)
+
+///////////////////////////////
+//			FACE			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_facewrap(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2135,6 +2197,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/mask/surgical,
 		)
 	new_human.equip_to_slot_or_del(new random_facewrap, WEAR_FACE)
+
+///////////////////////////////
+//			UNDER			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_uniform(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2183,6 +2249,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 			uniform.roll_suit_sleeves(new_human)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 
+///////////////////////////////
+//			ACCESSORY		 //
+///////////////////////////////
+
 /datum/equipment_preset/proc/scav_accessory_under(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -2216,6 +2286,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/accessory/armband,
 	)
 	new_human.equip_to_slot_or_del(new accessorypath, WEAR_IN_HELMET)
+
+///////////////////////////////
+//			SUIT			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_suit(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2286,6 +2360,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		)
 	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
 
+///////////////////////////////
+//			GLOVES			 //
+///////////////////////////////
+
 /datum/equipment_preset/proc/scav_gloves(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
@@ -2299,6 +2377,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/gloves/marine,
 		)
 	new_human.equip_to_slot_or_del(new glovespath, WEAR_HANDS)
+
+///////////////////////////////
+//			SHOES			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_shoes(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2319,6 +2401,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/clothing/shoes/marine/rmc,
 		)
 	new_human.equip_to_slot_or_del(new shoespath, WEAR_FEET)
+
+///////////////////////////////
+//			BACK			 //
+///////////////////////////////
 
 /datum/equipment_preset/proc/scav_satchel(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -2357,4 +2443,360 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 		/obj/item/storage/backpack/industrial,
 		)
 	new_human.equip_to_slot_or_del(new random_backsatch, WEAR_BACK)
+
+// MERCS //
+
+///////////////////////////////
+//			BACK			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_backpack(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/random_satchel = pick(
+		/obj/item/storage/backpack/lightpack,
+		/obj/item/storage/backpack/lightpack/five_slot,
+		/obj/item/storage/backpack/lightpack/upp,
+		/obj/item/storage/backpack/rmc/light,
+		/obj/item/storage/backpack/rmc/medium,
+		/obj/item/storage/backpack/marine/engineerpack/satchel/rmc,
+		/obj/item/storage/backpack/rmc/medic,
+		/obj/item/storage/backpack/rmc/heavy,
+		/obj/item/storage/backpack/marine/satchel/intel,
+		/obj/item/storage/backpack/marine/satchel/intel/chestrig,
+		)
+	new_human.equip_to_slot_or_del(new random_satchel, WEAR_BACK)
+
+///////////////////////////////
+//			HEAD			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_helmet_ua(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
+		/obj/item/clothing/head/helmet/marine/veteran/ua_riot,
+		/obj/item/clothing/head/helmet/marine/MP,
+		/obj/item/clothing/head/helmet/marine/MP,
+		/obj/item/clothing/head/helmet/marine/rto,
+		/obj/item/clothing/head/helmet/marine/medic,
+		/obj/item/clothing/head/helmet/marine/medic/white,
+		/obj/item/clothing/head/helmet/marine/reporter,
+		/obj/item/clothing/head/helmet/marine/tech,
+		/obj/item/clothing/head/helmet/marine/tech/tanker,
+		/obj/item/clothing/head/helmet/marine/leader,
+		/obj/item/clothing/head/helmet/upp/marinepilot,
+		/obj/item/clothing/head/helmet/upp/marinepilot/tex,
+		/obj/item/clothing/head/sippyhat,
+		/obj/item/clothing/head/sippyhat/duff,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/merc_helmet_upp(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine/veteran/UPP,
+		/obj/item/clothing/head/helmet/upp,
+		/obj/item/clothing/head/helmet/upp/alt,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/UPP/old,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		/obj/item/clothing/head/helmet/marine/veteran/canc,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+/datum/equipment_preset/proc/merc_helmet_other(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/helmetpath = pick(
+		/obj/item/clothing/head/helmet/marine/veteran/royal_marine,
+		/obj/item/clothing/head/helmet/marine/veteran/pmc,
+		/obj/item/clothing/head/helmet/riot,
+		/obj/item/clothing/head/helmet/riot,
+		/obj/item/clothing/head/helmet/upp/marinepilot/merc,
+		/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder,
+		/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/miner,
+		/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/support,
+		)
+	new_human.equip_to_slot_or_del(new helmetpath, WEAR_HEAD)
+
+///////////////////////////////
+//			EYES			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_eyes(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/eyespath = pick(
+		/obj/item/clothing/glasses/mgoggles,
+		/obj/item/clothing/glasses/mgoggles/black,
+		/obj/item/clothing/glasses/mgoggles/orange,
+		/obj/item/clothing/glasses/mgoggles/green,
+		/obj/item/clothing/glasses/mgoggles/upp,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/clothing/glasses/sunglasses/big/orange,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/clothing/glasses/sunglasses/sechud/eyepiece,
+		/obj/item/clothing/glasses/sunglasses/sechud/tactical,
+		)
+	new_human.equip_to_slot_or_del(new eyespath, WEAR_EYES)
+
+///////////////////////////////
+//			FACE			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_facewrap(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/random_facewrap = pick(
+		/obj/item/clothing/mask/rebreather/scarf/tacticalmask,
+		/obj/item/clothing/mask/rebreather/scarf/tacticalmask/red,
+		/obj/item/clothing/mask/rebreather/scarf/tacticalmask/green,
+		/obj/item/clothing/mask/rebreather/scarf/tacticalmask/tan,
+		/obj/item/clothing/mask/rebreather/scarf/tacticalmask/black,
+		/obj/item/clothing/mask/rebreather/skull,
+		/obj/item/clothing/mask/rebreather/skull/black,
+		/obj/item/clothing/mask/gas/swat,
+		/obj/item/clothing/mask/gas/military/upp,
+		/obj/item/clothing/mask/gas/military,
+		/obj/item/clothing/mask/gas,
+		/obj/item/clothing/mask/balaclava/threehole,
+		/obj/item/clothing/mask/balaclava/tactical,
+		/obj/item/clothing/mask/balaclava,
+		/obj/item/clothing/mask/pig,
+		)
+	new_human.equip_to_slot_or_del(new random_facewrap, WEAR_FACE)
+
+///////////////////////////////
+//			UNDER			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_uniform_ua(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/uniformpath = pick(
+		//USCM
+		/obj/item/clothing/under/marine,
+		/obj/item/clothing/under/marine,
+		/obj/item/clothing/under/marine,
+		/obj/item/clothing/under/marine,
+		/obj/item/clothing/under/marine/reconnaissance,
+		/obj/item/clothing/under/marine/medic,
+		/obj/item/clothing/under/marine/engineer,
+		/obj/item/clothing/under/marine/rto,
+		/obj/item/clothing/under/marine/tanker,
+		/obj/item/clothing/under/marine/officer/intel,
+		)
+	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
+
+/datum/equipment_preset/proc/merc_uniform_upp(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/uniformpath = pick(
+		//upp
+		/obj/item/clothing/under/marine/veteran/UPP,
+		/obj/item/clothing/under/marine/veteran/UPP,
+		/obj/item/clothing/under/marine/veteran/UPP,
+		/obj/item/clothing/under/marine/veteran/UPP/boiler,
+		/obj/item/clothing/under/marine/veteran/UPP/boiler,
+		/obj/item/clothing/under/marine/veteran/UPP/naval,
+		/obj/item/clothing/under/marine/veteran/canc,
+		/obj/item/clothing/under/marine/veteran/canc,
+		/obj/item/clothing/under/marine/veteran/canc,
+		)
+	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
+
+/datum/equipment_preset/proc/merc_uniform_other(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/uniformpath = pick(
+		//other
+		/obj/item/clothing/under/marine/veteran/freelancer,
+		/obj/item/clothing/under/marine/veteran/mercenary,
+		/obj/item/clothing/under/marine/veteran/mercenary/miner,
+		/obj/item/clothing/under/marine/veteran/mercenary/support,
+		/obj/item/clothing/under/marine/veteran/royal_marine,
+		/obj/item/clothing/under/marine/veteran/pmc,
+		)
+	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
+
+///////////////////////////////
+//			ACCESSORY		 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_accessory_cosmetic(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/accessorypath = pick(
+		/obj/item/clothing/accessory/armband,
+		/obj/item/clothing/accessory/armband/cargo,
+		/obj/item/clothing/accessory/armband/engine,
+		/obj/item/clothing/accessory/armband/science,
+		/obj/item/clothing/accessory/armband/hydro,
+		/obj/item/clothing/accessory/armband/med,
+		/obj/item/clothing/accessory/armband/medgreen,
+		/obj/item/clothing/accessory/armband/nurse,
+		/obj/item/clothing/accessory/armband/mpsec,
+		/obj/item/clothing/accessory/flak,
+		/obj/item/clothing/accessory/flak/od,
+		/obj/item/clothing/accessory/holobadge,
+		/obj/item/clothing/accessory/holobadge/cord,
+		/obj/item/clothing/accessory/dogtags,
+		/obj/item/clothing/accessory/patch,
+		/obj/item/clothing/accessory/patch/twe,
+		/obj/item/clothing/accessory/patch/upp,
+	)
+	new_human.equip_to_slot_or_del(new accessorypath, WEAR_ACCESSORY)
+
+/datum/equipment_preset/proc/merc_accessory_useful(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/accessorypath = pick(
+		/obj/item/clothing/accessory/storage,
+		/obj/item/clothing/accessory/storage/black_vest/brown_vest,
+		/obj/item/clothing/accessory/storage/droppouch,
+		/obj/item/clothing/accessory/storage/droppouch/upp,
+		/obj/item/clothing/accessory/storage/droppouch/rmc,
+		/obj/item/clothing/accessory/storage/smallpouch,
+	)
+	new_human.equip_to_slot_or_del(new accessorypath, WEAR_ACCESSORY)
+
+/datum/equipment_preset/proc/merc_accessory_helmet(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/accessorypath = pick(
+		/obj/item/prop/helmetgarb/bug_spray,
+		/obj/item/prop/helmetgarb/cartridge,
+		/obj/item/prop/helmetgarb/compass,
+		/obj/item/prop/helmetgarb/eye_drops,
+		/obj/item/prop/helmetgarb/faceplate,
+		/obj/item/prop/helmetgarb/flair_initech,
+		/obj/item/prop/helmetgarb/flair_io,
+		/obj/item/prop/helmetgarb/flair_peace,
+		/obj/item/prop/helmetgarb/flair_uscm,
+		/obj/item/prop/helmetgarb/gunoil,
+		/obj/item/prop/helmetgarb/spent_buckshot,
+		/obj/item/prop/helmetgarb/spent_slug,
+		/obj/item/prop/helmetgarb/spent_flech,
+		/obj/item/prop/helmetgarb/prescription_bottle,
+		/obj/item/prop/helmetgarb/riot_shield,
+		/obj/item/prop/helmetgarb/spacejam_tickets,
+		/obj/item/prop/helmetgarb/netting,
+		/obj/item/prop/helmetgarb/raincover,
+	)
+	new_human.equip_to_slot_or_del(new accessorypath, WEAR_IN_HELMET)
+
+///////////////////////////////
+//			SUIT			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_suit_ua(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine/lines,
+		/obj/item/clothing/suit/marine/smooth,
+		/obj/item/clothing/suit/marine/guard,
+		/obj/item/clothing/suit/marine/guard,
+		/obj/item/clothing/suit/marine/rto,
+		/obj/item/clothing/suit/storage/marine/tanker,
+		/obj/item/clothing/suit/marine/leader,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
+/datum/equipment_preset/proc/merc_suit_upp(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/CANC,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP/light,
+		/obj/item/clothing/suit/marine/faction/UPP,
+		/obj/item/clothing/suit/marine/faction/UPP,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
+/datum/equipment_preset/proc/merc_suit_other(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/suitpath = pick(
+		/obj/item/clothing/suit/marine/veteran/royal_marine,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine_advanced,
+		/obj/item/clothing/suit/storage/marine/veteran/royal_marine_advanced/cargo,
+		/obj/item/clothing/suit/storage/marine/veteran/pmc,
+		/obj/item/clothing/suit/storage/marine/veteran/merc,
+		/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder,
+		/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder/miner,
+		/obj/item/clothing/suit/storage/marine/veteran/mercenary/marauder/support,
+		)
+	new_human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
+
+///////////////////////////////
+//			SHOES			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_shoes_ua(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/shoespath = pick(
+		/obj/item/clothing/shoes/marine/knife,
+		/obj/item/clothing/shoes/marine/brown/knife,
+		/obj/item/clothing/shoes/marine/jungle/knife,
+		)
+	new_human.equip_to_slot_or_del(new shoespath, WEAR_FEET)
+
+/datum/equipment_preset/proc/merc_shoes_upp(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/shoespath = pick(
+		/obj/item/clothing/shoes/marine/upp/guard,
+		/obj/item/clothing/shoes/marine/upp/guard/canc,
+		)
+	new_human.equip_to_slot_or_del(new shoespath, WEAR_FEET)
+
+/datum/equipment_preset/proc/merc_shoes_other(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/shoespath = pick(
+		/obj/item/clothing/shoes/royal_marine/knife,
+		/obj/item/clothing/shoes/royal_marine/knife,
+		/obj/item/clothing/shoes/red/knife,
+		/obj/item/clothing/shoes/marine/civilian/brown/knife,
+		/obj/item/clothing/shoes/marine/civilian/jungle/knife,
+		/obj/item/clothing/shoes/marine/civilian/knife,
+		/obj/item/clothing/shoes/marine/corporate/knife,
+		)
+	new_human.equip_to_slot_or_del(new shoespath, WEAR_FEET)
+
+///////////////////////////////
+//			GLOVES			 //
+///////////////////////////////
+
+/datum/equipment_preset/proc/merc_gloves(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	var/glovespath = pick(
+		/obj/item/clothing/gloves/marine/brown,
+		/obj/item/clothing/gloves/marine/brown/fingerless,
+		/obj/item/clothing/gloves/marine,
+		/obj/item/clothing/gloves/marine/fingerless,
+		/obj/item/clothing/gloves/marine/veteran/royal_marine,
+		/obj/item/clothing/gloves/combat,
+		)
+	new_human.equip_to_slot_or_del(new glovespath, WEAR_HANDS)
 

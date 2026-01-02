@@ -1,5 +1,5 @@
 /datum/human_ai_equipment_preset/scav
-	faction = "Scavengers"
+	faction = FACTION_SCAV
 
 /datum/human_ai_equipment_preset/scav/pistol
 	name = "Scav, Rookie (Pistol)"

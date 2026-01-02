@@ -70,6 +70,20 @@ United States Colonial Marines
 		SKILL_JTAC = SKILL_JTAC_BEGINNER,
 	)
 
+/datum/skills/combat_engineer/raider
+	name = "Raider Combat Engineer"
+	skills = list(
+		SKILL_POWERLOADER = SKILL_POWERLOADER_MASTER,
+		SKILL_ENDURANCE = SKILL_ENDURANCE_TRAINED,
+		SKILL_ENGINEER = SKILL_ENGINEER_ENGI,
+		SKILL_CONSTRUCTION = SKILL_CONSTRUCTION_MASTER,
+		SKILL_JTAC = SKILL_JTAC_BEGINNER,
+		SKILL_SPEC_WEAPONS = SKILL_SPEC_ALL,
+		SKILL_FIREMAN = SKILL_FIREMAN_EXPERT,
+		SKILL_POLICE = SKILL_POLICE_SKILLED,
+		SKILL_VEHICLE = SKILL_VEHICLE_LARGE,
+	)
+
 /datum/skills/smartgunner
 	name = "Squad Smartgunner"
 	skills = list(
@@ -85,7 +99,6 @@ United States Colonial Marines
 		SKILL_JTAC = SKILL_JTAC_BEGINNER,
 		SKILL_ENDURANCE = SKILL_ENDURANCE_MASTER,
 	)
-
 
 /datum/skills/specialist
 	name = "Squad Weapons Specialist"

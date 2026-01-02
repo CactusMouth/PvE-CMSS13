@@ -39,6 +39,7 @@
 	gender = PLURAL
 	oretag = "phoron"
 	black_market_value = 25
+	rp_value = 10
 
 /obj/item/ore/silver
 	name = "native silver ore"
@@ -46,6 +47,7 @@
 
 	oretag = "silver"
 	black_market_value = 25
+	rp_value = 20
 
 /obj/item/ore/gold
 	name = "native gold ore"
@@ -53,6 +55,7 @@
 
 	oretag = "gold"
 	black_market_value = 30
+	rp_value = 30
 
 /obj/item/ore/diamond
 	name = "diamonds"
@@ -60,6 +63,7 @@
 	gender = PLURAL
 	oretag = "diamond"
 	black_market_value = 30
+	rp_value = 50
 
 /obj/item/ore/osmium
 	name = "raw platinum"

@@ -24,6 +24,7 @@
 #define SQUAD_LRRP "Snake Eaters"
 #define SQUAD_EXTRACTION "Robert's Raiders"
 #define SQUAD_LRRP_2 "Ocelot Grapplers"
+#define SQUAD_RAIDER "Rotten Few"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -51,6 +52,13 @@
 #define JOB_SQUAD_RTO "Recon Radio Telephone Operator"
 #define JOB_SQUAD_MARINE_FORECON "Recon Rifleman"
 #define JOB_SQUAD_SMARTGUN_FORECON "Recon Smartgunner"
+
+#define JOB_SO_RAIDER "Raider Team Commander"
+#define JOB_SQUAD_LEADER_RAIDER  "Raider Team Chief"
+#define JOB_SQUAD_TEAM_LEADER_RAIDER "Raider Team Leader"
+#define JOB_SQUAD_ENGINEER_RAIDER "Raider Engineer"
+#define JOB_SQUAD_MEDIC_RAIDER "Raider Corpsman"
+#define JOB_SQUAD_MARINE_RAIDER "Raider Rifleman"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 

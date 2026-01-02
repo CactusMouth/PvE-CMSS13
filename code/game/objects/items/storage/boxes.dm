@@ -34,6 +34,7 @@
 	max_w_class = SIZE_SMALL //Changed because of in-game abuse
 	w_class = SIZE_LARGE //Changed becuase of in-game abuse
 	storage_flags = STORAGE_FLAGS_BOX
+	rp_value = 10
 
 /obj/item/storage/box/pride
 	name = "box of prideful crayons"
@@ -41,6 +42,7 @@
 	storage_slots = 8
 	w_class = SIZE_SMALL
 	can_hold = list(/obj/item/toy/crayon/pride)
+	rp_value = 20
 
 /obj/item/storage/box/pride/fill_preset_inventory()
 	new /obj/item/toy/crayon/pride/gay(src)

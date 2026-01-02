@@ -90,6 +90,7 @@
 	icon_type = "crayon"
 	can_hold = list(/obj/item/toy/crayon)
 	black_market_value = 25
+	rp_value = 20
 
 /obj/item/storage/fancy/crayons/fill_preset_inventory()
 	new /obj/item/toy/crayon/red(src)
@@ -171,12 +172,14 @@
 	desc = "They remind you of a gross, tar-filled version of Ireland. These cheap cigarettes are Weyland-Yutani's entry into the general market."
 	icon_state = "cigpacket"
 	item_state = "cigpacket"
+	rp_value = 5
 
 /obj/item/storage/fancy/cigarettes/wypacket
 	name = "\improper Weyland-Yutani Gold packet"
 	desc = "Building Better Worlds, and rolling better cigarettes. These fancy cigarettes are Weyland-Yutani's entry into the premium tobacco market. Comes backed by a fierce legal team."
 	icon_state = "wypacket"
 	item_state = "wypacket"
+	rp_value = 20
 
 /obj/item/storage/fancy/cigarettes/wypacket_4
 	name = "\improper Weyland-Yutani Gold mini packet"
@@ -185,12 +188,14 @@
 	item_state = "wypacket"
 	item_state_slots = list(WEAR_AS_GARB = "cig_wypack")
 	storage_slots = 4
+	rp_value = 10
 
 /obj/item/storage/fancy/cigarettes/balaji
 	name = "\improper Balaji Imperial packet"
 	desc = "Smoke 'em if you gottem! Quite popular amongst people living in the Three World Empire."
 	icon_state = "bpacket"
 	item_state = "bpacket"
+	rp_value = 10
 
 /obj/item/storage/fancy/cigarettes/balaji_4
 	name = "\improper Balaji Imperial Mini packet"
@@ -199,6 +204,7 @@
 	item_state = "bpacket"
 	item_state_slots = list(WEAR_AS_GARB = "cig_bpack")
 	storage_slots = 4
+	rp_value = 5
 
 /obj/item/storage/fancy/cigarettes/lucky_strikes
 	name = "\improper Lucky Strikes Packet"
@@ -206,6 +212,7 @@
 	icon_state = "lspacket"
 	item_state = "lspacket"
 	default_cig_type = /obj/item/clothing/mask/cigarette/ucigarette
+	rp_value = 5
 
 /obj/item/storage/fancy/cigarettes/lucky_strikes_4
 	name = "\improper Lucky Strikes Mini Packet"
@@ -215,6 +222,7 @@
 	item_state_slots = list(WEAR_AS_GARB = "cig_ls_mre")
 	default_cig_type = /obj/item/clothing/mask/cigarette/ucigarette
 	storage_slots = 4
+	rp_value = 2
 
 /obj/item/storage/fancy/cigarettes/blackpack
 	name = "\improper Executive Select packet"
@@ -222,6 +230,7 @@
 	icon_state = "blackpacket"
 	item_state = "blackpacket"
 	default_cig_type = /obj/item/clothing/mask/cigarette/bcigarette
+	rp_value = 15
 
 /obj/item/storage/fancy/cigarettes/blackpack_4
 	name = "\improper Executive Select mini packet"
@@ -231,18 +240,21 @@
 	item_state_slots = list(WEAR_AS_GARB = "cig_blackpack")
 	default_cig_type = /obj/item/clothing/mask/cigarette/bcigarette
 	storage_slots = 4
+	rp_value = 7.5
 
 /obj/item/storage/fancy/cigarettes/kpack
 	name = "\improper Koorlander Gold packet"
 	desc = "Lovingly machine-rolled for YOUR pleasure. For when you want to look cool and the risk of a slow horrible death isn't really a factor."
 	icon_state = "kpacket"
 	item_state = "kpacket"
+	rp_value = 125
 
 /obj/item/storage/fancy/cigarettes/arcturian_ace
 	name = "\improper Arcturian Ace packet"
 	desc = "An entry level brand of cigarettes with a bright blue packaging. You're guessing these aren't really good for you, but it doesn't matter when it's Arcturian baby!"
 	icon_state = "aapacket"
 	item_state = "aapacket"
+	rp_value = 10
 
 /obj/item/storage/fancy/cigarettes/lady_finger
 	name = "\improper Lady Fingers packet"
@@ -250,6 +262,7 @@
 	icon_state = "lfpacket"
 	item_state = "lfpacket"
 	default_cig_type = /obj/item/clothing/mask/cigarette/ucigarette
+	rp_value = 7.5
 
 /obj/item/storage/fancy/cigarettes/spirit
 	name = "\improper American Spirit Turquoise Packet"
@@ -257,6 +270,7 @@
 	icon_state = "naspacket"
 	item_state = "naspacket"
 	default_cig_type = /obj/item/clothing/mask/cigarette
+	rp_value = 10
 
 /obj/item/storage/fancy/cigarettes/spirit/yellow
 	name = "\improper American Spirit Yellow Packet"
@@ -269,6 +283,7 @@
 	desc = "A Russian brand of cigarettes maintaining and honoring the legacy of the dog Laika, a space pioneer."
 	icon_state = "laikapacket"
 	item_state = "laikapacket"
+	rp_value = 10
 
 /obj/item/storage/fancy/cigarettes/trading_card
 	name = "\improper WeyYu Gold Military Trading Card packet"
@@ -322,6 +337,7 @@
 	w_class = SIZE_SMALL
 	flags_equip_slot = SLOT_WAIST
 	storage_slots = 7
+	rp_value = 30
 	can_hold = list(/obj/item/clothing/mask/cigarette/cigar)
 	icon_type = "cigar"
 	black_market_value = 30
@@ -362,6 +378,7 @@
 	item_state = "tarbackbox"
 	storage_slots = 5
 	default_cigar_type = /obj/item/clothing/mask/cigarette/cigar/tarbacks
+	rp_value = 15
 
 /obj/item/storage/fancy/cigar/tarbacktube
 	name = "\improper Tarback tube"
@@ -370,6 +387,7 @@
 	item_state = "tarbacktube"
 	storage_slots = 1
 	default_cigar_type = /obj/item/clothing/mask/cigarette/cigar/tarbacks
+	rp_value = 7.5
 
 // MATCH BOX
 
@@ -385,6 +403,7 @@
 	w_class = SIZE_TINY
 	var/light_chance = 70 //how likely you are to light the match on the book
 	var/burn_chance = 20 //how likely you are to burn yourself once you light it
+	rp_value = 5
 	plural = "es"
 
 /obj/item/storage/fancy/cigar/matchbook/attackby(obj/item/tool/match/match as obj, mob/living/carbon/human/user as mob)
@@ -422,6 +441,7 @@
 	icon_state = "mpacket_es"
 	light_chance = 90
 	burn_chance = 0
+	rp_value = 15
 
 /obj/item/storage/fancy/cigar/matchbook/balaji_imperial
 	name = "\improper Balaji Imperial matchbook"
@@ -429,6 +449,7 @@
 	icon_state = "mpacket_bi"
 	light_chance = 80
 	burn_chance = 10
+	rp_value = 10
 
 /obj/item/storage/fancy/cigar/matchbook/wy_gold
 	name = "\improper Weyland-Yutani Gold matchbook"
@@ -436,6 +457,7 @@
 	icon_state = "mpacket_wy"
 	light_chance = 60
 	burn_chance = 40
+	rp_value = 10 // they're not very good matches but they're still expensive to export
 
 // VIAL BOX
 
@@ -494,6 +516,7 @@
 	max_storage_space = 14 //The sum of the w_classes of all the items in this storage item.
 	storage_slots = 6
 	req_access = list(ACCESS_MARINE_MEDBAY)
+	rp_value = 50
 
 /obj/item/storage/lockbox/vials/update_icon(itemremoved = 0)
 	var/total_contents = length(src.contents) - itemremoved
@@ -524,6 +547,7 @@
 	foldable = /obj/item/stack/sheet/cardboard
 	var/collection_color = null
 	var/obj/item/toy/trading_card/top_trading_card
+	rp_value = 10
 
 /obj/item/storage/fancy/trading_card/Initialize()
 	if(!collection_color)

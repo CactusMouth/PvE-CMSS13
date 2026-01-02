@@ -46,6 +46,7 @@
 /obj/item/clothing/under/marine/standard
 	flags_atom = NO_SNOW_TYPE
 
+
 /obj/item/clothing/under/marine/medic
 	name = "\improper USCM corpsman uniform"
 	desc = "Standard-issue Marine hospital corpsman fatigues with venlar armor inserts at critical areas to protect from blades and ballistics."
@@ -561,6 +562,12 @@
 	has_sensor = UNIFORM_NO_SENSORS
 //	suit_restricted = list(/obj/item/clothing/suit/storage/marine/faction/freelancer, /obj/item/clothing/suit/storage/webbing, /obj/item/clothing/suit/storage/utility_vest)
 
+/obj/item/clothing/under/marine/veteran/freelancer/freelancecell
+	name = "\improper Freelance Cell fatigues"
+	desc = "A set of fatigues for members of the Freelance Cell, an elite group of freelancers. It smells faintly of vodka."
+	icon_state = "freelancecell_uniform"
+	worn_state = "freelancecell_uniform"
+
 //=========================//Dutch Dozen\\================================\\
 
 /obj/item/clothing/under/marine/veteran/dutch
@@ -609,7 +616,7 @@
 	icon_state = "mercenary_heavy_uniform"
 	worn_state = "mercenary_heavy_uniform"
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
-	suit_restricted = list(/obj/item/clothing/suit/storage/marine/veteran/mercenary)
+//	suit_restricted = list(/obj/item/clothing/suit/storage/marine/veteran/mercenary)
 
 /obj/item/clothing/under/marine/veteran/mercenary/miner
 	name = "\improper Mercenary miner fatigues"

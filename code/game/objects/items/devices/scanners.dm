@@ -869,6 +869,26 @@ FORENSIC SCANNER
 	playsound(user, 'sound/machines/twobeep.ogg', 15, TRUE)
 	to_chat(user, SPAN_NOTICE("You scan [hit_atom] and notice a reading on [src]'s pad, it says:<b> ITEM HAS [market_value] VALUE <b>"))
 
+/obj/item/device/black_market_scanner/extraction
+	name = "raider-merchant price scanner"
+	desc = "This is... seemingly a makeshift combination between an autopsy scanner, an ancient t-ray scanner, and some sort of robotic clamp, but you can see a lightbulb inside it. A handwritten label on the back says that it can be used to determine how much the merchants aboard the USS Galleyburned value any given item... though it doesn't account for sales tax."
+	rp_value = 10
+
+/obj/item/device/black_market_scanner/extraction/afterattack(atom/hit_atom, mob/user, proximity)
+	if(!proximity)
+		return
+	if(!ismovable(hit_atom))
+		return ..()
+	var/rp_value = get_rp_value(hit_atom)
+	rp_value = POSITIVE(rp_value/10)
+	user.visible_message(SPAN_WARNING("[user] presses a button on [src] and holds it over [hit_atom]..."), SPAN_WARNING("You scan [hit_atom]..."))
+	update_icon(rp_value, TRUE)
+	playsound(user, 'sound/machines/twobeep.ogg', 15, TRUE)
+	if(isnull(rp_value))
+		to_chat(user, SPAN_WARNING("[src] reports that [hit_atom] is worth <b> nothing! <b>"))
+		return ..()
+	to_chat(user, SPAN_NOTICE("[src] reports that [hit_atom] has a <b>market value of [rp_value] requisition points<b>, not accounting for sales tax."))
+
 /obj/item/device/black_market_hacking_device
 	name = "modified security access tuner"
 	desc = "A security access tuner with wires and electrical pins sticking out at odd angles. A handwritten label on the bottom says something about the ASRS system."

@@ -104,6 +104,7 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	gun_types = list(
 		/obj/item/weapon/gun/smartgun,
 		/obj/item/weapon/gun/pkp,
+		/obj/item/weapon/gun/m60,
 	)
 	primary_weight = 10
 
