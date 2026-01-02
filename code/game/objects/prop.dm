@@ -157,6 +157,7 @@
 	desc = "A jerry can. In space! Or maybe a colony."
 	icon_state = "canister"
 	icon = 'icons/obj/items/tank.dmi'
+	rp_value = 50
 
 /obj/item/prop/colony/proptag
 	name = "information dog tag"
@@ -189,6 +190,7 @@
 	desc = "It has some sort of a tube at the end of its tail. What the hell is this thing?"
 	icon = 'icons/mob/xenos/effects.dmi'
 	icon_state = "facehugger_impregnated"
+	rp_value = 20
 
 //-----USS Almayer Props -----//
 //Put any props that don't function properly, they could function in the future but for now are for looks. This system could be expanded for other maps too. ~Art
@@ -210,6 +212,7 @@
 	desc = "A small red box that contains flight data from a dropship while it's on mission. Usually referred to as the black box, although this one comes in bloody red."
 	icon_state = "flight_recorder"
 	w_class = SIZE_MEDIUM
+	rp_value = 200
 
 /obj/item/prop/almayer/flight_recorder/colony
 	name = "\improper CIR-60 colony information recorder"

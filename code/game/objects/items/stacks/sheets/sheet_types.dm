@@ -69,7 +69,7 @@ GLOBAL_LIST_INIT_TYPED(metal_recipes, /datum/stack_recipe, list ( \
 	amount_sprites = TRUE
 	sheettype = "metal"
 	stack_id = "metal"
-
+	rp_value = 5
 
 /obj/item/stack/sheet/metal/small_stack
 	amount = STACK_10
@@ -119,6 +119,7 @@ GLOBAL_LIST_INIT_TYPED(plasteel_recipes, /datum/stack_recipe, list ( \
 	stack_id = "plasteel"
 	ground_offset_x = 4
 	ground_offset_y = 5
+	rp_value = 10
 
 /obj/item/stack/sheet/plasteel/New(loc, amount=null)
 	recipes = GLOB.plasteel_recipes
@@ -170,6 +171,7 @@ GLOBAL_LIST_INIT_TYPED(wood_recipes, /datum/stack_recipe, list ( \
 	sheettype = "wood"
 	amount_sprites = TRUE
 	stack_id = "wood plank"
+	rp_value = 2
 
 /obj/item/stack/sheet/wood/small_stack
 	amount = STACK_10

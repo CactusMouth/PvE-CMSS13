@@ -14,6 +14,7 @@
 	storage_slots = 4
 	max_w_class = SIZE_SMALL
 	use_sound = "rip"
+	rp_value = 20
 	var/trash_item = /obj/item/trash/uscm_mre
 	var/icon_closed = "mealpack"
 	var/icon_opened = "mealpackopened"
@@ -192,6 +193,7 @@
 	side = /obj/item/mre_food_packet/wy/side
 	snack = /obj/item/mre_food_packet/wy/snack
 	dessert = /obj/item/mre_food_packet/wy/dessert
+	rp_value = 40
 
 /obj/item/storage/box/mre/pmc/choose_cigarettes()
 	var/cig_type = rand(1, 2)
@@ -231,6 +233,7 @@
 	side = /obj/item/mre_food_packet/twe/side
 	snack = /obj/item/mre_food_packet/twe/snack
 	dessert = /obj/item/mre_food_packet/twe/dessert
+	rp_value = 40
 
 /obj/item/storage/box/mre/twe/Initialize()
 	misc_item = pick(/obj/item/reagent_container/food/snacks/wrapped/twe_bar, /obj/item/storage/box/lemondrop)
@@ -287,6 +290,7 @@
 	should_have_cigarettes = FALSE
 	should_have_matches = FALSE
 	supersized = TRUE
+	rp_value = 20
 
 /obj/item/storage/box/mre/fsr/choose_utencil()
 	new /obj/item/tool/kitchen/utensil/mre_spork/fsr(src)
@@ -310,6 +314,7 @@
 	should_have_cookie = FALSE
 	should_have_utencil = FALSE
 	should_have_drink = TRUE
+	rp_value = 10
 
 /obj/item/storage/box/mre/wy/choose_drink()
 	new /obj/item/reagent_container/food/drinks/cans/bugjuice(src)
@@ -347,6 +352,7 @@
 	should_have_spread = FALSE
 	should_have_cookie = FALSE
 	should_have_utencil = TRUE
+	rp_value = 20
 
 /obj/item/storage/box/mre/upp/choose_utencil()
 	new /obj/item/tool/kitchen/utensil/pspoon(src)
@@ -391,6 +397,7 @@
 	side = /obj/item/mre_food_packet/entree/hdr/two
 	snack = /obj/item/mre_food_packet/hdr/side
 	dessert = /obj/item/mre_food_packet/hdr/dessert
+	rp_value = 10
 
 /obj/item/storage/box/mre/hdr/choose_utencil()
 	new /obj/item/tool/kitchen/utensil/pspoon(src)

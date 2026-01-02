@@ -19,12 +19,14 @@
 	desc = "A coin of the purest gold."
 	icon_state = "coin_gold"
 	black_market_value = 30
+	rp_value = 60
 
 /obj/item/coin/silver
 	name = "silver coin"
 	desc = "A coin of the purest silver."
 	icon_state = "coin_silver"
 	black_market_value = 25
+	rp_value = 20
 
 //CO coin
 /obj/item/coin/silver/falcon
@@ -40,42 +42,49 @@
 	desc = "A familiar, but cheap form of currency."
 	icon_state = "coin_copper"
 	black_market_value = 30
+	rp_value = 10
 
 /obj/item/coin/diamond
 	name = "diamond coin"
 	desc = "A coin of the most flawless diamond."
 	icon_state = "coin_diamond"
 	black_market_value = 35
+	rp_value = 120
 
 /obj/item/coin/iron
 	name = "iron coin"
 	desc = "A coin made of sturdy iron. You fear this might become rusty."
 	icon_state = "coin_iron"
 	black_market_value = 15
+	rp_value = 5
 
 /obj/item/coin/phoron
 	name = "solid phoron coin"
 	desc = "There are better uses for phoron."
 	icon_state = "coin_phoron"
 	black_market_value = 35
+	rp_value = 80
 
 /obj/item/coin/uranium
 	name = "uranium coin"
 	desc = "A radioactive coin. Don't touch it!"
 	icon_state = "coin_uranium"
 	black_market_value = 35
+	rp_value = 80
 
 /obj/item/coin/platinum
 	name = "platinum coin"
 	desc = "A coin made of shiny platinum. It is quite valuable."
 	icon_state = "coin_platinum"
 	black_market_value = 35
+	rp_value = 100
 
 /obj/item/coin/chitin
 	name = "chitin coin"
 	desc = "Durable alien chitin pressed into a coin. There are much better uses for chitin..."
 	icon_state = "coin_chitin"
 	black_market_value = 35
+	rp_value = 25
 
 /obj/item/coin/clown
 	name = "clown coin"

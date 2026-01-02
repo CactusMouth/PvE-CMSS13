@@ -124,6 +124,7 @@
 	desc = "A bottle of high-quality London gin."
 	icon_state = "ginbottle"
 	center_of_mass = "x=16;y=4"
+	rp_value = 30
 
 /obj/item/reagent_container/food/drinks/bottle/gin/Initialize()
 	. = ..()
@@ -134,6 +135,7 @@
 	desc = "A premium single-malt whiskey, gently matured for four years by hillbillies in the backwaters of Alabama."
 	icon_state = "whiskeybottle"
 	center_of_mass = "x=16;y=3"
+	rp_value = 30
 
 /obj/item/reagent_container/food/drinks/bottle/whiskey/Initialize()
 	. = ..()
@@ -144,6 +146,7 @@
 	desc = "Sake made with ancient techniques passed down for thousands of years. Fermented in Iowa by the Weyland-Yutani Corporation."
 	icon_state = "sakebottle"
 	center_of_mass = "x=17;y=7"
+	rp_value = 20
 
 /obj/item/reagent_container/food/drinks/bottle/sake/Initialize()
 	. = ..()
@@ -154,6 +157,7 @@
 	desc = "A cheap, popular vodka brand with a Soviet theme. The bottle reads, 'Ra Ra Red Star Man: Lover of the Finer Things.'"
 	icon_state = "red_star_vodka"
 	center_of_mass = "x=17;y=3"
+	rp_value = 20
 
 /obj/item/reagent_container/food/drinks/bottle/vodka/Initialize()
 	. = ..()
@@ -163,6 +167,7 @@
 	name = "\improper Stolichnaya Vodka"
 	desc = "A premier export from the UPP member state of Russia. Because of meticulous enforcement of state regulations, it is considered one of the highest quality vodkas available."
 	icon_state = "vodkabottle"
+	rp_value = 50
 
 //chess bottles
 
@@ -232,6 +237,7 @@
 	desc = "Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!"
 	icon_state = "tequilabottle"
 	center_of_mass = "x=16;y=3"
+	rp_value = 20
 
 /obj/item/reagent_container/food/drinks/bottle/tequila/Initialize()
 	. = ..()
@@ -242,6 +248,7 @@
 	desc = "An expensive whiskey with a distinct flavor. The bottle proudly proclaims that it's, 'A True Classic.'"
 	icon_state = "davenport"
 	center_of_mass = "x=16;y=3"
+	rp_value = 50
 
 /obj/item/reagent_container/food/drinks/bottle/davenport/Initialize()
 	. = ..()
@@ -262,6 +269,7 @@
 	desc = "Silver laced tequila, served in space night clubs across the galaxy."
 	icon_state = "patronbottle"
 	center_of_mass = "x=16;y=6"
+	rp_value = 50
 
 /obj/item/reagent_container/food/drinks/bottle/patron/Initialize()
 	. = ..()
@@ -272,6 +280,7 @@
 	desc = "Named after the famed Captain 'Cuban' Pete, this rum is about as volatile as his final mission."
 	icon_state = "rumbottle"
 	center_of_mass = "x=16;y=8"
+	rp_value = 30
 
 /obj/item/reagent_container/food/drinks/bottle/rum/Initialize()
 	. = ..()
@@ -292,6 +301,7 @@
 	desc = "Sweet, sweet dryness~"
 	icon_state = "vermouthbottle"
 	center_of_mass = "x=17;y=3"
+	rp_value = 30
 
 /obj/item/reagent_container/food/drinks/bottle/vermouth/Initialize()
 	. = ..()
@@ -404,6 +414,7 @@
 	desc = "A brand of colonial lager prevalent in the Outer Rim but practically unknown in the inner systems, probably because of health concerns. It tastes like absolutely nothing familiar to you, but is oddly refreshing and has a fruity taste. The label on the back reads, 'Brewed with exotic hops in Costaguana.' You're almost certain that's a fake country."
 	icon_state = "pendleton"
 	center_of_mass = "x=16;y=13"
+	rp_value = 30
 
 /obj/item/reagent_container/food/drinks/bottle/beer/craft/Initialize()
 	. = ..()

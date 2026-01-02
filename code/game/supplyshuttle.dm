@@ -109,8 +109,6 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/black_market_lockout = FALSE
 	var/last_viewed_group = "categories"
 	var/first_time = TRUE
-	var/qm_loyalty = 0
-	var/sh_loyalty = 0
 
 /obj/structure/machinery/computer/supplycomp/extraction
 	name = "merchant listing access console"
@@ -139,45 +137,45 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 			to_chat(user, SPAN_NOTICE("You find a small horizontal slot at the bottom of the console. You try to feed \the [hit_item] into it, but it's seemingly blocked off from the inside."))
 			return
 	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelone))
-		if(qm_loyalty != 1)
+		if(GLOB.supply_controller.qm_loyalty != 1)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1 purchases unlocked for QM."))
-			qm_loyalty = 1
+			GLOB.supply_controller.qm_loyalty = 1
 			return
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
-			qm_loyalty = 0
+			GLOB.supply_controller.qm_loyalty = 0
 	if(istype(hit_item, /obj/item/loyalty/quartermaster/leveltwo))
-		if(qm_loyalty != 2)
+		if(GLOB.supply_controller.qm_loyalty != 2)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1 and loyalty level 2 purchases unlocked for QM."))
-			qm_loyalty = 2
+			GLOB.supply_controller.qm_loyalty = 2
 			return
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
-			qm_loyalty = 0
+			GLOB.supply_controller.qm_loyalty = 0
 	if(istype(hit_item, /obj/item/loyalty/quartermaster/levelthree))
-		if(qm_loyalty != 3)
+		if(GLOB.supply_controller.qm_loyalty != 3)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty medallion at the console and it pings agreeably. Loyalty level 1, level 2, and level 3 purchases unlocked for QM."))
-			qm_loyalty = 3
+			GLOB.supply_controller.qm_loyalty = 3
 			return
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty medallion at the console and log out. Loyalty purchases disabled for QM."))
-			qm_loyalty = 0
+			GLOB.supply_controller.qm_loyalty = 0
 	if(istype(hit_item, /obj/item/loyalty/scholar/levelone))
-		if(sh_loyalty != 1)
+		if(GLOB.supply_controller.sh_loyalty != 1)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 purchases unlocked for Scholar."))
-			sh_loyalty = 1
+			GLOB.supply_controller.sh_loyalty = 1
 			return
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
-			sh_loyalty = 0
+			GLOB.supply_controller.sh_loyalty = 0
 	if(istype(hit_item, /obj/item/loyalty/scholar/leveltwo))
-		if(sh_loyalty != 2)
+		if(GLOB.supply_controller.sh_loyalty != 2)
 			to_chat(user, SPAN_NOTICE("You scan your loyalty seal at the console and it pings agreeably. Loyalty level 1 and loyalty level 2 purchases unlocked for Scholar."))
-			sh_loyalty = 2
+			GLOB.supply_controller.sh_loyalty = 2
 			return
 		else
 			to_chat(user, SPAN_WARNING("You scan your loyalty seal at the console and log out. Loyalty purchases disabled for Scholar."))
-			sh_loyalty = 0
+			GLOB.supply_controller.sh_loyalty = 0
 	if(istype(hit_item, /obj/item/coin/requisitionpoint))
 		var/obj/item/coin/requisitionpoint/slotted_coin = hit_item
 		to_chat(user, SPAN_NOTICE("You insert the requisition point token into the console and add its value to your budget."))
@@ -438,6 +436,11 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	var/points_per_slip = 0
 	var/points_per_crate = 0
 
+	/// extraction stuff
+	var/qm_loyalty = 0
+	var/sh_loyalty = 0
+	var/market_day = FALSE
+
 	//black market stuff
 	///in Weyland-Yutani dollars - Not Stan_Albatross.
 	var/black_market_points = 5 // 5 to start with to buy the scanner.
@@ -609,6 +612,17 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 		if(.(B))
 			return 1
 
+/datum/controller/supply/proc/get_loyalty_multiplier()
+	switch(qm_loyalty)
+		if(1)
+			return 0.25
+		if(2)
+			return 0.33
+		if(3)
+			return 0.5
+		else
+			return 0.2
+
 // Called when the elevator is lowered.
 /datum/controller/supply/proc/sell()
 	var/area/area_shuttle = shuttle.get_location_area()
@@ -645,9 +659,13 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 				timer += 0.5 SECONDS
 				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(maul_human), movable_atom), timer)
 
-		if(movable_atom.rp_value != 0)
+		// selling things for rp
+		if(market_day)
 			var/rp_points_to_add = get_rp_value(movable_atom)
-			points += rp_points_to_add
+			if(rp_points_to_add > 0)
+				points += rp_points_to_add * get_loyalty_multiplier()
+				qdel(movable_atom)
+				continue
 
 		// Delete everything else.
 		else qdel(movable_atom)
@@ -979,6 +997,10 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 					dat += "<BR>\n<BR>"
 
 
+		dat += "<HR><b>Market Day:</b> <span style='color:[GLOB.supply_controller.market_day ? "lime" : "red"]'>[GLOB.supply_controller.market_day ? "ACTIVE" : "INACTIVE"]</span><br>"
+		dat += "<b>QM Loyalty:</b> [GLOB.supply_controller.qm_loyalty] | "
+		dat += "<b>Sell Multiplier:</b> <span style='color:[round(GLOB.supply_controller.get_loyalty_multiplier()*100) >= 50 ? "lime" : round(GLOB.supply_controller.get_loyalty_multiplier()*100) >= 30 ? "orange" : "red"]'>[round(GLOB.supply_controller.get_loyalty_multiplier()*100)]%</span><br>"
+		dat += "<b>Scholar Loyalty:</b> [GLOB.supply_controller.sh_loyalty]<br>"
 		dat += {"<HR>\nSupply budget: [GLOB.supply_controller.points * SUPPLY_TO_MONEY_MUPLTIPLIER]RP<BR>\n<BR>
 		\n<A href='byond://?src=\ref[src];order=categories'>Order items</A><BR>\n<BR>
 		\n<A href='byond://?src=\ref[src];viewrequests=1'>View requests</A><BR>\n<BR>
@@ -1291,13 +1313,22 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	return_value = POSITIVE(return_value - GLOB.supply_controller.black_market_sold_items[movable_atom.type] * 0.5)
 	return return_value
 
+#define RP_PER_DOLLAR 0.2
+
 /proc/get_rp_value(atom/movable/movable_atom)
-	var/return_value
+	var/return_value = 0
 	if(istype(movable_atom, /obj/item/stack))
 		var/obj/item/stack/rp_stack = movable_atom
-		return_value += (rp_stack.rp_value * rp_stack.amount)
+		return_value = rp_stack.rp_value * rp_stack.amount
+	else if(istype(movable_atom, /obj/item/spacecash))
+		var/obj/item/spacecash/cash = movable_atom
+		if(!cash.counterfeit)
+			return_value = cash.worth * RP_PER_DOLLAR
+
 	else
 		return_value = movable_atom.rp_value
+
+	return return_value
 
 /datum/controller/supply/proc/kill_mendoza()
 	if(!mendoza_status)
@@ -1379,22 +1410,26 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	if(isnull(supply_pack.contains) && isnull(supply_pack.containertype))
 		return
 
-	if(supply_pack.qm_llone == TRUE && qm_loyalty < 1)
+	if(supply_pack.qm_llone == TRUE && GLOB.supply_controller.qm_loyalty < 1)
 		return
 
-	if(supply_pack.qm_lltwo == TRUE && qm_loyalty < 2)
+	if(supply_pack.qm_lltwo == TRUE && GLOB.supply_controller.qm_loyalty < 2)
 		return
 
-	if(supply_pack.qm_llthree == TRUE && qm_loyalty < 3)
+	if(supply_pack.qm_llthree == TRUE && GLOB.supply_controller.qm_loyalty < 3)
 		return
 
-	if(supply_pack.sh_llone == TRUE && sh_loyalty < 1)
+	if(supply_pack.sh_llone == TRUE && GLOB.supply_controller.sh_loyalty < 1)
 		return
 
-	if(supply_pack.sh_lltwo == TRUE && sh_loyalty < 2)
+	if(supply_pack.sh_lltwo == TRUE && GLOB.supply_controller.sh_loyalty < 2)
 		return
 
 	return TRUE
+
+/datum/controller/supply/proc/toggle_market_day()
+	market_day = !market_day
+	return market_day
 
 /obj/structure/machinery/computer/supplycomp/proc/post_signal(command)
 

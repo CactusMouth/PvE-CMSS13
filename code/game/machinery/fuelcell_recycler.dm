@@ -174,6 +174,7 @@
 	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi'
 	icon_state = "cell-full"
 	desc = "A rechargeable fuel cell designed to work as a power source for the Cheyenne-Class transport or for Westingland S-52 Reactors."
+	rp_value = 50
 	///How much fuel is in the reactor
 	var/fuel_amount = 100
 	///Max amount that the cell can hold
