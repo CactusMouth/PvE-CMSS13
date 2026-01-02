@@ -17,6 +17,7 @@
 	gun_type = /obj/item/weapon/gun/rifle/m41a
 	ammo_band_icon = "+m41a_band"
 	ammo_band_icon_empty = "+m41a_band_e"
+	rp_value = 2
 
 /obj/item/ammo_magazine/rifle/extended
 	name = "\improper M41A-MK2 extended magazine (10x24mm)"

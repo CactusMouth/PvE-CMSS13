@@ -1464,6 +1464,7 @@
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	flags_equip_slot = SLOT_BACK
 	start_automatic = TRUE
+	rp_value = 150
 
 /obj/item/weapon/gun/rifle/type71/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 10, "rail_y" = 23, "under_x" = 20, "under_y" = 13, "stock_x" = 11, "stock_y" = 13, "side_rail_x" = 23, "side_rail_y" = 16)
@@ -1510,6 +1511,7 @@
 	bonus_overlay_x = 1
 	bonus_overlay_y = 0
 	starting_attachment_types = list(/obj/item/attachable/stock/type71, /obj/item/attachable/type73suppressor, /obj/item/attachable/scope/mini/upp)
+	rp_value = 300
 
 /obj/item/weapon/gun/rifle/type71/carbine/set_gun_config_values()
 	..()
@@ -1555,6 +1557,7 @@
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	flags_equip_slot = SLOT_BACK
 	start_automatic = TRUE
+	rp_value = 100
 
 /obj/item/weapon/gun/rifle/lw317/set_gun_config_values()
 	..()
@@ -1580,6 +1583,7 @@
 		/obj/item/attachable/verticalgrip/upp,
 		/obj/item/attachable/flashlight/grip/upp,
 		)
+	rp_value = 150
 
 /obj/item/weapon/gun/rifle/lw317/dmr/set_gun_config_values()
 	..()
