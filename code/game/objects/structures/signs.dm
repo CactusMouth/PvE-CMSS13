@@ -122,10 +122,17 @@
 	name = "\improper United Americas flag"
 	desc = "A flag of the United Americas. Inspires patriotism, fear, or revulsion depending on the viewer's political leanings."
 	icon_state = "uaflag"
+
 /obj/structure/sign/banners/united_americas_worn
 	name = "\improper United Americas flag"
 	desc = "A very worn flag of the United Americas. Inspires patriotism, fear, or revulsion depending on the viewer's political leanings."
 	icon_state = "uaflag_worn"
+
+/obj/structure/sign/banners/freelancecell
+	name = "\improper Freelance Cell flag"
+	desc = "A flag depicting the insignia of the Freelance Cell, an elite group of freelancers. 'There is nothing more to me than myself.'"
+	icon_state = "freelancecell"
+
 //============//
 //  Flags    //
 //==========//

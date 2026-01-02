@@ -578,14 +578,38 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		given_medal.recipient_rank = medal.recipient_role
 		given_medal.medal_citation = medal.citation
 
-	if(new_human.ckey == "genessee")
-		new  /obj/item/weapon/gun/revolver/mateba/engraved(closet_to_spawn_in)
+// special items; usually end-of-wipe purchases
 
-	if(new_human.ckey == "kulduad") // happy birthday mac!
-		new  /obj/item/weapon/gun/shotgun/combat/haywood(closet_to_spawn_in)
+	if(new_human.ckey == "kulduad")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/haywood(closet_to_spawn_in) // birthday gift from genessee 2025
 
-	if(new_human.ckey == "leastleethax") // happy birthday hax! oct. 21
-		new  /obj/item/weapon/gun/rifle/m41aMK1/evan(closet_to_spawn_in)
+	if(new_human.ckey == "leastleethax")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/evan(closet_to_spawn_in) // birthday gift from genessee 2025
+
+	if(new_human.ckey == "pogchampsenthusiast")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
+	if(new_human.ckey == "bartekek")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
+	if(new_human.ckey == "roromonster")
+		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+
+	if(new_human.ckey == "crovus")
+		new /obj/item/clothing/accessory/poncho/freelancecellovercoat(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+
+	if(new_human.ckey == "sirjantkot1337")
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
 
 /datum/equipment_preset/proc/load_traits(mob/living/carbon/human/new_human, client/mob_client)
 	var/client/real_client = mob_client || new_human.client

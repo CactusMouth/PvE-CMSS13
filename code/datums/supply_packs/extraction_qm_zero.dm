@@ -266,6 +266,15 @@
 //	group = "Quartermaster LL0"
 
 // tools
+
+/datum/supply_packs/qm_scanner
+	name = "Tool: Price Scanner"
+	contains = list(/obj/item/device/black_market_scanner/extraction)
+	cost = 10
+	containertype = /obj/structure/closet/crate/supply
+	containername = "\improper price scanner crate"
+	group = "Quartermaster LL0"
+
 /datum/supply_packs/qm_toolbox
 	name = "Tool: Loaded Toolbox"
 	contains = list(/obj/item/storage/toolbox/mechanical)

@@ -110,6 +110,33 @@
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
 
+/obj/item/clothing/head/beret/raider // roughly the same as an M10 helmet
+	name = "Robert's Raiders beret"
+	desc = "An armored beret bearing the insignia of the Robert's Raiders, a notorious pirate group composed primarily of ex-USCM deserters. Berets like these are worn by veteran pirates who have survived long enough to earn their boss's respect. Needless to say - these berets are hard to come by, and those that wear them are not to be trifled with."
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon_state = "raider_beret_red"
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+	armor_energy = CLOTHING_ARMOR_LOW
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bio = CLOTHING_ARMOR_MEDIUM
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	flags_inventory = BLOCKSHARPOBJ
+
+/obj/item/clothing/head/beret/raider/legendary // roughly the same as an M12 helmet
+	name = "legendary Robert's Raiders beret"
+	desc = "An exceptionally ornate and very well-armored beret bearing the insignia of the Robert's Raiders, a notorious pirate group composed primarily of ex-USCM deserters. Berets like these are only worn by the most savage, ruthless pirates in the Raiders ranks. There are very few berets like this one in existence."
+	icon_state = "raider_beret_black"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
 //Medical
 /obj/item/clothing/head/surgery
 	name = "surgical cap"

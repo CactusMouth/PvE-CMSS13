@@ -484,6 +484,11 @@
 	desc = "A fire-resistant shoulder patch, worn by the men and women of the Brazilian Military Police."
 	icon_state = "brazilpolicepatch"
 
+/obj/item/clothing/accessory/patch/freelance_cell
+	name = "Freelance Cell patch"
+	desc = "A worn-out shoulder patch depicting the insignia of the Freelance Cell; a skull disappearing into the night sky. 'There is nothing more for me than myself!'"
+	icon_state = "freelancecellpatch"
+
 //Flag patches
 /obj/item/clothing/accessory/patch/ua
 	name = "UA flag patch"
@@ -562,6 +567,12 @@
 /obj/item/clothing/accessory/poncho/green/army
 	name = "Well-worn Poncho"
 	desc = "The standard poncho has variations for every climate. Custom fitted to be attached to M3 & M4 armor variants, it is comfortable and warms or cools as needed. A trooper couldn't ask for more. Affectionately referred to as a \"woobie\"."
+
+/obj/item/clothing/accessory/poncho/freelancecellovercoat
+	name = "Freelance Cell overcoat"
+	desc = "A giant overcoat favored by high-ranking members of the Freelance Cell; it's so big that it needs to be clipped to a set of armor to keep it from falling off entirely. Wearing it makes you feel important."
+	icon_state = "freelancecellovercoat"
+	has_variation = FALSE
 
 /obj/item/clothing/accessory/bomb //Suicide vesst
 	name = "explosive vest"
