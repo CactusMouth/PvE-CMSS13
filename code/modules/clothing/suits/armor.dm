@@ -55,6 +55,7 @@
 		/obj/item/storage/belt/gun/m4a3,
 		/obj/item/storage/belt/gun/m44,
 	)
+	rp_value = 10
 
 /obj/item/clothing/suit/armor/vest/ballistic
 	name = "ballistic vest"
@@ -67,6 +68,7 @@
 	item_state = "ballistic_vest"
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	rp_value = 10
 
 /obj/item/clothing/suit/armor/vest/pilot
 	name = "\improper M70 flak jacket"
@@ -109,6 +111,7 @@
 	item_icons = list(
 		WEAR_JACKET = 'icons/mob/humans/onmob/suit_1.dmi'
 	)
+	rp_value = 20
 
 /obj/item/clothing/suit/armor/vest/dutch
 	name = "armored jacket"
@@ -124,6 +127,7 @@
 	armor_bio = CLOTHING_ARMOR_LOW
 	armor_rad = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
+	rp_value = 250
 
 /obj/item/clothing/suit/armor/vest/security
 	name = "Wey-Yu security armor"
@@ -139,6 +143,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_LOW
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L, ACCESSORY_SLOT_ARMOR_S, ACCESSORY_SLOT_ARMOR_M)
+	rp_value = 10
 
 
 /obj/item/clothing/suit/armor/vest/warden
@@ -163,6 +168,7 @@
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	siemens_coefficient = 0
+	rp_value = 50 // its a prototype!
 
 /obj/item/clothing/suit/armor/bulletproof
 	name = "bulletproof vest"
@@ -179,6 +185,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUM
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	rp_value = 30
 
 
 /obj/item/clothing/suit/armor/bulletproof/badge
@@ -204,6 +211,7 @@
 	siemens_coefficient = 0.5
 	time_to_unequip = 20
 	time_to_equip = 20
+	rp_value = 20
 
 /obj/item/clothing/suit/armor/gladiator
 	name = "gladiator armor"
@@ -228,6 +236,7 @@
 		/obj/item/device/flashlight,
 	)
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL)
+	rp_value = 10
 
 /obj/item/clothing/suit/armor/riot/marine
 	name = "\improper M5 riot control armor"
@@ -245,6 +254,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	time_to_unequip = 20
 	time_to_equip = 20
+	rp_value = 200
 
 /obj/item/clothing/suit/armor/riot/marine/vintage_riot
 	desc = "Barring the slightly off-color plates, it's preserved quite well."
@@ -273,6 +283,7 @@
 	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_FEET|BODY_FLAG_ARMS|BODY_FLAG_HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROT
 	siemens_coefficient = 0.6
+	rp_value = 200
 
 
 /obj/item/clothing/suit/armor/swat/officer
@@ -284,6 +295,7 @@
 	flags_inventory = NO_FLAGS
 	flags_inv_hide = NO_FLAGS
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_ARMS
+	rp_value = 1000
 
 
 /obj/item/clothing/suit/armor/det_suit
@@ -302,6 +314,7 @@
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L, ACCESSORY_SLOT_ARMOR_S, ACCESSORY_SLOT_ARMOR_M)
+	rp_value = 10
 
 //Reactive armor
 //When the wearer gets hit, this armor will teleport the user a short distance away (to safety or to more danger, no one knows. That's the fun of it!)
@@ -322,6 +335,7 @@
 	armor_bio = CLOTHING_ARMOR_NONE
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_NONE
+	rp_value = 200
 
 /obj/item/clothing/suit/armor/reactive/IsShield()
 	if(active)
