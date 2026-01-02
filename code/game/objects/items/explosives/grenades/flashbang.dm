@@ -3,6 +3,7 @@
 	icon_state = "flashbang"
 	item_state = "grenade_flashbang"
 	black_market_value = 10
+	rp_value = 5
 
 	//can be used by synths
 	harmful = FALSE
