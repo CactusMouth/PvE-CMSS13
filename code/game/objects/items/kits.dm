@@ -3,7 +3,6 @@
 	desc = "A handheld kit that can be used to permanently convert a... thing... into another thing. Except this one is broken. Everything is broken. Oh, God. Oh, fuck."
 	icon = 'icons/obj/items/items.dmi'
 	icon_state = "kit_blank"
-	w_class = SIZE_NORMAL
 
 /obj/item/conversion_kit/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/conversion_kit))
