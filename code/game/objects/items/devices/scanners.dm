@@ -880,14 +880,14 @@ FORENSIC SCANNER
 	if(!ismovable(hit_atom))
 		return ..()
 	var/rp_value = get_rp_value(hit_atom)
-	rp_value = POSITIVE(rp_value)
+	rp_value = POSITIVE(rp_value/10)
 	user.visible_message(SPAN_WARNING("[user] presses a button on [src] and holds it over [hit_atom]..."), SPAN_WARNING("You scan [hit_atom]..."))
 	update_icon(rp_value, TRUE)
 	playsound(user, 'sound/machines/twobeep.ogg', 15, TRUE)
 	if(isnull(rp_value))
 		to_chat(user, SPAN_WARNING("[src] reports that [hit_atom] is worth <b> nothing! <b>"))
 		return ..()
-	to_chat(user, SPAN_NOTICE("[src] reports that [hit_atom] has a <b> market value of [rp_value] <b>, not accounting for sales tax."))
+	to_chat(user, SPAN_NOTICE("[src] reports that [hit_atom] has a <b>market value of [rp_value] requisition points<b>, not accounting for sales tax."))
 
 /obj/item/device/black_market_hacking_device
 	name = "modified security access tuner"
