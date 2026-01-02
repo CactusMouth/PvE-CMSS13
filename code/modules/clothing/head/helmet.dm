@@ -1844,6 +1844,23 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "A sturdy helmet worn by an unknown mercenary group. Features a toggleable welding screen for eye protection."
 	built_in_visors = list(new /obj/item/device/helmet_visor/welding_visor/mercenary)
 
+// freelance cell variants
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner/freelancecell/beret
+	name = "\improper Freelance Cell beret"
+	desc = "A rugged helmet and armored beret rig. Extremely protective and uses prototype ceramic plates in its construction. Armor like this is favored by elite members of the Freelance Cell."
+	icon_state = "freelancecell_beret"
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner/freelancecell
+	name = "\improper Freelance Cell helmet"
+	desc = "A rugged helmet and facemask. Extremely protective and uses prototype ceramic plates in its construction. Armor like this is made to-order for members of the Freelance Cell."
+	icon_state = "freelancecell_helmet"
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/freelancecell
+	name = "\improper Freelance Cell juggernaut helmet"
+	desc = "An exceptionally heavy helmet and facemask. Made almost entirely out of prototype ceramic plates, which gives it almost impossible strength and resistance. Armor like this is even rarer than normal Freelance Cell gear, and it's only used by their most elite members."
+	icon_state = "freelancecell_helmet_heavy"
+
 //=============================//MEME\\==================================\\
 //=======================================================================\\
 

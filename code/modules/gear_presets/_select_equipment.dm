@@ -600,6 +600,10 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 
+	if(new_human.ckey == "panicmechanic1")
+		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
+
 	if(new_human.ckey == "bartekek")
 		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
@@ -616,10 +620,19 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		new /obj/item/clothing/accessory/poncho/freelancecellovercoat(closet_to_spawn_in) // season 2 end-of-season purchase
 		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
 		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_beret(closet_to_spawn_in) // season 2 end-of-season purchase
 
 	if(new_human.ckey == "sirjantkot1337")
 		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
 		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor_alt(closet_to_spawn_in) // season 2 end-of-season purchase
+
+	if(new_human.ckey == "fatgod")
+		new /obj/item/clothing/under/marine/veteran/freelancer/freelancecell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/accessory/patch/freelance_cell(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_armor_heavy(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/conversion_kit/freelancecell_helmet_heavy(closet_to_spawn_in) // season 2 end-of-season purchase
 
 /datum/equipment_preset/proc/load_traits(mob/living/carbon/human/new_human, client/mob_client)
 	var/client/real_client = mob_client || new_human.client

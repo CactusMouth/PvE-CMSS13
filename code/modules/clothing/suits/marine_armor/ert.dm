@@ -744,6 +744,22 @@
 	armor_melee = CLOTHING_ARMOR_VERYHIGH
 	armor_bomb = CLOTHING_ARMOR_GIGAHIGH
 
+// freelance cell gear
+
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/freelancecell
+	name = "\improper Freelance Cell juggernaut armor"
+	desc = "An exceptionally set of armor. Made almost entirely out of prototype ceramic plates, which gives it almost impossible strength and resistance. Armor like this is even rarer than normal Freelance Cell gear, and it's only used by their most elite members."
+	icon_state = "freelancecell_armor_heavy"
+
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/miner/freelancecell
+	name = "\improper Freelance Cell armor"
+	desc = "A rugged hauberk. Extremely protective and uses prototype ceramic plates in its construction. Armor like this is made to-order for members of the Freelance Cell."
+	icon_state = "freelancecell_armor_1"
+
+/obj/item/clothing/suit/storage/marine/veteran/mercenary/miner/freelancecell/alt
+	name = "\improper Freelance Cell hauberk"
+	icon_state = "freelancecell_armor_2"
+
 
 //=========================//PROVOST\\================================\\
 //=======================================================================\\
