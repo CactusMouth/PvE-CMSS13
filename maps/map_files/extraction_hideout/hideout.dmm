@@ -1,4 +1,15 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/east,
+/area/galleyburned/residential)
 "ab" = (
 /obj/structure/surface/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -6,6 +17,46 @@
 /obj/item/tool/hand_labeler,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"ac" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_17";
+	pixel_y = 9;
+	pixel_x = 8;
+	layer = 4
+	},
+/obj/item/weapon/knife/marine{
+	pixel_y = 8
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_x = -10
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
+/area/galleyburned/residential)
+"ad" = (
+/obj/structure/bed/sofa/hybrisa/misc/bench{
+	pixel_x = 7;
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
+/area/galleyburned/residential)
+"ae" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/west,
+/area/galleyburned/residential)
+"af" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
+	turned_on = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"ag" = (
+/obj/structure/bed/chair/comfy/black,
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue,
+/area/galleyburned/residential)
 "ah" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -13,6 +64,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
+"ai" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
+/area/galleyburned/residential)
+"aj" = (
+/obj/structure/prop/hybrisa/misc/machinery/screens/telescreen{
+	pixel_y = 32;
+	pixel_x = 16
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
+/area/galleyburned/residential)
 "ak" = (
 /obj/structure/barricade/handrail{
 	dir = 1;
@@ -26,6 +87,45 @@
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"am" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/north,
+/area/galleyburned/residential)
+"an" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/obj/structure/sign/poster/blacklight{
+	pixel_y = 32
+	},
+/obj/structure/curtain/open/black,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"ao" = (
+/obj/structure/machinery/big_computers/messaging_server/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"ap" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8;
+	pixel_x = 1
+	},
+/obj/structure/sign/catclock{
+	pixel_x = 28
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	icon_state = "t_handrail_b_cap";
+	layer = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aq" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "ar" = (
 /obj/structure/inventory_machine,
 /turf/open/floor/hybrisa/wood/greywood,
@@ -40,6 +140,18 @@
 /obj/effect/landmark/start/marine/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/galleyburned/cryo)
+"au" = (
+/obj/structure/machinery/door/airlock/almayer/secure,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"av" = (
+/obj/structure/barricade/handrail/kutjevo{
+	icon_state = "t_handrail_b_cap";
+	layer = 2.09;
+	pixel_y = -8
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "aw" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -49,12 +161,64 @@
 /obj/structure/window/framed/upp/grey,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"ax" = (
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "ay" = (
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	layer = 4;
+	level = 4
+	},
+/obj/structure/platform/metal/kutjevo/west,
+/obj/structure/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/metal/bluemetal1/west,
+/area/galleyburned/residential)
+"az" = (
+/obj/structure/machinery/door/airlock/almayer/secure,
+/turf/open/floor/hybrisa/metal/greenmetalfull,
 /area/galleyburned/residential)
 "aA" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"aB" = (
+/turf/open/floor/hybrisa/metal/greenmetal1/west,
+/area/galleyburned/residential)
+"aC" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/metal/metalwhitefull,
+/area/galleyburned/residential)
+"aD" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/structure/flora/pottedplant{
+	pixel_y = 18
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aE" = (
+/obj/structure/prop/hybrisa/misc/metergreen{
+	pixel_x = 32;
+	pixel_y = 6
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "aF" = (
 /obj/structure/machinery/door_control{
@@ -65,9 +229,222 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"aG" = (
+/obj/structure/sink{
+	pixel_y = 19
+	},
+/obj/structure/mirror{
+	pixel_y = 33
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/metal/greenmetal1/west,
+/area/galleyburned/residential)
+"aH" = (
+/obj/structure/machinery/shower{
+	pixel_y = 15
+	},
+/obj/structure/curtain/open/shower,
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/metal/metalwhitefull,
+/area/galleyburned/residential)
+"aI" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1;
+	req_access = null;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/hybrisa/metal/yellow_warning_floor,
+/area/galleyburned/residential)
+"aJ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/beach_ball/holoball{
+	pixel_x = -12;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/explosive/plastic/custom{
+	pixel_x = 13;
+	anchored = 1;
+	name = "white wrapped package"
+	},
+/obj/item/toy/plush/farwa{
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/weapon/gun/revolver/mateba{
+	pixel_x = -5;
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/clothing/glasses/night/m42_hms/upp{
+	pixel_x = -3;
+	pixel_y = 7;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/space/souto{
+	pixel_x = 12;
+	pixel_y = 6;
+	anchored = 1
+	},
+/obj/item/storage/belt/souto{
+	pixel_y = 15;
+	pixel_x = 12;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aK" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -28
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aL" = (
+/obj/structure/bed,
+/obj/item/bedsheet{
+	color = "#bb3439"
+	},
+/obj/item/weapon/gun/rifle/m46c{
+	pixel_x = 32;
+	anchored = 1
+	},
+/obj/structure/noticeboard{
+	pixel_x = 32
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aM" = (
+/obj/structure/surface/rack,
+/obj/item/clothing/head/helmet/upp/marinepilot/merc{
+	pixel_x = 8;
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/upp/marinepilot/tex{
+	pixel_x = -8;
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/rmc{
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner{
+	pixel_x = -8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/hybrisa/kelland_mining_helmet{
+	pixel_x = 8;
+	pixel_y = -2;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/support{
+	pixel_x = -8;
+	pixel_y = -10;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/fil/fire{
+	pixel_x = 8;
+	pixel_y = -10;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc{
+	pixel_y = -8;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aN" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aO" = (
+/obj/effect/decal/cleanable/hybrisa/trash{
+	pixel_y = 22;
+	pixel_x = 12
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aP" = (
+/obj/structure/surface/rack,
+/obj/item/clothing/accessory/patch/france{
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/royal_marines{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/twe{
+	pixel_y = 8
+	},
+/obj/item/clothing/accessory/patch/upp{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/clothing/accessory/patch/upp/naval{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/obj/item/clothing/accessory/patch/cmb/brazil_police{
+	pixel_y = -6
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aQ" = (
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aR" = (
+/obj/structure/surface/rack,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/item/clothing/accessory/patch/army/armor{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/army/infantry{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/usasf/helljumper,
+/obj/item/clothing/accessory/patch/army{
+	pixel_x = -6;
+	pixel_y = -12
+	},
+/obj/item/clothing/accessory/patch/usasf{
+	pixel_x = 6;
+	pixel_y = -12
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "aS" = (
 /turf/open/floor/plating/almayer,
 /area/galleyburned/memorial)
+"aT" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/machinery/chem_master,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"aU" = (
+/obj/structure/machinery/autolathe/armylathe,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "aV" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -393,7 +770,6 @@
 /area/galleyburned/residential)
 "eZ" = (
 /obj/item/prop/tableflag{
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/five,
@@ -696,17 +1072,17 @@
 /turf/open/floor/almayer/sterile_green_side,
 /area/galleyburned/cryo)
 "iX" = (
-/obj/structure/machinery/defenses/planted_flag/wy{
-	disassemble_time = 6000000;
-	name = "repurposed WY flag";
-	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
-	turned_on = 1
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	layer = 4;
+	level = 4
 	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/platform/metal/kutjevo/north,
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/platform/metal/kutjevo/west,
+/turf/open/floor/hybrisa/metal/bluemetal1/east,
 /area/galleyburned/residential)
 "jh" = (
 /obj/structure/machinery/light/double{
@@ -1354,8 +1730,20 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "rt" = (
-/obj/structure/surface/table/woodentable/fancy,
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	layer = 4;
+	level = 4
+	},
+/obj/structure/platform/metal/kutjevo,
+/obj/structure/platform/metal/kutjevo/west,
+/turf/open/floor/hybrisa/metal/bluemetal1/west,
 /area/galleyburned/residential)
 "rx" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -1695,7 +2083,7 @@
 	dir = 1;
 	light_power = 0.7
 	},
-/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/autolathe/armylathe,
 /turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "vM" = (
@@ -2016,11 +2404,18 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "At" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
-/turf/open/floor/plating,
+/obj/structure/coatrack,
+/obj/item/clothing/suit/storage/CMB/hybrisa/fur_lined_trench_coat{
+	pixel_x = -1
+	},
+/obj/item/clothing/head/beret/raider/legendary{
+	pixel_x = -1;
+	pixel_y = 16
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "AJ" = (
 /turf/closed/wall/almayer,
@@ -2533,7 +2928,6 @@
 	pixel_y = 5
 	},
 /obj/item/pamphlet/skill/specialization/comtech{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/pamphlet/skill/specialization/pointman{
@@ -2551,20 +2945,23 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "Hr" = (
-/obj/structure/machinery/door/airlock/almayer/generic/glass{
-	dir = 2;
-	name = "\improper M-03 [VACANT]"
-	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
 	id = "m3";
 	dir = 2
 	},
-/turf/open/floor/plating/plating_catwalk,
+/obj/structure/machinery/door/airlock/almayer/secure/glass{
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Hs" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 4
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	pixel_y = 12
 	},
 /turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
@@ -2776,9 +3173,19 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
 "KN" = (
-/obj/structure/largecrate,
-/turf/open/floor/plating,
-/area/galleyburned)
+/obj/structure/closet/cabinet{
+	pixel_y = 17
+	},
+/obj/structure/coatrack{
+	pixel_x = 15;
+	pixel_y = 14
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "KT" = (
 /obj/item/reagent_container/syringe/drugs{
 	pixel_y = 15;
@@ -2841,9 +3248,7 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "LM" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/item/device/flashlight/lamp,
-/turf/open/floor/hybrisa/wood/blackwood,
+/turf/open/floor/almayer/blackfull/west,
 /area/galleyburned/residential)
 "LO" = (
 /obj/structure/dartboard{
@@ -3202,9 +3607,19 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "QT" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hop,
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	layer = 4;
+	level = 4
+	},
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/platform/metal/kutjevo/west,
+/turf/open/floor/hybrisa/metal/bluemetal1/east,
 /area/galleyburned/residential)
 "QV" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
@@ -3497,18 +3912,36 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "VK" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/door_control{
 	pixel_x = 8;
 	pixel_y = 22;
 	name = "door lock";
 	id = "m3"
 	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/obj/structure/surface/rack,
+/obj/item/clothing/accessory/patch{
+	pixel_x = -6;
+	pixel_y = 12
 	},
-/turf/open/floor/plating,
+/obj/item/clothing/accessory/patch/falcon{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/ua{
+	pixel_x = -6
+	},
+/obj/item/clothing/accessory/patch/usa{
+	pixel_x = 6
+	},
+/obj/item/clothing/accessory/patch/forecon{
+	pixel_y = -12;
+	pixel_x = -6
+	},
+/obj/item/clothing/accessory/patch/devils{
+	pixel_x = 6;
+	pixel_y = -12
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "VN" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
@@ -3669,18 +4102,33 @@
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/galleyburned/requisition)
 "YC" = (
-/obj/structure/closet/cabinet{
-	pixel_y = 17
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4
 	},
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	layer = 4;
+	level = 4
+	},
+/obj/structure/platform/metal/kutjevo/north,
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/platform/metal/kutjevo/west,
+/turf/open/floor/hybrisa/metal/bluemetal1/west,
 /area/galleyburned/residential)
 "YM" = (
-/obj/structure/flora/pottedplant,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
+/obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
+/obj/structure/prop/hybrisa/xenobiology/misc,
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	layer = 4;
+	level = 4
 	},
-/turf/open/floor/hybrisa/wood/greywood,
+/obj/structure/platform/metal/kutjevo/east,
+/obj/structure/platform/metal/kutjevo,
+/obj/structure/platform/metal/kutjevo/west,
+/turf/open/floor/hybrisa/metal/bluemetal1/east,
 /area/galleyburned/residential)
 "YN" = (
 /obj/structure/shuttle/part/midway/transparent{
@@ -5147,9 +5595,9 @@ zQ
 gs
 gs
 gs
-gs
-gs
-gs
+sN
+aD
+aq
 Lj
 XY
 XY
@@ -5196,16 +5644,16 @@ vV
 vV
 vV
 sN
-vV
-vV
-vV
 sN
-Lj
-Lj
-Lj
-XY
-XY
-XY
+sN
+sN
+sN
+sN
+au
+sN
+sN
+sN
+sN
 XY
 XY
 XY
@@ -5253,11 +5701,11 @@ ay
 rt
 sN
 KN
-XY
-XY
-XY
-XY
-XY
+av
+ao
+ag
+aa
+sN
 XY
 XY
 XY
@@ -5298,18 +5746,18 @@ tZ
 Sj
 bh
 Hs
-bh
-Xz
-bh
-bh
+aO
+aI
 LM
+LM
+LM
+aI
+aE
+ax
+ap
+ai
+ac
 sN
-XY
-XY
-XY
-XY
-XY
-XY
 XY
 XY
 XY
@@ -5356,12 +5804,12 @@ iX
 QT
 YM
 sN
-XY
-XY
-XY
-XY
-XY
-XY
+JF
+az
+JF
+aj
+ad
+sN
 XY
 XY
 XY
@@ -5408,12 +5856,12 @@ JF
 JF
 JF
 sN
-XY
-XY
-XY
-XY
-XY
-XY
+aG
+aB
+JF
+am
+ae
+sN
 XY
 XY
 XY
@@ -5453,19 +5901,19 @@ JC
 vS
 JF
 VK
-mt
-Sv
-yC
-mt
-Sv
+aR
+aP
+JF
+aM
+aK
 At
 sN
-XY
-XY
-XY
-XY
-XY
-XY
+aH
+aC
+JF
+an
+af
+sN
 XY
 XY
 XY
@@ -5504,13 +5952,13 @@ yC
 YU
 tZ
 Hr
-yC
-yC
-yC
-yC
-yC
-mt
-yC
+bh
+bh
+bh
+Xz
+bh
+bh
+bh
 sN
 sN
 sN
@@ -5556,13 +6004,13 @@ Og
 JF
 vS
 JF
-Gq
-yC
-mt
-yC
-yC
-yC
-ZI
+aU
+aT
+aQ
+JF
+aN
+aL
+aJ
 JF
 iN
 PR
