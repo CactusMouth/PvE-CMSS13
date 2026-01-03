@@ -597,7 +597,7 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/evan(closet_to_spawn_in) // birthday gift from genessee 2025
 
-	if(new_human.ckey == "pogchampsenthusiast")
+	if(new_human.ckey == "pogchampsenthuasist")
 		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 
