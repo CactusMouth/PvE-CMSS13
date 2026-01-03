@@ -114,7 +114,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_synth_extract, list(
 	name = "\improper ColMarTech Surplus Synthetic Equipment Rack"
 	desc = "An automated rack hooked up to an autofab of cheap, low-quality equipment. This one can only be used by synthetics."
 	req_access = list()
-	vendor_role = list()
+	vendor_role = list(JOB_SYNTH, JOB_SYNTH_SURVIVOR, JOB_UPP_SUPPORT_SYNTH, JOB_CMB_SYN, JOB_PMC_SYNTH)
 
 /obj/structure/machinery/cm_vending/clothing/synth/extraction/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_synth_extract
