@@ -600,3 +600,16 @@
 				"side2" = list("sound/music/walkman/numetal/21-2-1.ogg",\
 								"sound/music/walkman/numetal/21-2-2.ogg",\
 								"sound/music/walkman/numetal/21-2-3.ogg"))
+
+/obj/item/device/cassette_tape/doors
+	name = "perceptive cassette"
+	id = 22
+	desc = "A plastic cassette tape with a bluish-green sticker. It's labeled 'THE DOORS'. There's a message written on the back - 'If the doors of perception were cleansed, every thing would appear to man as it is: infinite.'"
+	icon_state = "cassette_numetal"
+	side1_icon = "cassette_numetal"
+	songs = list("side1" = list("sound/music/walkman/numetal/22-1-1.ogg",\
+								"sound/music/walkman/numetal/22-1-2.ogg",\
+								"sound/music/walkman/numetal/22-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/numetal/22-2-1.ogg",\
+								"sound/music/walkman/numetal/22-2-2.ogg",\
+								"sound/music/walkman/numetal/22-2-3.ogg"))

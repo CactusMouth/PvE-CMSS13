@@ -130,3 +130,15 @@
 		to_chat(user, "You apply the conversion kit to the armor. You admire the sheer power this thing radiates - nothing is getting through that.")
 		qdel(W)
 		qdel(src)
+
+/obj/item/conversion_kit/marauder
+	name = "weapon conversion kit - Marauder"
+	desc = "A handheld kit that can be used to permanently apply a custom paintjob to an <b>RXF-M5 EVA pistol<b>."
+	icon_state = "kit_haywood"
+
+/obj/item/conversion_kit/marauder/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W,/obj/item/weapon/gun/energy/rxfm5_eva))
+		new /obj/item/weapon/gun/energy/rxfm5_eva/marauder(get_turf(src))
+		to_chat(user, "You apply the conversion kit to the laser pistol. You suddenly feel like building better worlds.")
+		qdel(W)
+		qdel(src)

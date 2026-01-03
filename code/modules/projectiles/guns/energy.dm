@@ -165,6 +165,21 @@
 	user.update_inv_r_hand()
 	user.update_inv_l_hand()
 
+
+/obj/item/weapon/gun/energy/rxfm5_eva/marauder
+	name = "RXF-M5 'Marauder' EVA pistol"
+	desc = "A high power focusing laser pistol designed for Extra-Vehicular Activity. This one has been given a series of cosmetic modifications to make it look like the military-grade N79 laser pistol, including a custom scope. Favored by pirates and Weyland PMCs."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "rxfm5_eva_marauder"
+	item_state = "eva_marauder"
+	attachable_allowed = list(/obj/item/attachable/scope/variable_zoom/eva/marauder)
+	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/eva/marauder)
+	charge_icon = "+rxfm5_marauder_empty"
+
+/obj/item/weapon/gun/energy/rxfm5_eva/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 0, "muzzle_y" = 0,"rail_x" = 0, "rail_y" = 0, "under_x" = 16, "under_y" = 10, "stock_x" = 0, "stock_y" = 0)
+
+
 /obj/item/weapon/gun/energy/laser_top
 	name = "'LAZ-TOP'"
 	desc = "The 'LAZ-TOP', aka the Laser Anode something something"//finish this later

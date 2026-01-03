@@ -1219,6 +1219,11 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "A civilian-grade scope that can be switched between short and long range magnification, intended for use in extraterrestrial scouting. Looks ridiculous on a pistol."
 	aim_speed_mod = 0
 
+/obj/item/attachable/scope/variable_zoom/eva/marauder
+	name = "N79 EVA telescopic variable scope"
+	icon_state = "rxfm5_eva_scope_marauder"
+	attach_icon = "rxfm5_eva_scope_marauder_a"
+
 /obj/item/attachable/scope/variable_zoom/canc
 	name = "LMR-72 4x smartscope"
 	desc = "Outdated CANC scope."
