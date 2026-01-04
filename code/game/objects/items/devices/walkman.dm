@@ -620,9 +620,22 @@
 	desc = "A plastic cassette tape with a green and red sticker. It's covered in dried bloodstains. Holding it fills you with a primal rage. 'Don't blame me; blame the Franchise.'"
 	icon_state = "cassette_thefranchise"
 	side1_icon = "cassette_thefranchise"
-	songs = list("side1" = list("sound/music/walkman/numetal/23-1-1.ogg",\
-								"sound/music/walkman/numetal/23-1-2.ogg",\
-								"sound/music/walkman/numetal/23-1-3.ogg"),\
-				"side2" = list("sound/music/walkman/numetal/23-2-1.ogg",\
-								"sound/music/walkman/numetal/23-2-2.ogg",\
-								"sound/music/walkman/numetal/23-2-3.ogg"))
+	songs = list("side1" = list("sound/music/walkman/thefranchise/23-1-1.ogg",\
+								"sound/music/walkman/thefranchise/23-1-2.ogg",\
+								"sound/music/walkman/thefranchise/23-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/thefranchise/23-2-1.ogg",\
+								"sound/music/walkman/thefranchise/23-2-2.ogg",\
+								"sound/music/walkman/thefranchise/23-2-3.ogg"))
+
+/obj/item/device/cassette_tape/freelancing
+	name = "pink-blue cassette"
+	id = 24
+	desc = "A plastic cassette tape with a pink and blue sticker. It's labeled 'FREELANCING'."
+	icon_state = "cassette_pink_blue"
+	side1_icon = "cassette_pink_blue"
+	songs = list("side1" = list("sound/music/walkman/freelancing/24-1-1.ogg",\
+								"sound/music/walkman/freelancing/24-1-2.ogg",\
+								"sound/music/walkman/freelancing/24-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/freelancing/24-2-1.ogg",\
+								"sound/music/walkman/freelancing/24-2-2.ogg",\
+								"sound/music/walkman/freelancing/24-2-3.ogg"))

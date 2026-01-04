@@ -1079,6 +1079,16 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/device/cassette_tape/doors
 	cost = 1
 
+/datum/gear/cassettes/thefranchise
+	display_name = "Bloodstained Cassette"
+	path = /obj/item/device/cassette_tape/thefranchise
+	cost = 1
+
+/datum/gear/cassettes/freelancing
+	display_name = "Pink-Blue Cassette"
+	path = /obj/item/device/cassette_tape/freelancing
+	cost = 1
+
 /datum/gear/cassettes/pouch
 	display_name = "Cassette Pouch"
 	path = 	/obj/item/storage/pouch/cassette
