@@ -617,6 +617,7 @@ GLOBAL_LIST_EMPTY(personal_closets)
 	if(new_human.ckey == "lordinquisitorplasmaman")
 		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
 		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/commandate(closet_to_spawn_in) // season 1 end-of-season reward
 
 	if(new_human.ckey == "monolamp63")
 		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward

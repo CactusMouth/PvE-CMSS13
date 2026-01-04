@@ -910,6 +910,13 @@
 /obj/item/clothing/suit/marine/light/standard
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
+/obj/item/clothing/suit/marine/commandate
+	name = "\improper M3 pattern 'Commandate' marine armor"
+	desc = "Standard USCMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp. This one has been modified to look exceptionally regal."
+	icon_state = "commandate"
+	item_state = "commandate"
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+
 
 /obj/item/clothing/suit/marine/heavy
 	name = "\improper M3-H pattern heavy armor"

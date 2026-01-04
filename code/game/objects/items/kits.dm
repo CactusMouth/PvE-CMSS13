@@ -142,3 +142,15 @@
 		to_chat(user, "You apply the conversion kit to the laser pistol. You suddenly feel like building better worlds.")
 		qdel(W)
 		qdel(src)
+
+/obj/item/conversion_kit/commandate
+	name = "armor conversion kit - Commandate"
+	desc = "A handheld kit that can be used to permanently apply a custom paintjob to a set of <b>M3 pattern marine armor<b>."
+	icon_state = "kit_commandate"
+
+/obj/item/conversion_kit/commandate/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W,/obj/item/clothing/suit/marine))
+		new /obj/item/clothing/suit/marine/commandate(get_turf(src))
+		to_chat(user, "You apply the conversion kit to the armor. You feel like you're in charge.")
+		qdel(W)
+		qdel(src)
