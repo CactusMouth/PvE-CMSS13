@@ -607,9 +607,22 @@
 	desc = "A plastic cassette tape with a bluish-green sticker. It's labeled 'THE DOORS'. There's a message written on the back - 'If the doors of perception were cleansed, every thing would appear to man as it is: infinite.'"
 	icon_state = "cassette_doors"
 	side1_icon = "cassette_doors"
-	songs = list("side1" = list("sound/music/walkman/numetal/22-1-1.ogg",\
-								"sound/music/walkman/numetal/22-1-2.ogg",\
-								"sound/music/walkman/numetal/22-1-3.ogg"),\
-				"side2" = list("sound/music/walkman/numetal/22-2-1.ogg",\
-								"sound/music/walkman/numetal/22-2-2.ogg",\
-								"sound/music/walkman/numetal/22-2-3.ogg"))
+	songs = list("side1" = list("sound/music/walkman/doors/22-1-1.ogg",\
+								"sound/music/walkman/doors/22-1-2.ogg",\
+								"sound/music/walkman/doors/22-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/doors/22-2-1.ogg",\
+								"sound/music/walkman/doors/22-2-2.ogg",\
+								"sound/music/walkman/doors/22-2-3.ogg"))
+
+/obj/item/device/cassette_tape/thefranchise
+	name = "bloodstained cassette"
+	id = 23
+	desc = "A plastic cassette tape with a green and red sticker. It's covered in dried bloodstains. Holding it fills you with a primal rage. 'Don't blame me; blame the Franchise.'"
+	icon_state = "cassette_thefranchise"
+	side1_icon = "cassette_thefranchise"
+	songs = list("side1" = list("sound/music/walkman/numetal/23-1-1.ogg",\
+								"sound/music/walkman/numetal/23-1-2.ogg",\
+								"sound/music/walkman/numetal/23-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/numetal/23-2-1.ogg",\
+								"sound/music/walkman/numetal/23-2-2.ogg",\
+								"sound/music/walkman/numetal/23-2-3.ogg"))
