@@ -330,6 +330,6 @@
 
 /obj/item/clothing/mask/owlf_mask/black_smoke
 	name = "\improper OWLF 'Black Smoke' gas mask"
-	desc = "A close-fitting mask that can be connected to an air supply. This one has been given several cosmetic modifications to make it more menacing."
+	desc = "An obscure gas mask model, retrofitted with an opaque red visor. The make and model are obscure enough to be 'CAG-compliant', whatever that means. For only the most deranged of ordinance experts."
 	icon_state = "owlf_mask_blacksmoke"
 	item_state = "owlf_mask_blacksmoke"
