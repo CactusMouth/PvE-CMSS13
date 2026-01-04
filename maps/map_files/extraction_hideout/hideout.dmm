@@ -1,15 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/structure/machinery/prop/almayer/computer/PC{
-	dir = 1
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/east,
-/area/galleyburned/residential)
 "ab" = (
 /obj/structure/surface/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -17,46 +6,6 @@
 /obj/item/tool/hand_labeler,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"ac" = (
-/obj/structure/surface/table/woodentable/fancy,
-/obj/structure/flora/pottedplant{
-	icon_state = "pottedplant_17";
-	pixel_y = 9;
-	pixel_x = 8;
-	layer = 4
-	},
-/obj/item/weapon/knife/marine{
-	pixel_y = 8
-	},
-/obj/item/device/flashlight/lamp{
-	pixel_x = -10
-	},
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
-/area/galleyburned/residential)
-"ad" = (
-/obj/structure/bed/sofa/hybrisa/misc/bench{
-	pixel_x = 7;
-	dir = 1;
-	layer = 3
-	},
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
-/area/galleyburned/residential)
-"ae" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/west,
-/area/galleyburned/residential)
-"af" = (
-/obj/structure/machinery/defenses/planted_flag/wy{
-	disassemble_time = 6000000;
-	name = "repurposed WY flag";
-	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
-	turned_on = 1
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"ag" = (
-/obj/structure/bed/chair/comfy/black,
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue,
-/area/galleyburned/residential)
 "ah" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -64,16 +13,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
-"ai" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
-/area/galleyburned/residential)
-"aj" = (
-/obj/structure/prop/hybrisa/misc/machinery/screens/telescreen{
-	pixel_y = 32;
-	pixel_x = 16
-	},
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
-/area/galleyburned/residential)
 "ak" = (
 /obj/structure/barricade/handrail{
 	dir = 1;
@@ -87,52 +26,14 @@
 "al" = (
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
-"am" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/north,
-/area/galleyburned/residential)
-"an" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hop,
-/obj/structure/sign/poster/blacklight{
-	pixel_y = 32
-	},
-/obj/structure/curtain/open/black,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"ao" = (
-/obj/structure/machinery/big_computers/messaging_server/black{
-	dir = 4
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"ap" = (
-/obj/structure/machinery/space_heater/radiator/red{
-	dir = 8;
-	pixel_x = 1
-	},
-/obj/structure/sign/catclock{
-	pixel_x = 28
-	},
-/obj/structure/barricade/handrail/kutjevo{
-	dir = 8;
-	icon_state = "t_handrail_b_cap";
-	layer = 4
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aq" = (
-/obj/structure/barricade/handrail/wire{
-	dir = 8
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "ar" = (
-/obj/structure/inventory_machine,
+/obj/structure/personal_stash,
 /turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "as" = (
-/turf/closed/shuttle/midway{
-	icon_state = "104"
+/turf/closed/shuttle/cyclone{
+	icon_state = "104";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "at" = (
@@ -140,18 +41,6 @@
 /obj/effect/landmark/start/marine/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/galleyburned/cryo)
-"au" = (
-/obj/structure/machinery/door/airlock/almayer/secure,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"av" = (
-/obj/structure/barricade/handrail/kutjevo{
-	icon_state = "t_handrail_b_cap";
-	layer = 2.09;
-	pixel_y = -8
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "aw" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -162,8 +51,13 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "ax" = (
-/obj/structure/pipes/vents,
-/turf/open/floor/hybrisa/wood/blackwood,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_12";
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "ay" = (
 /obj/structure/platform/metal/kutjevo/east,
@@ -184,41 +78,31 @@
 /turf/open/floor/hybrisa/metal/bluemetal1/west,
 /area/galleyburned/residential)
 "az" = (
-/obj/structure/machinery/door/airlock/almayer/secure,
-/turf/open/floor/hybrisa/metal/greenmetalfull,
-/area/galleyburned/residential)
-"aA" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/galleyburned/residential)
-"aB" = (
-/turf/open/floor/hybrisa/metal/greenmetal1/west,
-/area/galleyburned/residential)
-"aC" = (
-/obj/structure/toilet{
-	dir = 8
-	},
-/turf/open/floor/hybrisa/metal/metalwhitefull,
-/area/galleyburned/residential)
-"aD" = (
-/obj/structure/barricade/handrail/wire{
-	dir = 8
-	},
-/obj/structure/flora/pottedplant{
-	pixel_y = 18
-	},
+/obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
+	dir = 1;
 	light_power = 0.7
 	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aE" = (
-/obj/structure/prop/hybrisa/misc/metergreen{
-	pixel_x = 32;
-	pixel_y = 6
+/turf/open/floor/plating,
+/area/galleyburned/maint)
+"aA" = (
+/obj/structure/platform_decoration{
+	dir = 4
 	},
-/turf/open/floor/hybrisa/wood/blackwood,
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/item/tool/warning_cone{
+	pixel_x = -21;
+	pixel_y = 3;
+	anchored = 1
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "aF" = (
 /obj/structure/machinery/door_control{
@@ -227,224 +111,12 @@
 	name = "door lock";
 	id = "s2"
 	},
-/turf/open/floor/plating,
-/area/galleyburned/residential)
-"aG" = (
-/obj/structure/sink{
-	pixel_y = 19
-	},
-/obj/structure/mirror{
-	pixel_y = 33
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/turf/open/floor/hybrisa/metal/greenmetal1/west,
-/area/galleyburned/residential)
-"aH" = (
-/obj/structure/machinery/shower{
-	pixel_y = 15
-	},
-/obj/structure/curtain/open/shower,
-/obj/structure/pipes/vents,
-/turf/open/floor/hybrisa/metal/metalwhitefull,
-/area/galleyburned/residential)
-"aI" = (
-/obj/structure/machinery/door/airlock/almayer/secure{
-	dir = 1;
-	req_access = null;
-	name = "\improper Airlock"
-	},
-/turf/open/floor/hybrisa/metal/yellow_warning_floor,
-/area/galleyburned/residential)
-"aJ" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.7
-	},
-/obj/structure/surface/table/reinforced/black,
-/obj/item/toy/beach_ball/holoball{
-	pixel_x = -12;
-	pixel_y = 12;
-	anchored = 1
-	},
-/obj/item/explosive/plastic/custom{
-	pixel_x = 13;
-	anchored = 1;
-	name = "white wrapped package"
-	},
-/obj/item/toy/plush/farwa{
-	pixel_y = -6;
-	anchored = 1
-	},
-/obj/item/weapon/gun/revolver/mateba{
-	pixel_x = -5;
-	pixel_y = -6;
-	anchored = 1
-	},
-/obj/item/clothing/glasses/night/m42_hms/upp{
-	pixel_x = -3;
-	pixel_y = 7;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/space/souto{
-	pixel_x = 12;
-	pixel_y = 6;
-	anchored = 1
-	},
-/obj/item/storage/belt/souto{
-	pixel_y = 15;
-	pixel_x = 12;
-	anchored = 1
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aK" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12
-	},
-/obj/structure/mirror{
-	pixel_x = -28
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aL" = (
-/obj/structure/bed,
-/obj/item/bedsheet{
-	color = "#bb3439"
-	},
-/obj/item/weapon/gun/rifle/m46c{
-	pixel_x = 32;
-	anchored = 1
-	},
-/obj/structure/noticeboard{
-	pixel_x = 32
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aM" = (
-/obj/structure/surface/rack,
-/obj/item/clothing/head/helmet/upp/marinepilot/merc{
-	pixel_x = 8;
-	pixel_y = 8;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/upp/marinepilot/tex{
-	pixel_x = -8;
-	pixel_y = 8;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/rmc{
-	pixel_y = 8;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner{
-	pixel_x = -8;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/hybrisa/kelland_mining_helmet{
-	pixel_x = 8;
-	pixel_y = -2;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/marine/veteran/mercenary/support{
-	pixel_x = -8;
-	pixel_y = -10;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/marine/veteran/fil/fire{
-	pixel_x = 8;
-	pixel_y = -10;
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc{
-	pixel_y = -8;
-	anchored = 1
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aN" = (
-/obj/structure/closet/cabinet,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aO" = (
-/obj/effect/decal/cleanable/hybrisa/trash{
-	pixel_y = 22;
-	pixel_x = 12
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aP" = (
-/obj/structure/surface/rack,
-/obj/item/clothing/accessory/patch/france{
-	pixel_x = -8;
-	pixel_y = 12
-	},
-/obj/item/clothing/accessory/patch/royal_marines{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/clothing/accessory/patch/twe{
-	pixel_y = 8
-	},
-/obj/item/clothing/accessory/patch/upp{
-	pixel_x = -8;
-	pixel_y = -2
-	},
-/obj/item/clothing/accessory/patch/upp/naval{
-	pixel_x = 8;
-	pixel_y = -2
-	},
-/obj/item/clothing/accessory/patch/cmb/brazil_police{
-	pixel_y = -6
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aQ" = (
-/obj/structure/surface/table/reinforced/black,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aR" = (
-/obj/structure/surface/rack,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/obj/item/clothing/accessory/patch/army/armor{
-	pixel_x = -6;
-	pixel_y = 12
-	},
-/obj/item/clothing/accessory/patch/army/infantry{
-	pixel_x = 6;
-	pixel_y = 12
-	},
-/obj/item/clothing/accessory/patch/usasf/helljumper,
-/obj/item/clothing/accessory/patch/army{
-	pixel_x = -6;
-	pixel_y = -12
-	},
-/obj/item/clothing/accessory/patch/usasf{
-	pixel_x = 6;
-	pixel_y = -12
-	},
-/turf/open/floor/hybrisa/wood/blackwood,
+/obj/structure/machinery/fabricator/munitions,
+/turf/open/floor/almayer/blue/north,
 /area/galleyburned/residential)
 "aS" = (
 /turf/open/floor/plating/almayer,
 /area/galleyburned/memorial)
-"aT" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/structure/machinery/chem_master,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
-"aU" = (
-/obj/structure/machinery/autolathe/armylathe,
-/turf/open/floor/hybrisa/wood/blackwood,
-/area/galleyburned/residential)
 "aV" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -456,11 +128,20 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "aX" = (
-/obj/structure/largecrate/random/barrel/yellow{
-	pixel_x = 9
+/turf/closed/shuttle/dropship2{
+	icon_state = "50";
+	name = "Alice"
 	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"bb" = (
+/obj/structure/machinery/autolathe/armylathe,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/fabricator/munitions,
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "bh" = (
 /turf/open/floor/hybrisa/wood/blackwood,
@@ -475,16 +156,52 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"by" = (
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_cap,
+/obj/structure/barricade/razorwire{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = 0
+	},
+/obj/item/prop{
+	icon_state = "barrel_blue";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.1;
+	pixel_x = 11;
+	pixel_y = 7;
+	anchored = 1
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "bz" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_NWcorner,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "bB" = (
-/obj/structure/largecrate/random/barrel{
+/obj/structure/shuttle/part/dropship2/transparent/nose_center{
+	mouse_opacity = 0
+	},
+/obj/item/prop{
+	icon_state = "mini_ammo";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
 	pixel_x = -5;
-	pixel_y = 11
+	pixel_y = 25;
+	anchored = 1
 	},
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"bE" = (
+/obj/structure/noticeboard,
+/obj/item/weapon/gun/rifle/m46c{
+	anchored = 1
+	},
+/turf/closed/wall/almayer,
 /area/galleyburned/residential)
 "bI" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -492,7 +209,6 @@
 	light_power = 0.7;
 	icon_state = null
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/item/bedsheet/red,
 /obj/structure/bed,
 /obj/item/toy/plush/otter{
@@ -509,11 +225,15 @@
 /turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "bJ" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "2"
+/obj/structure/shuttle/part/dropship2/transparent/left_outer_inner_wing{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"bT" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "cg" = (
 /obj/structure/largecrate/random/barrel/medical{
 	pixel_x = 7;
@@ -521,9 +241,26 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"co" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_17";
+	pixel_y = 9;
+	pixel_x = 8;
+	layer = 4
+	},
+/obj/item/weapon/knife/marine{
+	pixel_y = 8
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_x = -10
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
+/area/galleyburned/residential)
 "cs" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "26"
+/turf/closed/shuttle/dropship2{
+	icon_state = "26";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "cy" = (
@@ -533,9 +270,60 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "cG" = (
-/obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/cobweb2/dynamic,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/phone_base{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = 12;
+	layer = 3.1;
+	phone_category = "Dropship";
+	name = "Alice telephone receiver";
+	phone_id = "Midway"
+	},
+/obj/structure/bed/chair/vehicle/dropship_cockpit/pilot{
+	dir = 1;
+	pixel_x = 6;
+	pixel_y = 0;
+	layer = 3.5
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/item/prop{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cameras_old";
+	pixel_x = 6;
+	pixel_y = 16;
+	name = "damaged dropship navigation computer";
+	desc = "A flight computer that can be used for autopilot or long-range flights. However, it is now completely broken, and you can see gnawed wires under the flight control panel...";
+	anchored = 1
+	},
+/obj/item/prop{
+	icon_state = "mercenary_heavy_helmet";
+	icon = 'icons/obj/items/clothing/cm_hats.dmi';
+	pixel_x = 10;
+	pixel_y = 33;
+	anchored = 1;
+	layer = 3.05;
+	name = "Modified K12 ceramic helmet";
+	desc = "A sturdy helmet worn by an heavy elite freelancers shock-troopers. Reinforced with extra plating."
+	},
+/obj/item/prop/helmetgarb/compass{
+	desc = "An ancient tool that helped navigate in the distant centuries before you. But at the moment, this compass is always pointing towards your mom.";
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/prop/magazine/playboy{
+	name = "Hustler";
+	desc = "A copy of Hustler magazine. It's been damaged with water. Damn."
+	},
+/obj/item/roller/bedroll{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/reagent_container/food/drinks/coffeecup/uscm{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "cJ" = (
 /obj/structure/machinery/door/airlock/almayer/engineering/glass{
@@ -545,11 +333,9 @@
 /turf/open/floor/almayer,
 /area/galleyburned/requisition)
 "cM" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "46"
-	},
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "41"
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_cap,
+/obj/structure/shuttle/part/dropship2/lower_left_wall{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -624,8 +410,8 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/almayer/blue/north,
 /area/galleyburned/residential)
 "dM" = (
 /turf/open/floor/plating/plating_catwalk,
@@ -665,6 +451,10 @@
 /obj/structure/closet/crate/green,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
+"dV" = (
+/obj/structure/closet/secure_closet,
+/turf/open/floor/almayer/blue/north,
+/area/galleyburned/residential)
 "ea" = (
 /obj/structure/closet/crate/delta,
 /turf/open/floor/almayer/cargo,
@@ -708,7 +498,6 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "er" = (
-/obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/human/farwa{
 	real_name = "Mud";
 	name = "Mud"
@@ -745,9 +534,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "eD" = (
-/turf/closed/shuttle/midway{
-	icon_state = "69"
+/obj/structure/shuttle/part/dropship2/nose_front_right{
+	name = "Alice"
 	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "eE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -760,13 +550,25 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/memorial)
 "eL" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1"
+/obj/structure/prop/almayer/computers/sensor_computer3{
+	pixel_x = 0;
+	pixel_y = -14;
+	layer = 2.98
 	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "97a"
+/turf/closed/shuttle/cyclone/transparent{
+	icon_state = "97a";
+	name = "Alice"
 	},
+/area/galleyburned/residential)
+"eP" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -28
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "eZ" = (
 /obj/item/prop/tableflag{
@@ -780,7 +582,45 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "fg" = (
-/turf/open/floor/strata/multi_tiles/southeast,
+/obj/structure/surface/rack,
+/obj/item/clothing/glasses/welding/superior{
+	pixel_x = -2;
+	layer = 8;
+	anchored = 1
+	},
+/obj/item/clothing/glasses/night{
+	pixel_x = -10;
+	anchored = 1
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_x = 5;
+	pixel_y = 4;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner{
+	pixel_y = 10;
+	pixel_x = 9;
+	anchored = 1
+	},
+/obj/item/storage/backpack/general_belt/upp{
+	pixel_x = -3;
+	pixel_y = -5;
+	anchored = 1
+	},
+/obj/item/ammo_box/magazine/xm51/empty{
+	pixel_y = 8;
+	pixel_x = -7;
+	anchored = 1
+	},
+/turf/open/floor/shiva/multi_tiles/southeast,
+/area/galleyburned/residential)
+"fh" = (
+/obj/structure/machinery/shower{
+	pixel_y = 15
+	},
+/obj/structure/curtain/open/shower,
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/metal/metalwhitefull,
 /area/galleyburned/residential)
 "fl" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -805,9 +645,11 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
 "fx" = (
-/turf/closed/shuttle/midway{
-	icon_state = "72"
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_exhaust,
+/obj/structure/shuttle/part/dropship2/transparent/nose_top_left{
+	mouse_opacity = 0
 	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "fy" = (
 /obj/structure/surface/table/almayer,
@@ -825,8 +667,9 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating,
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/open/floor/almayer/blue,
 /area/galleyburned/residential)
 "fI" = (
 /obj/structure/closet/crate,
@@ -848,13 +691,15 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
 "fV" = (
-/turf/closed/shuttle/midway{
-	icon_state = "47"
+/turf/closed/shuttle/dropship2{
+	icon_state = "47";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "gb" = (
-/turf/closed/shuttle/midway{
-	icon_state = "48"
+/turf/closed/shuttle/dropship2{
+	icon_state = "48";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "gk" = (
@@ -866,6 +711,9 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/prep)
+"go" = (
+/turf/open/floor/almayer/blue,
+/area/galleyburned/residential)
 "gs" = (
 /obj/structure/catwalk/bigred,
 /obj/structure/barricade/handrail{
@@ -875,7 +723,15 @@
 	pixel_y = 3
 	},
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/maint)
+"gx" = (
+/obj/structure/barricade/handrail/kutjevo{
+	icon_state = "t_handrail_b_cap";
+	layer = 2.09;
+	pixel_y = -8
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "gH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -885,9 +741,8 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
 "gJ" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "66"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/upper_left_wing,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "gL" = (
@@ -902,17 +757,60 @@
 /turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "gW" = (
-/turf/closed/shuttle/midway{
-	icon_state = "64"
+/obj/structure/machinery/door/airlock/almayer/secure,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
+/obj/structure/machinery/door/airlock/almayer/secure{
+	req_access = null
+	},
+/turf/open/floor/hybrisa/metal/greenmetalfull,
 /area/galleyburned/residential)
 "gX" = (
 /turf/closed/wall/upp_wall/grey,
 /area/galleyburned/residential)
 "gY" = (
-/turf/closed/shuttle/midway{
-	icon_state = "81"
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
 	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/beach_ball/holoball{
+	pixel_x = -12;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/explosive/plastic/custom{
+	pixel_x = 13;
+	anchored = 1;
+	name = "white wrapped package"
+	},
+/obj/item/toy/plush/farwa{
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/weapon/gun/revolver/mateba{
+	pixel_x = -5;
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/clothing/glasses/night/m42_hms/upp{
+	pixel_x = -3;
+	pixel_y = 7;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/space/souto{
+	pixel_x = 12;
+	pixel_y = 6;
+	anchored = 1
+	},
+/obj/item/storage/belt/souto{
+	pixel_y = 15;
+	pixel_x = 12;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "he" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -927,20 +825,53 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
+"hk" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/structure/flora/pottedplant{
+	pixel_y = 18
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "hm" = (
 /obj/structure/barricade/handrail/type_b,
 /turf/closed/wall/almayer,
 /area/galleyburned/residential)
 "ho" = (
-/obj/structure/largecrate/random/barrel/green{
-	pixel_y = -10;
-	pixel_x = 5
+/obj/item/hybrisa/misc/trash_bag_full_prop{
+	pixel_x = 2;
+	pixel_y = 20;
+	layer = 4;
+	anchored = 1
 	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_9";
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "thermite";
+	name = "impact"
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_15"
+	},
+/obj/effect/decal/cleanable/blood/oil/streak,
+/obj/item/trash/buritto,
+/obj/structure/barricade/handrail/hybrisa/road/plastic/red{
+	layer = 3.03
+	},
+/obj/item/trash/barcardine,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "hu" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "7"
+/obj/structure/shuttle/part/dropship2/left_inner_wing_connector{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -975,6 +906,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
+"hL" = (
+/turf/closed/shuttle/dropship2{
+	icon_state = "81";
+	name = "Alice"
+	},
+/area/galleyburned/residential)
 "hX" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/four,
 /obj/item/device/cotablet/no_access{
@@ -993,17 +930,42 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"in" = (
-/obj/structure/largecrate/random,
-/obj/structure/largecrate/random/mini{
-	pixel_y = 13
+"ig" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8;
+	pixel_x = 1
 	},
-/turf/open/shuttle/dropship/light_grey_top_left,
+/obj/structure/sign/catclock{
+	pixel_x = 28
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	icon_state = "t_handrail_b_cap";
+	layer = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"in" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/chem_dispenser/soda{
+	pixel_x = -13;
+	pixel_y = 4
+	},
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = 8;
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/reagent_container/food/drinks/cup{
+	pixel_x = 9;
+	pixel_y = 9
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "it" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "21"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_exhaust,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "ix" = (
@@ -1017,7 +979,7 @@
 	name = "door lock";
 	id = "m2"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/almayer/blue/east,
 /area/galleyburned/residential)
 "iB" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -1051,8 +1013,9 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "iR" = (
-/turf/closed/shuttle/midway{
-	icon_state = "24"
+/turf/closed/shuttle/dropship2{
+	icon_state = "24";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "iS" = (
@@ -1085,11 +1048,29 @@
 /turf/open/floor/hybrisa/metal/bluemetal1/east,
 /area/galleyburned/residential)
 "jh" = (
-/obj/structure/machinery/light/double{
-	dir = 4;
-	pixel_y = -5
+/obj/structure/surface/table/reinforced/toc/east{
+	pixel_y = -7
 	},
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/phone_base{
+	name = "APC reciever";
+	phone_category = "Vehicles";
+	phone_id = "M577A3 Armoured Personnel Carrier";
+	pixel_y = 8;
+	pixel_x = 11
+	},
+/obj/structure/noticeboard{
+	pixel_x = 28;
+	pixel_y = -10
+	},
+/obj/structure/machinery/prop/almayer/CICmap{
+	density = 0;
+	icon_state = "toc_map";
+	layer = 2.97;
+	name = "Tactical Map Display";
+	pixel_y = 11;
+	pixel_x = -7
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "jj" = (
 /obj/effect/step_trigger/message/memorial,
@@ -1141,13 +1122,15 @@
 "jR" = (
 /obj/structure/bed/chair/comfy,
 /obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4;
-	pixel_y = 10
+	dir = 1
 	},
-/turf/open/floor/strata/multi_tiles/southwest,
+/obj/structure/machinery/door_control{
+	pixel_y = 22;
+	name = "door lock";
+	id = "m1";
+	pixel_x = -8
+	},
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "jT" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1236,9 +1219,9 @@
 	},
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	dir = 2;
-	name = "\improper M-02 [VACANT]"
+	name = "\improper M-02 [A. WISE]"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "kF" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
@@ -1260,7 +1243,7 @@
 /area/galleyburned/maint)
 "kJ" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-02 [VACANT]"
+	name = "\improper S-02 [J. GANGRENE]"
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
@@ -1279,6 +1262,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
+"le" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "lk" = (
 /obj/structure/window/reinforced/ultra{
 	dir = 4
@@ -1290,25 +1277,38 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
 "lm" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "61"
-	},
-/obj/effect/attach_point/weapon/midway/left_wing,
+/obj/structure/shuttle/part/dropship2/transparent/middle_left_wing,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "lr" = (
 /obj/structure/prop/static_tank/water,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"lt" = (
+/obj/structure/bed/chair/comfy/black,
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue,
+/area/galleyburned/residential)
 "lD" = (
-/obj/structure/machinery/light{
-	dir = 4;
-	pixel_x = 14
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_13";
+	pixel_y = 12
+	},
+/obj/effect/decal/hybrisa/tiretrack{
+	dir = 1;
+	pixel_x = -7
 	},
 /obj/structure/machinery/light/double{
 	dir = 4
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/structure/prop/hybrisa/airport/refuelinghose2{
+	layer = 1;
+	pixel_x = -12;
+	pixel_y = -12
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "lF" = (
 /obj/structure/machinery/door/airlock/engineering/colony{
@@ -1317,6 +1317,15 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/synthcloset)
+"lI" = (
+/turf/open/floor/shiva/multi_tiles,
+/area/galleyburned/residential)
+"lM" = (
+/turf/closed/shuttle/dropship2{
+	icon_state = "80";
+	name = "Alice"
+	},
+/area/galleyburned/residential)
 "lQ" = (
 /obj/structure/machinery/bot/medbot/mysterious{
 	desc = "A little Weyland-Yutani medical robot that the Raiders picked up from CORSAT. It's become favored by the logistic technicians onboard due to it being self-cleaning.";
@@ -1367,8 +1376,9 @@
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/galleyburned/cryo)
 "mj" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "34"
+/turf/closed/shuttle/dropship2{
+	icon_state = "34";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "mm" = (
@@ -1400,10 +1410,117 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
-"mB" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "29"
+"mz" = (
+/obj/structure/surface/rack,
+/obj/item/clothing/accessory/patch/france{
+	pixel_x = -8;
+	pixel_y = 12
 	},
+/obj/item/clothing/accessory/patch/royal_marines{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/twe{
+	pixel_y = 8
+	},
+/obj/item/clothing/accessory/patch/upp{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/clothing/accessory/patch/upp/naval{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/obj/item/clothing/accessory/patch/cmb/brazil_police{
+	pixel_y = -6
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/rack,
+/obj/item/clothing/accessory/patch/france{
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/royal_marines{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/twe{
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/upp{
+	pixel_x = -8;
+	pixel_y = -2;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/upp/naval{
+	pixel_x = 8;
+	pixel_y = -2;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/cmb/brazil_police{
+	pixel_y = -6;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"mB" = (
+/turf/closed/shuttle/dropship2{
+	icon_state = "29";
+	name = "Alice"
+	},
+/area/galleyburned/residential)
+"mC" = (
+/obj/structure/prop/structure_lattice{
+	density = 0;
+	desc = "This jukebox only takes quarters and you seem to be out of them at the moment.";
+	icon = 'icons/obj/structures/props/misc.dmi';
+	icon_state = "jukebox";
+	name = "Rockin Robin 2300 Jukebox";
+	pixel_x = 4;
+	pixel_y = 21;
+	layer = 3.6
+	},
+/obj/item/toy/plush/therapy/blue{
+	pixel_x = 0;
+	pixel_y = 9;
+	layer = 3.8;
+	name = "Warlord";
+	desc = "A therapeutic toy to assist mercenaries in recovering from mental and behavioral disorders after a failed mission in which they didn't earn a penny.";
+	anchored = 1
+	},
+/obj/item/clothing/head/freelancer/beret{
+	layer = 4.2;
+	pixel_x = -2;
+	pixel_y = 16;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_17";
+	pixel_y = 19;
+	pixel_x = -11;
+	layer = 3.6
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_13";
+	pixel_y = 7
+	},
+/obj/structure/sign/poster/hunk{
+	icon_state = "poster12";
+	pixel_x = 35;
+	pixel_y = 10
+	},
+/obj/structure/sign/poster/hunk{
+	icon_state = "poster29";
+	pixel_x = 27;
+	pixel_y = 1
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "mE" = (
 /obj/item/trash/wy_mre{
@@ -1432,28 +1549,73 @@
 	icon_state = "S";
 	pixel_y = 2
 	},
-/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds4{
-	id = null;
-	name = "\improper DS-1 [VACANT]"
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds2{
+	id = "aft_door";
+	name = "DS-01 [FREELANCE CELL]"
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1"
+/obj/structure/prop/holidays/string_lights{
+	dir = 10;
+	pixel_x = 0;
+	pixel_y = 0
 	},
-/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
 /area/galleyburned/residential)
 "mX" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
 /area/galleyburned/stash)
+"mY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/cleanable/liquid_fuel,
+/obj/effect/decal/strata_decals/grime/grime1,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/hybrisa/tiretrack{
+	pixel_x = 7
+	},
+/obj/structure/machinery/fabricator/munitions{
+	current_points = 24;
+	max_points = 24;
+	name = "ultra-capacity Munitions Fabricator"
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
 "nc" = (
-/turf/closed/shuttle/midway{
-	icon_state = "103"
+/turf/closed/shuttle/cyclone{
+	icon_state = "103";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
+"np" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/metal/metalwhitefull,
+/area/galleyburned/residential)
 "nq" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre,
-/turf/open/floor/strata/multi_tiles/southeast,
+/obj/structure/coatrack,
+/obj/item/clothing/head/helmet/marine/veteran/canc{
+	pixel_x = -12;
+	pixel_y = -12;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/upp/marinepilot{
+	pixel_x = -3;
+	pixel_y = -12;
+	anchored = 1
+	},
+/obj/item/clothing/suit/storage/CMB/hybrisa/nspa_jacket{
+	pixel_x = -4;
+	pixel_y = 5;
+	anchored = 1
+	},
+/obj/item/ammo_box/rounds/empty{
+	pixel_x = 6;
+	pixel_y = -8;
+	anchored = 1
+	},
+/turf/open/floor/shiva/multi_tiles/southeast,
 /area/galleyburned/residential)
 "ns" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
@@ -1511,13 +1673,9 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/briefing)
 "oj" = (
-/obj/effect/attach_point/fuel/midway{
-	pixel_x = -32;
-	attach_id = 11;
-	dir = 1
-	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "33"
+/turf/closed/shuttle/dropship2{
+	icon_state = "33";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "ol" = (
@@ -1535,6 +1693,54 @@
 /obj/structure/machinery/door/window/southleft,
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/stash)
+"os" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/chem_dispenser/soda/beer{
+	pixel_x = -13;
+	pixel_y = -5
+	},
+/obj/item/reagent_container/food/drinks/shaker{
+	pixel_x = -7;
+	pixel_y = 17
+	},
+/obj/structure/machinery/computer/cameras/wooden_tv{
+	desc = "An old TV hooked up to a video cassette recorder, you can even use it to time shift WOW.";
+	layer = 3;
+	name = "Television set";
+	network = null;
+	pixel_x = 3;
+	pixel_y = 24
+	},
+/obj/item/reagent_container/food/snacks/mre_food/uscm/snack/peanuts{
+	pixel_x = 7;
+	pixel_y = -4
+	},
+/obj/item/reagent_container/food/drinks/cup{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/reagent_container/food/drinks/cup{
+	pixel_x = 11;
+	pixel_y = -5
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"oB" = (
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_cap,
+/obj/structure/barricade/razorwire{
+	dir = 4;
+	pixel_x = -4;
+	pixel_y = 0
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
+"oC" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
+/area/galleyburned/residential)
 "oE" = (
 /obj/structure/machinery/cm_vending/clothing/synth/extraction,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1556,6 +1762,7 @@
 /area/galleyburned/residential)
 "oO" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_NEcorner,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "oW" = (
@@ -1567,6 +1774,7 @@
 	desc = "This headband has seen better days. You feel guilty just looking at it.";
 	name = "worn-out headband"
 	},
+/mob/living/simple_animal/cat/Jones,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/memorial)
 "oY" = (
@@ -1591,6 +1799,15 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
+"pd" = (
+/obj/structure/machinery/defenses/planted_flag/wy{
+	disassemble_time = 6000000;
+	name = "repurposed WY flag";
+	desc = "An old WY flag with several bullet holes. This one's been welded, bolted, and wired to the ground -- it cannot be moved or dismantled.";
+	turned_on = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "pe" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
@@ -1663,20 +1880,23 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "pV" = (
-/obj/structure/platform_decoration{
-	dir = 4
+/obj/effect/decal/cleanable/hybrisa/trash{
+	dir = 4;
+	icon_state = "trash_11"
 	},
-/obj/structure/platform_decoration{
-	dir = 8
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/machinery/light/double{
+	dir = 4;
+	pixel_y = -5
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/turf/open/shuttle/dropship/can_surgery/light_grey_bottom_right,
 /area/galleyburned/residential)
 "qa" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/maint)
 "qq" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "3"
+/obj/structure/shuttle/part/dropship2/left_outer_wing_connector{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -1696,8 +1916,34 @@
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/prep)
 "qJ" = (
-/obj/structure/largecrate/random,
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/hybrisa/tiretrack{
+	dir = 1;
+	pixel_x = -7
+	},
+/obj/structure/machinery/power/port_gen{
+	anchored = 1;
+	layer = 3.5
+	},
+/obj/structure/prop/hybrisa/misc/buildinggreebliessmall/smallvent3{
+	pixel_y = -2;
+	pixel_x = 4;
+	mouse_opacity = 0;
+	layer = 3.51
+	},
+/obj/item/prop/colony/canister{
+	pixel_y = -13;
+	pixel_x = 7;
+	anchored = 1;
+	layer = 3.52
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "qL" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -1726,8 +1972,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/almayer/blue/east,
 /area/galleyburned/residential)
 "rt" = (
 /obj/structure/platform/metal/kutjevo/east,
@@ -1746,13 +1991,9 @@
 /turf/open/floor/hybrisa/metal/bluemetal1/west,
 /area/galleyburned/residential)
 "rx" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1";
-	dir = 4
-	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "86b"
+/turf/closed/shuttle/dropship2{
+	icon_state = "86";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "rB" = (
@@ -1769,7 +2010,7 @@
 /obj/structure/bed/chair/comfy{
 	dir = 1
 	},
-/turf/open/floor/strata/multi_tiles/southwest,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "rK" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1779,9 +2020,16 @@
 /obj/structure/closet/crate/alpha,
 /turf/open/floor/almayer/cargo,
 /area/galleyburned/requisition)
+"rN" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
 "rQ" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
-/turf/open/floor/almayer/plate,
+/obj/structure/closet/bodybag,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "rZ" = (
 /obj/structure/bed/chair{
@@ -1791,6 +2039,32 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"sg" = (
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_cap,
+/obj/item/prop{
+	icon_state = "case_small";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 2.9;
+	pixel_x = -5;
+	pixel_y = 2;
+	anchored = 1
+	},
+/obj/item/prop{
+	icon_state = "mini_wooden";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 11;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "sh" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	name = "\improper S-04 [VACANT]";
@@ -1846,10 +2120,40 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "sG" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "95a"
+/obj/structure/shuttle/part/cyclone/transparent{
+	icon_state = "95a";
+	name = "Alice"
+	},
+/obj/item/prop{
+	icon_state = "case_small";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 2.9;
+	pixel_x = -30;
+	pixel_y = 13;
+	anchored = 1
 	},
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"sL" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/barricade/razorwire{
+	dir = 8;
+	pixel_x = 4;
+	pixel_y = 0
+	},
+/obj/item/prop{
+	icon_state = "case_double";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	pixel_x = 19;
+	pixel_y = 2;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "sN" = (
 /turf/closed/wall/almayer/outer,
@@ -1866,11 +2170,20 @@
 	layer = 4
 	},
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/maint)
 "sW" = (
-/obj/structure/largecrate/random/barrel/black,
-/obj/structure/largecrate/random/barrel/brown{
-	pixel_y = -12
+/obj/structure/shuttle/part/dropship2/transparent/nose_center{
+	mouse_opacity = 0
+	},
+/obj/item/prop{
+	icon_state = "mini_crate";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 18;
+	anchored = 1
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -1886,14 +2199,16 @@
 	},
 /obj/structure/barricade/handrail,
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/maint)
 "ti" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "39"
+/turf/closed/shuttle/dropship2{
+	icon_state = "39";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "tm" = (
-/turf/open/floor/strata/multi_tiles/southwest,
+/obj/structure/machinery/cm_vending/gear/extraction,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "tn" = (
 /obj/structure/flora/pottedplant/random,
@@ -1908,7 +2223,7 @@
 	name = "Privacy Shutter";
 	id = "s6"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "tq" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
@@ -1946,13 +2261,16 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
 "tP" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "5"
+/obj/structure/shuttle/part/dropship2/transparent/right_inner_bottom_wing{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "tU" = (
-/obj/structure/shuttle/part/midway/transparent,
+/obj/structure/shuttle/part/dropship2/transparent/left_outer_bottom_wing{
+	name = "Alice"
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "tV" = (
@@ -1982,12 +2300,11 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
 "ui" = (
+/obj/structure/window/framed/almayer,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	name = "Privacy Shutter";
-	id = "m2";
-	dir = 2
+	id = "m2"
 	},
-/obj/structure/window/framed/almayer,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "um" = (
@@ -2020,9 +2337,11 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "uq" = (
-/turf/closed/shuttle/midway{
-	icon_state = "73"
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_exhaust,
+/obj/structure/shuttle/part/dropship2/transparent/nose_top_right{
+	mouse_opacity = 0
 	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "us" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
@@ -2031,11 +2350,24 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
 "uw" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "90"
+/obj/structure/shuttle/part/dropship2/nose_front_right{
+	name = "Alice"
 	},
-/obj/effect/attach_point/weapon/midway/right_fore,
+/obj/structure/shuttle/part/dropship2/transparent/nose_center{
+	pixel_x = 0;
+	pixel_y = 14;
+	layer = 2.9;
+	mouse_opacity = 0
+	},
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"uB" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/machinery/door/airlock/hatch/cockpit/two{
+	dir = 1;
+	name = "dropship staff room"
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "uN" = (
 /obj/structure/mirror{
@@ -2048,11 +2380,32 @@
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
 "uT" = (
-/obj/effect/decal/cleanable/generic,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/item/prop{
+	icon_state = "m20p_active";
+	icon = 'icons/obj/items/weapons/grenade.dmi';
+	dir = 2;
+	pixel_x = 17;
+	pixel_y = 3;
+	anchored = 1;
+	desc = "The M20P Claymore is a directional anti-personnel smart mine modified for corporate PMC use. Generates 120 degree cone of shrapnel if a valid target crosses before or over it. On its face, it reads \"FRONT TOWARD ENEMY\".";
+	name = "M20P Claymore anti-personnel mine"
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"vc" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	dir = 1;
+	req_access = null;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/galleyburned/residential)
 "ve" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_SWcorner,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "vf" = (
@@ -2078,21 +2431,49 @@
 /obj/effect/landmark/start/marine/leader/alpha,
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/galleyburned/cryo)
+"vG" = (
+/turf/open/floor/hybrisa/metal/greenmetal1/west,
+/area/galleyburned/residential)
 "vK" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1;
 	light_power = 0.7
 	},
 /obj/structure/machinery/autolathe/armylathe,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/machinery/fabricator/munitions,
 /turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
 "vM" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "23"
+/turf/closed/shuttle/dropship2{
+	icon_state = "77";
+	name = "Alice"
 	},
+/area/galleyburned/residential)
+"vP" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "vS" = (
 /turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
+"vT" = (
+/obj/structure/bed/sofa/hybrisa/misc/bench{
+	pixel_x = 7;
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northwest,
 /area/galleyburned/residential)
 "vV" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -2112,19 +2493,57 @@
 /area/galleyburned/requisition)
 "wa" = (
 /obj/structure/bed,
-/obj/item/bedsheet/red,
-/obj/structure/curtain/open/red,
-/turf/open/floor/strata/multi_tiles/southwest,
+/obj/structure/curtain/red,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "wj" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "6"
+/obj/structure/shuttle/part/dropship2/transparent/right_outer_bottom_wing{
+	name = "Alice"
 	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "wq" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/shuttle/dropship/light_grey_bottom_right,
+/obj/effect/decal/cleanable/dirt/greenglow{
+	color = "#140400";
+	name = "dirt";
+	alpha = 100;
+	pixel_y = 14;
+	pixel_x = -4
+	},
+/obj/structure/surface/table/reinforced/toc/west{
+	pixel_y = -7
+	},
+/obj/structure/machinery/computer/overwatch/toc{
+	layer = 2.96;
+	pixel_y = 12
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_5";
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/obj/item/prop/magazine/book{
+	name = "The Ego and His Own";
+	desc = "Max Stirner's 'The Ego and His Own' is a radical critique of various teachings and concepts, including religion, law, property, fair distribution, and the essence of work.  The author comes to the conclusion that there is nothing outside of man, no states, nations, homeland and gods. There is only the man himself, who is alone under any external circumstances, the author advocates the denial of traditional values and the justification of human egoism, which is the embodiment of individual freedom.";
+	pixel_x = -6;
+	pixel_y = -8
+	},
+/obj/structure/prop/ice_colony/hula_girl{
+	pixel_x = 17;
+	pixel_y = 30
+	},
+/obj/item/stack/sheet/wood{
+	pixel_x = -1;
+	pixel_y = 34;
+	layer = 2.95;
+	anchored = 1
+	},
+/obj/item/clothing/ears/earmuffs{
+	pixel_x = 11;
+	pixel_y = -2
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_top_right,
 /area/galleyburned/residential)
 "ws" = (
 /obj/structure/machinery/landinglight/ds1/delayone,
@@ -2160,15 +2579,60 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
+"xi" = (
+/obj/structure/surface/rack,
+/obj/item/clothing/head/helmet/upp/marinepilot/merc{
+	pixel_x = 8;
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/upp/marinepilot/tex{
+	pixel_x = -8;
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/rmc{
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner{
+	pixel_x = -8;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/hybrisa/kelland_mining_helmet{
+	pixel_x = 8;
+	pixel_y = -2;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/support{
+	pixel_x = -8;
+	pixel_y = -10;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/fil/fire{
+	pixel_x = 8;
+	pixel_y = -10;
+	anchored = 1
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc{
+	pixel_y = -8;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "xp" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/item/weapon/gun/XM99{
+	icon = "icons\obj\items\weapons\guns\guns_by_map\snow\guns_obj.dmi";
+	layer = 2.95;
+	anchored = 1
+	},
+/turf/closed/shuttle/dropship2{
+	icon_state = "80";
+	name = "Alice"
+	},
 /area/galleyburned/residential)
 "xu" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "74"
-	},
-/turf/open/floor/plating,
+/turf/open/floor/almayer/blue/west,
 /area/galleyburned/residential)
 "xv" = (
 /obj/structure/bed/chair,
@@ -2255,6 +2719,18 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/canteen)
+"yw" = (
+/obj/structure/prop/hybrisa/misc/cabinet{
+	pixel_y = 14;
+	pixel_x = 7
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	pixel_y = 22;
+	pixel_x = 12
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
 "yx" = (
 /obj/structure/curtain/open/shower,
 /obj/structure/window/reinforced/ultra{
@@ -2267,7 +2743,7 @@
 /obj/structure/machinery/shower{
 	pixel_y = 15
 	},
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "yC" = (
 /turf/open/floor/plating,
@@ -2279,6 +2755,13 @@
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/canteen)
+"yR" = (
+/obj/item/trash/wy_chips_pepper{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "yT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/door/airlock/maintenance/colony{
@@ -2323,20 +2806,30 @@
 "zP" = (
 /obj/structure/catwalk/bigred,
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/maint)
 "zQ" = (
-/obj/structure/catwalk/bigred,
-/obj/structure/largecrate/random/barrel/brown,
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 3.3;
-	pixel_x = -1;
-	pixel_y = 3
+/obj/structure/sign/banners/freelancecell{
+	pixel_y = 30
 	},
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/residential)
 "zV" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/barricade/razorwire{
+	dir = 4
+	},
+/obj/item/prop{
+	icon_state = "barrel_red";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.1;
+	pixel_x = -10;
+	pixel_y = -5;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "Ae" = (
@@ -2368,7 +2861,7 @@
 	pixel_x = 8;
 	anchored = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "An" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_E,
@@ -2415,6 +2908,23 @@
 	pixel_x = -1;
 	pixel_y = 16
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/obj/structure/coatrack,
+/obj/item/clothing/suit/storage/CMB/hybrisa/fur_lined_trench_coat{
+	pixel_x = -1;
+	anchored = 1
+	},
+/obj/item/clothing/head/beret/raider/legendary{
+	pixel_x = -1;
+	pixel_y = 16
+	},
 /turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "AJ" = (
@@ -2434,8 +2944,8 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "AR" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "8"
+/obj/structure/shuttle/part/dropship2/right_inner_wing_connector{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -2445,9 +2955,79 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
+"AY" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/blue/west,
+/area/galleyburned/residential)
+"Bi" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "csplatter1";
+	pixel_x = 0;
+	pixel_y = 13
+	},
+/obj/item/weapon/straight_razor{
+	anchored = 1;
+	pixel_x = -3;
+	pixel_y = 12;
+	desc = "Yes, I'm stuck in the middle with you and I'm wondering what it is I should do it's so hard to keep this smile from my face losing control, yeah, I'm all over the place...";
+	name = "Blood stained straight razor"
+	},
+/obj/item/prop{
+	icon_state = "pwoodflip";
+	icon = 'icons\obj\structures\barricades.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = 2;
+	pixel_y = 5;
+	anchored = 1;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
+"Bn" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/item/prop{
+	icon_state = "case_small";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 2.9;
+	anchored = 1;
+	pixel_x = 2;
+	pixel_y = 8
+	},
+/obj/item/prop{
+	icon_state = "mini_case_c";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = 4;
+	pixel_y = 19;
+	anchored = 1
+	},
+/obj/item/prop{
+	icon_state = "secure_crate_strapped";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3;
+	pixel_x = -2;
+	pixel_y = -8;
+	anchored = 1
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
 "Bo" = (
-/turf/closed/shuttle/midway{
-	icon_state = "30"
+/turf/closed/shuttle/dropship2{
+	icon_state = "30";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Bq" = (
@@ -2489,9 +3069,30 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "BP" = (
-/turf/closed/shuttle/midway{
-	icon_state = "75"
+/turf/closed/shuttle/dropship2{
+	icon_state = "23";
+	name = "Alice"
 	},
+/area/galleyburned/residential)
+"BV" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/east,
+/area/galleyburned/residential)
+"Cd" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/obj/structure/sign/poster/blacklight{
+	pixel_y = 32
+	},
+/obj/structure/curtain/open/black,
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Cg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2513,9 +3114,10 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
 "Cl" = (
-/turf/closed/shuttle/midway{
-	icon_state = "67"
+/obj/structure/shuttle/part/dropship2/nose_front_left{
+	name = "Alice"
 	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Cm" = (
 /obj/structure/stairs{
@@ -2531,6 +3133,29 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
+"Co" = (
+/obj/structure/shuttle/part/dropship2/transparent/lower_right_wing,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
+"Cs" = (
+/obj/structure/sign/banners/united_americas_flag{
+	pixel_y = 28;
+	pixel_x = 15
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 15
+	},
+/obj/structure/curtain/open/shower,
+/obj/structure/window/reinforced/ultra{
+	dir = 4
+	},
+/obj/structure/window/reinforced/ultra{
+	dir = 8
+	},
+/obj/structure/machinery/door/window/southleft,
+/turf/open/floor/almayer/blue,
+/area/galleyburned/residential)
 "Ct" = (
 /obj/item/trash/grenade/gas/marine,
 /turf/open/floor/plating,
@@ -2571,6 +3196,12 @@
 "CM" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/hangar)
+"CQ" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/tool/kitchen/can_opener,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "CU" = (
 /obj/structure/flora/pottedplant/random,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2579,21 +3210,27 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/briefing)
 "CV" = (
-/turf/closed/shuttle/midway{
-	icon_state = "83"
+/obj/structure/flora/pottedplant,
+/obj/structure/machinery/light/small{
+	dir = 4
 	},
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "CX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/almayer,
 /area/galleyburned/maint)
 "CZ" = (
-/obj/structure/stairs/perspective{
-	dir = 1;
-	icon_state = "p_stair_full";
-	pixel_y = 22
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/machinery/door/airlock/hatch/cockpit/two{
+	dir = 1
 	},
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/prop/holidays/string_lights{
+	pixel_y = 0;
+	pixel_x = 0
+	},
+/obj/structure/prop/holidays/string_lights/cap,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "Da" = (
 /obj/item/clothing/under/marine,
@@ -2622,6 +3259,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side,
 /area/galleyburned/cryo)
+"Df" = (
+/obj/structure/prop/hybrisa/misc/machinery/screens/telescreen{
+	pixel_y = 32;
+	pixel_x = 16
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/northeast,
+/area/galleyburned/residential)
 "Dj" = (
 /obj/effect/step_trigger/message/memorial,
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
@@ -2647,10 +3291,7 @@
 /turf/open/floor/almayer/sterile_green,
 /area/galleyburned/briefing)
 "Du" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "65"
-	},
-/obj/effect/attach_point/weapon/midway/right_wing,
+/obj/structure/shuttle/part/dropship2/transparent/middle_right_wing,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "DE" = (
@@ -2710,6 +3351,17 @@
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
+"Er" = (
+/obj/structure/catwalk/bigred,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/structure/largecrate/random/barrel/brown,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "Es" = (
 /obj/item/tool/soap,
 /obj/structure/closet{
@@ -2723,15 +3375,23 @@
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
 "Ez" = (
-/obj/structure/stairs/perspective,
-/obj/structure/platform{
-	dir = 8;
-	layer = 2.7
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/strata_decals/grime/grime4{
+	dir = 1
 	},
-/obj/structure/platform{
-	dir = 4
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_2"
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/item/storage/briefcase/stowaway{
+	pixel_x = -6;
+	pixel_y = 8;
+	anchored = 1
+	},
+/obj/item/paper/crumpled{
+	pixel_y = 0;
+	pixel_x = 11
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "EC" = (
 /obj/structure/surface/rack,
@@ -2768,11 +3428,19 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/prep)
+"EW" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_E,
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
 "EZ" = (
 /obj/structure/catwalk/bigred,
 /obj/structure/barricade/handrail,
 /turf/open/floor/plating,
-/area/galleyburned)
+/area/galleyburned/maint)
 "Fc" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 1
@@ -2784,14 +3452,18 @@
 /obj/structure/machinery/landinglight/ds1/delayone,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/hangar)
+"Fi" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/north,
+/area/galleyburned/residential)
 "Fn" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1";
-	dir = 4
+/obj/structure/prop/holidays/string_lights{
+	dir = 10;
+	pixel_x = 0;
+	pixel_y = 0
 	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "86a"
+/turf/closed/shuttle/dropship2{
+	icon_state = "80";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Fr" = (
@@ -2802,8 +3474,14 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/requisition)
 "Fv" = (
-/turf/open/floor/strata/multi_tiles/west,
+/turf/open/floor/shiva/multi_tiles/west,
 /area/galleyburned/residential)
+"Fz" = (
+/obj/structure/closet,
+/obj/item/reagent_container/food/drinks/cans/food/upp/vegetables,
+/obj/item/reagent_container/food/drinks/cans/food/upp/condensed_boiled_milk,
+/turf/open/floor/plating,
+/area/galleyburned/maint)
 "FB" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -2826,12 +3504,9 @@
 /turf/closed/wall/almayer,
 /area/galleyburned/prep)
 "FS" = (
-/obj/effect/attach_point/fuel/midway{
-	attach_id = 10;
-	dir = 1
-	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "28"
+/turf/closed/shuttle/dropship2{
+	icon_state = "28";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "FT" = (
@@ -2900,13 +3575,77 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "GP" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "15"
-	},
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "40"
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_cap,
+/obj/structure/shuttle/part/dropship2/lower_right_wall{
+	name = "Alice"
 	},
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"GQ" = (
+/obj/structure/surface/rack,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/item/clothing/accessory/patch/army/armor{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/army/infantry{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/clothing/accessory/patch/usasf/helljumper,
+/obj/item/clothing/accessory/patch/army{
+	pixel_x = -6;
+	pixel_y = -12
+	},
+/obj/item/clothing/accessory/patch/usasf{
+	pixel_x = 6;
+	pixel_y = -12
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/rack,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/item/clothing/accessory/patch/army/armor{
+	pixel_x = -6;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/army/infantry{
+	pixel_x = 6;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/usasf/helljumper{
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/army{
+	pixel_x = -6;
+	pixel_y = -12;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/usasf{
+	pixel_x = 6;
+	pixel_y = -12;
+	anchored = 1
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"GW" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_W,
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "Hi" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -2954,6 +3693,21 @@
 	dir = 1;
 	req_access = null
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m3";
+	dir = 2
+	},
+/obj/structure/machinery/door/airlock/almayer/secure/glass{
+	name = "\improper M-03  [S. ATKINSON]";
+	dir = 1;
+	req_access = null
+	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Hs" = (
@@ -2965,24 +3719,48 @@
 	},
 /turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
-"HG" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1";
-	dir = 4
+"HD" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/bed/hybrisa/hospital/hospitaldivider{
+	dir = 1;
+	pixel_y = 6;
+	layer = 3.01;
+	pixel_x = 1
 	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "89a"
+/obj/item/tool/screwdriver{
+	pixel_x = 6;
+	pixel_y = 32;
+	anchored = 1;
+	layer = 3.03
+	},
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_bottom_left,
+/area/galleyburned/residential)
+"HG" = (
+/obj/structure/prop/holidays/string_lights{
+	dir = 6;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/closed/shuttle/dropship2{
+	icon_state = "80";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "HI" = (
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 2;
-	light_color = "#e7c0a4";
-	invisibility = 100
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/weapon/gun/launcher/grenade/m81/riot{
+	pixel_y = -3;
+	anchored = 1
 	},
-/turf/open/floor/strata/multi_tiles/southwest,
+/obj/item/weapon/gun/rifle/lw317{
+	pixel_y = 10;
+	anchored = 1
+	},
+/obj/structure/machinery/light/small,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "HO" = (
 /obj/structure/barricade/handrail/type_b{
@@ -3015,6 +3793,26 @@
 /obj/structure/pipes/vents,
 /turf/open/floor/hybrisa/wood/greywood,
 /area/galleyburned/residential)
+"Ik" = (
+/obj/structure/bed/chair/comfy/vehicle/commander{
+	dir = 8;
+	pixel_y = 15
+	},
+/obj/structure/noticeboard{
+	pixel_y = 23;
+	icon_state = "notices_6";
+	desc = null;
+	name = "sticky notes";
+	layer = 3.04;
+	pixel_x = 29
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_4";
+	pixel_y = 12
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
 "Im" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -3029,6 +3827,10 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
+"Ir" = (
+/obj/structure/shuttle/part/dropship2/transparent/lower_left_wing,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "Iy" = (
 /obj/structure/window/framed/almayer,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -3038,8 +3840,9 @@
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "IN" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "35"
+/turf/closed/shuttle/dropship2{
+	icon_state = "35";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "IY" = (
@@ -3047,7 +3850,8 @@
 	pixel_x = -16;
 	pixel_y = -31
 	},
-/turf/open/floor/strata/multi_tiles/west,
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/shiva/multi_tiles/west,
 /area/galleyburned/residential)
 "Jb" = (
 /turf/open/space/basic,
@@ -3056,10 +3860,15 @@
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/maint)
 "Jl" = (
+/obj/structure/stairs/perspective,
 /obj/structure/platform{
-	dir = 1
+	dir = 4
 	},
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/platform{
+	dir = 8;
+	layer = 2.7
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
 /area/galleyburned/residential)
 "JC" = (
 /obj/structure/window/framed/almayer,
@@ -3073,10 +3882,15 @@
 /turf/closed/wall/almayer,
 /area/galleyburned/residential)
 "JH" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "85"
+/obj/structure/shuttle/part/dropship2/nose_front_left{
+	name = "Alice"
 	},
-/obj/effect/attach_point/weapon/midway/left_fore,
+/obj/structure/shuttle/part/dropship2/transparent/nose_center{
+	pixel_x = 0;
+	pixel_y = 14;
+	layer = 2.9;
+	mouse_opacity = 0
+	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "JK" = (
@@ -3115,6 +3929,10 @@
 	},
 /turf/open/floor/almayer,
 /area/galleyburned/requisition)
+"Kd" = (
+/obj/structure/closet/secure_closet,
+/turf/open/floor/shiva/multi_tiles,
+/area/galleyburned/residential)
 "Kg" = (
 /obj/structure/machinery/prop/almayer/CICmap{
 	pixel_y = 5;
@@ -3122,24 +3940,65 @@
 	layer = 4
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "Kk" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "27"
+/turf/closed/shuttle/dropship2{
+	icon_state = "27";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Kl" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/obj/structure/machinery/door/airlock/hatch/cockpit/four,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/bed/stool{
+	icon_state = "stool_alt";
+	pixel_x = -2;
+	pixel_y = 15
+	},
+/obj/item/trash/crushed_cup{
+	pixel_x = -8;
+	pixel_y = -20
+	},
+/mob/living/simple_animal/mouse/rat/black{
+	name = "Mad Mike";
+	desc = "A rabid, big, fat and most importantly impudent black rat with hellish red eyes. Mike got his nickname after infiltrated and raided more than dozens of USCM dropships wiring. He is a real madman raider that fear nothing."
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
+/area/galleyburned/residential)
+"Ko" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/weapon/gun/lever_action{
+	pixel_y = 10;
+	anchored = 1
+	},
+/obj/item/weapon/gun/rifle/m49a/marksman{
+	pixel_y = -3;
+	anchored = 1
+	},
+/obj/structure/machinery/light/small,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "Kr" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned/briefing)
 "Kv" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
-/turf/open/floor/almayer/plate,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "Kw" = (
 /obj/structure/sign/poster/hunk,
@@ -3196,6 +4055,9 @@
 "KY" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/synthcloset)
+"La" = (
+/turf/open/floor/shiva/multi_tiles/southeast,
+/area/galleyburned/residential)
 "Lj" = (
 /turf/closed/wall/almayer/outer,
 /area/galleyburned)
@@ -3232,13 +4094,27 @@
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
 "Lw" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "70"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/upper_right_wing,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Lx" = (
-/turf/open/shuttle/dropship/light_grey_single_wide_left_to_right,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_16";
+	pixel_y = 35
+	},
+/obj/structure/prop/ice_colony/tiger_rug,
+/obj/structure/bed/stool{
+	icon_state = "stool_alt";
+	pixel_x = -1;
+	pixel_y = 6
+	},
+/obj/structure/bed/stool{
+	icon_state = "stool_alt";
+	pixel_x = 4;
+	pixel_y = 27
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "LD" = (
 /obj/structure/machinery/door/airlock/maintenance/colony{
@@ -3297,10 +4173,43 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Mu" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/strata_decals/grime/grime4,
+/obj/effect/decal/hybrisa/tiretrack{
+	pixel_x = 7
+	},
+/obj/item/prop{
+	icon_state = "m20p_active";
+	icon = 'icons/obj/items/weapons/grenade.dmi';
+	dir = 4;
+	pixel_x = 18;
+	pixel_y = 13;
+	anchored = 1;
+	desc = "The M20P Claymore is a directional anti-personnel smart mine modified for corporate PMC use. Generates 120 degree cone of shrapnel if a valid target crosses before or over it. On its face, it reads \"FRONT TOWARD ENEMY\".";
+	name = "M20P Claymore anti-personnel mine"
+	},
 /obj/structure/machinery/light/double{
 	dir = 8
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/structure/bed/chair{
+	can_buckle = 0;
+	dir = 4
+	},
+/obj/structure/bed/chair{
+	can_buckle = 0;
+	dir = 4;
+	pixel_x = 1;
+	pixel_y = 3
+	},
+/obj/structure/bed/chair{
+	can_buckle = 0;
+	dir = 4;
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "Mv" = (
 /obj/structure/machinery/shower{
@@ -3314,19 +4223,37 @@
 /turf/open/floor/almayer/silverfull,
 /area/galleyburned/prep)
 "My" = (
-/obj/structure/machinery/door_control{
-	pixel_x = 22;
-	pixel_y = -5;
-	name = "door lock";
-	id = "ds1"
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/effect/decal/strata_decals/grime/grime2,
+/obj/effect/decal/hybrisa/tiretrack{
+	dir = 1;
+	pixel_x = -7
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_14";
+	pixel_y = 14
+	},
+/obj/structure/prop{
+	name = "\improper seat-like case";
+	desc = "It's a case made into an impromptu seat.";
+	icon_state = "case";
+	icon = 'icons/obj/structures/crates.dmi';
+	can_buckle = 1;
+	pixel_y = 7;
+	layer = 3.6;
+	pixel_x = 0
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "MA" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	light_power = 0.7
+/obj/structure/machinery/light/double{
+	dir = 2
 	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "MB" = (
@@ -3342,13 +4269,23 @@
 "MW" = (
 /turf/open/floor/almayer/plate,
 /area/galleyburned/briefing)
+"MZ" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "Ne" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/prep)
 "Nl" = (
-/obj/structure/largecrate/random/mini{
-	pixel_x = -7;
-	pixel_y = 7
+/obj/item/tool/warning_cone{
+	pixel_x = -13;
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/item/device/flashlight/lamp/tripod{
+	on = 0;
+	pixel_x = -3;
+	pixel_y = 11
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -3365,6 +4302,13 @@
 /obj/effect/decal/cleanable/dirt/greenglow,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"NB" = (
+/obj/structure/prop/hybrisa/misc/metergreen{
+	pixel_x = 32;
+	pixel_y = 6
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "NK" = (
 /obj/structure/machinery/chem_dispenser/canteen,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -3386,8 +4330,10 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/stash)
 "Of" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "32"
+/obj/structure/prop/hybrisa/airport/dropshipenginedamagenofire,
+/turf/closed/shuttle/dropship2{
+	icon_state = "32";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Og" = (
@@ -3397,7 +4343,6 @@
 	name = "door lock";
 	id = "s5"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Ol" = (
@@ -3408,9 +4353,7 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Oq" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "71"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_exhaust,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "Or" = (
@@ -3423,9 +4366,30 @@
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
+"Ot" = (
+/obj/structure/sink{
+	pixel_y = 19
+	},
+/obj/structure/mirror{
+	pixel_y = 33
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/hybrisa/metal/greenmetal1/west,
+/area/galleyburned/residential)
 "OC" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "99a"
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_14";
+	pixel_y = 14
+	},
+/obj/item/reagent_container/food/drinks/cans/souto{
+	icon_state = "blank_can_crushed"
+	},
+/obj/item/tool/wet_sign{
+	pixel_x = 6;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
@@ -3441,13 +4405,12 @@
 	pixel_x = 3;
 	anchored = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "OH" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_W,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
+/obj/structure/machinery/light/double{
+	dir = 4
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
@@ -3461,33 +4424,81 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/stash)
 "Pc" = (
-/turf/closed/shuttle/midway{
-	icon_state = "54"
+/obj/structure/machinery/door/airlock/maintenance/colony{
+	dir = 8;
+	req_one_access = null
 	},
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Pd" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "22"
+/turf/closed/shuttle/dropship2{
+	icon_state = "22";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Pq" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "84"
+/obj/structure/machinery/door/airlock/almayer/secure,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
-/obj/effect/attach_point/electronics/midway,
-/turf/open/floor/plating,
+/obj/structure/machinery/door/airlock/almayer/secure{
+	req_access = null
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "Privacy Shutter";
+	id = "m4";
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "Pr" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/briefing)
 "Ps" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/shuttle/dropship/light_grey_top_right,
+/obj/effect/decal/strata_decals/grime/grime3{
+	icon_state = "grime4"
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/hop{
+	layer = 3.4
+	},
+/obj/item/bedsheet/brown{
+	pixel_y = 13
+	},
+/obj/item/toy/deck,
+/obj/item/clothing/glasses/sunglasses/blindfold,
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "Pu" = (
 /obj/structure/sign/poster/wylogo,
 /turf/closed/wall/almayer,
 /area/galleyburned/canteen)
+"Pv" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/bed/roller,
+/obj/structure/closet/bodybag,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
+"Px" = (
+/obj/structure/machinery/door/airlock/maintenance/colony{
+	dir = 8;
+	req_one_access = null
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/galleyburned/residential)
 "PC" = (
 /obj/structure/sign/prop1{
 	pixel_y = 32
@@ -3502,11 +4513,38 @@
 /turf/open/floor/plating,
 /area/galleyburned/requisition)
 "PD" = (
-/obj/structure/machinery/light/double{
-	dir = 8
+/obj/structure/sign/banners/freelancecell{
+	pixel_y = 24
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/prop/ice_colony/flamingo{
+	dir = 5;
+	layer = 3.5;
+	pixel_x = -8;
+	pixel_y = 28
+	},
+/obj/structure/closet/medical_wall{
+	pixel_x = 0;
+	pixel_y = 26;
+	name = "Stash"
+	},
+/obj/structure/machinery/washing_machine{
+	pixel_x = -3;
+	pixel_y = 11;
+	density = 0;
+	layer = 3.51
+	},
+/obj/structure/sign/poster/hunk{
+	icon_state = "poster25";
+	pixel_x = -25;
+	pixel_y = -2;
+	layer = 3.6
+	},
+/obj/structure/sign/poster/hunk{
+	icon_state = "poster26";
+	pixel_x = -29;
+	pixel_y = 7
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "PK" = (
 /obj/structure/bed/chair/comfy/beige{
@@ -3529,22 +4567,41 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
+"PM" = (
+/obj/item/reagent_container/syringe{
+	icon_state = "broken";
+	pixel_y = 18;
+	pixel_x = 5
+	},
+/obj/item/storage/backpack/marine/satchel{
+	desc = "It's the heavy-duty black polymer kind. Time to take out the trash!";
+	icon = 'icons/obj/janitor.dmi';
+	icon_state = "trashbag3";
+	name = "trash bag";
+	pixel_x = -2;
+	pixel_y = 11
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "PR" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_E,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/residential)
 "Qa" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/bluefull,
 /area/galleyburned/residential)
 "Qb" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/recharger,
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
+"Qi" = (
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/sign/banners/freelancecell{
+	pixel_y = 30
+	},
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "Qq" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/largecrate/random/mini/ammo{
@@ -3579,6 +4636,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/hangar)
+"QD" = (
+/obj/structure/machinery/big_computers/messaging_server/black{
+	dir = 4
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "QF" = (
 /obj/structure/sign/banners/happybirthdayhaywood{
 	pixel_x = -31;
@@ -3632,10 +4695,31 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
+"QZ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/machinery/chem_master,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/structure/machinery/fabricator/medicinal,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "Ri" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/golden_arrow/synthcloset)
+"Rl" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/blue/west,
+/area/galleyburned/residential)
 "Ry" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/stash)
@@ -3646,12 +4730,31 @@
 /area/galleyburned/cryo)
 "RN" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_N,
-/turf/open/floor/almayer/plate,
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "RO" = (
-/turf/closed/shuttle/midway{
-	icon_state = "77"
+/turf/closed/shuttle/dropship2{
+	icon_state = "51";
+	name = "Alice"
 	},
+/area/galleyburned/residential)
+"RP" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/effect/decal/cleanable/blood,
+/obj/item/prop{
+	icon_state = "pwoodflip";
+	icon = 'icons\obj\structures\barricades.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = 19;
+	pixel_y = 2;
+	anchored = 1;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "RV" = (
 /obj/item/prop/colony/used_flare,
@@ -3664,7 +4767,6 @@
 	light_power = 0.7;
 	icon_state = null
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/item/prop/magazine/book/starshiptroopers{
 	pixel_x = 9;
 	pixel_y = -4;
@@ -3687,7 +4789,7 @@
 	anchored = 1;
 	icon_state = "lantern-on"
 	},
-/turf/open/floor/almayer/dark_sterile,
+/turf/open/floor/sandstone/runed,
 /area/galleyburned/residential)
 "Sb" = (
 /obj/structure/closet,
@@ -3715,7 +4817,7 @@
 	dir = 1;
 	req_access = null
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "Sm" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -3737,11 +4839,38 @@
 /area/galleyburned/canteen)
 "SD" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/obj/item/prop{
+	icon_state = "case_double";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	pixel_x = 5;
+	pixel_y = 2;
+	anchored = 1;
+	layer = 3
 	},
-/turf/open/floor/almayer/plate,
+/obj/item/prop{
+	icon_state = "barrel_green";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.1;
+	pixel_x = -8;
+	pixel_y = -7;
+	anchored = 1
+	},
+/obj/item/prop{
+	icon_state = "mini_case_c";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = 4;
+	pixel_y = 20;
+	anchored = 1
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/almayer/mono,
 /area/galleyburned/residential)
 "SE" = (
 /obj/structure/surface/table/reinforced/black,
@@ -3762,7 +4891,7 @@
 /area/galleyburned/residential)
 "SZ" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/strata/multi_tiles/southeast,
+/turf/open/floor/shiva/multi_tiles/southeast,
 /area/galleyburned/residential)
 "Td" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
@@ -3778,13 +4907,9 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Th" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1";
-	dir = 4
-	},
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "89b"
+/turf/closed/shuttle/dropship2{
+	icon_state = "89";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Tj" = (
@@ -3823,6 +4948,17 @@
 /obj/item/prop/scrap,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
+"TL" = (
+/obj/structure/pipes/vents,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"TP" = (
+/obj/effect/decal/cleanable/hybrisa/trash{
+	pixel_y = 22;
+	pixel_x = 12
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "TT" = (
 /obj/structure/window/framed/almayer,
 /turf/open/floor/almayer,
@@ -3833,11 +4969,38 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Ue" = (
-/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/obj/structure/surface/table/almayer{
+	color = "#848484"
+	},
+/obj/structure/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	pixel_x = 7;
+	pixel_y = -1
+	},
+/obj/item/storage/box/teabags{
+	pixel_x = 4;
+	pixel_y = 17;
+	name = "Unlabeled tea box";
+	desc = "A cardboard box with tea bags-did you expect to see something else here?";
+	anchored = 1
+	},
+/obj/item/reagent_container/food/condiment/saltshaker{
+	pixel_x = -5;
+	pixel_y = 17
+	},
+/obj/item/reagent_container/food/condiment/peppermill{
+	pixel_x = -9;
+	pixel_y = 17
+	},
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "Uj" = (
-/turf/closed/shuttle/midway{
-	icon_state = "31"
+/turf/closed/shuttle/dropship2{
+	icon_state = "31";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "Up" = (
@@ -3860,8 +5023,9 @@
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/galleyburned/cryo)
 "UQ" = (
-/turf/closed/shuttle/midway/transparent{
-	icon_state = "38"
+/turf/closed/shuttle/dropship2{
+	icon_state = "38";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 "UR" = (
@@ -3900,10 +5064,55 @@
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/plate,
 /area/galleyburned/requisition)
+"Vl" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/prop/hybrisa/airport/deadpilot1{
+	mouse_opacity = 0
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gibleg";
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/structure/bed/hybrisa/hospital/hospitaldivider{
+	dir = 1;
+	pixel_y = 2;
+	layer = 3.01;
+	pixel_x = 0
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
 "Vo" = (
 /obj/docking_port/stationary/marine_dropship/galleyburned_hangar,
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
+"Vz" = (
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_cap{
+	layer = 3.2
+	},
+/obj/item/prop{
+	icon_state = "case_double";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.1;
+	anchored = 1
+	},
+/obj/item/prop{
+	icon_state = "mini_crate";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.3;
+	pixel_x = -1;
+	pixel_y = 18;
+	anchored = 1
+	},
+/obj/effect/decal/cleanable/hybrisa/dirt,
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/plating,
+/area/galleyburned/residential)
 "VB" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -8;
@@ -3941,6 +5150,46 @@
 	pixel_x = 6;
 	pixel_y = -12
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/door_control{
+	pixel_x = 8;
+	pixel_y = 22;
+	name = "door lock";
+	id = "m3"
+	},
+/obj/structure/surface/rack,
+/obj/item/clothing/accessory/patch{
+	pixel_x = -6;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/falcon{
+	pixel_x = 6;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/ua{
+	pixel_x = -6;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/usa{
+	pixel_x = 6;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/forecon{
+	pixel_y = -12;
+	pixel_x = -6;
+	anchored = 1
+	},
+/obj/item/clothing/accessory/patch/devils{
+	pixel_x = 6;
+	pixel_y = -12;
+	anchored = 1
+	},
 /turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "VN" = (
@@ -3960,21 +5209,65 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "Wb" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "91"
+/turf/closed/shuttle/dropship2{
+	icon_state = "32";
+	name = "Alice"
 	},
-/obj/effect/attach_point/electronics/midway,
-/turf/open/floor/plating,
+/area/galleyburned/residential)
+"Wd" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/bed{
+	can_buckle = 0;
+	desc = "A lightweight support lattice.";
+	icon = 'icons/obj/structures/structures.dmi';
+	icon_state = "latticefull";
+	layer = 2.1;
+	name = "lattice"
+	},
+/obj/effect/decal/strata_decals/grime/grime3{
+	dir = 8
+	},
+/obj/structure/prop/hybrisa/misc/fake/heavydutywire/heavy2,
+/obj/item/tool/warning_cone{
+	pixel_x = -13;
+	pixel_y = -6;
+	anchored = 1
+	},
+/obj/structure/sign/ROsign{
+	desc = "1. It is forbidden to enter the dropship in the clothes of corporate mercenaries.\n 2. Do not take out or touch anything without the permission of the dweller of the dropship. \n 3. The last word remains with the freelancers cell of that dropship.\n 4. Please treat this(these) freelancers with respect or go fuck off, we don't care.";
+	name = "The Rules of the Freelancer Cell Dropship";
+	pixel_x = -32;
+	pixel_y = 20
+	},
+/turf/open/floor/plating/platingdmg3/west,
 /area/galleyburned/residential)
 "We" = (
 /obj/effect/landmark/supply_elevator,
 /turf/open/floor/almayer/empty/requisitions,
 /area/supply/station)
 "Wp" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "41"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/engine_right_cap,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/plating,
+/area/galleyburned/residential)
+"Wr" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = 2
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = -1
+	},
+/obj/structure/prop/holidays/string_lights{
+	pixel_y = 0;
+	pixel_x = 0
+	},
+/obj/structure/prop/holidays/string_lights/cap,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
 /area/galleyburned/residential)
 "Wu" = (
 /obj/effect/decal/warning_stripes{
@@ -3985,11 +5278,12 @@
 	icon_state = "N";
 	pixel_y = -1
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "Privacy Shutter";
-	id = "ds1"
+/obj/structure/prop/holidays/string_lights{
+	dir = 6;
+	pixel_x = 0;
+	pixel_y = 0
 	},
-/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,
+/turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
 /area/galleyburned/residential)
 "Wy" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
@@ -4000,9 +5294,8 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/briefing)
 "Wz" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "40"
-	},
+/obj/structure/shuttle/part/dropship2/transparent/engine_left_cap,
+/obj/effect/decal/cleanable/hybrisa/dirt,
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "WE" = (
@@ -4011,14 +5304,35 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/stash)
-"Xt" = (
-/turf/closed/shuttle/midway{
-	icon_state = "62"
+"Xh" = (
+/obj/structure/bed,
+/obj/item/bedsheet{
+	color = "#bb3439"
 	},
+/obj/item/weapon/gun/rifle/m46c{
+	pixel_x = 32;
+	anchored = 1
+	},
+/obj/structure/noticeboard{
+	pixel_x = 32
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/bed,
+/obj/item/bedsheet{
+	color = "#bb3439"
+	},
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
+"Xt" = (
+/turf/open/floor/almayer/blue/east,
 /area/galleyburned/residential)
 "Xx" = (
-/turf/open/floor/almayer/empty,
-/area/galleyburned)
+/turf/open/floor/almayer/empty/requisitions,
+/area/galleyburned/maint)
 "Xz" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	dir = 1;
@@ -4031,15 +5345,21 @@
 /turf/closed/wall/almayer,
 /area/galleyburned/requisition)
 "XO" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "4"
+/obj/structure/shuttle/part/dropship2/right_outer_wing_connector{
+	name = "Alice"
+	},
+/obj/item/tool/warning_cone{
+	pixel_x = -34;
+	pixel_y = 7;
+	anchored = 1
 	},
 /turf/open/floor/plating,
 /area/galleyburned/residential)
 "XQ" = (
-/turf/closed/shuttle/midway{
-	icon_state = "36"
+/obj/structure/mirror{
+	pixel_x = 26
 	},
+/turf/open/floor/almayer/bluefull,
 /area/galleyburned/residential)
 "XW" = (
 /obj/structure/machinery/door/airlock/maintenance/colony{
@@ -4051,6 +5371,10 @@
 "XY" = (
 /turf/open/floor/plating,
 /area/galleyburned)
+"Ya" = (
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/hybrisa/wood/blackwood,
+/area/galleyburned/residential)
 "Yc" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/paper_bin{
@@ -4069,6 +5393,31 @@
 	},
 /turf/open/floor/grass,
 /area/galleyburned/memorial)
+"Yf" = (
+/obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/item/prop/colony/usedbandage{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/clothing/accessory/limb/skeleton/head{
+	pixel_x = -10;
+	pixel_y = -3;
+	anchored = 1;
+	mouse_opacity = 0
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/item/prop{
+	icon_state = "barrel_blue";
+	icon = 'icons\obj\structures\crates.dmi';
+	name = "A pile of boxes";
+	desc = "A huge barricade of all sorts of junk and boxes, you're not sure you can get through it.";
+	layer = 3.1;
+	pixel_x = 16;
+	pixel_y = 8;
+	anchored = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/galleyburned/residential)
 "Yh" = (
 /obj/structure/machinery/door/airlock/maintenance/colony{
 	dir = 2;
@@ -4084,15 +5433,31 @@
 /turf/open/floor/almayer/plate,
 /area/galleyburned/prep)
 "Yk" = (
-/obj/structure/stairs/perspective,
-/obj/structure/platform{
-	dir = 4;
-	layer = 2.7
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_13";
+	pixel_y = 7
 	},
-/obj/structure/platform{
-	dir = 8
+/obj/structure/surface/table/almayer{
+	color = "#848484"
 	},
-/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/obj/item/device/flashlight/lamp{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/reagent_container/glass/rag{
+	pixel_x = -5;
+	pixel_y = 12
+	},
+/obj/item/prop/helmetgarb/gunoil{
+	pixel_x = -4;
+	pixel_y = 18
+	},
+/obj/item/weapon/gun/revolver/mateba/cmateba{
+	name = "\improper broken Mateba autorevolver";
+	desc = "The .454 Mateba 6 Unica autorevolver is a semi-automatic handcannon that uses its own recoil to rotate the cylinders. Extremely rare, prohibitively costly, and unyieldingly powerful, it's found in the hands of a select few high-ranking USCM officials. Stylish, sophisticated, and above all, extremely deadly. Well, this one isn't. 'Cause it's broken.";
+	anchored = 1
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
 "Yv" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -4101,6 +5466,29 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/galleyburned/requisition)
+"Yx" = (
+/obj/item/tool/mop{
+	pixel_x = 11;
+	anchored = 1;
+	pixel_y = 16
+	},
+/obj/item/reagent_container/glass/bucket{
+	pixel_x = 11;
+	pixel_y = 0
+	},
+/obj/effect/decal/strata_decals/grime/grime4{
+	pixel_x = 10;
+	pixel_y = 0
+	},
+/obj/effect/decal/hybrisa/colorable_rug{
+	color = "#6e272e";
+	layer = 2.01;
+	dir = 2;
+	pixel_y = -25;
+	pixel_x = 46
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
+/area/galleyburned/residential)
 "YC" = (
 /obj/structure/prop/hybrisa/misc/floorprops/floorglass2,
 /obj/structure/prop/hybrisa/xenobiology/misc,
@@ -4131,10 +5519,26 @@
 /turf/open/floor/hybrisa/metal/bluemetal1/east,
 /area/galleyburned/residential)
 "YN" = (
-/obj/structure/shuttle/part/midway/transparent{
-	icon_state = "20"
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/prop/folded_anti_tank_sadar{
+	pixel_y = 10;
+	pixel_x = -2;
+	anchored = 1
 	},
-/turf/open/floor/plating,
+/obj/item/weapon/gun/pistol/highpower{
+	pixel_y = -2;
+	pixel_x = -3;
+	layer = 3.51;
+	anchored = 1
+	},
+/obj/item/storage/box{
+	icon_state = "minebox";
+	icon = 'icons/obj/items/storage/packets.dmi';
+	pixel_x = 10;
+	anchored = 1;
+	name = "mine box"
+	},
+/turf/open/floor/shiva/multi_tiles/southeast,
 /area/galleyburned/residential)
 "YR" = (
 /obj/structure/bed/chair{
@@ -4164,7 +5568,7 @@
 /area/galleyburned/requisition)
 "YU" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
-	name = "\improper S-05 [VACANT]";
+	name = "\improper S-05 [D. TALOS]";
 	dir = 2
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -4179,7 +5583,24 @@
 /turf/open/floor/almayer/mono,
 /area/galleyburned/canteen)
 "Zz" = (
-/turf/open/shuttle/dropship/light_grey_bottom_left,
+/obj/structure/bedsheetbin{
+	pixel_x = -12;
+	pixel_y = 12;
+	layer = 3.51
+	},
+/obj/structure/reagent_dispensers/beerkeg/alt_dark{
+	anchored = 1;
+	chemical = null;
+	density = 0;
+	pixel_x = 6;
+	pixel_y = 12;
+	layer = 3.51
+	},
+/obj/structure/extinguisher_cabinet/lifeboat{
+	pixel_y = 30;
+	pixel_x = 8
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_top_left,
 /area/galleyburned/residential)
 "ZG" = (
 /obj/structure/window/reinforced/ultra{
@@ -4195,23 +5616,11 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
-/turf/open/floor/plating,
+/turf/open/floor/almayer/blue/west,
 /area/galleyburned/residential)
 "ZK" = (
-/obj/structure/machinery/door_control{
-	pixel_x = 8;
-	pixel_y = 22;
-	name = "door lock";
-	id = "m1"
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
+/obj/structure/machinery/cm_vending/sorted/marine_food/upp,
+/turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "ZQ" = (
 /obj/structure/surface/table/reinforced/black,
@@ -4223,8 +5632,9 @@
 /turf/open/floor/plating,
 /area/galleyburned/maint)
 "ZU" = (
-/turf/closed/shuttle/midway{
-	icon_state = "25"
+/turf/closed/shuttle/dropship2{
+	icon_state = "25";
+	name = "Alice"
 	},
 /area/galleyburned/residential)
 
@@ -5273,15 +6683,15 @@ Lj
 Lj
 Lj
 Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
-Lj
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
 Jf
 Jf
 Jf
@@ -5325,7 +6735,7 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 sQ
 Xx
 Xx
@@ -5377,7 +6787,7 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 EZ
 Xx
 Xx
@@ -5429,7 +6839,7 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 tc
 Xx
 Xx
@@ -5481,7 +6891,7 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 EZ
 Xx
 Xx
@@ -5533,7 +6943,7 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 EZ
 Xx
 Xx
@@ -5546,12 +6956,12 @@ Xx
 Xx
 Xx
 Xx
-Lj
-XY
-XY
-XY
-XY
-XY
+bT
+CQ
+gH
+UZ
+Fz
+qa
 XY
 XY
 XY
@@ -5585,25 +6995,25 @@ Lj
 XY
 XY
 XY
-Lj
+Jf
 zP
 gs
 gs
 gs
 gs
-zQ
 gs
 gs
 gs
+Er
 sN
-aD
-aq
-Lj
-XY
-XY
-XY
-XY
-XY
+hk
+vP
+qa
+az
+rZ
+gH
+UZ
+qa
 XY
 XY
 XY
@@ -5638,24 +7048,24 @@ sN
 sN
 sN
 sN
-sN
-sN
+Px
+JF
 vV
 vV
 vV
+JF
 sN
 sN
 sN
+JF
+JF
+Pq
+JF
 sN
 sN
 sN
-au
-sN
-sN
-sN
-sN
-XY
-XY
+LD
+qa
 XY
 XY
 XY
@@ -5690,7 +7100,7 @@ fl
 yC
 mt
 Iy
-Qa
+tZ
 JF
 Qx
 Ib
@@ -5701,13 +7111,13 @@ ay
 rt
 sN
 KN
-av
-ao
-ag
-aa
+gx
+QD
+lt
+BV
 sN
-XY
-XY
+gH
+qa
 XY
 XY
 XY
@@ -5746,20 +7156,20 @@ tZ
 Sj
 bh
 Hs
-aO
-aI
+TP
+vc
 LM
 LM
 LM
-aI
-aE
-ax
-ap
-ai
-ac
+vc
+NB
+TL
+ig
+oC
+co
 sN
-XY
-XY
+Ct
+qa
 XY
 XY
 XY
@@ -5805,13 +7215,13 @@ QT
 YM
 sN
 JF
-az
+gW
 JF
-aj
-ad
+Df
+vT
 sN
-XY
-XY
+gH
+qa
 XY
 XY
 XY
@@ -5856,14 +7266,14 @@ JF
 JF
 JF
 sN
-aG
-aB
+Ot
+vG
 JF
-am
-ae
+Fi
+Rl
 sN
-XY
-XY
+gH
+qa
 XY
 XY
 XY
@@ -5894,28 +7304,28 @@ CM
 "}
 (33,1,1) = {"
 sN
-fl
+Gq
 yC
-Sv
+yC
 JC
 vS
 JF
 VK
-aR
-aP
-JF
-aM
-aK
+GQ
+mz
+bE
+xi
+eP
 At
 sN
-aH
-aC
+fh
+np
 JF
-an
-af
+Cd
+pd
 sN
-XY
-XY
+UZ
+qa
 XY
 XY
 XY
@@ -5947,7 +7357,7 @@ CM
 (34,1,1) = {"
 sN
 yC
-mt
+yC
 yC
 YU
 tZ
@@ -5966,7 +7376,7 @@ sN
 sN
 sN
 sN
-sN
+Pc
 sN
 sN
 sN
@@ -5999,18 +7409,18 @@ CM
 (35,1,1) = {"
 sN
 Gq
-mt
+yC
 Og
 JF
 vS
 JF
-aU
-aT
-aQ
+bb
+QZ
+Ya
 JF
-aN
-aL
-aJ
+le
+Xh
+gY
 JF
 iN
 PR
@@ -6019,15 +7429,15 @@ PR
 An
 PR
 An
-PR
+rN
 An
-PR
+rN
+rN
 An
-PR
+rN
 An
-PR
-pQ
-PR
+EW
+An
 oO
 sN
 Jb
@@ -6065,22 +7475,22 @@ JF
 JF
 JF
 SD
-yC
-yC
-yC
-yC
+sg
+mj
+FS
+Pd
 Oq
 gJ
 lm
-yC
+Ir
 Wz
 mj
 FS
 Pd
-YN
-yC
+Oq
+Qi
 tU
-RN
+Ep
 sN
 Jb
 Jb
@@ -6109,28 +7519,28 @@ DX
 vS
 JF
 ix
-Sv
-yC
-mt
-yC
-yC
+Xt
+Xt
+Xt
+Xt
+Xt
 rj
 ui
-zV
-yC
-yC
-Pq
+sL
+by
+IN
+mB
 BP
 fx
 Cl
-Xt
-XQ
+aX
+aX
 cM
 IN
 mB
-vM
+BP
 it
-yC
+MZ
 bJ
 MA
 sN
@@ -6160,31 +7570,31 @@ yC
 sh
 tZ
 kE
-yC
-mt
-mt
-yC
-mt
-yC
-yC
+Qa
+Qa
+Qa
+Qa
+Qa
+Qa
+Qa
 ui
-rQ
-yC
+RP
+MZ
 sW
 JH
-gY
 aX
-Ue
+aX
+hL
 PD
 Ue
 fV
-XQ
+aX
 Bo
 iR
 nc
 hu
 qq
-RN
+Ep
 sN
 Jb
 Jb
@@ -6212,31 +7622,31 @@ Or
 JF
 vS
 JF
-Gq
-mt
-yC
-yC
-mt
-mt
+AY
+xu
+xu
+xu
+xu
+xu
 ZI
 ui
-zV
+Pv
 sG
 rx
 Fn
-RO
+os
 in
-xp
+lM
 Zz
 Yk
-pV
-xp
-xp
+HD
+Wd
+mY
 Mu
 mN
-yC
+yR
 Nl
-Ep
+RN
 sN
 Jb
 Jb
@@ -6271,23 +7681,23 @@ gX
 gX
 gX
 gX
-gX
+JF
 rQ
 eL
 cG
 CZ
 Kl
 Lx
-uT
-Lx
-Ue
+uB
+Yx
+yw
 Jl
 aA
 uT
-Ue
-Wu
-yC
-yC
+ax
+Wr
+OC
+MZ
 RN
 sN
 Jb
@@ -6320,15 +7730,15 @@ ZK
 nq
 tm
 wa
-tm
+Kd
 fg
-HI
-gX
-zV
-OC
+Ko
+JF
+Vl
+eD
 Th
 HG
-RO
+mC
 Ps
 xp
 wq
@@ -6339,8 +7749,8 @@ My
 lD
 Wu
 ho
-yC
-Ep
+PM
+RN
 sN
 Jb
 Jb
@@ -6369,30 +7779,30 @@ QV
 tZ
 jZ
 Fv
-fg
+La
 Fv
 Fv
 Fv
-fg
+La
 IY
-gX
-rQ
-yC
+JF
+Yf
+Bi
 bB
 uw
 RO
-aA
-Ue
+RO
+vM
 jh
-aA
+Ik
 gb
-Pc
+RO
 Uj
 ZU
 as
 AR
 XO
-RN
+Ep
 sN
 Jb
 Jb
@@ -6423,26 +7833,26 @@ gX
 jR
 SZ
 rC
-tm
-tm
-fg
-HI
-gX
-zV
-yC
-yC
-Wb
 CV
+lI
+YN
+HI
+JF
+zV
+oB
+UQ
+Wb
+cs
 uq
 eD
-gW
-Pc
+RO
+RO
 GP
 UQ
 Of
 cs
-YN
-yC
+Oq
+zQ
 tP
 MA
 sN
@@ -6479,24 +7889,24 @@ gX
 aw
 aw
 aw
-gX
-SD
-yC
-yC
-yC
-yC
-xu
+JF
+Bn
+Vz
+ti
+oj
+Kk
+it
 Lw
 Du
-yC
+Co
 Wp
 ti
 oj
 Kk
 it
-yC
+MZ
 wj
-RN
+Ep
 sN
 Jb
 Jb
@@ -6536,18 +7946,18 @@ ve
 Kv
 OH
 Kv
+Kv
+fN
 fN
 Kv
 fN
 Kv
 fN
-Kv
 fN
 Kv
 fN
-Kv
-OH
-Kv
+GW
+fN
 bz
 sN
 Jb
@@ -6632,8 +8042,8 @@ OG
 gM
 Ai
 JF
-yC
-yC
+Cs
+Qa
 aF
 sN
 Jb
@@ -6684,9 +8094,9 @@ yx
 er
 Kg
 JF
-mt
-mt
-yC
+go
+Qa
+dV
 sN
 Jb
 Jb
@@ -6737,7 +8147,7 @@ mh
 bI
 JF
 fE
-mt
+XQ
 dL
 sN
 Jb

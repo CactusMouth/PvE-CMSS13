@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(cm_vending_extraction, list(
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
 		list("Ballistic Vest", 0, list(/obj/item/clothing/suit/armor/vest/ballistic), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_RECOMMENDED),
-		list("Militia Hauberk & Militia Helmet", 0, list(/obj/item/clothing/suit/storage/militia, /obj/item/clothing/head/militia/bucket), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_REGULAR),
+		list("Militia Hauberk & Utility Helmet", 0, list(/obj/item/clothing/suit/storage/militia, /obj/item/clothing/head/helmet/construction), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_REGULAR),
 		list("Shoulder-Mounted Lamp Harness", 0, list(/obj/item/clothing/suit/marine/lamp), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK (CHOOSE 1)", 0, null, null, null),
@@ -114,7 +114,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_synth_extract, list(
 	name = "\improper ColMarTech Surplus Synthetic Equipment Rack"
 	desc = "An automated rack hooked up to an autofab of cheap, low-quality equipment. This one can only be used by synthetics."
 	req_access = list()
-	vendor_role = list()
+	vendor_role = list(JOB_SYNTH, JOB_SYNTH_SURVIVOR, JOB_UPP_SUPPORT_SYNTH, JOB_CMB_SYN, JOB_PMC_SYNTH)
 
 /obj/structure/machinery/cm_vending/clothing/synth/extraction/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_synth_extract

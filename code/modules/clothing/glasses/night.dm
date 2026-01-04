@@ -19,6 +19,7 @@
 	eye_protection = EYE_PROTECTION_NEGATIVE
 	var/headcam = FALSE
 	var/obj/structure/machinery/camera/camera
+	rp_value = 500
 
 /obj/item/clothing/glasses/night/Initialize()
 	. = ..()

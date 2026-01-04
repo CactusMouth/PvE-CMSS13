@@ -449,6 +449,7 @@
 	desc = "A fallen servicemember's information dog tag."
 	icon_state = "dogtag_taken"
 	icon = 'icons/obj/items/card.dmi'
+	rp_value = 10
 	w_class = SIZE_TINY
 	var/list/fallen_names
 	var/list/fallen_blood_types

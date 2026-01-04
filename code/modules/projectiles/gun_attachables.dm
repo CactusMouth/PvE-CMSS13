@@ -262,6 +262,7 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "suppressor_a"
 	hud_offset_mod = -3
 	gun_traits = list(TRAIT_GUN_SILENCED)
+	rp_value = 50
 
 /obj/item/attachable/suppressor/New()
 	..()
@@ -295,6 +296,7 @@ Defined in conflicts.dm of the #defines folder.
 	flags_armor_protection = SLOT_FACE
 	flags_item = CAN_DIG_SHRAPNEL
 	flags_human_ai = MELEE_WEAPON_ITEM
+	rp_value = 10
 
 	attach_icon = "bayonet_a"
 	melee_mod = 20
@@ -334,6 +336,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "co2_knife"
 	attach_icon = "co2_bayonet_a"
 	var/filled = FALSE
+	rp_value = 15
 
 /obj/item/attachable/bayonet/rmc
 	name = "\improper L5 bayonet"
@@ -349,6 +352,7 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/bayonet/van_bandolier
 	name = "\improper Fairbairn-Sykes fighting knife"
 	desc = "This isn't for dressing game or performing camp chores. It's for killing men and has done so successfully for a number of centuries. When all else has failed you, this knife will be in your hand, ready to execute its grim task."
+	rp_value = 20
 
 /obj/item/attachable/bayonet/co2/update_icon()
 	icon_state = "co2_knife[filled ? "-f" : ""]"
@@ -378,6 +382,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "co2_cartridge"
 	item_state = ""
 	w_class = SIZE_TINY
+	rp_value = 5
 
 /obj/item/attachable/bayonet/canc
 	name = "\improper Type 4 bayonet"
@@ -397,6 +402,7 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "ebarrel_a"
 	hud_offset_mod = -3
 	wield_delay_mod = WIELD_DELAY_FAST
+	rp_value = 25
 
 /obj/item/attachable/extended_barrel/New()
 	..()
@@ -436,6 +442,7 @@ Defined in conflicts.dm of the #defines folder.
 	attach_icon = "comp_a"
 	pixel_shift_x = 17
 	hud_offset_mod = -3
+	rp_value = 25
 
 /obj/item/attachable/compensator/New()
 	..()
@@ -717,6 +724,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "reddot"
 	attach_icon = "reddot_a"
 	slot = "rail"
+	rp_value = 50
 
 /obj/item/attachable/reddot/New()
 	..()
@@ -735,6 +743,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "reflex"
 	attach_icon = "reflex_a"
 	slot = "rail"
+	rp_value = 75
 
 /obj/item/attachable/reflex/New()
 	..()
@@ -761,6 +770,7 @@ Defined in conflicts.dm of the #defines folder.
 	attachment_action_type = /datum/action/item_action/toggle
 	activation_sound = 'sound/handling/light_on_1.ogg'
 	deactivation_sound = 'sound/handling/click_2.ogg'
+	rp_value = 5
 	var/original_state = "flashlight"
 	var/original_attach = "flashlight_a"
 
@@ -898,6 +908,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "under"
 	original_state = "flashgrip"
 	original_attach = "flashgrip_a"
+	rp_value = 15
 
 /obj/item/attachable/flashlight/grip/New()
 	..()
@@ -946,6 +957,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "rail"
 	pixel_shift_x = 13
 	var/retrieval_slot = WEAR_J_STORE
+	rp_value = 80
 
 /obj/item/attachable/magnetic_harness/New()
 	..()
@@ -975,6 +987,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "under"
 	wield_delay_mod = WIELD_DELAY_VERY_FAST
 	retrieval_slot = WEAR_BACK
+	rp_value = 10
 
 /obj/item/attachable/magnetic_harness/lever_sling/New()
 	..()
@@ -1027,6 +1040,7 @@ Defined in conflicts.dm of the #defines folder.
 	wield_delay_mod = WIELD_DELAY_FAST
 	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 	attachment_action_type = /datum/action/item_action/toggle
+	rp_value = 50
 	var/zoom_offset = 11
 	var/zoom_viewsize = 12
 	var/allows_movement = 0
@@ -1113,6 +1127,7 @@ Defined in conflicts.dm of the #defines folder.
 	name = "S10 variable zoom telescopic scope"
 	desc = "An ARMAT S10 telescopic eye piece. Can be switched between 2x zoom, which allows the user to move while scoped in, and 4x zoom. Press the 'use rail attachment' HUD icon or use the verb of the same name to zoom."
 	attachment_action_type = /datum/action/item_action/toggle
+	rp_value = 70
 	var/dynamic_aim_slowdown = SLOWDOWN_ADS_MINISCOPE_DYNAMIC
 	var/zoom_level = ZOOM_LEVEL_4X
 
@@ -1204,6 +1219,11 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "A civilian-grade scope that can be switched between short and long range magnification, intended for use in extraterrestrial scouting. Looks ridiculous on a pistol."
 	aim_speed_mod = 0
 
+/obj/item/attachable/scope/variable_zoom/eva/marauder
+	name = "N79 EVA telescopic variable scope"
+	icon_state = "rxfm5_eva_scope_marauder"
+	attach_icon = "rxfm5_eva_scope_marauder_a"
+
 /obj/item/attachable/scope/variable_zoom/canc
 	name = "LMR-72 4x smartscope"
 	desc = "Outdated CANC scope."
@@ -1283,6 +1303,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "huntingscope"
 	attach_icon = "huntingscope"
 	desc = "Generic fixed-magnification 2x optic. Common just about everywhere in civil hands, and sometimes used by law enforcement too."
+	rp_value = 20
 
 /obj/item/attachable/scope/mini/hunting/upp
 	name = "POS-3 hunting mini-scope"
@@ -1374,6 +1395,7 @@ Defined in conflicts.dm of the #defines folder.
 	zoom_viewsize = 7
 	allows_movement = TRUE
 	var/dynamic_aim_slowdown = SLOWDOWN_ADS_MINISCOPE_DYNAMIC
+	rp_value = 50
 
 /obj/item/attachable/scope/pve/New()
 	..()
@@ -4020,6 +4042,7 @@ Defined in conflicts.dm of the #defines folder.
 	slot = "side_rail"
 	pixel_shift_x = 17
 	pixel_shift_y = 17
+	rp_value = 30
 
 /obj/item/attachable/lasersight/New()
 	..()
@@ -4057,6 +4080,7 @@ Defined in conflicts.dm of the #defines folder.
 	var/full_auto_switch = FALSE
 	// Store our old firemode so we can switch to it when undeploying the bipod
 	var/old_firemode = null
+	rp_value = 30
 
 /obj/item/attachable/bipod/New()
 	..()

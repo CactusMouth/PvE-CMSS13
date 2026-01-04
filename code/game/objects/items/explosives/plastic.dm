@@ -26,6 +26,7 @@
 
 	var/req_skill = SKILL_ENGINEER
 	var/req_skill_level = SKILL_ENGINEER_NOVICE
+	rp_value = 50
 
 /obj/item/explosive/plastic/Destroy()
 	disarm()
@@ -326,6 +327,7 @@
 	var/shrapnel_volume = 40
 	var/shrapnel_type = /datum/ammo/bullet/shrapnel/metal
 	var/explosion_strength = 60
+	rp_value = 75
 
 /obj/item/explosive/plastic/breaching_charge/can_place(mob/user, atom/target)
 	if(!is_type_in_list(target, breachable))//only items on the list are allowed
@@ -369,6 +371,7 @@
 	req_skill = SKILL_POLICE
 	req_skill_level = SKILL_POLICE_SKILLED
 	antigrief_protection = FALSE
+	rp_value = 50
 
 /obj/item/explosive/plastic/breaching_charge/plasma
 	name = "plasma charge"
@@ -385,6 +388,7 @@
 	shrapnel_volume = 10
 	shrapnel_type = /datum/ammo/bullet/shrapnel/plasma
 	explosion_strength = 90
+	rp_value = 250
 
 /obj/item/explosive/plastic/breaching_charge/plasma/can_place(mob/user, atom/target)
 	if(!HAS_TRAIT(user, TRAIT_YAUTJA_TECH))

@@ -327,3 +327,9 @@
 	w_class = SIZE_SMALL
 	gas_transfer_coefficient = 0.10
 	permeability_coefficient = 0.50
+
+/obj/item/clothing/mask/owlf_mask/black_smoke
+	name = "\improper OWLF 'Black Smoke' gas mask"
+	desc = "A close-fitting mask that can be connected to an air supply. This one has been given several cosmetic modifications to make it more menacing."
+	icon_state = "owlf_mask_blacksmoke"
+	item_state = "owlf_mask_blacksmoke"
