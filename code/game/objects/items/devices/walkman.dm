@@ -639,3 +639,16 @@
 				"side2" = list("sound/music/walkman/freelancing/24-2-1.ogg",\
 								"sound/music/walkman/freelancing/24-2-2.ogg",\
 								"sound/music/walkman/freelancing/24-2-3.ogg"))
+
+/obj/item/device/cassette_tape/joker
+	name = "clown cassette"
+	id = 25
+	desc = "A plastic cassette tape with a clown-themed sticker. It's labeled 'JOKER' - it was originally sold as a novelty at a few clown-themed casinos, it gained status as a collector's item after it played for eight hours on loop during a police shootout. Also, it gave people lead poisoning."
+	icon_state = "cassette_joker"
+	side1_icon = "cassette_joker"
+	songs = list("side1" = list("sound/music/walkman/joker/25-1-1.ogg",\
+								"sound/music/walkman/joker/25-1-2.ogg",\
+								"sound/music/walkman/joker/25-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/joker/25-2-1.ogg",\
+								"sound/music/walkman/joker/25-2-2.ogg",\
+								"sound/music/walkman/joker/25-2-3.ogg"))
