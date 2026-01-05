@@ -596,6 +596,7 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/tool,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "abO" = (
@@ -2164,6 +2165,11 @@
 	},
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
+"ahN" = (
+/obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "aii" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -2187,6 +2193,8 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "akf" = (
@@ -2515,6 +2523,8 @@
 /area/redemptionvalley/outpost/canteen)
 "aAH" = (
 /obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housetwo)
 "aAV" = (
@@ -2525,6 +2535,7 @@
 /obj/item/storage/fancy/cigar/matchbook/brown{
 	pixel_x = -10
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/wood,
 /area/redemptionvalley/valleyroof/admin)
 "aBl" = (
@@ -2642,6 +2653,14 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/ocean/deep_water,
 /area/redemptionvalley/valley/Westbound)
+"aJm" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "aJA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -2709,6 +2728,11 @@
 "aOY" = (
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/entry)
+"aPF" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/beer_pack,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "aPG" = (
 /obj/structure/surface/rack,
 /obj/item/ammo_magazine/lever_action{
@@ -3436,6 +3460,7 @@
 /obj/structure/closet{
 	pixel_x = 8
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/company)
 "bAZ" = (
@@ -3986,6 +4011,13 @@
 	},
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
+"cge" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 1
+	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/cavestruct)
 "cgG" = (
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage,
 /obj/structure/machinery/light/small/blue{
@@ -4077,19 +4109,7 @@
 /area/redemptionvalley/caverns/bunker)
 "ckU" = (
 /obj/structure/surface/rack,
-/obj/item/ammo_box/magazine/m20a{
-	pixel_x = -4;
-	pixel_y = 7
-	},
-/obj/item/ammo_box/magazine/m20a{
-	pixel_x = 4;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m20a,
-/obj/item/ammo_box/magazine/m20a{
-	pixel_y = -5;
-	pixel_x = -7
-	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "clk" = (
@@ -4936,6 +4956,7 @@
 	pixel_y = 8
 	},
 /obj/item/tool/pen,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
 "diO" = (
@@ -5878,6 +5899,7 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "egW" = (
@@ -5960,6 +5982,11 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/outpost/engi)
+"enM" = (
+/obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "eon" = (
 /obj/structure/platform/shiva/catwalk{
 	dir = 4;
@@ -6113,6 +6140,7 @@
 	icon_state = "cargo"
 	},
 /obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "ezZ" = (
@@ -6252,6 +6280,10 @@
 	},
 /turf/open/void,
 /area/redemptionvalley/caverns/north)
+"eLm" = (
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/closed/wall/strata_outpost/reinforced,
+/area/redemptionvalley/valleyroof/cafe)
 "eLO" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -6488,30 +6520,7 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/item/storage/pouch/magazine{
-	pixel_x = -3;
-	pixel_y = 9
-	},
-/obj/item/storage/pouch/magazine{
-	pixel_x = 5;
-	pixel_y = 18
-	},
-/obj/item/storage/pouch/flare/full{
-	pixel_x = -8;
-	pixel_y = 18
-	},
-/obj/item/storage/pouch/flare/full{
-	pixel_x = 3;
-	pixel_y = 16
-	},
-/obj/item/storage/pouch/general/medium{
-	pixel_y = 8;
-	pixel_x = -4
-	},
-/obj/item/storage/pouch/general/medium{
-	pixel_y = 8;
-	pixel_x = 9
-	},
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "eVG" = (
@@ -6668,6 +6677,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/kutjevo/multi_tiles/east,
 /area/redemptionvalley/outpost/brief)
+"fex" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkwest)
 "feF" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8;
@@ -7358,6 +7374,25 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
+"fSP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/obj/item/storage/firstaid/brute,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/hydro)
 "fTm" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8;
@@ -7424,6 +7459,7 @@
 	pixel_y = 3
 	},
 /obj/item/prop/magazine/book/inframaterialism,
+/obj/effect/spawner/random/gun/extraction/any/tier2,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/cells)
 "fUW" = (
@@ -7526,6 +7562,7 @@
 	pixel_x = 18;
 	pixel_y = 9
 	},
+/obj/effect/spawner/random/gun/extraction/any/tier2,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
 "gcS" = (
@@ -7539,6 +7576,7 @@
 	pixel_y = 5
 	},
 /obj/item/prop/helmetgarb/rosary,
+/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "gdR" = (
@@ -7592,6 +7630,7 @@
 	icon_state = "cargo"
 	},
 /obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "gld" = (
@@ -7638,9 +7677,15 @@
 /obj/structure/sign/catclock{
 	pixel_y = 33
 	},
-/obj/structure/largecrate/supply/motiondetectors,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
+"goz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "goL" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 9
@@ -7736,22 +7781,9 @@
 	can_block_movement = 0;
 	can_be_stacked = 1
 	},
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/khaki,
-/obj/item/clothing/head/cmcap/boonie,
-/obj/item/clothing/accessory/storage/webbing/m3/mag,
-/obj/item/clothing/accessory/storage/smallpouch,
-/obj/item/clothing/accessory/storage/droppouch,
-/obj/item/clothing/accessory/storage/webbing/m3/small,
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/obj/effect/spawner/random/extraction/armor/tier1,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "gyq" = (
@@ -8252,11 +8284,13 @@
 	pixel_y = 18;
 	density = 0
 	},
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefour)
 "hjY" = (
 /obj/structure/surface/table/holotable,
 /obj/item/toy/deck,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/gm/dirt2,
 /area/redemptionvalley/caverns/bunker)
 "hka" = (
@@ -8267,6 +8301,7 @@
 	pixel_x = 1;
 	pixel_y = 13
 	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "hkf" = (
@@ -8291,6 +8326,7 @@
 	icon_state = "cargo"
 	},
 /obj/structure/surface/rack,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/storage)
 "hkN" = (
@@ -8357,7 +8393,9 @@
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/proper)
 "hpc" = (
-/obj/structure/gun_rack/m20a/unloaded,
+/obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "hps" = (
@@ -8486,6 +8524,7 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/prison/darkyellow2/east,
 /area/redemptionvalley/valleyroof/engi)
 "huJ" = (
@@ -9008,6 +9047,7 @@
 	pixel_y = -1
 	},
 /obj/item/prop/helmetgarb/rabbitsfoot,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "iap" = (
@@ -9266,31 +9306,10 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_x = 6;
-	pixel_y = 9
-	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_y = 10
-	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_x = 8;
-	pixel_y = 15
-	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_y = 19
-	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_x = -8;
-	pixel_y = 5
-	},
-/obj/item/storage/pouch/firstaid/full{
-	pixel_x = -8;
-	pixel_y = 23
-	},
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	network = list("Redemption Outpost")
 	},
+/obj/effect/spawner/random/gun/extraction/smg/military,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "itX" = (
@@ -9310,10 +9329,8 @@
 	spawnkey = 0
 	},
 /obj/item/weapon/knife/marine/bowie,
-/obj/item/weapon/gun/revolver/spearhead/black,
-/obj/item/ammo_magazine/revolver/spearhead/hollowpoint,
-/obj/item/ammo_magazine/revolver/spearhead/hollowpoint,
 /obj/item/moneybag,
+/obj/effect/spawner/random/gun/extraction/smg/military,
 /turf/open/floor/wood,
 /area/redemptionvalley/valleyroof/admin)
 "iwf" = (
@@ -9367,11 +9384,8 @@
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/proper)
 "iBB" = (
-/obj/item/ammo_box/rounds,
-/obj/item/ammo_box/rounds{
-	pixel_y = -4
-	},
 /obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/gun/extraction/rifle/military,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "iCd" = (
@@ -9765,6 +9779,7 @@
 	pixel_x = 6;
 	pixel_y = 2
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/kutjevo/colors,
 /area/redemptionvalley/outpost/ops)
 "iXC" = (
@@ -9864,22 +9879,9 @@
 	can_block_movement = 0;
 	can_be_stacked = 1
 	},
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/flap/desert,
-/obj/item/clothing/head/cmcap/boonie/tan,
-/obj/item/clothing/accessory/storage/webbing/m3/mag,
-/obj/item/clothing/accessory/storage/smallpouch,
-/obj/item/clothing/accessory/storage/droppouch,
-/obj/item/clothing/accessory/storage/webbing/m3/small,
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/obj/effect/spawner/random/extraction/armor/tier2,
+/obj/effect/spawner/random/extraction/helmet/tier2,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "jci" = (
@@ -9931,6 +9933,7 @@
 	},
 /obj/item/folder/yellow,
 /obj/item/tool/pen,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/blue/northwest,
 /area/redemptionvalley/valleyroof/admin)
 "jel" = (
@@ -9964,6 +9967,7 @@
 /obj/structure/surface/rack{
 	pixel_x = 4
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/valleyroof/housesix)
 "jfO" = (
@@ -10127,6 +10131,7 @@
 /area/redemptionvalley/valleyroof/medical)
 "joZ" = (
 /obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housesix)
 "jpo" = (
@@ -10504,6 +10509,7 @@
 	pixel_x = 3;
 	pixel_y = 23
 	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/bunkwest)
 "jNF" = (
@@ -10786,6 +10792,7 @@
 	pixel_y = 9;
 	pixel_x = -10
 	},
+/obj/item/storage/box/mre/wy,
 /turf/open/floor/prison/kitchen,
 /area/redemptionvalley/valleyroof/cafe)
 "kkS" = (
@@ -10841,6 +10848,7 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "kot" = (
@@ -11197,6 +11205,7 @@
 	dir = 8
 	},
 /obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/shotgun/civilian,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "kHf" = (
@@ -11457,6 +11466,13 @@
 	},
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
+"kWX" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#8B7B5B"
+	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/turf/open/floor/kutjevo/multi_tiles/east,
+/area/redemptionvalley/outpost/brief)
 "kXt" = (
 /obj/structure/closet/secure_closet/personal{
 	pixel_x = 8;
@@ -11597,6 +11613,24 @@
 	},
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
+"lhT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "lis" = (
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/cavestruct)
@@ -11732,6 +11766,7 @@
 	pixel_y = 15;
 	layer = 3.23
 	},
+/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/company)
 "lqs" = (
@@ -11948,6 +11983,13 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/admin)
+"lFV" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkeast)
 "lGF" = (
 /turf/open/floor,
 /area/redemptionvalley/outpost/elevlow)
@@ -12061,6 +12103,11 @@
 /obj/structure/curtain/blue,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/outpost/toilet)
+"lOV" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/box/mre/wy,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "lQu" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	name = "\improper Cell"
@@ -12234,6 +12281,7 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefive)
 "lYd" = (
@@ -12251,6 +12299,7 @@
 	pixel_x = 1;
 	pixel_y = 13
 	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "lZs" = (
@@ -12746,6 +12795,11 @@
 /obj/structure/flora/bush/ausbushes/genericbush,
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/Westbound)
+"mBy" = (
+/obj/structure/surface/table/holotable,
+/obj/item/storage/box/mre/wy,
+/turf/open/floor/prison/greenblue/west,
+/area/redemptionvalley/valleyroof/cafe)
 "mCm" = (
 /obj/structure/barricade/handrail/type_b{
 	pixel_y = -5
@@ -12942,6 +12996,7 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#ffe6e6"
 	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/canteen)
 "mLT" = (
@@ -12992,6 +13047,11 @@
 /obj/structure/machinery/power/apc/power/east,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefive)
+"mPq" = (
+/obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/kutjevo/tan/multi_tiles/west,
+/area/redemptionvalley/valleyroof/company)
 "mPs" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -13759,6 +13819,7 @@
 /obj/item/clothing/suit/storage/jacket/marine/service,
 /obj/item/clothing/shoes/marine/brown,
 /obj/item/clothing/head/cmcap,
+/obj/effect/spawner/random/gun/extraction/shotgun/military,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/outpost/ops)
 "nGv" = (
@@ -13952,6 +14013,7 @@
 	pixel_y = 15;
 	layer = 3.23
 	},
+/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/housefive)
 "nVP" = (
@@ -14181,6 +14243,7 @@
 	color = "#C02526";
 	dir = 1
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/bunkeast)
 "omd" = (
@@ -14504,10 +14567,6 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/item/ammo_box/magazine/misc/mre{
-	pixel_x = 6;
-	pixel_y = 16
-	},
 /obj/item/ammo_box/magazine/misc/flares{
 	pixel_x = -8;
 	pixel_y = 11
@@ -14602,6 +14661,7 @@
 	pixel_y = 15
 	},
 /obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housefour)
 "oLY" = (
@@ -14908,6 +14968,7 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/toolbox,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "pbi" = (
@@ -15201,6 +15262,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/valley/cliff)
+"pqt" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6;
+	build_stage = 5
+	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/turf/open/auto_turf/strata_grass/layer0_mud,
+/area/redemptionvalley/valley/checkpoint)
 "prt" = (
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -15264,6 +15336,7 @@
 	can_be_stacked = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/cell_stripe,
 /area/redemptionvalley/valleyroof/admin)
 "puf" = (
@@ -15752,6 +15825,7 @@
 	pixel_x = 8;
 	pixel_y = 4
 	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "pOJ" = (
@@ -16493,6 +16567,7 @@
 	light_color = "#dae2ff";
 	light_power = 0.5
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/storage)
 "qHC" = (
@@ -16537,6 +16612,9 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
+/obj/effect/spawner/random/gun/extraction/shotgun/civilian,
+/obj/effect/spawner/random/extraction/armor/tier1,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/valleyroof/housesix)
 "qJS" = (
@@ -16639,6 +16717,7 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/tool,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "qSf" = (
@@ -16998,6 +17077,7 @@
 	can_be_stacked = 1
 	},
 /obj/item/prop/magazine/playboy/n2182,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "rjP" = (
@@ -17386,6 +17466,7 @@
 "rLP" = (
 /obj/structure/machinery/power/apc/power/north,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
 /turf/open/floor,
 /area/redemptionvalley/valleyroof/cliffcomms)
 "rMb" = (
@@ -17866,6 +17947,11 @@
 /obj/structure/sign/safety/restrictedarea,
 /turf/closed/wall/r_wall,
 /area/redemptionvalley/outpost/halls)
+"slm" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "slW" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -17885,19 +17971,7 @@
 /area/redemptionvalley/valleyroof/security)
 "smV" = (
 /obj/structure/surface/rack,
-/obj/item/ammo_box/magazine/m20a,
-/obj/item/ammo_box/magazine/m20a{
-	pixel_y = -5;
-	pixel_x = -7
-	},
-/obj/item/ammo_box/magazine/m20a{
-	pixel_x = 4;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m20a{
-	pixel_x = -4;
-	pixel_y = 7
-	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "snh" = (
@@ -18221,6 +18295,8 @@
 	pixel_y = 13;
 	pixel_x = 6
 	},
+/obj/effect/spawner/random/extraction/armor/tier1,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/company)
 "sCk" = (
@@ -18254,6 +18330,7 @@
 /area/redemptionvalley/valleyroof/housefive)
 "sDG" = (
 /obj/structure/surface/table/holotable,
+/obj/item/storage/firstaid/o2,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "sEg" = (
@@ -18282,11 +18359,10 @@
 	req_access = null;
 	req_one_access = list(12,9)
 	},
-/obj/item/weapon/gun/pistol/t73,
-/obj/item/ammo_magazine/pistol/t73,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/cells)
 "sFu" = (
@@ -19269,6 +19345,13 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/west)
+"tYX" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkeast)
 "tYY" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -19711,6 +19794,31 @@
 	},
 /turf/open/floor/plating/warnplate/west,
 /area/redemptionvalley/valleyroof/housefour)
+"uwN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
+"uxG" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/cavestruct)
 "uyd" = (
 /obj/structure/machinery/door_control{
 	pixel_x = -24;
@@ -19852,6 +19960,7 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#8B7B5B"
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
 "uHK" = (
@@ -19886,6 +19995,7 @@
 "uJT" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housefive)
 "uKz" = (
@@ -20646,6 +20756,7 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "vCb" = (
@@ -20683,6 +20794,7 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefour)
 "vFg" = (
@@ -20698,6 +20810,14 @@
 	},
 /turf/open/gm/river/ocean/deep_water,
 /area/redemptionvalley/valley/checkpoint)
+"vFW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "vGJ" = (
 /obj/structure/bed/chair,
 /turf/open/floor/prison/kitchen,
@@ -20738,6 +20858,16 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/security)
+"vIr" = (
+/obj/structure/closet{
+	pixel_x = -8
+	},
+/obj/structure/closet{
+	pixel_x = 8
+	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/company)
 "vIS" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -20768,6 +20898,7 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison/cell_stripe,
 /area/redemptionvalley/valleyroof/admin)
 "vKc" = (
@@ -20866,6 +20997,7 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/prop/almayer/handheld1,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/flight)
 "vRc" = (
@@ -21090,6 +21222,13 @@
 	},
 /turf/open/void,
 /area/redemptionvalley/caverns/east)
+"wer" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#ffe6e6"
+	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/almayer,
+/area/redemptionvalley/outpost/canteen)
 "wfb" = (
 /obj/structure/platform/strata/metal,
 /obj/structure/stairs/perspective{
@@ -21124,16 +21263,7 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/item/storage/box/explosive_mines{
-	pixel_x = -1;
-	pixel_y = 8;
-	layer = 3.05
-	},
-/obj/item/storage/box/explosive_mines{
-	pixel_x = 5;
-	pixel_y = 14;
-	layer = 3.05
-	},
+/obj/effect/spawner/random/gun/extraction/pistol/tier2,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "wiM" = (
@@ -21261,6 +21391,7 @@
 	},
 /obj/item/stack/sandbags_empty/full,
 /obj/item/tool/shovel/etool/folded,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "wql" = (
@@ -21306,6 +21437,8 @@
 /area/redemptionvalley/valley/cliff)
 "wra" = (
 /obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/prison/yellow/southwest,
 /area/redemptionvalley/valleyroof/hydro)
 "wsl" = (
@@ -21375,10 +21508,15 @@
 /turf/open/floor,
 /area/redemptionvalley/outpost/barracks)
 "wuR" = (
-/obj/structure/largecrate/supply/supplies/mre,
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/almayer,
-/area/redemptionvalley/outpost/halls)
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/largecrate{
+	name = "farm food supply"
+	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "wvp" = (
 /obj/structure/machinery/fuelcell_recycler/full,
 /turf/open/floor/prison/darkyellow2/east,
@@ -21394,6 +21532,7 @@
 "wxw" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housefour)
 "wxD" = (
@@ -21559,7 +21698,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/structure/largecrate/supply/supplies/mre,
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "wEY" = (
@@ -22005,6 +22144,7 @@
 /obj/structure/surface/rack{
 	pixel_x = 4
 	},
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/valleyroof/housetwo)
 "xho" = (
@@ -22289,10 +22429,11 @@
 /turf/open/floor/prison/darkyellow2/north,
 /area/redemptionvalley/valleyroof/engi)
 "xCs" = (
-/obj/structure/gun_rack/m20a/unloaded,
 /obj/structure/machinery/light/blue{
 	dir = 8
 	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "xCu" = (
@@ -22549,36 +22690,24 @@
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/redemptionvalley/shuttles/drop1)
 "xPP" = (
-/obj/structure/closet/secure_closet/personal{
-	pixel_x = -8;
-	req_access = list(9);
-	can_block_movement = 0;
-	can_be_stacked = 1
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/obj/structure/closet/secure_closet/personal{
-	pixel_x = 8;
-	req_access = list(9);
-	can_block_movement = 0;
-	can_be_stacked = 1
-	},
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/suit/marine/faction,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/gloves/marine,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/flap,
-/obj/item/clothing/head/cmcap/flap/snow,
-/obj/item/clothing/head/cmcap/boonie,
-/obj/item/clothing/accessory/storage/webbing/m3/mag,
-/obj/item/clothing/accessory/storage/smallpouch,
-/obj/item/clothing/accessory/storage/droppouch,
-/obj/item/clothing/accessory/storage/webbing/m3/small,
-/turf/open/floor/almayer,
-/area/redemptionvalley/outpost/armory)
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/extraction/helmet/tier2,
+/obj/effect/spawner/random/extraction/armor/tier2,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "xQE" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8
@@ -22650,6 +22779,7 @@
 /area/redemptionvalley/shuttles/drop1)
 "xVx" = (
 /obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/kutjevo/tan/multi_tiles/west,
 /area/redemptionvalley/valleyroof/company)
 "xWx" = (
@@ -22670,6 +22800,7 @@
 	pixel_y = 18;
 	layer = 3.01
 	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/cavestruct)
 "xYR" = (
@@ -39880,7 +40011,7 @@ jwg
 bLO
 wJR
 xdc
-mlD
+wuR
 mlD
 xdc
 wJR
@@ -40387,7 +40518,7 @@ eYp
 uro
 rpD
 eYp
-xdc
+xPP
 wJR
 gKS
 pIu
@@ -40634,7 +40765,7 @@ hAJ
 qgO
 mgX
 wJR
-xdc
+lhT
 eYp
 rpD
 jRl
@@ -41390,7 +41521,7 @@ pIu
 qgO
 fNZ
 wJR
-hkJ
+vFW
 xtP
 pBD
 hsX
@@ -43143,10 +43274,10 @@ fNZ
 wJR
 wJR
 wJR
-xdc
+uwN
 xdc
 noe
-hkJ
+aJm
 aaR
 eYp
 wJR
@@ -43645,7 +43776,7 @@ qgO
 tzE
 fNZ
 wJR
-rpD
+goz
 rpD
 rpD
 iyR
@@ -43899,7 +44030,7 @@ fNZ
 wJR
 rpD
 fkP
-mlD
+wuR
 mlD
 eYp
 oaE
@@ -44061,7 +44192,7 @@ sMf
 sck
 hhG
 hhG
-aYV
+pqt
 pCZ
 uvh
 vFR
@@ -46558,7 +46689,7 @@ clk
 lRw
 ujJ
 ujJ
-ujJ
+uxG
 mEB
 clk
 clk
@@ -46807,7 +46938,7 @@ sMf
 clk
 clk
 clk
-qSf
+cge
 bde
 bde
 lis
@@ -48835,7 +48966,7 @@ nKY
 jZk
 rWw
 rWw
-wql
+fex
 nsL
 sck
 sck
@@ -49253,7 +49384,7 @@ jwg
 kwa
 bMr
 rOl
-qpx
+mBy
 iSt
 iSt
 qpx
@@ -50010,7 +50141,7 @@ bMr
 kSr
 rJg
 vGJ
-rvN
+ahN
 rvN
 fsR
 udN
@@ -50263,7 +50394,7 @@ tkj
 eSM
 icR
 rvN
-rvN
+enM
 fXA
 eSM
 cAC
@@ -51103,7 +51234,7 @@ pdi
 pcW
 eZp
 xrS
-suU
+lFV
 nsL
 jlI
 gFk
@@ -51521,7 +51652,7 @@ eRt
 bMr
 bMr
 bdp
-bdp
+slm
 dqV
 bZj
 bMr
@@ -52023,7 +52154,7 @@ psT
 bKa
 jGx
 bMr
-bMr
+eLm
 unb
 sCk
 tBD
@@ -52529,10 +52660,10 @@ oAP
 jGx
 bMr
 jfO
-bdp
+aPF
 hfE
 hdn
-bdp
+lOV
 kkv
 bMr
 swO
@@ -53133,7 +53264,7 @@ sza
 yfV
 yfV
 xrS
-suU
+tYX
 nsL
 sza
 jlI
@@ -54861,7 +54992,7 @@ snh
 iBB
 jbE
 gwV
-xPP
+gwV
 xCs
 hpc
 ckU
@@ -56137,7 +56268,7 @@ cZx
 vgZ
 bAA
 rNk
-egW
+kWX
 egW
 egW
 waY
@@ -58386,7 +58517,7 @@ dvg
 aAa
 uBp
 ybH
-mLl
+wer
 fZl
 mDZ
 dZm
@@ -58666,7 +58797,7 @@ mXK
 mXK
 rHU
 mIc
-wuR
+xZZ
 xZZ
 oRT
 dwY
@@ -59791,7 +59922,7 @@ fNZ
 ssk
 bAO
 bAO
-bAO
+vIr
 ssk
 ssk
 ssk
@@ -60050,7 +60181,7 @@ ssk
 jEj
 faM
 lkC
-xVx
+mPq
 qTS
 faM
 ssk
@@ -71851,7 +71982,7 @@ fMC
 xVo
 sYD
 ajq
-knP
+fSP
 ohr
 sYD
 fMC
