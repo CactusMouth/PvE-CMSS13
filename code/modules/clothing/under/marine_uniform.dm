@@ -351,6 +351,7 @@
 	worn_state = "marine_firestarter"
 	item_state_slots = list(WEAR_BODY = "marine_firestarter")
 	flags_jumpsuit = FALSE
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 
 //=========================//DRESS BLUES\\================================\\
 //=======================================================================\\
