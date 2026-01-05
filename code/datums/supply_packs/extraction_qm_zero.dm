@@ -61,7 +61,7 @@
 	cost = 50
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Viper-9 crate"
-	group = "Quartermaster LL1"
+	group = "Quartermaster LL0"
 
 /datum/supply_packs/qm_m39_mag
 	name = "Ammunition: Viper-9 Magazine"
@@ -69,7 +69,7 @@
 	cost = 2
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 magazine crate"
-	group = "Quartermaster LL1"
+	group = "Quartermaster LL0"
 
 /datum/supply_packs/qm_m39_mag_ext
 	name = "Ammunition: Viper-9 Magazine, Extended"
@@ -77,7 +77,7 @@
 	cost = 3
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 extended magazine crate"
-	group = "Quartermaster LL1"
+	group = "Quartermaster LL0"
 
 /datum/supply_packs/qm_hedp
 	name = "Weapon: M40 HEDP Grenade"

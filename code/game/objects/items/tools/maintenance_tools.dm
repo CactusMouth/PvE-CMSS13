@@ -723,6 +723,7 @@ Welding backpack
 	var/original_health = 1
 	/// Because the marine backpack can carry 260, and still allows you to take items, there should be a reason to still use this one.
 	var/max_fuel = 600
+	rp_value = 50
 
 /obj/item/tool/weldpack/Initialize()
 	. = ..()
@@ -808,3 +809,4 @@ Welding backpack
 	flags_equip_slot = SLOT_WAIST
 	w_class = SIZE_MEDIUM
 	health = 50
+	rp_value = 10
