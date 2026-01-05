@@ -596,7 +596,6 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/tool,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "abO" = (
@@ -2165,11 +2164,6 @@
 	},
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
-"ahN" = (
-/obj/structure/surface/table/holotable,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/floor/prison/kitchen,
-/area/redemptionvalley/valleyroof/cafe)
 "aii" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -2193,8 +2187,6 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "akf" = (
@@ -2653,14 +2645,6 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/ocean/deep_water,
 /area/redemptionvalley/valley/Westbound)
-"aJm" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
 "aJA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -2713,6 +2697,16 @@
 /obj/structure/platform,
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/redemptionvalley/valleyroof/engi)
+"aOa" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#ffe6e6"
+	},
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/turf/open/floor/almayer,
+/area/redemptionvalley/outpost/canteen)
 "aOv" = (
 /obj/structure/cargo_container/hd/left/alt{
 	color = "#aeaeae"
@@ -2728,11 +2722,6 @@
 "aOY" = (
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/entry)
-"aPF" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/storage/beer_pack,
-/turf/open/floor/prison/kitchen,
-/area/redemptionvalley/valleyroof/cafe)
 "aPG" = (
 /obj/structure/surface/rack,
 /obj/item/ammo_magazine/lever_action{
@@ -2968,6 +2957,7 @@
 "aZq" = (
 /obj/structure/surface/table/holotable,
 /obj/item/reagent_container/food/drinks/bottle/rum,
+/obj/item/stack/sheet/mineral/diamond,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
 "aZz" = (
@@ -3399,6 +3389,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/red,
 /area/redemptionvalley/valleyroof/security)
+"bxW" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#8B7B5B"
+	},
+/obj/item/weapon/gun/revolver/m44,
+/turf/open/floor/kutjevo/multi_tiles/east,
+/area/redemptionvalley/outpost/brief)
 "bye" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
@@ -4011,13 +4008,6 @@
 	},
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
-"cge" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 1
-	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/asphalt/cement_darkened,
-/area/redemptionvalley/outpost/cavestruct)
 "cgG" = (
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage,
 /obj/structure/machinery/light/small/blue{
@@ -4108,10 +4098,23 @@
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
 "ckU" = (
-/obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/any/tier1,
-/turf/open/floor/almayer,
-/area/redemptionvalley/outpost/armory)
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "clk" = (
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
@@ -4343,6 +4346,10 @@
 	pixel_x = -11
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/weapon/gun/pistol/vp70,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/cavestruct)
 "czU" = (
@@ -4559,6 +4566,10 @@
 	},
 /turf/open/floor/prison/cell_stripe,
 /area/redemptionvalley/valleyroof/hydro)
+"cIB" = (
+/obj/item/storage/firstaid/softpack/adv,
+/turf/open/auto_turf/sand_white/layer0,
+/area/redemptionvalley/caverns/bunker)
 "cJn" = (
 /obj/structure/platform,
 /turf/open/gm/dirt2,
@@ -4877,6 +4888,16 @@
 	},
 /turf/open/floor/kutjevo/colors,
 /area/redemptionvalley/outpost/ops)
+"dcq" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkeast)
 "dcs" = (
 /mob/living/simple_animal/cow,
 /obj/structure/flora/bush/ausbushes/grassybush{
@@ -4956,7 +4977,10 @@
 	pixel_y = 8
 	},
 /obj/item/tool/pen,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
 "diO" = (
@@ -5164,6 +5188,8 @@
 	pixel_y = 8
 	},
 /obj/effect/spawner/random/tool,
+/obj/item/fuel_cell,
+/obj/item/fuel_cell,
 /turf/open/floor/prison,
 /area/redemptionvalley/outpost/flight)
 "dqV" = (
@@ -5899,7 +5925,10 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "egW" = (
@@ -5982,11 +6011,6 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/outpost/engi)
-"enM" = (
-/obj/structure/surface/table/holotable,
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/open/floor/prison/kitchen,
-/area/redemptionvalley/valleyroof/cafe)
 "eon" = (
 /obj/structure/platform/shiva/catwalk{
 	dir = 4;
@@ -6140,7 +6164,11 @@
 	icon_state = "cargo"
 	},
 /obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
+/obj/item/weapon/gun/smg/m39,
+/obj/item/ammo_magazine/smg/m39,
+/obj/item/ammo_magazine/smg/m39,
+/obj/item/ammo_magazine/smg/m39,
+/obj/item/ammo_magazine/smg/m39,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "ezZ" = (
@@ -6280,10 +6308,6 @@
 	},
 /turf/open/void,
 /area/redemptionvalley/caverns/north)
-"eLm" = (
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/closed/wall/strata_outpost/reinforced,
-/area/redemptionvalley/valleyroof/cafe)
 "eLO" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -6520,7 +6544,13 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/obj/item/storage/firstaid/softpack{
+	pixel_y = 9;
+	pixel_x = -5
+	},
+/obj/item/storage/firstaid/softpack{
+	pixel_y = 19
+	},
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "eVG" = (
@@ -6677,13 +6707,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/kutjevo/multi_tiles/east,
 /area/redemptionvalley/outpost/brief)
-"fex" = (
-/obj/structure/barricade/sandbags/wired{
-	pixel_y = -6
-	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/asphalt/cement_darkened,
-/area/redemptionvalley/outpost/bunkwest)
 "feF" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8;
@@ -7374,25 +7397,6 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
-"fSP" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/closet/crate,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
-/obj/item/storage/firstaid/brute,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/hydro)
 "fTm" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8;
@@ -7562,7 +7566,10 @@
 	pixel_x = 18;
 	pixel_y = 9
 	},
-/obj/effect/spawner/random/gun/extraction/any/tier2,
+/obj/item/weapon/gun/rifle/l42a,
+/obj/item/ammo_magazine/rifle/l42a,
+/obj/item/ammo_magazine/rifle/l42a,
+/obj/item/ammo_magazine/rifle/l42a,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
 "gcS" = (
@@ -7576,7 +7583,6 @@
 	pixel_y = 5
 	},
 /obj/item/prop/helmetgarb/rosary,
-/obj/effect/spawner/random/gun/extraction/any/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "gdR" = (
@@ -7622,6 +7628,24 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/redemptionvalley/valley/proper)
+"ghK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "giG" = (
 /turf/open/floor/plating,
 /area/shuttle/elevator2/underground)
@@ -7630,7 +7654,10 @@
 	icon_state = "cargo"
 	},
 /obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "gld" = (
@@ -7679,13 +7706,6 @@
 	},
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
-"goz" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
 "goL" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 9
@@ -7769,23 +7789,13 @@
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/proper)
 "gwV" = (
-/obj/structure/closet/secure_closet/personal{
-	pixel_x = -8;
-	req_access = list(9);
-	can_block_movement = 0;
-	can_be_stacked = 1
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/obj/structure/closet/secure_closet/personal{
-	pixel_x = 8;
-	req_access = list(9);
-	can_block_movement = 0;
-	can_be_stacked = 1
-	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
-/obj/effect/spawner/random/extraction/armor/tier1,
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/open/floor/almayer,
-/area/redemptionvalley/outpost/armory)
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "gyq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -7928,6 +7938,11 @@
 "gFz" = (
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/outpost/elevlow)
+"gJW" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "gKS" = (
 /obj/structure/platform/strata/metal{
 	dir = 1
@@ -8290,7 +8305,10 @@
 "hjY" = (
 /obj/structure/surface/table/holotable,
 /obj/item/toy/deck,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
 /turf/open/gm/dirt2,
 /area/redemptionvalley/caverns/bunker)
 "hka" = (
@@ -8301,7 +8319,6 @@
 	pixel_x = 1;
 	pixel_y = 13
 	},
-/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "hkf" = (
@@ -8342,6 +8359,25 @@
 	},
 /turf/closed/wall/strata_outpost/reinforced,
 /area/redemptionvalley/valleyroof/security)
+"hlp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/suit/marine/light,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/housefour)
 "hlv" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -8394,8 +8430,7 @@
 /area/redemptionvalley/valley/proper)
 "hpc" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/obj/effect/spawner/random/extraction/armor/tier1,
+/obj/item/ammo_box/magazine/m20a,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "hps" = (
@@ -8681,6 +8716,11 @@
 "hFr" = (
 /turf/open/floor/prison/green/west,
 /area/redemptionvalley/valleyroof/cafe)
+"hFx" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/beer_pack,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "hFU" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -8695,6 +8735,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
+"hGj" = (
+/obj/structure/surface/table/holotable,
+/obj/item/storage/box/mre/wy,
+/turf/open/floor/prison/greenblue/west,
+/area/redemptionvalley/valleyroof/cafe)
 "hGk" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
@@ -9035,6 +9080,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
+"iaa" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/cavestruct)
 "iak" = (
 /obj/structure/closet/secure_closet/personal{
 	pixel_x = -8;
@@ -9047,7 +9102,10 @@
 	pixel_y = -1
 	},
 /obj/item/prop/helmetgarb/rabbitsfoot,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "iap" = (
@@ -9309,7 +9367,6 @@
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	network = list("Redemption Outpost")
 	},
-/obj/effect/spawner/random/gun/extraction/smg/military,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "itX" = (
@@ -9385,7 +9442,9 @@
 /area/redemptionvalley/valley/proper)
 "iBB" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/effect/spawner/random/gun/extraction/rifle/military,
+/obj/item/ammo_box/magazine/misc/mre/emergency{
+	pixel_y = 8
+	},
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "iCd" = (
@@ -9620,6 +9679,16 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/ocean/deep_water,
 /area/redemptionvalley/caverns/lake)
+"iNN" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/weapon/gun/pistol/vp70,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkwest)
 "iOB" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal3"
@@ -9779,7 +9848,10 @@
 	pixel_x = 6;
 	pixel_y = 2
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/obj/item/weapon/gun/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
 /turf/open/floor/kutjevo/colors,
 /area/redemptionvalley/outpost/ops)
 "iXC" = (
@@ -9825,6 +9897,7 @@
 	light_color = "#dae2ff";
 	light_power = 0.5
 	},
+/obj/item/clothing/head/hardhat/dblue,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "jal" = (
@@ -9879,9 +9952,8 @@
 	can_block_movement = 0;
 	can_be_stacked = 1
 	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
-/obj/effect/spawner/random/extraction/armor/tier2,
-/obj/effect/spawner/random/extraction/helmet/tier2,
+/obj/item/clothing/suit/marine,
+/obj/item/clothing/head/helmet/marine,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "jci" = (
@@ -9967,7 +10039,7 @@
 /obj/structure/surface/rack{
 	pixel_x = 4
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/storage/firstaid/o2,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/valleyroof/housesix)
 "jfO" = (
@@ -10032,6 +10104,10 @@
 /area/redemptionvalley/outpost/ops)
 "jjm" = (
 /obj/item/trash/cigbutt,
+/obj/item/clothing/suit/storage/marine/light{
+	pixel_y = -12;
+	pixel_x = 10
+	},
 /turf/open/gm/dirt2,
 /area/redemptionvalley/caverns/bunker)
 "jjv" = (
@@ -10131,7 +10207,10 @@
 /area/redemptionvalley/valleyroof/medical)
 "joZ" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/weapon/gun/pistol/vp70,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housesix)
 "jpo" = (
@@ -10509,7 +10588,7 @@
 	pixel_x = 3;
 	pixel_y = 23
 	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
+/obj/item/clothing/suit/marine/light,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/bunkwest)
 "jNF" = (
@@ -10656,6 +10735,17 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/proper)
+"jZP" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6;
+	build_stage = 5
+	},
+/obj/item/clothing/suit/marine/light,
+/turf/open/auto_turf/strata_grass/layer0_mud,
+/area/redemptionvalley/valley/checkpoint)
 "jZW" = (
 /obj/effect/decal/strata_decals/catwalk/prison,
 /obj/item/lightstick/red/spoke/planted{
@@ -10848,7 +10938,10 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "kot" = (
@@ -10995,6 +11088,10 @@
 	pixel_y = 5
 	},
 /obj/item/prop/helmetgarb/lucky_feather,
+/obj/item/weapon/gun/smg/uzi,
+/obj/item/ammo_magazine/smg/uzi,
+/obj/item/ammo_magazine/smg/uzi,
+/obj/item/ammo_magazine/smg/uzi/extended,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "kwD" = (
@@ -11205,7 +11302,8 @@
 	dir = 8
 	},
 /obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/shotgun/civilian,
+/obj/item/weapon/gun/shotgun/double,
+/obj/item/ammo_magazine/shotgun/slugs,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "kHf" = (
@@ -11466,13 +11564,6 @@
 	},
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
-"kWX" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#8B7B5B"
-	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
-/turf/open/floor/kutjevo/multi_tiles/east,
-/area/redemptionvalley/outpost/brief)
 "kXt" = (
 /obj/structure/closet/secure_closet/personal{
 	pixel_x = 8;
@@ -11480,8 +11571,11 @@
 	can_block_movement = 0;
 	can_be_stacked = 1
 	},
-/obj/effect/spawner/random/toy,
 /obj/item/prop/helmetgarb/spacejam_tickets,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "kYp" = (
@@ -11613,24 +11707,6 @@
 	},
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/bunker)
-"lhT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/closet/crate,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
 "lis" = (
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/cavestruct)
@@ -11766,7 +11842,6 @@
 	pixel_y = 15;
 	layer = 3.23
 	},
-/obj/effect/spawner/random/extraction/armor/tier1,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/company)
 "lqs" = (
@@ -11983,13 +12058,6 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/admin)
-"lFV" = (
-/obj/structure/barricade/sandbags/wired{
-	pixel_y = -6
-	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
-/turf/open/asphalt/cement_darkened,
-/area/redemptionvalley/outpost/bunkeast)
 "lGF" = (
 /turf/open/floor,
 /area/redemptionvalley/outpost/elevlow)
@@ -12043,6 +12111,10 @@
 /obj/structure/flora/grass/tallgrass/jungle,
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/proper)
+"lLW" = (
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/closed/wall/strata_outpost/reinforced,
+/area/redemptionvalley/valleyroof/cafe)
 "lMQ" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal3"
@@ -12103,11 +12175,6 @@
 /obj/structure/curtain/blue,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/outpost/toilet)
-"lOV" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/storage/box/mre/wy,
-/turf/open/floor/prison/kitchen,
-/area/redemptionvalley/valleyroof/cafe)
 "lQu" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	name = "\improper Cell"
@@ -12162,6 +12229,16 @@
 "lSL" = (
 /turf/open/floor/strata,
 /area/redemptionvalley/valleyroof/laundro)
+"lSY" = (
+/obj/structure/barricade/sandbags/wired{
+	pixel_y = -6
+	},
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/bunkeast)
 "lTd" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8;
@@ -12281,7 +12358,7 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/storage/firstaid,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefive)
 "lYd" = (
@@ -12299,7 +12376,9 @@
 	pixel_x = 1;
 	pixel_y = 13
 	},
-/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/item/clothing/head/hardhat/white{
+	pixel_y = 17
+	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefive)
 "lZs" = (
@@ -12795,11 +12874,6 @@
 /obj/structure/flora/bush/ausbushes/genericbush,
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/Westbound)
-"mBy" = (
-/obj/structure/surface/table/holotable,
-/obj/item/storage/box/mre/wy,
-/turf/open/floor/prison/greenblue/west,
-/area/redemptionvalley/valleyroof/cafe)
 "mCm" = (
 /obj/structure/barricade/handrail/type_b{
 	pixel_y = -5
@@ -12996,7 +13070,7 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#ffe6e6"
 	},
-/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/item/reagent_container/food/snacks/microwavable/donkpocket,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/canteen)
 "mLT" = (
@@ -13047,11 +13121,6 @@
 /obj/structure/machinery/power/apc/power/east,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/housefive)
-"mPq" = (
-/obj/structure/surface/table/holotable,
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/open/floor/kutjevo/tan/multi_tiles/west,
-/area/redemptionvalley/valleyroof/company)
 "mPs" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -13731,6 +13800,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
+"nCI" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/box/mre/wy,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "nDC" = (
 /obj/item/storage/bag/trash{
 	pixel_x = 3;
@@ -13819,7 +13893,8 @@
 /obj/item/clothing/suit/storage/jacket/marine/service,
 /obj/item/clothing/shoes/marine/brown,
 /obj/item/clothing/head/cmcap,
-/obj/effect/spawner/random/gun/extraction/shotgun/military,
+/obj/item/weapon/gun/shotgun/pump,
+/obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/outpost/ops)
 "nGv" = (
@@ -14013,7 +14088,7 @@
 	pixel_y = 15;
 	layer = 3.23
 	},
-/obj/effect/spawner/random/extraction/armor/tier1,
+/obj/item/clothing/suit/marine/light,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/housefive)
 "nVP" = (
@@ -14243,7 +14318,10 @@
 	color = "#C02526";
 	dir = 1
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/bunkeast)
 "omd" = (
@@ -14594,6 +14672,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/valley/cliff)
+"oII" = (
+/obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "oIK" = (
 /obj/structure/closet/secure_closet/hydroponics{
 	pixel_x = -8;
@@ -14968,7 +15051,6 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/toolbox,
-/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/hydro)
 "pbi" = (
@@ -15164,6 +15246,13 @@
 	},
 /turf/open/floor/kutjevo/tan/multi_tiles/west,
 /area/redemptionvalley/outpost/barracks)
+"pkw" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "pkC" = (
 /obj/structure/platform/kutjevo/rock{
 	color = "#999999"
@@ -15262,17 +15351,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/valley/cliff)
-"pqt" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 8
-	},
-/obj/structure/barricade/sandbags/wired{
-	pixel_y = -6;
-	build_stage = 5
-	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
-/turf/open/auto_turf/strata_grass/layer0_mud,
-/area/redemptionvalley/valley/checkpoint)
 "prt" = (
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -15825,7 +15903,10 @@
 	pixel_x = 8;
 	pixel_y = 4
 	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "pOJ" = (
@@ -16273,6 +16354,25 @@
 /obj/item/storage/bag/trash,
 /turf/open/gm/dirt2,
 /area/redemptionvalley/valley/cliff)
+"qst" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/effect/spawner/random/extraction/helmet/tier2,
+/obj/effect/spawner/random/extraction/armor/tier2,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "qtg" = (
 /obj/structure/machinery/washing_machine{
 	pixel_y = 16;
@@ -16283,6 +16383,7 @@
 	pixel_y = 31;
 	density = 0
 	},
+/obj/item/clothing/suit/armor/vest,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/company)
 "qtt" = (
@@ -16612,9 +16713,8 @@
 	pixel_y = 15;
 	can_be_stacked = 1
 	},
-/obj/effect/spawner/random/gun/extraction/shotgun/civilian,
-/obj/effect/spawner/random/extraction/armor/tier1,
-/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/item/clothing/suit/marine/light,
+/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate,
 /turf/open/floor/kutjevo/multi_tiles/west,
 /area/redemptionvalley/valleyroof/housesix)
 "qJS" = (
@@ -16717,13 +16817,16 @@
 	},
 /obj/structure/surface/rack,
 /obj/effect/spawner/random/tool,
-/obj/effect/spawner/random/extraction/helmet/tier1,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "qSf" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1
 	},
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/outpost/cavestruct)
 "qSp" = (
@@ -17077,7 +17180,6 @@
 	can_be_stacked = 1
 	},
 /obj/item/prop/magazine/playboy/n2182,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/barracks)
 "rjP" = (
@@ -17249,6 +17351,24 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor,
 /area/redemptionvalley/outpost/halls)
+"rzN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/reagent_container/food/snacks/grown/wheat,
+/obj/item/storage/firstaid/brute,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/hydro)
 "rzZ" = (
 /obj/structure/platform{
 	density = 0;
@@ -17466,7 +17586,10 @@
 "rLP" = (
 /obj/structure/machinery/power/apc/power/north,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/obj/item/weapon/gun/rifle/m20a,
+/obj/item/ammo_magazine/rifle/m20a,
+/obj/item/ammo_magazine/rifle/m20a,
+/obj/item/ammo_magazine/rifle/m20a,
 /turf/open/floor,
 /area/redemptionvalley/valleyroof/cliffcomms)
 "rMb" = (
@@ -17943,15 +18066,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement_darkened,
 /area/redemptionvalley/caverns/bunker)
+"skX" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/turf/open/auto_turf/strata_grass/layer0_mud,
+/area/redemptionvalley/valley/checkpoint)
 "slg" = (
 /obj/structure/sign/safety/restrictedarea,
 /turf/closed/wall/r_wall,
 /area/redemptionvalley/outpost/halls)
-"slm" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/reagent_container/food/drinks/bottle/beer/craft/partypopper,
-/turf/open/floor/prison/kitchen,
-/area/redemptionvalley/valleyroof/cafe)
 "slW" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -17971,7 +18099,13 @@
 /area/redemptionvalley/valleyroof/security)
 "smV" = (
 /obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/obj/item/weapon/gun/rifle/mar40/carbine,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "snh" = (
@@ -18295,8 +18429,8 @@
 	pixel_y = 13;
 	pixel_x = 6
 	},
-/obj/effect/spawner/random/extraction/armor/tier1,
-/obj/effect/spawner/random/extraction/helmet/tier1,
+/obj/item/clothing/suit/armor/vest,
+/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate,
 /turf/open/floor/prison/sterile_white,
 /area/redemptionvalley/valleyroof/company)
 "sCk" = (
@@ -19272,6 +19406,11 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/redemptionvalley/outpost/medical)
+"tSi" = (
+/obj/structure/surface/table/holotable,
+/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/turf/open/floor/prison/kitchen,
+/area/redemptionvalley/valleyroof/cafe)
 "tSo" = (
 /turf/open/floor/kutjevo/fake_wood,
 /area/redemptionvalley/valleyroof/housesix)
@@ -19298,6 +19437,13 @@
 /obj/structure/machinery/colony_floodlight,
 /turf/open/gm/dirt2,
 /area/redemptionvalley/valley/checkpoint)
+"tUG" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 1
+	},
+/obj/item/clothing/head/helmet/marine,
+/turf/open/asphalt/cement_darkened,
+/area/redemptionvalley/outpost/cavestruct)
 "tVf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -19345,13 +19491,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/auto_turf/sand_white/layer0,
 /area/redemptionvalley/caverns/west)
-"tYX" = (
-/obj/structure/barricade/sandbags/wired{
-	pixel_y = -6
-	},
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
-/turf/open/asphalt/cement_darkened,
-/area/redemptionvalley/outpost/bunkeast)
 "tYY" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -19794,31 +19933,6 @@
 	},
 /turf/open/floor/plating/warnplate/west,
 /area/redemptionvalley/valleyroof/housefour)
-"uwN" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/closet/crate,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/gun/extraction/rifle/civilian,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
-"uxG" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 8
-	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/asphalt/cement_darkened,
-/area/redemptionvalley/outpost/cavestruct)
 "uyd" = (
 /obj/structure/machinery/door_control{
 	pixel_x = -24;
@@ -19960,7 +20074,10 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#8B7B5B"
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/kutjevo/multi_tiles/southeast,
 /area/redemptionvalley/valleyroof/company)
 "uHK" = (
@@ -19995,7 +20112,10 @@
 "uJT" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/weapon/gun/pistol/vp70,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
+/obj/item/ammo_magazine/pistol/vp70/ap,
 /turf/open/floor/prison/bright_clean,
 /area/redemptionvalley/valleyroof/housefive)
 "uKz" = (
@@ -20705,6 +20825,16 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/redemptionvalley/valley/checkpoint)
+"vyp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/largecrate{
+	name = "farm food supply"
+	},
+/obj/effect/spawner/random/extraction/helmet/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/storage)
 "vyt" = (
 /turf/open/floor/prison/whitegreen/north,
 /area/redemptionvalley/valleyroof/medical)
@@ -20724,6 +20854,7 @@
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/item/reagent_container/food/snacks/grown/wheat,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/firstaid/softpack,
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/housefour)
 "vzL" = (
@@ -20756,13 +20887,23 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "vCb" = (
 /obj/structure/bed/sofa/vert/grey/top,
 /turf/open/floor/kutjevo/fake_wood,
 /area/redemptionvalley/valleyroof/housetwo)
+"vCt" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#8B7B5B"
+	},
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver/penetrating,
+/turf/open/floor/kutjevo/multi_tiles/east,
+/area/redemptionvalley/outpost/brief)
 "vCC" = (
 /turf/open/floor/kutjevo/tan/multi_tiles/west,
 /area/redemptionvalley/valleyroof/hydro)
@@ -20783,6 +20924,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/redemptionvalley/valley/proper)
+"vDC" = (
+/obj/structure/closet{
+	pixel_x = -8
+	},
+/obj/structure/closet{
+	pixel_x = 8
+	},
+/obj/effect/spawner/random/gun/extraction/any/tier1,
+/turf/open/floor/prison,
+/area/redemptionvalley/valleyroof/company)
 "vEa" = (
 /obj/structure/closet{
 	pixel_x = -8;
@@ -20810,14 +20961,6 @@
 	},
 /turf/open/gm/river/ocean/deep_water,
 /area/redemptionvalley/valley/checkpoint)
-"vFW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
 "vGJ" = (
 /obj/structure/bed/chair,
 /turf/open/floor/prison/kitchen,
@@ -20858,16 +21001,14 @@
 	},
 /turf/open/floor/prison,
 /area/redemptionvalley/valleyroof/security)
-"vIr" = (
-/obj/structure/closet{
-	pixel_x = -8
+"vIJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/obj/structure/closet{
-	pixel_x = 8
-	},
-/obj/effect/spawner/random/gun/extraction/any/tier1,
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/company)
+/area/redemptionvalley/valleyroof/storage)
 "vIS" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -20997,7 +21138,8 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/prop/almayer/handheld1,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
+/obj/item/fuel_cell,
+/obj/item/fuel_cell,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/flight)
 "vRc" = (
@@ -21222,13 +21364,6 @@
 	},
 /turf/open/void,
 /area/redemptionvalley/caverns/east)
-"wer" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#ffe6e6"
-	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
-/turf/open/floor/almayer,
-/area/redemptionvalley/outpost/canteen)
 "wfb" = (
 /obj/structure/platform/strata/metal,
 /obj/structure/stairs/perspective{
@@ -21263,7 +21398,16 @@
 	pixel_y = 12;
 	density = 0
 	},
-/obj/effect/spawner/random/gun/extraction/pistol/tier2,
+/obj/item/storage/box/packet/m15{
+	pixel_y = 26
+	},
+/obj/item/storage/box/packet/m15/rubber{
+	pixel_x = -7
+	},
+/obj/item/storage/box/packet/m15/rubber{
+	pixel_x = 4;
+	pixel_y = 17
+	},
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "wiM" = (
@@ -21391,7 +21535,10 @@
 	},
 /obj/item/stack/sandbags_empty/full,
 /obj/item/tool/shovel/etool/folded,
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "wql" = (
@@ -21437,8 +21584,11 @@
 /area/redemptionvalley/valley/cliff)
 "wra" = (
 /obj/structure/surface/rack,
-/obj/effect/spawner/random/gun/extraction/pistol/tier1,
 /obj/item/storage/firstaid/regular,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/floor/prison/yellow/southwest,
 /area/redemptionvalley/valleyroof/hydro)
 "wsl" = (
@@ -21508,15 +21658,13 @@
 /turf/open/floor,
 /area/redemptionvalley/outpost/barracks)
 "wuR" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/largecrate{
-	name = "farm food supply"
-	},
-/obj/effect/spawner/random/extraction/helmet/tier1,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
+/obj/structure/surface/table/holotable,
+/obj/item/weapon/gun/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/obj/item/ammo_magazine/pistol/highpower,
+/turf/open/floor/kutjevo/tan/multi_tiles/west,
+/area/redemptionvalley/valleyroof/company)
 "wvp" = (
 /obj/structure/machinery/fuelcell_recycler/full,
 /turf/open/floor/prison/darkyellow2/east,
@@ -21698,7 +21846,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/obj/item/weapon/gun/rifle/l42a/abr40,
+/obj/item/ammo_magazine/rifle/l42a,
+/obj/item/ammo_magazine/rifle/l42a,
+/obj/item/ammo_magazine/rifle/l42a,
 /turf/open/floor,
 /area/redemptionvalley/outpost/cavestruct)
 "wEY" = (
@@ -22433,7 +22584,7 @@
 	dir = 8
 	},
 /obj/structure/surface/table/reinforced/prison,
-/obj/effect/spawner/random/gun/extraction/rifle/civilian,
+/obj/item/weapon/gun/rifle/m20a,
 /turf/open/floor/almayer,
 /area/redemptionvalley/outpost/armory)
 "xCu" = (
@@ -22690,24 +22841,21 @@
 /turf/open/auto_turf/strata_grass/layer0_mud,
 /area/redemptionvalley/shuttles/drop1)
 "xPP" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
+/obj/structure/closet/secure_closet/personal{
+	pixel_x = -8;
+	req_access = list(9);
+	can_block_movement = 0;
+	can_be_stacked = 1
 	},
-/obj/structure/closet/crate,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/item/reagent_container/food/snacks/grown/wheat,
-/obj/effect/spawner/random/extraction/helmet/tier2,
-/obj/effect/spawner/random/extraction/armor/tier2,
-/turf/open/floor/prison,
-/area/redemptionvalley/valleyroof/storage)
+/obj/structure/closet/secure_closet/personal{
+	pixel_x = 8;
+	req_access = list(9);
+	can_block_movement = 0;
+	can_be_stacked = 1
+	},
+/obj/item/clothing/suit/marine/light,
+/turf/open/floor/almayer,
+/area/redemptionvalley/outpost/armory)
 "xQE" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8
@@ -22779,7 +22927,6 @@
 /area/redemptionvalley/shuttles/drop1)
 "xVx" = (
 /obj/structure/surface/table/holotable,
-/obj/effect/spawner/random/gun/extraction/smg/civilian,
 /turf/open/floor/kutjevo/tan/multi_tiles/west,
 /area/redemptionvalley/valleyroof/company)
 "xWx" = (
@@ -35336,7 +35483,7 @@ sMf
 sMf
 sMf
 sMf
-clk
+cIB
 clk
 clk
 wBQ
@@ -40011,7 +40158,7 @@ jwg
 bLO
 wJR
 xdc
-wuR
+vyp
 mlD
 xdc
 wJR
@@ -40518,7 +40665,7 @@ eYp
 uro
 rpD
 eYp
-xPP
+qst
 wJR
 gKS
 pIu
@@ -40765,7 +40912,7 @@ hAJ
 qgO
 mgX
 wJR
-lhT
+ghK
 eYp
 rpD
 jRl
@@ -41521,7 +41668,7 @@ pIu
 qgO
 fNZ
 wJR
-vFW
+gwV
 xtP
 pBD
 hsX
@@ -43274,10 +43421,10 @@ fNZ
 wJR
 wJR
 wJR
-uwN
+ckU
 xdc
 noe
-aJm
+vIJ
 aaR
 eYp
 wJR
@@ -43776,7 +43923,7 @@ qgO
 tzE
 fNZ
 wJR
-goz
+pkw
 rpD
 rpD
 iyR
@@ -44030,7 +44177,7 @@ fNZ
 wJR
 rpD
 fkP
-wuR
+vyp
 mlD
 eYp
 oaE
@@ -44191,8 +44338,8 @@ sMf
 sMf
 sck
 hhG
-hhG
-pqt
+skX
+aYV
 pCZ
 uvh
 vFR
@@ -45200,7 +45347,7 @@ sMf
 sza
 sfM
 cYo
-duv
+jZP
 mUc
 uvh
 mGr
@@ -46689,7 +46836,7 @@ clk
 lRw
 ujJ
 ujJ
-uxG
+iaa
 mEB
 clk
 clk
@@ -46938,7 +47085,7 @@ sMf
 clk
 clk
 clk
-cge
+qSf
 bde
 bde
 lis
@@ -47190,7 +47337,7 @@ sMf
 clk
 clk
 clk
-qSf
+tUG
 bde
 bJg
 lHR
@@ -48966,7 +49113,7 @@ nKY
 jZk
 rWw
 rWw
-fex
+iNN
 nsL
 sck
 sck
@@ -49384,7 +49531,7 @@ jwg
 kwa
 bMr
 rOl
-mBy
+hGj
 iSt
 iSt
 qpx
@@ -50141,7 +50288,7 @@ bMr
 kSr
 rJg
 vGJ
-ahN
+tSi
 rvN
 fsR
 udN
@@ -50394,7 +50541,7 @@ tkj
 eSM
 icR
 rvN
-enM
+oII
 fXA
 eSM
 cAC
@@ -51234,7 +51381,7 @@ pdi
 pcW
 eZp
 xrS
-lFV
+dcq
 nsL
 jlI
 gFk
@@ -51652,7 +51799,7 @@ eRt
 bMr
 bMr
 bdp
-slm
+gJW
 dqV
 bZj
 bMr
@@ -52154,7 +52301,7 @@ psT
 bKa
 jGx
 bMr
-eLm
+lLW
 unb
 sCk
 tBD
@@ -52660,10 +52807,10 @@ oAP
 jGx
 bMr
 jfO
-aPF
+hFx
 hfE
 hdn
-lOV
+nCI
 kkv
 bMr
 swO
@@ -53264,7 +53411,7 @@ sza
 yfV
 yfV
 xrS
-tYX
+lSY
 nsL
 sza
 jlI
@@ -54991,11 +55138,11 @@ bbv
 snh
 iBB
 jbE
-gwV
-gwV
+xPP
+xPP
 xCs
 hpc
-ckU
+smV
 dwY
 rHU
 pht
@@ -56268,9 +56415,9 @@ cZx
 vgZ
 bAA
 rNk
-kWX
+bxW
 egW
-egW
+vCt
 waY
 fKZ
 clk
@@ -58517,7 +58664,7 @@ dvg
 aAa
 uBp
 ybH
-wer
+aOa
 fZl
 mDZ
 dZm
@@ -59922,7 +60069,7 @@ fNZ
 ssk
 bAO
 bAO
-vIr
+vDC
 ssk
 ssk
 ssk
@@ -60181,7 +60328,7 @@ ssk
 jEj
 faM
 lkC
-mPq
+wuR
 qTS
 faM
 ssk
@@ -63949,7 +64096,7 @@ uRU
 oOo
 hhA
 vzt
-vzt
+hlp
 pSZ
 pSZ
 uRU
@@ -71982,7 +72129,7 @@ fMC
 xVo
 sYD
 ajq
-fSP
+rzN
 ohr
 sYD
 fMC
