@@ -176,7 +176,7 @@
 	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/eva/marauder)
 	charge_icon = "+rxfm5_marauder_empty"
 
-/obj/item/weapon/gun/energy/rxfm5_eva/set_gun_attachment_offsets()
+/obj/item/weapon/gun/energy/rxfm5_eva/marauder/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 0, "muzzle_y" = 0,"rail_x" = 0, "rail_y" = 0, "under_x" = 16, "under_y" = 10, "stock_x" = 0, "stock_y" = 0)
 
 
