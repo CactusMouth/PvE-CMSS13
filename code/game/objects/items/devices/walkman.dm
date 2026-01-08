@@ -652,3 +652,16 @@
 				"side2" = list("sound/music/walkman/joker/25-2-1.ogg",\
 								"sound/music/walkman/joker/25-2-2.ogg",\
 								"sound/music/walkman/joker/25-2-3.ogg"))
+
+/obj/item/device/cassette_tape/corpsman
+	name = "purple-black cassette"
+	id = 26
+	desc = "A plastic cassette tape with a purple and black sticker. It's labeled 'CORPSMAN'."
+	icon_state = "cassette_purple_black"
+	side1_icon = "cassette_purple_black"
+	songs = list("side1" = list("sound/music/walkman/corpsman/26-1-1.ogg",\
+								"sound/music/walkman/corpsman/26-1-2.ogg",\
+								"sound/music/walkman/corpsman/26-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/corpsman/26-2-1.ogg",\
+								"sound/music/walkman/corpsman/26-2-2.ogg",\
+								"sound/music/walkman/corpsman/26-2-3.ogg"))

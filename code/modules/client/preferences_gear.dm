@@ -1094,6 +1094,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/device/cassette_tape/freelancing
 	cost = 1
 
+/datum/gear/cassettes/corpsman
+	display_name = "Purple-Black Cassette"
+	path = /obj/item/device/cassette_tape/corpsman
+	cost = 1
+
 /datum/gear/cassettes/joker
 	display_name = "Clown Cassette"
 	path = /obj/item/device/cassette_tape/joker
