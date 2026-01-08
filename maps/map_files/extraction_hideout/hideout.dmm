@@ -5589,7 +5589,7 @@
 /turf/open/floor/hybrisa/wood/blackwood,
 /area/galleyburned/residential)
 "ZK" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/upp,
+/obj/structure/machinery/cm_vending/sorted/marine_food/upp/no_mre,
 /turf/open/floor/shiva/multi_tiles,
 /area/galleyburned/residential)
 "ZQ" = (
