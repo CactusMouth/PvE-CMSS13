@@ -591,6 +591,7 @@ GLOBAL_LIST_EMPTY(personal_closets)
 		new /obj/item/conversion_kit/legendary_veteran(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
 		new /obj/item/conversion_kit/haywood(closet_to_spawn_in) // birthday gift from genessee 2025
 		new /obj/item/clothing/mask/owlf_mask/black_smoke(closet_to_spawn_in) // season 2 end-of-season purchase
+		new /obj/item/clothing/under/marine/firestarter(closet_to_spawn_in) // season 2 end-of-season purchase
 
 	if(new_human.ckey == "leastleethax")
 		new /obj/item/clothing/head/beret/raider/legendary(closet_to_spawn_in) // season 1 end-of-season reward (frequent player)
@@ -616,6 +617,7 @@ GLOBAL_LIST_EMPTY(personal_closets)
 	if(new_human.ckey == "lordinquisitorplasmaman")
 		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward
 		new /obj/item/conversion_kit/veteran(closet_to_spawn_in) // season 1 end-of-season reward
+		new /obj/item/conversion_kit/commandate(closet_to_spawn_in) // season 1 end-of-season reward
 
 	if(new_human.ckey == "monolamp63")
 		new /obj/item/clothing/head/beret/raider(closet_to_spawn_in) // season 1 end-of-season reward

@@ -342,6 +342,17 @@
 	specialty = "command formal"
 	black_market_value = 20
 
+// custom
+
+/obj/item/clothing/under/marine/firestarter
+	name = "\improper RR 'Black Smoke' uniform"
+	desc = "A cozy getup consisting of a black turtleneck and cargo pants, complete with two red armbands and a snazzy belt. The buckle looks to have been stolen off of a commemorative firefighter's belt, and subsequently defaced. For only the most esteemed of grenadiers."
+	icon_state = "marine_firestarter"
+	worn_state = "marine_firestarter"
+	item_state_slots = list(WEAR_BODY = "marine_firestarter")
+	flags_jumpsuit = FALSE
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+
 //=========================//DRESS BLUES\\================================\\
 //=======================================================================\\
 

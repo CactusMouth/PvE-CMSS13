@@ -620,9 +620,48 @@
 	desc = "A plastic cassette tape with a green and red sticker. It's covered in dried bloodstains. Holding it fills you with a primal rage. 'Don't blame me; blame the Franchise.'"
 	icon_state = "cassette_thefranchise"
 	side1_icon = "cassette_thefranchise"
-	songs = list("side1" = list("sound/music/walkman/numetal/23-1-1.ogg",\
-								"sound/music/walkman/numetal/23-1-2.ogg",\
-								"sound/music/walkman/numetal/23-1-3.ogg"),\
-				"side2" = list("sound/music/walkman/numetal/23-2-1.ogg",\
-								"sound/music/walkman/numetal/23-2-2.ogg",\
-								"sound/music/walkman/numetal/23-2-3.ogg"))
+	songs = list("side1" = list("sound/music/walkman/thefranchise/23-1-1.ogg",\
+								"sound/music/walkman/thefranchise/23-1-2.ogg",\
+								"sound/music/walkman/thefranchise/23-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/thefranchise/23-2-1.ogg",\
+								"sound/music/walkman/thefranchise/23-2-2.ogg",\
+								"sound/music/walkman/thefranchise/23-2-3.ogg"))
+
+/obj/item/device/cassette_tape/freelancing
+	name = "pink-blue cassette"
+	id = 24
+	desc = "A plastic cassette tape with a pink and blue sticker. It's labeled 'FREELANCING'."
+	icon_state = "cassette_pink_blue"
+	side1_icon = "cassette_pink_blue"
+	songs = list("side1" = list("sound/music/walkman/freelancing/24-1-1.ogg",\
+								"sound/music/walkman/freelancing/24-1-2.ogg",\
+								"sound/music/walkman/freelancing/24-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/freelancing/24-2-1.ogg",\
+								"sound/music/walkman/freelancing/24-2-2.ogg",\
+								"sound/music/walkman/freelancing/24-2-3.ogg"))
+
+/obj/item/device/cassette_tape/joker
+	name = "clown cassette"
+	id = 25
+	desc = "A plastic cassette tape with a clown-themed sticker. It's labeled 'JOKER' - it was originally sold as a novelty at a few clown-themed casinos, it gained status as a collector's item after it played for eight hours on loop during a police shootout. Also, it gave people lead poisoning."
+	icon_state = "cassette_joker"
+	side1_icon = "cassette_joker"
+	songs = list("side1" = list("sound/music/walkman/joker/25-1-1.ogg",\
+								"sound/music/walkman/joker/25-1-2.ogg",\
+								"sound/music/walkman/joker/25-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/joker/25-2-1.ogg",\
+								"sound/music/walkman/joker/25-2-2.ogg",\
+								"sound/music/walkman/joker/25-2-3.ogg"))
+
+/obj/item/device/cassette_tape/corpsman
+	name = "purple-black cassette"
+	id = 26
+	desc = "A plastic cassette tape with a purple and black sticker. It's labeled 'CORPSMAN'."
+	icon_state = "cassette_purple_black"
+	side1_icon = "cassette_purple_black"
+	songs = list("side1" = list("sound/music/walkman/corpsman/26-1-1.ogg",\
+								"sound/music/walkman/corpsman/26-1-2.ogg",\
+								"sound/music/walkman/corpsman/26-1-3.ogg"),\
+				"side2" = list("sound/music/walkman/corpsman/26-2-1.ogg",\
+								"sound/music/walkman/corpsman/26-2-2.ogg",\
+								"sound/music/walkman/corpsman/26-2-3.ogg"))

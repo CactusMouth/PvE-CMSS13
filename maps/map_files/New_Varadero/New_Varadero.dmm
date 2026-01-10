@@ -1046,7 +1046,11 @@
 /area/varadero/interior/research)
 "aRU" = (
 /obj/structure/surface/rack,
-/obj/item/weapon/gun/shotgun/pump,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/floor/plating/icefloor/asteroidplating,
 /area/varadero/interior/maintenance/north)
 "aSe" = (
@@ -1178,10 +1182,6 @@
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited,
 /turf/closed/wall,
 /area/varadero/interior/hall_N)
-"aVV" = (
-/obj/item/weapon/gun/rifle/m41a,
-/turf/open/floor/shiva/multi_tiles/north,
-/area/varadero/interior/hall_SE)
 "aWi" = (
 /obj/structure/pipes/standard/simple/hidden/green,
 /turf/open/floor/shiva/yellow/north,
@@ -4044,7 +4044,6 @@
 "dlE" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/paper_bin,
-/obj/item/paper/research_notes,
 /obj/item/storage/belt/shotgun,
 /turf/open/floor/shiva/blue,
 /area/varadero/interior/administration)
@@ -4357,7 +4356,6 @@
 /area/varadero/interior/caves/north_research)
 "dym" = (
 /obj/structure/filingcabinet/filingcabinet,
-/obj/item/paper/research_notes,
 /obj/effect/decal/cleanable/cobweb{
 	pixel_x = -11;
 	pixel_y = 20
@@ -4878,11 +4876,18 @@
 /area/varadero/interior/security)
 "dVv" = (
 /obj/structure/closet/crate/secure/weapon,
+/obj/item/weapon/gun/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40/extended,
+/obj/item/ammo_magazine/rifle/mar40/extended,
 /turf/open/floor/shiva/red/northwest,
 /area/varadero/interior/security)
 "dWe" = (
 /obj/structure/filingcabinet,
-/obj/item/paper/research_notes,
 /turf/open/floor/shiva/redfull,
 /area/varadero/interior/medical)
 "dWv" = (
@@ -5187,7 +5192,6 @@
 /turf/open/floor/shiva/red/north,
 /area/varadero/interior/morgue)
 "egV" = (
-/obj/item/ammo_magazine/handful/shotgun/buckshot,
 /turf/open/floor/carpet,
 /area/varadero/interior/maintenance/north)
 "ehw" = (
@@ -5367,10 +5371,10 @@
 /turf/open/floor/shiva/redfull/west,
 /area/varadero/interior/administration)
 "ely" = (
-/obj/item/weapon/gun/shotgun/pump,
 /obj/structure/machinery/light{
 	dir = 4
 	},
+/obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/shiva/red/west,
 /area/varadero/interior/hall_N)
 "elI" = (
@@ -5941,7 +5945,6 @@
 /area/varadero/interior_protected/caves/central)
 "eIf" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/weapon/gun/rifle/m41a,
 /turf/open/floor/shiva/redfull,
 /area/varadero/interior/medical)
 "eIv" = (
@@ -8668,6 +8671,12 @@
 	pixel_y = 9
 	},
 /obj/item/clothing/head/cmcap,
+/obj/item/weapon/gun/rifle/mar40/carbine,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40,
+/obj/item/ammo_magazine/rifle/mar40/extended,
 /turf/open/floor/shiva/multi_tiles,
 /area/varadero/interior/bunks)
 "gPL" = (
@@ -9914,10 +9923,7 @@
 /turf/open/floor/plating/icefloor/asteroidplating,
 /area/varadero/interior/comms2)
 "hQP" = (
-/obj/item/ammo_magazine/handful/shotgun/buckshot{
-	pixel_x = 4;
-	pixel_y = -16
-	},
+/obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/carpet,
 /area/varadero/interior/maintenance/north)
 "hQY" = (
@@ -9983,9 +9989,9 @@
 /turf/closed/wall,
 /area/varadero/interior/cargo)
 "hVJ" = (
-/obj/item/weapon/gun/rifle/m41a,
-/turf/open/floor/shiva/floor3,
-/area/varadero/interior/bunks)
+/obj/item/storage/box/packet/m15,
+/turf/open/floor/shiva/red/north,
+/area/varadero/interior/security)
 "hVP" = (
 /turf/open/floor/shiva/north,
 /area/varadero/interior/hall_N)
@@ -10048,8 +10054,8 @@
 /turf/open/floor/asteroidfloor/north,
 /area/varadero/exterior/lz1_near)
 "hYV" = (
-/obj/item/device/defibrillator,
 /obj/structure/surface/table,
+/obj/item/storage/firstaid/adv,
 /turf/open/floor/shiva/wred/north,
 /area/varadero/interior/medical)
 "hZE" = (
@@ -10823,10 +10829,6 @@
 /obj/structure/surface/table,
 /turf/open/floor/shiva/red/southeast,
 /area/varadero/interior/hall_N)
-"iHh" = (
-/obj/item/weapon/gun/shotgun/pump,
-/turf/open/floor/carpet,
-/area/varadero/interior/security)
 "iHy" = (
 /obj/item/tool/kitchen/knife,
 /obj/structure/surface/table,
@@ -14418,6 +14420,7 @@
 /obj/item/explosive/grenade/incendiary/molotov{
 	pixel_x = 6
 	},
+/obj/item/storage/box/packet/m15,
 /turf/open/floor/freezerfloor,
 /area/varadero/interior/cargo)
 "lxY" = (
@@ -14595,11 +14598,7 @@
 /area/varadero/interior/maintenance/north)
 "lGV" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/item/weapon/gun/shotgun/pump,
-/obj/item/ammo_magazine/shotgun/buckshot{
-	pixel_x = 6;
-	pixel_y = -4
-	},
+/obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/shiva/redfull,
 /area/varadero/interior/medical)
 "lIu" = (
@@ -15199,12 +15198,6 @@
 	},
 /turf/open/floor/plating/icefloor/asteroidplating,
 /area/varadero/interior/maintenance/research)
-"mgq" = (
-/obj/structure/pipes/standard/simple/hidden/green,
-/obj/structure/disposalpipe/segment,
-/obj/item/weapon/gun/rifle/m41a,
-/turf/open/floor/carpet,
-/area/varadero/interior/hall_SE)
 "mgr" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/taperecorder,
@@ -16749,9 +16742,6 @@
 /obj/structure/pipes/vents/pump{
 	dir = 1
 	},
-/obj/item/ammo_magazine/handful/shotgun/buckshot{
-	pixel_x = -9
-	},
 /obj/item/clothing/suit/armor/vest,
 /turf/open/floor/shiva/red/north,
 /area/varadero/interior/hall_N)
@@ -17707,10 +17697,6 @@
 /turf/open/floor/shiva/north,
 /area/varadero/interior/morgue)
 "oij" = (
-/obj/item/ammo_magazine/handful/shotgun/buckshot{
-	pixel_x = -13;
-	pixel_y = 12
-	},
 /turf/open/floor/shiva/redfull/west,
 /area/varadero/interior/hall_N)
 "oiK" = (
@@ -19005,8 +18991,6 @@
 /area/varadero/interior/bunks)
 "pbf" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/paper/research_notes,
-/obj/item/paper/research_notes,
 /obj/item/clothing/accessory/storage/black_vest/brown_vest,
 /turf/open/floor/wood,
 /area/varadero/interior/administration)
@@ -19768,6 +19752,7 @@
 	pixel_x = -14;
 	pixel_y = 2
 	},
+/obj/item/storage/box/packet/m15,
 /turf/open/floor/shiva/blue,
 /area/varadero/interior/technical_storage)
 "pIC" = (
@@ -20404,10 +20389,6 @@
 /obj/item/clothing/head/helmet,
 /turf/open/floor/wood,
 /area/varadero/interior/dock_control)
-"qeb" = (
-/obj/item/weapon/gun/shotgun/pump,
-/turf/open/floor/shiva/floor3,
-/area/varadero/interior/hall_SE)
 "qef" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -22488,6 +22469,12 @@
 	pixel_x = -6;
 	pixel_y = 7
 	},
+/obj/item/weapon/gun/revolver/m44,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver,
+/obj/item/ammo_magazine/revolver/marksman,
 /turf/open/floor/wood,
 /area/varadero/interior/administration)
 "rKP" = (
@@ -24008,11 +23995,6 @@
 /obj/structure/pipes/standard/manifold/hidden/green,
 /turf/open/floor/plating/icefloor/asteroidplating,
 /area/varadero/interior/maintenance)
-"sSp" = (
-/obj/effect/decal/cleanable/blood,
-/obj/item/weapon/gun/shotgun/pump,
-/turf/open/floor/carpet,
-/area/varadero/interior/maintenance/north)
 "sSF" = (
 /obj/structure/barricade/handrail/wire,
 /obj/structure/machinery/light{
@@ -25281,9 +25263,6 @@
 "tZR" = (
 /obj/structure/surface/rack,
 /obj/item/weapon/gun/shotgun/pump,
-/obj/item/weapon/gun/shotgun/pump{
-	pixel_y = -5
-	},
 /turf/open/floor/shiva/red/southwest,
 /area/varadero/interior/security)
 "uaL" = (
@@ -25803,6 +25782,11 @@
 	pixel_y = 11
 	},
 /obj/structure/barricade/handrail/wire,
+/obj/item/weapon/gun/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15,
+/obj/item/ammo_magazine/smg/mac15/extended,
 /turf/open/floor/shiva/floor3,
 /area/varadero/interior/cargo)
 "uvs" = (
@@ -27074,7 +27058,6 @@
 /area/varadero/interior_protected/vessel)
 "vvz" = (
 /obj/structure/pipes/standard/simple/hidden/green,
-/obj/item/weapon/gun/rifle/m49a,
 /turf/open/floor/shiva/floor3,
 /area/varadero/interior/bunks)
 "vvA" = (
@@ -27473,7 +27456,6 @@
 /area/varadero/interior/medical)
 "vIy" = (
 /obj/structure/filingcabinet/filingcabinet,
-/obj/item/paper/research_notes,
 /turf/open/floor/shiva/blue/west,
 /area/varadero/interior/administration)
 "vIQ" = (
@@ -28318,7 +28300,6 @@
 /area/varadero/interior/maintenance/research)
 "wpX" = (
 /obj/effect/decal/strata_decals/grime/grime2,
-/obj/item/weapon/gun/rifle/m41a,
 /turf/open/floor/carpet,
 /area/varadero/interior/bunks)
 "wqb" = (
@@ -44847,7 +44828,7 @@ iPY
 aUc
 kqA
 kEB
-sSp
+cdS
 hlw
 vhJ
 bgE
@@ -46725,7 +46706,7 @@ xNR
 xNR
 bpk
 bAf
-aVV
+vYd
 bpk
 bkM
 bkM
@@ -47094,7 +47075,7 @@ eDF
 gFx
 fHm
 ezO
-qeb
+bpk
 ofb
 ezO
 aYl
@@ -47994,7 +47975,7 @@ vNu
 iAc
 qFZ
 nJM
-hVJ
+nJM
 wte
 dKq
 gFx
@@ -49280,7 +49261,7 @@ hNb
 hNb
 rBa
 hNb
-mgq
+hNb
 tdA
 fXn
 wjp
@@ -51621,7 +51602,7 @@ ryD
 wVf
 wVf
 rpT
-iHh
+vqY
 eRD
 jSN
 ylX
@@ -52012,7 +51993,7 @@ ndA
 jbo
 bPB
 wVf
-pUY
+hVJ
 seJ
 pLS
 wVf

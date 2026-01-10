@@ -90,6 +90,7 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 	color = "#333333"
 	perunit = 3750
 	stack_id = "iron"
+	rp_value = 5
 
 /obj/item/stack/sheet/mineral/iron/Initialize()
 	. = ..()
@@ -239,6 +240,7 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 	sheettype = "silver"
 	stack_id = "silver"
 	black_market_value = 25
+	rp_value = 20
 
 /obj/item/stack/sheet/mineral/silver/Initialize()
 	. = ..()
@@ -256,6 +258,7 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 
 	perunit = 1000
 	stack_id = "enuranium"
+	rp_value = 80
 
 //Valuable resource, cargo can now actually sell it.
 /obj/item/stack/sheet/mineral/platinum
