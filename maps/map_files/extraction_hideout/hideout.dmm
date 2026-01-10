@@ -339,10 +339,6 @@
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
 /area/galleyburned/residential)
-"cH" = (
-/obj/structure/bed/chair/comfy/delta,
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/southeast,
-/area/galleyburned/residential)
 "cJ" = (
 /obj/structure/machinery/door/airlock/almayer/engineering/glass{
 	name = "\improper Quartermaster's Stall";
@@ -1231,10 +1227,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/galleyburned/prep)
-"kc" = (
-/obj/structure/sign/banners/twe_flag,
-/turf/closed/wall/almayer/outer,
-/area/galleyburned/residential)
 "kd" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
@@ -1460,9 +1452,6 @@
 	name = "Alice"
 	},
 /area/galleyburned/residential)
-"ml" = (
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
 "mm" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	dir = 2;
@@ -1626,13 +1615,6 @@
 	name = "\improper Airlock"
 	},
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
-/area/galleyburned/residential)
-"nU" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue,
 /area/galleyburned/residential)
 "od" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1947,7 +1929,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -2495,7 +2476,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/surface/rack,
@@ -2572,7 +2552,6 @@
 /obj/structure/machinery/fabricator/munitions,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/machinery/light/double{
@@ -2693,7 +2672,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/bed,
@@ -2733,9 +2711,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/galleyburned/hangar)
-"wY" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/southwest,
-/area/galleyburned/residential)
 "xl" = (
 /obj/structure/machinery/door/airlock/almayer/generic,
 /turf/open/floor/hybrisa/tile/tilewhite,
@@ -3098,7 +3073,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/coatrack,
@@ -3528,9 +3502,6 @@
 /obj/structure/largecrate/random/barrel/brown,
 /turf/open/floor/plating,
 /area/galleyburned/maint)
-"Ec" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/west,
-/area/galleyburned/residential)
 "El" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/door/window/westleft,
@@ -3677,7 +3648,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/item/paper/crumpled{
@@ -3916,7 +3886,6 @@
 /obj/structure/machinery/fabricator/medicinal,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/machinery/fabricator/medicinal,
@@ -4425,9 +4394,6 @@
 	name = "Alice"
 	},
 /area/galleyburned/residential)
-"LU" = (
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/north,
-/area/galleyburned/residential)
 "LW" = (
 /turf/open/floor/almayer/mono,
 /area/galleyburned/requisition)
@@ -4644,7 +4610,7 @@
 	name = "door lock";
 	id = "s5"
 	},
-/turf/open/floor/hybrisa/wood/greywood,
+/turf/open/floor/plating,
 /area/galleyburned/residential)
 "Ol" = (
 /obj/item/trash/plate{
@@ -5332,7 +5298,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/surface/rack,
@@ -5417,10 +5382,6 @@
 /obj/docking_port/stationary/marine_dropship/galleyburned_hangar,
 /turf/open/floor/plating,
 /area/galleyburned/hangar)
-"VA" = (
-/obj/structure/surface/table/woodentable/fancy,
-/turf/open/floor/hybrisa/carpet/rug_colorable/blue/east,
-/area/galleyburned/residential)
 "VB" = (
 /obj/structure/largecrate/random/mini/small_case/c{
 	pixel_x = -8;
@@ -5502,7 +5463,6 @@
 	},
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
-	
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/machinery/door_control{
@@ -5682,10 +5642,6 @@
 "XD" = (
 /turf/closed/wall/almayer,
 /area/galleyburned/requisition)
-"XG" = (
-/obj/structure/sign/prop1,
-/turf/closed/wall/almayer/outer,
-/area/galleyburned/residential)
 "XO" = (
 /obj/structure/shuttle/part/dropship2/right_outer_wing_connector{
 	name = "Alice"
@@ -5856,19 +5812,7 @@
 	name = "Privacy Shutter";
 	id = "s5"
 	},
-/turf/open/floor/hybrisa/wood/greywood,
-/area/galleyburned/residential)
-"YZ" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/obj/structure/machinery/fabricator/munitions{
-	current_points = 24;
-	max_points = 24;
-	name = "ultra-capacity Munitions Fabricator"
-	},
-/turf/open/floor/hybrisa/wood/greywood,
+/turf/open/floor/plating/plating_catwalk,
 /area/galleyburned/residential)
 "Zd" = (
 /obj/structure/surface/table/almayer,
@@ -7652,10 +7596,10 @@ Hi
 CM
 "}
 (33,1,1) = {"
-kc
-nU
-cH
-VA
+sN
+Gq
+yC
+yC
 JC
 vS
 JF
@@ -7705,9 +7649,9 @@ CM
 "}
 (34,1,1) = {"
 sN
-LU
-wY
-Ec
+yC
+yC
+yC
 YU
 tZ
 Hr
@@ -7756,9 +7700,9 @@ wV
 CM
 "}
 (35,1,1) = {"
-XG
-YZ
-ml
+sN
+Gq
+yC
 Og
 JF
 vS
