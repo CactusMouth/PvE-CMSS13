@@ -151,6 +151,15 @@
 	. = ..()
 	cell_explosion(get_turf(T), 60, 60, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, P.weapon_cause_data)
 
+/datum/ammo/energy/plasma/light
+	name = "light plasma bolt"
+	damage = 120
+	penetration = ARMOR_PENETRATION_TIER_6
+	accurate_range = 13
+	effective_range_max = 8
+	max_range = 13
+	vehicle_slowdown_time = 1 SECONDS
+
 /datum/ammo/energy/yautja
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	accurate_range = 12
