@@ -1,5 +1,5 @@
 /obj/item/ammo_magazine/hardpoint/twe_plasma
-	name = "L558B 85mm light plasma cannon magazine"
+	name = "L391 plasma cannon magazine"
 	desc = "A rather large plasma cannon magazine built to hold several full-sized plasma cannon rounds, extremely volatile."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/twe_ammo.dmi'
 	caliber = "85mm"
