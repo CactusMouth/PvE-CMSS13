@@ -1,7 +1,8 @@
 // Plasma cannon for twe tank, code stolen from Dimdim and Pandora's work
 /obj/item/hardpoint/primary/cannon/light_plasma_cannon
-	name = "TBA"
-	desc = "TBA"
+	name = "L391 'Prakashah' Plasma Cannon"
+	desc = "Advanced Plasma Cannon developed by the TWE as a lightweight anti-armour option. Operates in the 25mW range, fitted with a 8mW hydrogen fuel cell and loaded with Cadmium-Telluride pellets as plasma-mass (7 grams per pellet). The weapon is capable of defeating the frontal armour of light tanks, seriously threatening medium tanks and remains a potential threat against heavy-armour from side or rear attacks."
+	desc_lore = "The L391 'Prakashah' (Sanskrit for 'Illumination' or 'Light') was developed in the TWE's memberstate/ex-nation of India through the viciously independent technology firm 'Loharah Innovations', who refused absorption into larger Megacorporate entities within the Empire. This was primarily achieved through flimsy Government contracts and security promises; contracts that nonetheless lead to fine weapon systems like the L391.
 
 	icon = 'icons/obj/vehicles/hardpoints/twe_tank.dmi'
 	icon_state = "light_plasma_cannon"

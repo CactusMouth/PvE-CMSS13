@@ -5,7 +5,7 @@
 	caliber = "85mm"
 	icon_state = "light_plasma_cannon_5"
 	w_class = SIZE_LARGE
-	default_ammo = /datum/ammo/energy/plasma/light
+	default_ammo = /datum/ammo/energy/plasma
 	max_rounds = 5
 	gun_type = /obj/item/hardpoint/primary/cannon/light_plasma_cannon
 
