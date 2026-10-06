@@ -1875,7 +1875,7 @@
 	start_automatic = TRUE
 
 /obj/item/weapon/gun/rifle/r81m1a/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 46, "muzzle_y" = 20,"rail_x" = 11, "rail_y" = 21, "under_x" = 27, "under_y" = 15, "stock_x" = 24, "stock_y" = 13, "side_rail_x" = 24, "side_rail_y" = 18, "special_x" = 33, "special_y" = 15)
+	attachable_offset = list("muzzle_x" = 44, "muzzle_y" = 17,"rail_x" = 11, "rail_y" = 18, "under_x" = 25, "under_y" = 12, "stock_x" = 24, "stock_y" = 13, "side_rail_x" = 24, "side_rail_y" = 16, "special_x" = 33, "special_y" = 15)
 
 /obj/item/weapon/gun/rifle/r81m1a/set_gun_config_values()
 	..()
@@ -1919,7 +1919,7 @@
 	start_automatic = FALSE
 
 /obj/item/weapon/gun/rifle/r81m1a/m1b/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 18, "rail_y" = 15, "under_x" = 33, "under_y" = 13, "stock_x" = 19, "stock_y" = 16, "side_rail_x" = 28, "side_rail_y" = 18, "special_x" = 35, "special_y" = 15)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 18, "rail_y" = 15, "under_x" = 33, "under_y" = 13, "stock_x" = 19, "stock_y" = 16, "side_rail_x" = 28, "side_rail_y" = 18, "special_x" = 33, "special_y" = 15)
 
 /obj/item/weapon/gun/rifle/r81m1a/m1b/set_gun_config_values()
 	..()
@@ -2009,7 +2009,7 @@
 	starting_attachment_types = list(/obj/item/attachable/bipod/r81, /obj/item/attachable/scope/mini/r81)
 
 /obj/item/weapon/gun/rifle/r81m1a/m1d/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 43, "muzzle_y" = 17,"rail_x" = 16, "rail_y" = 17, "under_x" = 28, "under_y" = 15, "stock_x" = 22, "stock_y" = 15, "side_rail_x" = 28, "side_rail_y" = 18, "special_x" = 31, "special_y" = 17)
+	attachable_offset = list("muzzle_x" = 43, "muzzle_y" = 17,"rail_x" = 16, "rail_y" = 17, "under_x" = 27, "under_y" = 16, "stock_x" = 22, "stock_y" = 15, "side_rail_x" = 28, "side_rail_y" = 18, "special_x" = 31, "special_y" = 17)
 
 /obj/item/weapon/gun/rifle/r81m1a/m1d/set_gun_config_values()
 	..()

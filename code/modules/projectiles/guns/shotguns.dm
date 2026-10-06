@@ -453,7 +453,7 @@ can cause issues with ammo types getting mixed up during the burst.
 	item_state = "p79s"
 
 	fire_sound = 'sound/weapons/gun_shotgun_automatic.ogg'
-
+	gauge = "10g"
 	flags_equip_slot = SLOT_BACK
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/p79s
 	attachable_allowed = list(
