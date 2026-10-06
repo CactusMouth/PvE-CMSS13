@@ -1186,7 +1186,6 @@ Defined in conflicts.dm of the #defines folder.
 
 /obj/item/attachable/scope/variable_zoom/fal
 	name = "ODS R94 telescopic variable scope"
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	attach_icon = "sniperscope_fal"
 	desc = "A Orion Defence Systems telescopic scope used mainly for the R81M1D. Can switch between 2x and 4x magnification."
 	aim_speed_mod = 0
@@ -1288,7 +1287,6 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/scope/mini/r81
 	name = "ODS R92 2x advanced telescopic mini-scope"
 	desc = "An Orion Defence Systems R81M1D 2x advanced telescopic mini-scope, used mainly for the R81M1A and it's variants."
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	attach_icon = "miniscope_fal"
 
 /obj/item/attachable/scope/mini/nsg23/rmc
@@ -2153,7 +2151,6 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/stock/p79s
 	name = "\improper P79S stock"
 	desc = "A stock made for the P79S semi-automatic shotgun."
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	icon_state = "p79s_stock"
 	hud_offset_mod = 6
 
@@ -2774,7 +2771,6 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/r81m1a_barrel
 	name = "R81M1A barrel"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	icon_state = "fal_barrel"
 	attach_icon = "fal_barrel"
 	slot = "special"
@@ -2801,7 +2797,6 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/p79s_barrel
 	name = "P79S barrel"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	icon_state = "p79s_barrel"
 	attach_icon = "p79s_barrel"
 	slot = "special"
@@ -4304,7 +4299,6 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/bipod/r81
 	name = "R81M1D bipod"
 	desc = "An integral bipod for the R81M1D Pulse Squad Automatic Weapon."
-	icon = 'icons/obj/items/weapons/guns/attachments/attachments_pr.dmi'
 	attach_icon = "bipod_fal_saw_a"
 	slot = "under"
 	size_mod = 0
