@@ -156,7 +156,7 @@
 	icon_state = "arcane_barrage"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITS_TARGET_TURF
 	headshot_state = HEADSHOT_OVERLAY_LIGHT
-	damage = 20
+	damage = 40
 	damage_type = BURN
 	penetration = ARMOR_PENETRATION_TIER_3
 	accurate_range = 20
