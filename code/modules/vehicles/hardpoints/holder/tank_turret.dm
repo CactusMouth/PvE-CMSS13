@@ -330,7 +330,8 @@
 	accepted_hardpoints = list(
 		// primaries
 		/obj/item/hardpoint/primary/autocannon/twe_tank,
-		/obj/item/hardpoint/primary/cannon/light_plasma_cannon
+		/obj/item/hardpoint/primary/cannon/light_plasma_cannon,
+		/obj/item/hardpoint/primary/laser_aa
 	)
 
 	hdpt_layer = HDPT_LAYER_TURRET

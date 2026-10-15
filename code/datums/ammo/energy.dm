@@ -151,6 +151,30 @@
 	. = ..()
 	cell_explosion(get_turf(T), 60, 60, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, P.weapon_cause_data)
 
+/datum/ammo/energy/multilaser
+	name = "laser barrage"
+	icon_state = "arcane_barrage"
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITS_TARGET_TURF
+	headshot_state = HEADSHOT_OVERLAY_LIGHT
+	damage = 20
+	damage_type = BURN
+	penetration = -ARMOR_PENETRATION_TIER_1
+	accurate_range = 20
+	effective_range_max = 11
+	max_range = 20
+	shell_speed = AMMO_SPEED_TIER_HITSCAN
+	scatter = SCATTER_AMOUNT_NONE
+	accuracy = HIT_ACCURACY_MULT_TIER_10
+	damage_falloff = DAMAGE_FALLOFF_TIER_1
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_RED
+
+/datum/ammo/energy/multilaser/set_bullet_traits()
+	. = ..()
+	LAZYADD(traits_to_give, list(
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_incendiary, /datum/reagent/napalm),
+	))
+
 /datum/ammo/energy/yautja
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	accurate_range = 12
