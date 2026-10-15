@@ -158,14 +158,14 @@
 	headshot_state = HEADSHOT_OVERLAY_LIGHT
 	damage = 20
 	damage_type = BURN
-	penetration = -ARMOR_PENETRATION_TIER_1
+	penetration = ARMOR_PENETRATION_TIER_3
 	accurate_range = 20
 	effective_range_max = 11
 	max_range = 20
 	shell_speed = AMMO_SPEED_TIER_HITSCAN
 	scatter = SCATTER_AMOUNT_NONE
 	accuracy = HIT_ACCURACY_MULT_TIER_10
-	damage_falloff = DAMAGE_FALLOFF_TIER_1
+	damage_falloff = DAMAGE_FALLOFF_TIER_10
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_RED
 

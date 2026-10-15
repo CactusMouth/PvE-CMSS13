@@ -1,9 +1,9 @@
 /obj/item/ammo_magazine/hardpoint/twe_laser
-	name = "L391 plasma cannon magazine"
-	desc = "A rather large plasma cannon magazine built to hold several full-sized plasma cannon rounds, extremely volatile."
+	name = "ADLW-2 laser cell magazine"
+	desc = "A rather large laser cell, shaped more like a car battery than a magazine."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/twe_ammo.dmi'
-	caliber = "85mm"
-	icon_state = "light_plasma_cannon_5"
+	caliber = "50mW"
+	icon_state = "laser_aa_1"
 	w_class = SIZE_LARGE
 	default_ammo = /datum/ammo/energy/multilaser
 	max_rounds = 1000
@@ -11,6 +11,6 @@
 
 /obj/item/ammo_magazine/hardpoint/twe_laser/update_icon()
 	if(current_rounds > 0)
-		icon_state = "ace_autocannon"
+		icon_state = "laser_aa_1"
 	else
-		icon_state = "ace_autocannon_empty"
+		icon_state = "laser_aa_0"

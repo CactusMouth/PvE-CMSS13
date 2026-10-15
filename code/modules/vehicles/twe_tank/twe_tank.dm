@@ -264,7 +264,7 @@
 		TT.add_hardpoint(new /obj/item/hardpoint/primary/autocannon/twe_tank)
 		break
 
-//PRESET: default hardpoints
+//PRESET: tank hunter variant
 /obj/effect/vehicle_spawner/twe_tank/fixed/tank_hunter/load_hardpoints(obj/vehicle/multitile/tank/V)
 	V.add_hardpoint(new /obj/item/hardpoint/support/smoke_launcher/twe_tank)
 	V.add_hardpoint(new /obj/item/hardpoint/secondary/m56cupola/twe_tank)
@@ -272,4 +272,14 @@
 	V.add_hardpoint(new /obj/item/hardpoint/holder/tank_turret/twe_tank_turret)
 	for(var/obj/item/hardpoint/holder/tank_turret/twe_tank_turret/TT in V.hardpoints)
 		TT.add_hardpoint(new /obj/item/hardpoint/primary/cannon/light_plasma_cannon)
+		break
+
+//PRESET: aa variant
+/obj/effect/vehicle_spawner/twe_tank/fixed/anti_air/load_hardpoints(obj/vehicle/multitile/tank/V)
+	V.add_hardpoint(new /obj/item/hardpoint/support/smoke_launcher/twe_tank)
+	V.add_hardpoint(new /obj/item/hardpoint/secondary/m56cupola/twe_tank)
+	V.add_hardpoint(new /obj/item/hardpoint/locomotion/treads)
+	V.add_hardpoint(new /obj/item/hardpoint/holder/tank_turret/twe_tank_turret)
+	for(var/obj/item/hardpoint/holder/tank_turret/twe_tank_turret/TT in V.hardpoints)
+		TT.add_hardpoint(new /obj/item/hardpoint/primary/laser_aa)
 		break

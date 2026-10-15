@@ -1,13 +1,12 @@
 /obj/item/hardpoint/primary/laser_aa
-	name = "laser aa"
-	desc = "aa"
-	desc_lore = "aa"
+	name = "ADLW-2 'Jackrabbit' Laser Emitters"
+	desc = "A pair of medium-spec high energy laser guns, designed for use by first-wave landing groups as a close-in point defence unit. Both guns operate in the 40-50mW range, but benefit from higher output at longer ranges than most others in their class, thanks to the expensive focusing-arrays built into the 'barrels'. This gives the Jackrabbit system a deceptively mundane appearance at range."
 
 	icon = 'icons/obj/vehicles/hardpoints/twe_tank.dmi'
-	icon_state = "light_plasma_cannon"
+	icon_state = "laser_aa"
 	disp_icon = "tank"
-	disp_icon_state = "light_plasma_cannon"
-	activation_sounds = list('sound/weapons/emitter2.ogg')
+	disp_icon_state = "laser_aa"
+	activation_sounds = list('sound/weapons/laser_blast.ogg')
 
 	health = 2000
 	firing_arc = 105
