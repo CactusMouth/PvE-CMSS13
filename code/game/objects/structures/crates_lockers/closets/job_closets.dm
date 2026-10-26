@@ -228,6 +228,7 @@
 		"Plasmagun kit" = /obj/item/storage/box/spec/imperial_plasma,
 		"Flamer Kit" = /obj/item/storage/box/spec/imperial_flamer,
 		"Volleygun Kit" = /obj/item/storage/box/spec/imperial_volleygun,
+		"Meltagun Kit" = /obj/item/storage/box/spec/imperial_melta,
 		)
 
 	var/chosen_kit = tgui_input_list(user, "Equipment Selection", "Select your equipment", spec_equipment_list)

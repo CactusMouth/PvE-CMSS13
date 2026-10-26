@@ -77,3 +77,17 @@
 	max_rounds = 4
 	default_ammo = /datum/ammo/energy/plasmagun
 	gun_type = /obj/item/weapon/gun/plasmagun
+
+//-------------------------------------------------------
+// Meltagun powercell
+
+/obj/item/ammo_magazine/melta
+	name = "\improper meltagun powercell"
+	desc = "A meltagun powercell, able to fit inside most forms of handheld melta-weaponry."
+	caliber = "melta"
+	icon_state = "melta"
+	w_class = SIZE_MEDIUM
+	flags_magazine = NO_FLAGS
+	max_rounds = 8
+	default_ammo = /datum/ammo/energy/melta
+	gun_type = /obj/item/weapon/gun/melta

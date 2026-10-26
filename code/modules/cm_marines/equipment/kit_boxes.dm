@@ -597,3 +597,15 @@
 	new /obj/item/ammo_magazine/lasgun/volleygun(src)
 	new /obj/item/ammo_magazine/lasgun/volleygun(src)
 	new /obj/item/ammo_magazine/lasgun/volleygun(src)
+
+/obj/item/storage/box/spec/imperial_melta
+	name = "\improper Meltagun equipment case"
+	desc = "A large case containing a heavy-weapon, namely an Imperial Guard melta gun and ammo."
+	kit_overlay = "grenadier"
+
+/obj/item/storage/box/spec/imperial_melta/fill_preset_inventory()
+	new /obj/item/weapon/gun/melta(src)
+	new /obj/item/ammo_magazine/melta(src)
+	new /obj/item/ammo_magazine/melta(src)
+	new /obj/item/ammo_magazine/melta(src)
+	new /obj/item/ammo_magazine/melta(src)

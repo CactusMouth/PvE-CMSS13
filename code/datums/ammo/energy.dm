@@ -336,6 +336,12 @@
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_RED
 
+/datum/ammo/energy/lasgun/set_bullet_traits()
+	. = ..()
+	LAZYADD(traits_to_give, list(
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_penetrating/weak)
+	))
+
 /datum/ammo/energy/lasgun/weak
 	name = "weak lasgun bolt"
 	headshot_state = HEADSHOT_OVERLAY_LIGHT
@@ -356,12 +362,6 @@
 	scatter = SCATTER_AMOUNT_NONE
 	accuracy = HIT_ACCURACY_MULT_TIER_10
 	damage_falloff = DAMAGE_FALLOFF_TIER_1
-
-/datum/ammo/energy/lasgun/hellgun/set_bullet_traits()
-	. = ..()
-	LAZYADD(traits_to_give, list(
-		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_penetrating/weak)
-	))
 
 /datum/ammo/energy/plasmagun
 	name = "plasma bolt"
@@ -436,3 +436,56 @@
 /datum/ammo/energy/plasmagun/overcharged/on_hit_turf(turf/T,obj/projectile/P)
 	. = ..()
 	cell_explosion(get_turf(T), 250, 40, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, P.weapon_cause_data)
+
+/datum/ammo/energy/melta
+	name = "melta bolt"
+	icon_state = "arcane_barrage"
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITS_TARGET_TURF|AMMO_ANTISTRUCT
+	headshot_state = HEADSHOT_OVERLAY_HEAVY
+	damage = 280
+	damage_type = BURN
+	penetration = ARMOR_PENETRATION_TIER_8
+	accurate_range = 10
+	effective_range_max = 6
+	max_range = 20
+	var/vehicle_slowdown_time = 2 SECONDS
+	shell_speed = AMMO_SPEED_TIER_HITSCAN
+	scatter = SCATTER_AMOUNT_NONE
+	accuracy = HIT_ACCURACY_MULT_TIER_10
+	damage_falloff = DAMAGE_FALLOFF_TIER_1
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_ORANGE
+
+/datum/ammo/energy/melta/set_bullet_traits()
+	. = ..()
+	LAZYADD(traits_to_give, list(
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_incendiary, /datum/reagent/napalm/high_damage),
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_penetrating/weak)
+	))
+
+/datum/ammo/energy/melta/on_hit_mob(mob/M,obj/projectile/P)
+	if(M.mob_size >= MOB_SIZE_BIG)
+		var/mob/living/L = M
+		L.apply_armoured_damage(damage*1.6, ARMOR_ENERGY, BURN, null, penetration)
+	burst(get_turf(M),P,damage_type, 1 , 5)
+	new /obj/effect/overlay/temp/plasma_impact(M)
+
+/datum/ammo/energy/melta/on_near_target(turf/T, obj/projectile/P)
+	burst(get_turf(T),P,damage_type, 1 , 5)
+	return 1
+
+/datum/ammo/energy/melta/on_hit_obj(obj/O,obj/projectile/P)
+	if(istype(O, /obj/vehicle/multitile))
+		var/obj/vehicle/multitile/mob = O
+		mob.next_move = world.time + vehicle_slowdown_time
+		playsound(mob, 'sound/effects/meteorimpact.ogg', 35)
+		mob.at_munition_interior_explosion_effect(cause_data = create_cause_data("Plasma Blast"))
+		mob.interior_crash_effect()
+		mob.ex_act(280, P.dir, P.weapon_cause_data, 100)
+		return
+	burst(get_turf(P),P,damage_type, 1 , 5)
+	new /obj/effect/overlay/temp/plasma_impact(O)
+
+/datum/ammo/energy/melta/on_hit_turf(turf/T,obj/projectile/P)
+	burst(get_turf(T),P,damage_type, 1 , 5)
+	new /obj/effect/overlay/temp/plasma_impact(T)

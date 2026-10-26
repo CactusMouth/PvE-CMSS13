@@ -2430,6 +2430,7 @@
 #include "code\modules\projectiles\guns\40k\flamer.dm"
 #include "code\modules\projectiles\guns\40k\lasguns.dm"
 #include "code\modules\projectiles\guns\40k\launcher.dm"
+#include "code\modules\projectiles\guns\40k\melta.dm"
 #include "code\modules\projectiles\guns\40k\plasmagun.dm"
 #include "code\modules\projectiles\guns\flamer\flamer.dm"
 #include "code\modules\projectiles\guns\flamer\flameshape.dm"
