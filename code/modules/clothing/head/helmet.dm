@@ -1987,7 +1987,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 
 /obj/item/clothing/head/helmet/marine/veteran/guard/elite
-	name = "\improper kasrkin Elite helmet"
+	name = "\improper elite Stormtrooper helmet"
 	icon_state = "helmet_elite"
 	item_state = "helmet_elite"
 	armor_melee = CLOTHING_ARMOR_HIGH

@@ -58,6 +58,6 @@
 				IMG3.color = squad_clr
 				holder.overlays += IMG3
 
-/datum/faction/kasrkin
-	name = "Imperial Kasrkin Elite"
-	faction_tag = FACTION_KASRKIN
+/datum/faction/stormtrooper
+	name = "Imperial Elite Stormtrooper"
+	faction_tag = FACTION_STORMTROOPER

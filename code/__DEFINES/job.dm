@@ -474,11 +474,11 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define IMPERIAL_GUARD_JOB_LIST list(JOB_IMP_CONSCRIPT, JOB_IMP_GUARDSMAN, JOB_IMP_VOX_OPERATOR, JOB_IMP_TL, JOB_IMP_SPECIALIST, JOB_IMP_SL, JOB_IMP_LT, JOB_IMP_CPT, JOB_IMP_MJR, JOB_IMP_CMR, JOB_IMP_ENGI, JOB_IMP_MEDICAE)
 
-//-------- 40k Elite Kasrkin --------//
-#define JOB_KASR_RIFLEMAN "Imperial Kasrkin Rifleman"
-#define JOB_KASR_TL "Imperial Kasrkin Team Leader"
+//-------- 40k Elite Stormtroopers --------//
+#define JOB_STRM_RIFLEMAN "Imperial Stormtrooper Rifleman"
+#define JOB_STRM_TL "Imperial Stormtrooper Team Leader"
 
-#define KASRKIN_JOB_LIST list(JOB_KASR_RIFLEMAN, JOB_KASR_TL)
+#define STORMTROOPER_JOB_LIST list(JOB_STRM_RIFLEMAN, JOB_STRM_TL)
 
 ////-------- IMPERIAL GUARD SQUAD --------//
 

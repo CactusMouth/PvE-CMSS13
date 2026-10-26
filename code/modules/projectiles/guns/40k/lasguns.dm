@@ -269,3 +269,19 @@
 
 /obj/item/weapon/gun/lasgun/volleygun/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 13, "stock_x" = 24, "stock_y" = 14, "side_rail_x" = 23, "side_rail_y" = 16)
+
+/obj/item/weapon/gun/lasgun/volleygun/hellgun
+
+	name = "\improper UTI-49/H Pattern Light Hellgun Volleygun"
+	desc = "The UTI-49/H Pattern Light Hellgun Volleygun is an uncommon volleygun pattern that, instead of using a backpack-based charging system, uses charge packs similar to standard lasguns, though it is still a volleygun and has the same destructive power as a standard volleygun. It is mainly seen in the hands of Imperial Guard Stormtrooper units."
+	icon_state = "volleygun_hell"
+	item_state = "hellgun"
+	current_mag = /obj/item/ammo_magazine/lasgun/hellgun/volleygun
+	start_automatic = TRUE
+
+	attachable_allowed = list(
+		/obj/item/attachable/volleygunbarrel/hell,
+	)
+	starting_attachment_types = list(
+		/obj/item/attachable/volleygunbarrel/hell,
+	)

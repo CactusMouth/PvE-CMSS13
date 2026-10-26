@@ -1,14 +1,14 @@
-/datum/equipment_preset/kasrkin
-	name = "Imperial Elite Kasrkin"
-	faction = FACTION_KASRKIN
+/datum/equipment_preset/stormtrooper
+	name = "Imperial Elite Stormtrooper"
+	faction = FACTION_STORMTROOPER
 	rank = JOB_SQUAD_MARINE
-	faction = FACTION_KASRKIN
-	faction_group = list(FACTION_KASRKIN)
+	faction = FACTION_STORMTROOPER
+	faction_group = list(FACTION_STORMTROOPER)
 	languages = list(LANGUAGE_ENGLISH)
-	var/headset_type = /obj/item/device/radio/headset/distress/imperial/kasrkin
+	var/headset_type = /obj/item/device/radio/headset/distress/imperial/stormtrooper
 	idtype = /obj/item/card/id/dogtag
 
-/datum/equipment_preset/kasrkin/load_name(mob/living/carbon/human/new_human, randomise)
+/datum/equipment_preset/stormtrooper/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = pick(50;MALE,50;FEMALE)
 	var/datum/preferences/A = new
 	A.randomize_appearance(new_human)
@@ -36,17 +36,17 @@
 
 //*****************************************************************************************************/
 
-/datum/equipment_preset/kasrkin/rifleman
-	name = "Kasrkin Rifleman"
-	assignment = JOB_KASR_RIFLEMAN
-	rank = JOB_KASR_RIFLEMAN
+/datum/equipment_preset/stormtrooper/rifleman
+	name = "Stormtrooper Rifleman"
+	assignment = JOB_STRM_RIFLEMAN
+	rank = JOB_STRM_RIFLEMAN
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_MARINE_PREP)
 	flags = EQUIPMENT_PRESET_EXTRA
-	role_comm_title = "Kasr."
+	role_comm_title = "Strm."
 	skills = /datum/skills/rmc
 
-/datum/equipment_preset/kasrkin/rifleman/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/stormtrooper/rifleman/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/guard/elite(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/guard(new_human), WEAR_BODY)
@@ -71,12 +71,44 @@
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human),WEAR_IN_BACK)
 
-/datum/equipment_preset/kasrkin/rifleman/tl
-	name = "Kasrkin Team Leader"
-	assignment = JOB_KASR_TL
-	rank = JOB_KASR_TL
+/datum/equipment_preset/stormtrooper/rifleman/tl
+	name = "Stormtrooper Team Leader"
+	assignment = JOB_STRM_TL
+	rank = JOB_STRM_TL
 	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_MARINE_PREP)
 	flags = EQUIPMENT_PRESET_EXTRA
-	role_comm_title = "KTL."
+	role_comm_title = "STL."
 	skills = /datum/skills/rmc/leader
+
+/datum/equipment_preset/stormtrooper/rifleman/volleygunner
+	name = "Stormtrooper Volleygunner"
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	access = list(ACCESS_MARINE_PREP)
+	flags = EQUIPMENT_PRESET_EXTRA
+	role_comm_title = "SSP."
+
+/datum/equipment_preset/stormtrooper/rifleman/volleygunner/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/guard/elite(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/guard(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine(new_human), WEAR_HANDS)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/guard/elite(new_human), WEAR_JACKET)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/lasgun/volleygun/hellgun(new_human), WEAR_J_STORE)
+
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(new_human), WEAR_IN_BELT)
+
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/full/imperial(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/flare(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human),WEAR_IN_BACK)

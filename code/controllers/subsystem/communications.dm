@@ -151,7 +151,7 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 
 //40k frequencies
 #define IMP_GUARD_FREQ 1520
-#define KASRKIN_FREQ 1521
+#define STORMTROOPER_FREQ 1521
 #define TRAITOR_FREQ 1522
 
 #define AI_FREQ 1500
@@ -228,7 +228,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	RADIO_CHANNEL_REBEL_TWE = JSC_FREQ,
 
 	RADIO_CHANNEL_IMP_GUARD = IMP_GUARD_FREQ,
-	RADIO_CHANNEL_KASRKIN = KASRKIN_FREQ,
+	RADIO_CHANNEL_STORMTROOPER = STORMTROOPER_FREQ,
 	RADIO_CHANNEL_TRAITOR = TRAITOR_FREQ,
 ))
 
@@ -341,7 +341,7 @@ SUBSYSTEM_DEF(radio)
 		"[PFA_FREQ]" = "pfaradio",
 		"[JSC_FREQ]" = "jscradio",
 		"[IMP_GUARD_FREQ]" = "guardradio",
-		"[KASRKIN_FREQ]" = "hcradio",
+		"[STORMTROOPER_FREQ]" = "hcradio",
 		"[TRAITOR_FREQ]" = "syndradio"
 	)
 

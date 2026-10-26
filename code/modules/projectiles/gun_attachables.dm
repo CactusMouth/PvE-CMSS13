@@ -637,6 +637,10 @@ Defined in conflicts.dm of the #defines folder.
 	flags_attach_features = NO_FLAGS
 	hud_offset_mod = -4
 
+/obj/item/attachable/volleygunbarrel/hell
+	icon_state = "volleygun_hell_barrel"
+	hud_offset_mod = -4
+
 // Mateba barrels
 
 /obj/item/attachable/mateba

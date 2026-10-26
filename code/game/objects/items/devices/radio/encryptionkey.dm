@@ -435,10 +435,10 @@
 	icon_state = "stripped_key"
 	channels = list(RADIO_CHANNEL_IMP_GUARD = TRUE, RADIO_CHANNEL_COLONY = TRUE)
 
-/obj/item/device/encryptionkey/kasrkin
-	name = "\improper Kasrkin Radio Encryption Key"
+/obj/item/device/encryptionkey/stormtrooper
+	name = "\improper Stormtrooper Radio Encryption Key"
 	icon_state = "stripped_key"
-	channels = list(RADIO_CHANNEL_KASRKIN = TRUE, RADIO_CHANNEL_COLONY = TRUE)
+	channels = list(RADIO_CHANNEL_STORMTROOPER = TRUE, RADIO_CHANNEL_COLONY = TRUE)
 
 /obj/item/device/encryptionkey/traitor
 	name = "\improper Traitor Guard Radio Encryption Key"

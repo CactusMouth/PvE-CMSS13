@@ -37,6 +37,13 @@
 	max_rounds = 250
 	gun_type = /obj/item/weapon/gun/lasgun/volleygun
 
+/obj/item/ammo_magazine/lasgun/hellgun/volleygun
+	name = "\improper volleygun powerpack"
+	desc = "A powerpack that powers most standard volleyguns."
+	icon_state = "volleygun_ammo"
+	max_rounds = 250
+	gun_type = /obj/item/weapon/gun/lasgun/volleygun/hellgun
+
 //-------------------------------------------------------
 // Flamer Fuel Tanks
 
