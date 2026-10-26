@@ -85,7 +85,7 @@
 	name = "\improper meltagun powercell"
 	desc = "A meltagun powercell, able to fit inside most forms of handheld melta-weaponry."
 	caliber = "melta"
-	icon_state = "melta"
+	icon_state = "melta_ammo"
 	w_class = SIZE_MEDIUM
 	flags_magazine = NO_FLAGS
 	max_rounds = 8

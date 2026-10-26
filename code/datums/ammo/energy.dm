@@ -468,7 +468,6 @@
 		var/mob/living/L = M
 		L.apply_armoured_damage(damage*1.6, ARMOR_ENERGY, BURN, null, penetration)
 	burst(get_turf(M),P,damage_type, 1 , 5)
-	new /obj/effect/overlay/temp/plasma_impact(M)
 
 /datum/ammo/energy/melta/on_near_target(turf/T, obj/projectile/P)
 	burst(get_turf(T),P,damage_type, 1 , 5)
@@ -484,8 +483,6 @@
 		mob.ex_act(280, P.dir, P.weapon_cause_data, 100)
 		return
 	burst(get_turf(P),P,damage_type, 1 , 5)
-	new /obj/effect/overlay/temp/plasma_impact(O)
 
 /datum/ammo/energy/melta/on_hit_turf(turf/T,obj/projectile/P)
 	burst(get_turf(T),P,damage_type, 1 , 5)
-	new /obj/effect/overlay/temp/plasma_impact(T)
