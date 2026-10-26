@@ -25,7 +25,7 @@
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
 	flags_item = TWOHANDED
 
-	var/obj/effect/ebeam/plasma_beam_type = /obj/effect/ebeam/laser/plasma
+	var/obj/effect/ebeam/melta_beam_type = /obj/effect/ebeam/laser/lasgun
 	///world.time value, to prevent a lightshow without actually firing
 	var/beam_cooldown = 0
 	///Delay before another beam can start again, in tenths of seconds
@@ -135,6 +135,6 @@
 		return
 	if(current_mag.current_rounds <= 0)
 		return
-	melta_beam = target.beam(user, "light_beam", 'icons/effects/beam.dmi', time = 0.7 SECONDS, maxdistance = 30, beam_type = plasma_beam_type, always_turn = TRUE)
+	melta_beam = target.beam(user, "light_beam", 'icons/effects/beam.dmi', time = 0.7 SECONDS, maxdistance = 30, beam_type = melta_beam_type, always_turn = TRUE)
 	animate(melta_beam.visuals, alpha = 255, time = 0.7 SECONDS, color = COLOR_ORANGE, luminosity = 3 , easing = SINE_EASING|EASE_OUT)
 	. = ..()
