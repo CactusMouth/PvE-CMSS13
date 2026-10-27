@@ -1912,6 +1912,7 @@
 #include "code\modules\gear_presets\40k\imperial_guard.dm"
 #include "code\modules\gear_presets\40k\imperial_guard_pve.dm"
 #include "code\modules\gear_presets\40k\stormtrooper.dm"
+#include "code\modules\gear_presets\40k\stormtrooper_pve.dm"
 #include "code\modules\gear_presets\40k\traitors.dm"
 #include "code\modules\gear_presets\survivors\misc.dm"
 #include "code\modules\gear_presets\survivors\survivors.dm"

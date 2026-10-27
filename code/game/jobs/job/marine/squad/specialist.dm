@@ -94,3 +94,18 @@
 	name = JOB_IMPPLAT_SPECIALIST
 	squad = SQUAD_IMPPLT
 	job = /datum/job/marine/specialist/ai/imperial
+
+/datum/job/marine/specialist/ai/stormtrooper
+	total_positions = 2
+	spawn_positions = 2
+	title = JOB_STRMPLAT_SPECIALIST
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
+	gear_preset = /datum/equipment_preset/uscm/stormtrooper/specialist
+	supervisors = "the team leader and squad leader"
+	entry_message_body = "You are a specialist of some of the Astra Militarum's best, the Stormtroopers. Depending on your weapon, you'll be assisting the squad in order to increase their potential firepower and strength.<br><b>You remember that you've stored your personal gear and uniform in the locker rooms, and that your specialist equipment can be located in the armoury.</b>"
+	prime_priority = FALSE
+
+/obj/effect/landmark/start/marine/specialist/stormtrooper
+	name = JOB_STRMPLAT_SPECIALIST
+	squad = SQUAD_STRMPLT
+	job = /datum/job/marine/specialist/ai/stormtrooper

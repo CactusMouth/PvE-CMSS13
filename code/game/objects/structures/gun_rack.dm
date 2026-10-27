@@ -229,3 +229,15 @@
 
 /obj/structure/gun_rack/lasgun/Empty
 	initial_stored = 0.
+
+/obj/structure/gun_rack/hellgun
+	name = "imperial stormtrooper hellgun rack"
+	icon_state = "lasgun"
+	desc = "A gun rack designed to hold up to five hellguns."
+	max_stored = 5
+	initial_stored = 5
+	allowed_type = /obj/item/weapon/gun/lasgun/hellgun
+	populate_type = /obj/item/weapon/gun/lasgun/hellgun
+
+/obj/structure/gun_rack/hellgun/Empty
+	initial_stored = 0.

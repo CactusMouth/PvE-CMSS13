@@ -10,6 +10,7 @@
 #define UPP_AUXILIARY_PLATOON new /datum/squad/marine/upp/secondary
 #define PMC_AUXILIARY_PLATOON new /datum/squad/marine/pmc/secondary
 #define IMP_AUXILIARY_PLATOON new /datum/squad/marine/imperial/secondary
+#define STRM_AUXILIARY_PLATOON new /datum/squad/marine/stormtrooper/secondary
 
 //=================================================
 //Please don't edit these values without speaking to Errorage first ~Carn

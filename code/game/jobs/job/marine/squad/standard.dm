@@ -189,6 +189,21 @@
 	squad = SQUAD_IMPPLT
 	job = /datum/job/marine/standard/ai/vox
 
+/datum/job/marine/standard/ai/stormtrooper
+	title = JOB_STRMPLAT_STANDARD
+	gear_preset = /datum/equipment_preset/uscm/stormtrooper
+	job_options = null
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the squad leader and team leader"
+	entry_message_body = "You are a standard soldier of some of the Astra Militarum's best, the Stormtroopers. You are the elite among the standard unaugmented human soldiers that the Imperium has to offer, and are expected to complete the objectives no matter the cost. Glory to the Imperium of Man!</b>"
+	prime_priority = FALSE
+
+/obj/effect/landmark/start/marine/stormtrooper
+	name = JOB_STRMPLAT_STANDARD
+	squad = SQUAD_STRMPLT
+	job = /datum/job/marine/standard/ai/stormtrooper
+
 #undef CPL_VARIANT
 #undef LCPL_VARIANT
 #undef PFC_VARIANT

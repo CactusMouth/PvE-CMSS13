@@ -178,6 +178,19 @@
 	squad = SQUAD_IMPPLT
 	job = /datum/job/marine/medic/ai/imperial
 
+/datum/job/marine/medic/ai/stormtrooper
+	title = JOB_STRMPLAT_MEDICAE
+	gear_preset = /datum/equipment_preset/uscm/stormtrooper/med
+	job_options = null
+	supervisors = "the squad leader"
+	entry_message_body = "You are a medicae of some of the Astra Militarum's best, the Stormtroopers. Your primary responsibility is ensuring the squad is in physical and mental fighting order and able to fufill their objective.</b>"
+	prime_priority = FALSE
+
+/obj/effect/landmark/start/marine/medic/stormtrooper
+	name = JOB_STRMPLAT_MEDICAE
+	squad = SQUAD_STRMPLT
+	job = /datum/job/marine/medic/ai/stormtrooper
+
 #undef SGT_VARIANT
 #undef JSGT_VARIANT
 #undef CPL_VARIANT

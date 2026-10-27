@@ -490,6 +490,29 @@
 
 	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
 
+/datum/squad/marine/stormtrooper
+	name = SQUAD_STRMPLT
+	access = list(ACCESS_MARINE_ALPHA)
+	radio_freq = STORMTROOPER_FREQ
+	use_stripe_overlay = FALSE
+	equipment_color = "#1c798a"
+	chat_color = "#1c798a"
+	minimap_color = MINIMAP_SQUAD_ALPHA
+	usable = TRUE
+	faction = FACTION_IMPERIAL_GUARD
+	squad_type = "Squad"
+
+/datum/squad/marine/stormtrooper/secondary
+	name = SQUAD_STRMPLT_2
+	chat_color = "#2f239d"
+	minimap_color = MINIMAP_SQUAD_DELTA
+	usable = FALSE
+
+/datum/squad/marine/stormtrooper/New()
+	. = ..()
+
+	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
+
 //##############################
 /datum/squad/New()
 	. = ..()
