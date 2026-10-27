@@ -1986,6 +1986,11 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_marine_helmet = NO_FLAGS
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 
+/obj/item/clothing/head/helmet/marine/veteran/guard/medic
+	name = "\improper imperial Guard medicae helmet"
+	icon_state = "helmet_guard_medic"
+	item_state = "helmet_guard_medic"
+
 /obj/item/clothing/head/helmet/marine/veteran/guard/elite
 	name = "\improper elite Stormtrooper helmet"
 	icon_state = "helmet_elite"
@@ -2003,6 +2008,9 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/marine_raider/rmc/imperial)
+	start_down_visor_type = /obj/item/device/helmet_visor/night_vision/marine_raider/rmc/imperial
+
 
 /obj/item/clothing/head/helmet/marine/veteran/guard/traitor
 	name = "\improper traitor Guard helmet"

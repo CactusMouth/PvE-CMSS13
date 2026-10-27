@@ -477,3 +477,16 @@
 	icon_state = "po_visor_yellow"
 	action_icon_string = "po_visor_yellow_down"
 	helmet_overlay = "po_visor_yellow_marine"
+
+//Imperial
+/obj/item/device/helmet_visor/medical/advanced/imperial
+	name = "integrated biometric scanner"
+	helmet_overlay = "med_sight_right"
+	hud_type = list(MOB_HUD_MEDICAL_ADVANCED, MOB_HUD_FACTION_IMPERIAL)
+
+/obj/item/device/helmet_visor/night_vision/marine_raider/rmc/imperial
+	name = "multi-spectral occulum"
+	desc = "An integrated part of the omnishield helm, it allows the user to see through low light conditions."
+	hud_type = list(MOB_HUD_FACTION_TWE, MOB_HUD_FACTION_WY, MOB_HUD_MEDICAL_ADVANCED)
+	power_use = 0
+	visor_glows = FALSE

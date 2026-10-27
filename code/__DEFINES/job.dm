@@ -476,9 +476,12 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 //-------- 40k Elite Stormtroopers --------//
 #define JOB_STRM_RIFLEMAN "Imperial Stormtrooper Rifleman"
+#define JOB_STRM_SPECALIST "Imperial Stormtrooper Specialist"
+#define JOB_STRM_MEDICAE "Imperial Stormtrooper Medicae"
 #define JOB_STRM_TL "Imperial Stormtrooper Team Leader"
+#define JOB_STRM_SL "Imperial Stormtrooper Squad Leader"
 
-#define STORMTROOPER_JOB_LIST list(JOB_STRM_RIFLEMAN, JOB_STRM_TL)
+#define STORMTROOPER_JOB_LIST list(JOB_STRM_RIFLEMAN, JOB_STRM_SPECIALIST, JOB_STRM_MEDICAE, JOB_STRM_TL, JOB_STRM_SL)
 
 ////-------- IMPERIAL GUARD SQUAD --------//
 

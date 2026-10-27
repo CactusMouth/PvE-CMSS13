@@ -124,10 +124,11 @@
 
 /datum/equipment_preset/imperial_guard/medicae/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/guard(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/guard/medic(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/guard(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian/knife(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
 	if(prob(25))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/balaclava(new_human), WEAR_FACE)
 
@@ -142,7 +143,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun, WEAR_IN_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun, WEAR_IN_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/medic/standard(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/surgical_line(new_human), WEAR_IN_BACK)

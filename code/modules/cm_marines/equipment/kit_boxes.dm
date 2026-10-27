@@ -571,6 +571,7 @@
 	new /obj/item/ammo_magazine/plasmagun(src)
 	new /obj/item/ammo_magazine/plasmagun(src)
 	new /obj/item/ammo_magazine/plasmagun(src)
+	new /obj/item/ammo_magazine/plasmagun(src)
 
 /obj/item/storage/box/spec/imperial_flamer
 	name = "\improper Flamer equipment case"
@@ -609,3 +610,17 @@
 	new /obj/item/ammo_magazine/melta(src)
 	new /obj/item/ammo_magazine/melta(src)
 	new /obj/item/ammo_magazine/melta(src)
+
+/obj/item/storage/box/spec/imperial_volleygun_elite
+	name = "\improper Hellgun Volleygun equipment case"
+	desc = "A large case containing a heavy-weapon, namely an Imperial Guard volleygun and ammo."
+	kit_overlay = "spotter"
+
+/obj/item/storage/box/spec/imperial_volleygun_elite/fill_preset_inventory()
+	new /obj/item/weapon/gun/lasgun/volleygun/hellgun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)
+	new /obj/item/ammo_magazine/lasgun/hellgun/volleygun(src)

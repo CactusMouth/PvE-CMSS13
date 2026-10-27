@@ -1,9 +1,9 @@
 /datum/equipment_preset/stormtrooper
 	name = "Imperial Elite Stormtrooper"
-	faction = FACTION_STORMTROOPER
+	faction = FACTION_IMPERIAL_GUARD
 	rank = JOB_SQUAD_MARINE
-	faction = FACTION_STORMTROOPER
-	faction_group = list(FACTION_STORMTROOPER)
+	faction = FACTION_IMPERIAL_GUARD
+	faction_group = list(FACTION_IMPERIAL_GUARD)
 	languages = list(LANGUAGE_ENGLISH)
 	var/headset_type = /obj/item/device/radio/headset/distress/imperial/stormtrooper
 	idtype = /obj/item/card/id/dogtag
@@ -71,6 +71,12 @@
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human),WEAR_IN_BACK)
 
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters/tactical(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_ACCESSORY)
+
 /datum/equipment_preset/stormtrooper/rifleman/tl
 	name = "Stormtrooper Team Leader"
 	assignment = JOB_STRM_TL
@@ -81,8 +87,20 @@
 	role_comm_title = "STL."
 	skills = /datum/skills/rmc/leader
 
+/datum/equipment_preset/stormtrooper/rifleman/sl
+	name = "Stormtrooper Squad Leader"
+	assignment = JOB_STRM_SL
+	rank = JOB_STRM_SL
+	paygrades = list(PAY_SHORT_ME8 = JOB_PLAYTIME_TIER_0)
+	access = list(ACCESS_MARINE_PREP)
+	flags = EQUIPMENT_PRESET_EXTRA
+	role_comm_title = "SSL."
+	skills = /datum/skills/rmc/leader
+
 /datum/equipment_preset/stormtrooper/rifleman/volleygunner
 	name = "Stormtrooper Volleygunner"
+	assignment = JOB_STRM_SPECALIST
+	rank = JOB_STRM_SPECALIST
 	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_MARINE_PREP)
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -112,3 +130,57 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/flare(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human),WEAR_IN_BACK)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters/tactical(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_ACCESSORY)
+
+/datum/equipment_preset/stormtrooper/rifleman/medicae
+	name = "Stormtrooper Medicae"
+	assignment = JOB_STRM_MEDICAE
+	rank = JOB_STRM_MEDICAE
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	access = list(ACCESS_MARINE_PREP)
+	flags = EQUIPMENT_PRESET_EXTRA
+	role_comm_title = "Strm."
+	skills = /datum/skills/rmc/medic
+
+/datum/equipment_preset/stormtrooper/rifleman/medicae/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/guard/elite(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/guard(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/guard/elite(new_human), WEAR_JACKET)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/lasgun/hellgun(new_human), WEAR_J_STORE)
+
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/lasgun/hellgun(new_human), WEAR_IN_BELT)
+
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/full/imperial(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/medic/standard(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/roller/surgical(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/adv(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/adv(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/surgical_line(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/surgical_case/regular(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/healthanalyzer/soul(new_human), WEAR_IN_BACK)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters/tactical(new_human), WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical(new_human), WEAR_IN_ACCESSORY)

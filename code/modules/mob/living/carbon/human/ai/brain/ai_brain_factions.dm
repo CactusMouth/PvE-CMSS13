@@ -2066,17 +2066,6 @@
 	faction = FACTION_IMPERIAL_GUARD
 	friendly_factions = list(
 		FACTION_COLONIST,
-		FACTION_STORMTROOPER,
-	)
-	neutral_factions = list(
-		FACTION_SURVIVOR,
-	)
-
-/datum/human_ai_faction/stormtrooper
-	faction = FACTION_STORMTROOPER
-	friendly_factions = list(
-		FACTION_COLONIST,
-		FACTION_IMPERIAL_GUARD,
 	)
 	neutral_factions = list(
 		FACTION_SURVIVOR,

@@ -57,7 +57,3 @@
 				var/image/IMG3 = image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_ftl")
 				IMG3.color = squad_clr
 				holder.overlays += IMG3
-
-/datum/faction/stormtrooper
-	name = "Imperial Elite Stormtrooper"
-	faction_tag = FACTION_STORMTROOPER
